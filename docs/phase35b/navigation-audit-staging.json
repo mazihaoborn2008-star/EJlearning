@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "Japanese Vocabulary → Sentence → Grammar → different Sentence → Vocabulary",
+    "EN-only academic example and actual Vocabulary navigation",
+    "All six Stage/Level values and all IELTS/JLPT targets render valid states",
+    "Wrong-language AI context rejected",
+    "Missing alignment neutral state"
+  ],
+  "errors": []
+}

@@ -1,0 +1,61 @@
+{
+  "policy_version": 1,
+  "database": {
+    "binding": "DB",
+    "content_binding": "CONTENT_DB",
+    "name": "ej-learning-36-db",
+    "id": "fcd78cc9-5f99-4677-9764-3713e3d1226b",
+    "lifecycle": "persistent-staging"
+  },
+  "session_storage": {
+    "binding": "AI_SESSIONS",
+    "id": "3a4a888f427d4d419ee6f56368338e71"
+  },
+  "schema_migrations": "migrations-staging-schema",
+  "bootstrap_migration_configs": [
+    "wrangler.36.remote-base.jsonc",
+    "wrangler.36.remote-grammar.jsonc",
+    "wrangler.36.remote-roles.jsonc",
+    "wrangler.36.remote-vocabulary.jsonc",
+    "wrangler.36.remote-expressions.jsonc",
+    "wrangler.36.remote-curriculum.jsonc",
+    "wrangler.36.remote-large-vocabulary.jsonc"
+  ],
+  "datasets": [
+    {
+      "name": "en_vocabulary",
+      "version": "2026-09-v1",
+      "row_count": 10000,
+      "checksum": "sha256:1a6947e04785db63613a92e14903cdae7954f7e84860b10e68e5c7cbb3f9c3cf+curated-phase35e1a2",
+      "update_migration_config": null
+    },
+    {
+      "name": "ja_vocabulary",
+      "version": "2026-09-v1",
+      "row_count": 8235,
+      "checksum": "sha256:1dc9e9c168b5cb2754efd766b3d4c69f6eb2d51cb90bcade011b3e4f0fd1ae83+7153dfd7a8e42e2d920308370eac90cf9f2e4b4cfe67fb9a86e9aa1c89494073+curated-phase35e1a2",
+      "update_migration_config": null
+    },
+    {
+      "name": "en_grammar",
+      "version": "2026-09-v1",
+      "row_count": 83,
+      "checksum": "release:phase35e1a1",
+      "update_migration_config": null
+    },
+    {
+      "name": "ja_grammar",
+      "version": "2026-09-v1",
+      "row_count": 98,
+      "checksum": "release:phase35e1a1",
+      "update_migration_config": null
+    },
+    {
+      "name": "lessons",
+      "version": "2026-09-v1",
+      "row_count": 64,
+      "checksum": "bundle:phase-35e1c-v2",
+      "update_migration_config": null
+    }
+  ]
+}

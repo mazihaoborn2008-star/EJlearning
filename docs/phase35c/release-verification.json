@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "protectedEnvironments": [
+    "ej-learning",
+    "ej-learning-phase3",
+    "ej-learning-35a",
+    "ej-learning-35b"
+  ],
+  "protectedLocalFiles": 85,
+  "remoteSnapshotsEqual": true,
+  "staging": "https://ej-learning-35c.yanjian-language-learning.workers.dev",
+  "config": "wrangler.35c.jsonc",
+  "verifiedAt": "2026-09-09T18:08:46.059Z",
+  "phase35DStarted": false,
+  "phase4Started": false
+}

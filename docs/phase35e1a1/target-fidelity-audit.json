@@ -1,0 +1,1222 @@
+{
+  "generated_at": "2026-09-10T09:50:46.187Z",
+  "phase": "3.5E.1A.1",
+  "status": "PASS",
+  "environment": {
+    "type": "isolated local D1 staging data copy",
+    "config": "wrangler.35e1a1.local.jsonc",
+    "persist": ".wrangler/phase35e1a-release",
+    "production_changed": false
+  },
+  "scope": {
+    "audited_examples": 490,
+    "selected_grammar": 75,
+    "en_examples_final": 210,
+    "ja_examples_final": 280
+  },
+  "roles": {
+    "total": {
+      "DIRECT": 463,
+      "CONTRAST": 24,
+      "SUPPORT": 3,
+      "INVALID": 0
+    },
+    "by_language": {
+      "en": {
+        "DIRECT": 197,
+        "CONTRAST": 12,
+        "SUPPORT": 1,
+        "INVALID": 0
+      },
+      "ja": {
+        "DIRECT": 266,
+        "CONTRAST": 12,
+        "SUPPORT": 2,
+        "INVALID": 0
+      }
+    }
+  },
+  "grammar": {
+    "all_direct": 57,
+    "with_contrast_or_support": 18,
+    "all_direct_ids": [
+      "en-be-adjective",
+      "en-do-question",
+      "en-greeting",
+      "en-have-possession",
+      "en-imperative",
+      "en-noun-please",
+      "en-present-continuous",
+      "en-simple-present",
+      "en-there-is",
+      "en-want-to",
+      "en-before-after",
+      "en-can-ability",
+      "en-can-request",
+      "en-could-request",
+      "en-ellipsis",
+      "en-enjoy-ing",
+      "en-going-to",
+      "en-let-us",
+      "en-plan-to",
+      "en-simple-past",
+      "en-take-time",
+      "en-would-like",
+      "en-as-long-as",
+      "en-indirect-question",
+      "en-may",
+      "en-what-if",
+      "ja-de-place",
+      "ja-greeting",
+      "ja-i-adjective",
+      "ja-ka-question",
+      "ja-ni-time",
+      "ja-no-possession",
+      "ja-suki",
+      "ja-wa-topic",
+      "ja-wo-object",
+      "ja-dake",
+      "ja-duration",
+      "ja-hodo-approx",
+      "ja-kara-after",
+      "ja-mae-ni",
+      "ja-masen-ka",
+      "ja-mashou",
+      "ja-nai",
+      "ja-potential",
+      "ja-request-onegai",
+      "ja-tai",
+      "ja-te-form",
+      "ja-te-mo-ii",
+      "ja-hou-ga-ii",
+      "ja-kamoshirenai",
+      "ja-koto-ga-aru",
+      "ja-nara",
+      "ja-sou",
+      "ja-tara",
+      "ja-te-iru",
+      "ja-te-morau",
+      "ja-tsumori"
+    ],
+    "with_contrast_or_support_details": [
+      {
+        "grammar_id": "en-possessive",
+        "language": "en",
+        "form_name": "my / your / his / her + noun",
+        "level": 1,
+        "DIRECT": 5,
+        "CONTRAST": 1,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "en-wh-question",
+        "language": "en",
+        "form_name": "wh-word + auxiliary + subject + verb?",
+        "level": 1,
+        "DIRECT": 5,
+        "CONTRAST": 1,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "en-comparative",
+        "language": "en",
+        "form_name": "comparative + than",
+        "level": 2,
+        "DIRECT": 4,
+        "CONTRAST": 2,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "en-shall-suggestion",
+        "language": "en",
+        "form_name": "Shall we + base verb?",
+        "level": 2,
+        "DIRECT": 4,
+        "CONTRAST": 2,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "en-will",
+        "language": "en",
+        "form_name": "will + base verb",
+        "level": 2,
+        "DIRECT": 3,
+        "CONTRAST": 3,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "en-ever-perfect",
+        "language": "en",
+        "form_name": "Have you ever + past participle?",
+        "level": 3,
+        "DIRECT": 5,
+        "CONTRAST": 1,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "en-might",
+        "language": "en",
+        "form_name": "might + verb",
+        "level": 3,
+        "DIRECT": 5,
+        "CONTRAST": 1,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "en-since-for",
+        "language": "en",
+        "form_name": "present perfect + since / for",
+        "level": 3,
+        "DIRECT": 5,
+        "CONTRAST": 0,
+        "SUPPORT": 1,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "en-would-rather",
+        "language": "en",
+        "form_name": "would rather + base verb",
+        "level": 3,
+        "DIRECT": 5,
+        "CONTRAST": 1,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "ja-copula",
+        "language": "ja",
+        "form_name": "〜です",
+        "level": 1,
+        "DIRECT": 5,
+        "CONTRAST": 2,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "ja-ga-existence",
+        "language": "ja",
+        "form_name": "名词 + がある / いる",
+        "level": 1,
+        "DIRECT": 4,
+        "CONTRAST": 2,
+        "SUPPORT": 1,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "ja-plain-nonpast",
+        "language": "ja",
+        "form_name": "辞书形",
+        "level": 1,
+        "DIRECT": 6,
+        "CONTRAST": 1,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "ja-polite-present",
+        "language": "ja",
+        "form_name": "ます干 + ます",
+        "level": 1,
+        "DIRECT": 6,
+        "CONTRAST": 1,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "ja-ni-naru",
+        "language": "ja",
+        "form_name": "名词 / な形容词 + になる",
+        "level": 2,
+        "DIRECT": 5,
+        "CONTRAST": 1,
+        "SUPPORT": 1,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "ja-plain-past",
+        "language": "ja",
+        "form_name": "た形",
+        "level": 2,
+        "DIRECT": 5,
+        "CONTRAST": 2,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "ja-polite-negative",
+        "language": "ja",
+        "form_name": "〜ません",
+        "level": 2,
+        "DIRECT": 6,
+        "CONTRAST": 1,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "ja-polite-past",
+        "language": "ja",
+        "form_name": "〜ました",
+        "level": 2,
+        "DIRECT": 6,
+        "CONTRAST": 1,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      },
+      {
+        "grammar_id": "ja-te-kudasai",
+        "language": "ja",
+        "form_name": "〜てください",
+        "level": 2,
+        "DIRECT": 6,
+        "CONTRAST": 1,
+        "SUPPORT": 0,
+        "INVALID": 0,
+        "baseline_curated": 1,
+        "direct_majority_across_curated": true
+      }
+    ]
+  },
+  "changes": {
+    "examples_corrected": 0,
+    "examples_removed": 0,
+    "examples_added_as_replacement": 0,
+    "new_grammar": 0,
+    "new_vocabulary": 0,
+    "lessons": 0,
+    "dialogues": 0,
+    "dynamic_ai_examples": 0,
+    "learner_progress": 0,
+    "production": 0
+  },
+  "qa": {
+    "errors": 0,
+    "warnings": 0,
+    "checks": [
+      {
+        "name": "Phase scope is exactly 490 examples / 75 grammar",
+        "pass": true,
+        "detail": {
+          "examples": 490,
+          "grammar": 75
+        }
+      },
+      {
+        "name": "language final counts",
+        "pass": true,
+        "detail": {
+          "en": 210,
+          "ja": 280
+        }
+      },
+      {
+        "name": "role totals",
+        "pass": true,
+        "detail": {
+          "DIRECT": 463,
+          "CONTRAST": 24,
+          "SUPPORT": 3,
+          "INVALID": 0
+        }
+      },
+      {
+        "name": "role totals by language",
+        "pass": true,
+        "detail": {
+          "en": {
+            "DIRECT": 197,
+            "CONTRAST": 12,
+            "SUPPORT": 1,
+            "INVALID": 0
+          },
+          "ja": {
+            "DIRECT": 266,
+            "CONTRAST": 12,
+            "SUPPORT": 2,
+            "INVALID": 0
+          }
+        }
+      },
+      {
+        "name": "each Phase example has exactly one explicit role",
+        "pass": true,
+        "detail": {
+          "rows": 490,
+          "unique": 490
+        }
+      },
+      {
+        "name": "role schema",
+        "pass": true,
+        "detail": [
+          "example_id",
+          "grammar_id",
+          "language",
+          "target_role",
+          "rationale_zh",
+          "audit_phase",
+          "audited_at"
+        ]
+      },
+      {
+        "name": "role and example source identity",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "all roles have rationale",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "DIRECT is the majority for every selected grammar",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "grammar role grouping",
+        "pass": true,
+        "detail": {
+          "all_direct": 57,
+          "with_contrast_support": 18
+        }
+      },
+      {
+        "name": "no INVALID remains",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "no examples corrected, removed, or replaced",
+        "pass": true,
+        "detail": {
+          "corrected": 0,
+          "removed": 0,
+          "replacements": 0
+        }
+      },
+      {
+        "name": "no normalized duplicate or existing-example collision",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "source isolation",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "protected curriculum counts unchanged",
+        "pass": true,
+        "detail": {
+          "expected": {
+            "vocabulary": 695,
+            "grammar": 155,
+            "lessons": 48,
+            "dialogue_turns": 116,
+            "grammar_examples": 647
+          },
+          "observed": {
+            "vocabulary": 695,
+            "grammar": 155,
+            "lessons": 48,
+            "dialogue_turns": 116,
+            "grammar_examples": 647,
+            "target_audits": 490
+          }
+        }
+      },
+      {
+        "name": "foreign keys",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "corrective migration is additive metadata only",
+        "pass": true,
+        "detail": {
+          "statement_starts": [
+            "PRAGMA foreign_keys",
+            "CREATE TABLE",
+            "CREATE INDEX",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO"
+          ],
+          "forbidden": [],
+          "insert_targets": [
+            "v2_grammar_example_target_audits"
+          ]
+        }
+      },
+      {
+        "name": "corrective migration recorded",
+        "pass": true,
+        "detail": [
+          {
+            "name": "0001_schema.sql",
+            "applied_at": "2026-09-10 09:12:08"
+          },
+          {
+            "name": "0002_seed.sql",
+            "applied_at": "2026-09-10 09:12:13"
+          },
+          {
+            "name": "0003_engine.sql",
+            "applied_at": "2026-09-10 09:12:13"
+          },
+          {
+            "name": "0004_curriculum.sql",
+            "applied_at": "2026-09-10 09:13:49"
+          },
+          {
+            "name": "0005_assessment_refinements.sql",
+            "applied_at": "2026-09-10 09:13:55"
+          },
+          {
+            "name": "0006_v2_domains.sql",
+            "applied_at": "2026-09-10 09:13:55"
+          },
+          {
+            "name": "0007_v2_representative.sql",
+            "applied_at": "2026-09-10 09:13:59"
+          },
+          {
+            "name": "0008_v2_editorial_guards.sql",
+            "applied_at": "2026-09-10 09:14:00"
+          },
+          {
+            "name": "0009_academic_alignment.sql",
+            "applied_at": "2026-09-10 09:14:00"
+          },
+          {
+            "name": "0010_academic_expression_example.sql",
+            "applied_at": "2026-09-10 09:14:01"
+          },
+          {
+            "name": "0011_curriculum.sql",
+            "applied_at": "2026-09-10 09:15:26"
+          },
+          {
+            "name": "0012_editorial_refinement.sql",
+            "applied_at": "2026-09-10 09:15:29"
+          },
+          {
+            "name": "0013_reviewed_speech_link.sql",
+            "applied_at": "2026-09-10 09:15:29"
+          },
+          {
+            "name": "0014_final_editorial_judgments.sql",
+            "applied_at": "2026-09-10 09:15:33"
+          },
+          {
+            "name": "0015_reused_pattern_provenance.sql",
+            "applied_at": "2026-09-10 09:15:33"
+          },
+          {
+            "name": "0016_request_variants.sql",
+            "applied_at": "2026-09-10 09:15:33"
+          },
+          {
+            "name": "0017_lessons.sql",
+            "applied_at": "2026-09-10 09:15:34"
+          },
+          {
+            "name": "0018_lesson_exam_recommendations.sql",
+            "applied_at": "2026-09-10 09:15:34"
+          },
+          {
+            "name": "0019_distinct_progression.sql",
+            "applied_at": "2026-09-10 09:15:34"
+          },
+          {
+            "name": "0020_editorial_objectives.sql",
+            "applied_at": "2026-09-10 09:15:35"
+          },
+          {
+            "name": "0001_core_grammar_curated_examples.sql",
+            "applied_at": "2026-09-10 09:15:48"
+          },
+          {
+            "name": "0001_curated_grammar_example_target_roles.sql",
+            "applied_at": "2026-09-10 09:43:30"
+          }
+        ]
+      },
+      {
+        "name": "historical Phase 3.5E.1A migration unchanged",
+        "pass": true,
+        "detail": {
+          "expected_sha256": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+          "observed_sha256": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4"
+        }
+      },
+      {
+        "name": "preflight grammar-marker and editorial review",
+        "pass": true,
+        "detail": {
+          "status": "GENERATED",
+          "errors": []
+        }
+      }
+    ],
+    "error_details": [],
+    "warning_details": []
+  },
+  "migration": {
+    "file": "migrations-35e1a1/0001_curated_grammar_example_target_roles.sql",
+    "type": "additive companion audit metadata",
+    "applied_local": true,
+    "recorded": true,
+    "historical_35e1a_migration_modified": false,
+    "sha256": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b"
+  },
+  "samples": {
+    "en": [
+      {
+        "grammar_id": "en-simple-present",
+        "form_name": "Simple Present",
+        "formula": "subject + base verb / -s",
+        "core_zh": "把情况作为习惯或事实陈述。",
+        "role_counts": {
+          "DIRECT": 6,
+          "CONTRAST": 0,
+          "SUPPORT": 0,
+          "INVALID": 0
+        },
+        "examples": [
+          {
+            "id": "35e1a-ge-en-simple-present-01",
+            "text": "She walks to work every day.",
+            "translation_zh": "她每天步行上班。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-simple-present-02",
+            "text": "We usually eat dinner at seven.",
+            "translation_zh": "我们通常七点吃晚饭。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-simple-present-03",
+            "text": "My brother does not drink coffee.",
+            "translation_zh": "我哥哥不喝咖啡。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-simple-present-04",
+            "text": "The shop closes at six.",
+            "translation_zh": "这家店六点关门。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-simple-present-05",
+            "text": "Do they live near the station?",
+            "translation_zh": "他们住在车站附近吗？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-simple-present-06",
+            "text": "Water boils at one hundred degrees Celsius.",
+            "translation_zh": "水在一百摄氏度时沸腾。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+          }
+        ]
+      },
+      {
+        "grammar_id": "en-wh-question",
+        "form_name": "wh-word + auxiliary + subject + verb?",
+        "formula": "wh-word + auxiliary + subject + verb?",
+        "core_zh": "询问信息",
+        "role_counts": {
+          "DIRECT": 5,
+          "CONTRAST": 1,
+          "SUPPORT": 0,
+          "INVALID": 0
+        },
+        "examples": [
+          {
+            "id": "35e1a-ge-en-wh-question-01",
+            "text": "What time does the library open?",
+            "translation_zh": "图书馆几点开门？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「wh-word + auxiliary + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-wh-question-02",
+            "text": "Where can I charge my phone?",
+            "translation_zh": "我可以在哪里给手机充电？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「wh-word + auxiliary + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-wh-question-03",
+            "text": "Why did you change the plan?",
+            "translation_zh": "你为什么改变了计划？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「wh-word + auxiliary + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-wh-question-04",
+            "text": "How much does this ticket cost?",
+            "translation_zh": "这张票多少钱？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「wh-word + auxiliary + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-wh-question-05",
+            "text": "When are they arriving?",
+            "translation_zh": "他们什么时候到？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「wh-word + auxiliary + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-wh-question-06",
+            "text": "Which train goes to the city centre?",
+            "translation_zh": "哪趟火车去市中心？",
+            "target_role": "CONTRAST",
+            "rationale_zh": "主语疑问词直接充当主语，不采用目标公式中的助动词倒装；作为必要语序对比保留。"
+          }
+        ]
+      },
+      {
+        "grammar_id": "en-will",
+        "form_name": "will + base verb",
+        "formula": "will + base verb",
+        "core_zh": "当场决定与承诺",
+        "role_counts": {
+          "DIRECT": 3,
+          "CONTRAST": 3,
+          "SUPPORT": 0,
+          "INVALID": 0
+        },
+        "examples": [
+          {
+            "id": "35e1a-ge-en-will-01",
+            "text": "I will carry that bag for you.",
+            "translation_zh": "我来帮你拿那个包。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「will + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-will-02",
+            "text": "We will not be late.",
+            "translation_zh": "我们不会迟到。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「will + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-will-03",
+            "text": "Will you be home this evening?",
+            "translation_zh": "你今晚会在家吗？",
+            "target_role": "CONTRAST",
+            "rationale_zh": "will 问句询问未来状态，不是该 Grammar 核心的当场决定或承诺。"
+          },
+          {
+            "id": "35e1a-ge-en-will-04",
+            "text": "The meeting will start at ten.",
+            "translation_zh": "会议将在十点开始。",
+            "target_role": "CONTRAST",
+            "rationale_zh": "will 表示安排/中性未来，不是该 Grammar 核心的当场决定或承诺。"
+          },
+          {
+            "id": "35e1a-ge-en-will-05",
+            "text": "I think the weather will improve tomorrow.",
+            "translation_zh": "我想明天天气会好转。",
+            "target_role": "CONTRAST",
+            "rationale_zh": "will 表示预测，不是该 Grammar 核心的当场决定或承诺。"
+          },
+          {
+            "id": "35e1a-ge-en-will-06",
+            "text": "Do not worry; I will call the landlord.",
+            "translation_zh": "别担心，我会给房东打电话。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「will + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+          }
+        ]
+      },
+      {
+        "grammar_id": "en-since-for",
+        "form_name": "present perfect + since / for",
+        "formula": "present perfect + since / for",
+        "core_zh": "持续的起点与时长",
+        "role_counts": {
+          "DIRECT": 5,
+          "CONTRAST": 0,
+          "SUPPORT": 1,
+          "INVALID": 0
+        },
+        "examples": [
+          {
+            "id": "35e1a-ge-en-since-for-01",
+            "text": "We have lived here for three years.",
+            "translation_zh": "我们在这里住了三年。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「present perfect + since / for」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-since-for-02",
+            "text": "She has not eaten since breakfast.",
+            "translation_zh": "她从早餐后一直没吃东西。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「present perfect + since / for」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-since-for-03",
+            "text": "How long have you worked at this school?",
+            "translation_zh": "你在这所学校工作多久了？",
+            "target_role": "SUPPORT",
+            "rationale_zh": "How long + present perfect 能引出 since/for 答语，但句内没有实际出现 since 或 for。"
+          },
+          {
+            "id": "35e1a-ge-en-since-for-04",
+            "text": "I have known him since university.",
+            "translation_zh": "我从大学起就认识他。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「present perfect + since / for」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-since-for-05",
+            "text": "The lift has been out of order for two days.",
+            "translation_zh": "电梯已经坏了两天。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「present perfect + since / for」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-since-for-06",
+            "text": "Have you been waiting since nine o'clock?",
+            "translation_zh": "你从九点起一直在等吗？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「present perfect + since / for」的目标形式，并保持该 Grammar 的核心功能。"
+          }
+        ]
+      },
+      {
+        "grammar_id": "en-would-rather",
+        "form_name": "would rather + base verb",
+        "formula": "would rather + base verb",
+        "core_zh": "偏好某种行动",
+        "role_counts": {
+          "DIRECT": 5,
+          "CONTRAST": 1,
+          "SUPPORT": 0,
+          "INVALID": 0
+        },
+        "examples": [
+          {
+            "id": "35e1a-ge-en-would-rather-01",
+            "text": "I would rather take the train than drive.",
+            "translation_zh": "我宁愿坐火车也不愿开车。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「would rather + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-would-rather-02",
+            "text": "She would rather not talk about it now.",
+            "translation_zh": "她现在宁愿不谈这件事。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「would rather + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-would-rather-03",
+            "text": "Would you rather eat inside or outside?",
+            "translation_zh": "你更愿意在室内还是室外吃？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「would rather + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-would-rather-04",
+            "text": "We would rather wait for a quieter room.",
+            "translation_zh": "我们宁愿等一个更安静的房间。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「would rather + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-would-rather-05",
+            "text": "He said he would rather leave early.",
+            "translation_zh": "他说他宁愿早点离开。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「would rather + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-en-would-rather-06",
+            "text": "I would rather you called before visiting.",
+            "translation_zh": "我希望你来访前先打电话。",
+            "target_role": "CONTRAST",
+            "rationale_zh": "would rather + different subject + past form 不同于目标公式的同主语 would rather + base verb。"
+          }
+        ]
+      }
+    ],
+    "ja": [
+      {
+        "grammar_id": "ja-copula",
+        "form_name": "〜です",
+        "formula": "noun / な-adjective stem + です",
+        "core_zh": "礼貌地判断或说明状态。",
+        "role_counts": {
+          "DIRECT": 5,
+          "CONTRAST": 2,
+          "SUPPORT": 0,
+          "INVALID": 0
+        },
+        "examples": [
+          {
+            "id": "35e1a-ge-ja-copula-01",
+            "text": "こちらが受付です。",
+            "translation_zh": "这里是接待处。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜です」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-copula-02",
+            "text": "今日は休みではありません。",
+            "translation_zh": "今天不是休息日。",
+            "target_role": "CONTRAST",
+            "rationale_zh": "ではありません是礼貌否定 copula，与 canonical です作必要对比。"
+          },
+          {
+            "id": "35e1a-ge-ja-copula-03",
+            "text": "この部屋は静かですか。",
+            "translation_zh": "这个房间安静吗？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜です」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-copula-04",
+            "text": "予約は明日の三時です。",
+            "translation_zh": "预约是明天下午三点。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜です」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-copula-05",
+            "text": "妹は大学生です。",
+            "translation_zh": "妹妹是大学生。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜です」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-copula-06",
+            "text": "駅はあの建物の隣です。",
+            "translation_zh": "车站在那栋楼旁边。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜です」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-copula-07",
+            "text": "昨日の担当は田中さんでした。",
+            "translation_zh": "昨天的负责人是田中。",
+            "target_role": "CONTRAST",
+            "rationale_zh": "でした是礼貌过去 copula，与 canonical です作时态对比。"
+          }
+        ]
+      },
+      {
+        "grammar_id": "ja-ga-existence",
+        "form_name": "名词 + がある / いる",
+        "formula": "名词 + がある / いる",
+        "core_zh": "事物的存在",
+        "role_counts": {
+          "DIRECT": 4,
+          "CONTRAST": 2,
+          "SUPPORT": 1,
+          "INVALID": 0
+        },
+        "examples": [
+          {
+            "id": "35e1a-ge-ja-ga-existence-01",
+            "text": "机の上に鍵があります。",
+            "translation_zh": "桌上有钥匙。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「名词 + がある / いる」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-ga-existence-02",
+            "text": "公園に子どもがいます。",
+            "translation_zh": "公园里有孩子。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「名词 + がある / いる」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-ga-existence-03",
+            "text": "この近くに薬局はありません。",
+            "translation_zh": "这附近没有药房。",
+            "target_role": "CONTRAST",
+            "rationale_zh": "否定存在句使用主题化的薬局はありません，没有直接出现名词 + がある/いる。"
+          },
+          {
+            "id": "35e1a-ge-ja-ga-existence-04",
+            "text": "部屋に冷蔵庫がありますか。",
+            "translation_zh": "房间里有冰箱吗？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「名词 + がある / いる」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-ga-existence-05",
+            "text": "駅の前に新しい店ができました。",
+            "translation_zh": "车站前开了一家新店。",
+            "target_role": "SUPPORT",
+            "rationale_zh": "店ができました表达“新店开成/出现”，教学上相关，但没有实例化がある/いる。"
+          },
+          {
+            "id": "35e1a-ge-ja-ga-existence-06",
+            "text": "会議室には誰もいません。",
+            "translation_zh": "会议室里没有人。",
+            "target_role": "CONTRAST",
+            "rationale_zh": "には…いません是否定存在并带主题/范围化，不是 canonical 名词 + がいる。"
+          },
+          {
+            "id": "35e1a-ge-ja-ga-existence-07",
+            "text": "明日の午後、予約があります。",
+            "translation_zh": "明天下午有预约。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「名词 + がある / いる」的目标形式，并保持该 Grammar 的核心功能。"
+          }
+        ]
+      },
+      {
+        "grammar_id": "ja-te-kudasai",
+        "form_name": "〜てください",
+        "formula": "verb て形 + ください",
+        "core_zh": "直接而礼貌地请求行动。",
+        "role_counts": {
+          "DIRECT": 6,
+          "CONTRAST": 1,
+          "SUPPORT": 0,
+          "INVALID": 0
+        },
+        "examples": [
+          {
+            "id": "35e1a-ge-ja-te-kudasai-01",
+            "text": "荷物はここに置いてください。",
+            "translation_zh": "请把行李放在这里。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-kudasai-02",
+            "text": "次の角を右に曲がってください。",
+            "translation_zh": "请在下一个路口右转。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-kudasai-03",
+            "text": "少しゆっくり話してください。",
+            "translation_zh": "请说慢一点。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-kudasai-04",
+            "text": "ここでは写真を撮らないでください。",
+            "translation_zh": "请不要在这里拍照。",
+            "target_role": "CONTRAST",
+            "rationale_zh": "撮らないでください是禁止/负向请求，接续为ないでください，不是 verb て形 + ください。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-kudasai-05",
+            "text": "名前と電話番号を書いてください。",
+            "translation_zh": "请写下姓名和电话号码。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-kudasai-06",
+            "text": "準備ができたら知らせてください。",
+            "translation_zh": "准备好后请告诉我。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-kudasai-07",
+            "text": "わからない言葉は先生に聞いてください。",
+            "translation_zh": "不懂的词请问老师。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+          }
+        ]
+      },
+      {
+        "grammar_id": "ja-ni-naru",
+        "form_name": "名词 / な形容词 + になる",
+        "formula": "名词 / な形容词 + になる",
+        "core_zh": "变成某种状态",
+        "role_counts": {
+          "DIRECT": 5,
+          "CONTRAST": 1,
+          "SUPPORT": 1,
+          "INVALID": 0
+        },
+        "examples": [
+          {
+            "id": "35e1a-ge-ja-ni-naru-01",
+            "text": "来月、大学生になります。",
+            "translation_zh": "下个月就成为大学生了。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「名词 / な形容词 + になる」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-ni-naru-02",
+            "text": "夜になると、この道は静かになります。",
+            "translation_zh": "到了晚上，这条路会变安静。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「名词 / な形容词 + になる」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-ni-naru-03",
+            "text": "部屋がきれいになりました。",
+            "translation_zh": "房间变干净了。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「名词 / な形容词 + になる」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-ni-naru-04",
+            "text": "会議は午後三時からになります。",
+            "translation_zh": "会议改为下午三点开始。",
+            "target_role": "SUPPORT",
+            "rationale_zh": "午後三時からになります是日程确定表达；含になります，但补语不是目标公式的名词/な形容词 + に。"
+          },
+          {
+            "id": "35e1a-ge-ja-ni-naru-05",
+            "text": "この薬を飲むと眠くなることがあります。",
+            "translation_zh": "吃这种药有时会犯困。",
+            "target_role": "CONTRAST",
+            "rationale_zh": "眠くなる展示い形容词 + くなる，与目标名词/な形容词 + になる作必要接续对比。"
+          },
+          {
+            "id": "35e1a-ge-ja-ni-naru-06",
+            "text": "練習すれば、もっと上手になります。",
+            "translation_zh": "练习的话会变得更熟练。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「名词 / な形容词 + になる」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-ni-naru-07",
+            "text": "予定は来週に変更になりました。",
+            "translation_zh": "日程改到下周了。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「名词 / な形容词 + になる」的目标形式，并保持该 Grammar 的核心功能。"
+          }
+        ]
+      },
+      {
+        "grammar_id": "ja-te-iru",
+        "form_name": "〜ている",
+        "formula": "verb て形 + いる",
+        "core_zh": "表示进行或持续状态；是否完成由语境和谓词决定。",
+        "role_counts": {
+          "DIRECT": 7,
+          "CONTRAST": 0,
+          "SUPPORT": 0,
+          "INVALID": 0
+        },
+        "examples": [
+          {
+            "id": "35e1a-ge-ja-te-iru-01",
+            "text": "今、駅で電車を待っています。",
+            "translation_zh": "现在正在车站等电车。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-iru-02",
+            "text": "姉は東京に住んでいます。",
+            "translation_zh": "姐姐住在东京。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-iru-03",
+            "text": "窓が開いています。",
+            "translation_zh": "窗户开着。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-iru-04",
+            "text": "今日は車を使っていません。",
+            "translation_zh": "今天没有在用车。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-iru-05",
+            "text": "何を読んでいますか。",
+            "translation_zh": "你在读什么？",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-iru-06",
+            "text": "この店は十年前から営業しています。",
+            "translation_zh": "这家店从十年前起一直营业。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+          },
+          {
+            "id": "35e1a-ge-ja-te-iru-07",
+            "text": "父は今、夕食を作っています。",
+            "translation_zh": "爸爸现在正在做晚饭。",
+            "target_role": "DIRECT",
+            "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+          }
+        ]
+      }
+    ]
+  }
+}

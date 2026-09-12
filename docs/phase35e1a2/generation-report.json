@@ -1,0 +1,5475 @@
+{
+  "generated_at": "2026-09-10T21:07:40.884Z",
+  "phase": "3.5E.1A.2",
+  "status": "GENERATED",
+  "selection": {
+    "en": 120,
+    "ja": 130,
+    "criteria": "P0/P1 lesson/expression usage, Stage 1–3, communicative usefulness and misuse/collocation value"
+  },
+  "added": {
+    "en": 180,
+    "ja": 200,
+    "total": 380
+  },
+  "categories": {
+    "collocations": 154,
+    "full_examples": 122,
+    "contrasts": 30,
+    "common_patterns": 74
+  },
+  "by_language": {
+    "en": {
+      "total": 180,
+      "collocations": 69,
+      "full_examples": 53,
+      "contrasts": 16,
+      "common_patterns": 42
+    },
+    "ja": {
+      "total": 200,
+      "collocations": 85,
+      "full_examples": 69,
+      "contrasts": 14,
+      "common_patterns": 32
+    }
+  },
+  "rejected": {
+    "duplicate": 1,
+    "canonical_collision": 4,
+    "semantic_usage_invalid": 7,
+    "editorial_review": 1
+  },
+  "errors": [],
+  "changes": {
+    "new_vocabulary": 0,
+    "new_grammar": 0,
+    "lessons": 0,
+    "dialogues": 0,
+    "dynamic_ai_examples": 0,
+    "learner_progress": 0,
+    "production": 0
+  },
+  "items": [
+    {
+      "item_id": "en-c-3172",
+      "language": "en",
+      "lemma": "do",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-3172",
+          "kind": "collocation",
+          "text": "do the dishes",
+          "translation_zh": "洗碗",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-3172-01"
+        },
+        {
+          "item_id": "en-c-3172",
+          "kind": "pattern",
+          "text": "do the work, but make a plan",
+          "translation_zh": "做工作，但制订计划",
+          "note_zh": "对比：do 常搭配工作/任务，make 常搭配创造出的结果。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-3172-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-go",
+      "language": "en",
+      "lemma": "go",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-go",
+          "kind": "collocation",
+          "text": "go home",
+          "translation_zh": "回家",
+          "note_zh": "home 前通常不加 to。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-go-01"
+        },
+        {
+          "item_id": "en-go",
+          "kind": "example",
+          "text": "We usually go by bus.",
+          "translation_zh": "我们通常坐公交车去。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-go-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-313",
+      "language": "en",
+      "lemma": "need",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-313",
+          "kind": "pattern",
+          "text": "need to leave",
+          "translation_zh": "需要离开",
+          "note_zh": "need to 后接动词原形。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-313-01"
+        },
+        {
+          "item_id": "en-c-313",
+          "kind": "example",
+          "text": "I need to change my appointment.",
+          "translation_zh": "我需要更改预约。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-313-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-tomorrow",
+      "language": "en",
+      "lemma": "tomorrow",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-tomorrow",
+          "kind": "collocation",
+          "text": "tomorrow morning",
+          "translation_zh": "明天早上",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-tomorrow-01"
+        },
+        {
+          "item_id": "en-tomorrow",
+          "kind": "example",
+          "text": "I will call you tomorrow afternoon.",
+          "translation_zh": "我明天下午给你打电话。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-tomorrow-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-leave",
+      "language": "en",
+      "lemma": "leave",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-leave",
+          "kind": "collocation",
+          "text": "leave for work",
+          "translation_zh": "动身去上班",
+          "note_zh": "leave for 后接目的地或目的。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-leave-01"
+        },
+        {
+          "item_id": "en-leave",
+          "kind": "pattern",
+          "text": "leave home, but leave for work",
+          "translation_zh": "离开家，但动身去上班",
+          "note_zh": "对比：leave 直接接离开的地点；leave for 接目的地或目的。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-leave-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-yet",
+      "language": "en",
+      "lemma": "yet",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-yet",
+          "kind": "collocation",
+          "text": "not ready yet",
+          "translation_zh": "还没准备好",
+          "note_zh": "yet 常置于否定句末。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-yet-01"
+        },
+        {
+          "item_id": "en-yet",
+          "kind": "pattern",
+          "text": "Have you eaten yet? / I have not eaten yet.",
+          "translation_zh": "你吃了吗？／我还没吃。",
+          "note_zh": "对比：yet 常见于疑问句和否定句，通常位于句末。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-yet-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-help",
+      "language": "en",
+      "lemma": "help",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-help",
+          "kind": "pattern",
+          "text": "help someone with homework",
+          "translation_zh": "帮助某人做作业",
+          "note_zh": "help someone with + 名词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-help-01"
+        },
+        {
+          "item_id": "en-help",
+          "kind": "pattern",
+          "text": "help someone do something",
+          "translation_zh": "帮助某人做某事",
+          "note_zh": "help 后可接宾语 + 动词原形。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-help-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-3176",
+      "language": "en",
+      "lemma": "thanks",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-3176",
+          "kind": "example",
+          "text": "Thanks for your help.",
+          "translation_zh": "谢谢你的帮助。",
+          "note_zh": "Thanks for 后接感谢的原因。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-3176-01"
+        },
+        {
+          "item_id": "en-c-3176",
+          "kind": "pattern",
+          "text": "Thanks for waiting.",
+          "translation_zh": "谢谢你等我。",
+          "note_zh": "Thanks for 后可接动名词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-3176-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-957",
+      "language": "en",
+      "lemma": "minute",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-957",
+          "kind": "collocation",
+          "text": "a few minutes",
+          "translation_zh": "几分钟",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-957-01"
+        },
+        {
+          "item_id": "en-c-957",
+          "kind": "example",
+          "text": "The train leaves in ten minutes.",
+          "translation_zh": "火车十分钟后开。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-957-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-121",
+      "language": "en",
+      "lemma": "today",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-121",
+          "kind": "collocation",
+          "text": "later today",
+          "translation_zh": "今天晚些时候",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-121-01"
+        },
+        {
+          "item_id": "en-c-121",
+          "kind": "example",
+          "text": "I have an appointment today.",
+          "translation_zh": "我今天有预约。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-121-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-289",
+      "language": "en",
+      "lemma": "change",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-289",
+          "kind": "collocation",
+          "text": "change your mind",
+          "translation_zh": "改变主意",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-289-01"
+        },
+        {
+          "item_id": "en-c-289",
+          "kind": "example",
+          "text": "Can we change the date?",
+          "translation_zh": "我们可以改日期吗？",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-289-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-eat",
+      "language": "en",
+      "lemma": "eat",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-eat",
+          "kind": "collocation",
+          "text": "eat breakfast",
+          "translation_zh": "吃早餐",
+          "note_zh": "餐名前通常不加冠词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-eat-01"
+        },
+        {
+          "item_id": "en-eat",
+          "kind": "example",
+          "text": "We eat dinner at about seven.",
+          "translation_zh": "我们大约七点吃晚饭。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-eat-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-189",
+      "language": "en",
+      "lemma": "wait",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-189",
+          "kind": "pattern",
+          "text": "wait for the bus",
+          "translation_zh": "等公交车",
+          "note_zh": "wait for 后接等待的对象。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-189-01"
+        },
+        {
+          "item_id": "en-c-189",
+          "kind": "pattern",
+          "text": "wait for someone, not wait someone",
+          "translation_zh": "等某人，不能省略 for",
+          "note_zh": "对比：表示等待对象时，wait 后需要 for。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-189-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-897",
+      "language": "en",
+      "lemma": "know",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-897",
+          "kind": "pattern",
+          "text": "know how to swim",
+          "translation_zh": "知道怎么游泳",
+          "note_zh": "know how to 后接动词原形。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-897-01"
+        },
+        {
+          "item_id": "en-c-897",
+          "kind": "example",
+          "text": "Do you know this area well?",
+          "translation_zh": "你熟悉这一带吗？",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-897-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1021",
+      "language": "en",
+      "lemma": "talk",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-1021",
+          "kind": "pattern",
+          "text": "talk about the problem",
+          "translation_zh": "谈论这个问题",
+          "note_zh": "talk about 后接话题。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1021-01"
+        },
+        {
+          "item_id": "en-c-1021",
+          "kind": "pattern",
+          "text": "talk to a person / talk about a topic",
+          "translation_zh": "与某人交谈／谈论一个话题",
+          "note_zh": "对比：to 引出交谈对象，about 引出话题。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1021-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-3178",
+      "language": "en",
+      "lemma": "look",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-3178",
+          "kind": "pattern",
+          "text": "look at the map",
+          "translation_zh": "看地图",
+          "note_zh": "look at 表示把视线投向某物。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-3178-01"
+        },
+        {
+          "item_id": "en-c-3178",
+          "kind": "pattern",
+          "text": "look at the map / look for the map",
+          "translation_zh": "看地图／寻找地图",
+          "note_zh": "对比：look at 是看，look for 是寻找。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-3178-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-153",
+      "language": "en",
+      "lemma": "train",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-153",
+          "kind": "collocation",
+          "text": "catch the train",
+          "translation_zh": "赶上火车",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-153-01"
+        },
+        {
+          "item_id": "en-c-153",
+          "kind": "example",
+          "text": "We missed the last train.",
+          "translation_zh": "我们错过了末班火车。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-153-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-293",
+      "language": "en",
+      "lemma": "check",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-293",
+          "kind": "collocation",
+          "text": "check the address",
+          "translation_zh": "核对地址",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-293-01"
+        },
+        {
+          "item_id": "en-c-293",
+          "kind": "example",
+          "text": "Please check the total before you pay.",
+          "translation_zh": "付款前请核对总额。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-293-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-fine",
+      "language": "en",
+      "lemma": "fine",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-fine",
+          "kind": "example",
+          "text": "That time is fine for me.",
+          "translation_zh": "那个时间我可以。",
+          "note_zh": "fine for someone 表示安排可以接受。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-fine-01"
+        },
+        {
+          "item_id": "en-fine",
+          "kind": "example",
+          "text": "A short delay is fine.",
+          "translation_zh": "稍微延误一下没关系。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-fine-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-2285",
+      "language": "en",
+      "lemma": "help",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-2285",
+          "kind": "collocation",
+          "text": "ask for help",
+          "translation_zh": "求助",
+          "note_zh": "help 作此义时通常不可数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-2285-01"
+        },
+        {
+          "item_id": "en-c-2285",
+          "kind": "pattern",
+          "text": "some help, not a help",
+          "translation_zh": "一些帮助，不说 a help",
+          "note_zh": "对比：help 表示一般帮助时通常不可数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-2285-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1089",
+      "language": "en",
+      "lemma": "figure",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-1089",
+          "kind": "collocation",
+          "text": "sales figures",
+          "translation_zh": "销售数据",
+          "note_zh": "figure 用复数指一组数据。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1089-01"
+        },
+        {
+          "item_id": "en-c-1089",
+          "kind": "example",
+          "text": "These figures include tax.",
+          "translation_zh": "这些数字包含税。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1089-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-2361",
+      "language": "en",
+      "lemma": "plan",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-2361",
+          "kind": "collocation",
+          "text": "make a plan",
+          "translation_zh": "制订计划",
+          "note_zh": "名词 plan 常与 make 搭配。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-2361-01"
+        },
+        {
+          "item_id": "en-c-2361",
+          "kind": "pattern",
+          "text": "make a plan / plan to leave",
+          "translation_zh": "制订计划／计划离开",
+          "note_zh": "对比：前者 plan 是名词，后者 plan 是动词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-2361-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-117",
+      "language": "en",
+      "lemma": "work",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-117",
+          "kind": "collocation",
+          "text": "at work",
+          "translation_zh": "在工作；在上班",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-117-01"
+        },
+        {
+          "item_id": "en-c-117",
+          "kind": "pattern",
+          "text": "work as a noun: at work",
+          "translation_zh": "work 作名词：在上班",
+          "note_zh": "对比：此词条是不可数名词义。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-117-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-193",
+      "language": "en",
+      "lemma": "meet",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-193",
+          "kind": "pattern",
+          "text": "meet at the station",
+          "translation_zh": "在车站见面",
+          "note_zh": "meet at 后接见面地点。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-193-01"
+        },
+        {
+          "item_id": "en-c-193",
+          "kind": "example",
+          "text": "Let us meet outside the library.",
+          "translation_zh": "我们在图书馆外面见吧。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-193-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-309",
+      "language": "en",
+      "lemma": "try",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-309",
+          "kind": "pattern",
+          "text": "try to call again",
+          "translation_zh": "设法再打一次电话",
+          "note_zh": "try to do 强调努力完成。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-309-01"
+        },
+        {
+          "item_id": "en-c-309",
+          "kind": "pattern",
+          "text": "try to open it / try restarting it",
+          "translation_zh": "设法打开／试试重启",
+          "note_zh": "对比：try to do 强调努力；try doing 表示把某方法作为尝试。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-309-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-325",
+      "language": "en",
+      "lemma": "quiet",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-325",
+          "kind": "collocation",
+          "text": "keep quiet",
+          "translation_zh": "保持安静",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-325-01"
+        },
+        {
+          "item_id": "en-c-325",
+          "kind": "example",
+          "text": "The street is quiet at night.",
+          "translation_zh": "这条街晚上很安静。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-325-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1009",
+      "language": "en",
+      "lemma": "well",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-1009",
+          "kind": "collocation",
+          "text": "get well soon",
+          "translation_zh": "早日康复",
+          "note_zh": "固定祝愿；well 表示身体恢复健康。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1009-01"
+        },
+        {
+          "item_id": "en-c-1009",
+          "kind": "pattern",
+          "text": "feel well, not feel good about a choice",
+          "translation_zh": "身体舒服；不同于对选择感觉不错",
+          "note_zh": "对比：well 在此限定身体状况义。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1009-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-417",
+      "language": "en",
+      "lemma": "walk",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-417",
+          "kind": "collocation",
+          "text": "take a walk",
+          "translation_zh": "散步",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-417-01"
+        },
+        {
+          "item_id": "en-c-417",
+          "kind": "example",
+          "text": "We went for a walk after dinner.",
+          "translation_zh": "我们晚饭后去散步了。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-417-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-025",
+      "language": "en",
+      "lemma": "salt",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-025",
+          "kind": "collocation",
+          "text": "a pinch of salt",
+          "translation_zh": "一小撮盐",
+          "note_zh": "salt 通常不可数，用量词表达数量。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-025-01"
+        },
+        {
+          "item_id": "en-c-025",
+          "kind": "example",
+          "text": "This soup needs a little salt.",
+          "translation_zh": "这汤需要放一点盐。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-025-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-053",
+      "language": "en",
+      "lemma": "lunch",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-053",
+          "kind": "collocation",
+          "text": "lunch break",
+          "translation_zh": "午休时间",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-053-01"
+        },
+        {
+          "item_id": "en-c-053",
+          "kind": "example",
+          "text": "I usually bring my lunch to work.",
+          "translation_zh": "我通常带午饭去上班。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-053-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-rain",
+      "language": "en",
+      "lemma": "rain",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-rain",
+          "kind": "example",
+          "text": "It is raining now.",
+          "translation_zh": "现在正在下雨。",
+          "note_zh": "rain 在此作动词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-rain-01"
+        },
+        {
+          "item_id": "en-rain",
+          "kind": "example",
+          "text": "It may rain this evening.",
+          "translation_zh": "今晚可能下雨。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-rain-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-3180",
+      "language": "en",
+      "lemma": "no worries",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-3180",
+          "kind": "example",
+          "text": "No worries—I can wait.",
+          "translation_zh": "没关系，我可以等。",
+          "note_zh": "口语中用于表示事情不成问题。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-3180-01"
+        },
+        {
+          "item_id": "en-c-3180",
+          "kind": "example",
+          "text": "No worries about the change.",
+          "translation_zh": "这次改动没关系。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-3180-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-on-the-way",
+      "language": "en",
+      "lemma": "on the way",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-on-the-way",
+          "kind": "collocation",
+          "text": "on the way home",
+          "translation_zh": "在回家路上",
+          "note_zh": "home 前不加 to。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-on-the-way-01"
+        },
+        {
+          "item_id": "en-on-the-way",
+          "kind": "example",
+          "text": "I stopped at the pharmacy on the way.",
+          "translation_zh": "我在路上去了趟药房。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-on-the-way-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-369",
+      "language": "en",
+      "lemma": "weekend",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-369",
+          "kind": "collocation",
+          "text": "plans for the weekend",
+          "translation_zh": "周末的计划",
+          "note_zh": "for the weekend 表示周末期间。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-369-01"
+        },
+        {
+          "item_id": "en-c-369",
+          "kind": "example",
+          "text": "Are you free this weekend?",
+          "translation_zh": "你这周末有空吗？",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-369-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-241",
+      "language": "en",
+      "lemma": "cook",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-241",
+          "kind": "pattern",
+          "text": "cook for the family",
+          "translation_zh": "为家人做饭",
+          "note_zh": "cook for 后接用餐者。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-241-01"
+        },
+        {
+          "item_id": "en-c-241",
+          "kind": "example",
+          "text": "I cook at home most evenings.",
+          "translation_zh": "我大多数晚上在家做饭。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-241-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-tired",
+      "language": "en",
+      "lemma": "tired",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-tired",
+          "kind": "collocation",
+          "text": "feel tired after work",
+          "translation_zh": "下班后觉得累",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-tired-01"
+        },
+        {
+          "item_id": "en-tired",
+          "kind": "example",
+          "text": "She was too tired to drive.",
+          "translation_zh": "她太累了，不能开车。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-tired-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-385",
+      "language": "en",
+      "lemma": "airport",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-385",
+          "kind": "collocation",
+          "text": "airport terminal",
+          "translation_zh": "机场航站楼",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-385-01"
+        },
+        {
+          "item_id": "en-c-385",
+          "kind": "example",
+          "text": "How early should we get to the airport?",
+          "translation_zh": "我们应该提前多久到机场？",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-385-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1831",
+      "language": "en",
+      "lemma": "fare",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-1831",
+          "kind": "collocation",
+          "text": "pay the fare",
+          "translation_zh": "支付车费",
+          "note_zh": "fare 专指交通费用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1831-01"
+        },
+        {
+          "item_id": "en-c-1831",
+          "kind": "pattern",
+          "text": "bus fare, not ticket price in every context",
+          "translation_zh": "公交车费；并非所有票价都叫 fare",
+          "note_zh": "对比：fare 限于交通费用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1831-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-come-up",
+      "language": "en",
+      "lemma": "come up",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-come-up",
+          "kind": "example",
+          "text": "Something urgent came up.",
+          "translation_zh": "突然发生了一件急事。",
+          "note_zh": "事情作主语；come up 表示意外发生。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-come-up-01"
+        },
+        {
+          "item_id": "en-come-up",
+          "kind": "pattern",
+          "text": "Something came up, not I came up something.",
+          "translation_zh": "突然有事，不能把事情放在 come up 后作宾语",
+          "note_zh": "对比：此义的 come up 不及物，事情作主语。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-come-up-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-441",
+      "language": "en",
+      "lemma": "handle",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-441",
+          "kind": "collocation",
+          "text": "handle a complaint",
+          "translation_zh": "处理投诉",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-441-01"
+        },
+        {
+          "item_id": "en-c-441",
+          "kind": "example",
+          "text": "I can handle the booking.",
+          "translation_zh": "我可以处理预订。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-441-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-461",
+      "language": "en",
+      "lemma": "reserve",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-461",
+          "kind": "collocation",
+          "text": "reserve a table",
+          "translation_zh": "预订餐桌",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-461-01"
+        },
+        {
+          "item_id": "en-c-461",
+          "kind": "example",
+          "text": "We reserved a room for two nights.",
+          "translation_zh": "我们预订了一个房间，住两晚。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-461-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-597",
+      "language": "en",
+      "lemma": "private",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-597",
+          "kind": "collocation",
+          "text": "a private conversation",
+          "translation_zh": "私人谈话",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-597-01"
+        },
+        {
+          "item_id": "en-c-597",
+          "kind": "example",
+          "text": "I would rather discuss this in private.",
+          "translation_zh": "我更愿意私下讨论这件事。",
+          "note_zh": "in private 是相关常用表达。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-597-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-137",
+      "language": "en",
+      "lemma": "time",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-137",
+          "kind": "pattern",
+          "text": "spend time with family",
+          "translation_zh": "与家人共度时光",
+          "note_zh": "spend time with someone。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-137-01"
+        },
+        {
+          "item_id": "en-c-137",
+          "kind": "pattern",
+          "text": "have time to do something",
+          "translation_zh": "有时间做某事",
+          "note_zh": "time 在此通常不可数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-137-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-197",
+      "language": "en",
+      "lemma": "use",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-197",
+          "kind": "collocation",
+          "text": "use public transport",
+          "translation_zh": "使用公共交通",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-197-01"
+        },
+        {
+          "item_id": "en-c-197",
+          "kind": "example",
+          "text": "Can I use this card here?",
+          "translation_zh": "我可以在这里使用这张卡吗？",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-197-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-221",
+      "language": "en",
+      "lemma": "small",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-221",
+          "kind": "collocation",
+          "text": "a small room",
+          "translation_zh": "一间小房间",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-221-01"
+        },
+        {
+          "item_id": "en-c-221",
+          "kind": "example",
+          "text": "We only need a small table.",
+          "translation_zh": "我们只需要一张小桌子。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-221-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-233",
+      "language": "en",
+      "lemma": "good",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-233",
+          "kind": "pattern",
+          "text": "a good idea / a good choice",
+          "translation_zh": "好主意／好选择",
+          "note_zh": "对比：同一“好的”义项与不同日常名词的自然搭配。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-233-01"
+        },
+        {
+          "item_id": "en-c-233",
+          "kind": "example",
+          "text": "That sounds like a good idea.",
+          "translation_zh": "那听起来是个好主意。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-233-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-353",
+      "language": "en",
+      "lemma": "hungry",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-353",
+          "kind": "collocation",
+          "text": "get hungry",
+          "translation_zh": "变饿；觉得饿",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-353-01"
+        },
+        {
+          "item_id": "en-c-353",
+          "kind": "example",
+          "text": "I am hungry, but I can wait.",
+          "translation_zh": "我饿了，不过我可以等。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-353-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-525",
+      "language": "en",
+      "lemma": "concern",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-525",
+          "kind": "pattern",
+          "text": "express concern about safety",
+          "translation_zh": "表达对安全的担忧",
+          "note_zh": "concern about 后接担忧对象。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-525-01"
+        },
+        {
+          "item_id": "en-c-525",
+          "kind": "example",
+          "text": "Safety is our main concern.",
+          "translation_zh": "安全是我们最担心的问题。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-525-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-2209",
+      "language": "en",
+      "lemma": "invitation",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-2209",
+          "kind": "collocation",
+          "text": "accept an invitation",
+          "translation_zh": "接受邀请",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-2209-01"
+        },
+        {
+          "item_id": "en-c-2209",
+          "kind": "example",
+          "text": "I had to decline the invitation.",
+          "translation_zh": "我不得不谢绝邀请。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-2209-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-337",
+      "language": "en",
+      "lemma": "expensive",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-337",
+          "kind": "collocation",
+          "text": "too expensive",
+          "translation_zh": "太贵",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-337-01"
+        },
+        {
+          "item_id": "en-c-337",
+          "kind": "example",
+          "text": "The hotel was more expensive than expected.",
+          "translation_zh": "这家酒店比预期贵。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-337-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-365",
+      "language": "en",
+      "lemma": "early",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-365",
+          "kind": "collocation",
+          "text": "arrive early",
+          "translation_zh": "早到",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-365-01"
+        },
+        {
+          "item_id": "en-c-365",
+          "kind": "pattern",
+          "text": "arrive early / leave early",
+          "translation_zh": "早到／早走",
+          "note_zh": "对比：early 可修饰不同动作。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-365-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1001",
+      "language": "en",
+      "lemma": "take care",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-1001",
+          "kind": "example",
+          "text": "Take care on the road.",
+          "translation_zh": "路上小心。",
+          "note_zh": "告别或提醒对方注意安全。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1001-01"
+        },
+        {
+          "item_id": "en-c-1001",
+          "kind": "example",
+          "text": "Take care, and call me when you arrive.",
+          "translation_zh": "保重，到了给我打电话。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1001-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1037",
+      "language": "en",
+      "lemma": "enjoy",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-1037",
+          "kind": "pattern",
+          "text": "enjoy cooking",
+          "translation_zh": "喜欢做饭",
+          "note_zh": "enjoy 后接名词或动名词，不接 to-infinitive。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1037-01"
+        },
+        {
+          "item_id": "en-c-1037",
+          "kind": "pattern",
+          "text": "enjoy the meal / enjoy cooking",
+          "translation_zh": "享用这顿饭／喜欢做饭",
+          "note_zh": "对比：enjoy 接名词或动名词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1037-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-405",
+      "language": "en",
+      "lemma": "headache",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-405",
+          "kind": "pattern",
+          "text": "have a headache",
+          "translation_zh": "头疼",
+          "note_zh": "英语通常说 have a headache。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-405-01"
+        },
+        {
+          "item_id": "en-c-405",
+          "kind": "example",
+          "text": "I have had a headache since this morning.",
+          "translation_zh": "我从今天早上起一直头疼。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-405-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-953",
+      "language": "en",
+      "lemma": "moment",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-953",
+          "kind": "collocation",
+          "text": "for a moment",
+          "translation_zh": "一会儿",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-953-01"
+        },
+        {
+          "item_id": "en-c-953",
+          "kind": "example",
+          "text": "Could you wait a moment?",
+          "translation_zh": "你能稍等一下吗？",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-953-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-001",
+      "language": "en",
+      "lemma": "water",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-001",
+          "kind": "collocation",
+          "text": "a bottle of water",
+          "translation_zh": "一瓶水",
+          "note_zh": "water 通常不可数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-001-01"
+        },
+        {
+          "item_id": "en-c-001",
+          "kind": "example",
+          "text": "Could I have some water, please?",
+          "translation_zh": "请给我一些水，好吗？",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-001-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-005",
+      "language": "en",
+      "lemma": "coffee",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-005",
+          "kind": "collocation",
+          "text": "a cup of coffee",
+          "translation_zh": "一杯咖啡",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-005-01"
+        },
+        {
+          "item_id": "en-c-005",
+          "kind": "example",
+          "text": "I drink coffee without sugar.",
+          "translation_zh": "我喝咖啡不加糖。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-005-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-057",
+      "language": "en",
+      "lemma": "dinner",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-057",
+          "kind": "collocation",
+          "text": "have dinner",
+          "translation_zh": "吃晚餐",
+          "note_zh": "餐名前通常不加冠词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-057-01"
+        },
+        {
+          "item_id": "en-c-057",
+          "kind": "example",
+          "text": "Dinner is ready.",
+          "translation_zh": "晚饭准备好了。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-057-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-073",
+      "language": "en",
+      "lemma": "window",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-073",
+          "kind": "collocation",
+          "text": "close the window",
+          "translation_zh": "关窗",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-073-01"
+        },
+        {
+          "item_id": "en-c-073",
+          "kind": "example",
+          "text": "Could you open the window?",
+          "translation_zh": "你能打开窗户吗？",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-073-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-093",
+      "language": "en",
+      "lemma": "friend",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-093",
+          "kind": "collocation",
+          "text": "a close friend",
+          "translation_zh": "一位亲密朋友",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-093-01"
+        },
+        {
+          "item_id": "en-c-093",
+          "kind": "example",
+          "text": "I am meeting a friend after work.",
+          "translation_zh": "我下班后要见一个朋友。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-093-02"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-129",
+      "language": "en",
+      "lemma": "morning",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-129",
+          "kind": "collocation",
+          "text": "in the morning",
+          "translation_zh": "在早上",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-129-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-969",
+      "language": "en",
+      "lemma": "card",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-969",
+          "kind": "collocation",
+          "text": "a credit card",
+          "translation_zh": "信用卡",
+          "note_zh": "单数可数名词带冠词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-969-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-253",
+      "language": "en",
+      "lemma": "bring",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-253",
+          "kind": "pattern",
+          "text": "bring something with you",
+          "translation_zh": "随身带某物",
+          "note_zh": "bring 强调带到说话者或目的地。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-253-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-273",
+      "language": "en",
+      "lemma": "remember",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-273",
+          "kind": "pattern",
+          "text": "remember to lock the door",
+          "translation_zh": "记得锁门",
+          "note_zh": "remember to do 指记得去做。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-273-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-285",
+      "language": "en",
+      "lemma": "choose",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-285",
+          "kind": "pattern",
+          "text": "choose between two options",
+          "translation_zh": "在两个选项中选择",
+          "note_zh": "choose between 用于有限选项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-285-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-329",
+      "language": "en",
+      "lemma": "easy",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-329",
+          "kind": "pattern",
+          "text": "easy to use",
+          "translation_zh": "容易使用",
+          "note_zh": "形容词 + to-infinitive。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-329-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-349",
+      "language": "en",
+      "lemma": "sweet",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-349",
+          "kind": "collocation",
+          "text": "too sweet",
+          "translation_zh": "太甜",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-349-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-925",
+      "language": "en",
+      "lemma": "simple",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-925",
+          "kind": "collocation",
+          "text": "keep it simple",
+          "translation_zh": "保持简单",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-925-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-961",
+      "language": "en",
+      "lemma": "move",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-961",
+          "kind": "pattern",
+          "text": "move the meeting to Friday",
+          "translation_zh": "把会议改到星期五",
+          "note_zh": "move ... to ... 表示更改安排。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-961-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1049",
+      "language": "en",
+      "lemma": "practise",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-1049",
+          "kind": "pattern",
+          "text": "practise speaking English",
+          "translation_zh": "练习说英语",
+          "note_zh": "英式拼写 practise 作动词；后接动名词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1049-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-393",
+      "language": "en",
+      "lemma": "size",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-393",
+          "kind": "example",
+          "text": "What size do you need?",
+          "translation_zh": "你需要什么尺码？",
+          "note_zh": "询问衣物或商品尺码。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-393-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-3174",
+      "language": "en",
+      "lemma": "live",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-3174",
+          "kind": "pattern",
+          "text": "live with my parents",
+          "translation_zh": "和父母同住",
+          "note_zh": "live with 后接同住的人。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-3174-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-373",
+      "language": "en",
+      "lemma": "homework",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-373",
+          "kind": "collocation",
+          "text": "finish your homework",
+          "translation_zh": "完成作业",
+          "note_zh": "homework 通常不可数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-373-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-397",
+      "language": "en",
+      "lemma": "price",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-397",
+          "kind": "collocation",
+          "text": "a reasonable price",
+          "translation_zh": "合理的价格",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-397-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-409",
+      "language": "en",
+      "lemma": "pain",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-409",
+          "kind": "collocation",
+          "text": "relieve the pain",
+          "translation_zh": "缓解疼痛",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-409-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-413",
+      "language": "en",
+      "lemma": "break",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-413",
+          "kind": "collocation",
+          "text": "a lunch break",
+          "translation_zh": "午休",
+          "note_zh": "break 作一次休息时是可数名词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-413-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-425",
+      "language": "en",
+      "lemma": "weather",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-425",
+          "kind": "collocation",
+          "text": "bad weather",
+          "translation_zh": "恶劣天气",
+          "note_zh": "weather 通常不可数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-425-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-437",
+      "language": "en",
+      "lemma": "jacket",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-437",
+          "kind": "collocation",
+          "text": "wear a jacket",
+          "translation_zh": "穿着夹克",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-437-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-913",
+      "language": "en",
+      "lemma": "joke",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-913",
+          "kind": "collocation",
+          "text": "make a joke",
+          "translation_zh": "开玩笑",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-913-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-937",
+      "language": "en",
+      "lemma": "seat",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-937",
+          "kind": "collocation",
+          "text": "a window seat",
+          "translation_zh": "靠窗座位",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-937-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-941",
+      "language": "en",
+      "lemma": "trash",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-941",
+          "kind": "collocation",
+          "text": "a trash bag",
+          "translation_zh": "垃圾袋",
+          "note_zh": "常见美式搭配。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-941-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1605",
+      "language": "en",
+      "lemma": "spare key",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-1605",
+          "kind": "pattern",
+          "text": "leave a spare key with a neighbour",
+          "translation_zh": "把备用钥匙留给邻居",
+          "note_zh": "leave something with someone 表示交由保管。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1605-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1755",
+      "language": "en",
+      "lemma": "receipt",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-1755",
+          "kind": "pattern",
+          "text": "ask for a receipt",
+          "translation_zh": "索要收据",
+          "note_zh": "receipt 是可数名词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1755-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-work-verb",
+      "language": "en",
+      "lemma": "work",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-work-verb",
+          "kind": "pattern",
+          "text": "work from home",
+          "translation_zh": "居家办公",
+          "note_zh": "work 在此作动词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-work-verb-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-445",
+      "language": "en",
+      "lemma": "focus",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-445",
+          "kind": "pattern",
+          "text": "focus on one task",
+          "translation_zh": "专注于一项任务",
+          "note_zh": "focus on 后接目标。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-445-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-453",
+      "language": "en",
+      "lemma": "decide",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-453",
+          "kind": "pattern",
+          "text": "decide to stay",
+          "translation_zh": "决定留下",
+          "note_zh": "decide to 后接动词原形。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-453-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-689",
+      "language": "en",
+      "lemma": "slight",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-689",
+          "kind": "collocation",
+          "text": "a slight delay",
+          "translation_zh": "轻微延误",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-689-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-933",
+      "language": "en",
+      "lemma": "work on",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-933",
+          "kind": "pattern",
+          "text": "work on improving the design",
+          "translation_zh": "着手改进设计",
+          "note_zh": "work on 后接名词或动名词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-933-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1061",
+      "language": "en",
+      "lemma": "get back to",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-1061",
+          "kind": "pattern",
+          "text": "get back to someone by Friday",
+          "translation_zh": "星期五前回复某人",
+          "note_zh": "get back to 后接回复对象。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1061-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1065",
+      "language": "en",
+      "lemma": "appreciate",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-1065",
+          "kind": "pattern",
+          "text": "appreciate your help",
+          "translation_zh": "感谢你的帮助",
+          "note_zh": "appreciate 直接接事物，不接 to someone。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1065-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1492",
+      "language": "en",
+      "lemma": "light",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-1492",
+          "kind": "collocation",
+          "text": "a light meal",
+          "translation_zh": "清淡的一餐",
+          "note_zh": "light 表示不油腻或分量不重。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1492-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-157",
+      "language": "en",
+      "lemma": "station",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-157",
+          "kind": "collocation",
+          "text": "train station",
+          "translation_zh": "火车站",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-157-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1093",
+      "language": "en",
+      "lemma": "report",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-1093",
+          "kind": "collocation",
+          "text": "submit a report",
+          "translation_zh": "提交报告",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1093-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1530",
+      "language": "en",
+      "lemma": "deadline",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-1530",
+          "kind": "collocation",
+          "text": "meet a deadline",
+          "translation_zh": "按期完成",
+          "note_zh": "固定搭配，不说 catch a deadline。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1530-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1017",
+      "language": "en",
+      "lemma": "great",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-1017",
+          "kind": "collocation",
+          "text": "a great idea",
+          "translation_zh": "好主意",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1017-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1981",
+      "language": "en",
+      "lemma": "thirsty",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-1981",
+          "kind": "collocation",
+          "text": "get thirsty",
+          "translation_zh": "觉得口渴",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1981-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-3182",
+      "language": "en",
+      "lemma": "okay",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-3182",
+          "kind": "example",
+          "text": "Are you okay?",
+          "translation_zh": "你还好吗？",
+          "note_zh": "用于确认对方状态。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-3182-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-085",
+      "language": "en",
+      "lemma": "book",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-085",
+          "kind": "collocation",
+          "text": "borrow a book",
+          "translation_zh": "借一本书",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-085-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-133",
+      "language": "en",
+      "lemma": "night",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-133",
+          "kind": "collocation",
+          "text": "last night",
+          "translation_zh": "昨晚",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-133-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1378",
+      "language": "en",
+      "lemma": "name",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-1378",
+          "kind": "collocation",
+          "text": "full name",
+          "translation_zh": "全名",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1378-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1907",
+      "language": "en",
+      "lemma": "umbrella",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-1907",
+          "kind": "collocation",
+          "text": "open an umbrella",
+          "translation_zh": "撑开雨伞",
+          "note_zh": "单数 umbrella 前用 an。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1907-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-533",
+      "language": "en",
+      "lemma": "result",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-533",
+          "kind": "collocation",
+          "text": "test results",
+          "translation_zh": "检查结果；测试结果",
+          "note_zh": "谈多项结果时常用复数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-533-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1097",
+      "language": "en",
+      "lemma": "cost",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-1097",
+          "kind": "collocation",
+          "text": "reduce costs",
+          "translation_zh": "降低成本",
+          "note_zh": "泛指多项成本时常用复数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1097-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-1416",
+      "language": "en",
+      "lemma": "small talk",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-1416",
+          "kind": "pattern",
+          "text": "make small talk with a neighbour",
+          "translation_zh": "和邻居寒暄",
+          "note_zh": "small talk 通常不可数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-1416-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-2323",
+      "language": "en",
+      "lemma": "favor",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "en-c-2323",
+          "kind": "pattern",
+          "text": "ask someone a favor",
+          "translation_zh": "请某人帮忙",
+          "note_zh": "favor 是一次具体帮忙，可数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-2323-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-277",
+      "language": "en",
+      "lemma": "learn",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-277",
+          "kind": "pattern",
+          "text": "learn to drive",
+          "translation_zh": "学习开车",
+          "note_zh": "learn to 后接动词原形。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-277-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-317",
+      "language": "en",
+      "lemma": "understand",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-317",
+          "kind": "pattern",
+          "text": "understand how it works",
+          "translation_zh": "理解它如何运作",
+          "note_zh": "understand 可接 how 从句。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-317-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-321",
+      "language": "en",
+      "lemma": "nearby",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-321",
+          "kind": "example",
+          "text": "There is a pharmacy nearby.",
+          "translation_zh": "附近有一家药房。",
+          "note_zh": "此词按当前 adverb 义使用，不放在名词前。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-321-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-361",
+      "language": "en",
+      "lemma": "late",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "en-c-361",
+          "kind": "collocation",
+          "text": "run late",
+          "translation_zh": "晚点；进度拖延",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-361-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-125",
+      "language": "en",
+      "lemma": "yesterday",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-125",
+          "kind": "collocation",
+          "text": "yesterday afternoon",
+          "translation_zh": "昨天下午",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-125-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-161",
+      "language": "en",
+      "lemma": "drink",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-161",
+          "kind": "collocation",
+          "text": "drink plenty of water",
+          "translation_zh": "多喝水",
+          "note_zh": "water 通常不可数。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-161-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-165",
+      "language": "en",
+      "lemma": "buy",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-165",
+          "kind": "pattern",
+          "text": "buy something for a friend",
+          "translation_zh": "给朋友买东西",
+          "note_zh": "buy something for someone。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-165-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-169",
+      "language": "en",
+      "lemma": "read",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-169",
+          "kind": "pattern",
+          "text": "read about local history",
+          "translation_zh": "阅读有关当地历史的内容",
+          "note_zh": "read about 后接主题。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-169-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-173",
+      "language": "en",
+      "lemma": "write",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-173",
+          "kind": "pattern",
+          "text": "write down the address",
+          "translation_zh": "写下地址",
+          "note_zh": "write down 是可分短语动词。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-173-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-177",
+      "language": "en",
+      "lemma": "listen",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-177",
+          "kind": "pattern",
+          "text": "listen to advice",
+          "translation_zh": "听取建议",
+          "note_zh": "listen 后需用介词 to。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-177-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-181",
+      "language": "en",
+      "lemma": "speak",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-181",
+          "kind": "pattern",
+          "text": "speak to the manager",
+          "translation_zh": "和经理谈话",
+          "note_zh": "speak to 后接交谈对象。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-181-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-185",
+      "language": "en",
+      "lemma": "sleep",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-185",
+          "kind": "pattern",
+          "text": "sleep for eight hours",
+          "translation_zh": "睡八个小时",
+          "note_zh": "for 表示持续时长。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-185-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-201",
+      "language": "en",
+      "lemma": "open",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-201",
+          "kind": "example",
+          "text": "Please open the box carefully.",
+          "translation_zh": "请小心地打开盒子。",
+          "note_zh": "open 保持“打开物体”的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-201-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-205",
+      "language": "en",
+      "lemma": "close",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-205",
+          "kind": "example",
+          "text": "Please close the gate behind you.",
+          "translation_zh": "请随手关上身后的门。",
+          "note_zh": "close 保持“关闭物体”的当前义项。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-205-01"
+        }
+      ]
+    },
+    {
+      "item_id": "en-c-209",
+      "language": "en",
+      "lemma": "hot",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "en-c-209",
+          "kind": "pattern",
+          "text": "too hot to eat",
+          "translation_zh": "太烫，不能吃",
+          "note_zh": "hot 可描述食物温度。",
+          "readings_json": "[]",
+          "id": "35e1a2-ve-en-c-209-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-iku",
+      "language": "ja",
+      "lemma": "行く",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-iku",
+          "kind": "collocation",
+          "text": "学校へ行く",
+          "translation_zh": "去学校",
+          "note_zh": "目的地可用へ标记。",
+          "readings_json": "[{\"text\":\"学校へ行く\",\"reading\":\"がっこうへいく\"}]",
+          "id": "35e1a2-ve-ja-iku-01"
+        },
+        {
+          "item_id": "ja-iku",
+          "kind": "pattern",
+          "text": "学校に行く／学校へ行く",
+          "translation_zh": "去学校／朝学校方向去",
+          "note_zh": "对比：に侧重到达点，へ侧重方向；两者在此都自然。",
+          "readings_json": "[{\"text\":\"学校に行く／学校へ行く\",\"reading\":\"がっこうにいく／がっこうへいく\"}]",
+          "id": "35e1a2-ve-ja-iku-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-235",
+      "language": "ja",
+      "lemma": "いい",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-235",
+          "kind": "collocation",
+          "text": "体にいい",
+          "translation_zh": "对身体好",
+          "note_zh": "いい与に搭配表示对某对象有益。",
+          "readings_json": "[{\"text\":\"体にいい\",\"reading\":\"からだにいい\"}]",
+          "id": "35e1a2-ve-ja-c-235-01"
+        },
+        {
+          "item_id": "ja-c-235",
+          "kind": "example",
+          "text": "この店の料理は安くておいしいので、いいと思います。",
+          "translation_zh": "这家店的菜又便宜又好吃，我觉得不错。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"この店の料理は安くておいしいので、いいと思います。\",\"reading\":\"このみせのりょうりはやすくておいしいので、いいとおもいます。\"}]",
+          "id": "35e1a2-ve-ja-c-235-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-mada",
+      "language": "ja",
+      "lemma": "まだ",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-mada",
+          "kind": "pattern",
+          "text": "まだ終わっていない",
+          "translation_zh": "还没有结束",
+          "note_zh": "まだ与否定形搭配表示尚未。",
+          "readings_json": "[{\"text\":\"まだ終わっていない\",\"reading\":\"まだおわっていない\"}]",
+          "id": "35e1a2-ve-ja-mada-01"
+        },
+        {
+          "item_id": "ja-mada",
+          "kind": "pattern",
+          "text": "まだ来ていません／もう来ました",
+          "translation_zh": "还没来／已经来了",
+          "note_zh": "对比：まだ + 否定表示尚未；もう + 肯定表示已经。",
+          "readings_json": "[{\"text\":\"まだ来ていません／もう来ました\",\"reading\":\"まだきていません／もうきました\"}]",
+          "id": "35e1a2-ve-ja-mada-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-taberu",
+      "language": "ja",
+      "lemma": "食べる",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-taberu",
+          "kind": "collocation",
+          "text": "外で昼ご飯を食べる",
+          "translation_zh": "在外面吃午饭",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"外で昼ご飯を食べる\",\"reading\":\"そとでひるごはんをたべる\"}]",
+          "id": "35e1a2-ve-ja-taberu-01"
+        },
+        {
+          "item_id": "ja-taberu",
+          "kind": "example",
+          "text": "辛い物はあまり食べません。",
+          "translation_zh": "我不太吃辣的东西。",
+          "note_zh": "あまり与否定形搭配。",
+          "readings_json": "[{\"text\":\"辛い物はあまり食べません。\",\"reading\":\"からいものはあまりたべません。\"}]",
+          "id": "35e1a2-ve-ja-taberu-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-ashita",
+      "language": "ja",
+      "lemma": "明日",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-ashita",
+          "kind": "collocation",
+          "text": "明日の朝",
+          "translation_zh": "明天早上",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"明日の朝\",\"reading\":\"あしたのあさ\"}]",
+          "id": "35e1a2-ve-ja-ashita-01"
+        },
+        {
+          "item_id": "ja-ashita",
+          "kind": "example",
+          "text": "明日は朝から仕事です。",
+          "translation_zh": "明天从早上开始工作。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"明日は朝から仕事です。\",\"reading\":\"あしたはあさからしごとです。\"}]",
+          "id": "35e1a2-ve-ja-ashita-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-daijoubu",
+      "language": "ja",
+      "lemma": "大丈夫",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-daijoubu",
+          "kind": "example",
+          "text": "大丈夫ですか。",
+          "translation_zh": "你没事吧？",
+          "note_zh": "用于确认对方身体或处境是否无碍。",
+          "readings_json": "[{\"text\":\"大丈夫ですか。\",\"reading\":\"だいじょうぶですか。\"}]",
+          "id": "35e1a2-ve-ja-daijoubu-01"
+        },
+        {
+          "item_id": "ja-daijoubu",
+          "kind": "pattern",
+          "text": "大丈夫です。／大丈夫ですか。",
+          "translation_zh": "没关系。／你没事吧？",
+          "note_zh": "对比：陈述表示无碍；加か成为关心或确认。",
+          "readings_json": "[{\"text\":\"大丈夫です。／大丈夫ですか。\",\"reading\":\"だいじょうぶです。／だいじょうぶですか。\"}]",
+          "id": "35e1a2-ve-ja-daijoubu-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-dekiru",
+      "language": "ja",
+      "lemma": "できる",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-dekiru",
+          "kind": "collocation",
+          "text": "急な用事ができる",
+          "translation_zh": "突然有事",
+          "note_zh": "此义用事情作が格主语，表示事情产生。",
+          "readings_json": "[{\"text\":\"急な用事ができる\",\"reading\":\"きゅうなようじができる\"}]",
+          "id": "35e1a2-ve-ja-dekiru-01"
+        },
+        {
+          "item_id": "ja-dekiru",
+          "kind": "example",
+          "text": "駅の近くに新しい店ができました。",
+          "translation_zh": "车站附近开了一家新店。",
+          "note_zh": "此义表示新事物出现，不是能力用法。",
+          "readings_json": "[{\"text\":\"駅の近くに新しい店ができました。\",\"reading\":\"えきのちかくにあたらしいみせができました。\"}]",
+          "id": "35e1a2-ve-ja-dekiru-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-315",
+      "language": "ja",
+      "lemma": "必要",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-315",
+          "kind": "pattern",
+          "text": "予約が必要になる",
+          "translation_zh": "变得需要预约",
+          "note_zh": "必要だ／必要になる常用が标记所需对象。",
+          "readings_json": "[{\"text\":\"予約が必要になる\",\"reading\":\"よやくがひつようになる\"}]",
+          "id": "35e1a2-ve-ja-c-315-01"
+        },
+        {
+          "item_id": "ja-c-315",
+          "kind": "example",
+          "text": "申し込みには身分証明書が必要です。",
+          "translation_zh": "申请时需要身份证明。",
+          "note_zh": "必要的对象用が。",
+          "readings_json": "[{\"text\":\"申し込みには身分証明書が必要です。\",\"reading\":\"もうしこみにはみぶんしょうめいしょがひつようです。\"}]",
+          "id": "35e1a2-ve-ja-c-315-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-yotei",
+      "language": "ja",
+      "lemma": "予定",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-yotei",
+          "kind": "collocation",
+          "text": "予定を立てる",
+          "translation_zh": "制订安排",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"予定を立てる\",\"reading\":\"よていをたてる\"}]",
+          "id": "35e1a2-ve-ja-yotei-01"
+        },
+        {
+          "item_id": "ja-yotei",
+          "kind": "example",
+          "text": "午後の予定を確認します。",
+          "translation_zh": "我确认一下下午的安排。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"午後の予定を確認します。\",\"reading\":\"ごごのよていをかくにんします。\"}]",
+          "id": "35e1a2-ve-ja-yotei-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-ame",
+      "language": "ja",
+      "lemma": "雨",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-ame",
+          "kind": "collocation",
+          "text": "雨が降る",
+          "translation_zh": "下雨",
+          "note_zh": "雨作名词，与降る构成自然搭配。",
+          "readings_json": "[{\"text\":\"雨が降る\",\"reading\":\"あめがふる\"}]",
+          "id": "35e1a2-ve-ja-ame-01"
+        },
+        {
+          "item_id": "ja-ame",
+          "kind": "example",
+          "text": "午後から雨が降るそうです。",
+          "translation_zh": "听说下午开始下雨。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"午後から雨が降るそうです。\",\"reading\":\"ごごからあめがふるそうです。\"}]",
+          "id": "35e1a2-ve-ja-ame-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-3187",
+      "language": "ja",
+      "lemma": "ありがとう",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-3187",
+          "kind": "example",
+          "text": "手伝ってくれてありがとう。",
+          "translation_zh": "谢谢你帮忙。",
+          "note_zh": "〜てくれてありがとう用于感谢对方做了某事。",
+          "readings_json": "[{\"text\":\"手伝ってくれてありがとう。\",\"reading\":\"てつだってくれてありがとう。\"}]",
+          "id": "35e1a2-ve-ja-c-3187-01"
+        },
+        {
+          "item_id": "ja-c-3187",
+          "kind": "pattern",
+          "text": "ありがとう。／ありがとうございます。",
+          "translation_zh": "谢谢。／非常感谢。",
+          "note_zh": "对比：前者较随意，后者更礼貌。",
+          "readings_json": "[{\"text\":\"ありがとう。／ありがとうございます。\",\"reading\":\"ありがとう。／ありがとうございます。\"}]",
+          "id": "35e1a2-ve-ja-c-3187-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-3199",
+      "language": "ja",
+      "lemma": "見る",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-3199",
+          "kind": "collocation",
+          "text": "映画を見る",
+          "translation_zh": "看电影",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"映画を見る\",\"reading\":\"えいがをみる\"}]",
+          "id": "35e1a2-ve-ja-c-3199-01"
+        },
+        {
+          "item_id": "ja-c-3199",
+          "kind": "pattern",
+          "text": "映画を見る／山が見える",
+          "translation_zh": "看电影／看得见山",
+          "note_zh": "对比：見る是主动观看；見える是自然进入视野。",
+          "readings_json": "[{\"text\":\"映画を見る／山が見える\",\"reading\":\"えいがをみる／やまがみえる\"}]",
+          "id": "35e1a2-ve-ja-c-3199-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1067",
+      "language": "ja",
+      "lemma": "助かる",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-1067",
+          "kind": "example",
+          "text": "本当に助かりました。",
+          "translation_zh": "真的帮了大忙。",
+          "note_zh": "常用过去礼貌形表达受到帮助后的感谢。",
+          "readings_json": "[{\"text\":\"本当に助かりました。\",\"reading\":\"ほんとうにたすかりました。\"}]",
+          "id": "35e1a2-ve-ja-c-1067-01"
+        },
+        {
+          "item_id": "ja-c-1067",
+          "kind": "example",
+          "text": "駅まで送ってもらえると助かります。",
+          "translation_zh": "如果能送我到车站就帮大忙了。",
+          "note_zh": "〜てもらえると助かります用于礼貌说明希望获得的帮助。",
+          "readings_json": "[{\"text\":\"駅まで送ってもらえると助かります。\",\"reading\":\"えきまでおくってもらえるとたすかります。\"}]",
+          "id": "35e1a2-ve-ja-c-1067-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-123",
+      "language": "ja",
+      "lemma": "今日",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-123",
+          "kind": "collocation",
+          "text": "今日中に",
+          "translation_zh": "今天之内",
+          "note_zh": "今日中に表示截止到今天结束。",
+          "readings_json": "[{\"text\":\"今日中に\",\"reading\":\"きょうじゅうに\"}]",
+          "id": "35e1a2-ve-ja-c-123-01"
+        },
+        {
+          "item_id": "ja-c-123",
+          "kind": "example",
+          "text": "今日は家で仕事をします。",
+          "translation_zh": "今天在家工作。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"今日は家で仕事をします。\",\"reading\":\"きょうはいえでしごとをします。\"}]",
+          "id": "35e1a2-ve-ja-c-123-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-959",
+      "language": "ja",
+      "lemma": "分",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-959",
+          "kind": "collocation",
+          "text": "あと五分",
+          "translation_zh": "还有五分钟",
+          "note_zh": "分作为时间量词时读法随数字变化。",
+          "readings_json": "[{\"text\":\"あと五分\",\"reading\":\"あとごふん\"}]",
+          "id": "35e1a2-ve-ja-c-959-01"
+        },
+        {
+          "item_id": "ja-c-959",
+          "kind": "pattern",
+          "text": "一分・三分・十分",
+          "translation_zh": "一分钟、三分钟、十分钟",
+          "note_zh": "对比：分的读音会随前面的数字发生促音或浊音变化。",
+          "readings_json": "[{\"text\":\"一分・三分・十分\",\"reading\":\"いっぷん・さんぷん・じゅっぷん\"}]",
+          "id": "35e1a2-ve-ja-c-959-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-3195",
+      "language": "ja",
+      "lemma": "鍵",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-3195",
+          "kind": "collocation",
+          "text": "鍵をなくす",
+          "translation_zh": "丢钥匙",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"鍵をなくす\",\"reading\":\"かぎをなくす\"}]",
+          "id": "35e1a2-ve-ja-c-3195-01"
+        },
+        {
+          "item_id": "ja-c-3195",
+          "kind": "example",
+          "text": "出かける前に鍵をかけました。",
+          "translation_zh": "出门前锁了门。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"出かける前に鍵をかけました。\",\"reading\":\"でかけるまえにかぎをかけました。\"}]",
+          "id": "35e1a2-ve-ja-c-3195-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1031",
+      "language": "ja",
+      "lemma": "気持ち",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-1031",
+          "kind": "collocation",
+          "text": "気持ちを伝える",
+          "translation_zh": "表达心意",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"気持ちを伝える\",\"reading\":\"きもちをつたえる\"}]",
+          "id": "35e1a2-ve-ja-c-1031-01"
+        },
+        {
+          "item_id": "ja-c-1031",
+          "kind": "example",
+          "text": "正直な気持ちを話してください。",
+          "translation_zh": "请说说你的真实感受。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"正直な気持ちを話してください。\",\"reading\":\"しょうじきなきもちをはなしてください。\"}]",
+          "id": "35e1a2-ve-ja-c-1031-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-2291",
+      "language": "ja",
+      "lemma": "手伝い",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-2291",
+          "kind": "collocation",
+          "text": "手伝いを頼む",
+          "translation_zh": "请人帮忙",
+          "note_zh": "手伝い作具体协助时可与頼む搭配。",
+          "readings_json": "[{\"text\":\"手伝いを頼む\",\"reading\":\"てつだいをたのむ\"}]",
+          "id": "35e1a2-ve-ja-c-2291-01"
+        },
+        {
+          "item_id": "ja-c-2291",
+          "kind": "example",
+          "text": "引っ越しの手伝いをお願いできますか。",
+          "translation_zh": "可以请你帮忙搬家吗？",
+          "note_zh": "手伝い是名词，前项用の限定协助内容。",
+          "readings_json": "[{\"text\":\"引っ越しの手伝いをお願いできますか。\",\"reading\":\"ひっこしのてつだいをおねがいできますか。\"}]",
+          "id": "35e1a2-ve-ja-c-2291-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-191",
+      "language": "ja",
+      "lemma": "待つ",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-191",
+          "kind": "pattern",
+          "text": "バスを待つ",
+          "translation_zh": "等公交车",
+          "note_zh": "待つ的等待对象用を，不用に。",
+          "readings_json": "[{\"text\":\"バスを待つ\",\"reading\":\"ばすをまつ\"}]",
+          "id": "35e1a2-ve-ja-c-191-01"
+        },
+        {
+          "item_id": "ja-c-191",
+          "kind": "example",
+          "text": "ここで少し待ってください。",
+          "translation_zh": "请在这里稍等。",
+          "note_zh": "等待地点用で。",
+          "readings_json": "[{\"text\":\"ここで少し待ってください。\",\"reading\":\"ここですこしまってください。\"}]",
+          "id": "35e1a2-ve-ja-c-191-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-903",
+      "language": "ja",
+      "lemma": "起きる",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-903",
+          "kind": "collocation",
+          "text": "七時に起きる",
+          "translation_zh": "七点起床",
+          "note_zh": "具体时间用に。",
+          "readings_json": "[{\"text\":\"七時に起きる\",\"reading\":\"しちじにおきる\"}]",
+          "id": "35e1a2-ve-ja-c-903-01"
+        },
+        {
+          "item_id": "ja-c-903",
+          "kind": "example",
+          "text": "今朝は六時に起きました。",
+          "translation_zh": "今天早上六点起床了。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"今朝は六時に起きました。\",\"reading\":\"けさはろくじにおきました。\"}]",
+          "id": "35e1a2-ve-ja-c-903-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-kyuuni",
+      "language": "ja",
+      "lemma": "急に",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-kyuuni",
+          "kind": "collocation",
+          "text": "急に寒くなる",
+          "translation_zh": "突然变冷",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"急に寒くなる\",\"reading\":\"きゅうにさむくなる\"}]",
+          "id": "35e1a2-ve-ja-kyuuni-01"
+        },
+        {
+          "item_id": "ja-kyuuni",
+          "kind": "example",
+          "text": "急に予定が変わりました。",
+          "translation_zh": "计划突然改变了。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"急に予定が変わりました。\",\"reading\":\"きゅうによていがかわりました。\"}]",
+          "id": "35e1a2-ve-ja-kyuuni-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1083",
+      "language": "ja",
+      "lemma": "結局",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-1083",
+          "kind": "example",
+          "text": "結局、行きませんでした。",
+          "translation_zh": "结果还是没去。",
+          "note_zh": "结局用于说明经过变化后的最终结果。",
+          "readings_json": "[{\"text\":\"結局、行きませんでした。\",\"reading\":\"けっきょく、いきませんでした。\"}]",
+          "id": "35e1a2-ve-ja-c-1083-01"
+        },
+        {
+          "item_id": "ja-c-1083",
+          "kind": "example",
+          "text": "何度も話し合いましたが、結局決まりませんでした。",
+          "translation_zh": "讨论了很多次，结果还是没有决定。",
+          "note_zh": "结局置于最终结果前。",
+          "readings_json": "[{\"text\":\"何度も話し合いましたが、結局決まりませんでした。\",\"reading\":\"なんどもはなしあいましたが、けっきょくきまりませんでした。\"}]",
+          "id": "35e1a2-ve-ja-c-1083-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-003",
+      "language": "ja",
+      "lemma": "水",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-003",
+          "kind": "collocation",
+          "text": "水を一杯飲む",
+          "translation_zh": "喝一杯水",
+          "note_zh": "水作饮用对象用を。",
+          "readings_json": "[{\"text\":\"水を一杯飲む\",\"reading\":\"みずをいっぱいのむ\"}]",
+          "id": "35e1a2-ve-ja-c-003-01"
+        },
+        {
+          "item_id": "ja-c-003",
+          "kind": "example",
+          "text": "運動の後は水をたくさん飲みます。",
+          "translation_zh": "运动后会喝很多水。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"運動の後は水をたくさん飲みます。\",\"reading\":\"うんどうのあとはみずをたくさんのみます。\"}]",
+          "id": "35e1a2-ve-ja-c-003-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-263",
+      "language": "ja",
+      "lemma": "着く",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-263",
+          "kind": "collocation",
+          "text": "駅に着く",
+          "translation_zh": "到达车站",
+          "note_zh": "到达点用に。",
+          "readings_json": "[{\"text\":\"駅に着く\",\"reading\":\"えきにつく\"}]",
+          "id": "35e1a2-ve-ja-c-263-01"
+        },
+        {
+          "item_id": "ja-c-263",
+          "kind": "example",
+          "text": "空港には何時に着きますか。",
+          "translation_zh": "几点到机场？",
+          "note_zh": "到达点用に；は在此提示话题。",
+          "readings_json": "[{\"text\":\"空港には何時に着きますか。\",\"reading\":\"くうこうにはなんじにつきますか。\"}]",
+          "id": "35e1a2-ve-ja-c-263-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-419",
+      "language": "ja",
+      "lemma": "散歩",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-419",
+          "kind": "collocation",
+          "text": "朝の散歩",
+          "translation_zh": "晨间散步",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"朝の散歩\",\"reading\":\"あさのさんぽ\"}]",
+          "id": "35e1a2-ve-ja-c-419-01"
+        },
+        {
+          "item_id": "ja-c-419",
+          "kind": "example",
+          "text": "夕食の後で散歩をしました。",
+          "translation_zh": "晚饭后散了步。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"夕食の後で散歩をしました。\",\"reading\":\"ゆうしょくのあとでさんぽをしました。\"}]",
+          "id": "35e1a2-ve-ja-c-419-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-155",
+      "language": "ja",
+      "lemma": "電車",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-155",
+          "kind": "collocation",
+          "text": "電車を降りる",
+          "translation_zh": "下电车",
+          "note_zh": "离开的交通工具用を。",
+          "readings_json": "[{\"text\":\"電車を降りる\",\"reading\":\"でんしゃをおりる\"}]",
+          "id": "35e1a2-ve-ja-c-155-01"
+        },
+        {
+          "item_id": "ja-c-155",
+          "kind": "example",
+          "text": "次の電車は十分後に来ます。",
+          "translation_zh": "下一班电车十分钟后到。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"次の電車は十分後に来ます。\",\"reading\":\"つぎのでんしゃはじゅっぷんごにきます。\"}]",
+          "id": "35e1a2-ve-ja-c-155-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-295",
+      "language": "ja",
+      "lemma": "確認する",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-295",
+          "kind": "collocation",
+          "text": "予約を確認する",
+          "translation_zh": "确认预约",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"予約を確認する\",\"reading\":\"よやくをかくにんする\"}]",
+          "id": "35e1a2-ve-ja-c-295-01"
+        },
+        {
+          "item_id": "ja-c-295",
+          "kind": "example",
+          "text": "送信する前に住所を確認してください。",
+          "translation_zh": "发送前请确认地址。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"送信する前に住所を確認してください。\",\"reading\":\"そうしんするまえにじゅうしょをかくにんしてください。\"}]",
+          "id": "35e1a2-ve-ja-c-295-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-tetsudau",
+      "language": "ja",
+      "lemma": "手伝う",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-tetsudau",
+          "kind": "pattern",
+          "text": "家事を手伝う",
+          "translation_zh": "帮忙做家务",
+          "note_zh": "手伝う的协助内容用を。",
+          "readings_json": "[{\"text\":\"家事を手伝う\",\"reading\":\"かじをてつだう\"}]",
+          "id": "35e1a2-ve-ja-tetsudau-01"
+        },
+        {
+          "item_id": "ja-tetsudau",
+          "kind": "pattern",
+          "text": "家事を手伝う／困っている人を助ける",
+          "translation_zh": "帮忙做家务／帮助有困难的人",
+          "note_zh": "对比：手伝う偏协助任务；助ける偏援助或救助人。",
+          "readings_json": "[{\"text\":\"家事を手伝う／困っている人を助ける\",\"reading\":\"かじをてつだう／こまっているひとをたすける\"}]",
+          "id": "35e1a2-ve-ja-tetsudau-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-tochuu",
+      "language": "ja",
+      "lemma": "途中",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-tochuu",
+          "kind": "pattern",
+          "text": "帰る途中で",
+          "translation_zh": "在回去的路上",
+          "note_zh": "动词辞书形 + 途中で表示过程中。",
+          "readings_json": "[{\"text\":\"帰る途中で\",\"reading\":\"かえるとちゅうで\"}]",
+          "id": "35e1a2-ve-ja-tochuu-01"
+        },
+        {
+          "item_id": "ja-tochuu",
+          "kind": "example",
+          "text": "会社へ行く途中で友達に会いました。",
+          "translation_zh": "去公司的路上遇到了朋友。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"会社へ行く途中で友達に会いました。\",\"reading\":\"かいしゃへいくとちゅうでともだちにあいました。\"}]",
+          "id": "35e1a2-ve-ja-tochuu-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-3203",
+      "language": "ja",
+      "lemma": "今度",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-3203",
+          "kind": "collocation",
+          "text": "今度の週末",
+          "translation_zh": "这个／下一个周末",
+          "note_zh": "具体指哪一个周末由语境确定。",
+          "readings_json": "[{\"text\":\"今度の週末\",\"reading\":\"こんどのしゅうまつ\"}]",
+          "id": "35e1a2-ve-ja-c-3203-01"
+        },
+        {
+          "item_id": "ja-c-3203",
+          "kind": "pattern",
+          "text": "今度行きます／今度は私が払います",
+          "translation_zh": "下次去／这次由我付钱",
+          "note_zh": "对比：今度可指下次，也可指当前这一次，需由语境判断。",
+          "readings_json": "[{\"text\":\"今度行きます／今度は私が払います\",\"reading\":\"こんどいきます／こんどはわたしがはらいます\"}]",
+          "id": "35e1a2-ve-ja-c-3203-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-535",
+      "language": "ja",
+      "lemma": "結果",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-535",
+          "kind": "collocation",
+          "text": "結果が出る",
+          "translation_zh": "结果出来",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"結果が出る\",\"reading\":\"けっかがでる\"}]",
+          "id": "35e1a2-ve-ja-c-535-01"
+        },
+        {
+          "item_id": "ja-c-535",
+          "kind": "example",
+          "text": "検査の結果は来週わかります。",
+          "translation_zh": "检查结果下周会知道。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"検査の結果は来週わかります。\",\"reading\":\"けんさのけっかはらいしゅうわかります。\"}]",
+          "id": "35e1a2-ve-ja-c-535-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-387",
+      "language": "ja",
+      "lemma": "空港",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-387",
+          "kind": "collocation",
+          "text": "空港に着く",
+          "translation_zh": "到达机场",
+          "note_zh": "到达点用に。",
+          "readings_json": "[{\"text\":\"空港に着く\",\"reading\":\"くうこうにつく\"}]",
+          "id": "35e1a2-ve-ja-c-387-01"
+        },
+        {
+          "item_id": "ja-c-387",
+          "kind": "example",
+          "text": "空港までバスで行きます。",
+          "translation_zh": "坐公交车去机场。",
+          "note_zh": "目的地范围终点用まで，交通方式用で。",
+          "readings_json": "[{\"text\":\"空港までバスで行きます。\",\"reading\":\"くうこうまでばすでいきます。\"}]",
+          "id": "35e1a2-ve-ja-c-387-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-339",
+      "language": "ja",
+      "lemma": "高い",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-339",
+          "kind": "pattern",
+          "text": "値段が高い",
+          "translation_zh": "价格高",
+          "note_zh": "高い在此限定价格昂贵义。",
+          "readings_json": "[{\"text\":\"値段が高い\",\"reading\":\"ねだんがたかい\"}]",
+          "id": "35e1a2-ve-ja-c-339-01"
+        },
+        {
+          "item_id": "ja-c-339",
+          "kind": "example",
+          "text": "この店は少し高いですが、品質がいいです。",
+          "translation_zh": "这家店有点贵，但质量很好。",
+          "note_zh": "高い限定价格昂贵义。",
+          "readings_json": "[{\"text\":\"この店は少し高いですが、品質がいいです。\",\"reading\":\"このみせはすこしたかいですが、ひんしつがいいです。\"}]",
+          "id": "35e1a2-ve-ja-c-339-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-119",
+      "language": "ja",
+      "lemma": "仕事",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-119",
+          "kind": "collocation",
+          "text": "仕事に行く",
+          "translation_zh": "去上班",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"仕事に行く\",\"reading\":\"しごとにいく\"}]",
+          "id": "35e1a2-ve-ja-c-119-01"
+        },
+        {
+          "item_id": "ja-c-119",
+          "kind": "example",
+          "text": "仕事が終わったら電話します。",
+          "translation_zh": "工作结束后给你打电话。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"仕事が終わったら電話します。\",\"reading\":\"しごとがおわったらでんわします。\"}]",
+          "id": "35e1a2-ve-ja-c-119-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-183",
+      "language": "ja",
+      "lemma": "話す",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-183",
+          "kind": "pattern",
+          "text": "先生と話す",
+          "translation_zh": "和老师交谈",
+          "note_zh": "互相交谈的对象常用と。",
+          "readings_json": "[{\"text\":\"先生と話す\",\"reading\":\"せんせいとはなす\"}]",
+          "id": "35e1a2-ve-ja-c-183-01"
+        },
+        {
+          "item_id": "ja-c-183",
+          "kind": "pattern",
+          "text": "友達と話す／先生に話す",
+          "translation_zh": "和朋友交谈／向老师说明",
+          "note_zh": "对比：と强调双方交谈；に可标记话语指向的对象。",
+          "readings_json": "[{\"text\":\"友達と話す／先生に話す\",\"reading\":\"ともだちとはなす／せんせいにはなす\"}]",
+          "id": "35e1a2-ve-ja-c-183-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-223",
+      "language": "ja",
+      "lemma": "小さい",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-223",
+          "kind": "collocation",
+          "text": "小さい声",
+          "translation_zh": "小声",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"小さい声\",\"reading\":\"ちいさいこえ\"}]",
+          "id": "35e1a2-ve-ja-c-223-01"
+        },
+        {
+          "item_id": "ja-c-223",
+          "kind": "example",
+          "text": "もう少し小さいかばんはありますか。",
+          "translation_zh": "有再小一点的包吗？",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"もう少し小さいかばんはありますか。\",\"reading\":\"もうすこしちいさいかばんはありますか。\"}]",
+          "id": "35e1a2-ve-ja-c-223-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-939",
+      "language": "ja",
+      "lemma": "座る",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-939",
+          "kind": "collocation",
+          "text": "窓側に座る",
+          "translation_zh": "坐在靠窗的位置",
+          "note_zh": "落座位置用に。",
+          "readings_json": "[{\"text\":\"窓側に座る\",\"reading\":\"まどがわにすわる\"}]",
+          "id": "35e1a2-ve-ja-c-939-01"
+        },
+        {
+          "item_id": "ja-c-939",
+          "kind": "example",
+          "text": "こちらの椅子に座ってください。",
+          "translation_zh": "请坐这把椅子。",
+          "note_zh": "落座位置用に。",
+          "readings_json": "[{\"text\":\"こちらの椅子に座ってください。\",\"reading\":\"こちらのいすにすわってください。\"}]",
+          "id": "35e1a2-ve-ja-c-939-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-139",
+      "language": "ja",
+      "lemma": "時間",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-139",
+          "kind": "pattern",
+          "text": "時間がかかる",
+          "translation_zh": "花费时间",
+          "note_zh": "所需时间作主语时用が。",
+          "readings_json": "[{\"text\":\"時間がかかる\",\"reading\":\"じかんがかかる\"}]",
+          "id": "35e1a2-ve-ja-c-139-01"
+        },
+        {
+          "item_id": "ja-c-139",
+          "kind": "example",
+          "text": "今日は料理をする時間がありません。",
+          "translation_zh": "今天没有时间做饭。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"今日は料理をする時間がありません。\",\"reading\":\"きょうはりょうりをするじかんがありません。\"}]",
+          "id": "35e1a2-ve-ja-c-139-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-143",
+      "language": "ja",
+      "lemma": "日",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-143",
+          "kind": "collocation",
+          "text": "休みの日",
+          "translation_zh": "休息日",
+          "note_zh": "日保持独立名词读音ひ，不取复合词内部读音。",
+          "readings_json": "[{\"text\":\"休みの日\",\"reading\":\"やすみのひ\"}]",
+          "id": "35e1a2-ve-ja-c-143-01"
+        },
+        {
+          "item_id": "ja-c-143",
+          "kind": "example",
+          "text": "その日はとても忙しかったです。",
+          "translation_zh": "那天非常忙。",
+          "note_zh": "日作为独立名词读ひ。",
+          "readings_json": "[{\"text\":\"その日はとても忙しかったです。\",\"reading\":\"そのひはとてもいそがしかったです。\"}]",
+          "id": "35e1a2-ve-ja-c-143-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1384",
+      "language": "ja",
+      "lemma": "名前",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-1384",
+          "kind": "collocation",
+          "text": "名前を書く",
+          "translation_zh": "写名字",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"名前を書く\",\"reading\":\"なまえをかく\"}]",
+          "id": "35e1a2-ve-ja-c-1384-01"
+        },
+        {
+          "item_id": "ja-c-1384",
+          "kind": "example",
+          "text": "ここに名前と住所を書いてください。",
+          "translation_zh": "请在这里写姓名和地址。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"ここに名前と住所を書いてください。\",\"reading\":\"ここになまえとじゅうしょをかいてください。\"}]",
+          "id": "35e1a2-ve-ja-c-1384-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-3185",
+      "language": "ja",
+      "lemma": "おはよう",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-3185",
+          "kind": "example",
+          "text": "おはよう。よく寝た？",
+          "translation_zh": "早上好。睡得好吗？",
+          "note_zh": "普通体问候，适合熟人之间。",
+          "readings_json": "[{\"text\":\"おはよう。よく寝た？\",\"reading\":\"おはよう。よくねた？\"}]",
+          "id": "35e1a2-ve-ja-c-3185-01"
+        },
+        {
+          "item_id": "ja-c-3185",
+          "kind": "pattern",
+          "text": "おはよう。／おはようございます。",
+          "translation_zh": "早。／早上好。",
+          "note_zh": "对比：前者用于熟人，后者更礼貌。",
+          "readings_json": "[{\"text\":\"おはよう。／おはようございます。\",\"reading\":\"おはよう。／おはようございます。\"}]",
+          "id": "35e1a2-ve-ja-c-3185-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-915",
+      "language": "ja",
+      "lemma": "冗談",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-915",
+          "kind": "collocation",
+          "text": "冗談が通じる",
+          "translation_zh": "听得懂玩笑；玩笑能被理解",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"冗談が通じる\",\"reading\":\"じょうだんがつうじる\"}]",
+          "id": "35e1a2-ve-ja-c-915-01"
+        },
+        {
+          "item_id": "ja-c-915",
+          "kind": "example",
+          "text": "冗談で言っただけです。",
+          "translation_zh": "我只是开玩笑说的。",
+          "note_zh": "で表示说这句话的性质或方式。",
+          "readings_json": "[{\"text\":\"冗談で言っただけです。\",\"reading\":\"じょうだんでいっただけです。\"}]",
+          "id": "35e1a2-ve-ja-c-915-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1075",
+      "language": "ja",
+      "lemma": "迷惑",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-1075",
+          "kind": "pattern",
+          "text": "人の迷惑になる",
+          "translation_zh": "给别人添麻烦",
+          "note_zh": "迷惑になる表示造成麻烦。",
+          "readings_json": "[{\"text\":\"人の迷惑になる\",\"reading\":\"ひとのめいわくになる\"}]",
+          "id": "35e1a2-ve-ja-c-1075-01"
+        },
+        {
+          "item_id": "ja-c-1075",
+          "kind": "example",
+          "text": "夜遅く電話すると迷惑です。",
+          "translation_zh": "深夜打电话会给人添麻烦。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"夜遅く電話すると迷惑です。\",\"reading\":\"よるおそくでんわするとめいわくです。\"}]",
+          "id": "35e1a2-ve-ja-c-1075-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-3193",
+      "language": "ja",
+      "lemma": "間に合う",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-3193",
+          "kind": "collocation",
+          "text": "会議に間に合う",
+          "translation_zh": "赶上会议；按时参加会议",
+          "note_zh": "赶上的目标用に。",
+          "readings_json": "[{\"text\":\"会議に間に合う\",\"reading\":\"かいぎにまにあう\"}]",
+          "id": "35e1a2-ve-ja-c-3193-01"
+        },
+        {
+          "item_id": "ja-c-3193",
+          "kind": "example",
+          "text": "急げば九時の電車に間に合います。",
+          "translation_zh": "如果快一点，就赶得上九点的电车。",
+          "note_zh": "赶上的目标用に。",
+          "readings_json": "[{\"text\":\"急げば九時の電車に間に合います。\",\"reading\":\"いそげばくじのでんしゃにまにあいます。\"}]",
+          "id": "35e1a2-ve-ja-c-3193-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-347",
+      "language": "ja",
+      "lemma": "辛い",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-347",
+          "kind": "collocation",
+          "text": "辛すぎる",
+          "translation_zh": "太辣",
+          "note_zh": "い形容词去い接すぎる。",
+          "readings_json": "[{\"text\":\"辛すぎる\",\"reading\":\"からすぎる\"}]",
+          "id": "35e1a2-ve-ja-c-347-01"
+        },
+        {
+          "item_id": "ja-c-347",
+          "kind": "example",
+          "text": "このカレーは私には少し辛いです。",
+          "translation_zh": "这个咖喱对我来说有点辣。",
+          "note_zh": "评价基准用には提示。",
+          "readings_json": "[{\"text\":\"このカレーは私には少し辛いです。\",\"reading\":\"このかれーはわたしにはすこしからいです。\"}]",
+          "id": "35e1a2-ve-ja-c-347-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-363",
+      "language": "ja",
+      "lemma": "遅れる",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-363",
+          "kind": "pattern",
+          "text": "電車が遅れる",
+          "translation_zh": "电车晚点",
+          "note_zh": "晚点的主体用が。",
+          "readings_json": "[{\"text\":\"電車が遅れる\",\"reading\":\"でんしゃがおくれる\"}]",
+          "id": "35e1a2-ve-ja-c-363-01"
+        },
+        {
+          "item_id": "ja-c-363",
+          "kind": "example",
+          "text": "事故でバスが三十分遅れました。",
+          "translation_zh": "公交车因事故晚点三十分钟。",
+          "note_zh": "原因用で，晚点主体用が。",
+          "readings_json": "[{\"text\":\"事故でバスが三十分遅れました。\",\"reading\":\"じこでばすがさんじゅっぷんおくれました。\"}]",
+          "id": "35e1a2-ve-ja-c-363-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-367",
+      "language": "ja",
+      "lemma": "早めに",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-367",
+          "kind": "collocation",
+          "text": "早めに予約する",
+          "translation_zh": "提前预约",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"早めに予約する\",\"reading\":\"はやめによやくする\"}]",
+          "id": "35e1a2-ve-ja-c-367-01"
+        },
+        {
+          "item_id": "ja-c-367",
+          "kind": "example",
+          "text": "混む前に早めに出ましょう。",
+          "translation_zh": "趁拥挤前早点出发吧。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"混む前に早めに出ましょう。\",\"reading\":\"こむまえにはやめにでましょう。\"}]",
+          "id": "35e1a2-ve-ja-c-367-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-399",
+      "language": "ja",
+      "lemma": "値段",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-399",
+          "kind": "collocation",
+          "text": "値段が上がる",
+          "translation_zh": "价格上涨",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"値段が上がる\",\"reading\":\"ねだんがあがる\"}]",
+          "id": "35e1a2-ve-ja-c-399-01"
+        },
+        {
+          "item_id": "ja-c-399",
+          "kind": "example",
+          "text": "この商品の値段を教えてください。",
+          "translation_zh": "请告诉我这个商品的价格。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"この商品の値段を教えてください。\",\"reading\":\"このしょうひんのねだんをおしえてください。\"}]",
+          "id": "35e1a2-ve-ja-c-399-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-007",
+      "language": "ja",
+      "lemma": "コーヒー",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-007",
+          "kind": "collocation",
+          "text": "コーヒーをいれる",
+          "translation_zh": "冲咖啡",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"コーヒーをいれる\",\"reading\":\"こーひーをいれる\"}]",
+          "id": "35e1a2-ve-ja-c-007-01"
+        },
+        {
+          "item_id": "ja-c-007",
+          "kind": "example",
+          "text": "朝はいつもコーヒーを飲みます。",
+          "translation_zh": "早上总是喝咖啡。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"朝はいつもコーヒーを飲みます。\",\"reading\":\"あさはいつもこーひーをのみます。\"}]",
+          "id": "35e1a2-ve-ja-c-007-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-027",
+      "language": "ja",
+      "lemma": "塩",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-027",
+          "kind": "collocation",
+          "text": "塩を少し入れる",
+          "translation_zh": "放一点盐",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"塩を少し入れる\",\"reading\":\"しおをすこしいれる\"}]",
+          "id": "35e1a2-ve-ja-c-027-01"
+        },
+        {
+          "item_id": "ja-c-027",
+          "kind": "example",
+          "text": "この料理は塩が少し足りません。",
+          "translation_zh": "这道菜有点缺盐。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"この料理は塩が少し足りません。\",\"reading\":\"このりょうりはしおがすこしたりません。\"}]",
+          "id": "35e1a2-ve-ja-c-027-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-075",
+      "language": "ja",
+      "lemma": "窓",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-075",
+          "kind": "collocation",
+          "text": "窓を閉める",
+          "translation_zh": "关窗",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"窓を閉める\",\"reading\":\"まどをしめる\"}]",
+          "id": "35e1a2-ve-ja-c-075-01"
+        },
+        {
+          "item_id": "ja-c-075",
+          "kind": "example",
+          "text": "寒いので、窓を閉めてもいいですか。",
+          "translation_zh": "因为冷，可以关窗吗？",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"寒いので、窓を閉めてもいいですか。\",\"reading\":\"さむいので、まどをしめてもいいですか。\"}]",
+          "id": "35e1a2-ve-ja-c-075-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-095",
+      "language": "ja",
+      "lemma": "友達",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-095",
+          "kind": "collocation",
+          "text": "親しい友達",
+          "translation_zh": "亲密的朋友",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"親しい友達\",\"reading\":\"したしいともだち\"}]",
+          "id": "35e1a2-ve-ja-c-095-01"
+        },
+        {
+          "item_id": "ja-c-095",
+          "kind": "example",
+          "text": "週末に友達と映画を見ました。",
+          "translation_zh": "周末和朋友看了电影。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"週末に友達と映画を見ました。\",\"reading\":\"しゅうまつにともだちとえいがをみました。\"}]",
+          "id": "35e1a2-ve-ja-c-095-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-327",
+      "language": "ja",
+      "lemma": "静か",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-327",
+          "kind": "pattern",
+          "text": "静かになる",
+          "translation_zh": "变安静",
+          "note_zh": "な形容词词干 + になる。",
+          "readings_json": "[{\"text\":\"静かになる\",\"reading\":\"しずかになる\"}]",
+          "id": "35e1a2-ve-ja-c-327-01"
+        },
+        {
+          "item_id": "ja-c-327",
+          "kind": "example",
+          "text": "この図書館は静かで勉強しやすいです。",
+          "translation_zh": "这座图书馆很安静，适合学习。",
+          "note_zh": "な形容词的て形为静かで。",
+          "readings_json": "[{\"text\":\"この図書館は静かで勉強しやすいです。\",\"reading\":\"このとしょかんはしずかでべんきょうしやすいです。\"}]",
+          "id": "35e1a2-ve-ja-c-327-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-427",
+      "language": "ja",
+      "lemma": "天気",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-427",
+          "kind": "collocation",
+          "text": "天気がいい",
+          "translation_zh": "天气好",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"天気がいい\",\"reading\":\"てんきがいい\"}]",
+          "id": "35e1a2-ve-ja-c-427-01"
+        },
+        {
+          "item_id": "ja-c-427",
+          "kind": "example",
+          "text": "明日の天気を確認しました。",
+          "translation_zh": "我确认了明天的天气。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"明日の天気を確認しました。\",\"reading\":\"あしたのてんきをかくにんしました。\"}]",
+          "id": "35e1a2-ve-ja-c-427-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-943",
+      "language": "ja",
+      "lemma": "ごみ",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-943",
+          "kind": "collocation",
+          "text": "ごみを分ける",
+          "translation_zh": "垃圾分类",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"ごみを分ける\",\"reading\":\"ごみをわける\"}]",
+          "id": "35e1a2-ve-ja-c-943-01"
+        },
+        {
+          "item_id": "ja-c-943",
+          "kind": "example",
+          "text": "ごみは朝八時までに出してください。",
+          "translation_zh": "请在早上八点前倒垃圾。",
+          "note_zh": "截止时间用までに。",
+          "readings_json": "[{\"text\":\"ごみは朝八時までに出してください。\",\"reading\":\"ごみはあさはちじまでにだしてください。\"}]",
+          "id": "35e1a2-ve-ja-c-943-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-971",
+      "language": "ja",
+      "lemma": "カード",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-971",
+          "kind": "pattern",
+          "text": "カードが使える",
+          "translation_zh": "可以使用卡",
+          "note_zh": "可能形常以が标记可使用的对象。",
+          "readings_json": "[{\"text\":\"カードが使える\",\"reading\":\"かーどがつかえる\"}]",
+          "id": "35e1a2-ve-ja-c-971-01"
+        },
+        {
+          "item_id": "ja-c-971",
+          "kind": "example",
+          "text": "この店ではカードで払えます。",
+          "translation_zh": "这家店可以刷卡付款。",
+          "note_zh": "支付手段用で。",
+          "readings_json": "[{\"text\":\"この店ではカードで払えます。\",\"reading\":\"このみせではかーどではらえます。\"}]",
+          "id": "35e1a2-ve-ja-c-971-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-195",
+      "language": "ja",
+      "lemma": "会う",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-195",
+          "kind": "pattern",
+          "text": "駅で会う",
+          "translation_zh": "在车站见面",
+          "note_zh": "见面的场所用で。",
+          "readings_json": "[{\"text\":\"駅で会う\",\"reading\":\"えきであう\"}]",
+          "id": "35e1a2-ve-ja-c-195-01"
+        },
+        {
+          "item_id": "ja-c-195",
+          "kind": "pattern",
+          "text": "友達に会う／駅で会う",
+          "translation_zh": "见朋友／在车站见面",
+          "note_zh": "对比：见面对象用に，见面场所用で。",
+          "readings_json": "[{\"text\":\"友達に会う／駅で会う\",\"reading\":\"ともだちにあう／えきであう\"}]",
+          "id": "35e1a2-ve-ja-c-195-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1071",
+      "language": "ja",
+      "lemma": "持つ",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-1071",
+          "kind": "collocation",
+          "text": "傘を持つ",
+          "translation_zh": "拿伞；带伞",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"傘を持つ\",\"reading\":\"かさをもつ\"}]",
+          "id": "35e1a2-ve-ja-c-1071-01"
+        },
+        {
+          "item_id": "ja-c-1071",
+          "kind": "pattern",
+          "text": "傘を持つ／傘を持っていく",
+          "translation_zh": "拿着伞／把伞带去",
+          "note_zh": "对比：持つ描述持有；持っていく明确带往别处。",
+          "readings_json": "[{\"text\":\"傘を持つ／傘を持っていく\",\"reading\":\"かさをもつ／かさをもっていく\"}]",
+          "id": "35e1a2-ve-ja-c-1071-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-359",
+      "language": "ja",
+      "lemma": "お腹がいっぱい",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-359",
+          "kind": "example",
+          "text": "もうお腹がいっぱいです。",
+          "translation_zh": "已经吃饱了。",
+          "note_zh": "礼貌说明已经吃饱。",
+          "readings_json": "[{\"text\":\"もうお腹がいっぱいです。\",\"reading\":\"もうおなかがいっぱいです。\"}]",
+          "id": "35e1a2-ve-ja-c-359-01"
+        },
+        {
+          "item_id": "ja-c-359",
+          "kind": "example",
+          "text": "お腹がいっぱいなので、デザートはいりません。",
+          "translation_zh": "因为吃饱了，所以不要甜点。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"お腹がいっぱいなので、デザートはいりません。\",\"reading\":\"おなかがいっぱいなので、でざーとはいりません。\"}]",
+          "id": "35e1a2-ve-ja-c-359-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-591",
+      "language": "ja",
+      "lemma": "怒る",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-591",
+          "kind": "pattern",
+          "text": "小さなことで怒る",
+          "translation_zh": "因小事生气",
+          "note_zh": "生气的原因用で。",
+          "readings_json": "[{\"text\":\"小さなことで怒る\",\"reading\":\"ちいさなことでおこる\"}]",
+          "id": "35e1a2-ve-ja-c-591-01"
+        },
+        {
+          "item_id": "ja-c-591",
+          "kind": "example",
+          "text": "友達が約束を忘れたので、彼は怒っています。",
+          "translation_zh": "因为朋友忘了约定，他很生气。",
+          "note_zh": "原因从句和生气者分别明确；怒っている表示持续状态。",
+          "readings_json": "[{\"text\":\"友達が約束を忘れたので、彼は怒っています。\",\"reading\":\"ともだちがやくそくをわすれたので、かれはおこっています。\"}]",
+          "id": "35e1a2-ve-ja-c-591-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-983",
+      "language": "ja",
+      "lemma": "通る",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-983",
+          "kind": "pattern",
+          "text": "この道を通る",
+          "translation_zh": "经过这条路",
+          "note_zh": "经过的路线用を。",
+          "readings_json": "[{\"text\":\"この道を通る\",\"reading\":\"このみちをとおる\"}]",
+          "id": "35e1a2-ve-ja-c-983-01"
+        },
+        {
+          "item_id": "ja-c-983",
+          "kind": "example",
+          "text": "この道はバスも通ります。",
+          "translation_zh": "公交车也经过这条路。",
+          "note_zh": "路线用を；主题化后可用は。",
+          "readings_json": "[{\"text\":\"この道はバスも通ります。\",\"reading\":\"このみちはばすもとおります。\"}]",
+          "id": "35e1a2-ve-ja-c-983-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1003",
+      "language": "ja",
+      "lemma": "お大事に",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-1003",
+          "kind": "collocation",
+          "text": "どうぞお大事に",
+          "translation_zh": "请多保重",
+          "note_zh": "对病人常用的固定表达。",
+          "readings_json": "[{\"text\":\"どうぞお大事に\",\"reading\":\"どうぞおだいじに\"}]",
+          "id": "35e1a2-ve-ja-c-1003-01"
+        },
+        {
+          "item_id": "ja-c-1003",
+          "kind": "pattern",
+          "text": "お大事に。／気をつけて。",
+          "translation_zh": "请保重身体。／请小心。",
+          "note_zh": "对比：お大事に主要对病人说；気をつけて用于一般安全提醒。",
+          "readings_json": "[{\"text\":\"お大事に。／気をつけて。\",\"reading\":\"おだいじに。／きをつけて。\"}]",
+          "id": "35e1a2-ve-ja-c-1003-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1051",
+      "language": "ja",
+      "lemma": "練習する",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-1051",
+          "kind": "collocation",
+          "text": "会話を練習する",
+          "translation_zh": "练习会话",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"会話を練習する\",\"reading\":\"かいわをれんしゅうする\"}]",
+          "id": "35e1a2-ve-ja-c-1051-01"
+        },
+        {
+          "item_id": "ja-c-1051",
+          "kind": "example",
+          "text": "毎日、発音を十分練習します。",
+          "translation_zh": "每天练习十分钟发音。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"毎日、発音を十分練習します。\",\"reading\":\"まいにち、はつおんをじゅっぷんれんしゅうします。\"}]",
+          "id": "35e1a2-ve-ja-c-1051-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1055",
+      "language": "ja",
+      "lemma": "好きになる",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-1055",
+          "kind": "pattern",
+          "text": "日本語が好きになる",
+          "translation_zh": "逐渐喜欢上日语",
+          "note_zh": "好きになる的对象用が。",
+          "readings_json": "[{\"text\":\"日本語が好きになる\",\"reading\":\"にほんごがすきになる\"}]",
+          "id": "35e1a2-ve-ja-c-1055-01"
+        },
+        {
+          "item_id": "ja-c-1055",
+          "kind": "example",
+          "text": "この町に住んでから、だんだん好きになりました。",
+          "translation_zh": "住在这个城市以后，渐渐喜欢上了这里。",
+          "note_zh": "好きになる表示喜好发生变化。",
+          "readings_json": "[{\"text\":\"この町に住んでから、だんだん好きになりました。\",\"reading\":\"このまちにすんでから、だんだんすきになりました。\"}]",
+          "id": "35e1a2-ve-ja-c-1055-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1119",
+      "language": "ja",
+      "lemma": "誘う",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-1119",
+          "kind": "pattern",
+          "text": "友達を食事に誘う",
+          "translation_zh": "邀请朋友吃饭",
+          "note_zh": "邀请对象用を，活动用に。",
+          "readings_json": "[{\"text\":\"友達を食事に誘う\",\"reading\":\"ともだちをしょくじにさそう\"}]",
+          "id": "35e1a2-ve-ja-c-1119-01"
+        },
+        {
+          "item_id": "ja-c-1119",
+          "kind": "example",
+          "text": "同僚を昼ご飯に誘いました。",
+          "translation_zh": "邀请同事一起吃午饭。",
+          "note_zh": "邀请对象用を，活动用に。",
+          "readings_json": "[{\"text\":\"同僚を昼ご飯に誘いました。\",\"reading\":\"どうりょうをひるごはんにさそいました。\"}]",
+          "id": "35e1a2-ve-ja-c-1119-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1987",
+      "language": "ja",
+      "lemma": "喉が渇く",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-1987",
+          "kind": "example",
+          "text": "水を飲んでも喉が渇きます。",
+          "translation_zh": "即使喝水也觉得口渴。",
+          "note_zh": "喉が作主语，渇く描述身体状态。",
+          "readings_json": "[{\"text\":\"水を飲んでも喉が渇きます。\",\"reading\":\"みずをのんでものどがかわきます。\"}]",
+          "id": "35e1a2-ve-ja-c-1987-01"
+        },
+        {
+          "item_id": "ja-c-1987",
+          "kind": "example",
+          "text": "暑い日はすぐ喉が渇きます。",
+          "translation_zh": "天气热时很快就会口渴。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"暑い日はすぐ喉が渇きます。\",\"reading\":\"あついひはすぐのどがかわきます。\"}]",
+          "id": "35e1a2-ve-ja-c-1987-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-395",
+      "language": "ja",
+      "lemma": "サイズ",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-395",
+          "kind": "collocation",
+          "text": "サイズを確認する",
+          "translation_zh": "确认尺码",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"サイズを確認する\",\"reading\":\"さいずをかくにんする\"}]",
+          "id": "35e1a2-ve-ja-c-395-01"
+        },
+        {
+          "item_id": "ja-c-395",
+          "kind": "example",
+          "text": "この靴は私のサイズがありません。",
+          "translation_zh": "这双鞋没有我的尺码。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"この靴は私のサイズがありません。\",\"reading\":\"このくつはわたしのさいずがありません。\"}]",
+          "id": "35e1a2-ve-ja-c-395-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-411",
+      "language": "ja",
+      "lemma": "痛み",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-411",
+          "kind": "collocation",
+          "text": "痛みがやわらぐ",
+          "translation_zh": "疼痛缓解",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"痛みがやわらぐ\",\"reading\":\"いたみがやわらぐ\"}]",
+          "id": "35e1a2-ve-ja-c-411-01"
+        },
+        {
+          "item_id": "ja-c-411",
+          "kind": "example",
+          "text": "薬を飲んだら、痛みが軽くなりました。",
+          "translation_zh": "吃药后，疼痛减轻了。",
+          "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+          "readings_json": "[{\"text\":\"薬を飲んだら、痛みが軽くなりました。\",\"reading\":\"くすりをのんだら、いたみがかるくなりました。\"}]",
+          "id": "35e1a2-ve-ja-c-411-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-947",
+      "language": "ja",
+      "lemma": "音",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-947",
+          "kind": "collocation",
+          "text": "音が聞こえる",
+          "translation_zh": "听见声音",
+          "note_zh": "自然感知常用聞こえる，声音用が。",
+          "readings_json": "[{\"text\":\"音が聞こえる\",\"reading\":\"おとがきこえる\"}]",
+          "id": "35e1a2-ve-ja-c-947-01"
+        },
+        {
+          "item_id": "ja-c-947",
+          "kind": "pattern",
+          "text": "音楽を聞く／音が聞こえる",
+          "translation_zh": "听音乐／听见声音",
+          "note_zh": "对比：聞く是主动听；聞こえる是自然听见。",
+          "readings_json": "[{\"text\":\"音楽を聞く／音が聞こえる\",\"reading\":\"おんがくをきく／おとがきこえる\"}]",
+          "id": "35e1a2-ve-ja-c-947-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1019",
+      "language": "ja",
+      "lemma": "よかった",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-1019",
+          "kind": "example",
+          "text": "無事でよかったです。",
+          "translation_zh": "平安无事真是太好了。",
+          "note_zh": "用于对已经确认的好结果表示安心。",
+          "readings_json": "[{\"text\":\"無事でよかったです。\",\"reading\":\"ぶじでよかったです。\"}]",
+          "id": "35e1a2-ve-ja-c-1019-01"
+        },
+        {
+          "item_id": "ja-c-1019",
+          "kind": "example",
+          "text": "予約が取れてよかったです。",
+          "translation_zh": "能订到真是太好了。",
+          "note_zh": "对已经发生的好结果表示安心。",
+          "readings_json": "[{\"text\":\"予約が取れてよかったです。\",\"reading\":\"よやくがとれてよかったです。\"}]",
+          "id": "35e1a2-ve-ja-c-1019-02"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-063",
+      "language": "ja",
+      "lemma": "家",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-063",
+          "kind": "pattern",
+          "text": "家を出る",
+          "translation_zh": "离开家",
+          "note_zh": "离开的场所用を。",
+          "readings_json": "[{\"text\":\"家を出る\",\"reading\":\"いえをでる\"}]",
+          "id": "35e1a2-ve-ja-c-063-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-youji",
+      "language": "ja",
+      "lemma": "用事",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-youji",
+          "kind": "collocation",
+          "text": "用事を済ませる",
+          "translation_zh": "把事情办完",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"用事を済ませる\",\"reading\":\"ようじをすませる\"}]",
+          "id": "35e1a2-ve-ja-youji-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-391",
+      "language": "ja",
+      "lemma": "角",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-391",
+          "kind": "pattern",
+          "text": "角を右に曲がる",
+          "translation_zh": "在拐角右转",
+          "note_zh": "经过转弯点用を，方向用に。",
+          "readings_json": "[{\"text\":\"角を右に曲がる\",\"reading\":\"かどをみぎにまがる\"}]",
+          "id": "35e1a2-ve-ja-c-391-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-571",
+      "language": "ja",
+      "lemma": "便利",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-571",
+          "kind": "example",
+          "text": "駅に近くて便利です。",
+          "translation_zh": "离车站近，很方便。",
+          "note_zh": "便利是な形容词，礼貌结句用です。",
+          "readings_json": "[{\"text\":\"駅に近くて便利です。\",\"reading\":\"えきにちかくてべんりです。\"}]",
+          "id": "35e1a2-ve-ja-c-571-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1023",
+      "language": "ja",
+      "lemma": "話",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-1023",
+          "kind": "collocation",
+          "text": "話を聞く",
+          "translation_zh": "听别人说；听取事情",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"話を聞く\",\"reading\":\"はなしをきく\"}]",
+          "id": "35e1a2-ve-ja-c-1023-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1115",
+      "language": "ja",
+      "lemma": "例",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-1115",
+          "kind": "collocation",
+          "text": "例を挙げる",
+          "translation_zh": "举例",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"例を挙げる\",\"reading\":\"れいをあげる\"}]",
+          "id": "35e1a2-ve-ja-c-1115-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-3213",
+      "language": "ja",
+      "lemma": "京都",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-3213",
+          "kind": "pattern",
+          "text": "京都から来る",
+          "translation_zh": "从京都来",
+          "note_zh": "出发地用から。",
+          "readings_json": "[{\"text\":\"京都から来る\",\"reading\":\"きょうとからくる\"}]",
+          "id": "35e1a2-ve-ja-c-3213-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-179",
+      "language": "ja",
+      "lemma": "聞く",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-179",
+          "kind": "pattern",
+          "text": "先生の話を聞く",
+          "translation_zh": "听老师讲话",
+          "note_zh": "听取的内容用を。",
+          "readings_json": "[{\"text\":\"先生の話を聞く\",\"reading\":\"せんせいのはなしをきく\"}]",
+          "id": "35e1a2-ve-ja-c-179-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-611",
+      "language": "ja",
+      "lemma": "言い直す",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-611",
+          "kind": "collocation",
+          "text": "ゆっくり言い直す",
+          "translation_zh": "慢慢地重新说一遍",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"ゆっくり言い直す\",\"reading\":\"ゆっくりいいなおす\"}]",
+          "id": "35e1a2-ve-ja-c-611-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-955",
+      "language": "ja",
+      "lemma": "少々",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-955",
+          "kind": "collocation",
+          "text": "少々時間がかかる",
+          "translation_zh": "需要一点时间",
+          "note_zh": "少々较礼貌，常见于服务场景。",
+          "readings_json": "[{\"text\":\"少々時間がかかる\",\"reading\":\"しょうしょうじかんがかかる\"}]",
+          "id": "35e1a2-ve-ja-c-955-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-987",
+      "language": "ja",
+      "lemma": "乗り過ごす",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-987",
+          "kind": "pattern",
+          "text": "終点まで乗り過ごす",
+          "translation_zh": "坐过站直到终点",
+          "note_zh": "まで标记误乘到达的终点。",
+          "readings_json": "[{\"text\":\"終点まで乗り過ごす\",\"reading\":\"しゅうてんまでのりすごす\"}]",
+          "id": "35e1a2-ve-ja-c-987-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-991",
+      "language": "ja",
+      "lemma": "肌寒い",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-991",
+          "kind": "collocation",
+          "text": "少し肌寒い",
+          "translation_zh": "有点凉飕飕的",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"少し肌寒い\",\"reading\":\"すこしはださむい\"}]",
+          "id": "35e1a2-ve-ja-c-991-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-2025",
+      "language": "ja",
+      "lemma": "疲れがたまる",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-2025",
+          "kind": "collocation",
+          "text": "疲れがたまりやすい",
+          "translation_zh": "容易积累疲劳",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"疲れがたまりやすい\",\"reading\":\"つかれがたまりやすい\"}]",
+          "id": "35e1a2-ve-ja-c-2025-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-2177",
+      "language": "ja",
+      "lemma": "夢中になる",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-2177",
+          "kind": "pattern",
+          "text": "読書に夢中になる",
+          "translation_zh": "沉浸于阅读",
+          "note_zh": "投入的对象用に。",
+          "readings_json": "[{\"text\":\"読書に夢中になる\",\"reading\":\"どくしょにむちゅうになる\"}]",
+          "id": "35e1a2-ve-ja-c-2177-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-563",
+      "language": "ja",
+      "lemma": "予報",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-563",
+          "kind": "collocation",
+          "text": "予報が外れる",
+          "translation_zh": "预报不准；预测落空",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"予報が外れる\",\"reading\":\"よほうがはずれる\"}]",
+          "id": "35e1a2-ve-ja-c-563-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1875",
+      "language": "ja",
+      "lemma": "回り道",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-1875",
+          "kind": "collocation",
+          "text": "回り道をする",
+          "translation_zh": "绕路",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"回り道をする\",\"reading\":\"まわりみちをする\"}]",
+          "id": "35e1a2-ve-ja-c-1875-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-211",
+      "language": "ja",
+      "lemma": "暑い",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-211",
+          "kind": "example",
+          "text": "今日はとても暑いです。",
+          "translation_zh": "今天很热。",
+          "note_zh": "暑い限定天气炎热。",
+          "readings_json": "[{\"text\":\"今日はとても暑いです。\",\"reading\":\"きょうはとてもあついです。\"}]",
+          "id": "35e1a2-ve-ja-c-211-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-215",
+      "language": "ja",
+      "lemma": "寒い",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-215",
+          "kind": "pattern",
+          "text": "朝晩は寒くなる",
+          "translation_zh": "早晚会变冷",
+          "note_zh": "寒い去い接くなる。",
+          "readings_json": "[{\"text\":\"朝晩は寒くなる\",\"reading\":\"あさばんはさむくなる\"}]",
+          "id": "35e1a2-ve-ja-c-215-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-267",
+      "language": "ja",
+      "lemma": "帰る",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-267",
+          "kind": "collocation",
+          "text": "家へ帰る",
+          "translation_zh": "回家",
+          "note_zh": "返回目的地可用へ。",
+          "readings_json": "[{\"text\":\"家へ帰る\",\"reading\":\"いえへかえる\"}]",
+          "id": "35e1a2-ve-ja-c-267-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1007",
+      "language": "ja",
+      "lemma": "休む",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-1007",
+          "kind": "collocation",
+          "text": "家でゆっくり休む",
+          "translation_zh": "在家好好休息",
+          "note_zh": "休息场所用で。",
+          "readings_json": "[{\"text\":\"家でゆっくり休む\",\"reading\":\"いえでゆっくりやすむ\"}]",
+          "id": "35e1a2-ve-ja-c-1007-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1035",
+      "language": "ja",
+      "lemma": "楽しい",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-1035",
+          "kind": "collocation",
+          "text": "楽しい時間",
+          "translation_zh": "愉快的时光",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"楽しい時間\",\"reading\":\"たのしいじかん\"}]",
+          "id": "35e1a2-ve-ja-c-1035-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-2063",
+      "language": "ja",
+      "lemma": "うれしい",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-2063",
+          "kind": "example",
+          "text": "また会えてうれしいです。",
+          "translation_zh": "很高兴再次见到你。",
+          "note_zh": "对具体事情高兴可用て形原因。",
+          "readings_json": "[{\"text\":\"また会えてうれしいです。\",\"reading\":\"またあえてうれしいです。\"}]",
+          "id": "35e1a2-ve-ja-c-2063-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-3189",
+      "language": "ja",
+      "lemma": "する",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-3189",
+          "kind": "collocation",
+          "text": "掃除をする",
+          "translation_zh": "打扫卫生",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"掃除をする\",\"reading\":\"そうじをする\"}]",
+          "id": "35e1a2-ve-ja-c-3189-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1913",
+      "language": "ja",
+      "lemma": "傘",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-1913",
+          "kind": "collocation",
+          "text": "傘をさす",
+          "translation_zh": "撑伞",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"傘をさす\",\"reading\":\"かさをさす\"}]",
+          "id": "35e1a2-ve-ja-c-1913-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-407",
+      "language": "ja",
+      "lemma": "頭痛",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-407",
+          "kind": "collocation",
+          "text": "頭痛がする",
+          "translation_zh": "感觉头疼",
+          "note_zh": "症状 + がする是自然身体感受表达。",
+          "readings_json": "[{\"text\":\"頭痛がする\",\"reading\":\"ずつうがする\"}]",
+          "id": "35e1a2-ve-ja-c-407-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-675",
+      "language": "ja",
+      "lemma": "魅力",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-675",
+          "kind": "collocation",
+          "text": "魅力を感じる",
+          "translation_zh": "感受到魅力",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"魅力を感じる\",\"reading\":\"みりょくをかんじる\"}]",
+          "id": "35e1a2-ve-ja-c-675-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1011",
+      "language": "ja",
+      "lemma": "調子",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-1011",
+          "kind": "collocation",
+          "text": "調子が悪い",
+          "translation_zh": "身体不舒服；状态不好",
+          "note_zh": "与調子がいい构成常用极性对比。",
+          "readings_json": "[{\"text\":\"調子が悪い\",\"reading\":\"ちょうしがわるい\"}]",
+          "id": "35e1a2-ve-ja-c-1011-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1111",
+      "language": "ja",
+      "lemma": "条件",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-1111",
+          "kind": "pattern",
+          "text": "条件に合う",
+          "translation_zh": "符合条件",
+          "note_zh": "符合的基准用に。",
+          "readings_json": "[{\"text\":\"条件に合う\",\"reading\":\"じょうけんにあう\"}]",
+          "id": "35e1a2-ve-ja-c-1111-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1422",
+      "language": "ja",
+      "lemma": "世間話",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-1422",
+          "kind": "collocation",
+          "text": "世間話をする",
+          "translation_zh": "闲聊",
+          "note_zh": "不表示小声说话。",
+          "readings_json": "[{\"text\":\"世間話をする\",\"reading\":\"せけんばなしをする\"}]",
+          "id": "35e1a2-ve-ja-c-1422-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1837",
+      "language": "ja",
+      "lemma": "運賃",
+      "stage": 3,
+      "usages": [
+        {
+          "item_id": "ja-c-1837",
+          "kind": "collocation",
+          "text": "運賃を払う",
+          "translation_zh": "支付车费",
+          "note_zh": "运賃限于交通费用。",
+          "readings_json": "[{\"text\":\"運賃を払う\",\"reading\":\"うんちんをはらう\"}]",
+          "id": "35e1a2-ve-ja-c-1837-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-tsukareru",
+      "language": "ja",
+      "lemma": "疲れる",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-tsukareru",
+          "kind": "pattern",
+          "text": "仕事で疲れる",
+          "translation_zh": "因工作而累",
+          "note_zh": "疲劳的原因用で。",
+          "readings_json": "[{\"text\":\"仕事で疲れる\",\"reading\":\"しごとでつかれる\"}]",
+          "id": "35e1a2-ve-ja-tsukareru-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-335",
+      "language": "ja",
+      "lemma": "難しい",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-335",
+          "kind": "pattern",
+          "text": "理解するのが難しい",
+          "translation_zh": "很难理解",
+          "note_zh": "动词普通形 + のが難しい。",
+          "readings_json": "[{\"text\":\"理解するのが難しい\",\"reading\":\"りかいするのがむずかしい\"}]",
+          "id": "35e1a2-ve-ja-c-335-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-979",
+      "language": "ja",
+      "lemma": "合う",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-979",
+          "kind": "pattern",
+          "text": "この靴は足に合う",
+          "translation_zh": "这双鞋合脚",
+          "note_zh": "合适的对象或基准用に。",
+          "readings_json": "[{\"text\":\"この靴は足に合う\",\"reading\":\"このくつはあしにあう\"}]",
+          "id": "35e1a2-ve-ja-c-979-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-163",
+      "language": "ja",
+      "lemma": "飲む",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-163",
+          "kind": "collocation",
+          "text": "薬を飲む",
+          "translation_zh": "吃药",
+          "note_zh": "日语用飲む表达服药。",
+          "readings_json": "[{\"text\":\"薬を飲む\",\"reading\":\"くすりをのむ\"}]",
+          "id": "35e1a2-ve-ja-c-163-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-167",
+      "language": "ja",
+      "lemma": "買う",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-167",
+          "kind": "pattern",
+          "text": "駅で切符を買う",
+          "translation_zh": "在车站买票",
+          "note_zh": "购买地点用で。",
+          "readings_json": "[{\"text\":\"駅で切符を買う\",\"reading\":\"えきできっぷをかう\"}]",
+          "id": "35e1a2-ve-ja-c-167-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-171",
+      "language": "ja",
+      "lemma": "読む",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-171",
+          "kind": "collocation",
+          "text": "声に出して読む",
+          "translation_zh": "朗读",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"声に出して読む\",\"reading\":\"こえにだしてよむ\"}]",
+          "id": "35e1a2-ve-ja-c-171-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-175",
+      "language": "ja",
+      "lemma": "書く",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-175",
+          "kind": "pattern",
+          "text": "手帳に予定を書く",
+          "translation_zh": "把计划写在记事本上",
+          "note_zh": "书写载体用に，内容用を。",
+          "readings_json": "[{\"text\":\"手帳に予定を書く\",\"reading\":\"てちょうによていをかく\"}]",
+          "id": "35e1a2-ve-ja-c-175-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-187",
+      "language": "ja",
+      "lemma": "寝る",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-187",
+          "kind": "collocation",
+          "text": "早く寝る",
+          "translation_zh": "早睡",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"早く寝る\",\"reading\":\"はやくねる\"}]",
+          "id": "35e1a2-ve-ja-c-187-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-199",
+      "language": "ja",
+      "lemma": "使う",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-199",
+          "kind": "collocation",
+          "text": "現金を使う",
+          "translation_zh": "使用现金",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"現金を使う\",\"reading\":\"げんきんをつかう\"}]",
+          "id": "35e1a2-ve-ja-c-199-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-203",
+      "language": "ja",
+      "lemma": "開ける",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-203",
+          "kind": "collocation",
+          "text": "箱を開ける",
+          "translation_zh": "打开箱子",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"箱を開ける\",\"reading\":\"はこをあける\"}]",
+          "id": "35e1a2-ve-ja-c-203-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-207",
+      "language": "ja",
+      "lemma": "閉める",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-207",
+          "kind": "collocation",
+          "text": "店を閉める",
+          "translation_zh": "关店",
+          "note_zh": "他动词；关闭的对象用を。",
+          "readings_json": "[{\"text\":\"店を閉める\",\"reading\":\"みせをしめる\"}]",
+          "id": "35e1a2-ve-ja-c-207-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-219",
+      "language": "ja",
+      "lemma": "大きい",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-219",
+          "kind": "collocation",
+          "text": "大きい音",
+          "translation_zh": "很大的声音",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"大きい音\",\"reading\":\"おおきいおと\"}]",
+          "id": "35e1a2-ve-ja-c-219-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-227",
+      "language": "ja",
+      "lemma": "新しい",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-227",
+          "kind": "collocation",
+          "text": "新しい仕事",
+          "translation_zh": "新工作",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"新しい仕事\",\"reading\":\"あたらしいしごと\"}]",
+          "id": "35e1a2-ve-ja-c-227-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-231",
+      "language": "ja",
+      "lemma": "古い",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-231",
+          "kind": "collocation",
+          "text": "古い写真",
+          "translation_zh": "旧照片",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"古い写真\",\"reading\":\"ふるいしゃしん\"}]",
+          "id": "35e1a2-ve-ja-c-231-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-239",
+      "language": "ja",
+      "lemma": "忙しい",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-239",
+          "kind": "collocation",
+          "text": "忙しい朝",
+          "translation_zh": "忙碌的早晨",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"忙しい朝\",\"reading\":\"いそがしいあさ\"}]",
+          "id": "35e1a2-ve-ja-c-239-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-251",
+      "language": "ja",
+      "lemma": "洗う",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-251",
+          "kind": "collocation",
+          "text": "顔を洗う",
+          "translation_zh": "洗脸",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"顔を洗う\",\"reading\":\"かおをあらう\"}]",
+          "id": "35e1a2-ve-ja-c-251-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-343",
+      "language": "ja",
+      "lemma": "安い",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-343",
+          "kind": "collocation",
+          "text": "安いホテル",
+          "translation_zh": "便宜的酒店",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"安いホテル\",\"reading\":\"やすいほてる\"}]",
+          "id": "35e1a2-ve-ja-c-343-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-159",
+      "language": "ja",
+      "lemma": "駅",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-159",
+          "kind": "pattern",
+          "text": "駅を出る",
+          "translation_zh": "走出车站",
+          "note_zh": "离开的场所用を。",
+          "readings_json": "[{\"text\":\"駅を出る\",\"reading\":\"えきをでる\"}]",
+          "id": "35e1a2-ve-ja-c-159-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-323",
+      "language": "ja",
+      "lemma": "近く",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-323",
+          "kind": "collocation",
+          "text": "家の近く",
+          "translation_zh": "家附近",
+          "note_zh": "近く作名词时可用の连接。",
+          "readings_json": "[{\"text\":\"家の近く\",\"reading\":\"いえのちかく\"}]",
+          "id": "35e1a2-ve-ja-c-323-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-375",
+      "language": "ja",
+      "lemma": "宿題",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-375",
+          "kind": "collocation",
+          "text": "宿題が終わる",
+          "translation_zh": "作业做完",
+          "note_zh": "完成的主体用が。",
+          "readings_json": "[{\"text\":\"宿題が終わる\",\"reading\":\"しゅくだいがおわる\"}]",
+          "id": "35e1a2-ve-ja-c-375-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-975",
+      "language": "ja",
+      "lemma": "写真",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-975",
+          "kind": "collocation",
+          "text": "写真を撮る",
+          "translation_zh": "拍照",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"写真を撮る\",\"reading\":\"しゃしんをとる\"}]",
+          "id": "35e1a2-ve-ja-c-975-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-1047",
+      "language": "ja",
+      "lemma": "ギター",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-1047",
+          "kind": "collocation",
+          "text": "ギターを弾く",
+          "translation_zh": "弹吉他",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"ギターを弾く\",\"reading\":\"ぎたーをひく\"}]",
+          "id": "35e1a2-ve-ja-c-1047-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-3201",
+      "language": "ja",
+      "lemma": "頭",
+      "stage": 1,
+      "usages": [
+        {
+          "item_id": "ja-c-3201",
+          "kind": "collocation",
+          "text": "頭を下げる",
+          "translation_zh": "低头；鞠躬",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"頭を下げる\",\"reading\":\"あたまをさげる\"}]",
+          "id": "35e1a2-ve-ja-c-3201-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-299",
+      "language": "ja",
+      "lemma": "説明する",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-299",
+          "kind": "collocation",
+          "text": "わかりやすく説明する",
+          "translation_zh": "清楚易懂地说明",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"わかりやすく説明する\",\"reading\":\"わかりやすくせつめいする\"}]",
+          "id": "35e1a2-ve-ja-c-299-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-307",
+      "language": "ja",
+      "lemma": "始める",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-307",
+          "kind": "collocation",
+          "text": "会議を始める",
+          "translation_zh": "开始会议",
+          "note_zh": "他动词；开始的对象用を。",
+          "readings_json": "[{\"text\":\"会議を始める\",\"reading\":\"かいぎをはじめる\"}]",
+          "id": "35e1a2-ve-ja-c-307-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-355",
+      "language": "ja",
+      "lemma": "お腹がすく",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-355",
+          "kind": "example",
+          "text": "お腹がすいています。",
+          "translation_zh": "我饿了。",
+          "note_zh": "持续的饥饿状态用ている。",
+          "readings_json": "[{\"text\":\"お腹がすいています。\",\"reading\":\"おなかがすいています。\"}]",
+          "id": "35e1a2-ve-ja-c-355-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-999",
+      "language": "ja",
+      "lemma": "晴れる",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-999",
+          "kind": "example",
+          "text": "明日は晴れるでしょう。",
+          "translation_zh": "明天大概会放晴。",
+          "note_zh": "晴れる描述天气转晴。",
+          "readings_json": "[{\"text\":\"明日は晴れるでしょう。\",\"reading\":\"あしたははれるでしょう。\"}]",
+          "id": "35e1a2-ve-ja-c-999-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-371",
+      "language": "ja",
+      "lemma": "週末",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-371",
+          "kind": "pattern",
+          "text": "週末に出かける",
+          "translation_zh": "周末外出",
+          "note_zh": "时间用に标记。",
+          "readings_json": "[{\"text\":\"週末に出かける\",\"reading\":\"しゅうまつにでかける\"}]",
+          "id": "35e1a2-ve-ja-c-371-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-379",
+      "language": "ja",
+      "lemma": "授業",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-379",
+          "kind": "collocation",
+          "text": "授業を受ける",
+          "translation_zh": "上课；听课",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"授業を受ける\",\"reading\":\"じゅぎょうをうける\"}]",
+          "id": "35e1a2-ve-ja-c-379-01"
+        }
+      ]
+    },
+    {
+      "item_id": "ja-c-403",
+      "language": "ja",
+      "lemma": "注文",
+      "stage": 2,
+      "usages": [
+        {
+          "item_id": "ja-c-403",
+          "kind": "collocation",
+          "text": "注文を変更する",
+          "translation_zh": "更改订单",
+          "note_zh": "高频自然搭配；保持目标词的当前义项。",
+          "readings_json": "[{\"text\":\"注文を変更する\",\"reading\":\"ちゅうもんをへんこうする\"}]",
+          "id": "35e1a2-ve-ja-c-403-01"
+        }
+      ]
+    }
+  ]
+}

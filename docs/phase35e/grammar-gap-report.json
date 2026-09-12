@@ -1,0 +1,1189 @@
+{
+  "generated_at": "2026-09-10T06:35:26.438Z",
+  "read_only": true,
+  "baseline": [
+    {
+      "language": "en",
+      "total": 73,
+      "lesson_linked": 42,
+      "coverage_percent": 57.5,
+      "unassigned": 31
+    },
+    {
+      "language": "ja",
+      "total": 82,
+      "lesson_linked": 43,
+      "coverage_percent": 52.4,
+      "unassigned": 39
+    }
+  ],
+  "by_level": [
+    {
+      "language": "en",
+      "level": 1,
+      "total": 12,
+      "lesson_linked": 9,
+      "unassigned": 3,
+      "expression_unused": 0
+    },
+    {
+      "language": "en",
+      "level": 2,
+      "total": 16,
+      "lesson_linked": 12,
+      "unassigned": 4,
+      "expression_unused": 0
+    },
+    {
+      "language": "en",
+      "level": 3,
+      "total": 21,
+      "lesson_linked": 8,
+      "unassigned": 13,
+      "expression_unused": 0
+    },
+    {
+      "language": "en",
+      "level": 4,
+      "total": 12,
+      "lesson_linked": 7,
+      "unassigned": 5,
+      "expression_unused": 0
+    },
+    {
+      "language": "en",
+      "level": 5,
+      "total": 7,
+      "lesson_linked": 3,
+      "unassigned": 4,
+      "expression_unused": 0
+    },
+    {
+      "language": "en",
+      "level": 6,
+      "total": 5,
+      "lesson_linked": 3,
+      "unassigned": 2,
+      "expression_unused": 0
+    },
+    {
+      "language": "ja",
+      "level": 1,
+      "total": 13,
+      "lesson_linked": 6,
+      "unassigned": 7,
+      "expression_unused": 0
+    },
+    {
+      "language": "ja",
+      "level": 2,
+      "total": 18,
+      "lesson_linked": 11,
+      "unassigned": 7,
+      "expression_unused": 0
+    },
+    {
+      "language": "ja",
+      "level": 3,
+      "total": 25,
+      "lesson_linked": 10,
+      "unassigned": 15,
+      "expression_unused": 0
+    },
+    {
+      "language": "ja",
+      "level": 4,
+      "total": 14,
+      "lesson_linked": 8,
+      "unassigned": 6,
+      "expression_unused": 0
+    },
+    {
+      "language": "ja",
+      "level": 5,
+      "total": 7,
+      "lesson_linked": 4,
+      "unassigned": 3,
+      "expression_unused": 0
+    },
+    {
+      "language": "ja",
+      "level": 6,
+      "total": 5,
+      "lesson_linked": 4,
+      "unassigned": 1,
+      "expression_unused": 0
+    }
+  ],
+  "underused": [
+    {
+      "id": "en-there-is",
+      "language": "en",
+      "level": 1,
+      "form_name": "there is / are + noun",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-wh-question",
+      "language": "en",
+      "level": 1,
+      "form_name": "wh-word + auxiliary + subject + verb?",
+      "expression_uses": 7,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-possessive",
+      "language": "en",
+      "level": 1,
+      "form_name": "my / your / his / her + noun",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-going-to",
+      "language": "en",
+      "level": 2,
+      "form_name": "be going to + base verb",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-before-after",
+      "language": "en",
+      "level": 2,
+      "form_name": "before / after + clause",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-enjoy-ing",
+      "language": "en",
+      "level": 2,
+      "form_name": "enjoy + V-ing",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-between-and",
+      "language": "en",
+      "level": 2,
+      "form_name": "between A and B",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-gerund-subject",
+      "language": "en",
+      "level": 3,
+      "form_name": "V-ing as subject",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-indirect-question",
+      "language": "en",
+      "level": 3,
+      "form_name": "verb + wh-word + subject + verb",
+      "expression_uses": 3,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-let-object",
+      "language": "en",
+      "level": 3,
+      "form_name": "let + object + base verb",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-since-for",
+      "language": "en",
+      "level": 3,
+      "form_name": "present perfect + since / for",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 1
+    },
+    {
+      "id": "en-as-long-as",
+      "language": "en",
+      "level": 3,
+      "form_name": "as long as + clause",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-remember-to",
+      "language": "en",
+      "level": 3,
+      "form_name": "remember to + verb",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 1
+    },
+    {
+      "id": "en-what-if",
+      "language": "en",
+      "level": 3,
+      "form_name": "What if + clause?",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-look-like",
+      "language": "en",
+      "level": 3,
+      "form_name": "It looks like + clause",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-make-feel",
+      "language": "en",
+      "level": 3,
+      "form_name": "make + object + feel + adjective",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-not-quite",
+      "language": "en",
+      "level": 3,
+      "form_name": "not quite + adjective",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-worried-that",
+      "language": "en",
+      "level": 3,
+      "form_name": "be worried + (that) clause",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-start-ing",
+      "language": "en",
+      "level": 3,
+      "form_name": "start + V-ing / to-infinitive",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-help-infinitive",
+      "language": "en",
+      "level": 3,
+      "form_name": "help + object + (to) verb",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-present-perfect-continuous",
+      "language": "en",
+      "level": 4,
+      "form_name": "have / has been + V-ing",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 1
+    },
+    {
+      "id": "en-sooner-better",
+      "language": "en",
+      "level": 4,
+      "form_name": "The sooner + clause, the better",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-should-have",
+      "language": "en",
+      "level": 4,
+      "form_name": "should have + past participle",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-concessive-although",
+      "language": "en",
+      "level": 4,
+      "form_name": "although + clause, main clause",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-seem-to",
+      "language": "en",
+      "level": 4,
+      "form_name": "seem to + base verb",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-regardless",
+      "language": "en",
+      "level": 5,
+      "form_name": "regardless of + noun / wh-clause",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-the-more",
+      "language": "en",
+      "level": 5,
+      "form_name": "the + comparative ..., the + comparative ...",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-about-time",
+      "language": "en",
+      "level": 5,
+      "form_name": "It's about time + subject + past form",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-would-have",
+      "language": "en",
+      "level": 5,
+      "form_name": "would have + past participle",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 1
+    },
+    {
+      "id": "en-cleft",
+      "language": "en",
+      "level": 6,
+      "form_name": "It is / was X that ...",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "en-qualified-comparison",
+      "language": "en",
+      "level": 6,
+      "form_name": "more ... in terms of X, but ...",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-plain-nonpast",
+      "language": "ja",
+      "level": 1,
+      "form_name": "辞书形",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-wa-topic",
+      "language": "ja",
+      "level": 1,
+      "form_name": "名词 + は",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-wo-object",
+      "language": "ja",
+      "level": 1,
+      "form_name": "名词 + を + 动词",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-ni-time",
+      "language": "ja",
+      "level": 1,
+      "form_name": "时间 + に + 动词",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-de-place",
+      "language": "ja",
+      "level": 1,
+      "form_name": "场所 + で + 动词",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-no-possession",
+      "language": "ja",
+      "level": 1,
+      "form_name": "名词 + の + 名词",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-i-adjective",
+      "language": "ja",
+      "level": 1,
+      "form_name": "い形容词 + です",
+      "expression_uses": 6,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-te-form",
+      "language": "ja",
+      "level": 2,
+      "form_name": "て形",
+      "expression_uses": 3,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-polite-negative",
+      "language": "ja",
+      "level": 2,
+      "form_name": "〜ません",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-nai",
+      "language": "ja",
+      "level": 2,
+      "form_name": "动词ない形",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-mae-ni",
+      "language": "ja",
+      "level": 2,
+      "form_name": "辞书形 + 前に",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-kara-after",
+      "language": "ja",
+      "level": 2,
+      "form_name": "て形 + から",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-duration",
+      "language": "ja",
+      "level": 2,
+      "form_name": "时间 + かかる",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-ni-naru",
+      "language": "ja",
+      "level": 2,
+      "form_name": "名词 / な形容词 + になる",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-sou",
+      "language": "ja",
+      "level": 3,
+      "form_name": "〜そうだ（样态）",
+      "expression_uses": 3,
+      "curated_examples": 1,
+      "relations": 1
+    },
+    {
+      "id": "ja-hou-ga-ii",
+      "language": "ja",
+      "level": 3,
+      "form_name": "た形 / ない形 + ほうがいい",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-nara",
+      "language": "ja",
+      "level": 3,
+      "form_name": "普通形 + なら",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-tara",
+      "language": "ja",
+      "level": 3,
+      "form_name": "た形 + ら",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-temo",
+      "language": "ja",
+      "level": 3,
+      "form_name": "て形 + も",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-koto-ga-aru",
+      "language": "ja",
+      "level": 3,
+      "form_name": "た形 + ことがある",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 1
+    },
+    {
+      "id": "ja-hajimeru",
+      "language": "ja",
+      "level": 3,
+      "form_name": "ます干 + 始める",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-to-condition",
+      "language": "ja",
+      "level": 3,
+      "form_name": "普通形 + と",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-bakari",
+      "language": "ja",
+      "level": 3,
+      "form_name": "た形 + ばかり",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-tokoro",
+      "language": "ja",
+      "level": 3,
+      "form_name": "た形 + ところ",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-nakute-mo-ii",
+      "language": "ja",
+      "level": 3,
+      "form_name": "ない形去い + くてもいい",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-sukuname",
+      "language": "ja",
+      "level": 3,
+      "form_name": "名词 + は少なめでお願いします",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-dochiraka",
+      "language": "ja",
+      "level": 3,
+      "form_name": "どちらかというと + preference",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-indirect-ka",
+      "language": "ja",
+      "level": 3,
+      "form_name": "普通形 + か + predicate",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-volitional",
+      "language": "ja",
+      "level": 3,
+      "form_name": "意志形 + か / よ",
+      "expression_uses": 4,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-te-itadaku",
+      "language": "ja",
+      "level": 4,
+      "form_name": "て形 + いただけますか",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 1
+    },
+    {
+      "id": "ja-youda",
+      "language": "ja",
+      "level": 4,
+      "form_name": "普通形 + ようだ",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-hearsay-sou",
+      "language": "ja",
+      "level": 4,
+      "form_name": "普通形 + そうだ",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-honorific",
+      "language": "ja",
+      "level": 4,
+      "form_name": "おっしゃる / なさる 等",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-humble",
+      "language": "ja",
+      "level": 4,
+      "form_name": "いたす / 伺う 等",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-wari-ni",
+      "language": "ja",
+      "level": 4,
+      "form_name": "名词 + の割に",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-ba-hodo",
+      "language": "ja",
+      "level": 5,
+      "form_name": "ば形 + 同一词辞书形 + ほど",
+      "expression_uses": 2,
+      "curated_examples": 1,
+      "relations": 1
+    },
+    {
+      "id": "ja-ni-kakawarazu",
+      "language": "ja",
+      "level": 5,
+      "form_name": "名词 + にかかわらず",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-beki",
+      "language": "ja",
+      "level": 5,
+      "form_name": "辞书形 + べきだ",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    },
+    {
+      "id": "ja-zaru-wo-enai",
+      "language": "ja",
+      "level": 6,
+      "form_name": "ない干 + ざるを得ない",
+      "expression_uses": 1,
+      "curated_examples": 1,
+      "relations": 0
+    }
+  ],
+  "missing_progression_candidates": [
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 1,
+      "topic": "chat",
+      "proposed_content": "be / do negation and short answers",
+      "reason": "否定、纠正和自然短答是基础交流骨架",
+      "target_lesson": "en-s1-l1",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 1,
+      "topic": "chat",
+      "proposed_content": "wh-questions as a taught question system",
+      "reason": "已有 grammar 但未进 Lesson；信息提问能力断层",
+      "target_lesson": "en-s1-l1",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 1,
+      "topic": "chat",
+      "proposed_content": "articles: a/an/the/zero",
+      "reason": "基础名词短语没有显式教学支架",
+      "target_lesson": null,
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 2,
+      "topic": "food",
+      "proposed_content": "some/any with count and non-count nouns",
+      "reason": "点餐、购物和库存询问需要数量限定",
+      "target_lesson": "en-s1-l3",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 2,
+      "topic": "plans",
+      "proposed_content": "past simple questions and negatives",
+      "reason": "过去经历只有肯定陈述，缺问答和否定",
+      "target_lesson": null,
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 2,
+      "topic": "health",
+      "proposed_content": "should / should not for advice",
+      "reason": "健康课缺核心建议结构",
+      "target_lesson": "en-s3-l2",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 3,
+      "topic": "school",
+      "proposed_content": "must / have to / do not have to contrast",
+      "reason": "义务、规则与非必要的语义边界未成体系",
+      "target_lesson": "en-s3-l4",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 3,
+      "topic": "plans",
+      "proposed_content": "first conditional",
+      "reason": "真实未来条件是计划和协商的核心缺口",
+      "target_lesson": "en-s5-l4",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 3,
+      "topic": "time",
+      "proposed_content": "present continuous for future arrangements",
+      "reason": "安排语法与正在进行混在同一形式下",
+      "target_lesson": "en-s2-l1",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 4,
+      "topic": "plans",
+      "proposed_content": "present perfect versus simple past",
+      "reason": "两种过去关联方式未有对比式教学",
+      "target_lesson": "en-s6-l4",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 4,
+      "topic": "school",
+      "proposed_content": "reported speech for relaying information",
+      "reason": "工作/学校缺转述指示和信息",
+      "target_lesson": "NEW-en-s3-workplace",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "en",
+      "stage_level": 4,
+      "topic": "chat",
+      "proposed_content": "modal deduction: must/might/can't",
+      "reason": "不确定、推断和澄清缺完整强度轴",
+      "target_lesson": "en-s6-l2",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 1,
+      "topic": "travel",
+      "proposed_content": "助詞 に・へ・で（移動と場所）の対比",
+      "reason": "路线课目标要求助词但现有 Lesson 未显式形成对比",
+      "target_lesson": "ja-s2-l1",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 1,
+      "topic": "travel",
+      "proposed_content": "助詞 から・まで",
+      "reason": "起点终点和时间范围是基础出行能力",
+      "target_lesson": null,
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 2,
+      "topic": "chat",
+      "proposed_content": "い形容詞／な形容詞の否定・過去",
+      "reason": "形容词变化未形成可学习 progression",
+      "target_lesson": null,
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 2,
+      "topic": "chat",
+      "proposed_content": "普通形の否定（ない形）と過去",
+      "reason": "常体只有辞书形/た形碎片，缺体系",
+      "target_lesson": "ja-s3-l1",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 2,
+      "topic": "home",
+      "proposed_content": "て形による順序・接続",
+      "reason": "て形存在但未作为动作链教学",
+      "target_lesson": "ja-s2-l2",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 2,
+      "topic": "home",
+      "proposed_content": "〜てはいけない／〜てもいい",
+      "reason": "许可有单点，禁止和规则对比缺失",
+      "target_lesson": null,
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 2,
+      "topic": "shopping",
+      "proposed_content": "助数詞（人・本・枚・個・つ）",
+      "reason": "购物数量任务没有 counter progression",
+      "target_lesson": "ja-s2-l4",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 3,
+      "topic": "school",
+      "proposed_content": "〜なければならない／〜なくてもいい",
+      "reason": "义务与非必要的高价值对比缺失",
+      "target_lesson": null,
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 3,
+      "topic": "plans",
+      "proposed_content": "〜から／〜ので の理由対比",
+      "reason": "给理由依赖零散 ので，缺语用对比",
+      "target_lesson": null,
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 3,
+      "topic": "shopping",
+      "proposed_content": "〜より／〜ほうが（比較）",
+      "reason": "购物和偏好目标缺核心比较结构",
+      "target_lesson": null,
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 3,
+      "topic": "plans",
+      "proposed_content": "〜たことがある（経験）",
+      "reason": "已有 grammar 但未进入经验课",
+      "target_lesson": "ja-s3-l2",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 3,
+      "topic": "social",
+      "proposed_content": "あげる・くれる・もらう",
+      "reason": "受益方向和人际视角未成体系",
+      "target_lesson": null,
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 3,
+      "topic": "help",
+      "proposed_content": "んです／んですが（説明と前置き）",
+      "reason": "现有 んですが Level 4，基础解释功能出现过晚",
+      "target_lesson": null,
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 4,
+      "topic": "school",
+      "proposed_content": "尊敬語・謙譲語の役割別導入",
+      "reason": "已有条目但都未进 Lesson，缺职场语境",
+      "target_lesson": "NEW-ja-s3-workplace",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 4,
+      "topic": "plans",
+      "proposed_content": "条件形 なら・たら・ば・と の使い分け",
+      "reason": "四种条件散落，缺 communicative contrast",
+      "target_lesson": "ja-s5-l3",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    },
+    {
+      "item_type": "grammar",
+      "language": "ja",
+      "stage_level": 3,
+      "topic": "chat",
+      "proposed_content": "終助詞 ね・よ・かな と断定緩和",
+      "reason": "日语自然会话的句末语气未显式覆盖",
+      "target_lesson": "ja-s6-l2",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "editorially authored; examples may be AI-assisted then reviewed",
+      "requires_human_review": true,
+      "duplicate_risk": "conceptual overlap review required against existing granular points"
+    }
+  ],
+  "possible_merge_review": [
+    {
+      "language": "en",
+      "items": [
+        "en-simple-present",
+        "en-do-question",
+        "proposed basic negation"
+      ],
+      "reason": "Keep distinct entries but design one question/negative progression and explicit relations."
+    },
+    {
+      "language": "en",
+      "items": [
+        "en-would-have",
+        "en-third-conditional",
+        "en-mixed-conditional"
+      ],
+      "reason": "Not duplicates; current granularity needs relation and prerequisite review."
+    },
+    {
+      "language": "ja",
+      "items": [
+        "ja-te-kudasai",
+        "ja-te-morau",
+        "ja-te-itadaku",
+        "ja-honorific-request"
+      ],
+      "reason": "Build a politeness/request ladder; do not merge mechanically."
+    },
+    {
+      "language": "ja",
+      "items": [
+        "ja-nara",
+        "ja-tara",
+        "ja-ba-condition",
+        "ja-to-condition"
+      ],
+      "reason": "Keep semantic distinctions but teach contrastively."
+    }
+  ],
+  "conclusions": [
+    "All published grammar has at least one curated example and expression use, but 70 points are not in any lesson.",
+    "Japanese plain/polite, particles, counters and condition contrasts need deliberate sequencing.",
+    "English tense/question/negation/modality progression has foundational holes despite advanced structures being present."
+  ]
+}

@@ -1,0 +1,1039 @@
+{
+  "generated_at": "2026-09-10T06:35:26.438Z",
+  "read_only": true,
+  "topic_count": 15,
+  "topics": [
+    {
+      "id": "food",
+      "name_zh": "吃饭",
+      "sort_order": 0
+    },
+    {
+      "id": "chat",
+      "name_zh": "日常聊天",
+      "sort_order": 1
+    },
+    {
+      "id": "plans",
+      "name_zh": "计划与经历",
+      "sort_order": 1
+    },
+    {
+      "id": "social",
+      "name_zh": "社交",
+      "sort_order": 2
+    },
+    {
+      "id": "body",
+      "name_zh": "身体状态",
+      "sort_order": 3
+    },
+    {
+      "id": "school",
+      "name_zh": "学校 / 工作",
+      "sort_order": 3
+    },
+    {
+      "id": "home",
+      "name_zh": "家里",
+      "sort_order": 4
+    },
+    {
+      "id": "travel",
+      "name_zh": "交通 / 出行",
+      "sort_order": 4
+    },
+    {
+      "id": "time",
+      "name_zh": "时间与约会",
+      "sort_order": 5
+    },
+    {
+      "id": "weather",
+      "name_zh": "天气",
+      "sort_order": 5
+    },
+    {
+      "id": "help",
+      "name_zh": "请求与帮助",
+      "sort_order": 6
+    },
+    {
+      "id": "shopping",
+      "name_zh": "购物",
+      "sort_order": 6
+    },
+    {
+      "id": "health",
+      "name_zh": "身体状态",
+      "sort_order": 9
+    },
+    {
+      "id": "feelings",
+      "name_zh": "情绪",
+      "sort_order": 10
+    },
+    {
+      "id": "hobbies",
+      "name_zh": "兴趣爱好",
+      "sort_order": 11
+    }
+  ],
+  "coverage": [
+    {
+      "language": "en",
+      "topic_id": "food",
+      "topic_name_zh": "吃饭",
+      "lessons": 2,
+      "lesson_stages": [
+        1,
+        4
+      ],
+      "vocabulary": 20,
+      "lesson_linked_vocabulary": 15,
+      "expressions": 17,
+      "lesson_linked_expressions": 8,
+      "sentences": 12,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "chat",
+      "topic_name_zh": "日常聊天",
+      "lessons": 2,
+      "lesson_stages": [
+        1,
+        6
+      ],
+      "vocabulary": 41,
+      "lesson_linked_vocabulary": 30,
+      "expressions": 39,
+      "lesson_linked_expressions": 8,
+      "sentences": 34,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "plans",
+      "topic_name_zh": "计划与经历",
+      "lessons": 3,
+      "lesson_stages": [
+        3,
+        5,
+        6
+      ],
+      "vocabulary": 20,
+      "lesson_linked_vocabulary": 19,
+      "expressions": 16,
+      "lesson_linked_expressions": 9,
+      "sentences": 11,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "social",
+      "topic_name_zh": "社交",
+      "lessons": 3,
+      "lesson_stages": [
+        1,
+        4,
+        6
+      ],
+      "vocabulary": 19,
+      "lesson_linked_vocabulary": 18,
+      "expressions": 14,
+      "lesson_linked_expressions": 11,
+      "sentences": 6,
+      "scenarios": 6,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "body",
+      "topic_name_zh": "身体状态",
+      "lessons": 0,
+      "lesson_stages": [],
+      "vocabulary": 2,
+      "lesson_linked_vocabulary": 1,
+      "expressions": 2,
+      "lesson_linked_expressions": 0,
+      "sentences": 2,
+      "scenarios": 0,
+      "dialogues": 0,
+      "dialogue_turns": 0
+    },
+    {
+      "language": "en",
+      "topic_id": "school",
+      "topic_name_zh": "学校 / 工作",
+      "lessons": 3,
+      "lesson_stages": [
+        3,
+        5,
+        6
+      ],
+      "vocabulary": 40,
+      "lesson_linked_vocabulary": 25,
+      "expressions": 25,
+      "lesson_linked_expressions": 12,
+      "sentences": 20,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "home",
+      "topic_name_zh": "家里",
+      "lessons": 1,
+      "lesson_stages": [
+        2
+      ],
+      "vocabulary": 16,
+      "lesson_linked_vocabulary": 10,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 6,
+      "scenarios": 4,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "travel",
+      "topic_name_zh": "交通 / 出行",
+      "lessons": 2,
+      "lesson_stages": [
+        2,
+        5
+      ],
+      "vocabulary": 14,
+      "lesson_linked_vocabulary": 11,
+      "expressions": 13,
+      "lesson_linked_expressions": 8,
+      "sentences": 8,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "time",
+      "topic_name_zh": "时间与约会",
+      "lessons": 1,
+      "lesson_stages": [
+        2
+      ],
+      "vocabulary": 18,
+      "lesson_linked_vocabulary": 13,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 7,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "weather",
+      "topic_name_zh": "天气",
+      "lessons": 1,
+      "lesson_stages": [
+        3
+      ],
+      "vocabulary": 18,
+      "lesson_linked_vocabulary": 12,
+      "expressions": 15,
+      "lesson_linked_expressions": 4,
+      "sentences": 11,
+      "scenarios": 2,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "help",
+      "topic_name_zh": "请求与帮助",
+      "lessons": 2,
+      "lesson_stages": [
+        1,
+        5
+      ],
+      "vocabulary": 16,
+      "lesson_linked_vocabulary": 14,
+      "expressions": 13,
+      "lesson_linked_expressions": 8,
+      "sentences": 6,
+      "scenarios": 4,
+      "dialogues": 3,
+      "dialogue_turns": 6
+    },
+    {
+      "language": "en",
+      "topic_id": "shopping",
+      "topic_name_zh": "购物",
+      "lessons": 1,
+      "lesson_stages": [
+        2
+      ],
+      "vocabulary": 18,
+      "lesson_linked_vocabulary": 10,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 7,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "health",
+      "topic_name_zh": "身体状态",
+      "lessons": 1,
+      "lesson_stages": [
+        3
+      ],
+      "vocabulary": 14,
+      "lesson_linked_vocabulary": 10,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 7,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "feelings",
+      "topic_name_zh": "情绪",
+      "lessons": 1,
+      "lesson_stages": [
+        4
+      ],
+      "vocabulary": 18,
+      "lesson_linked_vocabulary": 10,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 7,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "en",
+      "topic_id": "hobbies",
+      "topic_name_zh": "兴趣爱好",
+      "lessons": 1,
+      "lesson_stages": [
+        4
+      ],
+      "vocabulary": 14,
+      "lesson_linked_vocabulary": 10,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 7,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "food",
+      "topic_name_zh": "吃饭",
+      "lessons": 1,
+      "lesson_stages": [
+        1
+      ],
+      "vocabulary": 19,
+      "lesson_linked_vocabulary": 12,
+      "expressions": 17,
+      "lesson_linked_expressions": 4,
+      "sentences": 12,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "chat",
+      "topic_name_zh": "日常聊天",
+      "lessons": 3,
+      "lesson_stages": [
+        1,
+        3,
+        6
+      ],
+      "vocabulary": 45,
+      "lesson_linked_vocabulary": 34,
+      "expressions": 48,
+      "lesson_linked_expressions": 12,
+      "sentences": 43,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "plans",
+      "topic_name_zh": "计划与经历",
+      "lessons": 3,
+      "lesson_stages": [
+        3,
+        4,
+        6
+      ],
+      "vocabulary": 19,
+      "lesson_linked_vocabulary": 17,
+      "expressions": 15,
+      "lesson_linked_expressions": 10,
+      "sentences": 10,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "social",
+      "topic_name_zh": "社交",
+      "lessons": 3,
+      "lesson_stages": [
+        1,
+        4,
+        6
+      ],
+      "vocabulary": 17,
+      "lesson_linked_vocabulary": 15,
+      "expressions": 13,
+      "lesson_linked_expressions": 9,
+      "sentences": 6,
+      "scenarios": 5,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "body",
+      "topic_name_zh": "身体状态",
+      "lessons": 0,
+      "lesson_stages": [],
+      "vocabulary": 2,
+      "lesson_linked_vocabulary": 0,
+      "expressions": 2,
+      "lesson_linked_expressions": 0,
+      "sentences": 2,
+      "scenarios": 0,
+      "dialogues": 0,
+      "dialogue_turns": 0
+    },
+    {
+      "language": "ja",
+      "topic_id": "school",
+      "topic_name_zh": "学校 / 工作",
+      "lessons": 2,
+      "lesson_stages": [
+        5,
+        6
+      ],
+      "vocabulary": 32,
+      "lesson_linked_vocabulary": 21,
+      "expressions": 26,
+      "lesson_linked_expressions": 7,
+      "sentences": 21,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "home",
+      "topic_name_zh": "家里",
+      "lessons": 1,
+      "lesson_stages": [
+        2
+      ],
+      "vocabulary": 10,
+      "lesson_linked_vocabulary": 6,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 6,
+      "scenarios": 4,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "travel",
+      "topic_name_zh": "交通 / 出行",
+      "lessons": 2,
+      "lesson_stages": [
+        2,
+        5
+      ],
+      "vocabulary": 13,
+      "lesson_linked_vocabulary": 12,
+      "expressions": 13,
+      "lesson_linked_expressions": 8,
+      "sentences": 8,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "time",
+      "topic_name_zh": "时间与约会",
+      "lessons": 1,
+      "lesson_stages": [
+        2
+      ],
+      "vocabulary": 19,
+      "lesson_linked_vocabulary": 13,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 7,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "weather",
+      "topic_name_zh": "天气",
+      "lessons": 1,
+      "lesson_stages": [
+        4
+      ],
+      "vocabulary": 19,
+      "lesson_linked_vocabulary": 13,
+      "expressions": 14,
+      "lesson_linked_expressions": 4,
+      "sentences": 10,
+      "scenarios": 2,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "help",
+      "topic_name_zh": "请求与帮助",
+      "lessons": 3,
+      "lesson_stages": [
+        1,
+        3,
+        5
+      ],
+      "vocabulary": 14,
+      "lesson_linked_vocabulary": 14,
+      "expressions": 13,
+      "lesson_linked_expressions": 11,
+      "sentences": 6,
+      "scenarios": 4,
+      "dialogues": 3,
+      "dialogue_turns": 6
+    },
+    {
+      "language": "ja",
+      "topic_id": "shopping",
+      "topic_name_zh": "购物",
+      "lessons": 1,
+      "lesson_stages": [
+        2
+      ],
+      "vocabulary": 16,
+      "lesson_linked_vocabulary": 10,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 7,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "health",
+      "topic_name_zh": "身体状态",
+      "lessons": 1,
+      "lesson_stages": [
+        3
+      ],
+      "vocabulary": 12,
+      "lesson_linked_vocabulary": 10,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 7,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "feelings",
+      "topic_name_zh": "情绪",
+      "lessons": 1,
+      "lesson_stages": [
+        5
+      ],
+      "vocabulary": 18,
+      "lesson_linked_vocabulary": 13,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 7,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    },
+    {
+      "language": "ja",
+      "topic_id": "hobbies",
+      "topic_name_zh": "兴趣爱好",
+      "lessons": 1,
+      "lesson_stages": [
+        4
+      ],
+      "vocabulary": 14,
+      "lesson_linked_vocabulary": 11,
+      "expressions": 12,
+      "lesson_linked_expressions": 4,
+      "sentences": 7,
+      "scenarios": 3,
+      "dialogues": 2,
+      "dialogue_turns": 4
+    }
+  ],
+  "judgments": {
+    "en": {
+      "overrepresented": [
+        "chat: 39 expressions and broad catch-all use",
+        "school: 25 expressions across task and academic discourse"
+      ],
+      "underrepresented": [
+        "body: 2 expressions, 0 lessons; overlaps health label",
+        "health, home, shopping, time, hobbies: one lesson each",
+        "travel: two lessons but almost entirely transport"
+      ],
+      "missing_functions": [
+        "cooking and supermarket workflow",
+        "renting and maintenance",
+        "bank/payment problems",
+        "phone/network troubleshooting",
+        "accommodation",
+        "driving",
+        "medical service interaction"
+      ]
+    },
+    "ja": {
+      "overrepresented": [
+        "chat: 48 expressions and broad catch-all use",
+        "school: 26 expressions, with advanced written forms concentrated late"
+      ],
+      "underrepresented": [
+        "body: 2 expressions, 0 lessons; overlaps health label",
+        "food: one lesson and no full restaurant workflow",
+        "health, home, shopping, time, hobbies: one lesson each"
+      ],
+      "missing_functions": [
+        "助数詞を伴う買物",
+        "飲食店の多輪やり取り",
+        "賃貸・修理",
+        "報告・連絡・相談",
+        "通信トラブル",
+        "宿泊",
+        "医療サービス interaction"
+      ]
+    }
+  },
+  "communicative_functions": [
+    {
+      "stage": 1,
+      "covered": [
+        "greet",
+        "thank",
+        "apologize",
+        "make a basic request",
+        "state basic wants"
+      ],
+      "gaps": [
+        "introduce self/others as a complete exchange",
+        "ask follow-up questions",
+        "close a conversation",
+        "basic negative correction"
+      ]
+    },
+    {
+      "stage": 2,
+      "covered": [
+        "ask",
+        "answer",
+        "confirm time",
+        "choose",
+        "ask directions",
+        "request permission"
+      ],
+      "gaps": [
+        "clarify after non-understanding",
+        "reschedule",
+        "counter/quantity interaction",
+        "respond to refusal"
+      ]
+    },
+    {
+      "stage": 3,
+      "covered": [
+        "describe symptoms",
+        "plan",
+        "suggest",
+        "explain a task",
+        "make a polite request"
+      ],
+      "gaps": [
+        "compare systematically",
+        "narrate a past experience through Q&A",
+        "give advice",
+        "service complaint/return",
+        "multi-step problem solving"
+      ]
+    },
+    {
+      "stage": 4,
+      "covered": [
+        "express feelings",
+        "set boundaries",
+        "discuss preferences",
+        "describe expectation mismatch"
+      ],
+      "gaps": [
+        "negotiate",
+        "complain and seek remedy",
+        "qualify an opinion",
+        "manage register across relationships"
+      ]
+    },
+    {
+      "stage": 5,
+      "covered": [
+        "give conditions",
+        "cite evidence",
+        "make indirect requests",
+        "reflect on outcomes"
+      ],
+      "gaps": [
+        "sustain disagreement",
+        "test alternatives and reach agreement",
+        "repair failed service interactions",
+        "extended turn-taking"
+      ]
+    },
+    {
+      "stage": 6,
+      "covered": [
+        "advanced hypothesis",
+        "formal evidence framing",
+        "hedging/clarification fragments"
+      ],
+      "gaps": [
+        "paragraph-level narration",
+        "claim→challenge→qualification dialogue",
+        "advanced social negotiation",
+        "clear independence over Stage 4–5"
+      ]
+    }
+  ],
+  "stage_progression": [
+    {
+      "language": "en",
+      "stage": 1,
+      "lessons": 4,
+      "avg_vocabulary_level": 1.19,
+      "avg_grammar_level": 1.33,
+      "avg_expression_difficulty": 1.25,
+      "lessons_with_dialogue": 1,
+      "interpretation": "Foundational task growth is visible."
+    },
+    {
+      "language": "en",
+      "stage": 2,
+      "lessons": 4,
+      "avg_vocabulary_level": 1.63,
+      "avg_grammar_level": 1.42,
+      "avg_expression_difficulty": 1.94,
+      "lessons_with_dialogue": 4,
+      "interpretation": "Foundational task growth is visible."
+    },
+    {
+      "language": "en",
+      "stage": 3,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.22,
+      "avg_grammar_level": 1.67,
+      "avg_expression_difficulty": 3.06,
+      "lessons_with_dialogue": 3,
+      "interpretation": "Expression complexity rises, but grammar/vocabulary lag behind stage labels."
+    },
+    {
+      "language": "en",
+      "stage": 4,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.41,
+      "avg_grammar_level": 2.33,
+      "avg_expression_difficulty": 3.63,
+      "lessons_with_dialogue": 4,
+      "interpretation": "Expression complexity rises, but grammar/vocabulary lag behind stage labels."
+    },
+    {
+      "language": "en",
+      "stage": 5,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.44,
+      "avg_grammar_level": 3.08,
+      "avg_expression_difficulty": 4.06,
+      "lessons_with_dialogue": 4,
+      "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+    },
+    {
+      "language": "en",
+      "stage": 6,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.38,
+      "avg_grammar_level": 3.42,
+      "avg_expression_difficulty": 3.63,
+      "lessons_with_dialogue": 1,
+      "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+    },
+    {
+      "language": "ja",
+      "stage": 1,
+      "lessons": 4,
+      "avg_vocabulary_level": 1.31,
+      "avg_grammar_level": 1.25,
+      "avg_expression_difficulty": 1.38,
+      "lessons_with_dialogue": 2,
+      "interpretation": "Foundational task growth is visible."
+    },
+    {
+      "language": "ja",
+      "stage": 2,
+      "lessons": 4,
+      "avg_vocabulary_level": 1.51,
+      "avg_grammar_level": 1.75,
+      "avg_expression_difficulty": 2,
+      "lessons_with_dialogue": 3,
+      "interpretation": "Foundational task growth is visible."
+    },
+    {
+      "language": "ja",
+      "stage": 3,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.25,
+      "avg_grammar_level": 2.75,
+      "avg_expression_difficulty": 2.94,
+      "lessons_with_dialogue": 3,
+      "interpretation": "Expression complexity rises, but grammar/vocabulary lag behind stage labels."
+    },
+    {
+      "language": "ja",
+      "stage": 4,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.09,
+      "avg_grammar_level": 3,
+      "avg_expression_difficulty": 3.81,
+      "lessons_with_dialogue": 4,
+      "interpretation": "Expression complexity rises, but grammar/vocabulary lag behind stage labels."
+    },
+    {
+      "language": "ja",
+      "stage": 5,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.41,
+      "avg_grammar_level": 3.25,
+      "avg_expression_difficulty": 4,
+      "lessons_with_dialogue": 3,
+      "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+    },
+    {
+      "language": "ja",
+      "stage": 6,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.75,
+      "avg_grammar_level": 3.92,
+      "avg_expression_difficulty": 4.06,
+      "lessons_with_dialogue": 1,
+      "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+    }
+  ],
+  "exam_support": {
+    "alignment_status": "draft",
+    "alignments": [
+      {
+        "framework_id": "IELTS",
+        "target": "5.0",
+        "language": "en",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 6,
+        "vocabulary": 2,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "5.5",
+        "language": "en",
+        "status": "draft",
+        "source_type": "editorial_demo",
+        "items": 1,
+        "vocabulary": 0,
+        "grammar": 0,
+        "expressions": 1
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "5.5",
+        "language": "en",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "6.0",
+        "language": "en",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "6.5",
+        "language": "en",
+        "status": "draft",
+        "source_type": "editorial_demo",
+        "items": 4,
+        "vocabulary": 1,
+        "grammar": 1,
+        "expressions": 2
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "6.5",
+        "language": "en",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "7.0+",
+        "language": "en",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N1",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N2",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N3",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N4",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "editorial_demo",
+        "items": 3,
+        "vocabulary": 1,
+        "grammar": 1,
+        "expressions": 1
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N4",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 6,
+        "vocabulary": 2,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N5",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      }
+    ],
+    "IELTS": {
+      "strengths": [
+        "Some opinion, evidence, comparison, qualification and formal grammar anchors exist."
+      ],
+      "gaps": [
+        "Sparse item counts per target",
+        "Little sustained speaking interaction",
+        "Reason-example-qualification sequences are not systematic"
+      ]
+    },
+    "JLPT": {
+      "strengths": [
+        "N5–N1 draft targets each have vocabulary, grammar and expression anchors."
+      ],
+      "gaps": [
+        "Not an official word-by-word classification",
+        "Polite/plain and particle progression is incomplete internally",
+        "N1/N2 support is sparse and largely isolated"
+      ]
+    },
+    "alignment_changed": false
+  }
+}

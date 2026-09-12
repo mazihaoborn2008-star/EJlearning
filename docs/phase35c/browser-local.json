@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:8798",
+  "checks": [
+    "All six Vocabulary Stages and Grammar Levels in both languages at 360/390/430/1440, no empty bands or horizontal overflow",
+    "Migrated Sentence → Grammar → real Sentence navigation",
+    "Vocabulary → Sentence → Vocabulary with modal links",
+    "All exam targets show draft references; intentional search empty state works",
+    "Learner storage remains unchanged with expanded curriculum"
+  ],
+  "errors": []
+}

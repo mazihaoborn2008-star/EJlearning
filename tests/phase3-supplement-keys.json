@@ -1,0 +1,272 @@
+{
+  "p3-completion-en-1": {
+    "key": 1,
+    "difficulty": 1,
+    "conceptId": 2
+  },
+  "p3-completion-en-2": {
+    "key": 2,
+    "difficulty": 1,
+    "conceptId": 16
+  },
+  "p3-completion-en-3": {
+    "key": 0,
+    "difficulty": 2,
+    "conceptId": 42
+  },
+  "p3-completion-en-4": {
+    "key": 3,
+    "difficulty": 2,
+    "conceptId": 78
+  },
+  "p3-completion-en-5": {
+    "key": 1,
+    "difficulty": 3,
+    "conceptId": 44
+  },
+  "p3-completion-en-6": {
+    "key": 2,
+    "difficulty": 3,
+    "conceptId": 92
+  },
+  "p3-completion-en-7": {
+    "key": 0,
+    "difficulty": 4,
+    "conceptId": 71
+  },
+  "p3-completion-en-8": {
+    "key": 3,
+    "difficulty": 4,
+    "conceptId": 179
+  },
+  "p3-completion-en-9": {
+    "key": 1,
+    "difficulty": 5,
+    "conceptId": 178
+  },
+  "p3-completion-en-10": {
+    "key": 2,
+    "difficulty": 5,
+    "conceptId": 180
+  },
+  "p3-completion-en-11": {
+    "key": 0,
+    "difficulty": 6,
+    "conceptId": 38
+  },
+  "p3-completion-en-12": {
+    "key": 3,
+    "difficulty": 6,
+    "conceptId": 182
+  },
+  "p3-original-en-1": {
+    "key": 1,
+    "difficulty": 2,
+    "conceptId": 1
+  },
+  "p3-original-en-2": {
+    "key": 2,
+    "difficulty": 2,
+    "conceptId": 2
+  },
+  "p3-original-en-3": {
+    "key": 3,
+    "difficulty": 1,
+    "conceptId": 3
+  },
+  "p3-original-en-4": {
+    "key": 0,
+    "difficulty": 1,
+    "conceptId": 4
+  },
+  "p3-original-en-5": {
+    "key": 1,
+    "difficulty": 1,
+    "conceptId": 5
+  },
+  "p3-original-en-6": {
+    "key": 2,
+    "difficulty": 1,
+    "conceptId": 6
+  },
+  "p3-original-en-7": {
+    "key": 3,
+    "difficulty": 2,
+    "conceptId": 7
+  },
+  "p3-original-en-8": {
+    "key": 0,
+    "difficulty": 3,
+    "conceptId": 8
+  },
+  "p3-original-en-9": {
+    "key": 1,
+    "difficulty": 1,
+    "conceptId": 9
+  },
+  "p3-original-en-10": {
+    "key": 2,
+    "difficulty": 1,
+    "conceptId": 10
+  },
+  "p3-original-en-11": {
+    "key": 3,
+    "difficulty": 2,
+    "conceptId": 11
+  },
+  "p3-original-en-12": {
+    "key": 0,
+    "difficulty": 1,
+    "conceptId": 12
+  },
+  "p3-original-en-13": {
+    "key": 1,
+    "difficulty": 3,
+    "conceptId": 13
+  },
+  "p3-original-en-14": {
+    "key": 2,
+    "difficulty": 2,
+    "conceptId": 14
+  },
+  "p3-original-en-15": {
+    "key": 3,
+    "difficulty": 3,
+    "conceptId": 15
+  },
+  "p3-completion-ja-1": {
+    "key": 1,
+    "difficulty": 1,
+    "conceptId": 16
+  },
+  "p3-completion-ja-2": {
+    "key": 2,
+    "difficulty": 1,
+    "conceptId": 114
+  },
+  "p3-completion-ja-3": {
+    "key": 0,
+    "difficulty": 2,
+    "conceptId": 78
+  },
+  "p3-completion-ja-4": {
+    "key": 3,
+    "difficulty": 2,
+    "conceptId": 174
+  },
+  "p3-completion-ja-5": {
+    "key": 1,
+    "difficulty": 3,
+    "conceptId": 176
+  },
+  "p3-completion-ja-6": {
+    "key": 2,
+    "difficulty": 3,
+    "conceptId": 44
+  },
+  "p3-completion-ja-7": {
+    "key": 0,
+    "difficulty": 4,
+    "conceptId": 177
+  },
+  "p3-completion-ja-8": {
+    "key": 3,
+    "difficulty": 4,
+    "conceptId": 71
+  },
+  "p3-completion-ja-9": {
+    "key": 1,
+    "difficulty": 5,
+    "conceptId": 178
+  },
+  "p3-completion-ja-10": {
+    "key": 2,
+    "difficulty": 5,
+    "conceptId": 144
+  },
+  "p3-completion-ja-11": {
+    "key": 0,
+    "difficulty": 6,
+    "conceptId": 182
+  },
+  "p3-completion-ja-12": {
+    "key": 3,
+    "difficulty": 6,
+    "conceptId": 170
+  },
+  "p3-original-ja-1": {
+    "key": 2,
+    "difficulty": 2,
+    "conceptId": 1
+  },
+  "p3-original-ja-2": {
+    "key": 3,
+    "difficulty": 3,
+    "conceptId": 2
+  },
+  "p3-original-ja-3": {
+    "key": 0,
+    "difficulty": 2,
+    "conceptId": 3
+  },
+  "p3-original-ja-4": {
+    "key": 1,
+    "difficulty": 1,
+    "conceptId": 4
+  },
+  "p3-original-ja-5": {
+    "key": 2,
+    "difficulty": 2,
+    "conceptId": 5
+  },
+  "p3-original-ja-6": {
+    "key": 3,
+    "difficulty": 2,
+    "conceptId": 6
+  },
+  "p3-original-ja-7": {
+    "key": 0,
+    "difficulty": 2,
+    "conceptId": 7
+  },
+  "p3-original-ja-8": {
+    "key": 1,
+    "difficulty": 3,
+    "conceptId": 8
+  },
+  "p3-original-ja-9": {
+    "key": 2,
+    "difficulty": 1,
+    "conceptId": 9
+  },
+  "p3-original-ja-10": {
+    "key": 3,
+    "difficulty": 1,
+    "conceptId": 10
+  },
+  "p3-original-ja-11": {
+    "key": 0,
+    "difficulty": 2,
+    "conceptId": 11
+  },
+  "p3-original-ja-12": {
+    "key": 1,
+    "difficulty": 2,
+    "conceptId": 12
+  },
+  "p3-original-ja-13": {
+    "key": 2,
+    "difficulty": 3,
+    "conceptId": 13
+  },
+  "p3-original-ja-14": {
+    "key": 3,
+    "difficulty": 2,
+    "conceptId": 14
+  },
+  "p3-original-ja-15": {
+    "key": 0,
+    "difficulty": 3,
+    "conceptId": 15
+  }
+}

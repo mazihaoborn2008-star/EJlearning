@@ -1,0 +1,551 @@
+{
+  "generated_at": "2026-09-11T00:39:26.873Z",
+  "phase": "3.5E.1C",
+  "status": "GENERATED",
+  "curriculum": {
+    "en_vocab_added": 90,
+    "ja_vocab_added": 100,
+    "en_grammar_added": 10,
+    "ja_grammar_added": 16,
+    "en_lessons_added": 8,
+    "ja_lessons_added": 8,
+    "existing_lessons_restructured": 8,
+    "grammar_examples_added": 104,
+    "vocabulary_examples_added": 190
+  },
+  "rejected": {
+    "duplicates": 23,
+    "semantic_invalid": 7
+  },
+  "rejection_log": [
+    {
+      "kind": "duplicate",
+      "language": "en",
+      "lemma": "receipt",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "en",
+      "lemma": "warranty",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "en",
+      "lemma": "appointment",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "en",
+      "lemma": "cancel",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "en",
+      "lemma": "notice",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "en",
+      "lemma": "deadline",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "en",
+      "lemma": "feedback",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "en",
+      "lemma": "priority",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "ja",
+      "lemma": "注文",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "ja",
+      "lemma": "レシート",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "ja",
+      "lemma": "保証",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "ja",
+      "lemma": "予約",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "ja",
+      "lemma": "締め切り",
+      "reason": "canonical lemma collision"
+    },
+    {
+      "kind": "duplicate",
+      "language": "ja",
+      "lemma": "優先事項",
+      "reason": "canonical lemma collision"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "historical_migration_hashes": {
+    "phase35e1a": {
+      "file": "migrations-35e1a/0001_core_grammar_curated_examples.sql",
+      "sha256": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4"
+    },
+    "phase35e1a1": {
+      "file": "migrations-35e1a1/0001_curated_grammar_example_target_roles.sql",
+      "sha256": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b"
+    },
+    "phase35e1a2": {
+      "file": "migrations-35e1a2/0001_core_vocabulary_curated_usages.sql",
+      "sha256": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2"
+    },
+    "phase35e1b": {
+      "file": "migrations-35e1b/0001_core_expressions_multi_turn_dialogues.sql",
+      "sha256": "599ab3d439fb32c7db1ddaf07701dbd5cf6a69c4258d5d5b057842567fc41520"
+    }
+  },
+  "samples": [
+    {
+      "id": "en-s2-l5",
+      "language": "en",
+      "title": "在超市找货并结账",
+      "objective": "能询问商品位置、确认数量价格并完成支付。",
+      "items": [
+        {
+          "lesson_id": "en-s2-l5",
+          "content_type": "expression",
+          "content_id": "35e1b-en-d-wrong-delivery-expr",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s2-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v009",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s2-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v010",
+          "role": "required",
+          "sequence": 2,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s2-l5",
+          "content_type": "vocabulary",
+          "content_id": "en-c-1755",
+          "role": "required",
+          "sequence": 3,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s2-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v016",
+          "role": "required",
+          "sequence": 4,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s2-l5",
+          "content_type": "grammar",
+          "content_id": "35e1c-en-some-any",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s2-l5",
+          "content_type": "grammar",
+          "content_id": "en-wh-question",
+          "role": "support",
+          "sequence": 2,
+          "required": 0
+        }
+      ]
+    },
+    {
+      "id": "en-s3-l5",
+      "language": "en",
+      "title": "退货与换货",
+      "objective": "能说明商品问题、提出退款或换货并确认处理条件。",
+      "items": [
+        {
+          "lesson_id": "en-s3-l5",
+          "content_type": "expression",
+          "content_id": "35e1b-en-d-return-defect-expr",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v007",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v008",
+          "role": "required",
+          "sequence": 2,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v012",
+          "role": "required",
+          "sequence": 3,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v013",
+          "role": "required",
+          "sequence": 4,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l5",
+          "content_type": "vocabulary",
+          "content_id": "en-c-1755",
+          "role": "support",
+          "sequence": 5,
+          "required": 0
+        },
+        {
+          "lesson_id": "en-s3-l5",
+          "content_type": "grammar",
+          "content_id": "35e1c-en-past-questions-negatives",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l5",
+          "content_type": "grammar",
+          "content_id": "35e1c-en-first-conditional",
+          "role": "support",
+          "sequence": 2,
+          "required": 0
+        }
+      ]
+    },
+    {
+      "id": "en-s3-l6",
+      "language": "en",
+      "title": "在药房或诊所说明症状",
+      "objective": "能描述症状、持续时间和严重度并理解基本建议。",
+      "items": [
+        {
+          "lesson_id": "en-s3-l6",
+          "content_type": "expression",
+          "content_id": "35e1b-en-d-medical-symptoms-expr",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l6",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v017",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l6",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v018",
+          "role": "required",
+          "sequence": 2,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l6",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v019",
+          "role": "required",
+          "sequence": 3,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l6",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v020",
+          "role": "required",
+          "sequence": 4,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l6",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v021",
+          "role": "support",
+          "sequence": 5,
+          "required": 0
+        },
+        {
+          "lesson_id": "en-s3-l6",
+          "content_type": "grammar",
+          "content_id": "35e1c-en-should-advice",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "en-s3-l6",
+          "content_type": "grammar",
+          "content_id": "en-since-for",
+          "role": "support",
+          "sequence": 2,
+          "required": 0
+        }
+      ]
+    },
+    {
+      "id": "ja-s2-l5",
+      "language": "ja",
+      "title": "スーパーで商品を探して会計する",
+      "objective": "能询问位置、数量、价格并完成超市支付。",
+      "items": [
+        {
+          "lesson_id": "ja-s2-l5",
+          "content_type": "expression",
+          "content_id": "35e1b-ja-d-counter-service-expr",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v012",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v013",
+          "role": "required",
+          "sequence": 2,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l5",
+          "content_type": "vocabulary",
+          "content_id": "ja-c-1761",
+          "role": "required",
+          "sequence": 3,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v017",
+          "role": "required",
+          "sequence": 4,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l5",
+          "content_type": "grammar",
+          "content_id": "35e1c-ja-counter-system",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l5",
+          "content_type": "grammar",
+          "content_id": "ja-ka-question",
+          "role": "support",
+          "sequence": 2,
+          "required": 0
+        }
+      ]
+    },
+    {
+      "id": "ja-s2-l6",
+      "language": "ja",
+      "title": "店で注文し、希望を伝える",
+      "objective": "能点餐、说明饮食限制并结账。",
+      "items": [
+        {
+          "lesson_id": "ja-s2-l6",
+          "content_type": "expression",
+          "content_id": "35e1b-ja-d-restaurant-allergy-expr",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l6",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v001",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l6",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v003",
+          "role": "required",
+          "sequence": 2,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l6",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v005",
+          "role": "required",
+          "sequence": 3,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l6",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v008",
+          "role": "required",
+          "sequence": 4,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l6",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v009",
+          "role": "support",
+          "sequence": 5,
+          "required": 0
+        },
+        {
+          "lesson_id": "ja-s2-l6",
+          "content_type": "grammar",
+          "content_id": "35e1c-ja-counter-system",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s2-l6",
+          "content_type": "grammar",
+          "content_id": "ja-request-onegai",
+          "role": "support",
+          "sequence": 2,
+          "required": 0
+        }
+      ]
+    },
+    {
+      "id": "ja-s3-l5",
+      "language": "ja",
+      "title": "返品・交換を相談する",
+      "objective": "能说明商品问题并协商退换条件。",
+      "items": [
+        {
+          "lesson_id": "ja-s3-l5",
+          "content_type": "expression",
+          "content_id": "35e1b-ja-d-return-defect-expr",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s3-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v010",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s3-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v011",
+          "role": "required",
+          "sequence": 2,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s3-l5",
+          "content_type": "vocabulary",
+          "content_id": "ja-c-1761",
+          "role": "required",
+          "sequence": 3,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s3-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v015",
+          "role": "required",
+          "sequence": 4,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s3-l5",
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v016",
+          "role": "support",
+          "sequence": 5,
+          "required": 0
+        },
+        {
+          "lesson_id": "ja-s3-l5",
+          "content_type": "grammar",
+          "content_id": "35e1c-ja-explanatory-nodesu",
+          "role": "required",
+          "sequence": 1,
+          "required": 1
+        },
+        {
+          "lesson_id": "ja-s3-l5",
+          "content_type": "grammar",
+          "content_id": "35e1c-ja-condition-contrast",
+          "role": "support",
+          "sequence": 2,
+          "required": 0
+        }
+      ]
+    }
+  ],
+  "changes": {
+    "learner_engine": 0,
+    "learner_progress": 0,
+    "dynamic_ai_examples": 0,
+    "production": 0,
+    "phase4_started": false
+  }
+}

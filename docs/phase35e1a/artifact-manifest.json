@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-09-10T09:18:38.396Z",
+  "files": [
+    {
+      "name": "generation-report.json",
+      "bytes": 23898,
+      "sha256": "a6361986be27ddc983a026e3ca728986a6b08660d71aa12df5f31229b9d35688"
+    },
+    {
+      "name": "curated-example-audit-after.json",
+      "bytes": 35382,
+      "sha256": "ed54b9af3bee64c326741f2ab5dc4490f1da4d09956acab8d9c04e29d08a4074"
+    },
+    {
+      "name": "qa-report.json",
+      "bytes": 3128,
+      "sha256": "ed485a73aff2c37faa812b451c0d6bec1e7acd904190d3924ce7fe438e175667"
+    },
+    {
+      "name": "regression-verification.json",
+      "bytes": 1908,
+      "sha256": "a439e4b3ff7a224d05717c104c6a9e51ba2fa41604df4c78602e6ecfd8f3b873"
+    },
+    {
+      "name": "phase35e1a-summary.md",
+      "bytes": 5870,
+      "sha256": "7797bf1383fe99c014d095a9322f5c1c3eb0c642a771c2a7af85202d449deef4"
+    }
+  ]
+}

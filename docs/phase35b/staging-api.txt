@@ -1,0 +1,31 @@
+✔ lightweight catalog, detail regression preserves all 15 approved Concepts (3861.6773ms)
+✔ adaptive API beginners, intermediate, advanced and language independence (15151.9853ms)
+✔ exact retries idempotent; changed replays, foreign questions and concurrency protected (1188.7977ms)
+✔ checkpoints every topic and language identify precise weak Concepts (63320.2496ms)
+✔ recommendation profiles change results, weakness priority and no hard locks (491.9783ms)
+Content API failed
+✔ strict malformed contracts, deprecated fixed APIs and private asset isolation (1682.547ms)
+✔ database failures return sanitized errors (1.2626ms)
+✔ expired stored session is rejected before accessing question content (0.616ms)
+✔ scheduled maintenance removes expired anonymous sessions only (0.1627ms)
+✔ vocabulary list filters, Chinese/target search, senses and bounded pagination (1421.3345ms)
+✔ grammar levels, multilingual search, explanations, directed prerequisites and contrasts (772.1694ms)
+✔ sentence filters apply difficulty and language to the SAME expression (595.8303ms)
+✔ required not-eaten example, independent difficulty and exact vocabulary/grammar links (237.5511ms)
+✔ changed plans, scenario variants, dialogue turns and turn relationships (622.7528ms)
+✔ reverse relationship endpoints return compact correct units in both directions (1766.0991ms)
+V2 content unavailable
+✔ invalid filters, pagination, IDs, unknown routes and methods (1574.5991ms)
+✔ database failures are sanitized (1.7105ms)
+✔ all migrations preserve legacy and 35a records; alignment is relational and language-safe (53.8951ms)
+✔ library summaries supply meaning, pronunciation and purpose without full details (675.6532ms)
+✔ academic targets, provenance, independent stages and missing alignment (1197.4528ms)
+✔ new UI is isolated, original assets and APIs remain usable, private files stay private (1228.8066ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 85767.9343

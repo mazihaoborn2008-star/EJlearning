@@ -1,0 +1,41 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+.nyc_output/
+
+# Cloudflare local state and local secrets
+.wrangler/
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+
+# Local caches, databases, and temporary files
+.cache/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+tmp/
+temp/
+*.tmp
+*.log
+
+# Test output and screenshots
+tests/screenshots/
+tests/phase2-screenshots/
+tests/*-results.json
+test-results/
+playwright-report/
+
+# Editor and operating-system state
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini

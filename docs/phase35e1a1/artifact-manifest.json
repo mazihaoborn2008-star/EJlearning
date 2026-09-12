@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-09-10T09:50:46.187Z",
+  "files": [
+    {
+      "name": "target-fidelity-preflight.json",
+      "bytes": 186399,
+      "sha256": "7d3e7f52d5f0bc5bcf37c905c082db4cc06af593af27ddc6b95e3dceb2dd4a2c"
+    },
+    {
+      "name": "target-fidelity-audit.json",
+      "bytes": 42789,
+      "sha256": "0849285e2be9edb5b06003656ae046e5926350ff987b48f2e558c1ad5aa9af88"
+    },
+    {
+      "name": "qa-report.json",
+      "bytes": 6708,
+      "sha256": "a4d9d07471cdc000618df251a9e3696d950a3baafb80f313898294f18b11aed7"
+    },
+    {
+      "name": "regression-verification.json",
+      "bytes": 1686,
+      "sha256": "127d69fd06a3a9d1e408784c0864c53f85c1b7768a8e8864fa21aa3b2e00472d"
+    },
+    {
+      "name": "phase35e1a1-summary.md",
+      "bytes": 8137,
+      "sha256": "902728b0cfc06bfa28136a26826eac8563a6e80311ccc783e8b6d0e6e72e1cad"
+    }
+  ]
+}

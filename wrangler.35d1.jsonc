@@ -1,0 +1,40 @@
+{
+  "name": "ej-learning-35d1",
+  "account_id": "bd05aa19111be95427af89be4e44f164",
+  "main": "src/worker-35d1.js",
+  "compatibility_date": "2026-09-08",
+  "workers_dev": true,
+  "routes": [],
+  "vars": {
+    "DEEPSEEK_BASE_URL": "https://api.deepseek.com",
+    "DEEPSEEK_MODEL": "deepseek-v4-flash"
+  },
+  "secrets": {
+    "required": ["DEEPSEEK_API_KEY"]
+  },
+  "ratelimits": [{
+    "name": "AI_RATE_LIMITER",
+    "namespace_id": "350101",
+    "simple": {"limit": 12, "period": 60}
+  }, {
+    "name": "AI_SHARED_RATE_LIMITER",
+    "namespace_id": "350102",
+    "simple": {"limit": 120, "period": 60}
+  }],
+  "assets": {
+    "directory": "./public-35d1",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "none",
+    "run_worker_first": true
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "ej-learning-35d-db",
+    "database_id": "2cd594d3-cab0-4715-a154-9ea3d099c4c7"
+  }, {
+    "binding": "CONTENT_DB",
+    "database_name": "ej-learning-35c1-db",
+    "database_id": "3bf1fc19-e5ce-4521-b051-94f91fedfd82"
+  }]
+}

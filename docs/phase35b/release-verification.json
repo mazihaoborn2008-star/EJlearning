@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "worker": "ej-learning-35b",
+  "database": {
+    "binding": "DB",
+    "database_name": "ej-learning-35b-db",
+    "database_id": "97d676a7-e4c7-4d9e-a863-17f096f5cb9c",
+    "migrations_dir": "migrations-35b"
+  },
+  "url": "https://ej-learning-35b.yanjian-language-learning.workers.dev",
+  "deployments": {
+    "deployments": [
+      {
+        "id": "a4abb3cf-2bb2-4a1a-982e-f8909756702e",
+        "source": "wrangler",
+        "strategy": "percentage",
+        "author_email": "mazihao.born.2008@gmail.com",
+        "annotations": {
+          "workers/triggered_by": "deployment"
+        },
+        "versions": [
+          {
+            "version_id": "0ec66081-c0d1-4087-9650-a316eebb9b97",
+            "percentage": 100
+          }
+        ],
+        "created_on": "2026-09-09T06:33:40.58913Z"
+      },
+      {
+        "id": "ab76d019-66fb-450f-8f68-dd000dae8504",
+        "source": "wrangler",
+        "strategy": "percentage",
+        "author_email": "mazihao.born.2008@gmail.com",
+        "annotations": {
+          "workers/message": "Automatic deployment on upload.",
+          "workers/triggered_by": "upload"
+        },
+        "versions": [
+          {
+            "version_id": "42a1abba-e291-45d4-9819-7c006ce123b9",
+            "percentage": 100
+          }
+        ],
+        "created_on": "2026-09-09T06:29:37.257633Z"
+      }
+    ]
+  },
+  "customDomains": [],
+  "customRoutes": [],
+  "protectedEnvironments": [
+    "ej-learning",
+    "ej-learning-phase3",
+    "ej-learning-35a"
+  ],
+  "remoteBeforeAfterEqual": true,
+  "protectedLocalFilesUnchanged": 60,
+  "legacyAssetsByteIdentical": true,
+  "privatePaths404": true,
+  "checkedAt": "2026-09-09T06:35:43.548Z"
+}

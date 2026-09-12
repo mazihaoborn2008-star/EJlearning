@@ -1,0 +1,906 @@
+{
+  "generated_at": "2026-09-10T09:11:39.636Z",
+  "phase": "3.5E.1A",
+  "status": "GENERATED",
+  "source": "Editorially authored Phase 3.5E.1A dataset; no Dynamic DeepSeek examples used.",
+  "selected": {
+    "en": 35,
+    "ja": 40
+  },
+  "examples": {
+    "drafted_en": 210,
+    "drafted_ja": 280,
+    "accepted_en": 210,
+    "accepted_ja": 280
+  },
+  "distribution": {
+    "en": {
+      "before": {
+        "zero": 0,
+        "one_to_two": 72,
+        "three_to_five": 1,
+        "six_to_eight": 0,
+        "nine_plus": 0
+      },
+      "after": {
+        "zero": 0,
+        "one_to_two": 38,
+        "three_to_five": 0,
+        "six_to_eight": 34,
+        "nine_plus": 1
+      }
+    },
+    "ja": {
+      "before": {
+        "zero": 0,
+        "one_to_two": 82,
+        "three_to_five": 0,
+        "six_to_eight": 0,
+        "nine_plus": 0
+      },
+      "after": {
+        "zero": 0,
+        "one_to_two": 42,
+        "three_to_five": 0,
+        "six_to_eight": 40,
+        "nine_plus": 0
+      }
+    }
+  },
+  "grammar": [
+    {
+      "grammar_id": "en-simple-present",
+      "language": "en",
+      "level": 1,
+      "form_name": "Simple Present",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-be-adjective",
+      "language": "en",
+      "level": 1,
+      "form_name": "be + predicate",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-present-continuous",
+      "language": "en",
+      "level": 1,
+      "form_name": "be + V-ing",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-do-question",
+      "language": "en",
+      "level": 1,
+      "form_name": "Do / Does + subject + verb?",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-there-is",
+      "language": "en",
+      "level": 1,
+      "form_name": "there is / are + noun",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-have-possession",
+      "language": "en",
+      "level": 1,
+      "form_name": "subject + have / has + noun",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-wh-question",
+      "language": "en",
+      "level": 1,
+      "form_name": "wh-word + auxiliary + subject + verb?",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-imperative",
+      "language": "en",
+      "level": 1,
+      "form_name": "base verb + object",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-want-to",
+      "language": "en",
+      "level": 1,
+      "form_name": "want to + base verb",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-possessive",
+      "language": "en",
+      "level": 1,
+      "form_name": "my / your / his / her + noun",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-greeting",
+      "language": "en",
+      "level": 1,
+      "form_name": "greeting / thanks formula",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-noun-please",
+      "language": "en",
+      "level": 1,
+      "form_name": "noun / short response + please / thanks",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P0",
+      "selection_basis": "Stage 1 foundation and communicative spine"
+    },
+    {
+      "grammar_id": "en-simple-past",
+      "language": "en",
+      "level": 2,
+      "form_name": "Simple Past",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-plan-to",
+      "language": "en",
+      "level": 2,
+      "form_name": "plan + to-infinitive",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-can-request",
+      "language": "en",
+      "level": 2,
+      "form_name": "Can you …?",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-can-ability",
+      "language": "en",
+      "level": 2,
+      "form_name": "can + base verb",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-could-request",
+      "language": "en",
+      "level": 2,
+      "form_name": "Could you + base verb?",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-going-to",
+      "language": "en",
+      "level": 2,
+      "form_name": "be going to + base verb",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-will",
+      "language": "en",
+      "level": 2,
+      "form_name": "will + base verb",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-comparative",
+      "language": "en",
+      "level": 2,
+      "form_name": "comparative + than",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-would-like",
+      "language": "en",
+      "level": 2,
+      "form_name": "would like / love / prefer",
+      "before": 3,
+      "added": 6,
+      "after": 9,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-let-us",
+      "language": "en",
+      "level": 2,
+      "form_name": "Let's + base verb",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-before-after",
+      "language": "en",
+      "level": 2,
+      "form_name": "before / after + clause",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-enjoy-ing",
+      "language": "en",
+      "level": 2,
+      "form_name": "enjoy + V-ing",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-take-time",
+      "language": "en",
+      "level": 2,
+      "form_name": "It takes + time + to-infinitive",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-shall-suggestion",
+      "language": "en",
+      "level": 2,
+      "form_name": "Shall we + base verb?",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-ellipsis",
+      "language": "en",
+      "level": 2,
+      "form_name": "short answer with recoverable content",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 2 lesson utility and daily-life function"
+    },
+    {
+      "grammar_id": "en-may",
+      "language": "en",
+      "level": 3,
+      "form_name": "may + verb",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 3 uncertainty, condition, preference or experience"
+    },
+    {
+      "grammar_id": "en-might",
+      "language": "en",
+      "level": 3,
+      "form_name": "might + verb",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 3 uncertainty, condition, preference or experience"
+    },
+    {
+      "grammar_id": "en-indirect-question",
+      "language": "en",
+      "level": 3,
+      "form_name": "verb + wh-word + subject + verb",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 3 uncertainty, condition, preference or experience"
+    },
+    {
+      "grammar_id": "en-since-for",
+      "language": "en",
+      "level": 3,
+      "form_name": "present perfect + since / for",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 3 uncertainty, condition, preference or experience"
+    },
+    {
+      "grammar_id": "en-as-long-as",
+      "language": "en",
+      "level": 3,
+      "form_name": "as long as + clause",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 3 uncertainty, condition, preference or experience"
+    },
+    {
+      "grammar_id": "en-would-rather",
+      "language": "en",
+      "level": 3,
+      "form_name": "would rather + base verb",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 3 uncertainty, condition, preference or experience"
+    },
+    {
+      "grammar_id": "en-what-if",
+      "language": "en",
+      "level": 3,
+      "form_name": "What if + clause?",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 3 uncertainty, condition, preference or experience"
+    },
+    {
+      "grammar_id": "en-ever-perfect",
+      "language": "en",
+      "level": 3,
+      "form_name": "Have you ever + past participle?",
+      "before": 1,
+      "added": 6,
+      "after": 7,
+      "priority": "P1",
+      "selection_basis": "Stage 3 uncertainty, condition, preference or experience"
+    },
+    {
+      "grammar_id": "ja-plain-nonpast",
+      "language": "ja",
+      "level": 1,
+      "form_name": "辞书形",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-copula",
+      "language": "ja",
+      "level": 1,
+      "form_name": "〜です",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-wa-topic",
+      "language": "ja",
+      "level": 1,
+      "form_name": "名词 + は",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-ga-existence",
+      "language": "ja",
+      "level": 1,
+      "form_name": "名词 + がある / いる",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-wo-object",
+      "language": "ja",
+      "level": 1,
+      "form_name": "名词 + を + 动词",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-ni-time",
+      "language": "ja",
+      "level": 1,
+      "form_name": "时间 + に + 动词",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-de-place",
+      "language": "ja",
+      "level": 1,
+      "form_name": "场所 + で + 动词",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-no-possession",
+      "language": "ja",
+      "level": 1,
+      "form_name": "名词 + の + 名词",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-ka-question",
+      "language": "ja",
+      "level": 1,
+      "form_name": "礼貌句 + か",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-i-adjective",
+      "language": "ja",
+      "level": 1,
+      "form_name": "い形容词 + です",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-suki",
+      "language": "ja",
+      "level": 1,
+      "form_name": "名词 + が / は好きです",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-polite-present",
+      "language": "ja",
+      "level": 1,
+      "form_name": "ます干 + ます",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-greeting",
+      "language": "ja",
+      "level": 1,
+      "form_name": "固定问候 / 感谢 / 祝愿",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P0",
+      "selection_basis": "Level 1 foundation including particles and polite basics"
+    },
+    {
+      "grammar_id": "ja-plain-past",
+      "language": "ja",
+      "level": 2,
+      "form_name": "た形",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-te-form",
+      "language": "ja",
+      "level": 2,
+      "form_name": "て形",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-polite-negative",
+      "language": "ja",
+      "level": 2,
+      "form_name": "〜ません",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-polite-past",
+      "language": "ja",
+      "level": 2,
+      "form_name": "〜ました",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-te-kudasai",
+      "language": "ja",
+      "level": 2,
+      "form_name": "〜てください",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-tai",
+      "language": "ja",
+      "level": 2,
+      "form_name": "ます干 + たい",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-nai",
+      "language": "ja",
+      "level": 2,
+      "form_name": "动词ない形",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-potential",
+      "language": "ja",
+      "level": 2,
+      "form_name": "可能形",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-te-mo-ii",
+      "language": "ja",
+      "level": 2,
+      "form_name": "て形 + もいい",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-mashou",
+      "language": "ja",
+      "level": 2,
+      "form_name": "ます干 + ましょう",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-masen-ka",
+      "language": "ja",
+      "level": 2,
+      "form_name": "ます干 + ませんか",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-mae-ni",
+      "language": "ja",
+      "level": 2,
+      "form_name": "辞书形 + 前に",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-kara-after",
+      "language": "ja",
+      "level": 2,
+      "form_name": "て形 + から",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-request-onegai",
+      "language": "ja",
+      "level": 2,
+      "form_name": "名词 + を / でお願いします",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-hodo-approx",
+      "language": "ja",
+      "level": 2,
+      "form_name": "数量 + ほど",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-dake",
+      "language": "ja",
+      "level": 2,
+      "form_name": "普通形 / 名词 + だけ",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-duration",
+      "language": "ja",
+      "level": 2,
+      "form_name": "时间 + かかる",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-ni-naru",
+      "language": "ja",
+      "level": 2,
+      "form_name": "名词 / な形容词 + になる",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 2 inflection, request, time and quantity utility"
+    },
+    {
+      "grammar_id": "ja-te-iru",
+      "language": "ja",
+      "level": 3,
+      "form_name": "〜ている",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 3 aspect, intention, inference, advice, request, condition or experience"
+    },
+    {
+      "grammar_id": "ja-tsumori",
+      "language": "ja",
+      "level": 3,
+      "form_name": "〜つもり（だった）",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 3 aspect, intention, inference, advice, request, condition or experience"
+    },
+    {
+      "grammar_id": "ja-kamoshirenai",
+      "language": "ja",
+      "level": 3,
+      "form_name": "〜かもしれない",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 3 aspect, intention, inference, advice, request, condition or experience"
+    },
+    {
+      "grammar_id": "ja-sou",
+      "language": "ja",
+      "level": 3,
+      "form_name": "〜そうだ（样态）",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 3 aspect, intention, inference, advice, request, condition or experience"
+    },
+    {
+      "grammar_id": "ja-hou-ga-ii",
+      "language": "ja",
+      "level": 3,
+      "form_name": "た形 / ない形 + ほうがいい",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 3 aspect, intention, inference, advice, request, condition or experience"
+    },
+    {
+      "grammar_id": "ja-te-morau",
+      "language": "ja",
+      "level": 3,
+      "form_name": "て形 + もらえる",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 3 aspect, intention, inference, advice, request, condition or experience"
+    },
+    {
+      "grammar_id": "ja-nara",
+      "language": "ja",
+      "level": 3,
+      "form_name": "普通形 + なら",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 3 aspect, intention, inference, advice, request, condition or experience"
+    },
+    {
+      "grammar_id": "ja-tara",
+      "language": "ja",
+      "level": 3,
+      "form_name": "た形 + ら",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 3 aspect, intention, inference, advice, request, condition or experience"
+    },
+    {
+      "grammar_id": "ja-koto-ga-aru",
+      "language": "ja",
+      "level": 3,
+      "form_name": "た形 + ことがある",
+      "before": 1,
+      "added": 7,
+      "after": 8,
+      "priority": "P1",
+      "selection_basis": "Level 3 aspect, intention, inference, advice, request, condition or experience"
+    }
+  ],
+  "rejected": {
+    "duplicate": 0,
+    "existing_example_collision": 0,
+    "grammar_invalid": 0,
+    "editorial_review": 0,
+    "details": {
+      "duplicate": [],
+      "existing_collision": [],
+      "grammar_invalid": [],
+      "editorial_review": []
+    }
+  },
+  "qa": {
+    "errors": 0,
+    "error_details": [],
+    "warnings": 0
+  },
+  "changes": {
+    "new_grammar": false,
+    "new_vocabulary": false,
+    "lessons": false,
+    "ai_dynamic_examples": false,
+    "learner_progress": false,
+    "production": false,
+    "phase35e1b_started": false,
+    "phase35e1c_started": false,
+    "phase4_started": false
+  },
+  "migration": "migrations-35e1a/0001_core_grammar_curated_examples.sql"
+}

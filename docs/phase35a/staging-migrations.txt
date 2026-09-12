@@ -1,0 +1,204 @@
+
+ ⛅️ wrangler 4.130.0
+────────────────────
+Resource location: remote 
+
+Migrations to be applied:
+┌─────────────────────────────────┐
+│ name                            │
+├─────────────────────────────────┤
+│ 0001_schema.sql                 │
+├─────────────────────────────────┤
+│ 0002_seed.sql                   │
+├─────────────────────────────────┤
+│ 0003_engine.sql                 │
+├─────────────────────────────────┤
+│ 0004_curriculum.sql             │
+├─────────────────────────────────┤
+│ 0005_assessment_refinements.sql │
+├─────────────────────────────────┤
+│ 0006_v2_domains.sql             │
+├─────────────────────────────────┤
+│ 0007_v2_representative.sql      │
+├─────────────────────────────────┤
+│ 0008_v2_editorial_guards.sql    │
+└─────────────────────────────────┘
+? About to apply 8 migration(s)
+Your database may not be available to serve requests during the migration, continue?
+🤖 Using fallback value in non-interactive context: yes
+🌀 Executing on remote database DB (c5476d39-27ab-4899-b212-671e893971ee):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 16 commands in 4.39ms
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on remote database DB (c5476d39-27ab-4899-b212-671e893971ee):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 320 commands in 46.66ms
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on remote database DB (c5476d39-27ab-4899-b212-671e893971ee):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 9 commands in 3.96ms
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on remote database DB (c5476d39-27ab-4899-b212-671e893971ee):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 6180 commands in 1033.73ms
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on remote database DB (c5476d39-27ab-4899-b212-671e893971ee):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 354 commands in 40.79ms
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on remote database DB (c5476d39-27ab-4899-b212-671e893971ee):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 33 commands in 23.62ms
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on remote database DB (c5476d39-27ab-4899-b212-671e893971ee):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 239 commands in 35.98ms
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on remote database DB (c5476d39-27ab-4899-b212-671e893971ee):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 18 commands in 3.32ms
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ ✅     │
+└─────────────────────────────────┴────────┘

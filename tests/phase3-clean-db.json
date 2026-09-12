@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "directory": "E:\\E_J_Learn_web\\.wrangler\\phase3-clean-1788920058367",
+  "migrations": [
+    "0001_schema.sql",
+    "0002_seed.sql",
+    "0003_engine.sql",
+    "0004_curriculum.sql",
+    "0005_assessment_refinements.sql"
+  ],
+  "reapplication": "No migrations to apply",
+  "databaseChecks": [
+    [],
+    [
+      {
+        "concepts": 183,
+        "published": 183
+      }
+    ],
+    [
+      {
+        "expressions": 366
+      }
+    ],
+    [
+      {
+        "language": "en",
+        "purpose": "checkpoint",
+        "questions": 183,
+        "levels": 6
+      },
+      {
+        "language": "ja",
+        "purpose": "checkpoint",
+        "questions": 183,
+        "levels": 6
+      },
+      {
+        "language": "en",
+        "purpose": "placement",
+        "questions": 192,
+        "levels": 6
+      },
+      {
+        "language": "ja",
+        "purpose": "placement",
+        "questions": 192,
+        "levels": 6
+      }
+    ],
+    [
+      {
+        "missing_keys": 0
+      }
+    ],
+    [
+      {
+        "invalid_options": 0
+      }
+    ],
+    [
+      {
+        "missing_primary": 0
+      }
+    ],
+    [
+      {
+        "invalid_json": 0
+      }
+    ],
+    [
+      {
+        "sessions": 0
+      }
+    ]
+  ]
+}

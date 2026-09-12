@@ -1,0 +1,36 @@
+
+ ⛅️ wrangler 4.130.0
+────────────────────
+Resource location: remote 
+
+Migrations to be applied:
+┌────────────────────────────────────┐
+│ name                               │
+├────────────────────────────────────┤
+│ 0014_final_editorial_judgments.sql │
+├────────────────────────────────────┤
+│ 0015_reused_pattern_provenance.sql │
+└────────────────────────────────────┘
+? About to apply 2 migration(s)
+Your database may not be available to serve requests during the migration, continue?
+🤖 Using fallback value in non-interactive context: yes
+🌀 Executing on remote database DB (c854a0e6-d576-4254-b4b6-449fc7517437):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 201 commands in 47.33ms
+┌────────────────────────────────────┬────────┐
+│ name                               │ status │
+├────────────────────────────────────┼────────┤
+│ 0014_final_editorial_judgments.sql │ ✅     │
+├────────────────────────────────────┼────────┤
+│ 0015_reused_pattern_provenance.sql │ 🕒️    │
+└────────────────────────────────────┴────────┘
+🌀 Executing on remote database DB (c854a0e6-d576-4254-b4b6-449fc7517437):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 2 commands in 0.56ms
+┌────────────────────────────────────┬────────┐
+│ name                               │ status │
+├────────────────────────────────────┼────────┤
+│ 0014_final_editorial_judgments.sql │ ✅     │
+├────────────────────────────────────┼────────┤
+│ 0015_reused_pattern_provenance.sql │ ✅     │
+└────────────────────────────────────┴────────┘

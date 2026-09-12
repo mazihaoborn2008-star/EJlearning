@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-09-10T09:18:38.396Z",
+  "status": "PASS",
+  "environment": "new isolated local D1 staging data copy at http://127.0.0.1:8810",
+  "results": [
+    {
+      "area": "Phase 3.5C.1 + 3.5D API compatibility",
+      "command": "BASE_URL=http://127.0.0.1:8810 node --test tests/phase35d-api.test.js tests/phase35c1-api.test.js",
+      "status": "PASS",
+      "detail": "8/8 tests passed."
+    },
+    {
+      "area": "AI Dynamic Examples isolation",
+      "command": "node --test tests/phase35d1-api.test.js",
+      "status": "PASS",
+      "detail": "14/14 tests passed; provider requests remained mocked and no Dynamic example was persisted."
+    },
+    {
+      "area": "Worker deployability",
+      "command": "npx wrangler deploy --dry-run --config wrangler.35e1a.local.jsonc",
+      "status": "PASS",
+      "detail": "Worker/assets/bindings dry-run passed; no deployment occurred."
+    },
+    {
+      "area": "Responsive/navigation regression",
+      "command": "BASE_URL=http://127.0.0.1:8810 node tests/phase35d-browser.cjs",
+      "status": "PASS",
+      "detail": "Browser, responsive, navigation and regression acceptance passed."
+    },
+    {
+      "area": "Dynamic Examples UI regression",
+      "command": "BASE_URL=http://127.0.0.1:8810 node tests/phase35d1-browser.cjs",
+      "status": "PASS",
+      "detail": "360/390/430/768/1440px and fixed AI Preview regression passed."
+    },
+    {
+      "area": "Curated example API visibility",
+      "command": "GET /api/v2/grammar/en-simple-present and /api/v2/grammar/ja-te-kudasai",
+      "status": "PASS",
+      "detail": "English returned 7 total / 6 new; Japanese returned 8 total / 7 new."
+    }
+  ],
+  "infrastructure_note": "A new remote Cloudflare D1 staging resource could not be created because the current Wrangler OAuth token returned API error 10000. No existing remote or production resource was reused or changed."
+}

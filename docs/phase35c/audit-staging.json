@@ -1,0 +1,2630 @@
+{
+  "passed": true,
+  "review": "Model-assisted editorial QA; not independent professional linguistic certification.",
+  "counts": {
+    "legacy": 183,
+    "previouslyFlagged": 51,
+    "unresolved": 0,
+    "vocabulary": {
+      "en/1": 88,
+      "en/2": 83,
+      "en/3": 69,
+      "en/4": 51,
+      "ja/1": 97,
+      "ja/2": 79,
+      "ja/3": 80,
+      "ja/5": 25,
+      "ja/4": 48,
+      "en/5": 22,
+      "ja/6": 21,
+      "en/6": 32
+    },
+    "grammar": {
+      "en/1": 12,
+      "en/2": 16,
+      "en/4": 12,
+      "en/3": 21,
+      "ja/2": 18,
+      "ja/3": 25,
+      "ja/4": 14,
+      "ja/1": 13,
+      "en/5": 7,
+      "en/6": 5,
+      "ja/5": 7,
+      "ja/6": 5
+    },
+    "sentencesByTopic": {
+      "food": 17,
+      "plans": 16,
+      "body": 2,
+      "social": 13,
+      "help": 13,
+      "travel": 13,
+      "weather": 15,
+      "chat": 70,
+      "school": 34,
+      "home": 12,
+      "time": 12,
+      "shopping": 12,
+      "health": 12,
+      "feelings": 12,
+      "hobbies": 12
+    },
+    "sentencesByType": {
+      "sentence": 191,
+      "scenario": 45,
+      "dialogue": 29
+    },
+    "difficulty": {
+      "en/3": 71,
+      "ja/2": 57,
+      "en/4": 44,
+      "ja/5": 8,
+      "en/2": 60,
+      "ja/3": 91,
+      "en/1": 42,
+      "ja/1": 27,
+      "ja/4": 47,
+      "en/5": 5,
+      "en/6": 4,
+      "ja/6": 3
+    },
+    "independentDifficulty": {
+      "en/1/4/3": 2,
+      "ja/1/3/2": 2,
+      "en/3/4/4": 5,
+      "ja/3/4/5": 1,
+      "en/2/2/2": 36,
+      "ja/1/3/3": 2,
+      "en/4/1/3": 5,
+      "ja/3/1/2": 1,
+      "en/1/1/1": 16,
+      "ja/1/1/1": 12,
+      "en/1/2/2": 3,
+      "ja/2/2/2": 23,
+      "en/2/1/2": 12,
+      "ja/2/1/2": 8,
+      "en/1/3/2": 3,
+      "en/1/3/3": 1,
+      "ja/2/3/3": 8,
+      "en/3/1/3": 13,
+      "ja/5/3/4": 1,
+      "ja/3/3/3": 59,
+      "ja/2/3/2": 15,
+      "en/4/3/4": 13,
+      "en/1/2/1": 8,
+      "ja/1/2/1": 7,
+      "ja/1/2/2": 2,
+      "en/2/1/1": 9,
+      "ja/2/2/1": 3,
+      "en/2/3/2": 5,
+      "ja/3/4/3": 7,
+      "en/3/1/1": 3,
+      "ja/2/1/1": 3,
+      "en/3/2/3": 12,
+      "ja/3/2/3": 5,
+      "ja/3/2/2": 3,
+      "en/3/3/3": 23,
+      "ja/3/4/4": 10,
+      "en/3/5/4": 4,
+      "ja/4/4/4": 18,
+      "en/4/3/3": 3,
+      "ja/4/5/3": 1,
+      "en/4/2/4": 10,
+      "en/2/2/1": 4,
+      "ja/3/1/3": 6,
+      "en/3/4/3": 5,
+      "en/5/1/4": 1,
+      "ja/4/3/4": 10,
+      "en/3/3/4": 1,
+      "ja/4/1/4": 2,
+      "en/4/4/4": 3,
+      "ja/3/4/2": 1,
+      "en/4/2/3": 4,
+      "ja/3/5/4": 2,
+      "en/4/1/1": 1,
+      "en/3/2/4": 2,
+      "en/2/2/3": 1,
+      "en/4/5/5": 2,
+      "ja/5/5/5": 1,
+      "ja/3/3/4": 2,
+      "ja/4/1/3": 1,
+      "ja/1/3/1": 1,
+      "en/4/1/4": 1,
+      "en/3/1/2": 1,
+      "en/2/4/3": 2,
+      "en/3/3/1": 1,
+      "ja/3/1/1": 1,
+      "ja/5/4/5": 1,
+      "en/2/5/5": 2,
+      "en/2/4/4": 3,
+      "en/5/5/5": 1,
+      "en/4/6/6": 3,
+      "en/3/6/4": 1,
+      "en/5/6/6": 1,
+      "ja/1/1/2": 1,
+      "ja/2/4/3": 2,
+      "ja/2/4/4": 1,
+      "ja/4/5/4": 1,
+      "ja/4/6/6": 1,
+      "ja/4/6/5": 2,
+      "ja/2/5/5": 2,
+      "ja/5/6/6": 2,
+      "ja/3/5/5": 1,
+      "ja/3/3/2": 1
+    },
+    "alignments": {
+      "IELTS/6.5/draft": 11,
+      "IELTS/5.5/draft": 8,
+      "JLPT/N4/draft": 9,
+      "IELTS/5.0/draft": 6,
+      "IELTS/6.0/draft": 7,
+      "IELTS/7.0+/draft": 7,
+      "JLPT/N5/draft": 7,
+      "JLPT/N3/draft": 7,
+      "JLPT/N2/draft": 7,
+      "JLPT/N1/draft": 7
+    },
+    "vocabularyLinks": 679,
+    "grammarLinks": 464,
+    "crosswalk": 481,
+    "publication": {
+      "published": 1574
+    }
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-intend",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-kitai",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-009",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-011",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-013",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-015",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-017",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-019",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-021",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-023",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-029",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-031",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-033",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-035",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-037",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-039",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-041",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-043",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-045",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-047",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-049",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-051",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-055",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-059",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-061",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-065",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-067",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-071",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-077",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-079",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-081",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-083",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-087",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-089",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-091",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-097",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-099",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-101",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-103",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-105",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-107",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-109",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-111",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-113",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-115",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-125",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-127",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-131",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-135",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-141",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-145",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-147",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-149",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-151",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-161",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-163",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-165",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-167",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-169",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-171",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-173",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-175",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-177",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-181",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-185",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-187",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-199",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-201",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-203",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-205",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-207",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-209",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-213",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-217",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-219",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-225",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-227",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-229",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-231",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-237",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-239",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-243",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-245",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-247",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-249",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-251",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-255",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-257",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-259",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-261",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-265",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-269",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-271",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-275",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-279",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-281",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-283",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-287",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-291",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-303",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-311",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-331",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-333",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-341",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-343",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-351",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-381",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-383",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-415",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-421",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-423",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-429",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-431",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-433",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-435",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-443",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-447",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-449",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-451",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-455",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-457",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-459",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-463",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-465",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-469",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-471",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-475",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-479",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-483",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-485",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-487",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-489",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-491",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-493",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-495",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-497",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-499",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-503",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-505",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-507",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-509",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-511",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-513",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-515",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-517",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-519",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-527",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-529",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-531",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-537",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-539",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-541",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-543",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-545",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-547",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-549",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-553",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-555",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-565",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-567",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-569",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-573",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-575",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-579",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-583",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-587",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-599",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-601",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-603",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-617",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-619",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-623",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-625",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-627",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-629",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-631",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-633",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-635",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-637",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-639",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-641",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-643",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-647",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-653",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-655",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-667",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-669",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-677",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-679",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-687",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-691",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-695",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-697",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-701",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-703",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-707",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-709",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-711",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-713",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-715",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-717",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-719",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-721",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-723",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-725",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-727",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-729",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-731",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-733",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-735",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-737",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-739",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-741",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-743",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-745",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-747",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-749",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-751",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-753",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-755",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-759",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-761",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-763",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-765",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-767",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-769",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-771",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-773",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-775",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-777",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-779",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-781",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-783",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-785",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-787",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-789",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-791",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-793",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-795",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-797",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-799",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-801",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-803",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-805",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-807",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-809",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-811",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-813",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-815",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-817",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-819",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-821",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-823",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-825",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-827",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-829",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-831",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-833",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-835",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-837",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-839",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-841",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-843",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-845",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-847",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-849",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-851",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-853",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-855",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-857",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-859",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-861",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-863",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-865",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-867",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-869",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-871",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-873",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-875",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-877",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-879",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-881",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-883",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-885",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-887",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-889",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-891",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-893",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-895",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-899",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-907",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-917",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-921",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-927",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1005",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1015",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1039",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1043",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1063",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1077",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1079",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1099",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1103",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1107",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1109",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1113",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1117",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1121",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1125",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1127",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1129",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1131",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1133",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1135",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1137",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1139",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1141",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1143",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1145",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1147",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1149",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1151",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1153",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1155",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1157",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1159",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1161",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1163",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1165",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1167",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-1169",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-1171",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-2215",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-2253",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "ja-c-2329",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "orphan_vocabulary",
+      "id": "en-c-rain-noun",
+      "detail": "无反向句子；词条内搭配仍可用，非全量知识图谱。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "not-eaten-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "changed-plan-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "leave-tomorrow-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "exhausted-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "apology-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "help-dialogue-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "on-way-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "rain-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "rain-variant-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "expect-rain-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "looking-forward-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "tired-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "apology-en-casual",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "academic-approach-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-16-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-20-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-22-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-24-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-26-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-28-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-32-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-34-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-36-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-40-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-44-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-46-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-48-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-52-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-56-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-58-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-60-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-64-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-68-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-70-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-72-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-76-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-80-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-82-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-84-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-88-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-92-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-94-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-96-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-100-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-104-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-106-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-108-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-112-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-116-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-118-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-120-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-124-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-128-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-130-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-132-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-136-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-140-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-142-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-144-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-148-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-152-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-154-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-156-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-160-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-164-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-166-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-168-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-170-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-172-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-176-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-178-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "legacy-180-en",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-present-continuous-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-there-is-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-have-possession-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-wh-question-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-imperative-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-want-to-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-possessive-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-can-ability-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-will-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-comparative-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-let-us-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-before-after-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-indirect-question-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-make-feel-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-would-have-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-should-have-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-relative-clause-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-passive-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-second-conditional-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-third-conditional-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-concessive-although-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-hedged-claim-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-inversion-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-participle-clause-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-cleft-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-qualified-comparison-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-mixed-conditional-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-shall-suggestion-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-not-have-to-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "optional_sentence_ipa",
+      "id": "lesson-en-help-infinitive-ex",
+      "detail": "句子IPA可选；词汇IPA必需。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "vl-rain-ja-0",
+      "detail": "雨 in 雨かもしれません。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "vl-rain-variant-ja-0",
+      "detail": "雨 in 雨が降りそうです。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "vl-expect-rain-ja-0",
+      "detail": "雨 in 雨を予期しています。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2616",
+      "detail": "家 in A: 週末はどうだった？\nB: のんびりしてた。家にいたよ。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2637",
+      "detail": "水 in お水をお願いします。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2645",
+      "detail": "塩 in 塩は少なめでお願いします。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2647",
+      "detail": "分 in A: どのくらい待ちますか。\nB: 二十分ほどです。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2706",
+      "detail": "音 in 少し音を小さくしてもらえますか。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2716",
+      "detail": "水 in 一晩中、蛇口から水がぽたぽた落ちています。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2725",
+      "detail": "音 in A: すみません、音がかなり響いているんですが。\nB: すみません、気づきませんでした。気をつけます。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2730",
+      "detail": "分 in あと十分で着きます。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2745",
+      "detail": "分 in 十分くらい余裕を持って。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2756",
+      "detail": "仮 in ひとまず仮の予定にしておきましょう。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2764",
+      "detail": "日 in A: その日の午後は、まだ確定しないでおける？\nB: いいよ。予定が固まったら教えて。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2800",
+      "detail": "駅 in 駅はどこですか。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2802",
+      "detail": "角 in 次の角でお願いします。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2803",
+      "detail": "分 in そこまで二十分かかります。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2823",
+      "detail": "傘 in 傘を持っていって。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2828",
+      "detail": "雨 in 外は雨が降っています。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2838",
+      "detail": "雨 in A: それでも散歩に行く？\nB: 雨がやむまで中にいよう。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2951",
+      "detail": "日 in 行きたいんだけど、その日は予定があるんだ。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2958",
+      "detail": "話 in A: 友達のアレックスです。\nB: 初めまして。お話はよく聞いています。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-2995",
+      "detail": "窓 in 窓を開けていただけますか。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-3017",
+      "detail": "家 in A: 週末は出かける予定のまま？\nB: ううん、代わりに家で過ごすことにした。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-3074",
+      "detail": "水 in 水を飲みます。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-3075",
+      "detail": "家 in 家で食べます。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-3076",
+      "detail": "傘 in 私の傘です。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-3080",
+      "detail": "仮 in 仮の予定にしておきましょう。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-3083",
+      "detail": "雨 in 明日は雨が降るそうです。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-3087",
+      "detail": "家 in 家で過ごすことにしました。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-3093",
+      "detail": "例 in これは一つの例にすぎません。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "c-vl-3099",
+      "detail": "分 in 二十分ほどです。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "review-vl-39",
+      "detail": "鍵 in 出かける前に、忘れずに鍵をかけてください。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "review-vl-75",
+      "detail": "頭 in 少し頭が痛いです。"
+    },
+    {
+      "code": "suspicious_short_japanese_link",
+      "id": "review-vl-142",
+      "detail": "鍵 in 出かける前に、鍵を確認します。"
+    }
+  ],
+  "warningCounts": {
+    "orphan_vocabulary": 336,
+    "optional_sentence_ipa": 102,
+    "suspicious_short_japanese_link": 35
+  },
+  "verifiedTables": [
+    "topics",
+    "concepts",
+    "grammar_points",
+    "expressions",
+    "expression_chunks",
+    "expression_readings",
+    "comparisons",
+    "placement_questions",
+    "placement_options",
+    "placement_answer_keys",
+    "v2_vocabulary_items",
+    "v2_vocabulary_senses",
+    "v2_vocabulary_examples",
+    "v2_vocabulary_relations",
+    "v2_grammar_points",
+    "v2_grammar_relations",
+    "v2_topics",
+    "v2_vocabulary_topics",
+    "v2_sentence_units",
+    "v2_sentence_expressions",
+    "v2_dialogue_turns",
+    "v2_sentence_vocabulary_links",
+    "v2_sentence_grammar_links",
+    "v2_grammar_examples",
+    "v2_alignment_frameworks",
+    "v2_alignment_targets",
+    "v2_content_alignments",
+    "v2_editorial_decisions",
+    "v2_legacy_crosswalk"
+  ],
+  "exactMatchToCleanMigration": true,
+  "migrations": [
+    {
+      "name": "0001_schema.sql"
+    },
+    {
+      "name": "0002_seed.sql"
+    },
+    {
+      "name": "0003_engine.sql"
+    },
+    {
+      "name": "0004_curriculum.sql"
+    },
+    {
+      "name": "0005_assessment_refinements.sql"
+    },
+    {
+      "name": "0006_v2_domains.sql"
+    },
+    {
+      "name": "0007_v2_representative.sql"
+    },
+    {
+      "name": "0008_v2_editorial_guards.sql"
+    },
+    {
+      "name": "0009_academic_alignment.sql"
+    },
+    {
+      "name": "0010_academic_expression_example.sql"
+    },
+    {
+      "name": "0011_curriculum.sql"
+    },
+    {
+      "name": "0012_editorial_refinement.sql"
+    },
+    {
+      "name": "0013_reviewed_speech_link.sql"
+    },
+    {
+      "name": "0014_final_editorial_judgments.sql"
+    },
+    {
+      "name": "0015_reused_pattern_provenance.sql"
+    },
+    {
+      "name": "0016_request_variants.sql"
+    }
+  ]
+}

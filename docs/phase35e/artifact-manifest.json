@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-09-10T06:35:26.438Z",
+  "files": [
+    {
+      "name": "curated-example-gap-report.json",
+      "bytes": 90888,
+      "sha256": "d452734659e70cc5ad6a7c9d46aaf069eaa9b1705a8328a23f10960c3bee210c"
+    },
+    {
+      "name": "curriculum-expansion-plan.json",
+      "bytes": 106331,
+      "sha256": "189523b11c45635d6722ff8e9b2222c88be421aa1e0c5d379a3dd4c295b013e1"
+    },
+    {
+      "name": "grammar-gap-report.json",
+      "bytes": 34046,
+      "sha256": "1ab7ca953622eae259fd17538778299f058e9c3dd7c92f206c636e29aca4f1e1"
+    },
+    {
+      "name": "lesson-gap-report.json",
+      "bytes": 342858,
+      "sha256": "e0d3dd7f30f2fda7330766b8904f9267c619d7a25190c326c9600a0d9469f2ec"
+    },
+    {
+      "name": "phase35e-gap-report.json",
+      "bytes": 38373,
+      "sha256": "64146ff2b11f65d47e09192666701590f811f636543fea3258fec592d6f2a841"
+    },
+    {
+      "name": "phase35e-gap-summary.md",
+      "bytes": 18153,
+      "sha256": "afb62592daed9f95047c55a806b1ad11ba916230c5330a3f2382d271d9a483a6"
+    },
+    {
+      "name": "regression-verification.json",
+      "bytes": 2171,
+      "sha256": "5f72204d76c5a39063cc0a40d5fbd30e1489f217bed341d53537fddc4978591c"
+    },
+    {
+      "name": "topic-function-gap-report.json",
+      "bytes": 24711,
+      "sha256": "f213e7a4c7b831c07a3f339c3529e7ab628810e1e459d62ae94b72b2b6cf84ef"
+    },
+    {
+      "name": "unassigned-content-classification.json",
+      "bytes": 305576,
+      "sha256": "690768567bb31e4f3dc1e0eef3f7ad1270311fa973a428e6b5efecf7222b1e07"
+    },
+    {
+      "name": "vocabulary-gap-report.json",
+      "bytes": 127241,
+      "sha256": "3dbf96e3eb47e38ce8a45856db1dbfb96a59e4cbf293915bd735a178cbcec0ea"
+    }
+  ]
+}

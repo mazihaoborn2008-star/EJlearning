@@ -1,0 +1,8 @@
+{
+  "name": "ej-learning-36",
+  "account_id": "bd05aa19111be95427af89be4e44f164",
+  "main": "src/worker-36-bootstrap.js",
+  "compatibility_date": "2026-09-08",
+  "workers_dev": true,
+  "routes": []
+}

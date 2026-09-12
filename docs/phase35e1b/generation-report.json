@@ -1,0 +1,2963 @@
+{
+  "generated_at": "2026-09-10T21:51:32.503Z",
+  "phase": "3.5E.1B",
+  "status": "GENERATED",
+  "source": {
+    "baseline": "Phase 3.5E audit + completed 3.5E.1A/1A.1/1A.2",
+    "editorial_review": true
+  },
+  "by_language": {
+    "en": {
+      "expressions": 120,
+      "standalone_scenario_expressions": 88,
+      "dialogues": {
+        "count": 32,
+        "turns": 192,
+        "average_turns": 6,
+        "with_4_plus": 32,
+        "min_turns": 6,
+        "max_turns": 6
+      },
+      "vocabulary_links": 155,
+      "grammar_links": 98
+    },
+    "ja": {
+      "expressions": 130,
+      "standalone_scenario_expressions": 94,
+      "dialogues": {
+        "count": 36,
+        "turns": 216,
+        "average_turns": 6,
+        "with_4_plus": 36,
+        "min_turns": 6,
+        "max_turns": 6
+      },
+      "vocabulary_links": 150,
+      "grammar_links": 127
+    }
+  },
+  "totals": {
+    "units": 250,
+    "expressions": 250,
+    "dialogues": 68,
+    "turns": 408,
+    "vocabulary_links": 305,
+    "grammar_links": 225
+  },
+  "rejected": {
+    "duplicate": 7,
+    "semantic_communicative_invalid": 11
+  },
+  "rejection_log": [
+    {
+      "language": "en",
+      "type": "duplicate",
+      "text": "Can you help me?",
+      "reason": "与现有 canonical expression 完全重复。"
+    },
+    {
+      "language": "ja",
+      "type": "duplicate",
+      "text": "手伝ってください。",
+      "reason": "与现有 canonical dialogue turn 完全重复。"
+    },
+    {
+      "language": "en",
+      "type": "duplicate",
+      "text": "No worries.",
+      "reason": "与现有 canonical expression 完全重复。"
+    },
+    {
+      "language": "ja",
+      "type": "duplicate",
+      "text": "大丈夫です。",
+      "reason": "与现有 canonical expression 完全重复。"
+    },
+    {
+      "language": "en",
+      "type": "duplicate",
+      "text": "Does this train go to the airport?",
+      "reason": "与现有 canonical dialogue turn 完全重复。"
+    },
+    {
+      "language": "ja",
+      "type": "duplicate",
+      "text": "カードは使えますか。",
+      "reason": "与现有 canonical dialogue turn 完全重复。"
+    },
+    {
+      "language": "en",
+      "type": "duplicate",
+      "text": "How long is the wait?",
+      "reason": "与现有 canonical dialogue turn 完全重复。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "I have food problems.",
+      "reason": "饮食限制表达不具体，不能支持安全点餐任务。"
+    },
+    {
+      "language": "ja",
+      "type": "semantic_invalid",
+      "text": "食べ物がだめです。",
+      "reason": "范围与原因都含糊，不适合作为饮食限制核心表达。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "Give me another appointment.",
+      "reason": "服务场景语气不自然且过于命令式。"
+    },
+    {
+      "language": "ja",
+      "type": "semantic_invalid",
+      "text": "予約を別にしてください。",
+      "reason": "改期意图不清，可能被理解为另建预约。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "I disagree with you.",
+      "reason": "可用但教学价值不足，缺少立场缓和或理由衔接。"
+    },
+    {
+      "language": "ja",
+      "type": "semantic_invalid",
+      "text": "それは違います。",
+      "reason": "在目标分歧场景中过硬，缺少关系距离控制。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "My throat is bad.",
+      "reason": "症状描述不自然且不够具体。"
+    },
+    {
+      "language": "ja",
+      "type": "semantic_invalid",
+      "text": "喉が悪いです。",
+      "reason": "自然度不足，未准确描述症状。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "Return this for me.",
+      "reason": "退货意图和期望结果不清，register 不合适。"
+    },
+    {
+      "language": "ja",
+      "type": "semantic_invalid",
+      "text": "これを返します。",
+      "reason": "可能表示归还而非商品退货，语义范围不清。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "Where is somewhere else?",
+      "reason": "替代路线追问不自然。"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "changes": {
+    "new_vocabulary": 0,
+    "new_grammar": 0,
+    "lessons": 0,
+    "dynamic_ai_examples": 0,
+    "learner_progress": 0,
+    "production": 0,
+    "phase35e1c_started": false,
+    "phase4_started": false
+  },
+  "dialogues": [
+    {
+      "language": "en",
+      "id": "restaurant-allergy",
+      "topic": "food",
+      "stage": 2,
+      "register": "polite",
+      "goal": "确认过敏原后安全点餐。",
+      "context": "顾客在餐厅确认菜品是否含花生，并完成替换点单。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Hi. Are you ready to order?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Almost. Does the curry contain peanuts?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "The sauce does, but the tomato soup doesn’t.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Thanks. I’ll have the soup, then.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Certainly. I’ll note that you have a peanut allergy.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Thank you. I appreciate that.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "restaurant-bill",
+      "topic": "food",
+      "stage": 2,
+      "register": "polite",
+      "goal": "核对账单错误并完成结账。",
+      "context": "顾客发现账单上多了一项，服务员核对并更正。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Excuse me, could we have the bill?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Of course. I’ll bring it over.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "I think there’s an extra dessert on here.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "You’re right. I’m sorry about that.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Could you remove it and let us pay separately?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Certainly. I’ll bring two corrected bills.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "appointment-reschedule",
+      "topic": "time",
+      "stage": 2,
+      "register": "polite",
+      "goal": "完成预约改期与最终确认。",
+      "context": "来电者把周二预约改到周四。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Good morning. I need to reschedule my appointment.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Certainly. What day is it booked for?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "It’s under Lee for Tuesday at ten.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "I have Thursday at eleven or Friday at nine.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Thursday at eleven works for me.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "All right. Your appointment is now Thursday at eleven.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "appointment-cancel",
+      "topic": "time",
+      "stage": 2,
+      "register": "polite",
+      "goal": "取消预约并确认是否收费。",
+      "context": "来电者因生病取消预约。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I’m calling to cancel my appointment tomorrow.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "May I have the name on the booking?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "It’s Morgan Chen.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Thank you. There’s no cancellation fee this time.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Great. Could you email me a confirmation?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes, I’ll send it right away.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "help-alternative",
+      "topic": "help",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "拒绝部分请求并提供可行替代。",
+      "context": "同学请求当晚帮忙搬家。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Could you help me move tonight?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I can’t tonight, but I’m free tomorrow morning.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Would nine o’clock work?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "I have class at nine. How about ten thirty?",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Ten thirty is perfect. Thanks for offering another time.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "No problem. Send me the address.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "return-exchange",
+      "topic": "shopping",
+      "stage": 2,
+      "register": "polite",
+      "goal": "凭收据完成尺码换货。",
+      "context": "顾客退回尺码不合适且未穿过的鞋。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Hi. I’d like to exchange these shoes.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Is there anything wrong with them?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "No, they’re just too small. I haven’t worn them outside.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Do you have the receipt?",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Yes. Could I try the next size up?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Of course. I’ll get that for you.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "return-defect",
+      "topic": "shopping",
+      "stage": 3,
+      "register": "polite",
+      "goal": "说明故障并协商退款方式。",
+      "context": "顾客退回使用两天即故障的水壶。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "This kettle stopped working after two days.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’m sorry to hear that. Do you have the receipt?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Yes. I’d prefer a refund rather than a replacement.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "That’s fine. The refund will go back to your card.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "How long will that take?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Usually three to five business days.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "directions-repair",
+      "topic": "travel",
+      "stage": 2,
+      "register": "polite",
+      "goal": "在误解目的地后修正问路。",
+      "context": "旅客问去中央车站的路，对方先听成公交总站。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Excuse me, how do I get to Central Station?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "The bus terminal is two blocks that way.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Sorry, I meant the train station.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Oh, I see. Take the next left and walk past the bank.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Is it far from there?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "No, it’s about a five-minute walk.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "train-transfer",
+      "topic": "travel",
+      "stage": 2,
+      "register": "polite",
+      "goal": "确认换乘、站台与时间。",
+      "context": "旅客询问前往机场的列车。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Excuse me, is this the right train for the airport?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Not directly. You need to change at Central.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Which platform do I need there?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Platform six. The signs are easy to follow.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Will I have enough time to change?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes. You’ll have about twelve minutes.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "group-work",
+      "topic": "school",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "分工并确认交付时间。",
+      "context": "学生为小组展示分配工作。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "How should we split the presentation?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I can do the introduction and the first two slides.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Could you also find one example for slide two?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Sure. Can you check the figures in the last section?",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Yes. Let’s send everything to each other by Friday.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Agreed. Then we can practise on Monday.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "group-disagree",
+      "topic": "school",
+      "stage": 4,
+      "register": "neutral",
+      "goal": "表达不同意见并达成折中。",
+      "context": "小组对报告重点意见不同。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I think we should focus on the survey results.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I see your point, but the interviews explain why the results changed.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Are you suggesting we include both?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes, but we could shorten the background section.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "That sounds reasonable. Let’s keep one paragraph of background.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Great. I’ll revise the outline.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "repair-heating",
+      "topic": "home",
+      "stage": 3,
+      "register": "polite",
+      "goal": "报修暖气并确认临时方案。",
+      "context": "租客报告暖气不工作。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Hello. The heater in my flat isn’t working.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’m sorry about that. Is it showing an error code?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Yes, it says E3, and the room is getting cold.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "A technician can come tomorrow afternoon.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "If it can’t be fixed then, could I borrow a portable heater?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes. We can leave one at reception today.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "repair-leak",
+      "topic": "home",
+      "stage": 3,
+      "register": "polite",
+      "goal": "报告漏水并说明紧急程度。",
+      "context": "租客发现水槽下漏水。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "There’s water leaking under the kitchen sink.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Is it a slow drip or a steady flow?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "It’s a steady flow, so I’ve turned the water off.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Good. I’ll send someone within an hour.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Do I need to stay home?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes, please. The plumber will call before arriving.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "medical-symptoms",
+      "topic": "health",
+      "stage": 3,
+      "register": "polite",
+      "goal": "描述症状、持续时间与严重程度。",
+      "context": "患者因喉咙痛和发烧看诊。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "What seems to be the problem?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’ve had a sore throat since Monday, and I had a fever last night.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Are you having any trouble breathing?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "No, but it hurts when I swallow.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "All right. I’ll examine your throat first.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Okay. Thank you.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "pharmacy-medicine",
+      "topic": "health",
+      "stage": 2,
+      "register": "polite",
+      "goal": "确认药物用法和注意事项。",
+      "context": "顾客向药师询问止痛药。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Could you tell me how to take this medicine?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Take one tablet after food, up to three times a day.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Can I take it with my allergy medicine?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Let me check. What’s the name of that medicine?",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "It’s written on this box.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Thanks. These two are safe to take together.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "invitation-decline",
+      "topic": "social",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "礼貌拒绝邀请并提出另约。",
+      "context": "朋友邀请周五吃饭。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Would you like to have dinner on Friday?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’d love to, but I already have plans that evening.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "No problem. Are you free over the weekend?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Sunday afternoon should work.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "How about coffee at three?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Perfect. I’ll see you then.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "invitation-condition",
+      "topic": "social",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "带条件接受邀请并确认细节。",
+      "context": "朋友邀请参加野餐。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "We’re having a picnic on Saturday. Want to come?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Maybe. What time are you starting?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Around noon, at Riverside Park.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "I can come if I finish work by eleven.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "That’s fine. Just text me when you know.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Will do. Thanks for inviting me.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "misunderstanding-time",
+      "topic": "time",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "修正时间误会并重新确认。",
+      "context": "两人对会议时间理解不同。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I thought the meeting started at two.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "It was moved to three yesterday.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Oh, I must have missed that message.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "No worries. Can you still make it?",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Yes. Just to confirm, it’s in Room 4 at three.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "That’s right. See you there.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "misunderstanding-tone",
+      "topic": "social",
+      "stage": 4,
+      "register": "neutral",
+      "goal": "解释语气并修复关系。",
+      "context": "同事觉得一句反馈太尖锐。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Your comment in the meeting sounded quite critical.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’m sorry. I was questioning the schedule, not your work.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Thanks for explaining. I thought you were blaming me.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "I can see why it sounded that way.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Could we talk about the schedule again tomorrow?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Of course. I’ll be clearer next time.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "hotel-room",
+      "topic": "travel",
+      "stage": 2,
+      "register": "polite",
+      "goal": "报告房间问题并完成换房。",
+      "context": "住客因街道噪声请求换房。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Hello. My room is very noisy at night.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’m sorry. Is the noise coming from the street?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Yes. Do you have a quieter room available?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "We have one on the sixth floor, but it has two single beds.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "That’s fine. Can I move tonight?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Certainly. I’ll prepare the new key.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "hotel-booking",
+      "topic": "travel",
+      "stage": 2,
+      "register": "polite",
+      "goal": "查找预订并确认早餐。",
+      "context": "住客办理入住时预订记录不易找到。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Hi. I have a booking under Patel.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’m not seeing it yet. Could it be under another name?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Try Priya Patel. I booked it online last month.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Found it. You’re staying for three nights, correct?",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Yes. Is breakfast included?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "It is. Breakfast starts at seven.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "taxi-destination",
+      "topic": "travel",
+      "stage": 2,
+      "register": "polite",
+      "goal": "确认目的地、路线和支付方式。",
+      "context": "乘客乘出租车去酒店。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Could you take me to the Riverside Hotel, please?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Certainly. Do you mean the one on King Street?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Yes, that’s the one. How long will it take?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "About twenty minutes if traffic is light.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Can I pay by card?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes, you can.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "bus-wrong-stop",
+      "topic": "travel",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "发现坐错方向后获得补救路线。",
+      "context": "乘客担心错过下车站。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Does this bus stop near City Hospital?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "No, this bus is going in the other direction.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Oh no. Where should I get off?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Get off at the next stop and take the 24 back.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Does the 24 stop outside the hospital?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes, right by the main entrance.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "order-unavailable",
+      "topic": "food",
+      "stage": 2,
+      "register": "polite",
+      "goal": "菜品售罄后选择替代。",
+      "context": "餐厅告知顾客所点菜品卖完。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I’d like the grilled fish, please.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’m sorry, we’ve sold out of the fish.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "What would you recommend instead?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "The chicken is similar, or we have a vegetable pasta.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "I’ll try the pasta. Could I have it without cheese?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Of course.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "dietary-clarify",
+      "topic": "food",
+      "stage": 3,
+      "register": "polite",
+      "goal": "澄清素食需求并确认配料。",
+      "context": "顾客确认汤是否真正适合素食者。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Is the vegetable soup suitable for vegetarians?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes, it doesn’t contain any meat.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "What about the stock? Is that vegetable stock too?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Let me check with the kitchen.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Thanks. I need to avoid chicken stock as well.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Understood. I’ll make sure before you order.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "school-deadline",
+      "topic": "school",
+      "stage": 3,
+      "register": "polite",
+      "goal": "请求延期并协商新截止时间。",
+      "context": "学生因生病请求作业延期。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Could I ask about the assignment deadline?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Of course. What’s the issue?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "I’ve been ill, and I’m not going to finish by Thursday.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "I can give you until Monday, but no later.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Monday would really help. Do I need to provide a medical note?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Not this time. Please email me the work by noon.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "work-clarification",
+      "topic": "school",
+      "stage": 3,
+      "register": "neutral",
+      "goal": "澄清任务范围并确认优先级。",
+      "context": "同事收到含糊的资料整理请求。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Could you update the client file today?",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Which part would you like me to update?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "The contact details and the notes from yesterday’s call.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Should I leave the payment section unchanged?",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Yes. Please focus on the contact information first.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Got it. I’ll send it to you by four.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "neighbour-noise",
+      "topic": "home",
+      "stage": 3,
+      "register": "polite",
+      "goal": "提出噪声问题并协商解决。",
+      "context": "邻居深夜音乐过大。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Hi. I’m sorry to bother you, but the music is coming through the wall.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "Oh, I didn’t realize it was that loud.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Would you mind turning it down after ten?",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Of course. We’re finishing soon anyway.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Thanks. I really appreciate it.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "No problem, and sorry again.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "wrong-delivery",
+      "topic": "shopping",
+      "stage": 3,
+      "register": "polite",
+      "goal": "说明送错商品并安排补发。",
+      "context": "网购顾客收到错误颜色。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I received the wrong item in my order.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’m sorry about that. What did you order?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "A black jacket, but this one is blue.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "I can send the correct one today.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Do I need to return this one first?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "No. We’ll include a prepaid return label.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "opinion-disagree",
+      "topic": "chat",
+      "stage": 3,
+      "register": "neutral",
+      "goal": "礼貌表达不同意见并追问理由。",
+      "context": "朋友对城市禁车提议看法不同。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I think cars should be banned from the city centre.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’m not sure I agree. Some people need to drive to work.",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "That’s true, but public transport could be improved.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Would you support a ban if buses ran more often?",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Maybe during the busiest hours.",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "That sounds like a reasonable compromise.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "lost-reservation",
+      "topic": "time",
+      "stage": 3,
+      "register": "polite",
+      "goal": "预订未显示时提供证据并取得替代安排。",
+      "context": "餐厅找不到顾客预订。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Hi. We have a reservation for four at seven.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "I’m sorry, I can’t find it. What name is it under?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Taylor. I have the confirmation email here.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Thank you. It looks like it was entered for tomorrow.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "We need a table tonight. Is anything available?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes, but there’ll be a fifteen-minute wait.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "id": "flight-delay",
+      "topic": "travel",
+      "stage": 3,
+      "register": "polite",
+      "goal": "航班延误后确认转机替代方案。",
+      "context": "旅客因延误可能错过转机。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "My flight is delayed, and I may miss my connection.",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "What is your final destination?",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "Wellington, via Sydney.",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "There’s a later flight from Sydney at eight.",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "Could you move me to that flight now?",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes. I’ll rebook you and print a new boarding pass.",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "restaurant-allergy",
+      "topic": "food",
+      "stage": 2,
+      "register": "polite",
+      "goal": "确认过敏原后安全点餐。",
+      "context": "顾客在餐厅确认菜品是否含花生，并完成替换点单。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "ご注文はお決まりですか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "もう少しです。このカレーにピーナッツは入っていますか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "ソースには入っていますが、トマトスープには入っていません。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "では、スープをお願いします。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "かしこまりました。ピーナッツアレルギーがあることも伝えます。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "ありがとうございます。助かります。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "restaurant-bill",
+      "topic": "food",
+      "stage": 2,
+      "register": "polite",
+      "goal": "核对账单错误并完成结账。",
+      "context": "顾客发现账单上多了一项，服务员核对并更正。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "すみません、お会計をお願いします。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "かしこまりました。すぐにお持ちします。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "このデザートは注文していないと思います。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "申し訳ありません。こちらの間違いです。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "これを外して、別々に払えますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい。訂正した伝票を二枚お持ちします。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "appointment-reschedule",
+      "topic": "time",
+      "stage": 2,
+      "register": "polite",
+      "goal": "完成预约改期与最终确认。",
+      "context": "来电者把周二预约改到周四。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "予約の日を変更したいのですが。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "かしこまりました。現在は何曜日のご予約ですか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "李の名前で、火曜日の十時です。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "木曜日の十一時か、金曜日の九時が空いています。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "木曜日の十一時でお願いします。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "では、木曜日の十一時に変更いたします。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "appointment-cancel",
+      "topic": "time",
+      "stage": 2,
+      "register": "polite",
+      "goal": "取消预约并确认是否收费。",
+      "context": "来电者因病取消预约。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "明日の予約をキャンセルしたいのですが。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "ご予約のお名前をお願いします。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "モーガン・チェンです。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "ありがとうございます。今回はキャンセル料はかかりません。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "確認のメールを送っていただけますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい、すぐにお送りします。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "help-alternative",
+      "topic": "help",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "拒绝部分请求并提供可行替代。",
+      "context": "同学请求当晚帮忙搬家。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "今夜、引っ越しを手伝ってくれない？",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "今夜は無理だけど、明日の朝なら空いてるよ。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "九時はどう？",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "九時は授業があるんだ。十時半ならどう？",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "十時半で大丈夫。別の時間を考えてくれてありがとう。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "うん。住所を送って。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "return-exchange",
+      "topic": "shopping",
+      "stage": 2,
+      "register": "polite",
+      "goal": "凭收据完成尺码换货。",
+      "context": "顾客退回尺码不合适且未穿过的鞋。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "この靴を交換したいのですが。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "何か問題がございましたか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "いいえ、少し小さいだけです。外では履いていません。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "レシートはお持ちですか。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "はい。一つ上のサイズを試せますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "もちろんです。お持ちします。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "return-defect",
+      "topic": "shopping",
+      "stage": 3,
+      "register": "polite",
+      "goal": "说明故障并协商退款方式。",
+      "context": "顾客退回使用两天即故障的水壶。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "この電気ケトルが、二日で動かなくなりました。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "申し訳ありません。レシートはお持ちですか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "はい。交換ではなく、返金をお願いします。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "かしこまりました。カードに返金いたします。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "返金までどのくらいかかりますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "通常は三日から五営業日です。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "directions-repair",
+      "topic": "travel",
+      "stage": 2,
+      "register": "polite",
+      "goal": "在误解目的地后修正问路。",
+      "context": "旅客问去中央车站的路，对方先听成公交总站。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "すみません、中央駅へはどう行けばいいですか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "バスターミナルなら、あちらへ二ブロックです。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "すみません、バスではなく電車の駅です。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "ああ、わかりました。次の角を左に曲がって、銀行を通り過ぎてください。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "そこから遠いですか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "いいえ、歩いて五分くらいです。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "train-transfer",
+      "topic": "travel",
+      "stage": 2,
+      "register": "polite",
+      "goal": "确认换乘、站台与时间。",
+      "context": "旅客询问前往机场的电车。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "すみません、空港へ行くならこの電車で合っていますか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "直接は行きません。中央駅で乗り換えてください。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "中央駅では何番線ですか。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "六番線です。案内表示があります。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "乗り換える時間は十分ありますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい、十二分ほどあります。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "group-work",
+      "topic": "school",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "分工并确认交付时间。",
+      "context": "学生为小组展示分配工作。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "発表の作業をどう分けようか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "私は導入と最初の二枚のスライドを担当するよ。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "二枚目に入れる例も一つ探してくれる？",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "いいよ。最後の数字を確認してもらえる？",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "うん。金曜日までにお互いに送ろう。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "わかった。月曜日に練習できるね。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "group-disagree",
+      "topic": "school",
+      "stage": 4,
+      "register": "neutral",
+      "goal": "表达不同意见并达成折中。",
+      "context": "小组对报告重点意见不同。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "アンケートの結果を中心にしたほうがいいと思います。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "言いたいことはわかりますが、インタビューが変化の理由を説明しています。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "両方入れるということですか。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい。ただ、背景の部分は短くできます。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "それならよさそうです。背景は一段落だけ残しましょう。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "では、私が構成を直します。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "repair-heating",
+      "topic": "home",
+      "stage": 3,
+      "register": "polite",
+      "goal": "报修暖气并确认临时方案。",
+      "context": "租客报告暖气不工作。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "部屋の暖房が動かないのですが。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "申し訳ありません。エラー番号は出ていますか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "はい、E3と出ています。部屋も寒くなってきました。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "明日の午後なら修理の者が伺えます。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "明日直らなかった場合、暖房器具を借りられますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい。今日、受付にご用意します。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "repair-leak",
+      "topic": "home",
+      "stage": 3,
+      "register": "polite",
+      "goal": "报告漏水并说明紧急程度。",
+      "context": "租客发现水槽下漏水。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "台所の流しの下から水が漏れています。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "少しずつですか。それとも、ずっと流れていますか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "ずっと流れていたので、水を止めました。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "ありがとうございます。一時間以内に修理の者を向かわせます。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "家で待っている必要がありますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい。到着前に担当者から電話します。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "medical-symptoms",
+      "topic": "health",
+      "stage": 3,
+      "register": "polite",
+      "goal": "描述症状、持续时间与严重程度。",
+      "context": "患者因喉咙痛和发烧看诊。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "今日はどうされましたか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "月曜日から喉が痛くて、昨夜は熱もありました。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "息苦しさはありますか。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "いいえ。でも、飲み込むと痛いです。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "わかりました。まず喉を診ますね。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "わかりました。ありがとうございます。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "pharmacy-medicine",
+      "topic": "health",
+      "stage": 2,
+      "register": "polite",
+      "goal": "确认药物用法和注意事项。",
+      "context": "顾客向药师询问止痛药。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "この薬の飲み方を教えていただけますか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "食後に一錠、一日三回まで飲んでください。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "アレルギーの薬と一緒に飲んでも大丈夫ですか。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "確認します。その薬の名前は何ですか。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "この箱に書いてあります。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "ありがとうございます。この二つは一緒に飲んでも大丈夫です。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "invitation-decline",
+      "topic": "social",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "礼貌拒绝邀请并提出另约。",
+      "context": "朋友邀请周五吃饭。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "金曜日、一緒に夕飯を食べない？",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "行きたいけど、その夜はもう予定があるんだ。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "そっか。週末は空いてる？",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "日曜日の午後なら大丈夫だよ。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "三時にコーヒーはどう？",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "いいね。じゃあ、そのときに。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "invitation-condition",
+      "topic": "social",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "带条件接受邀请并确认细节。",
+      "context": "朋友邀请参加野餐。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "土曜日にピクニックをするんだけど、来ない？",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "行けるかも。何時から？",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "十二時ごろ、リバーサイド公園で。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "十一時までに仕事が終わったら行けるよ。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "大丈夫。わかったらメッセージして。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "そうするね。誘ってくれてありがとう。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "misunderstanding-time",
+      "topic": "time",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "修正时间误会并重新确认。",
+      "context": "两人对会议时间理解不同。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "会議は二時からだと思っていました。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "昨日、三時に変更になりました。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "そのメッセージを見落としたようです。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "大丈夫です。三時でも来られますか。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "はい。確認ですが、三時に四号室ですね。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "そのとおりです。では、後で。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "misunderstanding-tone",
+      "topic": "social",
+      "stage": 4,
+      "register": "neutral",
+      "goal": "解释语气并修复关系。",
+      "context": "同事觉得一句反馈太尖锐。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "会議でのコメントが、かなり厳しく聞こえました。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "すみません。仕事ではなく、日程について確認したかったんです。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "説明してくれてありがとう。責められたのかと思いました。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "そう聞こえた理由はわかります。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "明日、もう一度日程について話せますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "もちろんです。今度はもっとはっきり説明します。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "hotel-room",
+      "topic": "travel",
+      "stage": 2,
+      "register": "polite",
+      "goal": "报告房间问题并完成换房。",
+      "context": "住客因街道噪声请求换房。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "すみません、夜になると部屋がとても騒がしいです。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "申し訳ありません。外の道路の音ですか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "はい。もう少し静かな部屋はありますか。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "六階にございますが、シングルベッドが二台の部屋です。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "それで大丈夫です。今夜移れますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい。新しい鍵をご用意します。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "hotel-booking",
+      "topic": "travel",
+      "stage": 2,
+      "register": "polite",
+      "goal": "查找预订并确认早餐。",
+      "context": "住客办理入住时预订记录不易找到。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "パテルの名前で予約しています。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "まだ見つかりません。別のお名前でしょうか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "プリヤ・パテルで探してください。先月、オンラインで予約しました。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "ございました。三泊のご予定ですね。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "はい。朝食は含まれていますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい。朝食は七時からです。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "taxi-destination",
+      "topic": "travel",
+      "stage": 2,
+      "register": "polite",
+      "goal": "确认目的地、路线和支付方式。",
+      "context": "乘客乘出租车去酒店。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "リバーサイドホテルまでお願いします。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "かしこまりました。キング通りのホテルですね。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "はい、そこです。どのくらいかかりますか。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "道が空いていれば、二十分くらいです。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "カードで払えますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい、使えます。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "bus-wrong-stop",
+      "topic": "travel",
+      "stage": 2,
+      "register": "neutral",
+      "goal": "发现坐错方向后获得补救路线。",
+      "context": "乘客担心错过下车站。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "このバスは市立病院の近くに止まりますか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "いいえ、このバスは反対方向に向かっています。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "そうですか。どこで降りればいいですか。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "次で降りて、反対側から二十四番に乗ってください。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "二十四番は病院の前に止まりますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい、正面入口のすぐ前です。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "order-unavailable",
+      "topic": "food",
+      "stage": 2,
+      "register": "polite",
+      "goal": "菜品售罄后选择替代。",
+      "context": "餐厅告知顾客所点菜品卖完。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "焼き魚をお願いします。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "申し訳ありません。焼き魚は売り切れております。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "代わりに、何がおすすめですか。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "鶏肉料理が似ています。野菜のパスタもございます。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "では、パスタにします。チーズ抜きにできますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "もちろんです。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "dietary-clarify",
+      "topic": "food",
+      "stage": 3,
+      "register": "polite",
+      "goal": "澄清素食需求并确认配料。",
+      "context": "顾客确认汤是否真正适合素食者。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "野菜スープはベジタリアン向けですか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "はい、肉は入っていません。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "だしも野菜だけですか。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "厨房に確認してまいります。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "ありがとうございます。鶏のだしも避けたいんです。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "承知しました。ご注文の前に必ず確認します。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "school-deadline",
+      "topic": "school",
+      "stage": 3,
+      "register": "polite",
+      "goal": "请求延期并协商新截止时间。",
+      "context": "学生因病请求作业延期。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "課題の締め切りについて相談してもいいですか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "もちろんです。どうしましたか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "体調を崩して、木曜日までに終わりそうにありません。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "月曜日までなら延ばせますが、それより後は難しいです。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "月曜日なら助かります。診断書は必要ですか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "今回は必要ありません。正午までにメールで送ってください。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "work-clarification",
+      "topic": "school",
+      "stage": 3,
+      "register": "neutral",
+      "goal": "澄清任务范围并确认优先级。",
+      "context": "同事收到含糊的资料整理请求。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "今日中に顧客ファイルを更新してもらえますか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "どの部分を更新すればいいですか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "連絡先と昨日の電話のメモです。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "支払いの部分はそのままでいいですか。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "はい。まず連絡先を優先してください。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "わかりました。四時までに送ります。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "neighbour-noise",
+      "topic": "home",
+      "stage": 3,
+      "register": "polite",
+      "goal": "提出噪声问题并协商解决。",
+      "context": "邻居深夜音乐过大。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "すみません。音楽が壁越しにかなり聞こえるのですが。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "そんなに大きいとは気づきませんでした。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "十時を過ぎたら、音を小さくしてもらえますか。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "もちろんです。もうすぐ終わるところです。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "ありがとうございます。本当に助かります。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "こちらこそ、すみませんでした。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "wrong-delivery",
+      "topic": "shopping",
+      "stage": 3,
+      "register": "polite",
+      "goal": "说明送错商品并安排补发。",
+      "context": "网购顾客收到错误颜色。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "注文と違う商品が届きました。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "申し訳ありません。何をご注文になりましたか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "黒いジャケットを注文しましたが、青いものが届きました。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "本日、正しい商品を発送できます。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "先にこちらを返す必要がありますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "いいえ。返送用の伝票を同封します。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "opinion-disagree",
+      "topic": "chat",
+      "stage": 3,
+      "register": "neutral",
+      "goal": "礼貌表达不同意见并追问理由。",
+      "context": "朋友对市中心禁车提议看法不同。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "市の中心部への車の乗り入れは禁止したほうがいいと思う。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "私は少し違う意見かな。通勤に車が必要な人もいるよ。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "確かに。でも、公共交通をもっと便利にできると思う。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "バスの本数が増えたら、禁止に賛成する？",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "混む時間だけなら賛成するかも。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "それなら、いい妥協案になりそうだね。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "lost-reservation",
+      "topic": "time",
+      "stage": 3,
+      "register": "polite",
+      "goal": "预订未显示时提供证据并取得替代安排。",
+      "context": "餐厅找不到顾客预订。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "七時に四名で予約しています。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "申し訳ありません。お名前を教えていただけますか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "テイラーです。確認メールもあります。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "ありがとうございます。明日の予約として入っています。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "今夜、席が必要なのですが、空いていませんか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "十五分ほどお待ちいただければ、ご用意できます。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "flight-delay",
+      "topic": "travel",
+      "stage": 3,
+      "register": "polite",
+      "goal": "航班延误后确认转机替代方案。",
+      "context": "旅客因延误可能错过转机。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "飛行機が遅れて、乗り継ぎに間に合わないかもしれません。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "最終目的地はどちらですか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "シドニー経由でウェリントンです。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "シドニーを八時に出る便ならあります。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "今、その便に変更できますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "はい。予約を変更して、新しい搭乗券をお渡しします。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "counter-service",
+      "topic": "shopping",
+      "stage": 2,
+      "register": "polite",
+      "goal": "在柜台确认包装与收据。",
+      "context": "顾客购买礼物并请求包装。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "こちらを贈り物にしたいのですが。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "無料の包装と有料の箱がございます。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "無料の包装でお願いします。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "かしこまりました。値札は外しますか。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "はい。領収書もいただけますか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "もちろんです。商品とは別にお渡しします。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "clinic-reception",
+      "topic": "health",
+      "stage": 2,
+      "register": "polite",
+      "goal": "在诊所前台确认就诊与候诊。",
+      "context": "患者没有预约但症状加重。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "予約はないのですが、診てもらえますか。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "症状を簡単に教えてください。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "昨日から熱があり、今朝ひどくなりました。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "少しお待ちいただければ、医師に確認します。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "待ち時間はどのくらいですか。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "今のところ、三十分ほどです。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "delivery-time",
+      "topic": "home",
+      "stage": 2,
+      "register": "polite",
+      "goal": "协调送货时间并确认在场。",
+      "context": "配送人员提出工作日下午送货。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "家具のお届け時間についてご連絡しました。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "ありがとうございます。何時ごろになりますか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "木曜日の二時から四時の間です。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "その時間は不在です。金曜日の午前中はどうですか。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "金曜日なら九時から十一時が空いています。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "では、その時間でお願いします。",
+          "role": "confirmation_closing"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "id": "lost-property",
+      "topic": "travel",
+      "stage": 3,
+      "register": "polite",
+      "goal": "描述失物并留下联系方式。",
+      "context": "旅客在车站寻找遗失的包。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "電車にかばんを忘れたかもしれません。",
+          "role": "opening_request"
+        },
+        {
+          "speaker": "B",
+          "text": "どの電車に乗りましたか。",
+          "role": "response"
+        },
+        {
+          "speaker": "A",
+          "text": "十時十五分発の空港行きです。",
+          "role": "clarification_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "かばんの色と形を教えてください。",
+          "role": "response_alternative"
+        },
+        {
+          "speaker": "A",
+          "text": "黒い小さなリュックです。中に名前が書いてあります。",
+          "role": "confirmation_follow_up"
+        },
+        {
+          "speaker": "B",
+          "text": "見つかったら、こちらの番号にご連絡します。",
+          "role": "confirmation_closing"
+        }
+      ]
+    }
+  ]
+}

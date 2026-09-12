@@ -1,0 +1,310 @@
+
+ ⛅️ wrangler 4.130.0
+────────────────────
+Resource location: local 
+
+Use --remote if you want to access the remote instance.
+
+Migrations to be applied:
+┌─────────────────────────────────┐
+│ name                            │
+├─────────────────────────────────┤
+│ 0001_schema.sql                 │
+├─────────────────────────────────┤
+│ 0002_seed.sql                   │
+├─────────────────────────────────┤
+│ 0003_engine.sql                 │
+├─────────────────────────────────┤
+│ 0004_curriculum.sql             │
+├─────────────────────────────────┤
+│ 0005_assessment_refinements.sql │
+├─────────────────────────────────┤
+│ 0006_v2_domains.sql             │
+├─────────────────────────────────┤
+│ 0007_v2_representative.sql      │
+├─────────────────────────────────┤
+│ 0008_v2_editorial_guards.sql    │
+└─────────────────────────────────┘
+? About to apply 8 migration(s)
+Your database may not be available to serve requests during the migration, continue?
+🤖 Using fallback value in non-interactive context: yes
+🌀 Executing on local database DB (00000000-0000-0000-0000-000000000035) from .wrangler\35a-clean-1788924343707\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 16 commands executed successfully.
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on local database DB (00000000-0000-0000-0000-000000000035) from .wrangler\35a-clean-1788924343707\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 320 commands executed successfully.
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on local database DB (00000000-0000-0000-0000-000000000035) from .wrangler\35a-clean-1788924343707\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 9 commands executed successfully.
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on local database DB (00000000-0000-0000-0000-000000000035) from .wrangler\35a-clean-1788924343707\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 6180 commands executed successfully.
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on local database DB (00000000-0000-0000-0000-000000000035) from .wrangler\35a-clean-1788924343707\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 354 commands executed successfully.
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on local database DB (00000000-0000-0000-0000-000000000035) from .wrangler\35a-clean-1788924343707\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 33 commands executed successfully.
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ 🕒️    │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on local database DB (00000000-0000-0000-0000-000000000035) from .wrangler\35a-clean-1788924343707\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 239 commands executed successfully.
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ 🕒️    │
+└─────────────────────────────────┴────────┘
+🌀 Executing on local database DB (00000000-0000-0000-0000-000000000035) from .wrangler\35a-clean-1788924343707\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 18 commands executed successfully.
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0001_schema.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0002_seed.sql                   │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0003_engine.sql                 │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0004_curriculum.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0005_assessment_refinements.sql │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0006_v2_domains.sql             │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0007_v2_representative.sql      │ ✅     │
+├─────────────────────────────────┼────────┤
+│ 0008_v2_editorial_guards.sql    │ ✅     │
+└─────────────────────────────────┴────────┘
+D1 checks passed: clean migration tracking, counts, foreign keys, 11 rejected invalid writes.
+✔ lightweight catalog, detail regression preserves all 15 approved Concepts (553.93ms)
+✔ adaptive API beginners, intermediate, advanced and language independence (1534.3916ms)
+✔ exact retries idempotent; changed replays, foreign questions and concurrency protected (98.655ms)
+✔ checkpoints every topic and language identify precise weak Concepts (5327.3946ms)
+✔ recommendation profiles change results, weakness priority and no hard locks (63.1418ms)
+Content API failed
+✔ strict malformed contracts, deprecated fixed APIs and private asset isolation (240.9239ms)
+✔ database failures return sanitized errors (0.959ms)
+✔ expired stored session is rejected before accessing question content (0.6435ms)
+✔ scheduled maintenance removes expired anonymous sessions only (0.2015ms)
+✔ placement calibrates Levels 1–6, starts at 3, needs repeated evidence (7.5739ms)
+✔ mixed, consecutive mistakes/successes and uncertain boundaries respect hard maximum (2.8968ms)
+✔ early stopping, deterministic seed, varied sequence and language independence (6.2655ms)
+✔ fresh Levels 1,4,6 produce different nearby content and topic variety (2.1925ms)
+✔ independent EN5/JA2, review and checkpoint weaknesses, recent and mastery (3.1777ms)
+✔ partial topic, many review items, empty catalogs and manual topic filter (1.4281ms)
+✔ fresh intermediate queue includes consolidation and stretch (2.0446ms)
+✔ 700 seeded simulations preserve level calibration independently (351.0931ms)
+✔ vocabulary list filters, Chinese/target search, senses and bounded pagination (306.7609ms)
+✔ grammar levels, multilingual search, explanations, directed prerequisites and contrasts (191.41ms)
+✔ sentence filters apply difficulty and language to the SAME expression (99.0843ms)
+✔ required not-eaten example, independent difficulty and exact vocabulary/grammar links (53.2844ms)
+✔ changed plans, scenario variants, dialogue turns and turn relationships (156.6437ms)
+✔ reverse relationship endpoints return compact correct units in both directions (320.9125ms)
+V2 content unavailable
+✔ invalid filters, pagination, IDs, unknown routes and methods (639.193ms)
+✔ database failures are sanitized (1.4986ms)
+✔ additive stream preserves every legacy row and schema migration copy (12.8144ms)
+✔ representative counts, no forced language pairing, independent difficulty (0.3736ms)
+✔ stage, level, language, publication and type constraints (0.6363ms)
+✔ composite foreign keys prevent cross-language sentence vocabulary and grammar links (0.2295ms)
+✔ lexical and grammar relations enforce language, no self links, and acyclic prerequisites (0.2934ms)
+✔ duplicate primary, lexical identity, relation and span protections (0.2271ms)
+✔ scenario and dialogue ownership plus all reading/span content is valid (0.7207ms)
+✔ required semantic examples reference actual independent systems (0.1491ms)
+✔ integer affinity and dialogue invariants survive editorial updates (0.2671ms)
+✔ draft/archived records never leak via lists, links, examples or reverse navigation (18.3735ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7882.5252
+Phase 1/2 migration retains independent levels, mastery, position, activity and untouched legacy recovery key
+EN5/JA2 recommendations differ; language-specific queue advances and records only selected mastery
+Original card IPA, kana toggle, touch grammar drawer, comparison, escape and legacy preservation
+Browser adaptive completion with independent retest and useful results
+Checkpoint result identifies weak Concept and updates Japanese only
+360/390/430/1440 layouts: Home, Progress, Placement, Checkpoint, six card types, long Level 6 dialogue and question; zero horizontal overflow
+Lost committed answer response retries idempotently
+Content failure/retry recovery
+Recommendation error leaves manual learning accessible and retries
+Blocked storage does not prevent learning
+{
+  "base": "http://127.0.0.1:8796",
+  "total": 183,
+  "byTopic": {
+    "chat": 17,
+    "food": 17,
+    "school": 17,
+    "home": 12,
+    "time": 12,
+    "shopping": 12,
+    "travel": 12,
+    "weather": 12,
+    "health": 12,
+    "feelings": 12,
+    "hobbies": 12,
+    "social": 12,
+    "help": 12,
+    "plans": 12
+  },
+  "byType": {
+    "sentence": 43,
+    "vocabulary": 28,
+    "phrase": 28,
+    "scenario_response": 28,
+    "pattern": 28,
+    "dialogue": 28
+  },
+  "enDifficulty": {
+    "1": 35,
+    "2": 33,
+    "3": 31,
+    "4": 28,
+    "5": 28,
+    "6": 28
+  },
+  "jaDifficulty": {
+    "1": 31,
+    "2": 36,
+    "3": 32,
+    "4": 28,
+    "5": 28,
+    "6": 28
+  },
+  "independentDifficulties": 89,
+  "suspiciousDuplicates": [],
+  "errors": [],
+  "passed": true
+}

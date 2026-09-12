@@ -1,0 +1,27 @@
+✔ lightweight catalog, detail regression preserves all 15 approved Concepts (2875.1821ms)
+✔ adaptive API beginners, intermediate, advanced and language independence (14168.8099ms)
+✔ exact retries idempotent; changed replays, foreign questions and concurrency protected (1137.1058ms)
+✔ checkpoints every topic and language identify precise weak Concepts (66176.2671ms)
+✔ recommendation profiles change results, weakness priority and no hard locks (458.5463ms)
+Content API failed
+✔ strict malformed contracts, deprecated fixed APIs and private asset isolation (1669.9836ms)
+✔ database failures return sanitized errors (1.1587ms)
+✔ expired stored session is rejected before accessing question content (0.7553ms)
+✔ scheduled maintenance removes expired anonymous sessions only (0.1454ms)
+✔ vocabulary list filters, Chinese/target search, senses and bounded pagination (1323.4322ms)
+✔ grammar levels, multilingual search, explanations, directed prerequisites and contrasts (741.4388ms)
+✔ sentence filters apply difficulty and language to the SAME expression (318.8642ms)
+✔ required not-eaten example, independent difficulty and exact vocabulary/grammar links (191.0102ms)
+✔ changed plans, scenario variants, dialogue turns and turn relationships (641.5583ms)
+✔ reverse relationship endpoints return compact correct units in both directions (1213.0068ms)
+V2 content unavailable
+✔ invalid filters, pagination, IDs, unknown routes and methods (1225.7425ms)
+✔ database failures are sanitized (1.3509ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 86551.8737

@@ -1,0 +1,5 @@
+360px: Home CTA, context return, all 5 legacy pages default return, internal legacy navigation, keyboard and no overflow
+390px: Home CTA, context return, all 5 legacy pages default return, internal legacy navigation, keyboard and no overflow
+430px: Home CTA, context return, all 5 legacy pages default return, internal legacy navigation, keyboard and no overflow
+1440px: Home CTA, context return, all 5 legacy pages default return, internal legacy navigation, keyboard and no overflow
+Unsafe return targets fall back Home; compatibility labels; JS transition; unavailable storage

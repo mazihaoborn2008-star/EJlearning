@@ -1,0 +1,34 @@
+✔ lightweight catalog, detail regression preserves all 15 approved Concepts (1606.708ms)
+✔ adaptive API beginners, intermediate, advanced and language independence (6636.7747ms)
+✔ exact retries idempotent; changed replays, foreign questions and concurrency protected (453.0066ms)
+✔ checkpoints every topic and language identify precise weak Concepts (24714.404ms)
+✔ recommendation profiles change results, weakness priority and no hard locks (187.7163ms)
+Content API failed
+✔ strict malformed contracts, deprecated fixed APIs and private asset isolation (585.405ms)
+✔ database failures return sanitized errors (1.1782ms)
+✔ expired stored session is rejected before accessing question content (0.6257ms)
+✔ scheduled maintenance removes expired anonymous sessions only (0.1576ms)
+✔ vocabulary list filters, Chinese/target search, senses and bounded pagination (467.3468ms)
+✔ grammar levels, multilingual search, explanations, directed prerequisites and contrasts (406.1535ms)
+✔ sentence filters apply difficulty and language to the SAME expression (244.2276ms)
+✔ required not-eaten example, independent difficulty and exact vocabulary/grammar links (106.0811ms)
+✔ changed plans, scenario variants, dialogue turns and turn relationships (588.7441ms)
+✔ reverse relationship endpoints return compact correct units in both directions (901.0237ms)
+V2 content unavailable
+✔ invalid filters, pagination, IDs, unknown routes and methods (996.8493ms)
+✔ database failures are sanitized (1.9854ms)
+✔ all 183 sources preserved byte-for-byte in legacy tables and provenance (48.5604ms)
+✔ curriculum QA fails for missing readings, invalid links, empty bands and unreviewed alignment (94.2706ms)
+✔ new crosswalk rejects inconsistent source language/concept and invalid owners (0.5168ms)
+✔ both languages have nonempty six-band libraries, correct filters and bounded pagination (1605.8801ms)
+✔ migration semantic decisions and complete pattern examples are served (1370.303ms)
+✔ all exam targets have draft content across domains without difficulty equivalence (629.06ms)
+✔ isolated UI keeps legacy available and private assets inaccessible (172.3186ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 34251.0671

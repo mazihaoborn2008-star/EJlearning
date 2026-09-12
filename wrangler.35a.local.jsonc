@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ej-learning-35a",
+  "account_id": "bd05aa19111be95427af89be4e44f164",
+  "main": "src/worker-v2.js",
+  "compatibility_date": "2026-09-08",
+  "workers_dev": true,
+  "routes": [],
+  "assets": {"directory":"./public","binding":"ASSETS","html_handling":"none","not_found_handling":"none","run_worker_first":["/","/api","/api/*"]},
+  "d1_databases": [{"binding":"DB","database_name":"ej-learning-35a-db","database_id":"00000000-0000-0000-0000-000000000035","migrations_dir":"migrations-v2"}]
+}

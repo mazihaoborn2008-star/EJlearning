@@ -1,0 +1,16 @@
+{
+  "name": "ej-learning-35e2",
+  "account_id": "bd05aa19111be95427af89be4e44f164",
+  "main": "src/worker-35e2.js",
+  "compatibility_date": "2026-09-08",
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "ej-learning-35e2-db",
+    "database_id": "8788e336-dc89-4ad9-b0fc-c58ae577d777",
+    "migrations_dir": "migrations-35e1c"
+  }, {
+    "binding": "CONTENT_DB",
+    "database_name": "ej-learning-35e2-db",
+    "database_id": "8788e336-dc89-4ad9-b0fc-c58ae577d777"
+  }]
+}

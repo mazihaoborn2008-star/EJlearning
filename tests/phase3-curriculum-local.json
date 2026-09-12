@@ -1,0 +1,48 @@
+{
+  "base": "http://127.0.0.1:8791",
+  "total": 183,
+  "byTopic": {
+    "chat": 17,
+    "food": 17,
+    "school": 17,
+    "home": 12,
+    "time": 12,
+    "shopping": 12,
+    "travel": 12,
+    "weather": 12,
+    "health": 12,
+    "feelings": 12,
+    "hobbies": 12,
+    "social": 12,
+    "help": 12,
+    "plans": 12
+  },
+  "byType": {
+    "sentence": 43,
+    "vocabulary": 28,
+    "phrase": 28,
+    "scenario_response": 28,
+    "pattern": 28,
+    "dialogue": 28
+  },
+  "enDifficulty": {
+    "1": 35,
+    "2": 33,
+    "3": 31,
+    "4": 28,
+    "5": 28,
+    "6": 28
+  },
+  "jaDifficulty": {
+    "1": 31,
+    "2": 36,
+    "3": 32,
+    "4": 28,
+    "5": 28,
+    "6": 28
+  },
+  "independentDifficulties": 89,
+  "suspiciousDuplicates": [],
+  "errors": [],
+  "passed": true
+}

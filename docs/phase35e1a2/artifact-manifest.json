@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-09-10T21:07:49.663Z",
+  "files": [
+    {
+      "name": "selection-candidates.json",
+      "bytes": 145536,
+      "sha256": "046e0573e4fbfa8c7ea476c5f0c536fab53df44ac390a9f9e5155596b845fdda"
+    },
+    {
+      "name": "generation-report.json",
+      "bytes": 178759,
+      "sha256": "9c7f946c2bb3812a95b8a97dec9b0d523be8c6db681705f4f9803ae6580f2a20"
+    },
+    {
+      "name": "curated-usage-audit.json",
+      "bytes": 16962,
+      "sha256": "a1f260d229bb6f1d1655fd7601987b5bee1b97b97a7d3fb22d3b992afa76b6c7"
+    },
+    {
+      "name": "qa-report.json",
+      "bytes": 6768,
+      "sha256": "4c5ec8b921d081ed262e18be0a5d7d26fb67fd89c7591f310d41c48a9ada346a"
+    },
+    {
+      "name": "regression-verification.json",
+      "bytes": 1352,
+      "sha256": "3b695169182357aebb9f97ce9658cd63c8f93fcbec78bec6769a0ef0d0721496"
+    },
+    {
+      "name": "phase35e1a2-summary.md",
+      "bytes": 4910,
+      "sha256": "d11c829ea6ddc9f390ed507bcbf5ab81439608cfd4fa3a8f3653003cb9b9a4a6"
+    }
+  ]
+}

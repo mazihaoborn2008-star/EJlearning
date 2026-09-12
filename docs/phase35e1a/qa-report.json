@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-09-10T09:18:38.396Z",
+  "status": "PASS",
+  "errors": 0,
+  "warnings": 0,
+  "checks": [
+    {
+      "name": "schema required columns",
+      "pass": true,
+      "detail": [
+        "id",
+        "grammar_id",
+        "language",
+        "text",
+        "translation_zh",
+        "explanation_zh",
+        "ipa",
+        "readings_json",
+        "source_expression_id",
+        "sort_order"
+      ]
+    },
+    {
+      "name": "database readable/integrity probe",
+      "pass": true,
+      "detail": [
+        {
+          "integrity_check": 1
+        }
+      ]
+    },
+    {
+      "name": "foreign keys",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "baseline tables unchanged",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "vocabulary": 695,
+          "grammar": 155,
+          "semantic_units": 265,
+          "expressions": 459,
+          "lessons": 48,
+          "grammar_examples": 157,
+          "vocabulary_examples": 704,
+          "dialogue_turns": 116,
+          "vocabulary_relations": 11,
+          "grammar_relations": 23
+        },
+        "observed": {
+          "vocabulary": 695,
+          "grammar": 155,
+          "semantic_units": 265,
+          "expressions": 459,
+          "lessons": 48,
+          "grammar_examples": 647,
+          "vocabulary_examples": 704,
+          "dialogue_turns": 116,
+          "vocabulary_relations": 11,
+          "grammar_relations": 23
+        }
+      }
+    },
+    {
+      "name": "grammar example additive delta",
+      "pass": true,
+      "detail": {
+        "before": 157,
+        "added": 490,
+        "after": 647
+      }
+    },
+    {
+      "name": "selected grammar counts",
+      "pass": true,
+      "detail": {
+        "en": 35,
+        "ja": 40
+      }
+    },
+    {
+      "name": "new example counts",
+      "pass": true,
+      "detail": {
+        "en": 210,
+        "ja": 280
+      }
+    },
+    {
+      "name": "per-grammar additions",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "source/database identity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "language agreement",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "curated/source isolation",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "normalized duplicate/collision",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Japanese reading QA",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "additive migration policy",
+      "pass": true,
+      "detail": {
+        "policy_errors": [],
+        "inserted_tables": [
+          "v2_grammar_examples"
+        ]
+      }
+    },
+    {
+      "name": "generation grammar/editorial QA",
+      "pass": true,
+      "detail": {
+        "duplicate": 0,
+        "existing_example_collision": 0,
+        "grammar_invalid": 0,
+        "editorial_review": 0,
+        "details": {
+          "duplicate": [],
+          "existing_collision": [],
+          "grammar_invalid": [],
+          "editorial_review": []
+        }
+      }
+    }
+  ],
+  "error_details": [],
+  "warning_details": []
+}

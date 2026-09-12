@@ -1,0 +1,917 @@
+[
+  {
+    "id": 1,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 2,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 3,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 4,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 5,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 6,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 7,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 8,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 9,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 10,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 11,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 12,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 13,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 14,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 15,
+    "flagged": false,
+    "note": "按中文交际意义保留自然目标语言表达；词汇与语法分别组织。"
+  },
+  {
+    "id": 16,
+    "flagged": false,
+    "note": "name 是名词；名前也可指全名。例：My name is Mei.／名前はメイです。"
+  },
+  {
+    "id": 17,
+    "flagged": false,
+    "note": "英语省略 Good 很常见；日语对熟人用おはよう，对不熟的人加ございます。"
+  },
+  {
+    "id": 18,
+    "flagged": false,
+    "note": "nearby 不再加 here；住んでいます表示居住状态，不是此刻正在搬家。"
+  },
+  {
+    "id": 19,
+    "flagged": false,
+    "note": "英语过去式 was 在这里是礼貌地回问；日语直接请求再说一次，不必逐字翻译。"
+  },
+  {
+    "id": 20,
+    "flagged": true,
+    "note": "询问喜好。例：Do you like coffee?／コーヒーは好きですか。日语喜欢的对象可用は提出。"
+  },
+  {
+    "id": 21,
+    "flagged": false,
+    "note": "quiet 指没安排很多活动，不是周围没有声音；のんびり强调悠闲。朋友间的简短问答。"
+  },
+  {
+    "id": 22,
+    "flagged": false,
+    "note": "small talk 是轻松寒暄，不是小声说话；世間話偏日常闲谈。例：We made small talk.／世間話をしました。"
+  },
+  {
+    "id": 23,
+    "flagged": false,
+    "note": "Let me 引出确认；日语用させてください礼貌请求允许自己确认，适合认真讨论。"
+  },
+  {
+    "id": 24,
+    "flagged": true,
+    "note": "否定别人可能的推断。例：It's not that I want to argue.／言い争いたいわけではありません。并非否定所有相关事实。"
+  },
+  {
+    "id": 25,
+    "flagged": false,
+    "note": "说明原本意图；这句话本身不等于道歉，若伤害对方仍应另说对不起。つもり描述主观意图。"
+  },
+  {
+    "id": 26,
+    "flagged": true,
+    "note": "承接前面的事实再转折。例：It's expensive. That said, it's useful.／高いです。とはいえ、便利です。不能机械用于任何但是。"
+  },
+  {
+    "id": 27,
+    "flagged": false,
+    "note": "harsh 指语气刺耳；きつい也可形容说法严厉。回应先承认效果，再改说法，避免只辩解本意。"
+  },
+  {
+    "id": 28,
+    "flagged": false,
+    "note": "leftovers 通常用复数指剩下的饭菜；残り物范围更广。例：I'll eat the leftovers.／残り物を食べます。"
+  },
+  {
+    "id": 29,
+    "flagged": false,
+    "note": "英语点单可用名词加 please；日语お願いします让短请求保持礼貌。"
+  },
+  {
+    "id": 30,
+    "flagged": false,
+    "note": "can't eat 只说明不能吃，并未明确原因。若为过敏应明确补充 allergy／アレルギー，不能把不喜欢当过敏。"
+  },
+  {
+    "id": 31,
+    "flagged": false,
+    "note": "to go 是美式常见点餐说法；日语用持ち帰り，で标明选定方式。"
+  },
+  {
+    "id": 32,
+    "flagged": true,
+    "note": "例：Could you go easy on the salt?／塩は少なめでお願いします。go easy on 在此是少用，不是让盐放松。"
+  },
+  {
+    "id": 33,
+    "flagged": false,
+    "note": "the wait 指等位时间；ほど表示大约。英语用名词问等待，日语用动词待つ。"
+  },
+  {
+    "id": 34,
+    "flagged": true,
+    "note": "light 随食物可指不厚重、不油腻；不总等于低热量。例：a light soup／あっさりしたスープ。bland 才常带寡淡评价。"
+  },
+  {
+    "id": 35,
+    "flagged": false,
+    "note": "in the mood for 说当前想要；日语这里自然地强调简单吃点、解决一餐，不是逐字翻译 simple。"
+  },
+  {
+    "id": 36,
+    "flagged": true,
+    "note": "例：I'd rather have something less sweet.／どちらかというと甘さ控えめがいいです。rather 后接动词原形；日语说得较柔和。"
+  },
+  {
+    "id": 37,
+    "flagged": false,
+    "note": "先说明实际问题再提出更换；英语用可能性问句，日语用いただく表达受惠，均不是要求店家必须答应。"
+  },
+  {
+    "id": 38,
+    "flagged": true,
+    "note": "acquired taste 指需要适应才欣赏的味道，也可用于音乐等；日语这里展开意思，不把它说成大家都会喜欢。"
+  },
+  {
+    "id": 39,
+    "flagged": false,
+    "note": "mix-up 暗示弄错，避免先归责；日语ようなんですが委婉提出问题，店员用いたします回应。"
+  },
+  {
+    "id": 40,
+    "flagged": false,
+    "note": "deadline 是最后期限，不等于整个工作周期。例：The deadline is Friday.／締め切りは金曜日です。"
+  },
+  {
+    "id": 41,
+    "flagged": false,
+    "note": "Got it 表示理解或收到；日语わかりました语气中性礼貌，对正式客户可再调整。"
+  },
+  {
+    "id": 42,
+    "flagged": false,
+    "note": "work on 后接任务；取り組む强调着手努力，不表示已经完成。"
+  },
+  {
+    "id": 43,
+    "flagged": false,
+    "note": "explain 后直接接内容，不说 explain me；もらえますか是向对方请求帮助。"
+  },
+  {
+    "id": 44,
+    "flagged": true,
+    "note": "例：I haven't finished the report yet.／まだ報告書を書き終えていません。英语用过去分词；日语根据动词接て形。"
+  },
+  {
+    "id": 45,
+    "flagged": false,
+    "note": "handle 指负责处理；figures 此处为数值。日语用お願い自然分工，适合熟悉的同事。"
+  },
+  {
+    "id": 46,
+    "flagged": true,
+    "note": "日语以意見为词头，限定为改进反馈；不把说明性短语当作唯一词头。 feedback 通常不可数，不说 a feedback；日语用意见表达此处含义。例：Could I get some feedback?／ご意見をいただけますか。"
+  },
+  {
+    "id": 47,
+    "flagged": false,
+    "note": "meet a deadline 指如期完成；日语说没有把握。用于尽早报告风险，最好接解决方案。"
+  },
+  {
+    "id": 48,
+    "flagged": true,
+    "note": "例：As long as we start early, we can finish today.／早めに始めるなら、今日中に終えられます。as long as 此处表示条件，不是时间长度。"
+  },
+  {
+    "id": 49,
+    "flagged": false,
+    "note": "I see your point 表示理解理由，未必同意；日语おっしゃる是对对方说话的尊敬表达。"
+  },
+  {
+    "id": 50,
+    "flagged": false,
+    "note": "reserve judgment 指证据不足先不下结论；不是预订评价。日语判断を保留する较正式，适合会议讨论。"
+  },
+  {
+    "id": 51,
+    "flagged": false,
+    "note": "scope 指项目范围；絞る在此是缩小。英语 what matters most 强调重要性，日语用优先度自然回应。"
+  },
+  {
+    "id": 52,
+    "flagged": false,
+    "note": "spare 强调备用，合鍵强调复制的钥匙。例：Do you have a spare key?／合鍵はありますか。"
+  },
+  {
+    "id": 53,
+    "flagged": false,
+    "note": "have a seat 是自然邀请，不是拥有椅子；日语どうぞ使邀请更柔和。"
+  },
+  {
+    "id": 54,
+    "flagged": false,
+    "note": "take out the trash 是把垃圾拿到收集处；日语ごみを出す表达同一日常行为。"
+  },
+  {
+    "id": 55,
+    "flagged": false,
+    "note": "turn down 指降低音量等；日语直接说让声音变小，少し缓和请求。"
+  },
+  {
+    "id": 56,
+    "flagged": true,
+    "note": "例：Remember to lock up before you leave.／出かける前に、忘れずに鍵をかけてください。remember to 指记得去做。"
+  },
+  {
+    "id": 57,
+    "flagged": false,
+    "note": "go ahead 在此是请用，不是请往前走；日语用许可表达回应。"
+  },
+  {
+    "id": 58,
+    "flagged": true,
+    "note": "散らかった物作为可理解的描述性名词短语保留，并非与clutter完全等价的单词。 clutter 通常不可数，指杂乱堆放的东西。例：I need to clear this clutter.／この散らかった物を片付けないと。"
+  },
+  {
+    "id": 59,
+    "flagged": false,
+    "note": "has been dripping 强调持续到现在；ぽたぽた描写滴水，不是大量流水。"
+  },
+  {
+    "id": 60,
+    "flagged": true,
+    "note": "例：It's about time we cleaned the fridge.／そろそろ冷蔵庫を掃除したほうがいいですね。英语常用过去式指该做的现在之事，语气可带催促。"
+  },
+  {
+    "id": 61,
+    "flagged": false,
+    "note": "we 把问题放到共同安排上；見直す是重新审视，并非只是再看一眼。"
+  },
+  {
+    "id": 62,
+    "flagged": true,
+    "note": "英语是让客人自在的惯用语，不表示可随意动用所有东西；日语以気楽に传达放松。"
+  },
+  {
+    "id": 63,
+    "flagged": false,
+    "note": "noise carries 指声音传得远；日语用響く。I hate to bother you 是礼貌铺垫，并非真的讨厌这个人。"
+  },
+  {
+    "id": 64,
+    "flagged": true,
+    "note": "限定预约服务/约好的会面；予約不覆盖英语appointment的所有任命义。 appointment 常指医生、业务等约定；朋友聚会多用 plans。例：I have a dental appointment.／歯医者の予約があります。"
+  },
+  {
+    "id": 65,
+    "flagged": false,
+    "note": "英语短句适用多种场景；日语少々お待ちください偏礼貌服务用语，朋友间可说ちょっと待って。"
+  },
+  {
+    "id": 66,
+    "flagged": false,
+    "note": "in ten minutes 指从现在起十分钟后；あと十分で也以剩余时间说明到达。"
+  },
+  {
+    "id": 67,
+    "flagged": false,
+    "note": "works for me 指安排适合自己，不是替自己工作；なら把明天作为可行条件。"
+  },
+  {
+    "id": 68,
+    "flagged": true,
+    "note": "例：Could we move it to Friday?／金曜日に変更できますか。move 指改期，日语不用表示搬家的引っ越す。"
+  },
+  {
+    "id": 69,
+    "flagged": false,
+    "note": "shall we 提建议；by 指靠近地点。日语省略已知信息，用ところ确认具体位置。"
+  },
+  {
+    "id": 70,
+    "flagged": true,
+    "note": "buffer仅取时间余量义，余裕不泛化为所有技术缓冲区。 buffer 此处指额外预留的时间，不是电脑缓存。例：Leave a ten-minute buffer.／十分くらい余裕を持って。"
+  },
+  {
+    "id": 71,
+    "flagged": false,
+    "note": "make it 指成功赶到；in time for 后接要赶上的事。ぎりぎり说明差一点就来不及。"
+  },
+  {
+    "id": 72,
+    "flagged": true,
+    "note": "例：The sooner we book, the better.／予約は早ければ早いほどいいです。英语成对比较级；日语重复形容词表达变化关系。"
+  },
+  {
+    "id": 73,
+    "flagged": false,
+    "note": "short notice 指提前通知时间短；日语说明突然、难调整，避免把 notice 翻成公告。"
+  },
+  {
+    "id": 74,
+    "flagged": true,
+    "note": "pencil in 表示暂记安排，可再改；ておく是预先处理，仮の明确未最终确定。"
+  },
+  {
+    "id": 75,
+    "flagged": false,
+    "note": "firm up 指安排逐渐确定；日语予定が固まる也是确定下来，不是计划变坚硬。"
+  },
+  {
+    "id": 76,
+    "flagged": false,
+    "note": "receipt 中 p 不发音；日语レシート是常见小票，正式报销收据也常说領収書。例：Keep the receipt.／レシートを取っておいて。"
+  },
+  {
+    "id": 77,
+    "flagged": false,
+    "note": "英语省略主语很自然；だけ表示只是，感谢能避免回应显得生硬。"
+  },
+  {
+    "id": 78,
+    "flagged": false,
+    "note": "in a size 指某尺码的款式；日语用これの限定同款。"
+  },
+  {
+    "id": 79,
+    "flagged": false,
+    "note": "try on 用于穿戴；日语试穿用試着する，てもいいですか询问许可。"
+  },
+  {
+    "id": 80,
+    "flagged": true,
+    "note": "例：I'm choosing between the blue one and the black one.／青と黒で迷っています。日语迷う在这里是拿不定主意，不是迷路。"
+  },
+  {
+    "id": 81,
+    "flagged": false,
+    "note": "take cards 指接受银行卡支付；日语问能否使用。except for 说明一个例外。"
+  },
+  {
+    "id": 82,
+    "flagged": true,
+    "note": "英语good value为搭配；日语价格比较表达同时保留完整句例。 good value 不一定便宜，而是品质对得起价格。例：This bag is good value.／このかばんは値段の割にいいです。"
+  },
+  {
+    "id": 83,
+    "flagged": false,
+    "note": "not quite 缓和差异程度；日语用印象が違う避免直接断言商品有问题。"
+  },
+  {
+    "id": 84,
+    "flagged": true,
+    "note": "例：What if it doesn't fit?／もしサイズが合わなかったら、どうなりますか。以假设了解处理方式，必要时明确问退货。"
+  },
+  {
+    "id": 85,
+    "flagged": false,
+    "note": "would prefer 以偏好表达边界；できれば是柔和铺垫，不是同意超支。"
+  },
+  {
+    "id": 86,
+    "flagged": false,
+    "note": "the whole story 指全部情况；日语直接表达不能仅看价格，避免把 story 理解成故事。"
+  },
+  {
+    "id": 87,
+    "flagged": false,
+    "note": "cover 在此指保障范围；保証和補償在日语此场景分别指产品保证与损失保障。这是条款询问示例，不代表实际店铺政策。"
+  },
+  {
+    "id": 88,
+    "flagged": false,
+    "note": "fare 指交通费用，不是所有价格。例：How much is the bus fare?／バスの運賃はいくらですか。"
+  },
+  {
+    "id": 89,
+    "flagged": true,
+    "note": "Excuse me 随场景可引起注意或借过；日语补充通ります明确想通过，不代表道歉认错。"
+  },
+  {
+    "id": 90,
+    "flagged": false,
+    "note": "the station 指语境中相关车站；日语把駅作为主题，用どこ问位置。"
+  },
+  {
+    "id": 91,
+    "flagged": false,
+    "note": "at 指下车地点；角是街角，不等于交叉口的所有道路范围。"
+  },
+  {
+    "id": 92,
+    "flagged": true,
+    "note": "例：It takes half an hour to get there.／そこまで三十分かかります。英语 it 是形式主语；日语用かかる表示所需时间。"
+  },
+  {
+    "id": 93,
+    "flagged": false,
+    "note": "change 在交通场景指换乘；日语乗り換える明确换交通工具。此处站名为练习用地点。"
+  },
+  {
+    "id": 94,
+    "flagged": false,
+    "note": "detour 可因封路或顺路绕行；回り道也可指较远路线。例：We took a detour.／回り道をしました。"
+  },
+  {
+    "id": 95,
+    "flagged": false,
+    "note": "miss my stop 是未在目标站下车，不是错过上车；日语乗り過ごす对应坐过站。"
+  },
+  {
+    "id": 96,
+    "flagged": true,
+    "note": "例：Even if it's farther, it's still faster.／たとえ遠回りでも、そのほうが早いです。even if 表示让步假设，不是单纯如果。"
+  },
+  {
+    "id": 97,
+    "flagged": false,
+    "note": "alternatives 指可替代选项；日语直接问其他去法，服务场景更明确。"
+  },
+  {
+    "id": 98,
+    "flagged": false,
+    "note": "pick someone up 在这里是接人，不是捡起来；on the way 表示顺路，但不保证完全不绕路。"
+  },
+  {
+    "id": 99,
+    "flagged": false,
+    "note": "go straight through 在行李语境指无需中途提取；日语明确最终目的地。示例不代替航空公司实际确认。"
+  },
+  {
+    "id": 100,
+    "flagged": false,
+    "note": "英语单数可数名词需限定词：an umbrella；日语不靠冠词。例：Take an umbrella.／傘を持っていって。"
+  },
+  {
+    "id": 101,
+    "flagged": false,
+    "note": "chilly 偏凉得有点不舒服，不是极寒；肌寒い强调身体感觉微冷。"
+  },
+  {
+    "id": 102,
+    "flagged": false,
+    "note": "英语天气句用 it；日语以雨为降る的主语，外は提出范围。"
+  },
+  {
+    "id": 103,
+    "flagged": false,
+    "note": "might want to 是柔和建议，不是猜测对方欲望；日语かも也让建议不显得命令。"
+  },
+  {
+    "id": 104,
+    "flagged": true,
+    "note": "根据天空迹象用降りそう，独立于普通形接そう的传闻。 例：It looks like rain.／雨が降りそうです。这里そう描述从迹象得出的判断，接动词ます形词干。"
+  },
+  {
+    "id": 105,
+    "flagged": false,
+    "note": "stay in 指待在室内；日语雨がやむ是雨停，不能用止める表示自然停雨。"
+  },
+  {
+    "id": 106,
+    "flagged": false,
+    "note": "muggy 包含潮湿闷热，不只是温度高。例：It's muggy today.／今日は蒸し暑いです。"
+  },
+  {
+    "id": 107,
+    "flagged": false,
+    "note": "cool down 表示变凉；冷え込む常用于气温明显下降。much 修饰比较级。"
+  },
+  {
+    "id": 108,
+    "flagged": true,
+    "note": "例：Regardless of the forecast, we should have a backup plan.／予報にかかわらず、別の案も用意したほうがいいです。of 后接名词。"
+  },
+  {
+    "id": 109,
+    "flagged": false,
+    "note": "rather not 后接动词原形；やめておく表示考虑后暂且不做。这是表达偏好，不是具体气象安全建议。"
+  },
+  {
+    "id": 110,
+    "flagged": false,
+    "note": "clear up 可指天气转好，也可指解释清楚；てきた表现到现在的变化，みたい表示观察判断。"
+  },
+  {
+    "id": 111,
+    "flagged": false,
+    "note": "play it by ear 是随机应变，不是用耳朵演奏的字面义；ころころ描述频繁变化，带一点无奈。"
+  },
+  {
+    "id": 112,
+    "flagged": true,
+    "note": "英语thirsty为形容词，日语喉が渇く为自然状态表达；独立保存完整句。 thirsty 是形容词；日语用喉が渇く描述变化。例：I'm thirsty.／喉が渇きました。"
+  },
+  {
+    "id": 113,
+    "flagged": true,
+    "note": "Take care 也可作一般道别；お大事に主要用于身体不适，不宜机械用于所有告别。"
+  },
+  {
+    "id": 114,
+    "flagged": false,
+    "note": "英语用 have a headache；日语直接说头疼。slight 说明程度轻，不推断病因。"
+  },
+  {
+    "id": 115,
+    "flagged": false,
+    "note": "could use 指现在很需要、用得上；不是过去能够使用。日语用助かります表达请求的帮助意义。"
+  },
+  {
+    "id": 116,
+    "flagged": true,
+    "note": "例：I've had a cough since Monday.／月曜日から、せきが続いています。since 接开始时间，for 才接时长。"
+  },
+  {
+    "id": 117,
+    "flagged": false,
+    "note": "any better 问有没有好转；だるい强调身体乏力，不等同于想睡觉。"
+  },
+  {
+    "id": 118,
+    "flagged": true,
+    "note": "英语run-down为形容词；日语疲れがたまる为状态表达，保留变化与持续语境。 run-down 可形容人疲惫，也可形容建筑破旧。例：I'm feeling run-down.／疲れがたまっています。这里不作病名。"
+  },
+  {
+    "id": 119,
+    "flagged": false,
+    "note": "comes and goes 指间歇出现；たり…たり列举反复状态，便于说明症状变化，不是诊断。"
+  },
+  {
+    "id": 120,
+    "flagged": true,
+    "note": "例：Not quite back to normal, but better.／まだ本調子というわけではありませんが、よくなりました。not quite 是还没完全，不是完全没有。"
+  },
+  {
+    "id": 121,
+    "flagged": false,
+    "note": "not up to it 可指身体或精神不足以应付；I'm afraid 在此缓和坏消息，不是害怕。"
+  },
+  {
+    "id": 122,
+    "flagged": true,
+    "note": "back on my feet 可指病后、困难后恢复；日语調子を取り戻す强调状态，不一定真的重新站立。"
+  },
+  {
+    "id": 123,
+    "flagged": false,
+    "note": "constant 对比间歇；日语食後表达饭后。本单元练习描述现象，不提供医疗判断。"
+  },
+  {
+    "id": 124,
+    "flagged": false,
+    "note": "glad 常作表语并说明原因。例：I'm glad you're here.／来てくれてうれしいです。不要把所有 happy 都换成 glad。"
+  },
+  {
+    "id": 125,
+    "flagged": false,
+    "note": "That's great 可赞赏消息；よかったね常替对方感到开心或放心，语境决定含义。"
+  },
+  {
+    "id": 126,
+    "flagged": false,
+    "note": "nervous 指不安紧张，不等于性格神经质；緊張している描述当前状态。"
+  },
+  {
+    "id": 127,
+    "flagged": false,
+    "note": "checking 在此是问候确认状况；気にかける表示关心，不是调查检查。"
+  },
+  {
+    "id": 128,
+    "flagged": true,
+    "note": "例：It makes me feel calm.／それを見ると、穏やかな気持ちになります。make 后接动词原形 feel；日语通常说明触发情境。"
+  },
+  {
+    "id": 129,
+    "flagged": false,
+    "note": "on my mind 指挂念或思考；日语以て结尾留余地，朋友间自然，无需硬补完整主句。"
+  },
+  {
+    "id": 130,
+    "flagged": true,
+    "note": "限任务太多而应付不过来，不扩展到被美景感动等overwhelmed其他义。 overwhelmed 可因压力或强烈正面情绪；这里是忙到余力不足。例：I feel overwhelmed.／今はいっぱいいっぱいです。"
+  },
+  {
+    "id": 131,
+    "flagged": false,
+    "note": "disappointed 是期待落空；日语用わけではなく澄清误解，再说明真正感受。"
+  },
+  {
+    "id": 132,
+    "flagged": true,
+    "note": "例：I was worried I'd be late, but I made it.／遅れるかと心配していましたが、間に合いました。英语间接叙述保留过去视角。"
+  },
+  {
+    "id": 133,
+    "flagged": false,
+    "note": "don't have to 表示不必，并非禁止；日语明确愿意倾听，避免把 I'm here 仅翻成地点。"
+  },
+  {
+    "id": 134,
+    "flagged": false,
+    "note": "mixed feelings 不是想法杂乱，而是同时有正负感受；日语複雑な気持ち保留这种矛盾。"
+  },
+  {
+    "id": 135,
+    "flagged": false,
+    "note": "mean well 是出于好意；give someone space 指给自主和情绪空间，日语用そっとしておく。"
+  },
+  {
+    "id": 136,
+    "flagged": false,
+    "note": "hobby 常指持续爱好；趣味也可指审美品味。例：Cooking is my hobby.／趣味は料理です。"
+  },
+  {
+    "id": 137,
+    "flagged": false,
+    "note": "sounds fun 根据描述判断有趣；楽しそう基于所见所闻，不是已经实际体验的感想。"
+  },
+  {
+    "id": 138,
+    "flagged": false,
+    "note": "enjoy 后接动名词，不接 to go；日语用の把散步这个动作名词化。"
+  },
+  {
+    "id": 139,
+    "flagged": false,
+    "note": "英语用身份名词 beginner；日语以始めたばかり强调才开始，避免过度自贬。"
+  },
+  {
+    "id": 140,
+    "flagged": true,
+    "note": "例：I've started running.／最近、走り始めました。英语可接动名词；日语动词ます形词干接始める。"
+  },
+  {
+    "id": 141,
+    "flagged": false,
+    "note": "these days 指最近一段时期；落ち着く描述看节目后的感受，不把 relaxing 机械写成放松的物体。"
+  },
+  {
+    "id": 142,
+    "flagged": true,
+    "note": "get absorbed in 后接名词或动名词。例：I get absorbed in drawing.／絵を描くのに夢中になります。不是被物理吸收。"
+  },
+  {
+    "id": 143,
+    "flagged": false,
+    "note": "switch off 在此是暂时不再挂念工作；日语気分転換表达换心情，而非关机。"
+  },
+  {
+    "id": 144,
+    "flagged": true,
+    "note": "例：The more I practice, the more I enjoy it.／練習すればするほど、楽しくなります。两种语言都表达随程度增长的变化。"
+  },
+  {
+    "id": 145,
+    "flagged": false,
+    "note": "not my thing 是个人不感兴趣；see the appeal 承认吸引力，避免评价成作品不好。"
+  },
+  {
+    "id": 146,
+    "flagged": true,
+    "note": "grow on someone 指逐渐获得好感；日语てきた体现到现在的变化，并非喜欢突然增加。"
+  },
+  {
+    "id": 147,
+    "flagged": false,
+    "note": "professionally 指以此为职业；I'd hate to 委婉说不愿发生，日语かな让个人想法留有余地。"
+  },
+  {
+    "id": 148,
+    "flagged": false,
+    "note": "invitation 可指邀请行为或邀请函；誘い更常指邀约。例：Thanks for the invitation.／誘ってくれてありがとう。"
+  },
+  {
+    "id": 149,
+    "flagged": false,
+    "note": "真诚语调下表达感谢；英语带讽刺语调时含义可变，不能只靠字面判断。"
+  },
+  {
+    "id": 150,
+    "flagged": false,
+    "note": "would you like to 礼貌邀请；日语否定疑问食べませんか不是期待对方不吃。"
+  },
+  {
+    "id": 151,
+    "flagged": false,
+    "note": "先肯定邀请再拒绝；plans 指既有安排，不必交代所有私人细节。"
+  },
+  {
+    "id": 152,
+    "flagged": true,
+    "note": "例：Let's get coffee sometime.／今度、コーヒーでも飲みましょう。sometime 和今度都未确定时间，真要落实应再约。"
+  },
+  {
+    "id": 153,
+    "flagged": false,
+    "note": "I've heard a lot about you 是常见初见寒暄；お話はよく聞いています自然说明早有耳闻。"
+  },
+  {
+    "id": 154,
+    "flagged": true,
+    "note": "英语形容词considerate；日语抽取名词気遣い，句例另教能力表达。 considerate 指体贴，不是考虑很多而犹豫。例：That was considerate of you.／気遣ってくれたんですね。"
+  },
+  {
+    "id": 155,
+    "flagged": false,
+    "note": "may have to 表示可能不得不；失礼する在聚会场景是礼貌离席，不是有意失礼。"
+  },
+  {
+    "id": 156,
+    "flagged": true,
+    "note": "例：It's nothing personal; I just need some time alone.／あなたが嫌なわけではなく、ただ一人の時間が必要なんです。敏感话题仍需体谅对方感受。"
+  },
+  {
+    "id": 157,
+    "flagged": false,
+    "note": "表达自己的界限，无需编理由；日语あまり和んです使说明较柔和，但仍清楚拒绝细说。"
+  },
+  {
+    "id": 158,
+    "flagged": false,
+    "note": "get back to someone 是稍后回复；不是返回对方身边。最好另约回复时间，避免让人一直等。"
+  },
+  {
+    "id": 159,
+    "flagged": false,
+    "note": "call it a night 指结束今晚活动；tempting 先承认诱人，拒绝仍有效。日语この辺で指适可而止的时点。"
+  },
+  {
+    "id": 160,
+    "flagged": false,
+    "note": "help 作名词通常不可数；手伝い常指具体协助。例：I need some help.／少し手伝いが必要です。"
+  },
+  {
+    "id": 161,
+    "flagged": false,
+    "note": "英语是省略的感谢表达；助かります强调帮助解决了自己的需要，不是字面获救。"
+  },
+  {
+    "id": 162,
+    "flagged": false,
+    "note": "hold 是暂时拿着；持っていて请求持续保持拿着，不是交给自己。"
+  },
+  {
+    "id": 163,
+    "flagged": false,
+    "note": "a hand 在此指帮忙；ましょうか是主动提议，不是要求对方帮助自己。"
+  },
+  {
+    "id": 164,
+    "flagged": true,
+    "note": "例：If you have a moment, could you check this?／お時間があれば、これを確認してもらえますか。条件为对方留出拒绝空间。"
+  },
+  {
+    "id": 165,
+    "flagged": false,
+    "note": "need me to do 表达需要我做什么；すればいい问适合采取的行动，而不是只答可以。"
+  },
+  {
+    "id": 166,
+    "flagged": false,
+    "note": "a favor 是一次具体帮忙；favor 也有支持偏爱等义。例：Could you do me a favor?／一つお願いしてもいいですか。"
+  },
+  {
+    "id": 167,
+    "flagged": false,
+    "note": "work 在此是方法奏效或设备运行；日语うまくいく强调顺利达到效果。"
+  },
+  {
+    "id": 168,
+    "flagged": true,
+    "note": "例：Would you mind opening the window?／窓を開けていただけますか。英语 mind 后接动名词；回答 No 表示不介意，日语直接请求更清楚。"
+  },
+  {
+    "id": 169,
+    "flagged": false,
+    "note": "anyway 在此感谢对方愿意考虑；日语感谢心意，避免生硬责怪没有实际帮到。"
+  },
+  {
+    "id": 170,
+    "flagged": true,
+    "note": "补全日语ので后的请求，让独立展示时意图完整。 put someone out 在这里是给人添麻烦；日语ので结尾可柔和解释顾虑，需结合上下文。"
+  },
+  {
+    "id": 171,
+    "flagged": false,
+    "note": "commit to 指承诺承担；なら限定可提供帮助的范围，那里不是物理地点而是任务界限。"
+  },
+  {
+    "id": 172,
+    "flagged": true,
+    "note": "英语名词plan独立于已有动词en-plan；日语复用予定，不强制词性对应。 plan 可指较具体计划；予定也可指已排定事项。例：What's the plan?／どういう予定ですか。"
+  },
+  {
+    "id": 173,
+    "flagged": false,
+    "note": "可能是真要下次，也可能是柔和拒绝；不能把这句话当作确定承诺。"
+  },
+  {
+    "id": 174,
+    "flagged": false,
+    "note": "be going to 表示已有打算；つもり也指主观意图，并不保证一定发生。"
+  },
+  {
+    "id": 175,
+    "flagged": false,
+    "note": "I'd like to 省略已知动词；行ってみたい含尝试体验意味，不必逐字对应 see。"
+  },
+  {
+    "id": 176,
+    "flagged": true,
+    "note": "例：Have you ever camped?／キャンプをしたことがありますか。英语用过去分词；日语用た形加ことがある。"
+  },
+  {
+    "id": 177,
+    "flagged": false,
+    "note": "instead 表示选择替代方案；ことにした说明自己作出的决定，区别于外部决定的ことになった。"
+  },
+  {
+    "id": 178,
+    "flagged": true,
+    "note": "愉快期待与expect预测/要求明确分开。 to 后接名词或动名词。例：I'm looking forward to seeing you.／会えるのを楽しみにしています。expect 主要指预期，不总含开心期待。"
+  },
+  {
+    "id": 179,
+    "flagged": false,
+    "note": "turn out 描述最终结果；日语用結果になった，不强制翻译成转变方向。"
+  },
+  {
+    "id": 180,
+    "flagged": true,
+    "note": "补全被工作打断的参加语境；英语表达未实现结果，日语表达原有意图，不宣称结构等价。 例：I would have joined you, but I had to work.／参加するつもりでしたが、仕事が入ってしまいました。英语反事实结构比日语意图表达更明确，不是所有场景可互换。"
+  },
+  {
+    "id": 181,
+    "flagged": false,
+    "note": "up in the air 指未确定，不是事情真的在空中；日语直接说明尚未决定。"
+  },
+  {
+    "id": 182,
+    "flagged": true,
+    "note": "in hindsight 是事后回顾；should have 指过去没做的较好选择，日语ばよかった表达后悔。"
+  },
+  {
+    "id": 183,
+    "flagged": false,
+    "note": "worth it 指投入值得；甲斐がある强调付出有意义。肯定收获不意味着否定经历中的失望。"
+  }
+]

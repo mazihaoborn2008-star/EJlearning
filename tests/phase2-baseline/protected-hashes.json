@@ -1,0 +1,22 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "ABC5A75A1BFF0827F19AD912C9C6DBCDAF0B4E83A735403DF0A9444627947A9C",
+    "Path": "E:\\E_J_Learn_web\\migrations\\0001_schema.sql"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "658C16F39F14A72742D3AB66035991525C72F25E51CAF0326F94148B9588A032",
+    "Path": "E:\\E_J_Learn_web\\migrations\\0002_seed.sql"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3CC968A7A26E3AF88A3FA211A103FB8D60A01E9F9A6A23517F32258FCCAF0C5E",
+    "Path": "E:\\E_J_Learn_web\\wrangler.production.jsonc"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3CC968A7A26E3AF88A3FA211A103FB8D60A01E9F9A6A23517F32258FCCAF0C5E",
+    "Path": "E:\\E_J_Learn_web\\wrangler.staging.jsonc"
+  }
+]

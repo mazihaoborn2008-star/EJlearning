@@ -1,0 +1,417 @@
+{
+  "ej-learning": {
+    "deployments": {
+      "deployments": [
+        {
+          "id": "9f94be40-250b-413b-890f-ab603da3012f",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "mazihao.born.2008@gmail.com",
+          "annotations": {
+            "workers/message": "Automatic deployment on upload.",
+            "workers/triggered_by": "upload"
+          },
+          "versions": [
+            {
+              "version_id": "19a090dc-4321-46af-a7cc-33995746dc10",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-09-08T21:08:49.495488Z"
+        }
+      ]
+    },
+    "settingsHash": "84f40e494c801e39e84803f952ef3770c310130c6c43fdda830646f0eb192321",
+    "schema": [
+      {
+        "type": "index",
+        "name": "concepts_by_topic",
+        "sql": "CREATE INDEX concepts_by_topic ON concepts(topic_id, published, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "expressions_by_concept",
+        "sql": "CREATE INDEX expressions_by_concept ON expressions(concept_id, language, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "one_primary_expression",
+        "sql": "CREATE UNIQUE INDEX one_primary_expression ON expressions(concept_id, language) WHERE is_primary=1"
+      },
+      {
+        "type": "index",
+        "name": "placement_by_language",
+        "sql": "CREATE INDEX placement_by_language ON placement_questions(language, active, sort_order)"
+      },
+      {
+        "type": "table",
+        "name": "_cf_KV",
+        "sql": "CREATE TABLE _cf_KV (\n        key TEXT PRIMARY KEY,\n        value BLOB\n      ) WITHOUT ROWID"
+      },
+      {
+        "type": "table",
+        "name": "comparisons",
+        "sql": "CREATE TABLE comparisons (\n  concept_id INTEGER PRIMARY KEY REFERENCES concepts(id), explanation TEXT NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "concepts",
+        "sql": "CREATE TABLE concepts (\n  id INTEGER PRIMARY KEY, slug TEXT NOT NULL UNIQUE,\n  topic_id TEXT NOT NULL REFERENCES topics(id), zh TEXT NOT NULL,\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n)"
+      },
+      {
+        "type": "table",
+        "name": "d1_migrations",
+        "sql": "CREATE TABLE \"d1_migrations\"(\n\t\tid         INTEGER PRIMARY KEY AUTOINCREMENT,\n\t\tname       TEXT UNIQUE,\n\t\tapplied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_chunks",
+        "sql": "CREATE TABLE expression_chunks (\n  id INTEGER PRIMARY KEY, expression_id INTEGER NOT NULL,\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), grammar_point_id INTEGER,\n  text TEXT NOT NULL,\n  readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json)),\n  sort_order INTEGER NOT NULL,\n  FOREIGN KEY(expression_id, language) REFERENCES expressions(id, language),\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  UNIQUE(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_readings",
+        "sql": "CREATE TABLE expression_readings (\n  expression_id INTEGER NOT NULL REFERENCES expressions(id), sort_order INTEGER NOT NULL,\n  text TEXT NOT NULL, reading TEXT,\n  PRIMARY KEY(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expressions",
+        "sql": "CREATE TABLE expressions (\n  id INTEGER PRIMARY KEY, concept_id INTEGER NOT NULL REFERENCES concepts(id),\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), text TEXT NOT NULL,\n  ipa TEXT, hiragana TEXT, difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6),\n  register TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n  is_primary INTEGER NOT NULL DEFAULT 1 CHECK(is_primary IN (0,1)),\n  grammar_point_id INTEGER NOT NULL,\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  CHECK((language='en' AND ipa IS NOT NULL) OR (language='ja' AND hiragana IS NOT NULL)),\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "grammar_points",
+        "sql": "CREATE TABLE grammar_points (\n  id INTEGER PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  title TEXT NOT NULL, explanation TEXT NOT NULL, example TEXT NOT NULL,\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_answer_keys",
+        "sql": "CREATE TABLE placement_answer_keys (\n  question_id TEXT PRIMARY KEY REFERENCES placement_questions(id), correct_option INTEGER NOT NULL,\n  FOREIGN KEY(question_id, correct_option) REFERENCES placement_options(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_options",
+        "sql": "CREATE TABLE placement_options (\n  question_id TEXT NOT NULL REFERENCES placement_questions(id),\n  option_id INTEGER NOT NULL CHECK(option_id>=0), text TEXT NOT NULL,\n  PRIMARY KEY(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_questions",
+        "sql": "CREATE TABLE placement_questions (\n  id TEXT PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  type TEXT NOT NULL, prompt TEXT NOT NULL, target_text TEXT,\n  difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6), explanation TEXT,\n  sort_order INTEGER NOT NULL, active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1))\n)"
+      },
+      {
+        "type": "table",
+        "name": "topics",
+        "sql": "CREATE TABLE topics (\n  id TEXT PRIMARY KEY, slug TEXT NOT NULL UNIQUE, name TEXT NOT NULL,\n  description TEXT NOT NULL DEFAULT '', icon TEXT NOT NULL DEFAULT '',\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n)"
+      }
+    ],
+    "migrations": [
+      {
+        "id": 1,
+        "name": "0001_schema.sql",
+        "applied_at": "2026-09-08 21:08:29"
+      },
+      {
+        "id": 2,
+        "name": "0002_seed.sql",
+        "applied_at": "2026-09-08 21:08:30"
+      }
+    ],
+    "tableHashes": {
+      "comparisons": {
+        "count": 15,
+        "sha256": "50e09b79d26f05c6bc85f29a3ae5e0ac7f143379bcf86269249774d3148fa7bd"
+      },
+      "concepts": {
+        "count": 15,
+        "sha256": "6662eabb5f570b5a9c43d84d32c62a6e815d8d336f4a2f6e236a846fcf51d142"
+      },
+      "expression_chunks": {
+        "count": 63,
+        "sha256": "f029ffb430fc16785f295f735f0fca3a9e92041a992c1da8412fca32be0d67f2"
+      },
+      "expression_readings": {
+        "count": 43,
+        "sha256": "81500097c014eb07d3592e99d259e9e6a01d900c8d2ffa4367bc7c39f9ce15fd"
+      },
+      "expressions": {
+        "count": 30,
+        "sha256": "807102cb617695266108ba287d9264703068cbcd1ed8bc3c8ed51ca26d84344f"
+      },
+      "grammar_points": {
+        "count": 30,
+        "sha256": "67050918891392b5328018fbfb309bc39174057fc98880e0540e6795ca707adc"
+      },
+      "placement_answer_keys": {
+        "count": 24,
+        "sha256": "4f75d092095cca92354b196ccbe9968eddf7f63c0e735fef5ebd7d7659a67540"
+      },
+      "placement_options": {
+        "count": 72,
+        "sha256": "10217fd25e6921a260b7b4f43254700479aba8875b496fe1361d482eb4bb4701"
+      },
+      "placement_questions": {
+        "count": 24,
+        "sha256": "b50cc6c5645a79d167aca273e5bf600fd0c75844c6fef1b02400905378763392"
+      },
+      "topics": {
+        "count": 3,
+        "sha256": "070d58f1467a89c3f460aa14d99872b2ec63a81368b4639cd670cac12801ebb7"
+      }
+    },
+    "http": {
+      "/": "93daa380e27631e3ac8d8ad1bcfb7d0aaf3fa2705ad099e5d118426dd174d7a5",
+      "/api/topics": "7ba8fdcd01489dbd0c5f66ce1bf25b007dafa02595ab477d59f73701aea2246a",
+      "/api/concepts": "fb7969b2eafb4fd2a26de05f23980eeb16c5fb07efb2a854e850296c2655cfaa"
+    }
+  },
+  "ej-learning-phase3": {
+    "deployments": {
+      "deployments": [
+        {
+          "id": "b58dddcb-7836-49fc-b99c-7bd20ce9af96",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "mazihao.born.2008@gmail.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "73b035df-53a2-4987-9275-6752ad917ff4",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-09-09T02:38:50.428686Z"
+        },
+        {
+          "id": "60126cf1-f56a-4a56-9b9c-6f8bf5b8525f",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "mazihao.born.2008@gmail.com",
+          "annotations": {
+            "workers/message": "Automatic deployment on upload.",
+            "workers/triggered_by": "upload"
+          },
+          "versions": [
+            {
+              "version_id": "ecb359d9-6587-4abd-abf1-c36ff95ce02f",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-09-09T02:17:42.059106Z"
+        }
+      ]
+    },
+    "settingsHash": "46b02677920a94df11580373eb3c8a47afcc69a3270645c71df7fdad87e6c4e1",
+    "schema": [
+      {
+        "type": "index",
+        "name": "assessment_pool",
+        "sql": "CREATE INDEX assessment_pool ON placement_questions(purpose,language,active,difficulty)"
+      },
+      {
+        "type": "index",
+        "name": "concepts_by_topic",
+        "sql": "CREATE INDEX concepts_by_topic ON concepts(topic_id, published, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "expressions_by_concept",
+        "sql": "CREATE INDEX expressions_by_concept ON expressions(concept_id, language, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "one_primary_expression",
+        "sql": "CREATE UNIQUE INDEX one_primary_expression ON expressions(concept_id, language) WHERE is_primary=1"
+      },
+      {
+        "type": "index",
+        "name": "placement_by_language",
+        "sql": "CREATE INDEX placement_by_language ON placement_questions(language, active, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "session_expiry",
+        "sql": "CREATE INDEX session_expiry ON assessment_sessions(expires_at)"
+      },
+      {
+        "type": "table",
+        "name": "_cf_KV",
+        "sql": "CREATE TABLE _cf_KV (\n        key TEXT PRIMARY KEY,\n        value BLOB\n      ) WITHOUT ROWID"
+      },
+      {
+        "type": "table",
+        "name": "assessment_sessions",
+        "sql": "CREATE TABLE assessment_sessions (\n id TEXT PRIMARY KEY, kind TEXT NOT NULL CHECK(kind IN ('placement','checkpoint')),\n language TEXT NOT NULL CHECK(language IN ('en','ja')), topic TEXT REFERENCES topics(id),\n state_json TEXT NOT NULL CHECK(json_valid(state_json)), version INTEGER NOT NULL DEFAULT 0,\n expires_at INTEGER NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "comparisons",
+        "sql": "CREATE TABLE comparisons (\n  concept_id INTEGER PRIMARY KEY REFERENCES concepts(id), explanation TEXT NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "concepts",
+        "sql": "CREATE TABLE concepts (\n  id INTEGER PRIMARY KEY, slug TEXT NOT NULL UNIQUE,\n  topic_id TEXT NOT NULL REFERENCES topics(id), zh TEXT NOT NULL,\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n, concept_type TEXT NOT NULL DEFAULT 'sentence' CHECK(concept_type IN ('vocabulary','phrase','sentence','pattern','scenario_response','dialogue')), usage_note TEXT NOT NULL DEFAULT '')"
+      },
+      {
+        "type": "table",
+        "name": "d1_migrations",
+        "sql": "CREATE TABLE \"d1_migrations\"(\n\t\tid         INTEGER PRIMARY KEY AUTOINCREMENT,\n\t\tname       TEXT UNIQUE,\n\t\tapplied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_chunks",
+        "sql": "CREATE TABLE expression_chunks (\n  id INTEGER PRIMARY KEY, expression_id INTEGER NOT NULL,\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), grammar_point_id INTEGER,\n  text TEXT NOT NULL,\n  readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json)),\n  sort_order INTEGER NOT NULL,\n  FOREIGN KEY(expression_id, language) REFERENCES expressions(id, language),\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  UNIQUE(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_readings",
+        "sql": "CREATE TABLE expression_readings (\n  expression_id INTEGER NOT NULL REFERENCES expressions(id), sort_order INTEGER NOT NULL,\n  text TEXT NOT NULL, reading TEXT,\n  PRIMARY KEY(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expressions",
+        "sql": "CREATE TABLE expressions (\n  id INTEGER PRIMARY KEY, concept_id INTEGER NOT NULL REFERENCES concepts(id),\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), text TEXT NOT NULL,\n  ipa TEXT, hiragana TEXT, difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6),\n  register TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n  is_primary INTEGER NOT NULL DEFAULT 1 CHECK(is_primary IN (0,1)),\n  grammar_point_id INTEGER NOT NULL, metadata_json TEXT NOT NULL DEFAULT '{}' CHECK(json_valid(metadata_json)),\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  CHECK((language='en' AND ipa IS NOT NULL) OR (language='ja' AND hiragana IS NOT NULL)),\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "grammar_points",
+        "sql": "CREATE TABLE grammar_points (\n  id INTEGER PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  title TEXT NOT NULL, explanation TEXT NOT NULL, example TEXT NOT NULL,\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_answer_keys",
+        "sql": "CREATE TABLE placement_answer_keys (\n  question_id TEXT PRIMARY KEY REFERENCES placement_questions(id), correct_option INTEGER NOT NULL,\n  FOREIGN KEY(question_id, correct_option) REFERENCES placement_options(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_options",
+        "sql": "CREATE TABLE placement_options (\n  question_id TEXT NOT NULL REFERENCES placement_questions(id),\n  option_id INTEGER NOT NULL CHECK(option_id>=0), text TEXT NOT NULL,\n  PRIMARY KEY(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_questions",
+        "sql": "CREATE TABLE placement_questions (\n  id TEXT PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  type TEXT NOT NULL, prompt TEXT NOT NULL, target_text TEXT,\n  difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6), explanation TEXT,\n  sort_order INTEGER NOT NULL, active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1))\n, concept_id INTEGER REFERENCES concepts(id), purpose TEXT NOT NULL DEFAULT 'placement' CHECK(purpose IN ('placement','checkpoint')))"
+      },
+      {
+        "type": "table",
+        "name": "topics",
+        "sql": "CREATE TABLE topics (\n  id TEXT PRIMARY KEY, slug TEXT NOT NULL UNIQUE, name TEXT NOT NULL,\n  description TEXT NOT NULL DEFAULT '', icon TEXT NOT NULL DEFAULT '',\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n)"
+      }
+    ],
+    "migrations": [
+      {
+        "id": 1,
+        "name": "0001_schema.sql",
+        "applied_at": "2026-09-09 02:17:26"
+      },
+      {
+        "id": 2,
+        "name": "0002_seed.sql",
+        "applied_at": "2026-09-09 02:17:27"
+      },
+      {
+        "id": 3,
+        "name": "0003_engine.sql",
+        "applied_at": "2026-09-09 02:17:27"
+      },
+      {
+        "id": 4,
+        "name": "0004_curriculum.sql",
+        "applied_at": "2026-09-09 02:17:27"
+      },
+      {
+        "id": 5,
+        "name": "0005_assessment_refinements.sql",
+        "applied_at": "2026-09-09 02:17:30"
+      }
+    ],
+    "tableHashes": {
+      "comparisons": {
+        "count": 183,
+        "sha256": "4728b7924ba3096fe83a56607f10e9d7c2c88a4903cb0b0bb21f3d7662084274"
+      },
+      "concepts": {
+        "count": 183,
+        "sha256": "bdcab26e1900b38f154637d8bda2287bd2d54badb2f61a07d50065b5822c8e50"
+      },
+      "expression_chunks": {
+        "count": 399,
+        "sha256": "1e3a6a3a39de0331d307fee379970e46f637088defcedfb6e6bc1ae5c8939ed6"
+      },
+      "expression_readings": {
+        "count": 835,
+        "sha256": "f5452795c697dbf00b49198a641f6ff6e2ff1cd7d4da55a8368c72d5cf523fe0"
+      },
+      "expressions": {
+        "count": 366,
+        "sha256": "b832a359ad2e200499ad6421a708be4ffd43eaf7b70f9e855c2688be564d968b"
+      },
+      "grammar_points": {
+        "count": 366,
+        "sha256": "0db3c2441af3b102d411a6b9296332afc0df13cc4dc5d3f3f592b5e26da4fee3"
+      },
+      "placement_answer_keys": {
+        "count": 750,
+        "sha256": "9121a65468c86ca14d872b7b38638b88f689fae984384b62c3803337c3cd2bce"
+      },
+      "placement_options": {
+        "count": 2976,
+        "sha256": "a4b1d65e58ad40ceb66e9d772fcda8bd6419e3c47f90cd6c7b0ca928fdb8b414"
+      },
+      "placement_questions": {
+        "count": 750,
+        "sha256": "ea801df2eec3ebf8fdfa078d432c27b49d4fbe6cbd58aa393b2b57e0eed06472"
+      },
+      "topics": {
+        "count": 14,
+        "sha256": "c1097e02c15c0ecb0d789ebbd88ba02b42ddf1161f0537b0ac457651529f750d"
+      }
+    },
+    "http": {
+      "/": "a5821df41c383c086e18137b07c4f37482713a2fa3d04d8808a3d18cfe746ba4",
+      "/api/topics": "06ac724bbda2b9039654f4007bb98fe0e40db35c7da901e22070dcb3466b589a",
+      "/api/concepts": "ac6c13b021bba6b1704dec0e11450c0bed1a06ce8c72c09bd237b753d5449650"
+    }
+  },
+  "domains": [],
+  "routes": [
+    {
+      "id": "a5f2ea2a7ed24ad7b9cf3d664f2d4198",
+      "pattern": "ej_learning.jwcglass.com/*",
+      "script": "ej-learning",
+      "request_limit_fail_open": false
+    }
+  ],
+  "dns": "read permission unavailable",
+  "localHashes": {
+    "public/checkpoint.html": "3a182cf26e29727ef60ebe2ca1d4dd4b49907daa94bec4b922fac614c6a66fa6",
+    "public/css/style.css": "89c4f1ee2001fc279110552586a0b338e661e96411c518692335bd73a7fad7e4",
+    "public/index.html": "d65dce940a931e35feadd8fc0df6a8990fe7a5a84e3cdc0119a144e7a48458e0",
+    "public/js/api.js": "f0f5180c15e9e1377b3310fafb40a961b51bddfe1bb2c46e44ad3c7f53ffdd9b",
+    "public/js/app.js": "4098706fc37a81f5397eb73e995fffe8244087a99b03eb427ee5963843444b37",
+    "public/js/checkpoint.js": "782274908e4a00ab0112802a1909218ac22ac635ef3e4fdba8763ec326200788",
+    "public/js/learn.js": "b05cfbe7586211a37247adf668a010a69898e2624030b27799905a638bf2f05f",
+    "public/js/placement.js": "1579ee3645043728e6a231f06bb72d72523eebf82fc00af2d3c3a0aa22bddf39",
+    "public/js/state.js": "7b04d8b3a40120e13fd315000287065eaff23c2020fefecdbfc1e93a9b7ce14e",
+    "public/learn.html": "bffb25923e5f9a5c88c2cd9a4c9b994435cd44a97839022afcdb58ad37e97f1c",
+    "public/placement.html": "8c7c5dcfc99a738b3671376e57b492968bd542560b933a46b332a27ebfb2d27f",
+    "public/progress.html": "9d96164c6eddb3342c0e3634f197a71730a12d1bbf56f316b6df5376da270dec",
+    "public/_headers": "711eeff379bd83d12ceb95b5328aa95c042f44e922b5bf8a87898d2819347af5",
+    "migrations/0001_schema.sql": "9b976ce5e167b53f7c049714218d85689d231d020378d6d2babaff403b23108a",
+    "migrations/0002_seed.sql": "0787bb48678e502b8f730eebe421c94c6be8562589affe3600eb3f4194e5220d",
+    "migrations/0003_engine.sql": "64a4b17c0c0b14ccd2dd851c263ed63ea0f6550c4d181b30d41f37b0103a852f",
+    "migrations/0004_curriculum.sql": "f4eca779d795ad0b58e92728fc07ee66291c8d5dcac69c485e90601666385336",
+    "migrations/0005_assessment_refinements.sql": "64cebbf35d39f327f61c050e6259b0a07f2c636eb165ca047e7c08595c4300f0",
+    "src/worker.js": "e471cda6afdd6e0491fd75f96dcdafc8dae4979d69ec599026cd2d54fdf037b5",
+    "src/assessments.js": "dc2608144fe2ae1293cb25954901e13746ea7228d12283f3d08b532a64b9e7c8",
+    "src/engine.js": "baac287747248366f5af0bea0a55bb9e4b4ab5cd0513b47962fb062e662544f1",
+    "package.json": "8c210cf627e7c59b0c30abd7b7f23a66663919d8aa6cb8c3b0f14f5ecd50d030",
+    "package-lock.json": "a721e7b434487fbae410ef78b195ca3a04a4356b9995666fc216bfa213e84788",
+    "wrangler.jsonc": "c744a1051122699c66676bd92aaf966e021a2ed5fd9e66cfab5fda356569a4db",
+    "wrangler.phase3.jsonc": "52ae9dcabac96256690d4f15d4af08d09ed01754c3f9186fc17fe925d8b1885f",
+    "wrangler.production.jsonc": "f7809663aafea2f990981cf1043bbf130a9deedfc41902a45bf531ad1cd389a4",
+    "wrangler.staging.jsonc": "f7809663aafea2f990981cf1043bbf130a9deedfc41902a45bf531ad1cd389a4"
+  }
+}

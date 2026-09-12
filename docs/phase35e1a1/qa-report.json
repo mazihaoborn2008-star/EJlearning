@@ -1,0 +1,283 @@
+{
+  "generated_at": "2026-09-10T09:50:46.187Z",
+  "status": "PASS",
+  "errors": 0,
+  "warnings": 0,
+  "checks": [
+    {
+      "name": "Phase scope is exactly 490 examples / 75 grammar",
+      "pass": true,
+      "detail": {
+        "examples": 490,
+        "grammar": 75
+      }
+    },
+    {
+      "name": "language final counts",
+      "pass": true,
+      "detail": {
+        "en": 210,
+        "ja": 280
+      }
+    },
+    {
+      "name": "role totals",
+      "pass": true,
+      "detail": {
+        "DIRECT": 463,
+        "CONTRAST": 24,
+        "SUPPORT": 3,
+        "INVALID": 0
+      }
+    },
+    {
+      "name": "role totals by language",
+      "pass": true,
+      "detail": {
+        "en": {
+          "DIRECT": 197,
+          "CONTRAST": 12,
+          "SUPPORT": 1,
+          "INVALID": 0
+        },
+        "ja": {
+          "DIRECT": 266,
+          "CONTRAST": 12,
+          "SUPPORT": 2,
+          "INVALID": 0
+        }
+      }
+    },
+    {
+      "name": "each Phase example has exactly one explicit role",
+      "pass": true,
+      "detail": {
+        "rows": 490,
+        "unique": 490
+      }
+    },
+    {
+      "name": "role schema",
+      "pass": true,
+      "detail": [
+        "example_id",
+        "grammar_id",
+        "language",
+        "target_role",
+        "rationale_zh",
+        "audit_phase",
+        "audited_at"
+      ]
+    },
+    {
+      "name": "role and example source identity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "all roles have rationale",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "DIRECT is the majority for every selected grammar",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "grammar role grouping",
+      "pass": true,
+      "detail": {
+        "all_direct": 57,
+        "with_contrast_support": 18
+      }
+    },
+    {
+      "name": "no INVALID remains",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no examples corrected, removed, or replaced",
+      "pass": true,
+      "detail": {
+        "corrected": 0,
+        "removed": 0,
+        "replacements": 0
+      }
+    },
+    {
+      "name": "no normalized duplicate or existing-example collision",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "source isolation",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "protected curriculum counts unchanged",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "vocabulary": 695,
+          "grammar": 155,
+          "lessons": 48,
+          "dialogue_turns": 116,
+          "grammar_examples": 647
+        },
+        "observed": {
+          "vocabulary": 695,
+          "grammar": 155,
+          "lessons": 48,
+          "dialogue_turns": 116,
+          "grammar_examples": 647,
+          "target_audits": 490
+        }
+      }
+    },
+    {
+      "name": "foreign keys",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "corrective migration is additive metadata only",
+      "pass": true,
+      "detail": {
+        "statement_starts": [
+          "PRAGMA foreign_keys",
+          "CREATE TABLE",
+          "CREATE INDEX",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO"
+        ],
+        "forbidden": [],
+        "insert_targets": [
+          "v2_grammar_example_target_audits"
+        ]
+      }
+    },
+    {
+      "name": "corrective migration recorded",
+      "pass": true,
+      "detail": [
+        {
+          "name": "0001_schema.sql",
+          "applied_at": "2026-09-10 09:12:08"
+        },
+        {
+          "name": "0002_seed.sql",
+          "applied_at": "2026-09-10 09:12:13"
+        },
+        {
+          "name": "0003_engine.sql",
+          "applied_at": "2026-09-10 09:12:13"
+        },
+        {
+          "name": "0004_curriculum.sql",
+          "applied_at": "2026-09-10 09:13:49"
+        },
+        {
+          "name": "0005_assessment_refinements.sql",
+          "applied_at": "2026-09-10 09:13:55"
+        },
+        {
+          "name": "0006_v2_domains.sql",
+          "applied_at": "2026-09-10 09:13:55"
+        },
+        {
+          "name": "0007_v2_representative.sql",
+          "applied_at": "2026-09-10 09:13:59"
+        },
+        {
+          "name": "0008_v2_editorial_guards.sql",
+          "applied_at": "2026-09-10 09:14:00"
+        },
+        {
+          "name": "0009_academic_alignment.sql",
+          "applied_at": "2026-09-10 09:14:00"
+        },
+        {
+          "name": "0010_academic_expression_example.sql",
+          "applied_at": "2026-09-10 09:14:01"
+        },
+        {
+          "name": "0011_curriculum.sql",
+          "applied_at": "2026-09-10 09:15:26"
+        },
+        {
+          "name": "0012_editorial_refinement.sql",
+          "applied_at": "2026-09-10 09:15:29"
+        },
+        {
+          "name": "0013_reviewed_speech_link.sql",
+          "applied_at": "2026-09-10 09:15:29"
+        },
+        {
+          "name": "0014_final_editorial_judgments.sql",
+          "applied_at": "2026-09-10 09:15:33"
+        },
+        {
+          "name": "0015_reused_pattern_provenance.sql",
+          "applied_at": "2026-09-10 09:15:33"
+        },
+        {
+          "name": "0016_request_variants.sql",
+          "applied_at": "2026-09-10 09:15:33"
+        },
+        {
+          "name": "0017_lessons.sql",
+          "applied_at": "2026-09-10 09:15:34"
+        },
+        {
+          "name": "0018_lesson_exam_recommendations.sql",
+          "applied_at": "2026-09-10 09:15:34"
+        },
+        {
+          "name": "0019_distinct_progression.sql",
+          "applied_at": "2026-09-10 09:15:34"
+        },
+        {
+          "name": "0020_editorial_objectives.sql",
+          "applied_at": "2026-09-10 09:15:35"
+        },
+        {
+          "name": "0001_core_grammar_curated_examples.sql",
+          "applied_at": "2026-09-10 09:15:48"
+        },
+        {
+          "name": "0001_curated_grammar_example_target_roles.sql",
+          "applied_at": "2026-09-10 09:43:30"
+        }
+      ]
+    },
+    {
+      "name": "historical Phase 3.5E.1A migration unchanged",
+      "pass": true,
+      "detail": {
+        "expected_sha256": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+        "observed_sha256": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4"
+      }
+    },
+    {
+      "name": "preflight grammar-marker and editorial review",
+      "pass": true,
+      "detail": {
+        "status": "GENERATED",
+        "errors": []
+      }
+    }
+  ],
+  "error_details": [],
+  "warning_details": []
+}

@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-09-11T04:57:27.911Z",
+  "source_hashes": {
+    "ecdict_commit": "bc015ed2e24a7abef49fc6dbbb7fe32c1dadaf8b",
+    "ecdict_csv_sha256": "1a6947e04785db63613a92e14903cdae7954f7e84860b10e68e5c7cbb3f9c3cf",
+    "jlpt_data_commit": "04014e06019fc9d4af76e6dbb64ec709fe863c4d",
+    "jlpt_classifications_sha256": "1dc9e9c168b5cb2754efd766b3d4c69f6eb2d51cb90bcade011b3e4f0fd1ae83",
+    "tomoshi_release": "v2026-09-02",
+    "tomoshi_zst_sha256": "7153dfd7a8e42e2d920308370eac90cf9f2e4b4cfe67fb9a86e9aa1c89494073"
+  },
+  "english": {
+    "published_final": 10000,
+    "existing_published": 435,
+    "imported": 9565,
+    "rejected": {
+      "malformed": 467688,
+      "proper": 35294,
+      "inflected": 54612,
+      "missing_meaning": 63402,
+      "missing_pos": 109694,
+      "source_duplicate": 0,
+      "existing_collision": 357
+    },
+    "missing_ipa_imported": 217,
+    "pos_distribution": {
+      "adjective": 1246,
+      "adjective phrase": 3,
+      "adverb": 497,
+      "auxiliary": 3,
+      "conjunction": 12,
+      "determiner": 1,
+      "fixed expression": 8,
+      "interjection": 5,
+      "noun": 7004,
+      "noun phrase": 29,
+      "numeral": 3,
+      "phrasal verb": 12,
+      "preposition": 25,
+      "prepositional phrase": 1,
+      "pronoun": 42,
+      "proper noun": 1,
+      "verb": 1104,
+      "verb phrase": 4
+    },
+    "az_distribution": {
+      "A": 704,
+      "B": 506,
+      "C": 1011,
+      "D": 605,
+      "E": 470,
+      "F": 444,
+      "G": 295,
+      "H": 341,
+      "I": 444,
+      "J": 105,
+      "K": 61,
+      "L": 330,
+      "M": 509,
+      "N": 208,
+      "O": 240,
+      "P": 806,
+      "Q": 37,
+      "R": 598,
+      "S": 1095,
+      "T": 505,
+      "U": 202,
+      "V": 169,
+      "W": 271,
+      "X": 1,
+      "Y": 33,
+      "Z": 10,
+      "#": 0
+    },
+    "ielts_pools": {
+      "5.0": 3000,
+      "5.5": 4000,
+      "6.0": 5500,
+      "6.5": 7000,
+      "7.0+": 10000
+    }
+  },
+  "japanese": {
+    "published_final": 8235,
+    "existing_published": 450,
+    "imported": 7785,
+    "rejected": {
+      "normalized_duplicate": 239,
+      "missing_jmdict": 14,
+      "missing_reading": 0,
+      "missing_meaning": 0,
+      "missing_pos": 0,
+      "proper_name": 0,
+      "existing_collision": 255,
+      "unmapped_pos": {}
+    },
+    "missing_reading": 0,
+    "pos_distribution": {
+      "adjectival noun": 517,
+      "adjective": 285,
+      "adverb": 11,
+      "affix": 43,
+      "auxiliary": 1,
+      "conjunction": 54,
+      "counter": 16,
+      "fixed expression": 54,
+      "interjection": 50,
+      "noun": 5268,
+      "noun phrase": 8,
+      "numeral": 25,
+      "particle": 24,
+      "pronoun": 46,
+      "proper noun": 1,
+      "verb": 1816,
+      "verb phrase": 16
+    },
+    "jlpt_distribution": {
+      "N5": 680,
+      "N4": 675,
+      "N3": 1749,
+      "N2": 1833,
+      "N1": 3298
+    }
+  },
+  "migration": {
+    "files": 27,
+    "records": 17350,
+    "existing_rank_rows": 885
+  },
+  "curated_preservation": {
+    "vocabulary_items_before": 885,
+    "vocabulary_examples_before": 1274,
+    "vocabulary_senses_before": 886
+  }
+}

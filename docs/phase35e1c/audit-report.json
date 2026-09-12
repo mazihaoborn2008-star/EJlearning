@@ -1,0 +1,676 @@
+{
+  "generated_at": "2026-09-11T04:19:07.500Z",
+  "phase": "3.5E.1C",
+  "status": "PASS",
+  "database": "E:\\E_J_Learn_web\\.wrangler\\phase35e1c-release-final-2\\v3\\d1\\miniflare-D1DatabaseObject\\9d42ecbc065126e2e4a8ec79c247589e9635ba86277b833107d380e5a588cc70.sqlite",
+  "counts": {
+    "en_vocab_added": 90,
+    "ja_vocab_added": 100,
+    "en_grammar_added": 10,
+    "ja_grammar_added": 16,
+    "en_lessons_added": 8,
+    "ja_lessons_added": 8,
+    "existing_lessons_restructured": 8
+  },
+  "lesson_qa": [
+    {
+      "id": "en-s2-l5",
+      "language": "en",
+      "topic_id": "shopping",
+      "vocab": 4,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "en-s3-l5",
+      "language": "en",
+      "topic_id": "shopping",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "en-s3-l6",
+      "language": "en",
+      "topic_id": "health",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "en-s3-l7",
+      "language": "en",
+      "topic_id": "time",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "en-s3-l8",
+      "language": "en",
+      "topic_id": "help",
+      "vocab": 6,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "en-s3-l9",
+      "language": "en",
+      "topic_id": "school",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "en-s4-l5",
+      "language": "en",
+      "topic_id": "home",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "en-s4-l6",
+      "language": "en",
+      "topic_id": "travel",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "ja-s2-l5",
+      "language": "ja",
+      "topic_id": "shopping",
+      "vocab": 4,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "ja-s2-l6",
+      "language": "ja",
+      "topic_id": "food",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "ja-s3-l5",
+      "language": "ja",
+      "topic_id": "shopping",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "ja-s3-l6",
+      "language": "ja",
+      "topic_id": "health",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "ja-s3-l7",
+      "language": "ja",
+      "topic_id": "help",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "ja-s3-l8",
+      "language": "ja",
+      "topic_id": "school",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "ja-s4-l5",
+      "language": "ja",
+      "topic_id": "home",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    },
+    {
+      "id": "ja-s4-l6",
+      "language": "ja",
+      "topic_id": "travel",
+      "vocab": 5,
+      "grammar": 2,
+      "turns": 6,
+      "topic_mismatch": 0
+    }
+  ],
+  "gojuon_reference": [
+    {
+      "lemma": "サイズ",
+      "reading": "さいず"
+    },
+    {
+      "lemma": "予定",
+      "reading": "よてい"
+    },
+    {
+      "lemma": "確認する",
+      "reading": "かくにんする"
+    }
+  ],
+  "duplicates_rejected": 23,
+  "semantic_invalid_rejected": 7,
+  "errors": [],
+  "warnings": [],
+  "historical_hashes": {
+    "migrations-35e1a/0001_core_grammar_curated_examples.sql": {
+      "expected": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+      "actual": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+      "pass": true
+    },
+    "migrations-35e1a1/0001_curated_grammar_example_target_roles.sql": {
+      "expected": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b",
+      "actual": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b",
+      "pass": true
+    },
+    "migrations-35e1a2/0001_core_vocabulary_curated_usages.sql": {
+      "expected": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2",
+      "actual": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2",
+      "pass": true
+    },
+    "migrations-35e1b/0001_core_expressions_multi_turn_dialogues.sql": {
+      "expected": "599ab3d439fb32c7db1ddaf07701dbd5cf6a69c4258d5d5b057842567fc41520",
+      "actual": "599ab3d439fb32c7db1ddaf07701dbd5cf6a69c4258d5d5b057842567fc41520",
+      "pass": true
+    }
+  },
+  "samples": [
+    {
+      "lesson": {
+        "id": "en-s2-l5",
+        "language": "en",
+        "stage": 2,
+        "topic_id": "shopping",
+        "title": "在超市找货并结账",
+        "objective": "能询问商品位置、确认数量价格并完成支付。",
+        "sequence": 5,
+        "status": "published",
+        "estimated_minutes": 18
+      },
+      "items": [
+        {
+          "content_type": "expression",
+          "content_id": "35e1c-en-d-supermarket-expr",
+          "role": "required",
+          "label": "Excuse me, where can I find the oat milk?\nIt is in aisle six, next to the cereal.\nThank you. Is this brand on sale today?\nYes. The discount will appear at the checkout.\nGreat. Can I pay by card and get a receipt?\nOf course. Please tap your card here.",
+          "unit_type": "dialogue",
+          "turns": 6
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "35e1c-en-some-any",
+          "role": "required",
+          "label": "some / any 与可数性",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "en-wh-question",
+          "role": "support",
+          "label": "询问信息",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v009",
+          "role": "required",
+          "label": "aisle",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v010",
+          "role": "required",
+          "label": "checkout counter",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "en-c-1755",
+          "role": "required",
+          "label": "receipt",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v016",
+          "role": "required",
+          "label": "out of stock",
+          "unit_type": null,
+          "turns": 0
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "en-s3-l6",
+        "language": "en",
+        "stage": 3,
+        "topic_id": "health",
+        "title": "在药房或诊所说明症状",
+        "objective": "能描述症状、持续时间和严重度并理解基本建议。",
+        "sequence": 6,
+        "status": "published",
+        "estimated_minutes": 18
+      },
+      "items": [
+        {
+          "content_type": "expression",
+          "content_id": "35e1b-en-d-medical-symptoms-expr",
+          "role": "required",
+          "label": "What seems to be the problem?\nI’ve had a sore throat since Monday, and I had a fever last night.\nAre you having any trouble breathing?\nNo, but it hurts when I swallow.\nAll right. I’ll examine your throat first.\nOkay. Thank you.",
+          "unit_type": "dialogue",
+          "turns": 6
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "35e1c-en-should-advice",
+          "role": "required",
+          "label": "should / should not 表建议",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "en-since-for",
+          "role": "support",
+          "label": "持续的起点与时长",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v017",
+          "role": "required",
+          "label": "fever",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v018",
+          "role": "required",
+          "label": "cough",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v019",
+          "role": "required",
+          "label": "dizzy",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v020",
+          "role": "required",
+          "label": "pharmacy",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v021",
+          "role": "support",
+          "label": "prescription",
+          "unit_type": null,
+          "turns": 0
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "en-s4-l5",
+        "language": "en",
+        "stage": 4,
+        "topic_id": "home",
+        "title": "租房、报修与房东沟通",
+        "objective": "能说明住房问题、请求维修并确认费用和时间。",
+        "sequence": 5,
+        "status": "published",
+        "estimated_minutes": 18
+      },
+      "items": [
+        {
+          "content_type": "expression",
+          "content_id": "35e1b-en-d-repair-leak-expr",
+          "role": "required",
+          "label": "There’s water leaking under the kitchen sink.\nIs it a slow drip or a steady flow?\nIt’s a steady flow, so I’ve turned the water off.\nGood. I’ll send someone within an hour.\nDo I need to stay home?\nYes, please. The plumber will call before arriving.",
+          "unit_type": "dialogue",
+          "turns": 6
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "35e1c-en-perfect-vs-past",
+          "role": "required",
+          "label": "现在完成时与一般过去时对比",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "35e1c-en-obligation-contrast",
+          "role": "support",
+          "label": "must / have to / do not have to 对比",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v034",
+          "role": "required",
+          "label": "landlord",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v036",
+          "role": "required",
+          "label": "rent",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v039",
+          "role": "required",
+          "label": "maintenance",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v040",
+          "role": "required",
+          "label": "leak",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-en-v042",
+          "role": "support",
+          "label": "repair request",
+          "unit_type": null,
+          "turns": 0
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "ja-s2-l6",
+        "language": "ja",
+        "stage": 2,
+        "topic_id": "food",
+        "title": "店で注文し、希望を伝える",
+        "objective": "能点餐、说明饮食限制并结账。",
+        "sequence": 6,
+        "status": "published",
+        "estimated_minutes": 18
+      },
+      "items": [
+        {
+          "content_type": "expression",
+          "content_id": "35e1b-ja-d-restaurant-allergy-expr",
+          "role": "required",
+          "label": "ご注文はお決まりですか。\nもう少しです。このカレーにピーナッツは入っていますか。\nソースには入っていますが、トマトスープには入っていません。\nでは、スープをお願いします。\nかしこまりました。ピーナッツアレルギーがあることも伝えます。\nありがとうございます。助かります。",
+          "unit_type": "dialogue",
+          "turns": 6
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "35e1c-ja-counter-system",
+          "role": "required",
+          "label": "助数詞：人・本・枚・個・つ",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "ja-request-onegai",
+          "role": "support",
+          "label": "提出所需内容",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v001",
+          "role": "required",
+          "label": "アレルギー",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v003",
+          "role": "required",
+          "label": "原材料",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v005",
+          "role": "required",
+          "label": "会計",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v008",
+          "role": "required",
+          "label": "抜き",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v009",
+          "role": "support",
+          "label": "別々",
+          "unit_type": null,
+          "turns": 0
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "ja-s3-l6",
+        "language": "ja",
+        "stage": 3,
+        "topic_id": "health",
+        "title": "薬局・病院で症状を説明する",
+        "objective": "能说明症状、程度与持续时间并理解建议。",
+        "sequence": 6,
+        "status": "published",
+        "estimated_minutes": 18
+      },
+      "items": [
+        {
+          "content_type": "expression",
+          "content_id": "35e1b-ja-d-medical-symptoms-expr",
+          "role": "required",
+          "label": "今日はどうされましたか。\n月曜日から喉が痛くて、昨夜は熱もありました。\n息苦しさはありますか。\nいいえ。でも、飲み込むと痛いです。\nわかりました。まず喉を診ますね。\nわかりました。ありがとうございます。",
+          "unit_type": "dialogue",
+          "turns": 6
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "35e1c-ja-kara-node-contrast",
+          "role": "required",
+          "label": "理由の「から・ので」",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "ja-hou-ga-ii",
+          "role": "support",
+          "label": "建议",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v018",
+          "role": "required",
+          "label": "発熱",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v019",
+          "role": "required",
+          "label": "咳",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v020",
+          "role": "required",
+          "label": "めまい",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v021",
+          "role": "required",
+          "label": "薬局",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v022",
+          "role": "support",
+          "label": "処方箋",
+          "unit_type": null,
+          "turns": 0
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "ja-s4-l5",
+        "language": "ja",
+        "stage": 4,
+        "topic_id": "home",
+        "title": "賃貸・修理について相談する",
+        "objective": "能向房东或管理方报修并确认费用与时间。",
+        "sequence": 5,
+        "status": "published",
+        "estimated_minutes": 18
+      },
+      "items": [
+        {
+          "content_type": "expression",
+          "content_id": "35e1b-ja-d-repair-leak-expr",
+          "role": "required",
+          "label": "台所の流しの下から水が漏れています。\n少しずつですか。それとも、ずっと流れていますか。\nずっと流れていたので、水を止めました。\nありがとうございます。一時間以内に修理の者を向かわせます。\n家で待っている必要がありますか。\nはい。到着前に担当者から電話します。",
+          "unit_type": "dialogue",
+          "turns": 6
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "35e1c-ja-explanatory-nodesu",
+          "role": "required",
+          "label": "〜んです・〜んですがの説明と前置き",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "grammar",
+          "content_id": "35e1c-ja-obligation-contrast",
+          "role": "support",
+          "label": "〜なければならない・〜なくてもいい",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v036",
+          "role": "required",
+          "label": "大家",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v038",
+          "role": "required",
+          "label": "家賃",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v041",
+          "role": "required",
+          "label": "修理",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v042",
+          "role": "required",
+          "label": "水漏れ",
+          "unit_type": null,
+          "turns": 0
+        },
+        {
+          "content_type": "vocabulary",
+          "content_id": "35e1c-ja-v044",
+          "role": "support",
+          "label": "管理会社",
+          "unit_type": null,
+          "turns": 0
+        }
+      ]
+    }
+  ],
+  "changes": {
+    "learner_engine": false,
+    "learner_progress": false,
+    "dynamic_ai_examples": false,
+    "production": false,
+    "phase4_started": false
+  }
+}

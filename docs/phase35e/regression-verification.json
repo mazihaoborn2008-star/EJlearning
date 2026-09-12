@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-09-10T06:35:26.438Z",
+  "read_only": true,
+  "environment": "local",
+  "results": [
+    {
+      "area": "Phase 3.5D.1 isolation/config",
+      "command": "node scripts/check-35d1-config.js",
+      "status": "PASS",
+      "detail": "Worker isolation, bindings, provider configuration and read-only endpoint checks passed."
+    },
+    {
+      "area": "AI Dynamic Examples",
+      "command": "node --test tests/phase35d1-api.test.js",
+      "status": "PASS",
+      "detail": "14/14 tests passed; dynamic output remains ephemeral and separated from curated examples."
+    },
+    {
+      "area": "Phase 3.5D.1 deployability",
+      "command": "npm run check:35d1",
+      "status": "PASS",
+      "detail": "Wrangler dry-run passed; no deployment occurred."
+    },
+    {
+      "area": "Lesson Path + Phase 3.5C.1 + Library APIs",
+      "command": "node --test tests/phase35d-api.test.js tests/phase35c1-api.test.js",
+      "status": "PASS",
+      "detail": "8/8 tests passed against http://127.0.0.1:8800."
+    },
+    {
+      "area": "Phase 3.5D responsive/navigation regression",
+      "command": "node tests/phase35d-browser.cjs",
+      "status": "PASS",
+      "detail": "Browser, responsive, navigation and regression acceptance passed."
+    },
+    {
+      "area": "Phase 3.5D.1 responsive Dynamic Examples",
+      "command": "node tests/phase35d1-browser.cjs",
+      "status": "PASS",
+      "detail": "360/390/430/768/1440 widths passed; fixed AI Preview regression passed."
+    }
+  ],
+  "observations": [
+    {
+      "severity": "warning",
+      "detail": "An optional REQUIRE_D1=1 probe saw audited-fallback on the already-running local Worker. The normal API contract permits this. Canonical audit data was queried independently from .wrangler/phase35d-clean through read-only D1 SELECTs."
+    }
+  ],
+  "not_directly_mutated_or_exercised": [
+    "placement learner state",
+    "recommendation learner state",
+    "mastery/checkpoint learner state",
+    "localStorage contents"
+  ],
+  "reason": "No learner-facing/source change occurred; browser regression covers navigation/rendering, while this phase did not write or migrate learner state."
+}

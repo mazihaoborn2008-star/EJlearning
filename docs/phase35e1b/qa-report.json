@@ -1,0 +1,268 @@
+{
+  "generated_at": "2026-09-10T21:58:08.184Z",
+  "status": "PASS",
+  "errors": 0,
+  "warnings": 0,
+  "checks": [
+    {
+      "name": "source generation QA",
+      "pass": true,
+      "detail": {
+        "status": "GENERATED",
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "name": "expression additions",
+      "pass": true,
+      "detail": {
+        "en": 120,
+        "ja": 130
+      }
+    },
+    {
+      "name": "dialogue additions",
+      "pass": true,
+      "detail": {
+        "total": 68,
+        "en": 32,
+        "ja": 36
+      }
+    },
+    {
+      "name": "dialogue sequence/linkage",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "speaker alternation and no dangling reply",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "normalized expression duplicates",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "normalized dialogue turn duplicates",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Japanese reading reconstruction",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "vocabulary/grammar support linkage",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "editorial communicative review",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "foreign keys",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "protected canonical content byte-equivalent",
+      "pass": true,
+      "detail": {
+        "v2_vocabulary_items": {
+          "before": "11b7195ab55773f3dd5109180aaf2aed699a9138dcfc78f3177904bd56c19188",
+          "after": "11b7195ab55773f3dd5109180aaf2aed699a9138dcfc78f3177904bd56c19188",
+          "unchanged": true
+        },
+        "v2_vocabulary_senses": {
+          "before": "20dea60a5a28fde2cbea141b86720ed82c0ad02def47e91e7280a01036d57343",
+          "after": "20dea60a5a28fde2cbea141b86720ed82c0ad02def47e91e7280a01036d57343",
+          "unchanged": true
+        },
+        "v2_vocabulary_examples": {
+          "before": "7c49592ef9baf9d8da6a274be95f2f3a152f2d5030e77b8a8c1ef2678e85877a",
+          "after": "7c49592ef9baf9d8da6a274be95f2f3a152f2d5030e77b8a8c1ef2678e85877a",
+          "unchanged": true
+        },
+        "v2_grammar_points": {
+          "before": "0639e6152d149b651cb61612b8254bef8eb68dabb35aea1ee8b85552b89c0234",
+          "after": "0639e6152d149b651cb61612b8254bef8eb68dabb35aea1ee8b85552b89c0234",
+          "unchanged": true
+        },
+        "v2_grammar_examples": {
+          "before": "db2ba766cb84e3aee474774dc21b799c8891a1928651ec20481ba4d58a253d01",
+          "after": "db2ba766cb84e3aee474774dc21b799c8891a1928651ec20481ba4d58a253d01",
+          "unchanged": true
+        },
+        "v2_grammar_example_target_audits": {
+          "before": "42b1621c6f19929f76c697d10aa739654de85e30bb1b2487e4027c8abbfb49d4",
+          "after": "42b1621c6f19929f76c697d10aa739654de85e30bb1b2487e4027c8abbfb49d4",
+          "unchanged": true
+        },
+        "lesson_units": {
+          "before": "b5f9fb4c079161bb5493a243729e778101a3cf54bb17baedf7be3ad63d6e82e7",
+          "after": "b5f9fb4c079161bb5493a243729e778101a3cf54bb17baedf7be3ad63d6e82e7",
+          "unchanged": true
+        },
+        "lesson_items": {
+          "before": "128ebae0f4bb3d73ad8561b54f4886a414b40f40539c55a86ec5babe49bc370f",
+          "after": "128ebae0f4bb3d73ad8561b54f4886a414b40f40539c55a86ec5babe49bc370f",
+          "unchanged": true
+        },
+        "placement_questions": {
+          "before": "7736e07016cdb3299979f23974db9a73903af14c6aa0ecb0a636b6f840848cab",
+          "after": "7736e07016cdb3299979f23974db9a73903af14c6aa0ecb0a636b6f840848cab",
+          "unchanged": true
+        }
+      }
+    },
+    {
+      "name": "protected count deltas",
+      "pass": true,
+      "detail": {
+        "before": {
+          "vocabulary_items": 695,
+          "vocabulary_senses": 696,
+          "vocabulary_examples": 1084,
+          "grammar_points": 155,
+          "grammar_examples": 647,
+          "grammar_target_audits": 490,
+          "sentence_units": 265,
+          "expressions": 459,
+          "dialogue_turns": 116,
+          "vocabulary_links": 679,
+          "grammar_links": 464,
+          "lessons": 48,
+          "lesson_items": 717,
+          "assessment_sessions": 0,
+          "placement_questions": 750
+        },
+        "after": {
+          "vocabulary_items": 695,
+          "vocabulary_senses": 696,
+          "vocabulary_examples": 1084,
+          "grammar_points": 155,
+          "grammar_examples": 647,
+          "grammar_target_audits": 490,
+          "sentence_units": 515,
+          "expressions": 709,
+          "dialogue_turns": 524,
+          "vocabulary_links": 984,
+          "grammar_links": 689,
+          "lessons": 48,
+          "lesson_items": 717,
+          "assessment_sessions": 0,
+          "placement_questions": 750
+        }
+      }
+    },
+    {
+      "name": "expected additive deltas",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "units": 250,
+          "expressions": 250,
+          "dialogues": 68,
+          "turns": 408,
+          "vocabulary_links": 305,
+          "grammar_links": 225
+        },
+        "before": {
+          "vocabulary_items": 695,
+          "vocabulary_senses": 696,
+          "vocabulary_examples": 1084,
+          "grammar_points": 155,
+          "grammar_examples": 647,
+          "grammar_target_audits": 490,
+          "sentence_units": 265,
+          "expressions": 459,
+          "dialogue_turns": 116,
+          "vocabulary_links": 679,
+          "grammar_links": 464,
+          "lessons": 48,
+          "lesson_items": 717,
+          "assessment_sessions": 0,
+          "placement_questions": 750
+        },
+        "after": {
+          "vocabulary_items": 695,
+          "vocabulary_senses": 696,
+          "vocabulary_examples": 1084,
+          "grammar_points": 155,
+          "grammar_examples": 647,
+          "grammar_target_audits": 490,
+          "sentence_units": 515,
+          "expressions": 709,
+          "dialogue_turns": 524,
+          "vocabulary_links": 984,
+          "grammar_links": 689,
+          "lessons": 48,
+          "lesson_items": 717,
+          "assessment_sessions": 0,
+          "placement_questions": 750
+        }
+      }
+    },
+    {
+      "name": "pure additive migration",
+      "pass": true,
+      "detail": {
+        "statement_starts": [
+          "PRAGMA FOREIGN_KEYS",
+          "INSERT INTO"
+        ],
+        "insert_targets": [
+          "v2_sentence_units",
+          "v2_sentence_expressions",
+          "v2_dialogue_turns",
+          "v2_sentence_vocabulary_links",
+          "v2_sentence_grammar_links"
+        ],
+        "forbidden": []
+      }
+    },
+    {
+      "name": "migration recorded",
+      "pass": true,
+      "detail": [
+        {
+          "id": 24,
+          "name": "0001_core_expressions_multi_turn_dialogues.sql",
+          "applied_at": "2026-09-10 21:55:28"
+        }
+      ]
+    },
+    {
+      "name": "historical migrations unchanged",
+      "pass": true,
+      "detail": [
+        {
+          "file": "migrations-35e1a/0001_core_grammar_curated_examples.sql",
+          "expected": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+          "actual": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+          "unchanged": true
+        },
+        {
+          "file": "migrations-35e1a1/0001_curated_grammar_example_target_roles.sql",
+          "expected": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b",
+          "actual": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b",
+          "unchanged": true
+        },
+        {
+          "file": "migrations-35e1a2/0001_core_vocabulary_curated_usages.sql",
+          "expected": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2",
+          "actual": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2",
+          "unchanged": true
+        }
+      ]
+    }
+  ],
+  "error_details": [],
+  "warning_details": []
+}

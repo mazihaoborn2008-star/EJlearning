@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const read=p=>JSON.parse(fs.readFileSync(p));
+const before=read('docs/phase35c/integrity-before.json'),after=read('docs/phase35c/integrity-after.json');
+assert.deepEqual(after,before,'Protected remote environment or original source changed');
+const hashes=read('docs/phase35c/protected-local.json');for(const [file,expected] of Object.entries(hashes))assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'),expected,file);
+for(const name of ['audit-local','audit-d1-local','audit-staging','browser-local','browser-staging','accessibility-local','accessibility-staging'])assert(read('docs/phase35c/'+name+'.json').passed,name);
+for(const file of ['api-local.txt','api-staging.txt'])assert(/fail 0/.test(fs.readFileSync('docs/phase35c/'+file,'utf8')),file);
+for(const name of ['local','staging'])assert(read('tests/phase3-browser-35c-'+name+'.json').passed,'legacy browser '+name);
+const config=read('wrangler.35c.jsonc');assert.equal(config.name,'ej-learning-35c');assert.deepEqual(config.routes,[]);assert.equal(config.d1_databases[0].database_id,'c854a0e6-d576-4254-b4b6-449fc7517437');
+const report={passed:true,protectedEnvironments:['ej-learning','ej-learning-phase3','ej-learning-35a','ej-learning-35b'],protectedLocalFiles:Object.keys(hashes).length,remoteSnapshotsEqual:true,staging:'https://ej-learning-35c.yanjian-language-learning.workers.dev',config:'wrangler.35c.jsonc',verifiedAt:new Date().toISOString(),phase35DStarted:false,phase4Started:false};
+fs.writeFileSync('docs/phase35c/release-verification.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));

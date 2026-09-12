@@ -1,0 +1,15 @@
+UPDATE lesson_units SET title='道歉、感谢并自然回应',objective='能在常见社交往来中道歉、致谢并作出自然回应。' WHERE id='en-s1-l2';
+UPDATE lesson_units SET title='讨论计划与期待',objective='能说明计划变化、未来期待以及尚未确定的安排。' WHERE id='en-s3-l1';
+UPDATE lesson_units SET title='在社交中表达界限',objective='能礼貌回应私人问题、独处需要或提前离场。' WHERE id='en-s4-l2';
+UPDATE lesson_units SET title='在限制下评估工作方案',objective='能结合时间、证据和条件说明可行方案。' WHERE id='en-s5-l1';
+UPDATE lesson_units SET title='澄清语气并讨论假设',objective='能修正过强语气，并用假设说明不同可能。' WHERE id='en-s6-l2';
+UPDATE lesson_units SET title='发出邀请并照顾对方选择',objective='能提出活动邀请并给对方自然接受或拒绝的空间。' WHERE id='en-s6-l3';
+UPDATE lesson_units SET title='お礼・謝罪・誘いに応じる',objective='能在感谢、道歉和简单邀请中作出合适回应。' WHERE id='ja-s1-l2';
+UPDATE lesson_units SET title='家の中で頼み事を伝える',objective='能在家中说明已做事项、提出请求并确认设备状态。' WHERE id='ja-s2-l2';
+UPDATE lesson_units SET title='誤解を解き、言い方を整える',objective='能回顾交流、补充不同看法并澄清误会。' WHERE id='ja-s3-l1';
+UPDATE lesson_units SET title='経験とこれからの予定を話す',objective='能连接过去经验、未来计划和暂未确定的安排。' WHERE id='ja-s3-l2';
+UPDATE lesson_units SET title='予定と予想のずれを説明する',objective='能说明计划变化、结果与原先预期的差异。' WHERE id='ja-s4-l2';
+UPDATE lesson_units SET title='距離感に配慮して境界を伝える',objective='能顾及关系与气氛，表达独处需要或婉拒。' WHERE id='ja-s4-l3';
+UPDATE lesson_units SET title='改まった形で判断を述べる',objective='能用较正式结构说明可能性、限制和一般判断。' WHERE id='ja-s5-l1';
+UPDATE lesson_units SET title='確認しながら控えめに意見を述べる',objective='能确认理解，并以保留或缓和方式表达判断。' WHERE id='ja-s6-l2';
+UPDATE lesson_units SET title='誘いに応じ、予定変更を伝える',objective='能回应邀请，并得体说明自己可能提前离场。' WHERE id='ja-s6-l4';

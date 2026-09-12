@@ -1,0 +1,49 @@
+✔ lightweight catalog, detail regression preserves all 15 approved Concepts (800.3934ms)
+✔ adaptive API beginners, intermediate, advanced and language independence (2175.7494ms)
+✔ exact retries idempotent; changed replays, foreign questions and concurrency protected (132.6983ms)
+✔ checkpoints every topic and language identify precise weak Concepts (7387.3208ms)
+✔ recommendation profiles change results, weakness priority and no hard locks (112.9226ms)
+Content API failed
+✔ strict malformed contracts, deprecated fixed APIs and private asset isolation (449.1045ms)
+✔ database failures return sanitized errors (1.1882ms)
+✔ expired stored session is rejected before accessing question content (0.5802ms)
+✔ scheduled maintenance removes expired anonymous sessions only (0.1671ms)
+✔ placement calibrates Levels 1–6, starts at 3, needs repeated evidence (9.8456ms)
+✔ mixed, consecutive mistakes/successes and uncertain boundaries respect hard maximum (4.1179ms)
+✔ early stopping, deterministic seed, varied sequence and language independence (7.33ms)
+✔ fresh Levels 1,4,6 produce different nearby content and topic variety (2.7506ms)
+✔ independent EN5/JA2, review and checkpoint weaknesses, recent and mastery (4.4172ms)
+✔ partial topic, many review items, empty catalogs and manual topic filter (1.4666ms)
+✔ fresh intermediate queue includes consolidation and stretch (1.8738ms)
+✔ 700 seeded simulations preserve level calibration independently (390.0056ms)
+✔ vocabulary list filters, Chinese/target search, senses and bounded pagination (384.6602ms)
+✔ grammar levels, multilingual search, explanations, directed prerequisites and contrasts (256.6711ms)
+✔ sentence filters apply difficulty and language to the SAME expression (181.5775ms)
+✔ required not-eaten example, independent difficulty and exact vocabulary/grammar links (63.8352ms)
+✔ changed plans, scenario variants, dialogue turns and turn relationships (236.1652ms)
+✔ reverse relationship endpoints return compact correct units in both directions (436.9445ms)
+V2 content unavailable
+✔ invalid filters, pagination, IDs, unknown routes and methods (864.0062ms)
+✔ database failures are sanitized (1.4615ms)
+✔ additive stream preserves every legacy row and schema migration copy (15.9341ms)
+✔ representative counts, no forced language pairing, independent difficulty (0.5363ms)
+✔ stage, level, language, publication and type constraints (0.7483ms)
+✔ composite foreign keys prevent cross-language sentence vocabulary and grammar links (0.2318ms)
+✔ lexical and grammar relations enforce language, no self links, and acyclic prerequisites (0.3151ms)
+✔ duplicate primary, lexical identity, relation and span protections (0.2528ms)
+✔ scenario and dialogue ownership plus all reading/span content is valid (0.8301ms)
+✔ required semantic examples reference actual independent systems (0.1694ms)
+✔ integer affinity and dialogue invariants survive editorial updates (0.2844ms)
+✔ draft/archived records never leak via lists, links, examples or reverse navigation (18.2217ms)
+✔ all migrations preserve legacy and 35a records; alignment is relational and language-safe (64.3963ms)
+✔ library summaries supply meaning, pronunciation and purpose without full details (123.0953ms)
+✔ academic targets, provenance, independent stages and missing alignment (619.9083ms)
+✔ new UI is isolated, original assets and APIs remain usable, private files stay private (356.1685ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11131.2671

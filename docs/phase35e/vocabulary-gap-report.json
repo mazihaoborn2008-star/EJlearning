@@ -1,0 +1,5053 @@
+{
+  "generated_at": "2026-09-10T06:35:26.438Z",
+  "read_only": true,
+  "methodology": {
+    "coverage_is_not_quality": true,
+    "definitions": {
+      "lesson_linked": "Distinct canonical vocabulary ID present in lesson_items.",
+      "unassigned": "Published canonical vocabulary with zero lesson references.",
+      "expression_usage": "Distinct curated expressions linked through v2_sentence_vocabulary_links.",
+      "semantic_relation": "Outgoing reviewed link in v2_vocabulary_relations."
+    }
+  },
+  "baseline": [
+    {
+      "language": "en",
+      "total": 345,
+      "lesson_linked": 119,
+      "coverage_percent": 34.5,
+      "unassigned": 226
+    },
+    {
+      "language": "ja",
+      "total": 350,
+      "lesson_linked": 107,
+      "coverage_percent": 30.6,
+      "unassigned": 243
+    }
+  ],
+  "by_stage": [
+    {
+      "language": "en",
+      "stage": 1,
+      "total": 88,
+      "lesson_linked": 36,
+      "unassigned": 52,
+      "no_expression_usage": 41,
+      "no_semantic_relation": 87,
+      "examples": {
+        "zero": 0,
+        "one": 88,
+        "two_to_three": 0,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "en",
+      "stage": 2,
+      "total": 83,
+      "lesson_linked": 40,
+      "unassigned": 43,
+      "no_expression_usage": 19,
+      "no_semantic_relation": 82,
+      "examples": {
+        "zero": 0,
+        "one": 82,
+        "two_to_three": 1,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "en",
+      "stage": 3,
+      "total": 69,
+      "lesson_linked": 22,
+      "unassigned": 47,
+      "no_expression_usage": 22,
+      "no_semantic_relation": 66,
+      "examples": {
+        "zero": 0,
+        "one": 66,
+        "two_to_three": 3,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "en",
+      "stage": 4,
+      "total": 51,
+      "lesson_linked": 20,
+      "unassigned": 31,
+      "no_expression_usage": 18,
+      "no_semantic_relation": 51,
+      "examples": {
+        "zero": 0,
+        "one": 51,
+        "two_to_three": 0,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "en",
+      "stage": 5,
+      "total": 22,
+      "lesson_linked": 1,
+      "unassigned": 21,
+      "no_expression_usage": 21,
+      "no_semantic_relation": 22,
+      "examples": {
+        "zero": 0,
+        "one": 22,
+        "two_to_three": 0,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "en",
+      "stage": 6,
+      "total": 32,
+      "lesson_linked": 0,
+      "unassigned": 32,
+      "no_expression_usage": 32,
+      "no_semantic_relation": 31,
+      "examples": {
+        "zero": 0,
+        "one": 32,
+        "two_to_three": 0,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "ja",
+      "stage": 1,
+      "total": 97,
+      "lesson_linked": 34,
+      "unassigned": 63,
+      "no_expression_usage": 45,
+      "no_semantic_relation": 96,
+      "examples": {
+        "zero": 0,
+        "one": 96,
+        "two_to_three": 1,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "ja",
+      "stage": 2,
+      "total": 79,
+      "lesson_linked": 36,
+      "unassigned": 43,
+      "no_expression_usage": 27,
+      "no_semantic_relation": 79,
+      "examples": {
+        "zero": 0,
+        "one": 78,
+        "two_to_three": 1,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "ja",
+      "stage": 3,
+      "total": 80,
+      "lesson_linked": 22,
+      "unassigned": 58,
+      "no_expression_usage": 36,
+      "no_semantic_relation": 79,
+      "examples": {
+        "zero": 0,
+        "one": 78,
+        "two_to_three": 2,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "ja",
+      "stage": 4,
+      "total": 48,
+      "lesson_linked": 13,
+      "unassigned": 35,
+      "no_expression_usage": 31,
+      "no_semantic_relation": 47,
+      "examples": {
+        "zero": 0,
+        "one": 48,
+        "two_to_three": 0,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "ja",
+      "stage": 5,
+      "total": 25,
+      "lesson_linked": 2,
+      "unassigned": 23,
+      "no_expression_usage": 23,
+      "no_semantic_relation": 24,
+      "examples": {
+        "zero": 0,
+        "one": 25,
+        "two_to_three": 0,
+        "four_plus": 0
+      }
+    },
+    {
+      "language": "ja",
+      "stage": 6,
+      "total": 21,
+      "lesson_linked": 0,
+      "unassigned": 21,
+      "no_expression_usage": 21,
+      "no_semantic_relation": 21,
+      "examples": {
+        "zero": 0,
+        "one": 21,
+        "two_to_three": 0,
+        "four_plus": 0
+      }
+    }
+  ],
+  "example_buckets": {
+    "zero": 0,
+    "one": 687,
+    "two_to_three": 8,
+    "four_plus": 0
+  },
+  "underused": [
+    {
+      "id": "en-c-009",
+      "language": "en",
+      "stage": 1,
+      "lemma": "rice",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-013",
+      "language": "en",
+      "stage": 1,
+      "lemma": "bread",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-017",
+      "language": "en",
+      "stage": 1,
+      "lemma": "milk",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-021",
+      "language": "en",
+      "stage": 1,
+      "lemma": "egg",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-029",
+      "language": "en",
+      "stage": 1,
+      "lemma": "sugar",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-033",
+      "language": "en",
+      "stage": 1,
+      "lemma": "fruit",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-037",
+      "language": "en",
+      "stage": 1,
+      "lemma": "vegetable",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-041",
+      "language": "en",
+      "stage": 1,
+      "lemma": "meat",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-045",
+      "language": "en",
+      "stage": 1,
+      "lemma": "fish",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-049",
+      "language": "en",
+      "stage": 1,
+      "lemma": "breakfast",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-061",
+      "language": "en",
+      "stage": 1,
+      "lemma": "house",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-065",
+      "language": "en",
+      "stage": 1,
+      "lemma": "room",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-077",
+      "language": "en",
+      "stage": 1,
+      "lemma": "table",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-081",
+      "language": "en",
+      "stage": 1,
+      "lemma": "chair",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-089",
+      "language": "en",
+      "stage": 1,
+      "lemma": "phone",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-097",
+      "language": "en",
+      "stage": 1,
+      "lemma": "family",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-101",
+      "language": "en",
+      "stage": 1,
+      "lemma": "child",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-105",
+      "language": "en",
+      "stage": 1,
+      "lemma": "teacher",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-109",
+      "language": "en",
+      "stage": 1,
+      "lemma": "student",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-113",
+      "language": "en",
+      "stage": 1,
+      "lemma": "school",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-125",
+      "language": "en",
+      "stage": 1,
+      "lemma": "yesterday",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-141",
+      "language": "en",
+      "stage": 1,
+      "lemma": "day",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-145",
+      "language": "en",
+      "stage": 1,
+      "lemma": "week",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-149",
+      "language": "en",
+      "stage": 1,
+      "lemma": "money",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-161",
+      "language": "en",
+      "stage": 1,
+      "lemma": "drink",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-165",
+      "language": "en",
+      "stage": 1,
+      "lemma": "buy",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-169",
+      "language": "en",
+      "stage": 1,
+      "lemma": "read",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-173",
+      "language": "en",
+      "stage": 1,
+      "lemma": "write",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-177",
+      "language": "en",
+      "stage": 1,
+      "lemma": "listen",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-181",
+      "language": "en",
+      "stage": 1,
+      "lemma": "speak",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-185",
+      "language": "en",
+      "stage": 1,
+      "lemma": "sleep",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-201",
+      "language": "en",
+      "stage": 1,
+      "lemma": "open",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-205",
+      "language": "en",
+      "stage": 1,
+      "lemma": "close",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-209",
+      "language": "en",
+      "stage": 1,
+      "lemma": "hot",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-213",
+      "language": "en",
+      "stage": 1,
+      "lemma": "cold",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-217",
+      "language": "en",
+      "stage": 1,
+      "lemma": "big",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-225",
+      "language": "en",
+      "stage": 1,
+      "lemma": "new",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-229",
+      "language": "en",
+      "stage": 1,
+      "lemma": "old",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-237",
+      "language": "en",
+      "stage": 1,
+      "lemma": "busy",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-421",
+      "language": "en",
+      "stage": 1,
+      "lemma": "music",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-rain-noun",
+      "language": "en",
+      "stage": 1,
+      "lemma": "rain",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-245",
+      "language": "en",
+      "stage": 2,
+      "lemma": "clean",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-249",
+      "language": "en",
+      "stage": 2,
+      "lemma": "wash",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-257",
+      "language": "en",
+      "stage": 2,
+      "lemma": "carry",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-261",
+      "language": "en",
+      "stage": 2,
+      "lemma": "arrive",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-265",
+      "language": "en",
+      "stage": 2,
+      "lemma": "return",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-269",
+      "language": "en",
+      "stage": 2,
+      "lemma": "forget",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-281",
+      "language": "en",
+      "stage": 2,
+      "lemma": "teach",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-333",
+      "language": "en",
+      "stage": 2,
+      "lemma": "difficult",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-341",
+      "language": "en",
+      "stage": 2,
+      "lemma": "cheap",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-381",
+      "language": "en",
+      "stage": 2,
+      "lemma": "ticket",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-429",
+      "language": "en",
+      "stage": 2,
+      "lemma": "wind",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-433",
+      "language": "en",
+      "stage": 2,
+      "lemma": "snow",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-529",
+      "language": "en",
+      "stage": 2,
+      "lemma": "reason",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-537",
+      "language": "en",
+      "stage": 2,
+      "lemma": "mistake",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-917",
+      "language": "en",
+      "stage": 2,
+      "lemma": "peanut",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1005",
+      "language": "en",
+      "stage": 2,
+      "lemma": "rest",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1077",
+      "language": "en",
+      "stage": 2,
+      "lemma": "camp",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1113",
+      "language": "en",
+      "stage": 2,
+      "lemma": "example",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1117",
+      "language": "en",
+      "stage": 2,
+      "lemma": "invite",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-449",
+      "language": "en",
+      "stage": 3,
+      "lemma": "improve",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-457",
+      "language": "en",
+      "stage": 3,
+      "lemma": "cancel",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-465",
+      "language": "en",
+      "stage": 3,
+      "lemma": "replace",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-469",
+      "language": "en",
+      "stage": 3,
+      "lemma": "repair",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-485",
+      "language": "en",
+      "stage": 3,
+      "lemma": "worry",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-489",
+      "language": "en",
+      "stage": 3,
+      "lemma": "agree",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-493",
+      "language": "en",
+      "stage": 3,
+      "lemma": "refuse",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-497",
+      "language": "en",
+      "stage": 3,
+      "lemma": "suggest",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-505",
+      "language": "en",
+      "stage": 3,
+      "lemma": "support",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-509",
+      "language": "en",
+      "stage": 3,
+      "lemma": "share",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-513",
+      "language": "en",
+      "stage": 3,
+      "lemma": "avoid",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-517",
+      "language": "en",
+      "stage": 3,
+      "lemma": "allow",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-541",
+      "language": "en",
+      "stage": 3,
+      "lemma": "choice",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-545",
+      "language": "en",
+      "stage": 3,
+      "lemma": "experience",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-549",
+      "language": "en",
+      "stage": 3,
+      "lemma": "opinion",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-553",
+      "language": "en",
+      "stage": 3,
+      "lemma": "information",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-565",
+      "language": "en",
+      "stage": 3,
+      "lemma": "comfortable",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-569",
+      "language": "en",
+      "stage": 3,
+      "lemma": "convenient",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-573",
+      "language": "en",
+      "stage": 3,
+      "lemma": "available",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-601",
+      "language": "en",
+      "stage": 3,
+      "lemma": "practical",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-921",
+      "language": "en",
+      "stage": 3,
+      "lemma": "takeout",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1109",
+      "language": "en",
+      "stage": 3,
+      "lemma": "condition",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-intend",
+      "language": "en",
+      "stage": 4,
+      "lemma": "intend",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-617",
+      "language": "en",
+      "stage": 4,
+      "lemma": "adjust",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-625",
+      "language": "en",
+      "stage": 4,
+      "lemma": "recover",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-629",
+      "language": "en",
+      "stage": 4,
+      "lemma": "misunderstand",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-633",
+      "language": "en",
+      "stage": 4,
+      "lemma": "distinguish",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-637",
+      "language": "en",
+      "stage": 4,
+      "lemma": "confirm",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-641",
+      "language": "en",
+      "stage": 4,
+      "lemma": "postpone",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-653",
+      "language": "en",
+      "stage": 4,
+      "lemma": "priority",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-669",
+      "language": "en",
+      "stage": 4,
+      "lemma": "pressure",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-677",
+      "language": "en",
+      "stage": 4,
+      "lemma": "intention",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-701",
+      "language": "en",
+      "stage": 4,
+      "lemma": "reliable",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-709",
+      "language": "en",
+      "stage": 4,
+      "lemma": "accurate",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-713",
+      "language": "en",
+      "stage": 4,
+      "lemma": "reasonable",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-717",
+      "language": "en",
+      "stage": 4,
+      "lemma": "gradually",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-721",
+      "language": "en",
+      "stage": 4,
+      "lemma": "unexpectedly",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-745",
+      "language": "en",
+      "stage": 4,
+      "lemma": "maintain",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-801",
+      "language": "en",
+      "stage": 4,
+      "lemma": "relevant",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1121",
+      "language": "en",
+      "stage": 4,
+      "lemma": "consideration",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-697",
+      "language": "en",
+      "stage": 5,
+      "lemma": "tentative",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-725",
+      "language": "en",
+      "stage": 5,
+      "lemma": "evaluate",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-729",
+      "language": "en",
+      "stage": 5,
+      "lemma": "analyse",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-733",
+      "language": "en",
+      "stage": 5,
+      "lemma": "justify",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-737",
+      "language": "en",
+      "stage": 5,
+      "lemma": "clarify",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-741",
+      "language": "en",
+      "stage": 5,
+      "lemma": "assess",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-749",
+      "language": "en",
+      "stage": 5,
+      "lemma": "allocate",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-753",
+      "language": "en",
+      "stage": 5,
+      "lemma": "prioritize",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-761",
+      "language": "en",
+      "stage": 5,
+      "lemma": "assumption",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-765",
+      "language": "en",
+      "stage": 5,
+      "lemma": "implication",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-769",
+      "language": "en",
+      "stage": 5,
+      "lemma": "limitation",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-773",
+      "language": "en",
+      "stage": 5,
+      "lemma": "perspective",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-777",
+      "language": "en",
+      "stage": 5,
+      "lemma": "criterion",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-781",
+      "language": "en",
+      "stage": 5,
+      "lemma": "consensus",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-785",
+      "language": "en",
+      "stage": 5,
+      "lemma": "trade-off",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-789",
+      "language": "en",
+      "stage": 5,
+      "lemma": "sustainable",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-793",
+      "language": "en",
+      "stage": 5,
+      "lemma": "feasible",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-797",
+      "language": "en",
+      "stage": 5,
+      "lemma": "significant",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-805",
+      "language": "en",
+      "stage": 5,
+      "lemma": "ambiguous",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-809",
+      "language": "en",
+      "stage": 5,
+      "lemma": "comprehensive",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-841",
+      "language": "en",
+      "stage": 5,
+      "lemma": "infer",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-813",
+      "language": "en",
+      "stage": 6,
+      "lemma": "provisional",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-817",
+      "language": "en",
+      "stage": 6,
+      "lemma": "substantiate",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-821",
+      "language": "en",
+      "stage": 6,
+      "lemma": "corroborate",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-825",
+      "language": "en",
+      "stage": 6,
+      "lemma": "mitigate",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-829",
+      "language": "en",
+      "stage": 6,
+      "lemma": "exacerbate",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-833",
+      "language": "en",
+      "stage": 6,
+      "lemma": "reconcile",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-837",
+      "language": "en",
+      "stage": 6,
+      "lemma": "scrutinize",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-845",
+      "language": "en",
+      "stage": 6,
+      "lemma": "concede",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-849",
+      "language": "en",
+      "stage": 6,
+      "lemma": "differentiate",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-853",
+      "language": "en",
+      "stage": 6,
+      "lemma": "elicit",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-857",
+      "language": "en",
+      "stage": 6,
+      "lemma": "contingency",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-861",
+      "language": "en",
+      "stage": 6,
+      "lemma": "discrepancy",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-865",
+      "language": "en",
+      "stage": 6,
+      "lemma": "nuance",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-869",
+      "language": "en",
+      "stage": 6,
+      "lemma": "accountability",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-873",
+      "language": "en",
+      "stage": 6,
+      "lemma": "plausible",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-877",
+      "language": "en",
+      "stage": 6,
+      "lemma": "robust",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 1
+    },
+    {
+      "id": "en-c-881",
+      "language": "en",
+      "stage": 6,
+      "lemma": "empirical",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-885",
+      "language": "en",
+      "stage": 6,
+      "lemma": "inherent",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-889",
+      "language": "en",
+      "stage": 6,
+      "lemma": "negligible",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-893",
+      "language": "en",
+      "stage": 6,
+      "lemma": "mutually exclusive",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1125",
+      "language": "en",
+      "stage": 6,
+      "lemma": "inconsistency",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1129",
+      "language": "en",
+      "stage": 6,
+      "lemma": "extrapolate",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1133",
+      "language": "en",
+      "stage": 6,
+      "lemma": "arbitrary",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1137",
+      "language": "en",
+      "stage": 6,
+      "lemma": "rigorous",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1141",
+      "language": "en",
+      "stage": 6,
+      "lemma": "refute",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1145",
+      "language": "en",
+      "stage": 6,
+      "lemma": "inference",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1149",
+      "language": "en",
+      "stage": 6,
+      "lemma": "reciprocity",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1153",
+      "language": "en",
+      "stage": 6,
+      "lemma": "convergence",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1157",
+      "language": "en",
+      "stage": 6,
+      "lemma": "divergence",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1161",
+      "language": "en",
+      "stage": 6,
+      "lemma": "precondition",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1165",
+      "language": "en",
+      "stage": 6,
+      "lemma": "falsifiable",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "en-c-1169",
+      "language": "en",
+      "stage": 6,
+      "lemma": "coherence",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-011",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "ご飯",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-015",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "パン",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-019",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "牛乳",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-023",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "卵",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-031",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "砂糖",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-035",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "果物",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-039",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "野菜",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-043",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "肉",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-047",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "魚",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-051",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "朝ご飯",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-055",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "昼ご飯",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-067",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "部屋",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-071",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "ドア",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-079",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "テーブル",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-083",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "椅子",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-087",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "本",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-091",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "電話",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-099",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "家族",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-103",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "子供",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-107",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "先生",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-111",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "学生",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-115",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "学校",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-127",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "昨日",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-131",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "朝",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-135",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "夜",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-147",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "週",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-151",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "お金",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-163",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "飲む",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-167",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "買う",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-171",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "読む",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-175",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "書く",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-187",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "寝る",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-199",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "使う",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-203",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "開ける",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-207",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "閉める",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-219",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "大きい",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-227",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "新しい",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-231",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "古い",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-239",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "忙しい",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-251",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "洗う",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-343",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "安い",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-383",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "切符",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-423",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "音楽",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-431",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "風",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-435",
+      "language": "ja",
+      "stage": 1,
+      "lemma": "雪",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-059",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "夕食",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-243",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "料理する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-247",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "掃除する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-255",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "持ってくる",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-259",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "運ぶ",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-271",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "忘れる",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-275",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "覚えている",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-279",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "習う",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-283",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "教える",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-287",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "選ぶ",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-291",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "変える",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-303",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "終える",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-311",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "試す",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-331",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "簡単",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-351",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "甘い",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-415",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "休憩",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-455",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "決める",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-463",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "予約する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-487",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "心配する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-531",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "理由",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-539",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "間違い",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-691",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "軽い",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-899",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "知る",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1039",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "楽しむ",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1063",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "返事する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1079",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "キャンプ",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1107",
+      "language": "ja",
+      "stage": 2,
+      "lemma": "海外",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-kitai",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "期待する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 2
+    },
+    {
+      "id": "ja-c-443",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "担当する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-447",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "集中する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-451",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "改善する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-459",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "取り消す",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-471",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "修理する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-475",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "気づく",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-483",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "くつろぐ",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-491",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "賛成する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-495",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "断る",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-499",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "提案する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-503",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "好む",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-507",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "支える",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-511",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "共有する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-515",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "避ける",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-519",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "許す",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-543",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "選択",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-547",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "経験",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-555",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "情報",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-567",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "快適",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-575",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "利用できる",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-583",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "緊張する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-587",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "がっかりする",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-599",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "個人的",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-623",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "約束する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-639",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "確かめる",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-687",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "きつい",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-711",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "正確",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-723",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "意外に",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-799",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "重要",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-907",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "締め切りになる",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-927",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "単純",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1043",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "初心者",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1099",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "費用",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-2215",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "誘い",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-2329",
+      "language": "ja",
+      "stage": 3,
+      "lemma": "お願い事",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-579",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "柔軟",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-603",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "実用的",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-619",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "調整する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-627",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "回復する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-631",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "誤解する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-635",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "区別する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-643",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "延期する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-647",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "代案",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-655",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "優先事項",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-667",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "損傷",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-679",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "意図",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-703",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "信頼できる",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-707",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "効率的",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-719",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "徐々に",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-727",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "評価する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-731",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "分析する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-739",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "明確にする",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-747",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "維持する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-755",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "優先する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-759",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "証拠",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-771",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "限界",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-775",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "観点",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-779",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "基準",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-803",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "関連する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-807",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "曖昧",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-847",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "認める",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-855",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "引き出す",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-867",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "ニュアンス",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1015",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "取り戻す",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1103",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "申し出",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-2253",
+      "language": "ja",
+      "stage": 4,
+      "lemma": "気遣い",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-479",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "悟る",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 1
+    },
+    {
+      "id": "ja-c-527",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "懸念",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-695",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "絶え間ない",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-715",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "妥当",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-735",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "正当化する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-743",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "査定する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-751",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "配分する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-763",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "仮定",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-783",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "合意",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-787",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "トレードオフ",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-791",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "持続可能",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-795",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "実行可能",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-811",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "包括的",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-815",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "暫定的",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-819",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "裏付ける",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-827",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "緩和する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-831",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "悪化させる",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-835",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "両立させる",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-843",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "推論する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-851",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "差別化する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-863",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "食い違い",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-875",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "もっともらしい",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-891",
+      "language": "ja",
+      "stage": 5,
+      "lemma": "無視できる",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-767",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "含意",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-823",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "傍証する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-839",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "精査する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-859",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "不測の事態",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-871",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "説明責任",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-879",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "堅牢",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-883",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "実証的",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-887",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "内在する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-895",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "相互排他的",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1127",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "齟齬",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1131",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "外挿する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1135",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "恣意的",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1139",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "厳密",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1143",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "反証する",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1147",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "推論",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1151",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "互恵性",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1155",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "収束",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1159",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "乖離",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1163",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "前提条件",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1167",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "反証可能",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    },
+    {
+      "id": "ja-c-1171",
+      "language": "ja",
+      "stage": 6,
+      "lemma": "整合性",
+      "topics": [],
+      "example_count": 1,
+      "relation_count": 0
+    }
+  ],
+  "high_reuse": [
+    {
+      "id": "en-eat",
+      "language": "en",
+      "lemma": "eat",
+      "lesson_uses": 3,
+      "expression_uses": 5
+    },
+    {
+      "id": "en-tomorrow",
+      "language": "en",
+      "lemma": "tomorrow",
+      "lesson_uses": 4,
+      "expression_uses": 6
+    },
+    {
+      "id": "en-go",
+      "language": "en",
+      "lemma": "go",
+      "lesson_uses": 8,
+      "expression_uses": 9
+    },
+    {
+      "id": "en-c-137",
+      "language": "en",
+      "lemma": "time",
+      "lesson_uses": 3,
+      "expression_uses": 7
+    },
+    {
+      "id": "en-c-957",
+      "language": "en",
+      "lemma": "minute",
+      "lesson_uses": 3,
+      "expression_uses": 4
+    },
+    {
+      "id": "en-c-3172",
+      "language": "en",
+      "lemma": "do",
+      "lesson_uses": 7,
+      "expression_uses": 13
+    },
+    {
+      "id": "en-c-3176",
+      "language": "en",
+      "lemma": "thanks",
+      "lesson_uses": 3,
+      "expression_uses": 6
+    },
+    {
+      "id": "en-yet",
+      "language": "en",
+      "lemma": "yet",
+      "lesson_uses": 4,
+      "expression_uses": 4
+    },
+    {
+      "id": "en-plan",
+      "language": "en",
+      "lemma": "plan",
+      "lesson_uses": 3,
+      "expression_uses": 5
+    },
+    {
+      "id": "en-leave",
+      "language": "en",
+      "lemma": "leave",
+      "lesson_uses": 4,
+      "expression_uses": 6
+    },
+    {
+      "id": "en-c-289",
+      "language": "en",
+      "lemma": "change",
+      "lesson_uses": 3,
+      "expression_uses": 3
+    },
+    {
+      "id": "en-c-293",
+      "language": "en",
+      "lemma": "check",
+      "lesson_uses": 3,
+      "expression_uses": 4
+    },
+    {
+      "id": "en-c-313",
+      "language": "en",
+      "lemma": "need",
+      "lesson_uses": 6,
+      "expression_uses": 8
+    },
+    {
+      "id": "en-expect",
+      "language": "en",
+      "lemma": "expect",
+      "lesson_uses": 3,
+      "expression_uses": 4
+    },
+    {
+      "id": "en-c-1085",
+      "language": "en",
+      "lemma": "up in the air",
+      "lesson_uses": 3,
+      "expression_uses": 1
+    },
+    {
+      "id": "ja-taberu",
+      "language": "ja",
+      "lemma": "食べる",
+      "lesson_uses": 4,
+      "expression_uses": 6
+    },
+    {
+      "id": "ja-mada",
+      "language": "ja",
+      "lemma": "まだ",
+      "lesson_uses": 5,
+      "expression_uses": 11
+    },
+    {
+      "id": "ja-iku",
+      "language": "ja",
+      "lemma": "行く",
+      "lesson_uses": 6,
+      "expression_uses": 11
+    },
+    {
+      "id": "ja-ashita",
+      "language": "ja",
+      "lemma": "明日",
+      "lesson_uses": 4,
+      "expression_uses": 6
+    },
+    {
+      "id": "ja-daijoubu",
+      "language": "ja",
+      "lemma": "大丈夫",
+      "lesson_uses": 4,
+      "expression_uses": 4
+    },
+    {
+      "id": "ja-c-063",
+      "language": "ja",
+      "lemma": "家",
+      "lesson_uses": 3,
+      "expression_uses": 4
+    },
+    {
+      "id": "ja-c-123",
+      "language": "ja",
+      "lemma": "今日",
+      "lesson_uses": 3,
+      "expression_uses": 10
+    },
+    {
+      "id": "ja-c-139",
+      "language": "ja",
+      "lemma": "時間",
+      "lesson_uses": 3,
+      "expression_uses": 2
+    },
+    {
+      "id": "ja-c-235",
+      "language": "ja",
+      "lemma": "いい",
+      "lesson_uses": 4,
+      "expression_uses": 22
+    },
+    {
+      "id": "ja-c-3199",
+      "language": "ja",
+      "lemma": "見る",
+      "lesson_uses": 3,
+      "expression_uses": 4
+    },
+    {
+      "id": "ja-yotei",
+      "language": "ja",
+      "lemma": "予定",
+      "lesson_uses": 6,
+      "expression_uses": 8
+    },
+    {
+      "id": "ja-dekiru",
+      "language": "ja",
+      "lemma": "できる",
+      "lesson_uses": 4,
+      "expression_uses": 4
+    },
+    {
+      "id": "ja-tetsudau",
+      "language": "ja",
+      "lemma": "手伝う",
+      "lesson_uses": 3,
+      "expression_uses": 1
+    },
+    {
+      "id": "ja-c-295",
+      "language": "ja",
+      "lemma": "確認する",
+      "lesson_uses": 3,
+      "expression_uses": 6
+    },
+    {
+      "id": "ja-c-315",
+      "language": "ja",
+      "lemma": "必要",
+      "lesson_uses": 4,
+      "expression_uses": 4
+    },
+    {
+      "id": "ja-c-371",
+      "language": "ja",
+      "lemma": "週末",
+      "lesson_uses": 3,
+      "expression_uses": 2
+    },
+    {
+      "id": "ja-c-959",
+      "language": "ja",
+      "lemma": "分",
+      "lesson_uses": 3,
+      "expression_uses": 5
+    },
+    {
+      "id": "ja-kyuuni",
+      "language": "ja",
+      "lemma": "急に",
+      "lesson_uses": 3,
+      "expression_uses": 1
+    },
+    {
+      "id": "ja-c-535",
+      "language": "ja",
+      "lemma": "結果",
+      "lesson_uses": 3,
+      "expression_uses": 3
+    },
+    {
+      "id": "ja-c-1067",
+      "language": "ja",
+      "lemma": "助かる",
+      "lesson_uses": 4,
+      "expression_uses": 2
+    },
+    {
+      "id": "ja-c-3207",
+      "language": "ja",
+      "lemma": "甲斐",
+      "lesson_uses": 3,
+      "expression_uses": 2
+    }
+  ],
+  "canonical_duplicates": [
+    {
+      "language": "en",
+      "normalized_lemma": "help",
+      "count": 2,
+      "ids": "en-help | en-c-2285",
+      "stages": "1 | 1"
+    },
+    {
+      "language": "en",
+      "normalized_lemma": "plan",
+      "count": 2,
+      "ids": "en-plan | en-c-2361",
+      "stages": "2 | 2"
+    },
+    {
+      "language": "en",
+      "normalized_lemma": "rain",
+      "count": 2,
+      "ids": "en-rain | en-c-rain-noun",
+      "stages": "1 | 1"
+    },
+    {
+      "language": "en",
+      "normalized_lemma": "work",
+      "count": 2,
+      "ids": "en-c-117 | en-c-work-verb",
+      "stages": "1 | 1"
+    }
+  ],
+  "missing_high_value_candidates": [
+    {
+      "language": "en",
+      "candidate": "allergy",
+      "meaning_semantic_scope": "过敏；可用于说明食物或药物风险",
+      "recommended_stage": 2,
+      "topic": "health",
+      "part_of_speech": "noun",
+      "why_needed": "餐厅和医疗表达缺安全关键信息",
+      "existing_curriculum_gap": "餐厅和医疗表达缺安全关键信息",
+      "likely_lesson_use": "en-s4-l3",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "dietary restriction",
+      "meaning_semantic_scope": "饮食限制的上位概念",
+      "recommended_stage": 3,
+      "topic": "food",
+      "part_of_speech": "noun phrase",
+      "why_needed": "现有点餐缺饮食限制",
+      "existing_curriculum_gap": "现有点餐缺饮食限制",
+      "likely_lesson_use": "en-s4-l3",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "ingredient",
+      "meaning_semantic_scope": "配料/成分",
+      "recommended_stage": 2,
+      "topic": "food",
+      "part_of_speech": "noun",
+      "why_needed": "无法询问菜品内容",
+      "existing_curriculum_gap": "无法询问菜品内容",
+      "likely_lesson_use": "en-s4-l3",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "vegetarian",
+      "meaning_semantic_scope": "素食者/素食的",
+      "recommended_stage": 2,
+      "topic": "food",
+      "part_of_speech": "noun/adjective",
+      "why_needed": "缺常见饮食偏好",
+      "existing_curriculum_gap": "缺常见饮食偏好",
+      "likely_lesson_use": "en-s4-l3",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "bill",
+      "meaning_semantic_scope": "餐厅账单",
+      "recommended_stage": 2,
+      "topic": "food",
+      "part_of_speech": "noun",
+      "why_needed": "完整点餐任务缺结账词汇",
+      "existing_curriculum_gap": "完整点餐任务缺结账词汇",
+      "likely_lesson_use": "en-s4-l3",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "refill",
+      "meaning_semantic_scope": "续杯/补充",
+      "recommended_stage": 3,
+      "topic": "food",
+      "part_of_speech": "noun/verb",
+      "why_needed": "餐厅 follow-up 能力薄",
+      "existing_curriculum_gap": "餐厅 follow-up 能力薄",
+      "likely_lesson_use": "en-s4-l3",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "refund",
+      "meaning_semantic_scope": "退款",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "part_of_speech": "noun/verb",
+      "why_needed": "购物课止于选择，缺售后",
+      "existing_curriculum_gap": "购物课止于选择，缺售后",
+      "likely_lesson_use": "NEW-en-s3-returns",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "exchange",
+      "meaning_semantic_scope": "换货/交换",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "part_of_speech": "noun/verb",
+      "why_needed": "缺退换货协商",
+      "existing_curriculum_gap": "缺退换货协商",
+      "likely_lesson_use": "NEW-en-s3-returns",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "aisle",
+      "meaning_semantic_scope": "超市通道",
+      "recommended_stage": 2,
+      "topic": "shopping",
+      "part_of_speech": "noun",
+      "why_needed": "没有超市找货语境",
+      "existing_curriculum_gap": "没有超市找货语境",
+      "likely_lesson_use": "NEW-en-s2-supermarket",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "checkout counter",
+      "meaning_semantic_scope": "收银台",
+      "recommended_stage": 2,
+      "topic": "shopping",
+      "part_of_speech": "noun phrase",
+      "why_needed": "缺超市支付任务",
+      "existing_curriculum_gap": "缺超市支付任务",
+      "likely_lesson_use": "NEW-en-s2-supermarket",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "contactless payment",
+      "meaning_semantic_scope": "非接触式支付",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "part_of_speech": "noun phrase",
+      "why_needed": "支付词汇过窄",
+      "existing_curriculum_gap": "支付词汇过窄",
+      "likely_lesson_use": "en-s2-l2",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "fever",
+      "meaning_semantic_scope": "发烧",
+      "recommended_stage": 2,
+      "topic": "health",
+      "part_of_speech": "noun",
+      "why_needed": "常见症状缺口",
+      "existing_curriculum_gap": "常见症状缺口",
+      "likely_lesson_use": "NEW-en-s3-clinic",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "cough",
+      "meaning_semantic_scope": "咳嗽",
+      "recommended_stage": 2,
+      "topic": "health",
+      "part_of_speech": "noun/verb",
+      "why_needed": "常见症状缺口",
+      "existing_curriculum_gap": "常见症状缺口",
+      "likely_lesson_use": "NEW-en-s3-clinic",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "dizzy",
+      "meaning_semantic_scope": "头晕的",
+      "recommended_stage": 3,
+      "topic": "health",
+      "part_of_speech": "adjective",
+      "why_needed": "症状严重度表达不足",
+      "existing_curriculum_gap": "症状严重度表达不足",
+      "likely_lesson_use": "NEW-en-s3-clinic",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "pharmacy",
+      "meaning_semantic_scope": "药房",
+      "recommended_stage": 2,
+      "topic": "health",
+      "part_of_speech": "noun",
+      "why_needed": "缺求药场景",
+      "existing_curriculum_gap": "缺求药场景",
+      "likely_lesson_use": "NEW-en-s3-clinic",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "prescription",
+      "meaning_semantic_scope": "处方",
+      "recommended_stage": 3,
+      "topic": "health",
+      "part_of_speech": "noun",
+      "why_needed": "医疗后续任务缺失",
+      "existing_curriculum_gap": "医疗后续任务缺失",
+      "likely_lesson_use": "NEW-en-s3-clinic",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "time slot",
+      "meaning_semantic_scope": "可预约的时间段",
+      "recommended_stage": 2,
+      "topic": "time",
+      "part_of_speech": "noun phrase",
+      "why_needed": "改约和取消缺可选时段表达",
+      "existing_curriculum_gap": "改约和取消缺可选时段表达",
+      "likely_lesson_use": "NEW-en-s3-appointment",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "landlord",
+      "meaning_semantic_scope": "房东",
+      "recommended_stage": 3,
+      "topic": "home",
+      "part_of_speech": "noun",
+      "why_needed": "租房角色缺失",
+      "existing_curriculum_gap": "租房角色缺失",
+      "likely_lesson_use": "NEW-en-s4-renting",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "tenant",
+      "meaning_semantic_scope": "租客",
+      "recommended_stage": 3,
+      "topic": "home",
+      "part_of_speech": "noun",
+      "why_needed": "租房角色缺失",
+      "existing_curriculum_gap": "租房角色缺失",
+      "likely_lesson_use": "NEW-en-s4-renting",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "rent",
+      "meaning_semantic_scope": "租金；租用",
+      "recommended_stage": 3,
+      "topic": "home",
+      "part_of_speech": "noun/verb",
+      "why_needed": "住房支付能力缺失",
+      "existing_curriculum_gap": "住房支付能力缺失",
+      "likely_lesson_use": "NEW-en-s4-renting",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "deposit",
+      "meaning_semantic_scope": "押金/定金",
+      "recommended_stage": 4,
+      "topic": "home",
+      "part_of_speech": "noun",
+      "why_needed": "租房协商缺关键概念",
+      "existing_curriculum_gap": "租房协商缺关键概念",
+      "likely_lesson_use": "NEW-en-s4-renting",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "lease",
+      "meaning_semantic_scope": "租约",
+      "recommended_stage": 4,
+      "topic": "home",
+      "part_of_speech": "noun",
+      "why_needed": "住房合同语境缺失",
+      "existing_curriculum_gap": "住房合同语境缺失",
+      "likely_lesson_use": "NEW-en-s4-renting",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "maintenance",
+      "meaning_semantic_scope": "维护/报修",
+      "recommended_stage": 3,
+      "topic": "home",
+      "part_of_speech": "noun",
+      "why_needed": "家庭课没有报修链",
+      "existing_curriculum_gap": "家庭课没有报修链",
+      "likely_lesson_use": "NEW-en-s4-renting",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "bank transfer",
+      "meaning_semantic_scope": "银行转账",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "part_of_speech": "noun phrase",
+      "why_needed": "银行/支付能力未覆盖",
+      "existing_curriculum_gap": "银行/支付能力未覆盖",
+      "likely_lesson_use": "en-s2-l2",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "account balance",
+      "meaning_semantic_scope": "账户余额",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "part_of_speech": "noun phrase",
+      "why_needed": "无法处理余额问题",
+      "existing_curriculum_gap": "无法处理余额问题",
+      "likely_lesson_use": "en-s2-l2",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "service fee",
+      "meaning_semantic_scope": "服务费",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "part_of_speech": "noun phrase",
+      "why_needed": "费用澄清能力缺失",
+      "existing_curriculum_gap": "费用澄清能力缺失",
+      "likely_lesson_use": "en-s2-l2",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "PIN",
+      "meaning_semantic_scope": "个人识别码",
+      "recommended_stage": 2,
+      "topic": "shopping",
+      "part_of_speech": "noun",
+      "why_needed": "支付故障语境缺词",
+      "existing_curriculum_gap": "支付故障语境缺词",
+      "likely_lesson_use": "en-s2-l2",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "charger",
+      "meaning_semantic_scope": "充电器",
+      "recommended_stage": 2,
+      "topic": "help",
+      "part_of_speech": "noun",
+      "why_needed": "手机故障求助缺基本物件",
+      "existing_curriculum_gap": "手机故障求助缺基本物件",
+      "likely_lesson_use": "NEW-en-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "Wi-Fi",
+      "meaning_semantic_scope": "无线网络",
+      "recommended_stage": 2,
+      "topic": "help",
+      "part_of_speech": "noun",
+      "why_needed": "数字生活主题缺失",
+      "existing_curriculum_gap": "数字生活主题缺失",
+      "likely_lesson_use": "NEW-en-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "password",
+      "meaning_semantic_scope": "密码",
+      "recommended_stage": 2,
+      "topic": "help",
+      "part_of_speech": "noun",
+      "why_needed": "登录求助缺核心词",
+      "existing_curriculum_gap": "登录求助缺核心词",
+      "likely_lesson_use": "NEW-en-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "signal",
+      "meaning_semantic_scope": "信号",
+      "recommended_stage": 3,
+      "topic": "help",
+      "part_of_speech": "noun",
+      "why_needed": "网络问题诊断缺词",
+      "existing_curriculum_gap": "网络问题诊断缺词",
+      "likely_lesson_use": "NEW-en-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "connection",
+      "meaning_semantic_scope": "连接",
+      "recommended_stage": 3,
+      "topic": "help",
+      "part_of_speech": "noun",
+      "why_needed": "网络问题诊断缺词",
+      "existing_curriculum_gap": "网络问题诊断缺词",
+      "likely_lesson_use": "NEW-en-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "restart",
+      "meaning_semantic_scope": "重启",
+      "recommended_stage": 2,
+      "topic": "help",
+      "part_of_speech": "verb/noun",
+      "why_needed": "缺基本故障排除动作",
+      "existing_curriculum_gap": "缺基本故障排除动作",
+      "likely_lesson_use": "NEW-en-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "platform",
+      "meaning_semantic_scope": "站台",
+      "recommended_stage": 2,
+      "topic": "travel",
+      "part_of_speech": "noun",
+      "why_needed": "交通课缺站内导航",
+      "existing_curriculum_gap": "交通课缺站内导航",
+      "likely_lesson_use": "en-s2-l3",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "delay",
+      "meaning_semantic_scope": "延误",
+      "recommended_stage": 2,
+      "topic": "travel",
+      "part_of_speech": "noun/verb",
+      "why_needed": "行程变化课缺核心词",
+      "existing_curriculum_gap": "行程变化课缺核心词",
+      "likely_lesson_use": "en-s5-l2",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "traffic jam",
+      "meaning_semantic_scope": "堵车",
+      "recommended_stage": 2,
+      "topic": "travel",
+      "part_of_speech": "noun phrase",
+      "why_needed": "驾车语境未覆盖",
+      "existing_curriculum_gap": "驾车语境未覆盖",
+      "likely_lesson_use": "en-s5-l2",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "seat belt",
+      "meaning_semantic_scope": "安全带",
+      "recommended_stage": 2,
+      "topic": "travel",
+      "part_of_speech": "noun phrase",
+      "why_needed": "驾驶安全功能缺失",
+      "existing_curriculum_gap": "驾驶安全功能缺失",
+      "likely_lesson_use": "en-s5-l2",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "parking",
+      "meaning_semantic_scope": "停车/停车位",
+      "recommended_stage": 2,
+      "topic": "travel",
+      "part_of_speech": "noun",
+      "why_needed": "驾车任务缺失",
+      "existing_curriculum_gap": "驾车任务缺失",
+      "likely_lesson_use": "en-s5-l2",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "check-in",
+      "meaning_semantic_scope": "入住/报到手续",
+      "recommended_stage": 3,
+      "topic": "travel",
+      "part_of_speech": "noun",
+      "why_needed": "住宿任务未覆盖",
+      "existing_curriculum_gap": "住宿任务未覆盖",
+      "likely_lesson_use": "NEW-en-s4-accommodation",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "key card",
+      "meaning_semantic_scope": "房卡",
+      "recommended_stage": 2,
+      "topic": "travel",
+      "part_of_speech": "noun phrase",
+      "why_needed": "住宿问题处理缺词",
+      "existing_curriculum_gap": "住宿问题处理缺词",
+      "likely_lesson_use": "NEW-en-s4-accommodation",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "accommodation",
+      "meaning_semantic_scope": "住宿",
+      "recommended_stage": 4,
+      "topic": "travel",
+      "part_of_speech": "noun",
+      "why_needed": "旅行范围偏交通",
+      "existing_curriculum_gap": "旅行范围偏交通",
+      "likely_lesson_use": "NEW-en-s4-accommodation",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "colleague",
+      "meaning_semantic_scope": "同事",
+      "recommended_stage": 2,
+      "topic": "school",
+      "part_of_speech": "noun",
+      "why_needed": "学校/工作主题缺职场角色",
+      "existing_curriculum_gap": "学校/工作主题缺职场角色",
+      "likely_lesson_use": "NEW-en-s3-workplace",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "shift",
+      "meaning_semantic_scope": "班次",
+      "recommended_stage": 3,
+      "topic": "school",
+      "part_of_speech": "noun",
+      "why_needed": "缺工作排班能力",
+      "existing_curriculum_gap": "缺工作排班能力",
+      "likely_lesson_use": "NEW-en-s3-workplace",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "salary",
+      "meaning_semantic_scope": "工资",
+      "recommended_stage": 3,
+      "topic": "school",
+      "part_of_speech": "noun",
+      "why_needed": "工作条件表达不足",
+      "existing_curriculum_gap": "工作条件表达不足",
+      "likely_lesson_use": "NEW-en-s3-workplace",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "interview",
+      "meaning_semantic_scope": "面试/采访",
+      "recommended_stage": 3,
+      "topic": "school",
+      "part_of_speech": "noun/verb",
+      "why_needed": "大学到工作过渡缺失",
+      "existing_curriculum_gap": "大学到工作过渡缺失",
+      "likely_lesson_use": "NEW-en-s3-workplace",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "en",
+      "candidate": "performance review",
+      "meaning_semantic_scope": "绩效评估/工作回顾",
+      "recommended_stage": 3,
+      "topic": "school",
+      "part_of_speech": "noun phrase",
+      "why_needed": "任务协作缺正式反馈语境",
+      "existing_curriculum_gap": "任务协作缺正式反馈语境",
+      "likely_lesson_use": "NEW-en-s3-workplace",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate inflection, sense and multiword boundary"
+    },
+    {
+      "language": "ja",
+      "candidate": "アレルギー",
+      "reading": "アレルギー",
+      "lexical_type": "外来语名词",
+      "meaning_semantic_scope": "过敏；说明食物或药物风险",
+      "recommended_stage": 2,
+      "topic": "health",
+      "why_needed": "饮食与医疗缺安全关键信息",
+      "existing_curriculum_gap": "饮食与医疗缺安全关键信息",
+      "likely_lesson_use": "ja-s3-l4",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "食事制限",
+      "reading": "しょくじせいげん",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "饮食限制",
+      "recommended_stage": 3,
+      "topic": "food",
+      "why_needed": "点餐缺饮食限制",
+      "existing_curriculum_gap": "点餐缺饮食限制",
+      "likely_lesson_use": "NEW-ja-s2-restaurant",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "原材料",
+      "reading": "げんざいりょう",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "原材料/配料",
+      "recommended_stage": 3,
+      "topic": "food",
+      "why_needed": "无法询问食品成分",
+      "existing_curriculum_gap": "无法询问食品成分",
+      "likely_lesson_use": "NEW-ja-s2-restaurant",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "ベジタリアン",
+      "reading": "ベジタリアン",
+      "lexical_type": "外来语名词",
+      "meaning_semantic_scope": "素食者",
+      "recommended_stage": 2,
+      "topic": "food",
+      "why_needed": "缺常见饮食偏好",
+      "existing_curriculum_gap": "缺常见饮食偏好",
+      "likely_lesson_use": "NEW-ja-s2-restaurant",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "会計",
+      "reading": "かいけい",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "结账/账款",
+      "recommended_stage": 2,
+      "topic": "food",
+      "why_needed": "餐饮任务缺结账",
+      "existing_curriculum_gap": "餐饮任务缺结账",
+      "likely_lesson_use": "NEW-ja-s2-restaurant",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "おかわり",
+      "reading": "おかわり",
+      "lexical_type": "和语名词",
+      "meaning_semantic_scope": "再来一份/续杯",
+      "recommended_stage": 2,
+      "topic": "food",
+      "why_needed": "餐厅 follow-up 薄弱",
+      "existing_curriculum_gap": "餐厅 follow-up 薄弱",
+      "likely_lesson_use": "NEW-ja-s2-restaurant",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "返品",
+      "reading": "へんぴん",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "退货",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "why_needed": "购物课止于购买",
+      "existing_curriculum_gap": "购物课止于购买",
+      "likely_lesson_use": "NEW-ja-s3-returns",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "交換",
+      "reading": "こうかん",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "换货/交换",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "why_needed": "缺售后协商",
+      "existing_curriculum_gap": "缺售后协商",
+      "likely_lesson_use": "NEW-ja-s3-returns",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "通路",
+      "reading": "つうろ",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "通道",
+      "recommended_stage": 2,
+      "topic": "shopping",
+      "why_needed": "没有超市找货语境",
+      "existing_curriculum_gap": "没有超市找货语境",
+      "likely_lesson_use": "NEW-ja-s2-supermarket",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "レジ",
+      "reading": "レジ",
+      "lexical_type": "外来语名词",
+      "meaning_semantic_scope": "收银台/收银机",
+      "recommended_stage": 1,
+      "topic": "shopping",
+      "why_needed": "缺超市支付任务",
+      "existing_curriculum_gap": "缺超市支付任务",
+      "likely_lesson_use": "NEW-ja-s2-supermarket",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "タッチ決済",
+      "reading": "タッチけっさい",
+      "lexical_type": "复合名词",
+      "meaning_semantic_scope": "非接触式支付",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "why_needed": "支付词汇过窄",
+      "existing_curriculum_gap": "支付词汇过窄",
+      "likely_lesson_use": "ja-s2-l4",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "発熱",
+      "reading": "はつねつ",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "发热",
+      "recommended_stage": 2,
+      "topic": "health",
+      "why_needed": "常见症状缺口",
+      "existing_curriculum_gap": "常见症状缺口",
+      "likely_lesson_use": "NEW-ja-s3-clinic",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "咳",
+      "reading": "せき",
+      "lexical_type": "和语名词",
+      "meaning_semantic_scope": "咳嗽",
+      "recommended_stage": 2,
+      "topic": "health",
+      "why_needed": "常见症状缺口",
+      "existing_curriculum_gap": "常见症状缺口",
+      "likely_lesson_use": "NEW-ja-s3-clinic",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "めまい",
+      "reading": "めまい",
+      "lexical_type": "和语名词",
+      "meaning_semantic_scope": "眩晕",
+      "recommended_stage": 3,
+      "topic": "health",
+      "why_needed": "症状描述深度不足",
+      "existing_curriculum_gap": "症状描述深度不足",
+      "likely_lesson_use": "NEW-ja-s3-clinic",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "薬局",
+      "reading": "やっきょく",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "药房",
+      "recommended_stage": 2,
+      "topic": "health",
+      "why_needed": "缺求药场景",
+      "existing_curriculum_gap": "缺求药场景",
+      "likely_lesson_use": "NEW-ja-s3-clinic",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "処方箋",
+      "reading": "しょほうせん",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "处方",
+      "recommended_stage": 3,
+      "topic": "health",
+      "why_needed": "医疗后续任务缺失",
+      "existing_curriculum_gap": "医疗后续任务缺失",
+      "likely_lesson_use": "NEW-ja-s3-clinic",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "診察",
+      "reading": "しんさつ",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "诊察",
+      "recommended_stage": 3,
+      "topic": "health",
+      "why_needed": "缺就诊流程",
+      "existing_curriculum_gap": "缺就诊流程",
+      "likely_lesson_use": "NEW-ja-s3-clinic",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "大家",
+      "reading": "おおや",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "房东",
+      "recommended_stage": 3,
+      "topic": "home",
+      "why_needed": "租房角色缺失",
+      "existing_curriculum_gap": "租房角色缺失",
+      "likely_lesson_use": "NEW-ja-s4-renting",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "借主",
+      "reading": "かりぬし",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "承租人",
+      "recommended_stage": 4,
+      "topic": "home",
+      "why_needed": "租房角色缺失",
+      "existing_curriculum_gap": "租房角色缺失",
+      "likely_lesson_use": "NEW-ja-s4-renting",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "家賃",
+      "reading": "やちん",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "房租",
+      "recommended_stage": 3,
+      "topic": "home",
+      "why_needed": "住房支付能力缺失",
+      "existing_curriculum_gap": "住房支付能力缺失",
+      "likely_lesson_use": "NEW-ja-s4-renting",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "敷金",
+      "reading": "しききん",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "押金",
+      "recommended_stage": 4,
+      "topic": "home",
+      "why_needed": "租房协商缺关键概念",
+      "existing_curriculum_gap": "租房协商缺关键概念",
+      "likely_lesson_use": "NEW-ja-s4-renting",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "賃貸契約",
+      "reading": "ちんたいけいやく",
+      "lexical_type": "复合名词",
+      "meaning_semantic_scope": "租赁合同",
+      "recommended_stage": 4,
+      "topic": "home",
+      "why_needed": "住房合同语境缺失",
+      "existing_curriculum_gap": "住房合同语境缺失",
+      "likely_lesson_use": "NEW-ja-s4-renting",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "修理",
+      "reading": "しゅうり",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "修理/报修",
+      "recommended_stage": 2,
+      "topic": "home",
+      "why_needed": "家庭课没有报修链",
+      "existing_curriculum_gap": "家庭课没有报修链",
+      "likely_lesson_use": "NEW-ja-s4-renting",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "振込",
+      "reading": "ふりこみ",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "转账/汇款",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "why_needed": "银行/支付能力未覆盖",
+      "existing_curriculum_gap": "银行/支付能力未覆盖",
+      "likely_lesson_use": "ja-s2-l4",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "残高",
+      "reading": "ざんだか",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "余额",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "why_needed": "无法处理余额问题",
+      "existing_curriculum_gap": "无法处理余额问题",
+      "likely_lesson_use": "ja-s2-l4",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "手数料",
+      "reading": "てすうりょう",
+      "lexical_type": "复合名词",
+      "meaning_semantic_scope": "手续费",
+      "recommended_stage": 3,
+      "topic": "shopping",
+      "why_needed": "费用澄清能力缺失",
+      "existing_curriculum_gap": "费用澄清能力缺失",
+      "likely_lesson_use": "ja-s2-l4",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "暗証番号",
+      "reading": "あんしょうばんごう",
+      "lexical_type": "复合名词",
+      "meaning_semantic_scope": "密码/PIN",
+      "recommended_stage": 2,
+      "topic": "shopping",
+      "why_needed": "支付故障语境缺词",
+      "existing_curriculum_gap": "支付故障语境缺词",
+      "likely_lesson_use": "ja-s2-l4",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "充電器",
+      "reading": "じゅうでんき",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "充电器",
+      "recommended_stage": 2,
+      "topic": "help",
+      "why_needed": "手机故障求助缺物件",
+      "existing_curriculum_gap": "手机故障求助缺物件",
+      "likely_lesson_use": "NEW-ja-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "Wi-Fi",
+      "reading": "ワイファイ",
+      "lexical_type": "外来语名词",
+      "meaning_semantic_scope": "无线网络",
+      "recommended_stage": 2,
+      "topic": "help",
+      "why_needed": "数字生活主题缺失",
+      "existing_curriculum_gap": "数字生活主题缺失",
+      "likely_lesson_use": "NEW-ja-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "パスワード",
+      "reading": "パスワード",
+      "lexical_type": "外来语名词",
+      "meaning_semantic_scope": "密码",
+      "recommended_stage": 2,
+      "topic": "help",
+      "why_needed": "登录求助缺核心词",
+      "existing_curriculum_gap": "登录求助缺核心词",
+      "likely_lesson_use": "NEW-ja-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "電波",
+      "reading": "でんぱ",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "信号/无线电波",
+      "recommended_stage": 3,
+      "topic": "help",
+      "why_needed": "网络诊断缺词",
+      "existing_curriculum_gap": "网络诊断缺词",
+      "likely_lesson_use": "NEW-ja-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "接続",
+      "reading": "せつぞく",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "连接",
+      "recommended_stage": 3,
+      "topic": "help",
+      "why_needed": "网络诊断缺词",
+      "existing_curriculum_gap": "网络诊断缺词",
+      "likely_lesson_use": "NEW-ja-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "再起動",
+      "reading": "さいきどう",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "重启",
+      "recommended_stage": 3,
+      "topic": "help",
+      "why_needed": "缺基本故障排除动作",
+      "existing_curriculum_gap": "缺基本故障排除动作",
+      "likely_lesson_use": "NEW-ja-s3-connectivity",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "ホーム",
+      "reading": "ホーム",
+      "lexical_type": "外来语名词",
+      "meaning_semantic_scope": "站台",
+      "recommended_stage": 2,
+      "topic": "travel",
+      "why_needed": "交通课缺站内导航",
+      "existing_curriculum_gap": "交通课缺站内导航",
+      "likely_lesson_use": "ja-s2-l1",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "遅延",
+      "reading": "ちえん",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "延误",
+      "recommended_stage": 3,
+      "topic": "travel",
+      "why_needed": "行程变化课缺核心词",
+      "existing_curriculum_gap": "行程变化课缺核心词",
+      "likely_lesson_use": "ja-s5-l3",
+      "priority": "P0",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "渋滞",
+      "reading": "じゅうたい",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "交通拥堵",
+      "recommended_stage": 3,
+      "topic": "travel",
+      "why_needed": "驾车语境未覆盖",
+      "existing_curriculum_gap": "驾车语境未覆盖",
+      "likely_lesson_use": "ja-s5-l3",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "シートベルト",
+      "reading": "シートベルト",
+      "lexical_type": "外来语名词",
+      "meaning_semantic_scope": "安全带",
+      "recommended_stage": 2,
+      "topic": "travel",
+      "why_needed": "驾驶安全功能缺失",
+      "existing_curriculum_gap": "驾驶安全功能缺失",
+      "likely_lesson_use": "ja-s5-l3",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "駐車",
+      "reading": "ちゅうしゃ",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "停车",
+      "recommended_stage": 2,
+      "topic": "travel",
+      "why_needed": "驾车任务缺失",
+      "existing_curriculum_gap": "驾车任务缺失",
+      "likely_lesson_use": "ja-s5-l3",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "チェックイン",
+      "reading": "チェックイン",
+      "lexical_type": "外来语名词/サ变",
+      "meaning_semantic_scope": "入住/报到",
+      "recommended_stage": 3,
+      "topic": "travel",
+      "why_needed": "住宿任务未覆盖",
+      "existing_curriculum_gap": "住宿任务未覆盖",
+      "likely_lesson_use": "NEW-ja-s4-accommodation",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "カードキー",
+      "reading": "カードキー",
+      "lexical_type": "外来语复合名词",
+      "meaning_semantic_scope": "房卡",
+      "recommended_stage": 2,
+      "topic": "travel",
+      "why_needed": "住宿问题处理缺词",
+      "existing_curriculum_gap": "住宿问题处理缺词",
+      "likely_lesson_use": "NEW-ja-s4-accommodation",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "宿泊",
+      "reading": "しゅくはく",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "住宿",
+      "recommended_stage": 3,
+      "topic": "travel",
+      "why_needed": "旅行范围偏交通",
+      "existing_curriculum_gap": "旅行范围偏交通",
+      "likely_lesson_use": "NEW-ja-s4-accommodation",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "同僚",
+      "reading": "どうりょう",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "同事",
+      "recommended_stage": 3,
+      "topic": "school",
+      "why_needed": "学校/工作主题缺职场角色",
+      "existing_curriculum_gap": "学校/工作主题缺职场角色",
+      "likely_lesson_use": "NEW-ja-s3-workplace",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "シフト",
+      "reading": "シフト",
+      "lexical_type": "外来语名词",
+      "meaning_semantic_scope": "班次/排班",
+      "recommended_stage": 3,
+      "topic": "school",
+      "why_needed": "缺工作排班能力",
+      "existing_curriculum_gap": "缺工作排班能力",
+      "likely_lesson_use": "NEW-ja-s3-workplace",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "給料",
+      "reading": "きゅうりょう",
+      "lexical_type": "汉语名词",
+      "meaning_semantic_scope": "工资",
+      "recommended_stage": 2,
+      "topic": "school",
+      "why_needed": "工作条件表达不足",
+      "existing_curriculum_gap": "工作条件表达不足",
+      "likely_lesson_use": "NEW-ja-s3-workplace",
+      "priority": "P2",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "面接",
+      "reading": "めんせつ",
+      "lexical_type": "汉语名词/サ变",
+      "meaning_semantic_scope": "面试",
+      "recommended_stage": 3,
+      "topic": "school",
+      "why_needed": "大学到工作过渡缺失",
+      "existing_curriculum_gap": "大学到工作过渡缺失",
+      "likely_lesson_use": "NEW-ja-s3-workplace",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    },
+    {
+      "language": "ja",
+      "candidate": "フィードバック",
+      "reading": "フィードバック",
+      "lexical_type": "外来语名词",
+      "meaning_semantic_scope": "反馈",
+      "recommended_stage": 3,
+      "topic": "school",
+      "why_needed": "任务协作缺反馈语言",
+      "existing_curriculum_gap": "任务协作缺反馈语言",
+      "likely_lesson_use": "NEW-ja-s3-workplace",
+      "priority": "P1",
+      "confidence": "medium-high",
+      "source_strategy": "AI-assisted + native editorial review",
+      "requires_human_review": true,
+      "duplicate_risk": "validate orthography, reading, sense and register"
+    }
+  ],
+  "editorial_conclusions": [
+    "No vocabulary lacks an example, but 687/695 have only one; this is breadth without usage depth.",
+    "English has 153 and Japanese 183 vocabulary items with zero expression use.",
+    "Only 11 vocabulary relation rows exist, so semantic navigation is effectively absent.",
+    "High-value additions should follow communicative tasks, not equalize topic counts."
+  ]
+}

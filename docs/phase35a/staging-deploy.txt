@@ -1,0 +1,35 @@
+
+ ⛅️ wrangler 4.130.0
+────────────────────
+🌀 Building list of assets...
+✨ Read 15 files from the assets directory E:\E_J_Learn_web\public
+🌀 Starting asset upload...
+🌀 Found 12 new or modified static assets to upload. Proceeding with upload...
++ /index.html
++ /placement.html
++ /js/checkpoint.js
++ /js/app.js
++ /progress.html
++ /checkpoint.html
++ /js/api.js
++ /js/learn.js
++ /learn.html
++ /js/state.js
++ /js/placement.js
++ /css/style.css
+Uploaded 4 of 12 assets
+Uploaded 8 of 12 assets
+Uploaded 12 of 12 assets
+✨ Success! Uploaded 12 files (0.88 sec)
+
+Total Upload: 30.29 KiB / gzip: 9.40 KiB
+Worker Startup Time: 6 ms
+Your Worker has access to the following bindings:
+Binding                              Resource         
+env.DB (ej-learning-35a-db)          D1 Database      
+env.ASSETS                           Assets           
+
+Uploaded ej-learning-35a (4.08 sec)
+Deployed ej-learning-35a triggers (1.18 sec)
+  https://ej-learning-35a.yanjian-language-learning.workers.dev
+Current Version ID: d830a5c4-82a8-437e-9228-6c4f427fad90

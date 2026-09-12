@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "expiredStatus": 410,
+  "expiredRowRemoved": true,
+  "completedHistoryLength": 0,
+  "scheduledCleanup": [
+    "*/30 * * * *"
+  ]
+}

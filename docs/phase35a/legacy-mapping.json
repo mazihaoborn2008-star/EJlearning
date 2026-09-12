@@ -1,0 +1,3918 @@
+{
+  "version": "3.5A-proposal-1",
+  "source": "Immutable migrations 0001–0005; no data migrated",
+  "summary": {
+    "total": 183,
+    "destination_counts": {
+      "Sentence": 54,
+      "Vocabulary": 28,
+      "Sentence scenario": 44,
+      "Grammar + Sentence examples": 28,
+      "Sentence dialogue": 28,
+      "Vocabulary fixed_expression": 1
+    },
+    "confidence_counts": {
+      "high": 132,
+      "medium": 44,
+      "low": 7
+    },
+    "human_review_ids": [
+      20,
+      24,
+      26,
+      32,
+      34,
+      36,
+      38,
+      44,
+      46,
+      48,
+      56,
+      58,
+      60,
+      62,
+      64,
+      68,
+      70,
+      72,
+      74,
+      80,
+      82,
+      84,
+      89,
+      92,
+      96,
+      104,
+      108,
+      112,
+      113,
+      116,
+      118,
+      120,
+      122,
+      128,
+      130,
+      132,
+      140,
+      142,
+      144,
+      146,
+      152,
+      154,
+      156,
+      164,
+      168,
+      170,
+      172,
+      176,
+      178,
+      180,
+      182
+    ]
+  },
+  "records": [
+    {
+      "legacy_concept_id": 1,
+      "legacy_type": "sentence",
+      "chinese_anchor": "你在干嘛？",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "What are you doing?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "何をしているの？",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 2,
+      "legacy_type": "sentence",
+      "chinese_anchor": "我刚起床。",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I just woke up.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "今起きたところ。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 3,
+      "legacy_type": "sentence",
+      "chinese_anchor": "我有点累。",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I’m a little tired.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "ちょっと疲れた。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 4,
+      "legacy_type": "sentence",
+      "chinese_anchor": "我不知道。",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I don’t know.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "わからない。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 5,
+      "legacy_type": "sentence",
+      "chinese_anchor": "等一下。",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Wait a second.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "ちょっと待って。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 6,
+      "legacy_type": "sentence",
+      "chinese_anchor": "我饿了。",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I’m hungry.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "お腹がすいた。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 7,
+      "legacy_type": "sentence",
+      "chinese_anchor": "你想吃什么？",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "What do you want to eat?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "何が食べたい？",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 8,
+      "legacy_type": "sentence",
+      "chinese_anchor": "我还没吃饭。",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I haven’t eaten yet.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "まだ食べていません。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 9,
+      "legacy_type": "sentence",
+      "chinese_anchor": "这个辣吗？",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Is this spicy?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "これは辛いですか？",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 10,
+      "legacy_type": "sentence",
+      "chinese_anchor": "我吃饱了。",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I’m full.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "お腹がいっぱい。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 11,
+      "legacy_type": "sentence",
+      "chinese_anchor": "今天有课吗？",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Do we have class today?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "今日は授業がありますか？",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 12,
+      "legacy_type": "sentence",
+      "chinese_anchor": "我迟到了。",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I’m late.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "遅れました。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 13,
+      "legacy_type": "sentence",
+      "chinese_anchor": "我听不懂。",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I don’t understand what you’re saying.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "言っていることがわかりません。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 14,
+      "legacy_type": "sentence",
+      "chinese_anchor": "什么时候截止？",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "When is it due?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "締め切りはいつですか？",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 15,
+      "legacy_type": "sentence",
+      "chinese_anchor": "我还没写作业。",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I haven’t done my homework yet.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "まだ宿題をしていません。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 16,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "名字（用于自我介绍）",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "name",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "名前",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 17,
+      "legacy_type": "phrase",
+      "chinese_anchor": "跟熟人说早上好",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Morning!",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "おはよう。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "问候是完整社交回应，保留情境和礼貌变体。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 18,
+      "legacy_type": "sentence",
+      "chinese_anchor": "告诉别人自己住在附近",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I live nearby.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "この近くに住んでいます。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 19,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "没听清对方的名字，请他再说一次",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Sorry, what was your name?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "すみません、お名前をもう一度お願いします。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 20,
+      "legacy_type": "pattern",
+      "chinese_anchor": "问别人是否喜欢某种东西",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Do you like ...?",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜は好きですか。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 Do you like ...? 与 〜は好きですか。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 21,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "聊聊周末过得怎样",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: How was your weekend?\nB: Pretty quiet. I stayed home.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 週末はどうだった？\nB: のんびりしてた。家にいたよ。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 22,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "闲聊而不深入讨论",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "small talk",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "世間話",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 23,
+      "legacy_type": "sentence",
+      "chinese_anchor": "确认自己是否理解了对方",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Let me make sure I understand.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "理解が合っているか確認させてください。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 24,
+      "legacy_type": "pattern",
+      "chinese_anchor": "表达自己并不是想要做某事",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It's not that I want to ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜したいわけではありません。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 It's not that I want to ... 与 〜したいわけではありません。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 25,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "发现自己的玩笑让对方误会了",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I meant that as a joke.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "冗談のつもりだったんです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 26,
+      "legacy_type": "phrase",
+      "chinese_anchor": "委婉地补充一个不同看法",
+      "proposed_v2_destination": "Vocabulary fixed_expression",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "That said, ...",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "とはいえ、〜。",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "That said / とはいえ 是可复用话语连接表达；各自建固定表达义项和例句，核对语篇功能。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 27,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "澄清一句话听起来比本意更强硬",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: That sounded a bit harsh.\nB: You're right. Let me rephrase that.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: ちょっときつく聞こえたよ。\nB: そうだね。言い直すね。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 28,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "可以带走的剩饭菜",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "leftovers",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "残り物",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 29,
+      "legacy_type": "phrase",
+      "chinese_anchor": "用餐时请别人递水",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Water, please.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "お水をお願いします。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "点单/递水请求是交际句，不把 water 与完整请求视为同一词条。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 30,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明自己不能吃花生",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I can't eat peanuts.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "ピーナッツは食べられません。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 31,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "服务员问要堂食还是带走，你要带走",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "To go, please.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "持ち帰りでお願いします。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 32,
+      "legacy_type": "pattern",
+      "chinese_anchor": "想少放某种调料",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Could you go easy on the ...?",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜は少なめでお願いします。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 Could you go easy on the ...? 与 〜は少なめでお願いします。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 33,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "问餐厅还要等多久",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: How long is the wait?\nB: About twenty minutes.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: どのくらい待ちますか。\nB: 二十分ほどです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 34,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "形容味道清淡而非难吃",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "light",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "あっさりした",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "英语 light 为多义形容词；日语あっさりした需确定词头为あっさり，不能照抄修饰形式。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 35,
+      "legacy_type": "sentence",
+      "chinese_anchor": "解释自己只想吃点简单的",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm in the mood for something simple.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "今日は軽く済ませたい気分です。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 36,
+      "legacy_type": "pattern",
+      "chinese_anchor": "委婉说自己更喜欢另一种口味",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'd rather have ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "どちらかというと〜がいいです。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 I'd rather have ... 与 どちらかというと〜がいいです。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 37,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "菜比描述中辣很多，礼貌询问能否更换",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Would it be possible to change this?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "こちら、別のものに替えていただくことはできますか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 38,
+      "legacy_type": "phrase",
+      "chinese_anchor": "吃过一种食物后逐渐喜欢上它",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It's an acquired taste.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "慣れるとおいしく感じる味です。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "medium",
+      "notes": "完整判断句含 acquired taste 词汇成分；句子为主，后续可另抽取词条。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 39,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "点错菜后协商怎样处理",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: I think there's been a mix-up.\nB: I'm sorry. I'll check your order.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 注文と違うものが来たようなんですが。\nB: 申し訳ありません。確認いたします。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 40,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "要按时完成工作的期限",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "deadline",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "締め切り",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 41,
+      "legacy_type": "phrase",
+      "chinese_anchor": "向同事确认收到消息",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Got it, thanks.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "わかりました。ありがとうございます。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "确认收到并致谢，两个交际动作组成回应。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 42,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明自己正在处理这件事",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm working on it.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "今、取り組んでいます。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 43,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "没跟上讨论，请别人再解释一遍",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Could you explain that again?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "もう一度説明してもらえますか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 44,
+      "legacy_type": "pattern",
+      "chinese_anchor": "说明某个任务还没完成",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I haven't ... yet.",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "まだ〜ていません。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 I haven't ... yet. 与 まだ〜ていません。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 45,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "协调任务分工",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Can you handle the slides?\nB: Sure. Could you check the figures?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: スライドをお願いできる？\nB: いいよ。数字を確認してもらえる？",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 46,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "为改进工作提出反馈",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "feedback",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "改善のための意見",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "low",
+      "notes": "日语改善のための意見是说明性名词短语；需编辑选择自然词头及词义范围。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 47,
+      "legacy_type": "sentence",
+      "chinese_anchor": "表示截止日期可能来不及",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm not sure I can meet the deadline.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "締め切りに間に合うか、ちょっと自信がありません。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 48,
+      "legacy_type": "pattern",
+      "chinese_anchor": "提出以某个条件为前提的方案",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "As long as ..., we can ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜なら、〜できます。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 As long as ..., we can ... 与 〜なら、〜できます。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 49,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "不同意同事方案但先肯定其出发点",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I see your point, but I have a concern.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "おっしゃることはわかりますが、一つ気になる点があります。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 50,
+      "legacy_type": "phrase",
+      "chinese_anchor": "暂时保留对某个方案的判断",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'll reserve judgment for now.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "今の段階では判断を保留します。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留判断的完整陈述；reserve judgment 可另提取词组。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 51,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "在时间不够时商量缩小任务范围",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: We may need to narrow the scope.\nB: Agreed. Let's focus on what matters most.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 範囲を絞る必要がありそうですね。\nB: そうですね。優先度の高いものに集中しましょう。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 52,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "备用的钥匙",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "spare key",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "合鍵",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 53,
+      "legacy_type": "phrase",
+      "chinese_anchor": "进门请客人随意坐",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Have a seat.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "どうぞ座ってください。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "邀请客人坐下的场景回应。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 54,
+      "legacy_type": "sentence",
+      "chinese_anchor": "告诉家人垃圾已经倒了",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I took out the trash.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "ごみを出しました。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 55,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "室友音量太大，请他调小",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Could you turn it down a little?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "少し音を小さくしてもらえますか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 56,
+      "legacy_type": "pattern",
+      "chinese_anchor": "提醒自己离开前别忘了做某事",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Remember to ... before you leave.",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "出かける前に、忘れずに〜てください。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 Remember to ... before you leave. 与 出かける前に、忘れずに〜てください。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 57,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "确认洗衣机是否空着",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Are you using the washing machine?\nB: No, go ahead.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 洗濯機、使ってる？\nB: ううん、使っていいよ。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 58,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "东西堆得杂乱的状态",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "clutter",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "散らかった物",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "日语散らかった物是描述短语；英语 clutter 为不可数名词，需独立选词。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 59,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明水龙头一直在漏水",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "The faucet has been dripping all night.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "一晩中、蛇口から水がぽたぽた落ちています。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 60,
+      "legacy_type": "pattern",
+      "chinese_anchor": "表达某件家务早就该做了",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It's about time we ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "そろそろ〜したほうがいいですね。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 It's about time we ... 与 そろそろ〜したほうがいいですね。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 61,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "不想直接责备室友，提议重新分配家务",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Could we rethink how we split the chores?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "家事の分担を一度見直しませんか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 62,
+      "legacy_type": "phrase",
+      "chinese_anchor": "让来访客人不必拘束",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Make yourself at home.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "どうぞ気楽にしてください。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "medium",
+      "notes": "待客用语，英语习语和日语自然回应不应逐词等同。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 63,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "与邻居商量夜间噪声",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: I hate to bother you, but the noise carries.\nB: Sorry, I didn't realize. We'll keep it down.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: すみません、音がかなり響いているんですが。\nB: すみません、気づきませんでした。気をつけます。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 64,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "约好的见面安排",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "appointment",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "予約",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "appointment与予約范围不完全相同；区分私人见面、预约服务与约定。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 65,
+      "legacy_type": "phrase",
+      "chinese_anchor": "请别人稍等一下",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Just a moment.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "少々お待ちください。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "请求稍候的完整场景回应；日语敬语需要独立标注。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 66,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明自己十分钟后到",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'll be there in ten minutes.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "あと十分で着きます。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 67,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "朋友临时约明天，你有空",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Tomorrow works for me.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "明日なら大丈夫です。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 68,
+      "legacy_type": "pattern",
+      "chinese_anchor": "想把约定改到另一个时间",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Could we move it to ...?",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜に変更できますか。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 Could we move it to ...? 与 〜に変更できますか。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 69,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "确认见面地点与时间",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Shall we meet outside at six?\nB: Six is fine. By the main entrance?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 六時に外で会おうか。\nB: いいよ。正面玄関のところ？",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 70,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "时间上留一点余量",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "buffer",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "余裕",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "buffer与余裕语义范围不同，须限制为时间余量并补搭配。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 71,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明自己刚好赶上了末班车",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I made it just in time for the last train.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "終電にぎりぎり間に合いました。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 72,
+      "legacy_type": "pattern",
+      "chinese_anchor": "表达越早做某事越好",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "The sooner ..., the better.",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜は早ければ早いほどいいです。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 The sooner ..., the better. 与 〜は早ければ早いほどいいです。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 73,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "收到过于临时的邀请，解释自己来不及安排",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "That's a bit short notice for me.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "ちょっと急なので、予定の調整が難しいです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 74,
+      "legacy_type": "phrase",
+      "chinese_anchor": "先暂定一个日期",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Let's pencil it in.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "ひとまず仮の予定にしておきましょう。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "medium",
+      "notes": "暂定日期的完整建议；pencil in 可另提取词组。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 75,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "在多个时间冲突时协商优先安排",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Could we keep that afternoon flexible?\nB: Sure. Let me know once your plans firm up.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: その日の午後は、まだ確定しないでおける？\nB: いいよ。予定が固まったら教えて。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 76,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "购物后保留的收据",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "receipt",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "レシート",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 77,
+      "legacy_type": "phrase",
+      "chinese_anchor": "逛店时告诉店员先随便看看",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Just looking, thanks.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "見ているだけです。ありがとうございます。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "商店场景的自然回应。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 78,
+      "legacy_type": "sentence",
+      "chinese_anchor": "询问有没有更小的尺码",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Do you have this in a smaller size?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "これの小さいサイズはありますか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 79,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "试衣前先问可不可以试穿",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Can I try this on?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "これを試着してもいいですか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 80,
+      "legacy_type": "pattern",
+      "chinese_anchor": "想比较两个选项再决定",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm choosing between ... and ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜と〜で迷っています。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 I'm choosing between ... and ... 与 〜と〜で迷っています。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 81,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "结账时确认能否刷卡",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Do you take cards?\nB: Yes, except for that one.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: カードは使えますか。\nB: はい。ただ、そちらのカードは使えません。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 82,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "商品价格合理、物有所值",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "good value",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "値段の割にいい",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "low",
+      "notes": "英语 good value 可作词汇搭配；日语値段の割にいい含可生产语法结构，建议另保留句子例证。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 83,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明商品和网上照片看起来不一样",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It doesn't look quite like the photo online.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "ネットの写真とは少し印象が違います。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 84,
+      "legacy_type": "pattern",
+      "chinese_anchor": "询问退货需要满足什么条件",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "What if ...?",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "もし〜たら、どうなりますか。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 What if ...? 与 もし〜たら、どうなりますか。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 85,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "店员推荐超预算商品，礼貌坚持预算",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'd prefer to stay within my budget.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "できれば予算内で探したいです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 86,
+      "legacy_type": "phrase",
+      "chinese_anchor": "价格不是唯一要考虑的因素",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Price isn't the whole story.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "値段だけでは判断できません。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "完整评价句，并非词汇短语。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 87,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "发现保修条款有例外，进一步确认",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Does the warranty cover accidental damage?\nB: No, that would require separate coverage.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: うっかり壊した場合も保証の対象ですか。\nB: いいえ、そちらは別の補償が必要です。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 88,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "乘车时要付的费用",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "fare",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "運賃",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 89,
+      "legacy_type": "phrase",
+      "chinese_anchor": "向路人说借过一下",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Excuse me.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "すみません、通ります。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "medium",
+      "notes": "通行场景回应；英语 excuse me 的其他功能必须分义。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 90,
+      "legacy_type": "sentence",
+      "chinese_anchor": "询问车站在哪里",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Where's the station?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "駅はどこですか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 91,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "司机问你在哪下车，你指下一个路口",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "At the next corner, please.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "次の角でお願いします。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 92,
+      "legacy_type": "pattern",
+      "chinese_anchor": "告诉别人去某地需要多久",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It takes ... to get there.",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "そこまで〜かかります。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 It takes ... to get there. 与 そこまで〜かかります。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 93,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "询问是否需要换乘",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Does this train go to the airport?\nB: You'll need to change at Central.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: この電車は空港まで行きますか。\nB: 中央駅で乗り換えてください。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 94,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "途中绕道去一个地方",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "detour",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "回り道",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 95,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明自己刚刚坐过站了",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I just missed my stop.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "うっかり乗り過ごしました。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 96,
+      "legacy_type": "pattern",
+      "chinese_anchor": "比较路线时强调即使绕路也更快",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Even if ..., it's still ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "たとえ〜ても、〜です。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 Even if ..., it's still ... 与 たとえ〜ても、〜です。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 97,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "列车取消后询问有哪些替代方式",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "What are my alternatives?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "ほかにどんな行き方がありますか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 98,
+      "legacy_type": "phrase",
+      "chinese_anchor": "在途中顺便接上某人",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'll pick you up on the way.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "途中で迎えに行くよ。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "完整接送承诺句；pick up 和 on the way 可另提取词组。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 99,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "转机时间紧时确认行李是否直挂",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Will my bag go straight through?\nB: Yes, but you'll need to change terminals.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 荷物は最終目的地まで預けられますか。\nB: はい。ただ、ターミナルの移動が必要です。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 100,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "下雨时用的伞",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "umbrella",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "傘",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 101,
+      "legacy_type": "phrase",
+      "chinese_anchor": "随口说今天好冷",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It's chilly!",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "肌寒いね。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "完整天气感叹。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 102,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明外面正在下雨",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It's raining outside.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "外は雨が降っています。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 103,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "朋友要出门，提醒带件外套",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "You might want to bring a jacket.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "上着を持っていったほうがいいかも。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 104,
+      "legacy_type": "pattern",
+      "chinese_anchor": "根据天空推测快要下雨",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It looks like ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜そうです。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 It looks like ... 与 〜そうです。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。 日语そう的样态/传闻须分开；不能仅由中文看起来决定。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 105,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "商量下雨后把活动改到室内",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Shall we still go for a walk?\nB: Let's stay in until it stops.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: それでも散歩に行く？\nB: 雨がやむまで中にいよう。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 106,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "空气又热又潮湿的感觉",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "muggy",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "蒸し暑い",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 107,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明温差比预期大",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It cools down much more than I expected.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "思った以上に冷え込みますね。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 108,
+      "legacy_type": "pattern",
+      "chinese_anchor": "提醒不管预报如何都要准备备用方案",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Regardless of ..., we should ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜にかかわらず、〜したほうがいいです。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 Regardless of ..., we should ... 与 〜にかかわらず、〜したほうがいいです。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 109,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "天气突然转坏，建议别冒险继续出行",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'd rather not risk it in this weather.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "この天気で無理をするのはやめておきたいです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 110,
+      "legacy_type": "phrase",
+      "chinese_anchor": "天气终于开始放晴",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It seems to be clearing up.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "ようやく晴れてきたみたいです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "描述天气变化的完整推测句。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 111,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "在不稳定天气下保留出游决定",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: The forecast keeps changing.\nB: Let's play it by ear and decide tomorrow.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 予報がころころ変わるね。\nB: 様子を見て、明日決めよう。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 112,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "口渴的身体感觉",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "thirsty",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "喉が渇いた",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "low",
+      "notes": "英语 thirsty 是形容词；日语喉が渇いた是完整状态表达，可拆词汇与Sentence，不能伪造一对一词头。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 113,
+      "legacy_type": "phrase",
+      "chinese_anchor": "对身体不舒服的人说多保重",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Take care.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "お大事に。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "medium",
+      "notes": "对病人的场景回应；Take care 的告别义与お大事に并非普遍等价。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 114,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明自己有点头疼",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I have a slight headache.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "少し頭が痛いです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 115,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "别人问你是否需要休息，你想坐一会儿",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I could use a short break.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "少し休ませてもらえると助かります。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 116,
+      "legacy_type": "pattern",
+      "chinese_anchor": "说明某种不适从某时开始",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I've had ... since ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜から、〜が続いています。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 I've had ... since ... 与 〜から、〜が続いています。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 117,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "同事关心你是否好些了",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Are you feeling any better?\nB: A little, but I'm still tired.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 少しはよくなった？\nB: 少しね。でも、まだだるい。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 118,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "身体疲惫、没精神",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "run-down",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "疲れがたまっている",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "low",
+      "notes": "英语 run-down 是词汇项；日语疲れがたまっている是状态句，需拆分词汇与Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 119,
+      "legacy_type": "sentence",
+      "chinese_anchor": "描述不适时轻时重",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "The pain comes and goes.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "痛みが出たり治まったりします。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 120,
+      "legacy_type": "pattern",
+      "chinese_anchor": "强调并非完全恢复，只是有所好转",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Not quite ..., but ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "まだ〜わけではありませんが、〜。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 Not quite ..., but ... 与 まだ〜わけではありませんが、〜。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 121,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "需要取消活动但不想详细讲病情",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm not up to it today, I'm afraid.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "すみません、今日は参加できる体調ではなくて。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 122,
+      "legacy_type": "phrase",
+      "chinese_anchor": "说明自己正在慢慢恢复状态",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm getting back on my feet.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "少しずつ調子を取り戻しています。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "medium",
+      "notes": "完整恢复状态陈述；get back on one’s feet 可单列义项。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 123,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "向医生描述不适而不自行下结论",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Is it constant or does it come and go?\nB: It comes and goes, especially after meals.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: ずっと痛みますか。それとも時々ですか。\nB: 時々です。特に食後に痛みます。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 124,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "对某事感到高兴",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "glad",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "うれしい",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 125,
+      "legacy_type": "phrase",
+      "chinese_anchor": "听到好消息表示太好了",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "That's great!",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "よかったね！",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "对好消息的场景反应。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 126,
+      "legacy_type": "sentence",
+      "chinese_anchor": "告诉朋友自己今天有点紧张",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm a little nervous today.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "今日は少し緊張しています。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 127,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "朋友担心你，你说现在没事了",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm okay now, thanks for checking.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "もう大丈夫。気にかけてくれてありがとう。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 128,
+      "legacy_type": "pattern",
+      "chinese_anchor": "说某件事让自己感到某种情绪",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It makes me feel ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜と、〜気持ちになります。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 It makes me feel ... 与 〜と、〜気持ちになります。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 129,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "朋友发现你很安静，关心你的状态",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: You seem quiet today.\nB: Just a lot on my mind.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 今日は静かだね。\nB: ちょっと考え事が多くて。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 130,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "事情太多而感到应付不过来",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "overwhelmed",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "いっぱいいっぱい",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "日语いっぱいいっぱい口语用法与英语 overwhelmed含义范围不同。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 131,
+      "legacy_type": "sentence",
+      "chinese_anchor": "解释自己失望但不是生气",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm disappointed, not angry.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "怒っているわけではなく、残念に思っています。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 132,
+      "legacy_type": "pattern",
+      "chinese_anchor": "表达本来担心，结果松了口气",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I was worried ..., but ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜と心配していましたが、〜。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 I was worried ..., but ... 与 〜と心配していましたが、〜。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 133,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "朋友心情低落，你愿意听但不强迫他说",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "You don't have to talk, but I'm here.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "無理に話さなくていいよ。話したくなったら聞くから。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 134,
+      "legacy_type": "phrase",
+      "chinese_anchor": "对一件事同时有两种矛盾感受",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I have mixed feelings about it.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "複雑な気持ちです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "完整情绪陈述；mixed feelings 可另建词汇。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 135,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "说明建议虽然出于好意却让自己有压力",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: I know you mean well, but I feel pressured.\nB: I'm sorry. I'll give you some space.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 心配してくれるのはわかるけど、少し負担に感じる。\nB: ごめん。少しそっとしておくね。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 136,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "业余时间喜欢做的事",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "hobby",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "趣味",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 137,
+      "legacy_type": "phrase",
+      "chinese_anchor": "朋友邀你一起试试，你说好呀",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Sounds fun!",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "楽しそう！",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "回应邀约的场景反应。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 138,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明自己喜欢散步",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I enjoy going for walks.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "散歩するのが好きです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 139,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "朋友问你玩得好不好，你说明刚开始学",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm still a beginner.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "まだ始めたばかりです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 140,
+      "legacy_type": "pattern",
+      "chinese_anchor": "说明自己最近开始做某事",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I've started ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "最近、〜始めました。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 I've started ... 与 最近、〜始めました。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 141,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "聊最近正在看的作品",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: What are you watching these days?\nB: A cooking show. It's surprisingly relaxing.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 最近、何を見てる？\nB: 料理番組。意外と落ち着くんだ。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 142,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "专注做事而暂时忘记周围",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "get absorbed in",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "夢中になる",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "两边均为可复用词组，但要分别处理get absorbed in的介词补足与夢中になる。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 143,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明某个爱好能帮助自己放松",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It helps me switch off after work.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "仕事の後の気分転換になります。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 144,
+      "legacy_type": "pattern",
+      "chinese_anchor": "表达自己越练越能体会乐趣",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "The more I ..., the more ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜ば〜ほど、〜。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 The more I ..., the more ... 与 〜ば〜ほど、〜。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 145,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "不喜欢朋友很爱的作品，但尊重他的喜好",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It's not really my thing, but I see the appeal.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "自分の好みではないけど、魅力はわかるよ。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 146,
+      "legacy_type": "phrase",
+      "chinese_anchor": "看过多次后才渐渐喜欢",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It's grown on me.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "だんだん好きになってきました。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "medium",
+      "notes": "完整变化陈述；grow on somebody 需要单独义项，不直配日语句子。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 147,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "朋友想把爱好变成工作，你提出保留意见",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Have you thought of doing it professionally?\nB: Maybe, but I'd hate to lose the enjoyment.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 仕事にすることは考えた？\nB: 少しね。でも、純粋に楽しめなくなるのは嫌かな。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 148,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "邀请别人参加活动",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "invitation",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "誘い",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 149,
+      "legacy_type": "phrase",
+      "chinese_anchor": "向帮过自己的人表示感谢",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Thanks a lot.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "どうもありがとう。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "完整致谢场景。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 150,
+      "legacy_type": "sentence",
+      "chinese_anchor": "询问朋友是否愿意一起吃午饭",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Would you like to have lunch together?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "一緒にお昼を食べませんか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 151,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "收到邀请但当天已有安排",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'd love to, but I have plans.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "行きたいんだけど、その日は予定があるんだ。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 152,
+      "legacy_type": "pattern",
+      "chinese_anchor": "邀请别人下次有空再一起做某事",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Let's ... sometime.",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "今度、〜ましょう。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 Let's ... sometime. 与 今度、〜ましょう。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 153,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "朋友介绍新朋友给你认识",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: This is my friend, Alex.\nB: Nice to meet you. I've heard a lot about you.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 友達のアレックスです。\nB: 初めまして。お話はよく聞いています。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 154,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "在社交中注意分寸、为他人考虑",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "considerate",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "気遣いができる",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "low",
+      "notes": "日语気遣いができる包含能力结构，优先词头気遣い并保留句子用法。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 155,
+      "legacy_type": "sentence",
+      "chinese_anchor": "提醒大家自己可能提前离开",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I may have to leave a little early.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "少し早めに失礼するかもしれません。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 156,
+      "legacy_type": "pattern",
+      "chinese_anchor": "表达不是不想见面，只是需要独处",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It's nothing personal; I just ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "あなたが嫌なわけではなく、ただ〜。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 It's nothing personal; I just ... 与 あなたが嫌なわけではなく、ただ〜。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 157,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "别人问到私人问题，你想礼貌跳过",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'd rather keep that private.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "そのことは、あまり詳しく話したくないんです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 158,
+      "legacy_type": "phrase",
+      "chinese_anchor": "对邀请暂时不作承诺",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Can I get back to you on that?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "その件は、改めて返事してもいいですか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "完整请求延后答复，保留语用条件。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 159,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "拒绝继续参加聚会又不破坏气氛",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Come on, stay for one more.\nB: Tempting, but I'll call it a night.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: もう少しだけいようよ。\nB: そうしたいけど、今日はこの辺で帰るね。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 160,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "请求时需要的帮忙",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "help",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "手伝い",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 161,
+      "legacy_type": "phrase",
+      "chinese_anchor": "向愿意帮忙的人说太感谢了",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Much appreciated.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "助かります。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "致谢场景；助かります含受益语气，非逐词等价。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 162,
+      "legacy_type": "sentence",
+      "chinese_anchor": "询问能否帮自己拿一下这个",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Could you hold this for me?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "これをちょっと持っていてもらえますか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 163,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "看见别人搬东西，主动提供帮助",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Do you need a hand?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "手伝いましょうか。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 164,
+      "legacy_type": "pattern",
+      "chinese_anchor": "提出请求前先确认对方是否方便",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "If you have a moment, could you ...?",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "お時間があれば、〜てもらえますか。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 If you have a moment, could you ...? 与 お時間があれば、〜てもらえますか。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 165,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "确认对方需要怎样的帮助",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Can you help me with this?\nB: Sure. What do you need me to do?",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: これ、手伝ってもらえる？\nB: いいよ。何をすればいい？",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 166,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "请人帮一个具体的忙",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "favor",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "お願い事",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "high",
+      "notes": "按目标语言分别抽取词头、词性、义项和阶段；不共享词汇ID。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 167,
+      "legacy_type": "sentence",
+      "chinese_anchor": "解释自己试过了但还是不行",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I've tried that, but it still doesn't work.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "それは試したんですが、まだうまくいきません。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 168,
+      "legacy_type": "pattern",
+      "chinese_anchor": "询问对方是否介意帮忙做某事",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Would you mind ...ing?",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜ていただけますか。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 Would you mind ...ing? 与 〜ていただけますか。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 169,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "对方帮不上忙，你表示理解",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "No problem. Thanks anyway.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "大丈夫です。お気持ちだけでもありがたいです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 170,
+      "legacy_type": "phrase",
+      "chinese_anchor": "不想让请求给对方带来麻烦",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I don't want to put you out.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "ご迷惑をおかけしたくないので。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "medium",
+      "notes": "完整请求铺垫；日语以ので结尾依赖后续语境，需审定响应边界。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 171,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "愿意帮忙但限定自己能做的部分",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Could you take care of the whole thing?\nB: I can help with the setup, but that's all I can commit to.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 全部お願いできる？\nB: 準備なら手伝えるけど、約束できるのはそこまでかな。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 172,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "去某地或做某事的打算",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "plan",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "予定",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "low",
+      "notes": "legacy plan未标明名词/动词语义；日语予定是名词。代表样本en-plan为动词，不可直接复用该ID。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 173,
+      "legacy_type": "phrase",
+      "chinese_anchor": "对朋友说下次再试",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Maybe next time.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "また今度ね。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "婉拒或延后邀请的场景回应，语气依情境。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 174,
+      "legacy_type": "sentence",
+      "chinese_anchor": "告诉别人自己明天准备做饭",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I'm going to cook tomorrow.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "明日は料理をするつもりです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 175,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "朋友问你是否去过京都，你还没有",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Not yet, but I'd like to.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "まだないけど、行ってみたいです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 176,
+      "legacy_type": "pattern",
+      "chinese_anchor": "询问别人是否曾经有过某种经历",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "Have you ever ...?",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜たことがありますか。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "分别从 Have you ever ...? 与 〜たことがありますか。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 177,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "聊计划改变后的安排",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Are you still going away this weekend?\nB: No, we decided to stay home instead.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 週末は出かける予定のまま？\nB: ううん、代わりに家で過ごすことにした。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 178,
+      "legacy_type": "vocabulary",
+      "chinese_anchor": "对未来某件事感到期待",
+      "proposed_v2_destination": "Vocabulary",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "look forward to",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        },
+        "ja": {
+          "source_expression": "楽しみにする",
+          "action": "独立词头/词性/义项；不沿用另一语言阶段",
+          "difficulty": "重新编辑Stage 1–6"
+        }
+      },
+      "confidence": "medium",
+      "notes": "look forward to / 楽しみにする表示愉快期待，不等于expect或所有期待する用法。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 179,
+      "legacy_type": "sentence",
+      "chinese_anchor": "说明结果和自己原来的设想不同",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It turned out differently than I expected.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "思っていたのとは違う結果になりました。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留中文语义锚点，各语言分别建立表达、阅读、三维难度及实际知识链接。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 180,
+      "legacy_type": "pattern",
+      "chinese_anchor": "表达本来会做某事但被另一件事打断",
+      "proposed_v2_destination": "Grammar + Sentence examples",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "I would have ..., but ...",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        },
+        "ja": {
+          "source_expression": "〜つもりでしたが、〜。",
+          "action": "独立语法点去重 + 具体Sentence例句",
+          "difficulty": "重新编辑Grammar Level 1–6"
+        }
+      },
+      "confidence": "low",
+      "notes": "分别从 I would have ..., but ... 与 〜つもりでしたが、〜。 提取语法功能，去重到独立语法库；把省略槽位填成经审定的具体例句，模板本身不作Sentence。 英语would have为反事实条件/未实现结果，日语つもりでした为过去意图；二者不是语法等价，需要重审共同锚点。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 181,
+      "legacy_type": "scenario_response",
+      "chinese_anchor": "计划尚未成熟，不想过早保证",
+      "proposed_v2_destination": "Sentence scenario",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "It's still up in the air.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "まだはっきり決まっていません。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "将中文交际条件放入context，保留各语言自然回应及适切性说明。",
+      "human_review_needed": false
+    },
+    {
+      "legacy_concept_id": 182,
+      "legacy_type": "phrase",
+      "chinese_anchor": "回头看才意识到当时的判断有偏差",
+      "proposed_v2_destination": "Sentence",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "In hindsight, I should have waited.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "今思えば、待てばよかったです。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "medium",
+      "notes": "完整回顾后悔句；不是固定词汇短语。",
+      "human_review_needed": true
+    },
+    {
+      "legacy_concept_id": 183,
+      "legacy_type": "dialogue",
+      "chinese_anchor": "回顾一次不顺利但有收获的经历",
+      "proposed_v2_destination": "Sentence dialogue",
+      "proposed_language_handling": {
+        "en": {
+          "source_expression": "A: Was the trip worth it after all?\nB: It wasn't what I'd hoped for, but I learned a lot.",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        },
+        "ja": {
+          "source_expression": "A: 結局、行った甲斐はあった？\nB: 期待どおりではなかったけど、学ぶことは多かったよ。",
+          "action": "独立表达与实际知识链接",
+          "difficulty": "独立评定词汇、语法、整体难度"
+        }
+      },
+      "confidence": "high",
+      "notes": "保留共同交际目标；各语言独立拆成有序说话人轮次，链接到实际词汇/语法。",
+      "human_review_needed": false
+    }
+  ]
+}

@@ -1,0 +1,4442 @@
+{
+  "generated_at": "2026-09-10T09:43:14.512Z",
+  "phase": "3.5E.1A.1",
+  "status": "GENERATED",
+  "scope": {
+    "examples": 490,
+    "grammar": 75,
+    "en": 210,
+    "ja": 280
+  },
+  "totals": {
+    "DIRECT": 463,
+    "CONTRAST": 24,
+    "SUPPORT": 3,
+    "INVALID": 0
+  },
+  "errors": [],
+  "changes": {
+    "examples_corrected": 0,
+    "examples_removed": 0,
+    "replacements_added": 0,
+    "new_grammar": 0,
+    "new_vocabulary": 0,
+    "lessons": 0,
+    "dialogues": 0,
+    "dynamic_examples": 0,
+    "learner_progress": 0,
+    "production": 0
+  },
+  "rows": [
+    {
+      "id": "35e1a-ge-en-simple-present-01",
+      "grammar_id": "en-simple-present",
+      "language": "en",
+      "text": "She walks to work every day.",
+      "translation_zh": "她每天步行上班。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-present-02",
+      "grammar_id": "en-simple-present",
+      "language": "en",
+      "text": "We usually eat dinner at seven.",
+      "translation_zh": "我们通常七点吃晚饭。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-present-03",
+      "grammar_id": "en-simple-present",
+      "language": "en",
+      "text": "My brother does not drink coffee.",
+      "translation_zh": "我哥哥不喝咖啡。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-present-04",
+      "grammar_id": "en-simple-present",
+      "language": "en",
+      "text": "The shop closes at six.",
+      "translation_zh": "这家店六点关门。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-present-05",
+      "grammar_id": "en-simple-present",
+      "language": "en",
+      "text": "Do they live near the station?",
+      "translation_zh": "他们住在车站附近吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-present-06",
+      "grammar_id": "en-simple-present",
+      "language": "en",
+      "text": "Water boils at one hundred degrees Celsius.",
+      "translation_zh": "水在一百摄氏度时沸腾。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Present」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-be-adjective-01",
+      "grammar_id": "en-be-adjective",
+      "language": "en",
+      "text": "The soup is hot.",
+      "translation_zh": "这汤很烫。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + predicate」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-be-adjective-02",
+      "grammar_id": "en-be-adjective",
+      "language": "en",
+      "text": "I am not busy this afternoon.",
+      "translation_zh": "我今天下午不忙。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + predicate」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-be-adjective-03",
+      "grammar_id": "en-be-adjective",
+      "language": "en",
+      "text": "Are you ready to leave?",
+      "translation_zh": "你准备好出发了吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + predicate」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-be-adjective-04",
+      "grammar_id": "en-be-adjective",
+      "language": "en",
+      "text": "Her parents are teachers.",
+      "translation_zh": "她的父母是老师。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + predicate」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-be-adjective-05",
+      "grammar_id": "en-be-adjective",
+      "language": "en",
+      "text": "The keys are on the table.",
+      "translation_zh": "钥匙在桌上。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + predicate」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-be-adjective-06",
+      "grammar_id": "en-be-adjective",
+      "language": "en",
+      "text": "This room was quiet last night.",
+      "translation_zh": "这个房间昨晚很安静。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + predicate」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-present-continuous-01",
+      "grammar_id": "en-present-continuous",
+      "language": "en",
+      "text": "She is waiting outside.",
+      "translation_zh": "她正在外面等。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-present-continuous-02",
+      "grammar_id": "en-present-continuous",
+      "language": "en",
+      "text": "We are not using the meeting room.",
+      "translation_zh": "我们现在没有使用会议室。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-present-continuous-03",
+      "grammar_id": "en-present-continuous",
+      "language": "en",
+      "text": "Are you looking for the bus stop?",
+      "translation_zh": "你在找公交车站吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-present-continuous-04",
+      "grammar_id": "en-present-continuous",
+      "language": "en",
+      "text": "The children are sleeping now.",
+      "translation_zh": "孩子们现在正在睡觉。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-present-continuous-05",
+      "grammar_id": "en-present-continuous",
+      "language": "en",
+      "text": "I am staying with a friend this week.",
+      "translation_zh": "我这周暂住在朋友家。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-present-continuous-06",
+      "grammar_id": "en-present-continuous",
+      "language": "en",
+      "text": "Why is the printer making that noise?",
+      "translation_zh": "打印机为什么在发出那种声音？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-do-question-01",
+      "grammar_id": "en-do-question",
+      "language": "en",
+      "text": "Do you need a receipt?",
+      "translation_zh": "你需要收据吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Do / Does + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-do-question-02",
+      "grammar_id": "en-do-question",
+      "language": "en",
+      "text": "Does this bus stop at the airport?",
+      "translation_zh": "这辆公交车在机场停吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Do / Does + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-do-question-03",
+      "grammar_id": "en-do-question",
+      "language": "en",
+      "text": "Do your classes start at nine?",
+      "translation_zh": "你的课九点开始吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Do / Does + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-do-question-04",
+      "grammar_id": "en-do-question",
+      "language": "en",
+      "text": "Does Anna work on Saturdays?",
+      "translation_zh": "安娜星期六上班吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Do / Does + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-do-question-05",
+      "grammar_id": "en-do-question",
+      "language": "en",
+      "text": "Do we have enough time?",
+      "translation_zh": "我们有足够的时间吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Do / Does + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-do-question-06",
+      "grammar_id": "en-do-question",
+      "language": "en",
+      "text": "Does the price include breakfast?",
+      "translation_zh": "这个价格包含早餐吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Do / Does + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-there-is-01",
+      "grammar_id": "en-there-is",
+      "language": "en",
+      "text": "There is a pharmacy across the street.",
+      "translation_zh": "街对面有一家药房。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「there is / are + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-there-is-02",
+      "grammar_id": "en-there-is",
+      "language": "en",
+      "text": "There are two clean cups in the cupboard.",
+      "translation_zh": "橱柜里有两个干净的杯子。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「there is / are + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-there-is-03",
+      "grammar_id": "en-there-is",
+      "language": "en",
+      "text": "There is not enough milk for breakfast.",
+      "translation_zh": "早餐的牛奶不够。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「there is / are + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-there-is-04",
+      "grammar_id": "en-there-is",
+      "language": "en",
+      "text": "Is there a lift in this building?",
+      "translation_zh": "这栋楼里有电梯吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「there is / are + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-there-is-05",
+      "grammar_id": "en-there-is",
+      "language": "en",
+      "text": "Are there any seats near the window?",
+      "translation_zh": "窗边还有座位吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「there is / are + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-there-is-06",
+      "grammar_id": "en-there-is",
+      "language": "en",
+      "text": "There was a delay on the train line this morning.",
+      "translation_zh": "今天早上这条火车线路有延误。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「there is / are + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-have-possession-01",
+      "grammar_id": "en-have-possession",
+      "language": "en",
+      "text": "We have a spare key.",
+      "translation_zh": "我们有一把备用钥匙。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「subject + have / has + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-have-possession-02",
+      "grammar_id": "en-have-possession",
+      "language": "en",
+      "text": "He has a new phone.",
+      "translation_zh": "他有一部新手机。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「subject + have / has + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-have-possession-03",
+      "grammar_id": "en-have-possession",
+      "language": "en",
+      "text": "I do not have any cash with me.",
+      "translation_zh": "我身上没有现金。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「subject + have / has + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-have-possession-04",
+      "grammar_id": "en-have-possession",
+      "language": "en",
+      "text": "Do you have a reservation?",
+      "translation_zh": "你有预订吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「subject + have / has + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-have-possession-05",
+      "grammar_id": "en-have-possession",
+      "language": "en",
+      "text": "She has a sore throat today.",
+      "translation_zh": "她今天喉咙痛。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「subject + have / has + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-have-possession-06",
+      "grammar_id": "en-have-possession",
+      "language": "en",
+      "text": "The apartment has a small balcony.",
+      "translation_zh": "这套公寓有一个小阳台。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「subject + have / has + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-wh-question-01",
+      "grammar_id": "en-wh-question",
+      "language": "en",
+      "text": "What time does the library open?",
+      "translation_zh": "图书馆几点开门？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「wh-word + auxiliary + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-wh-question-02",
+      "grammar_id": "en-wh-question",
+      "language": "en",
+      "text": "Where can I charge my phone?",
+      "translation_zh": "我可以在哪里给手机充电？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「wh-word + auxiliary + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-wh-question-03",
+      "grammar_id": "en-wh-question",
+      "language": "en",
+      "text": "Why did you change the plan?",
+      "translation_zh": "你为什么改变了计划？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「wh-word + auxiliary + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-wh-question-04",
+      "grammar_id": "en-wh-question",
+      "language": "en",
+      "text": "How much does this ticket cost?",
+      "translation_zh": "这张票多少钱？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「wh-word + auxiliary + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-wh-question-05",
+      "grammar_id": "en-wh-question",
+      "language": "en",
+      "text": "When are they arriving?",
+      "translation_zh": "他们什么时候到？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「wh-word + auxiliary + subject + verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-wh-question-06",
+      "grammar_id": "en-wh-question",
+      "language": "en",
+      "text": "Which train goes to the city centre?",
+      "translation_zh": "哪趟火车去市中心？",
+      "target_role": "CONTRAST",
+      "rationale_zh": "主语疑问词直接充当主语，不采用目标公式中的助动词倒装；作为必要语序对比保留。"
+    },
+    {
+      "id": "35e1a-ge-en-imperative-01",
+      "grammar_id": "en-imperative",
+      "language": "en",
+      "text": "Turn left at the next corner.",
+      "translation_zh": "在下一个路口左转。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「base verb + object」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-imperative-02",
+      "grammar_id": "en-imperative",
+      "language": "en",
+      "text": "Please keep the receipt.",
+      "translation_zh": "请保留收据。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「base verb + object」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-imperative-03",
+      "grammar_id": "en-imperative",
+      "language": "en",
+      "text": "Do not touch that pan; it is hot.",
+      "translation_zh": "不要碰那个锅，它很烫。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「base verb + object」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-imperative-04",
+      "grammar_id": "en-imperative",
+      "language": "en",
+      "text": "Take this medicine after dinner.",
+      "translation_zh": "晚饭后服用这种药。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「base verb + object」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-imperative-05",
+      "grammar_id": "en-imperative",
+      "language": "en",
+      "text": "Let me know when you arrive.",
+      "translation_zh": "你到达时告诉我一声。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「base verb + object」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-imperative-06",
+      "grammar_id": "en-imperative",
+      "language": "en",
+      "text": "Check the address before you send the form.",
+      "translation_zh": "发送表格前请核对地址。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「base verb + object」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-want-to-01",
+      "grammar_id": "en-want-to",
+      "language": "en",
+      "text": "We want to leave before the traffic gets busy.",
+      "translation_zh": "我们想在交通繁忙前离开。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「want to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-want-to-02",
+      "grammar_id": "en-want-to",
+      "language": "en",
+      "text": "She does not want to eat outside tonight.",
+      "translation_zh": "她今晚不想在外面吃。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「want to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-want-to-03",
+      "grammar_id": "en-want-to",
+      "language": "en",
+      "text": "Do you want to sit by the window?",
+      "translation_zh": "你想坐在窗边吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「want to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-want-to-04",
+      "grammar_id": "en-want-to",
+      "language": "en",
+      "text": "I want to learn how to cook this dish.",
+      "translation_zh": "我想学会做这道菜。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「want to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-want-to-05",
+      "grammar_id": "en-want-to",
+      "language": "en",
+      "text": "They wanted to change their booking.",
+      "translation_zh": "他们想更改预订。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「want to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-want-to-06",
+      "grammar_id": "en-want-to",
+      "language": "en",
+      "text": "What do you want to do this weekend?",
+      "translation_zh": "这个周末你想做什么？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「want to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-possessive-01",
+      "grammar_id": "en-possessive",
+      "language": "en",
+      "text": "Your bag is under the seat.",
+      "translation_zh": "你的包在座位下面。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「my / your / his / her + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-possessive-02",
+      "grammar_id": "en-possessive",
+      "language": "en",
+      "text": "His appointment is on Thursday.",
+      "translation_zh": "他的预约在星期四。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「my / your / his / her + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-possessive-03",
+      "grammar_id": "en-possessive",
+      "language": "en",
+      "text": "Her train leaves at eight.",
+      "translation_zh": "她的火车八点出发。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「my / your / his / her + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-possessive-04",
+      "grammar_id": "en-possessive",
+      "language": "en",
+      "text": "Our room is on the third floor.",
+      "translation_zh": "我们的房间在三楼。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「my / your / his / her + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-possessive-05",
+      "grammar_id": "en-possessive",
+      "language": "en",
+      "text": "Their children go to this school.",
+      "translation_zh": "他们的孩子在这所学校上学。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「my / your / his / her + noun」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-possessive-06",
+      "grammar_id": "en-possessive",
+      "language": "en",
+      "text": "Is this your card or mine?",
+      "translation_zh": "这是你的卡还是我的？",
+      "target_role": "CONTRAST",
+      "rationale_zh": "mine 是独立所有格代词，不是目标公式中的 possessive determiner + noun；作为形式对比保留。"
+    },
+    {
+      "id": "35e1a-ge-en-greeting-01",
+      "grammar_id": "en-greeting",
+      "language": "en",
+      "text": "Good morning. How are you?",
+      "translation_zh": "早上好。你好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「greeting / thanks formula」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-greeting-02",
+      "grammar_id": "en-greeting",
+      "language": "en",
+      "text": "Nice to meet you.",
+      "translation_zh": "很高兴认识你。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「greeting / thanks formula」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-greeting-03",
+      "grammar_id": "en-greeting",
+      "language": "en",
+      "text": "Thank you for your help.",
+      "translation_zh": "谢谢你的帮助。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「greeting / thanks formula」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-greeting-04",
+      "grammar_id": "en-greeting",
+      "language": "en",
+      "text": "You are welcome.",
+      "translation_zh": "不客气。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「greeting / thanks formula」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-greeting-05",
+      "grammar_id": "en-greeting",
+      "language": "en",
+      "text": "Take care on your way home.",
+      "translation_zh": "回家路上保重。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「greeting / thanks formula」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-greeting-06",
+      "grammar_id": "en-greeting",
+      "language": "en",
+      "text": "Have a good weekend.",
+      "translation_zh": "周末愉快。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「greeting / thanks formula」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-noun-please-01",
+      "grammar_id": "en-noun-please",
+      "language": "en",
+      "text": "A table for two, please.",
+      "translation_zh": "请给我们一张两人桌。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「noun / short response + please / thanks」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-noun-please-02",
+      "grammar_id": "en-noun-please",
+      "language": "en",
+      "text": "The vegetarian option, please.",
+      "translation_zh": "请给我素食那款。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「noun / short response + please / thanks」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-noun-please-03",
+      "grammar_id": "en-noun-please",
+      "language": "en",
+      "text": "No sugar, thanks.",
+      "translation_zh": "不要糖，谢谢。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「noun / short response + please / thanks」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-noun-please-04",
+      "grammar_id": "en-noun-please",
+      "language": "en",
+      "text": "Not today, thanks.",
+      "translation_zh": "今天不用了，谢谢。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「noun / short response + please / thanks」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-noun-please-05",
+      "grammar_id": "en-noun-please",
+      "language": "en",
+      "text": "One more minute, please.",
+      "translation_zh": "请再等一分钟。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「noun / short response + please / thanks」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-noun-please-06",
+      "grammar_id": "en-noun-please",
+      "language": "en",
+      "text": "The receipt as well, please.",
+      "translation_zh": "也请给我收据。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「noun / short response + please / thanks」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-past-01",
+      "grammar_id": "en-simple-past",
+      "language": "en",
+      "text": "We arrived ten minutes early.",
+      "translation_zh": "我们提前十分钟到了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Past」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-past-02",
+      "grammar_id": "en-simple-past",
+      "language": "en",
+      "text": "She did not feel well yesterday.",
+      "translation_zh": "她昨天感觉不舒服。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Past」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-past-03",
+      "grammar_id": "en-simple-past",
+      "language": "en",
+      "text": "Did you call the hotel?",
+      "translation_zh": "你给酒店打电话了吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Past」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-past-04",
+      "grammar_id": "en-simple-past",
+      "language": "en",
+      "text": "I left my umbrella on the bus.",
+      "translation_zh": "我把雨伞落在公交车上了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Past」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-past-05",
+      "grammar_id": "en-simple-past",
+      "language": "en",
+      "text": "They changed the meeting time last week.",
+      "translation_zh": "他们上周更改了会议时间。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Past」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-simple-past-06",
+      "grammar_id": "en-simple-past",
+      "language": "en",
+      "text": "What did the doctor say?",
+      "translation_zh": "医生说了什么？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Simple Past」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-plan-to-01",
+      "grammar_id": "en-plan-to",
+      "language": "en",
+      "text": "We plan to move next month.",
+      "translation_zh": "我们计划下个月搬家。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「plan + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-plan-to-02",
+      "grammar_id": "en-plan-to",
+      "language": "en",
+      "text": "I do not plan to drive in the city.",
+      "translation_zh": "我不打算在市区开车。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「plan + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-plan-to-03",
+      "grammar_id": "en-plan-to",
+      "language": "en",
+      "text": "Do you plan to stay for dinner?",
+      "translation_zh": "你打算留下来吃晚饭吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「plan + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-plan-to-04",
+      "grammar_id": "en-plan-to",
+      "language": "en",
+      "text": "She plans to apply for the course.",
+      "translation_zh": "她计划申请这门课程。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「plan + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-plan-to-05",
+      "grammar_id": "en-plan-to",
+      "language": "en",
+      "text": "They planned to meet at the station.",
+      "translation_zh": "他们原计划在车站见面。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「plan + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-plan-to-06",
+      "grammar_id": "en-plan-to",
+      "language": "en",
+      "text": "When do you plan to finish the report?",
+      "translation_zh": "你计划什么时候完成报告？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「plan + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-request-01",
+      "grammar_id": "en-can-request",
+      "language": "en",
+      "text": "Can you open the window?",
+      "translation_zh": "你能打开窗户吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Can you …?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-request-02",
+      "grammar_id": "en-can-request",
+      "language": "en",
+      "text": "Can you show me where the lift is?",
+      "translation_zh": "你能告诉我电梯在哪里吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Can you …?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-request-03",
+      "grammar_id": "en-can-request",
+      "language": "en",
+      "text": "Can you wait here for a moment?",
+      "translation_zh": "你能在这里等一会儿吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Can you …?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-request-04",
+      "grammar_id": "en-can-request",
+      "language": "en",
+      "text": "Can you speak a little more slowly?",
+      "translation_zh": "你能说慢一点吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Can you …?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-request-05",
+      "grammar_id": "en-can-request",
+      "language": "en",
+      "text": "Can you check this address for me?",
+      "translation_zh": "你能帮我核对这个地址吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Can you …?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-request-06",
+      "grammar_id": "en-can-request",
+      "language": "en",
+      "text": "Can you call me when you arrive?",
+      "translation_zh": "你到的时候能给我打电话吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Can you …?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-ability-01",
+      "grammar_id": "en-can-ability",
+      "language": "en",
+      "text": "My daughter can swim.",
+      "translation_zh": "我女儿会游泳。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「can + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-ability-02",
+      "grammar_id": "en-can-ability",
+      "language": "en",
+      "text": "I cannot hear you clearly.",
+      "translation_zh": "我听不清你说话。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「can + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-ability-03",
+      "grammar_id": "en-can-ability",
+      "language": "en",
+      "text": "Can he use this software?",
+      "translation_zh": "他会使用这个软件吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「can + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-ability-04",
+      "grammar_id": "en-can-ability",
+      "language": "en",
+      "text": "We can finish the work today.",
+      "translation_zh": "我们今天能完成这项工作。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「can + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-ability-05",
+      "grammar_id": "en-can-ability",
+      "language": "en",
+      "text": "This card can be used overseas.",
+      "translation_zh": "这张卡可以在海外使用。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「can + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-can-ability-06",
+      "grammar_id": "en-can-ability",
+      "language": "en",
+      "text": "How many people can the room hold?",
+      "translation_zh": "这个房间能容纳多少人？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「can + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-could-request-01",
+      "grammar_id": "en-could-request",
+      "language": "en",
+      "text": "Could you repeat the last part?",
+      "translation_zh": "你能重复一下最后一部分吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Could you + base verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-could-request-02",
+      "grammar_id": "en-could-request",
+      "language": "en",
+      "text": "Could you move your bag, please?",
+      "translation_zh": "请你把包挪一下好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Could you + base verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-could-request-03",
+      "grammar_id": "en-could-request",
+      "language": "en",
+      "text": "Could you tell me the total price?",
+      "translation_zh": "你能告诉我总价吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Could you + base verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-could-request-04",
+      "grammar_id": "en-could-request",
+      "language": "en",
+      "text": "Could you send the file by Friday?",
+      "translation_zh": "你能在星期五前发送文件吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Could you + base verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-could-request-05",
+      "grammar_id": "en-could-request",
+      "language": "en",
+      "text": "Could you help me change this booking?",
+      "translation_zh": "你能帮我更改这个预订吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Could you + base verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-could-request-06",
+      "grammar_id": "en-could-request",
+      "language": "en",
+      "text": "Could you write that name down for me?",
+      "translation_zh": "你能帮我写下那个名字吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Could you + base verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-going-to-01",
+      "grammar_id": "en-going-to",
+      "language": "en",
+      "text": "We are going to visit my parents on Sunday.",
+      "translation_zh": "我们打算星期天去看望我的父母。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be going to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-going-to-02",
+      "grammar_id": "en-going-to",
+      "language": "en",
+      "text": "I am not going to buy it today.",
+      "translation_zh": "我今天不打算买它。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be going to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-going-to-03",
+      "grammar_id": "en-going-to",
+      "language": "en",
+      "text": "Are you going to take the train?",
+      "translation_zh": "你打算坐火车吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be going to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-going-to-04",
+      "grammar_id": "en-going-to",
+      "language": "en",
+      "text": "Look at those clouds; it is going to rain.",
+      "translation_zh": "看那些云，要下雨了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be going to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-going-to-05",
+      "grammar_id": "en-going-to",
+      "language": "en",
+      "text": "She is going to start a new job next week.",
+      "translation_zh": "她下周要开始一份新工作。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be going to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-going-to-06",
+      "grammar_id": "en-going-to",
+      "language": "en",
+      "text": "What are you going to cook tonight?",
+      "translation_zh": "你今晚打算做什么？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「be going to + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-will-01",
+      "grammar_id": "en-will",
+      "language": "en",
+      "text": "I will carry that bag for you.",
+      "translation_zh": "我来帮你拿那个包。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「will + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-will-02",
+      "grammar_id": "en-will",
+      "language": "en",
+      "text": "We will not be late.",
+      "translation_zh": "我们不会迟到。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「will + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-will-03",
+      "grammar_id": "en-will",
+      "language": "en",
+      "text": "Will you be home this evening?",
+      "translation_zh": "你今晚会在家吗？",
+      "target_role": "CONTRAST",
+      "rationale_zh": "will 问句询问未来状态，不是该 Grammar 核心的当场决定或承诺。"
+    },
+    {
+      "id": "35e1a-ge-en-will-04",
+      "grammar_id": "en-will",
+      "language": "en",
+      "text": "The meeting will start at ten.",
+      "translation_zh": "会议将在十点开始。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "will 表示安排/中性未来，不是该 Grammar 核心的当场决定或承诺。"
+    },
+    {
+      "id": "35e1a-ge-en-will-05",
+      "grammar_id": "en-will",
+      "language": "en",
+      "text": "I think the weather will improve tomorrow.",
+      "translation_zh": "我想明天天气会好转。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "will 表示预测，不是该 Grammar 核心的当场决定或承诺。"
+    },
+    {
+      "id": "35e1a-ge-en-will-06",
+      "grammar_id": "en-will",
+      "language": "en",
+      "text": "Do not worry; I will call the landlord.",
+      "translation_zh": "别担心，我会给房东打电话。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「will + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-comparative-01",
+      "grammar_id": "en-comparative",
+      "language": "en",
+      "text": "The bus is cheaper than the train.",
+      "translation_zh": "公交车比火车便宜。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「comparative + than」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-comparative-02",
+      "grammar_id": "en-comparative",
+      "language": "en",
+      "text": "This route is not faster than the old one.",
+      "translation_zh": "这条路线不比旧路线快。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「comparative + than」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-comparative-03",
+      "grammar_id": "en-comparative",
+      "language": "en",
+      "text": "Is the blue jacket warmer than the black one?",
+      "translation_zh": "蓝色夹克比黑色夹克暖和吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「comparative + than」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-comparative-04",
+      "grammar_id": "en-comparative",
+      "language": "en",
+      "text": "My new office is closer to home.",
+      "translation_zh": "我的新办公室离家更近。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "使用比较级 closer，但比较标准由语境省略，没有显式 than 短语。"
+    },
+    {
+      "id": "35e1a-ge-en-comparative-05",
+      "grammar_id": "en-comparative",
+      "language": "en",
+      "text": "Today is busier than yesterday.",
+      "translation_zh": "今天比昨天更忙。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「comparative + than」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-comparative-06",
+      "grammar_id": "en-comparative",
+      "language": "en",
+      "text": "Which option is more convenient for you?",
+      "translation_zh": "哪个选项对你更方便？",
+      "target_role": "CONTRAST",
+      "rationale_zh": "使用 more convenient，但比较标准由问句语境恢复，没有显式 than 短语。"
+    },
+    {
+      "id": "35e1a-ge-en-would-like-01",
+      "grammar_id": "en-would-like",
+      "language": "en",
+      "text": "I would like a glass of water, please.",
+      "translation_zh": "我想要一杯水。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would like / love / prefer」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-like-02",
+      "grammar_id": "en-would-like",
+      "language": "en",
+      "text": "We would like to check in now.",
+      "translation_zh": "我们想现在办理入住。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would like / love / prefer」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-like-03",
+      "grammar_id": "en-would-like",
+      "language": "en",
+      "text": "Would you like some more rice?",
+      "translation_zh": "你想再来一点米饭吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would like / love / prefer」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-like-04",
+      "grammar_id": "en-would-like",
+      "language": "en",
+      "text": "I would not like to discuss that at work.",
+      "translation_zh": "我不想在工作场合讨论那件事。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would like / love / prefer」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-like-05",
+      "grammar_id": "en-would-like",
+      "language": "en",
+      "text": "She would prefer a seat near the door.",
+      "translation_zh": "她更想要靠门的座位。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would like / love / prefer」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-like-06",
+      "grammar_id": "en-would-like",
+      "language": "en",
+      "text": "Would they like us to call a taxi?",
+      "translation_zh": "他们希望我们叫出租车吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would like / love / prefer」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-let-us-01",
+      "grammar_id": "en-let-us",
+      "language": "en",
+      "text": "Let's check the timetable first.",
+      "translation_zh": "我们先查看时刻表吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Let's + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-let-us-02",
+      "grammar_id": "en-let-us",
+      "language": "en",
+      "text": "Let's not make a decision yet.",
+      "translation_zh": "我们先别作决定。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Let's + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-let-us-03",
+      "grammar_id": "en-let-us",
+      "language": "en",
+      "text": "Let's meet near the main entrance.",
+      "translation_zh": "我们在正门附近见吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Let's + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-let-us-04",
+      "grammar_id": "en-let-us",
+      "language": "en",
+      "text": "Let's ask the staff for help.",
+      "translation_zh": "我们请工作人员帮忙吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Let's + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-let-us-05",
+      "grammar_id": "en-let-us",
+      "language": "en",
+      "text": "Let's cook at home tonight.",
+      "translation_zh": "我们今晚在家做饭吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Let's + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-let-us-06",
+      "grammar_id": "en-let-us",
+      "language": "en",
+      "text": "Where shall we go? Let's try the new café.",
+      "translation_zh": "我们去哪里？去试试那家新咖啡馆吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Let's + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-before-after-01",
+      "grammar_id": "en-before-after",
+      "language": "en",
+      "text": "Wash your hands before you cook.",
+      "translation_zh": "做饭前要洗手。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「before / after + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-before-after-02",
+      "grammar_id": "en-before-after",
+      "language": "en",
+      "text": "We can talk after the meeting ends.",
+      "translation_zh": "会议结束后我们可以谈谈。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「before / after + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-before-after-03",
+      "grammar_id": "en-before-after",
+      "language": "en",
+      "text": "Do not leave before the doctor sees you.",
+      "translation_zh": "医生看过你之前不要离开。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「before / after + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-before-after-04",
+      "grammar_id": "en-before-after",
+      "language": "en",
+      "text": "After she finishes work, she takes the bus home.",
+      "translation_zh": "她下班后坐公交车回家。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「before / after + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-before-after-05",
+      "grammar_id": "en-before-after",
+      "language": "en",
+      "text": "Please pay before you collect the order.",
+      "translation_zh": "取餐前请付款。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「before / after + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-before-after-06",
+      "grammar_id": "en-before-after",
+      "language": "en",
+      "text": "I checked the address after you called me.",
+      "translation_zh": "你给我打电话后，我核对了地址。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「before / after + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-enjoy-ing-01",
+      "grammar_id": "en-enjoy-ing",
+      "language": "en",
+      "text": "She enjoys reading on the train.",
+      "translation_zh": "她喜欢在火车上看书。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「enjoy + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-enjoy-ing-02",
+      "grammar_id": "en-enjoy-ing",
+      "language": "en",
+      "text": "We do not enjoy waiting in long lines.",
+      "translation_zh": "我们不喜欢排长队等候。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「enjoy + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-enjoy-ing-03",
+      "grammar_id": "en-enjoy-ing",
+      "language": "en",
+      "text": "Do you enjoy cooking for friends?",
+      "translation_zh": "你喜欢给朋友做饭吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「enjoy + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-enjoy-ing-04",
+      "grammar_id": "en-enjoy-ing",
+      "language": "en",
+      "text": "He enjoyed working with the new team.",
+      "translation_zh": "他很享受和新团队一起工作。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「enjoy + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-enjoy-ing-05",
+      "grammar_id": "en-enjoy-ing",
+      "language": "en",
+      "text": "I enjoy learning languages through conversation.",
+      "translation_zh": "我喜欢通过对话学习语言。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「enjoy + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-enjoy-ing-06",
+      "grammar_id": "en-enjoy-ing",
+      "language": "en",
+      "text": "What do you enjoy doing after work?",
+      "translation_zh": "你下班后喜欢做什么？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「enjoy + V-ing」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-take-time-01",
+      "grammar_id": "en-take-time",
+      "language": "en",
+      "text": "It takes five minutes to walk to the station.",
+      "translation_zh": "步行到车站需要五分钟。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「It takes + time + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-take-time-02",
+      "grammar_id": "en-take-time",
+      "language": "en",
+      "text": "It does not take long to complete the form.",
+      "translation_zh": "填写这张表格花不了很久。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「It takes + time + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-take-time-03",
+      "grammar_id": "en-take-time",
+      "language": "en",
+      "text": "How long does it take to cook this rice?",
+      "translation_zh": "煮这种米需要多长时间？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「It takes + time + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-take-time-04",
+      "grammar_id": "en-take-time",
+      "language": "en",
+      "text": "It took us an hour to find the hotel.",
+      "translation_zh": "我们花了一个小时才找到酒店。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「It takes + time + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-take-time-05",
+      "grammar_id": "en-take-time",
+      "language": "en",
+      "text": "It will take two days to repair the phone.",
+      "translation_zh": "修好这部手机需要两天。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「It takes + time + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-take-time-06",
+      "grammar_id": "en-take-time",
+      "language": "en",
+      "text": "Does it take longer to travel during rush hour?",
+      "translation_zh": "高峰期出行会花更长时间吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「It takes + time + to-infinitive」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-shall-suggestion-01",
+      "grammar_id": "en-shall-suggestion",
+      "language": "en",
+      "text": "Shall we order now?",
+      "translation_zh": "我们现在点餐好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Shall we + base verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-shall-suggestion-02",
+      "grammar_id": "en-shall-suggestion",
+      "language": "en",
+      "text": "Shall we take a short break?",
+      "translation_zh": "我们休息一会儿好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Shall we + base verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-shall-suggestion-03",
+      "grammar_id": "en-shall-suggestion",
+      "language": "en",
+      "text": "Shall we leave now rather than wait until tomorrow?",
+      "translation_zh": "我们现在走，不等到明天好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Shall we + base verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-shall-suggestion-04",
+      "grammar_id": "en-shall-suggestion",
+      "language": "en",
+      "text": "Where shall we meet after class?",
+      "translation_zh": "下课后我们在哪里见面？",
+      "target_role": "CONTRAST",
+      "rationale_zh": "Where shall we… 是共同安排的 wh-question，不是 canonical Shall we…? 提议句。"
+    },
+    {
+      "id": "35e1a-ge-en-shall-suggestion-05",
+      "grammar_id": "en-shall-suggestion",
+      "language": "en",
+      "text": "Shall we ask for a different room?",
+      "translation_zh": "我们要求换一个房间好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Shall we + base verb?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-shall-suggestion-06",
+      "grammar_id": "en-shall-suggestion",
+      "language": "en",
+      "text": "What shall we do if the train is late?",
+      "translation_zh": "如果火车晚点，我们怎么办？",
+      "target_role": "CONTRAST",
+      "rationale_zh": "What shall we do… 是共同决策问句，不是 canonical Shall we…? 提议句。"
+    },
+    {
+      "id": "35e1a-ge-en-ellipsis-01",
+      "grammar_id": "en-ellipsis",
+      "language": "en",
+      "text": "Are you ready? Not quite.",
+      "translation_zh": "你准备好了吗？还没有完全准备好。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「short answer with recoverable content」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-ellipsis-02",
+      "grammar_id": "en-ellipsis",
+      "language": "en",
+      "text": "Would you like some tea? Yes, please.",
+      "translation_zh": "你想喝点茶吗？好的，谢谢。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「short answer with recoverable content」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-ellipsis-03",
+      "grammar_id": "en-ellipsis",
+      "language": "en",
+      "text": "Did she call? Not yet.",
+      "translation_zh": "她打电话了吗？还没有。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「short answer with recoverable content」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-ellipsis-04",
+      "grammar_id": "en-ellipsis",
+      "language": "en",
+      "text": "Who needs a receipt? I do.",
+      "translation_zh": "谁需要收据？我需要。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「short answer with recoverable content」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-ellipsis-05",
+      "grammar_id": "en-ellipsis",
+      "language": "en",
+      "text": "Can you come on Friday? I think so.",
+      "translation_zh": "你星期五能来吗？我想可以。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「short answer with recoverable content」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-ellipsis-06",
+      "grammar_id": "en-ellipsis",
+      "language": "en",
+      "text": "Is this seat free? It looks like it.",
+      "translation_zh": "这个座位空着吗？看起来是的。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「short answer with recoverable content」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-may-01",
+      "grammar_id": "en-may",
+      "language": "en",
+      "text": "The train may arrive a few minutes late.",
+      "translation_zh": "火车可能会晚到几分钟。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「may + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-may-02",
+      "grammar_id": "en-may",
+      "language": "en",
+      "text": "She may not have enough time today.",
+      "translation_zh": "她今天可能没有足够的时间。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「may + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-may-03",
+      "grammar_id": "en-may",
+      "language": "en",
+      "text": "The manager may join us later.",
+      "translation_zh": "经理稍后可能会加入我们。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「may + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-may-04",
+      "grammar_id": "en-may",
+      "language": "en",
+      "text": "We may need to change the schedule.",
+      "translation_zh": "我们可能需要更改日程。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「may + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-may-05",
+      "grammar_id": "en-may",
+      "language": "en",
+      "text": "This medicine may make you sleepy.",
+      "translation_zh": "这种药可能会让你犯困。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「may + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-may-06",
+      "grammar_id": "en-may",
+      "language": "en",
+      "text": "There may be a fee for changing the booking.",
+      "translation_zh": "更改预订可能会收费。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「may + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-might-01",
+      "grammar_id": "en-might",
+      "language": "en",
+      "text": "I might work from home tomorrow.",
+      "translation_zh": "我明天可能在家工作。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「might + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-might-02",
+      "grammar_id": "en-might",
+      "language": "en",
+      "text": "They might not accept cash.",
+      "translation_zh": "他们可能不收现金。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「might + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-might-03",
+      "grammar_id": "en-might",
+      "language": "en",
+      "text": "Do you think the road might be closed because of the snow?",
+      "translation_zh": "你觉得这条路可能会因为下雪而关闭吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「might + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-might-04",
+      "grammar_id": "en-might",
+      "language": "en",
+      "text": "We might need a larger table.",
+      "translation_zh": "我们可能需要一张更大的桌子。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「might + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-might-05",
+      "grammar_id": "en-might",
+      "language": "en",
+      "text": "She said she might arrive after eight.",
+      "translation_zh": "她说她可能八点以后到。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「might + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-might-06",
+      "grammar_id": "en-might",
+      "language": "en",
+      "text": "You might want to keep a copy of the form.",
+      "translation_zh": "你或许最好留一份表格副本。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "might want to 是委婉建议用法，不是单纯陈述事件可能性。"
+    },
+    {
+      "id": "35e1a-ge-en-indirect-question-01",
+      "grammar_id": "en-indirect-question",
+      "language": "en",
+      "text": "Could you tell me when the shop closes?",
+      "translation_zh": "你能告诉我商店几点关门吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「verb + wh-word + subject + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-indirect-question-02",
+      "grammar_id": "en-indirect-question",
+      "language": "en",
+      "text": "Do you know whether this seat is free?",
+      "translation_zh": "你知道这个座位是否空着吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「verb + wh-word + subject + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-indirect-question-03",
+      "grammar_id": "en-indirect-question",
+      "language": "en",
+      "text": "I cannot remember where I put the key.",
+      "translation_zh": "我想不起把钥匙放在哪里了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「verb + wh-word + subject + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-indirect-question-04",
+      "grammar_id": "en-indirect-question",
+      "language": "en",
+      "text": "Can you explain why the price changed?",
+      "translation_zh": "你能解释价格为什么变了吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「verb + wh-word + subject + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-indirect-question-05",
+      "grammar_id": "en-indirect-question",
+      "language": "en",
+      "text": "She asked how long the repair would take.",
+      "translation_zh": "她问维修需要多长时间。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「verb + wh-word + subject + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-indirect-question-06",
+      "grammar_id": "en-indirect-question",
+      "language": "en",
+      "text": "I wonder which bus goes to the hospital.",
+      "translation_zh": "我想知道哪辆公交车去医院。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「verb + wh-word + subject + verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-since-for-01",
+      "grammar_id": "en-since-for",
+      "language": "en",
+      "text": "We have lived here for three years.",
+      "translation_zh": "我们在这里住了三年。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「present perfect + since / for」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-since-for-02",
+      "grammar_id": "en-since-for",
+      "language": "en",
+      "text": "She has not eaten since breakfast.",
+      "translation_zh": "她从早餐后一直没吃东西。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「present perfect + since / for」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-since-for-03",
+      "grammar_id": "en-since-for",
+      "language": "en",
+      "text": "How long have you worked at this school?",
+      "translation_zh": "你在这所学校工作多久了？",
+      "target_role": "SUPPORT",
+      "rationale_zh": "How long + present perfect 能引出 since/for 答语，但句内没有实际出现 since 或 for。"
+    },
+    {
+      "id": "35e1a-ge-en-since-for-04",
+      "grammar_id": "en-since-for",
+      "language": "en",
+      "text": "I have known him since university.",
+      "translation_zh": "我从大学起就认识他。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「present perfect + since / for」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-since-for-05",
+      "grammar_id": "en-since-for",
+      "language": "en",
+      "text": "The lift has been out of order for two days.",
+      "translation_zh": "电梯已经坏了两天。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「present perfect + since / for」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-since-for-06",
+      "grammar_id": "en-since-for",
+      "language": "en",
+      "text": "Have you been waiting since nine o'clock?",
+      "translation_zh": "你从九点起一直在等吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「present perfect + since / for」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-as-long-as-01",
+      "grammar_id": "en-as-long-as",
+      "language": "en",
+      "text": "You can borrow the car as long as you drive carefully.",
+      "translation_zh": "只要你小心驾驶，就可以借这辆车。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「as long as + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-as-long-as-02",
+      "grammar_id": "en-as-long-as",
+      "language": "en",
+      "text": "I do not mind waiting as long as you let me know.",
+      "translation_zh": "只要你告诉我，我不介意等。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「as long as + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-as-long-as-03",
+      "grammar_id": "en-as-long-as",
+      "language": "en",
+      "text": "Can we change the booking as long as we call today?",
+      "translation_zh": "只要今天打电话，我们就能改预订吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「as long as + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-as-long-as-04",
+      "grammar_id": "en-as-long-as",
+      "language": "en",
+      "text": "As long as the pain does not get worse, you can rest at home.",
+      "translation_zh": "只要疼痛没有加重，你可以在家休息。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「as long as + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-as-long-as-05",
+      "grammar_id": "en-as-long-as",
+      "language": "en",
+      "text": "The plan will work as long as everyone arrives on time.",
+      "translation_zh": "只要大家准时到，这个计划就可行。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「as long as + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-as-long-as-06",
+      "grammar_id": "en-as-long-as",
+      "language": "en",
+      "text": "You may stay here as long as you keep the door closed.",
+      "translation_zh": "只要你把门关着，就可以待在这里。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「as long as + clause」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-rather-01",
+      "grammar_id": "en-would-rather",
+      "language": "en",
+      "text": "I would rather take the train than drive.",
+      "translation_zh": "我宁愿坐火车也不愿开车。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would rather + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-rather-02",
+      "grammar_id": "en-would-rather",
+      "language": "en",
+      "text": "She would rather not talk about it now.",
+      "translation_zh": "她现在宁愿不谈这件事。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would rather + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-rather-03",
+      "grammar_id": "en-would-rather",
+      "language": "en",
+      "text": "Would you rather eat inside or outside?",
+      "translation_zh": "你更愿意在室内还是室外吃？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would rather + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-rather-04",
+      "grammar_id": "en-would-rather",
+      "language": "en",
+      "text": "We would rather wait for a quieter room.",
+      "translation_zh": "我们宁愿等一个更安静的房间。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would rather + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-rather-05",
+      "grammar_id": "en-would-rather",
+      "language": "en",
+      "text": "He said he would rather leave early.",
+      "translation_zh": "他说他宁愿早点离开。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「would rather + base verb」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-would-rather-06",
+      "grammar_id": "en-would-rather",
+      "language": "en",
+      "text": "I would rather you called before visiting.",
+      "translation_zh": "我希望你来访前先打电话。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "would rather + different subject + past form 不同于目标公式的同主语 would rather + base verb。"
+    },
+    {
+      "id": "35e1a-ge-en-what-if-01",
+      "grammar_id": "en-what-if",
+      "language": "en",
+      "text": "What if the shop is already closed?",
+      "translation_zh": "如果商店已经关门了怎么办？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「What if + clause?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-what-if-02",
+      "grammar_id": "en-what-if",
+      "language": "en",
+      "text": "What if we cannot find a taxi?",
+      "translation_zh": "如果我们找不到出租车怎么办？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「What if + clause?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-what-if-03",
+      "grammar_id": "en-what-if",
+      "language": "en",
+      "text": "What if she does not agree with the plan?",
+      "translation_zh": "如果她不同意这个计划怎么办？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「What if + clause?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-what-if-04",
+      "grammar_id": "en-what-if",
+      "language": "en",
+      "text": "What if I miss the last train?",
+      "translation_zh": "如果我错过末班车怎么办？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「What if + clause?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-what-if-05",
+      "grammar_id": "en-what-if",
+      "language": "en",
+      "text": "What if the medicine makes me feel worse?",
+      "translation_zh": "如果这种药让我感觉更糟怎么办？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「What if + clause?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-what-if-06",
+      "grammar_id": "en-what-if",
+      "language": "en",
+      "text": "What if we moved the meeting to Friday?",
+      "translation_zh": "如果我们把会议改到星期五怎么样？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「What if + clause?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-ever-perfect-01",
+      "grammar_id": "en-ever-perfect",
+      "language": "en",
+      "text": "Have you ever worked from home?",
+      "translation_zh": "你曾经在家工作过吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Have you ever + past participle?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-ever-perfect-02",
+      "grammar_id": "en-ever-perfect",
+      "language": "en",
+      "text": "Has she ever tried Japanese food?",
+      "translation_zh": "她吃过日本料理吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Have you ever + past participle?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-ever-perfect-03",
+      "grammar_id": "en-ever-perfect",
+      "language": "en",
+      "text": "I have never missed a flight.",
+      "translation_zh": "我从未误过航班。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "never 是经验问句中 ever 的否定对应形式；不直接实例化 Have you ever…?。"
+    },
+    {
+      "id": "35e1a-ge-en-ever-perfect-04",
+      "grammar_id": "en-ever-perfect",
+      "language": "en",
+      "text": "Have they ever stayed at this hotel?",
+      "translation_zh": "他们住过这家酒店吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Have you ever + past participle?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-ever-perfect-05",
+      "grammar_id": "en-ever-perfect",
+      "language": "en",
+      "text": "What is the best book you have ever read?",
+      "translation_zh": "你读过的最好的书是什么？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Have you ever + past participle?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-en-ever-perfect-06",
+      "grammar_id": "en-ever-perfect",
+      "language": "en",
+      "text": "He has only ever used this card online.",
+      "translation_zh": "他一直只在网上用过这张卡。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「Have you ever + past participle?」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-nonpast-01",
+      "grammar_id": "ja-plain-nonpast",
+      "language": "ja",
+      "text": "毎朝、六時に起きる。",
+      "translation_zh": "每天早上六点起床。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-nonpast-02",
+      "grammar_id": "ja-plain-nonpast",
+      "language": "ja",
+      "text": "今日は家で仕事をする。",
+      "translation_zh": "今天在家工作。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-nonpast-03",
+      "grammar_id": "ja-plain-nonpast",
+      "language": "ja",
+      "text": "この電車は空港まで行く。",
+      "translation_zh": "这趟电车开往机场。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-nonpast-04",
+      "grammar_id": "ja-plain-nonpast",
+      "language": "ja",
+      "text": "明日は学校に行かない。",
+      "translation_zh": "明天不去学校。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "行かない是普通体非过去否定形，不是目标公式的辞书形。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-nonpast-05",
+      "grammar_id": "ja-plain-nonpast",
+      "language": "ja",
+      "text": "週末は友達と料理を作る。",
+      "translation_zh": "周末和朋友一起做饭。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-nonpast-06",
+      "grammar_id": "ja-plain-nonpast",
+      "language": "ja",
+      "text": "何時に家を出る？",
+      "translation_zh": "几点出门？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-nonpast-07",
+      "grammar_id": "ja-plain-nonpast",
+      "language": "ja",
+      "text": "来月、新しい仕事を始める。",
+      "translation_zh": "下个月开始新工作。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-copula-01",
+      "grammar_id": "ja-copula",
+      "language": "ja",
+      "text": "こちらが受付です。",
+      "translation_zh": "这里是接待处。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-copula-02",
+      "grammar_id": "ja-copula",
+      "language": "ja",
+      "text": "今日は休みではありません。",
+      "translation_zh": "今天不是休息日。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "ではありません是礼貌否定 copula，与 canonical です作必要对比。"
+    },
+    {
+      "id": "35e1a-ge-ja-copula-03",
+      "grammar_id": "ja-copula",
+      "language": "ja",
+      "text": "この部屋は静かですか。",
+      "translation_zh": "这个房间安静吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-copula-04",
+      "grammar_id": "ja-copula",
+      "language": "ja",
+      "text": "予約は明日の三時です。",
+      "translation_zh": "预约是明天下午三点。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-copula-05",
+      "grammar_id": "ja-copula",
+      "language": "ja",
+      "text": "妹は大学生です。",
+      "translation_zh": "妹妹是大学生。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-copula-06",
+      "grammar_id": "ja-copula",
+      "language": "ja",
+      "text": "駅はあの建物の隣です。",
+      "translation_zh": "车站在那栋楼旁边。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-copula-07",
+      "grammar_id": "ja-copula",
+      "language": "ja",
+      "text": "昨日の担当は田中さんでした。",
+      "translation_zh": "昨天的负责人是田中。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "でした是礼貌过去 copula，与 canonical です作时态对比。"
+    },
+    {
+      "id": "35e1a-ge-ja-wa-topic-01",
+      "grammar_id": "ja-wa-topic",
+      "language": "ja",
+      "text": "私は毎朝コーヒーを飲みます。",
+      "translation_zh": "我每天早上喝咖啡。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + は」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wa-topic-02",
+      "grammar_id": "ja-wa-topic",
+      "language": "ja",
+      "text": "この店は日曜日も開いています。",
+      "translation_zh": "这家店星期天也营业。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + は」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wa-topic-03",
+      "grammar_id": "ja-wa-topic",
+      "language": "ja",
+      "text": "会議は十時からです。",
+      "translation_zh": "会议从十点开始。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + は」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wa-topic-04",
+      "grammar_id": "ja-wa-topic",
+      "language": "ja",
+      "text": "田中さんは今日は来ません。",
+      "translation_zh": "田中今天不来。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + は」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wa-topic-05",
+      "grammar_id": "ja-wa-topic",
+      "language": "ja",
+      "text": "この薬は食後に飲んでください。",
+      "translation_zh": "这种药请在饭后服用。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + は」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wa-topic-06",
+      "grammar_id": "ja-wa-topic",
+      "language": "ja",
+      "text": "週末は何をしますか。",
+      "translation_zh": "周末做什么？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + は」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wa-topic-07",
+      "grammar_id": "ja-wa-topic",
+      "language": "ja",
+      "text": "値段は高いですが、品質はいいです。",
+      "translation_zh": "价格虽高，但质量很好。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + は」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ga-existence-01",
+      "grammar_id": "ja-ga-existence",
+      "language": "ja",
+      "text": "机の上に鍵があります。",
+      "translation_zh": "桌上有钥匙。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + がある / いる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ga-existence-02",
+      "grammar_id": "ja-ga-existence",
+      "language": "ja",
+      "text": "公園に子どもがいます。",
+      "translation_zh": "公园里有孩子。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + がある / いる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ga-existence-03",
+      "grammar_id": "ja-ga-existence",
+      "language": "ja",
+      "text": "この近くに薬局はありません。",
+      "translation_zh": "这附近没有药房。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "否定存在句使用主题化的薬局はありません，没有直接出现名词 + がある/いる。"
+    },
+    {
+      "id": "35e1a-ge-ja-ga-existence-04",
+      "grammar_id": "ja-ga-existence",
+      "language": "ja",
+      "text": "部屋に冷蔵庫がありますか。",
+      "translation_zh": "房间里有冰箱吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + がある / いる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ga-existence-05",
+      "grammar_id": "ja-ga-existence",
+      "language": "ja",
+      "text": "駅の前に新しい店ができました。",
+      "translation_zh": "车站前开了一家新店。",
+      "target_role": "SUPPORT",
+      "rationale_zh": "店ができました表达“新店开成/出现”，教学上相关，但没有实例化がある/いる。"
+    },
+    {
+      "id": "35e1a-ge-ja-ga-existence-06",
+      "grammar_id": "ja-ga-existence",
+      "language": "ja",
+      "text": "会議室には誰もいません。",
+      "translation_zh": "会议室里没有人。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "には…いません是否定存在并带主题/范围化，不是 canonical 名词 + がいる。"
+    },
+    {
+      "id": "35e1a-ge-ja-ga-existence-07",
+      "grammar_id": "ja-ga-existence",
+      "language": "ja",
+      "text": "明日の午後、予約があります。",
+      "translation_zh": "明天下午有预约。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + がある / いる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wo-object-01",
+      "grammar_id": "ja-wo-object",
+      "language": "ja",
+      "text": "毎朝、新聞を読みます。",
+      "translation_zh": "我每天早上看报纸。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wo-object-02",
+      "grammar_id": "ja-wo-object",
+      "language": "ja",
+      "text": "駅で友達を待っています。",
+      "translation_zh": "我正在车站等朋友。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wo-object-03",
+      "grammar_id": "ja-wo-object",
+      "language": "ja",
+      "text": "朝はコーヒーを飲みません。",
+      "translation_zh": "早上不喝咖啡。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wo-object-04",
+      "grammar_id": "ja-wo-object",
+      "language": "ja",
+      "text": "この書類を確認しましたか。",
+      "translation_zh": "你确认这份文件了吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wo-object-05",
+      "grammar_id": "ja-wo-object",
+      "language": "ja",
+      "text": "帰る前に窓を閉めてください。",
+      "translation_zh": "回去前请关窗。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wo-object-06",
+      "grammar_id": "ja-wo-object",
+      "language": "ja",
+      "text": "週末に部屋を掃除します。",
+      "translation_zh": "周末打扫房间。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-wo-object-07",
+      "grammar_id": "ja-wo-object",
+      "language": "ja",
+      "text": "どの電車を使いますか。",
+      "translation_zh": "你坐哪趟电车？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-time-01",
+      "grammar_id": "ja-ni-time",
+      "language": "ja",
+      "text": "会議は九時に始まります。",
+      "translation_zh": "会议九点开始。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + に + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-time-02",
+      "grammar_id": "ja-ni-time",
+      "language": "ja",
+      "text": "私は毎晩十一時に寝ます。",
+      "translation_zh": "我每天晚上十一点睡觉。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + に + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-time-03",
+      "grammar_id": "ja-ni-time",
+      "language": "ja",
+      "text": "日曜日には仕事に行きません。",
+      "translation_zh": "星期天不去上班。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + に + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-time-04",
+      "grammar_id": "ja-ni-time",
+      "language": "ja",
+      "text": "何時に駅に着きますか。",
+      "translation_zh": "几点到车站？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + に + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-time-05",
+      "grammar_id": "ja-ni-time",
+      "language": "ja",
+      "text": "来週の月曜日に病院へ行きます。",
+      "translation_zh": "下周一去医院。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + に + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-time-06",
+      "grammar_id": "ja-ni-time",
+      "language": "ja",
+      "text": "昼休みに友達と話しました。",
+      "translation_zh": "午休时和朋友聊了天。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + に + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-time-07",
+      "grammar_id": "ja-ni-time",
+      "language": "ja",
+      "text": "三時に受付で会いましょう。",
+      "translation_zh": "三点在接待处见吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + に + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-de-place-01",
+      "grammar_id": "ja-de-place",
+      "language": "ja",
+      "text": "図書館で勉強します。",
+      "translation_zh": "在图书馆学习。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「场所 + で + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-de-place-02",
+      "grammar_id": "ja-de-place",
+      "language": "ja",
+      "text": "家で昼ご飯を食べました。",
+      "translation_zh": "在家吃了午饭。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「场所 + で + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-de-place-03",
+      "grammar_id": "ja-de-place",
+      "language": "ja",
+      "text": "この部屋では電話を使わないでください。",
+      "translation_zh": "请不要在这个房间打电话。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「场所 + で + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-de-place-04",
+      "grammar_id": "ja-de-place",
+      "language": "ja",
+      "text": "どこで切符を買えますか。",
+      "translation_zh": "在哪里可以买票？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「场所 + で + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-de-place-05",
+      "grammar_id": "ja-de-place",
+      "language": "ja",
+      "text": "駅の前で友達を待っています。",
+      "translation_zh": "正在车站前等朋友。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「场所 + で + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-de-place-06",
+      "grammar_id": "ja-de-place",
+      "language": "ja",
+      "text": "会議は二階の部屋で行います。",
+      "translation_zh": "会议在二楼的房间举行。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「场所 + で + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-de-place-07",
+      "grammar_id": "ja-de-place",
+      "language": "ja",
+      "text": "週末は公園で走ります。",
+      "translation_zh": "周末在公园跑步。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「场所 + で + 动词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-no-possession-01",
+      "grammar_id": "ja-no-possession",
+      "language": "ja",
+      "text": "これは私の傘です。",
+      "translation_zh": "这是我的伞。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + の + 名词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-no-possession-02",
+      "grammar_id": "ja-no-possession",
+      "language": "ja",
+      "text": "田中さんの電話番号を知っていますか。",
+      "translation_zh": "你知道田中的电话号码吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + の + 名词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-no-possession-03",
+      "grammar_id": "ja-no-possession",
+      "language": "ja",
+      "text": "駅の入口はあちらです。",
+      "translation_zh": "车站入口在那边。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + の + 名词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-no-possession-04",
+      "grammar_id": "ja-no-possession",
+      "language": "ja",
+      "text": "この店の料理は辛くありません。",
+      "translation_zh": "这家店的菜不辣。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + の + 名词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-no-possession-05",
+      "grammar_id": "ja-no-possession",
+      "language": "ja",
+      "text": "友達の家に泊まりました。",
+      "translation_zh": "我住在朋友家了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + の + 名词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-no-possession-06",
+      "grammar_id": "ja-no-possession",
+      "language": "ja",
+      "text": "明日の予定を確認しましょう。",
+      "translation_zh": "我们确认一下明天的计划吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + の + 名词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-no-possession-07",
+      "grammar_id": "ja-no-possession",
+      "language": "ja",
+      "text": "会社の近くに小さな店があります。",
+      "translation_zh": "公司附近有一家小店。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + の + 名词」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ka-question-01",
+      "grammar_id": "ja-ka-question",
+      "language": "ja",
+      "text": "この席は空いていますか。",
+      "translation_zh": "这个座位空着吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「礼貌句 + か」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ka-question-02",
+      "grammar_id": "ja-ka-question",
+      "language": "ja",
+      "text": "カードで払えますか。",
+      "translation_zh": "可以刷卡付款吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「礼貌句 + か」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ka-question-03",
+      "grammar_id": "ja-ka-question",
+      "language": "ja",
+      "text": "明日の午後は大丈夫ですか。",
+      "translation_zh": "明天下午方便吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「礼貌句 + か」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ka-question-04",
+      "grammar_id": "ja-ka-question",
+      "language": "ja",
+      "text": "駅までどのくらいかかりますか。",
+      "translation_zh": "到车站需要多久？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「礼貌句 + か」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ka-question-05",
+      "grammar_id": "ja-ka-question",
+      "language": "ja",
+      "text": "何かアレルギーがありますか。",
+      "translation_zh": "你有什么过敏吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「礼貌句 + か」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ka-question-06",
+      "grammar_id": "ja-ka-question",
+      "language": "ja",
+      "text": "もう予約を変更しましたか。",
+      "translation_zh": "已经更改预约了吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「礼貌句 + か」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ka-question-07",
+      "grammar_id": "ja-ka-question",
+      "language": "ja",
+      "text": "この席に座りますか。",
+      "translation_zh": "你坐这个座位吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「礼貌句 + か」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-i-adjective-01",
+      "grammar_id": "ja-i-adjective",
+      "language": "ja",
+      "text": "このかばんは軽いです。",
+      "translation_zh": "这个包很轻。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「い形容词 + です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-i-adjective-02",
+      "grammar_id": "ja-i-adjective",
+      "language": "ja",
+      "text": "今日はあまり寒くないです。",
+      "translation_zh": "今天不太冷。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「い形容词 + です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-i-adjective-03",
+      "grammar_id": "ja-i-adjective",
+      "language": "ja",
+      "text": "その部屋は広いですか。",
+      "translation_zh": "那个房间宽敞吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「い形容词 + です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-i-adjective-04",
+      "grammar_id": "ja-i-adjective",
+      "language": "ja",
+      "text": "昨日の試験は難しかったです。",
+      "translation_zh": "昨天的考试很难。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「い形容词 + です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-i-adjective-05",
+      "grammar_id": "ja-i-adjective",
+      "language": "ja",
+      "text": "この料理は辛くありません。",
+      "translation_zh": "这道菜不辣。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「い形容词 + です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-i-adjective-06",
+      "grammar_id": "ja-i-adjective",
+      "language": "ja",
+      "text": "駅から近い店を探しています。",
+      "translation_zh": "我在找离车站近的店。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「い形容词 + です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-i-adjective-07",
+      "grammar_id": "ja-i-adjective",
+      "language": "ja",
+      "text": "朝の電車は人が多いです。",
+      "translation_zh": "早上的电车人很多。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「い形容词 + です」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-suki-01",
+      "grammar_id": "ja-suki",
+      "language": "ja",
+      "text": "私は音楽が好きです。",
+      "translation_zh": "我喜欢音乐。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + が / は好きです」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-suki-02",
+      "grammar_id": "ja-suki",
+      "language": "ja",
+      "text": "弟は辛い食べ物が好きではありません。",
+      "translation_zh": "弟弟不喜欢辣的食物。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + が / は好きです」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-suki-03",
+      "grammar_id": "ja-suki",
+      "language": "ja",
+      "text": "どんな映画が好きですか。",
+      "translation_zh": "你喜欢什么样的电影？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + が / は好きです」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-suki-04",
+      "grammar_id": "ja-suki",
+      "language": "ja",
+      "text": "母は料理をするのが好きです。",
+      "translation_zh": "妈妈喜欢做饭。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + が / は好きです」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-suki-05",
+      "grammar_id": "ja-suki",
+      "language": "ja",
+      "text": "この二つなら、青いほうが好きです。",
+      "translation_zh": "这两个里面，我更喜欢蓝色的。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + が / は好きです」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-suki-06",
+      "grammar_id": "ja-suki",
+      "language": "ja",
+      "text": "子どもの頃は読書が好きでした。",
+      "translation_zh": "小时候我喜欢阅读。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + が / は好きです」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-suki-07",
+      "grammar_id": "ja-suki",
+      "language": "ja",
+      "text": "静かな場所は好きですが、暗い部屋は苦手です。",
+      "translation_zh": "我喜欢安静的地方，但不喜欢昏暗的房间。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + が / は好きです」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-present-01",
+      "grammar_id": "ja-polite-present",
+      "language": "ja",
+      "text": "毎日、電車で会社へ行きます。",
+      "translation_zh": "每天坐电车去公司。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ます」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-present-02",
+      "grammar_id": "ja-polite-present",
+      "language": "ja",
+      "text": "今日は家で休みます。",
+      "translation_zh": "今天在家休息。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ます」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-present-03",
+      "grammar_id": "ja-polite-present",
+      "language": "ja",
+      "text": "私は今日はカードを使いません。",
+      "translation_zh": "我今天不用银行卡。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "使いません是礼貌非过去否定，与目标公式ます干 + ます作极性对比。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-present-04",
+      "grammar_id": "ja-polite-present",
+      "language": "ja",
+      "text": "何時に仕事が終わりますか。",
+      "translation_zh": "工作几点结束？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ます」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-present-05",
+      "grammar_id": "ja-polite-present",
+      "language": "ja",
+      "text": "あとで資料を送ります。",
+      "translation_zh": "稍后发送资料。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ます」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-present-06",
+      "grammar_id": "ja-polite-present",
+      "language": "ja",
+      "text": "父は週末によく料理をします。",
+      "translation_zh": "爸爸周末常做饭。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ます」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-present-07",
+      "grammar_id": "ja-polite-present",
+      "language": "ja",
+      "text": "来月から日本語を勉強します。",
+      "translation_zh": "从下个月开始学日语。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ます」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-greeting-01",
+      "grammar_id": "ja-greeting",
+      "language": "ja",
+      "text": "こんにちは。今日は暑いですね。",
+      "translation_zh": "你好。今天很热啊。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「固定问候 / 感谢 / 祝愿」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-greeting-02",
+      "grammar_id": "ja-greeting",
+      "language": "ja",
+      "text": "初めまして。山田と申します。",
+      "translation_zh": "初次见面。我叫山田。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「固定问候 / 感谢 / 祝愿」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-greeting-03",
+      "grammar_id": "ja-greeting",
+      "language": "ja",
+      "text": "どうもありがとうございます。",
+      "translation_zh": "非常感谢。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「固定问候 / 感谢 / 祝愿」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-greeting-04",
+      "grammar_id": "ja-greeting",
+      "language": "ja",
+      "text": "いいえ、どういたしまして。",
+      "translation_zh": "不，不客气。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「固定问候 / 感谢 / 祝愿」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-greeting-05",
+      "grammar_id": "ja-greeting",
+      "language": "ja",
+      "text": "お先に失礼します。",
+      "translation_zh": "我先告辞了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「固定问候 / 感谢 / 祝愿」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-greeting-06",
+      "grammar_id": "ja-greeting",
+      "language": "ja",
+      "text": "お疲れさまでした。",
+      "translation_zh": "辛苦了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「固定问候 / 感谢 / 祝愿」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-greeting-07",
+      "grammar_id": "ja-greeting",
+      "language": "ja",
+      "text": "では、また明日。",
+      "translation_zh": "那么，明天见。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「固定问候 / 感谢 / 祝愿」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-past-01",
+      "grammar_id": "ja-plain-past",
+      "language": "ja",
+      "text": "昨日、駅で友達に会った。",
+      "translation_zh": "昨天在车站见到了朋友。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-form-01",
+      "grammar_id": "ja-te-form",
+      "language": "ja",
+      "text": "窓を開けて、部屋の空気を入れ替えます。",
+      "translation_zh": "打开窗户，给房间换气。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-past-02",
+      "grammar_id": "ja-plain-past",
+      "language": "ja",
+      "text": "朝ご飯は食べなかった。",
+      "translation_zh": "没吃早饭。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "食べなかった是普通体过去否定，不是目标公式的肯定た形。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-form-02",
+      "grammar_id": "ja-te-form",
+      "language": "ja",
+      "text": "駅で切符を買って、電車に乗ります。",
+      "translation_zh": "在车站买票，然后坐电车。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-past-03",
+      "grammar_id": "ja-plain-past",
+      "language": "ja",
+      "text": "もう先生に聞いた？",
+      "translation_zh": "已经问老师了吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-form-03",
+      "grammar_id": "ja-te-form",
+      "language": "ja",
+      "text": "ここに名前を書いてください。",
+      "translation_zh": "请在这里写名字。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-past-04",
+      "grammar_id": "ja-plain-past",
+      "language": "ja",
+      "text": "先週、新しい靴を買った。",
+      "translation_zh": "上周买了新鞋。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-form-04",
+      "grammar_id": "ja-te-form",
+      "language": "ja",
+      "text": "今、昼ご飯を食べています。",
+      "translation_zh": "现在正在吃午饭。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-past-05",
+      "grammar_id": "ja-plain-past",
+      "language": "ja",
+      "text": "電車が遅れて、会議に間に合わなかった。",
+      "translation_zh": "电车晚点，没赶上会议。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "間に合わなかった是普通体过去否定，不是目标公式的肯定た形。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-form-05",
+      "grammar_id": "ja-te-form",
+      "language": "ja",
+      "text": "この薬を飲んで、少し休みました。",
+      "translation_zh": "吃了这种药，然后休息了一会儿。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-past-06",
+      "grammar_id": "ja-plain-past",
+      "language": "ja",
+      "text": "週末は家でゆっくり休んだ。",
+      "translation_zh": "周末在家好好休息了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-form-06",
+      "grammar_id": "ja-te-form",
+      "language": "ja",
+      "text": "荷物を持って、こちらへ来てもらえますか。",
+      "translation_zh": "能请你拿着行李来这里吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-plain-past-07",
+      "grammar_id": "ja-plain-past",
+      "language": "ja",
+      "text": "どうして予定を変えたの？",
+      "translation_zh": "为什么更改计划？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-form-07",
+      "grammar_id": "ja-te-form",
+      "language": "ja",
+      "text": "朝起きて、まず水を飲みます。",
+      "translation_zh": "早上起床后先喝水。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-negative-01",
+      "grammar_id": "ja-polite-negative",
+      "language": "ja",
+      "text": "今日は残業しません。",
+      "translation_zh": "今天不加班。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ません」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-negative-02",
+      "grammar_id": "ja-polite-negative",
+      "language": "ja",
+      "text": "この電車は空港へ行きません。",
+      "translation_zh": "这趟电车不去机场。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ません」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-negative-03",
+      "grammar_id": "ja-polite-negative",
+      "language": "ja",
+      "text": "今日は肉を食べません。",
+      "translation_zh": "今天不吃肉。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ません」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-negative-04",
+      "grammar_id": "ja-polite-negative",
+      "language": "ja",
+      "text": "まだ予約していません。",
+      "translation_zh": "还没有预约。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ません」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-negative-05",
+      "grammar_id": "ja-polite-negative",
+      "language": "ja",
+      "text": "週末は車を使いませんでした。",
+      "translation_zh": "周末没有用车。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "使いませんでした是礼貌过去否定，与目标非过去〜ません作时态对比。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-negative-06",
+      "grammar_id": "ja-polite-negative",
+      "language": "ja",
+      "text": "その質問には今は答えません。",
+      "translation_zh": "那个问题我现在不回答。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ません」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-negative-07",
+      "grammar_id": "ja-polite-negative",
+      "language": "ja",
+      "text": "このカードでは支払えません。",
+      "translation_zh": "不能用这张卡付款。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ません」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-past-01",
+      "grammar_id": "ja-polite-past",
+      "language": "ja",
+      "text": "昨日、病院へ行きました。",
+      "translation_zh": "昨天去了医院。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ました」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-past-02",
+      "grammar_id": "ja-polite-past",
+      "language": "ja",
+      "text": "会議は予定どおり始まりました。",
+      "translation_zh": "会议按计划开始了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ました」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-past-03",
+      "grammar_id": "ja-polite-past",
+      "language": "ja",
+      "text": "朝は何も食べませんでした。",
+      "translation_zh": "早上什么也没吃。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "食べませんでした是礼貌过去否定，不直接实例化肯定〜ました。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-past-04",
+      "grammar_id": "ja-polite-past",
+      "language": "ja",
+      "text": "もう書類を送りましたか。",
+      "translation_zh": "已经发送文件了吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ました」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-past-05",
+      "grammar_id": "ja-polite-past",
+      "language": "ja",
+      "text": "駅で財布を落としました。",
+      "translation_zh": "我在车站丢了钱包。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ました」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-past-06",
+      "grammar_id": "ja-polite-past",
+      "language": "ja",
+      "text": "先週、新しい仕事を始めました。",
+      "translation_zh": "上周开始了新工作。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ました」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-polite-past-07",
+      "grammar_id": "ja-polite-past",
+      "language": "ja",
+      "text": "店員さんが丁寧に説明しました。",
+      "translation_zh": "店员认真地进行了说明。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ました」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-kudasai-01",
+      "grammar_id": "ja-te-kudasai",
+      "language": "ja",
+      "text": "荷物はここに置いてください。",
+      "translation_zh": "请把行李放在这里。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-kudasai-02",
+      "grammar_id": "ja-te-kudasai",
+      "language": "ja",
+      "text": "次の角を右に曲がってください。",
+      "translation_zh": "请在下一个路口右转。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-kudasai-03",
+      "grammar_id": "ja-te-kudasai",
+      "language": "ja",
+      "text": "少しゆっくり話してください。",
+      "translation_zh": "请说慢一点。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-kudasai-04",
+      "grammar_id": "ja-te-kudasai",
+      "language": "ja",
+      "text": "ここでは写真を撮らないでください。",
+      "translation_zh": "请不要在这里拍照。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "撮らないでください是禁止/负向请求，接续为ないでください，不是 verb て形 + ください。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-kudasai-05",
+      "grammar_id": "ja-te-kudasai",
+      "language": "ja",
+      "text": "名前と電話番号を書いてください。",
+      "translation_zh": "请写下姓名和电话号码。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-kudasai-06",
+      "grammar_id": "ja-te-kudasai",
+      "language": "ja",
+      "text": "準備ができたら知らせてください。",
+      "translation_zh": "准备好后请告诉我。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-kudasai-07",
+      "grammar_id": "ja-te-kudasai",
+      "language": "ja",
+      "text": "わからない言葉は先生に聞いてください。",
+      "translation_zh": "不懂的词请问老师。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜てください」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tai-01",
+      "grammar_id": "ja-tai",
+      "language": "ja",
+      "text": "今日は早く帰りたいです。",
+      "translation_zh": "今天想早点回去。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + たい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tai-02",
+      "grammar_id": "ja-tai",
+      "language": "ja",
+      "text": "辛い物は食べたくありません。",
+      "translation_zh": "不想吃辣的东西。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + たい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tai-03",
+      "grammar_id": "ja-tai",
+      "language": "ja",
+      "text": "週末は何をしたいですか。",
+      "translation_zh": "周末想做什么？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + たい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tai-04",
+      "grammar_id": "ja-tai",
+      "language": "ja",
+      "text": "いつか京都に行きたいと思っています。",
+      "translation_zh": "我想有一天去京都。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + たい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tai-05",
+      "grammar_id": "ja-tai",
+      "language": "ja",
+      "text": "子どもの頃は医者になりたかったです。",
+      "translation_zh": "小时候想当医生。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + たい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tai-06",
+      "grammar_id": "ja-tai",
+      "language": "ja",
+      "text": "もう少し詳しく話を聞きたいです。",
+      "translation_zh": "我想再详细听一听。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + たい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tai-07",
+      "grammar_id": "ja-tai",
+      "language": "ja",
+      "text": "どちらの部屋に泊まりたいですか。",
+      "translation_zh": "你想住哪个房间？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + たい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nai-01",
+      "grammar_id": "ja-nai",
+      "language": "ja",
+      "text": "今日は車を使わない。",
+      "translation_zh": "今天不开车。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「动词ない形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nai-02",
+      "grammar_id": "ja-nai",
+      "language": "ja",
+      "text": "この店では肉を買わない。",
+      "translation_zh": "不在这家店买肉。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「动词ない形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nai-03",
+      "grammar_id": "ja-nai",
+      "language": "ja",
+      "text": "まだ答えがわからない。",
+      "translation_zh": "还不知道答案。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「动词ない形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nai-04",
+      "grammar_id": "ja-nai",
+      "language": "ja",
+      "text": "明日は会社に行かない？",
+      "translation_zh": "明天不去公司吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「动词ない形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nai-05",
+      "grammar_id": "ja-nai",
+      "language": "ja",
+      "text": "忘れないように、予定を書いておく。",
+      "translation_zh": "为了不忘记，先把计划写下来。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「动词ない形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nai-06",
+      "grammar_id": "ja-nai",
+      "language": "ja",
+      "text": "時間がないから、朝ご飯は作らない。",
+      "translation_zh": "因为没时间，不做早饭。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「动词ない形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nai-07",
+      "grammar_id": "ja-nai",
+      "language": "ja",
+      "text": "この薬を飲まないで。",
+      "translation_zh": "不要吃这种药。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「动词ない形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-potential-01",
+      "grammar_id": "ja-potential",
+      "language": "ja",
+      "text": "私は少し日本語が話せます。",
+      "translation_zh": "我会说一点日语。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「可能形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-potential-02",
+      "grammar_id": "ja-potential",
+      "language": "ja",
+      "text": "今日は車を運転できません。",
+      "translation_zh": "今天不能开车。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「可能形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-potential-03",
+      "grammar_id": "ja-potential",
+      "language": "ja",
+      "text": "この部屋でWi-Fiが使えますか。",
+      "translation_zh": "这个房间可以使用无线网络吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「可能形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-potential-04",
+      "grammar_id": "ja-potential",
+      "language": "ja",
+      "text": "駅まで歩いて行けます。",
+      "translation_zh": "可以步行到车站。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「可能形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-potential-05",
+      "grammar_id": "ja-potential",
+      "language": "ja",
+      "text": "昨日はよく眠れませんでした。",
+      "translation_zh": "昨天没能睡好。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「可能形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-potential-06",
+      "grammar_id": "ja-potential",
+      "language": "ja",
+      "text": "何時まで予約を変更できますか。",
+      "translation_zh": "预约最晚可以更改到几点？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「可能形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-potential-07",
+      "grammar_id": "ja-potential",
+      "language": "ja",
+      "text": "この窓は簡単に開けられます。",
+      "translation_zh": "这扇窗很容易打开。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「可能形」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-mo-ii-01",
+      "grammar_id": "ja-te-mo-ii",
+      "language": "ja",
+      "text": "ここに座ってもいいですか。",
+      "translation_zh": "可以坐在这里吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-mo-ii-02",
+      "grammar_id": "ja-te-mo-ii",
+      "language": "ja",
+      "text": "この部屋では靴を脱がなくてもいいです。",
+      "translation_zh": "在这个房间不用脱鞋也可以。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-mo-ii-03",
+      "grammar_id": "ja-te-mo-ii",
+      "language": "ja",
+      "text": "今日は少し早く帰ってもいいですよ。",
+      "translation_zh": "今天可以早点回去。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-mo-ii-04",
+      "grammar_id": "ja-te-mo-ii",
+      "language": "ja",
+      "text": "このカードを使ってもいいですか。",
+      "translation_zh": "可以用这张卡吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-mo-ii-05",
+      "grammar_id": "ja-te-mo-ii",
+      "language": "ja",
+      "text": "わからなければ、先生に聞いてもいいです。",
+      "translation_zh": "不懂的话可以问老师。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-mo-ii-06",
+      "grammar_id": "ja-te-mo-ii",
+      "language": "ja",
+      "text": "窓を開けてもいいですか。",
+      "translation_zh": "可以开窗吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-mo-ii-07",
+      "grammar_id": "ja-te-mo-ii",
+      "language": "ja",
+      "text": "予約はあとで変更してもいいでしょうか。",
+      "translation_zh": "预约可以稍后更改吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mashou-01",
+      "grammar_id": "ja-mashou",
+      "language": "ja",
+      "text": "少し休みましょう。",
+      "translation_zh": "休息一下吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ましょう」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mashou-02",
+      "grammar_id": "ja-mashou",
+      "language": "ja",
+      "text": "今日は外で食べましょう。",
+      "translation_zh": "今天在外面吃吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ましょう」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mashou-03",
+      "grammar_id": "ja-mashou",
+      "language": "ja",
+      "text": "まだ決めないでおきましょう。",
+      "translation_zh": "我们先不要决定吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ましょう」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mashou-04",
+      "grammar_id": "ja-mashou",
+      "language": "ja",
+      "text": "駅の入口で会いましょう。",
+      "translation_zh": "在车站入口见吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ましょう」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mashou-05",
+      "grammar_id": "ja-mashou",
+      "language": "ja",
+      "text": "わからない点を一緒に確認しましょう。",
+      "translation_zh": "一起确认不明白的地方吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ましょう」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mashou-06",
+      "grammar_id": "ja-mashou",
+      "language": "ja",
+      "text": "雨が降る前に帰りましょう。",
+      "translation_zh": "趁下雨前回去吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ましょう」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mashou-07",
+      "grammar_id": "ja-mashou",
+      "language": "ja",
+      "text": "次は別の方法を試しましょう。",
+      "translation_zh": "下次试试别的方法吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ましょう」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-masen-ka-01",
+      "grammar_id": "ja-masen-ka",
+      "language": "ja",
+      "text": "一緒に映画を見ませんか。",
+      "translation_zh": "一起看电影好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ませんか」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-masen-ka-02",
+      "grammar_id": "ja-masen-ka",
+      "language": "ja",
+      "text": "少し休みませんか。",
+      "translation_zh": "休息一下好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ませんか」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-masen-ka-03",
+      "grammar_id": "ja-masen-ka",
+      "language": "ja",
+      "text": "駅まで歩きませんか。",
+      "translation_zh": "一起走到车站好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ませんか」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-masen-ka-04",
+      "grammar_id": "ja-masen-ka",
+      "language": "ja",
+      "text": "今度の日曜日に会いませんか。",
+      "translation_zh": "下个星期天见面好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ませんか」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-masen-ka-05",
+      "grammar_id": "ja-masen-ka",
+      "language": "ja",
+      "text": "この案についてもう一度話しませんか。",
+      "translation_zh": "要不要再谈谈这个方案？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ませんか」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-masen-ka-06",
+      "grammar_id": "ja-masen-ka",
+      "language": "ja",
+      "text": "窓を開けませんか。",
+      "translation_zh": "要不要开窗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ませんか」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-masen-ka-07",
+      "grammar_id": "ja-masen-ka",
+      "language": "ja",
+      "text": "昼ご飯は新しい店で食べませんか。",
+      "translation_zh": "午饭去新店吃好吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「ます干 + ませんか」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mae-ni-01",
+      "grammar_id": "ja-mae-ni",
+      "language": "ja",
+      "text": "寝る前に薬を飲みます。",
+      "translation_zh": "睡觉前吃药。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形 + 前に」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mae-ni-02",
+      "grammar_id": "ja-mae-ni",
+      "language": "ja",
+      "text": "電車に乗る前に切符を買ってください。",
+      "translation_zh": "坐电车前请买票。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形 + 前に」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mae-ni-03",
+      "grammar_id": "ja-mae-ni",
+      "language": "ja",
+      "text": "出かける前に天気を確認しました。",
+      "translation_zh": "出门前确认了天气。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形 + 前に」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mae-ni-04",
+      "grammar_id": "ja-mae-ni",
+      "language": "ja",
+      "text": "料理をする前に手を洗います。",
+      "translation_zh": "做饭前洗手。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形 + 前に」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mae-ni-05",
+      "grammar_id": "ja-mae-ni",
+      "language": "ja",
+      "text": "会議が始まる前に質問はありますか。",
+      "translation_zh": "会议开始前有问题吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形 + 前に」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mae-ni-06",
+      "grammar_id": "ja-mae-ni",
+      "language": "ja",
+      "text": "注文する前に値段を見ましょう。",
+      "translation_zh": "点单前先看价格吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形 + 前に」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-mae-ni-07",
+      "grammar_id": "ja-mae-ni",
+      "language": "ja",
+      "text": "日本へ来る前に少し日本語を勉強しました。",
+      "translation_zh": "来日本前学了一点日语。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「辞书形 + 前に」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kara-after-01",
+      "grammar_id": "ja-kara-after",
+      "language": "ja",
+      "text": "仕事が終わってから、友達に電話します。",
+      "translation_zh": "工作结束后给朋友打电话。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + から」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kara-after-02",
+      "grammar_id": "ja-kara-after",
+      "language": "ja",
+      "text": "手を洗ってから、料理を始めてください。",
+      "translation_zh": "洗手后再开始做饭。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + から」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kara-after-03",
+      "grammar_id": "ja-kara-after",
+      "language": "ja",
+      "text": "駅に着いてから、連絡しました。",
+      "translation_zh": "到车站后联系了对方。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + から」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kara-after-04",
+      "grammar_id": "ja-kara-after",
+      "language": "ja",
+      "text": "説明を聞いてから決めてもいいですか。",
+      "translation_zh": "可以听完说明后再决定吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + から」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kara-after-05",
+      "grammar_id": "ja-kara-after",
+      "language": "ja",
+      "text": "薬を飲んでから、少し眠くなりました。",
+      "translation_zh": "吃药后有点困了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + から」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kara-after-06",
+      "grammar_id": "ja-kara-after",
+      "language": "ja",
+      "text": "部屋を確認してから、鍵を返します。",
+      "translation_zh": "确认房间后归还钥匙。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + から」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kara-after-07",
+      "grammar_id": "ja-kara-after",
+      "language": "ja",
+      "text": "予約してから店へ行ったほうがいいです。",
+      "translation_zh": "最好预约后再去店里。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + から」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-request-onegai-01",
+      "grammar_id": "ja-request-onegai",
+      "language": "ja",
+      "text": "コーヒーを一つお願いします。",
+      "translation_zh": "请给我一杯咖啡。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を / でお願いします」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-request-onegai-02",
+      "grammar_id": "ja-request-onegai",
+      "language": "ja",
+      "text": "窓側の席でお願いします。",
+      "translation_zh": "请安排靠窗的座位。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を / でお願いします」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-request-onegai-03",
+      "grammar_id": "ja-request-onegai",
+      "language": "ja",
+      "text": "砂糖なしでお願いします。",
+      "translation_zh": "请不要加糖。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を / でお願いします」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-request-onegai-04",
+      "grammar_id": "ja-request-onegai",
+      "language": "ja",
+      "text": "会計をお願いします。",
+      "translation_zh": "请结账。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を / でお願いします」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-request-onegai-05",
+      "grammar_id": "ja-request-onegai",
+      "language": "ja",
+      "text": "予約の変更をお願いします。",
+      "translation_zh": "请帮我更改预约。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を / でお願いします」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-request-onegai-06",
+      "grammar_id": "ja-request-onegai",
+      "language": "ja",
+      "text": "もう少し小さいサイズをお願いします。",
+      "translation_zh": "请给我再小一点的尺码。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を / でお願いします」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-request-onegai-07",
+      "grammar_id": "ja-request-onegai",
+      "language": "ja",
+      "text": "明日の午後でお願いできますか。",
+      "translation_zh": "可以安排在明天下午吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 + を / でお願いします」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hodo-approx-01",
+      "grammar_id": "ja-hodo-approx",
+      "language": "ja",
+      "text": "駅まで十分ほどかかります。",
+      "translation_zh": "到车站大约需要十分钟。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「数量 + ほど」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hodo-approx-02",
+      "grammar_id": "ja-hodo-approx",
+      "language": "ja",
+      "text": "参加者は三十人ほどでした。",
+      "translation_zh": "参加者大约有三十人。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「数量 + ほど」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hodo-approx-03",
+      "grammar_id": "ja-hodo-approx",
+      "language": "ja",
+      "text": "この箱には米が五キロほど入っています。",
+      "translation_zh": "这个箱子里大约装了五公斤大米。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「数量 + ほど」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hodo-approx-04",
+      "grammar_id": "ja-hodo-approx",
+      "language": "ja",
+      "text": "あと一時間ほど待てますか。",
+      "translation_zh": "还能等大约一个小时吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「数量 + ほど」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hodo-approx-05",
+      "grammar_id": "ja-hodo-approx",
+      "language": "ja",
+      "text": "週に二回ほど運動します。",
+      "translation_zh": "每周大约运动两次。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「数量 + ほど」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hodo-approx-06",
+      "grammar_id": "ja-hodo-approx",
+      "language": "ja",
+      "text": "昼休みは四十分ほどです。",
+      "translation_zh": "午休大约四十分钟。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「数量 + ほど」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hodo-approx-07",
+      "grammar_id": "ja-hodo-approx",
+      "language": "ja",
+      "text": "修理には二日ほどかかるそうです。",
+      "translation_zh": "听说维修大约需要两天。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「数量 + ほど」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-dake-01",
+      "grammar_id": "ja-dake",
+      "language": "ja",
+      "text": "今日は水だけ飲みました。",
+      "translation_zh": "今天只喝了水。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 / 名词 + だけ」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-dake-02",
+      "grammar_id": "ja-dake",
+      "language": "ja",
+      "text": "必要な物だけ買いましょう。",
+      "translation_zh": "只买需要的东西吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 / 名词 + だけ」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-dake-03",
+      "grammar_id": "ja-dake",
+      "language": "ja",
+      "text": "私は説明を聞いただけです。",
+      "translation_zh": "我只是听了说明。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 / 名词 + だけ」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-dake-04",
+      "grammar_id": "ja-dake",
+      "language": "ja",
+      "text": "この部屋には椅子が一つだけあります。",
+      "translation_zh": "这个房间里只有一把椅子。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 / 名词 + だけ」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-dake-05",
+      "grammar_id": "ja-dake",
+      "language": "ja",
+      "text": "名前を書くだけで大丈夫です。",
+      "translation_zh": "只写名字就可以。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 / 名词 + だけ」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-dake-06",
+      "grammar_id": "ja-dake",
+      "language": "ja",
+      "text": "一日だけ予定を延ばせますか。",
+      "translation_zh": "可以只把日程延后一天吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 / 名词 + だけ」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-dake-07",
+      "grammar_id": "ja-dake",
+      "language": "ja",
+      "text": "彼だけが答えを知っています。",
+      "translation_zh": "只有他知道答案。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 / 名词 + だけ」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-duration-01",
+      "grammar_id": "ja-duration",
+      "language": "ja",
+      "text": "空港まで一時間かかります。",
+      "translation_zh": "到机场需要一个小时。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + かかる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-duration-02",
+      "grammar_id": "ja-duration",
+      "language": "ja",
+      "text": "この料理は作るのに三十分かかります。",
+      "translation_zh": "做这道菜需要三十分钟。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + かかる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-duration-03",
+      "grammar_id": "ja-duration",
+      "language": "ja",
+      "text": "修理には何日かかりますか。",
+      "translation_zh": "维修需要几天？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + かかる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-duration-04",
+      "grammar_id": "ja-duration",
+      "language": "ja",
+      "text": "昨日は帰るのに二時間かかりました。",
+      "translation_zh": "昨天回家花了两个小时。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + かかる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-duration-05",
+      "grammar_id": "ja-duration",
+      "language": "ja",
+      "text": "修理にはあまり時間がかかりません。",
+      "translation_zh": "维修不太花时间。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + かかる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-duration-06",
+      "grammar_id": "ja-duration",
+      "language": "ja",
+      "text": "手続きはあと十分ほどかかります。",
+      "translation_zh": "手续还需要大约十分钟。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + かかる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-duration-07",
+      "grammar_id": "ja-duration",
+      "language": "ja",
+      "text": "混んでいると、もっと時間がかかります。",
+      "translation_zh": "拥挤时会花更长时间。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「时间 + かかる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-naru-01",
+      "grammar_id": "ja-ni-naru",
+      "language": "ja",
+      "text": "来月、大学生になります。",
+      "translation_zh": "下个月就成为大学生了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 / な形容词 + になる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-naru-02",
+      "grammar_id": "ja-ni-naru",
+      "language": "ja",
+      "text": "夜になると、この道は静かになります。",
+      "translation_zh": "到了晚上，这条路会变安静。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 / な形容词 + になる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-naru-03",
+      "grammar_id": "ja-ni-naru",
+      "language": "ja",
+      "text": "部屋がきれいになりました。",
+      "translation_zh": "房间变干净了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 / な形容词 + になる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-naru-04",
+      "grammar_id": "ja-ni-naru",
+      "language": "ja",
+      "text": "会議は午後三時からになります。",
+      "translation_zh": "会议改为下午三点开始。",
+      "target_role": "SUPPORT",
+      "rationale_zh": "午後三時からになります是日程确定表达；含になります，但补语不是目标公式的名词/な形容词 + に。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-naru-05",
+      "grammar_id": "ja-ni-naru",
+      "language": "ja",
+      "text": "この薬を飲むと眠くなることがあります。",
+      "translation_zh": "吃这种药有时会犯困。",
+      "target_role": "CONTRAST",
+      "rationale_zh": "眠くなる展示い形容词 + くなる，与目标名词/な形容词 + になる作必要接续对比。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-naru-06",
+      "grammar_id": "ja-ni-naru",
+      "language": "ja",
+      "text": "練習すれば、もっと上手になります。",
+      "translation_zh": "练习的话会变得更熟练。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 / な形容词 + になる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-ni-naru-07",
+      "grammar_id": "ja-ni-naru",
+      "language": "ja",
+      "text": "予定は来週に変更になりました。",
+      "translation_zh": "日程改到下周了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「名词 / な形容词 + になる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-iru-01",
+      "grammar_id": "ja-te-iru",
+      "language": "ja",
+      "text": "今、駅で電車を待っています。",
+      "translation_zh": "现在正在车站等电车。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-iru-02",
+      "grammar_id": "ja-te-iru",
+      "language": "ja",
+      "text": "姉は東京に住んでいます。",
+      "translation_zh": "姐姐住在东京。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-iru-03",
+      "grammar_id": "ja-te-iru",
+      "language": "ja",
+      "text": "窓が開いています。",
+      "translation_zh": "窗户开着。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-iru-04",
+      "grammar_id": "ja-te-iru",
+      "language": "ja",
+      "text": "今日は車を使っていません。",
+      "translation_zh": "今天没有在用车。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-iru-05",
+      "grammar_id": "ja-te-iru",
+      "language": "ja",
+      "text": "何を読んでいますか。",
+      "translation_zh": "你在读什么？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-iru-06",
+      "grammar_id": "ja-te-iru",
+      "language": "ja",
+      "text": "この店は十年前から営業しています。",
+      "translation_zh": "这家店从十年前起一直营业。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-iru-07",
+      "grammar_id": "ja-te-iru",
+      "language": "ja",
+      "text": "父は今、夕食を作っています。",
+      "translation_zh": "爸爸现在正在做晚饭。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜ている」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tsumori-01",
+      "grammar_id": "ja-tsumori",
+      "language": "ja",
+      "text": "来年、日本へ行くつもりです。",
+      "translation_zh": "我打算明年去日本。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜つもり（だった）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tsumori-02",
+      "grammar_id": "ja-tsumori",
+      "language": "ja",
+      "text": "今日は外出しないつもりです。",
+      "translation_zh": "今天打算不出门。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜つもり（だった）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tsumori-03",
+      "grammar_id": "ja-tsumori",
+      "language": "ja",
+      "text": "何時に帰るつもりですか。",
+      "translation_zh": "你打算几点回去？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜つもり（だった）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tsumori-04",
+      "grammar_id": "ja-tsumori",
+      "language": "ja",
+      "text": "週末に部屋を掃除するつもりでした。",
+      "translation_zh": "我原打算周末打扫房间。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜つもり（だった）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tsumori-05",
+      "grammar_id": "ja-tsumori",
+      "language": "ja",
+      "text": "そんなことを言うつもりはありませんでした。",
+      "translation_zh": "我没有打算说那样的话。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜つもり（だった）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tsumori-06",
+      "grammar_id": "ja-tsumori",
+      "language": "ja",
+      "text": "卒業後は働くつもりです。",
+      "translation_zh": "毕业后打算工作。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜つもり（だった）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tsumori-07",
+      "grammar_id": "ja-tsumori",
+      "language": "ja",
+      "text": "この計画を変えるつもりはありません。",
+      "translation_zh": "我不打算改变这个计划。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜つもり（だった）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kamoshirenai-01",
+      "grammar_id": "ja-kamoshirenai",
+      "language": "ja",
+      "text": "明日は雪になるかもしれません。",
+      "translation_zh": "明天可能会下雪。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜かもしれない」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kamoshirenai-02",
+      "grammar_id": "ja-kamoshirenai",
+      "language": "ja",
+      "text": "彼は今日は来ないかもしれない。",
+      "translation_zh": "他今天可能不来。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜かもしれない」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kamoshirenai-03",
+      "grammar_id": "ja-kamoshirenai",
+      "language": "ja",
+      "text": "午後は雨が降るかもしれません。",
+      "translation_zh": "下午可能会下雨。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜かもしれない」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kamoshirenai-04",
+      "grammar_id": "ja-kamoshirenai",
+      "language": "ja",
+      "text": "この薬は眠くなるかもしれません。",
+      "translation_zh": "这种药可能会让人犯困。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜かもしれない」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kamoshirenai-05",
+      "grammar_id": "ja-kamoshirenai",
+      "language": "ja",
+      "text": "予約を変更できるかもしれません。",
+      "translation_zh": "预约或许可以更改。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜かもしれない」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kamoshirenai-06",
+      "grammar_id": "ja-kamoshirenai",
+      "language": "ja",
+      "text": "それは誤解だったかもしれない。",
+      "translation_zh": "那可能是误会。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜かもしれない」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-kamoshirenai-07",
+      "grammar_id": "ja-kamoshirenai",
+      "language": "ja",
+      "text": "駅よりバス停のほうが近いかもしれません。",
+      "translation_zh": "公交车站可能比火车站更近。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜かもしれない」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-sou-01",
+      "grammar_id": "ja-sou",
+      "language": "ja",
+      "text": "この料理はおいしそうです。",
+      "translation_zh": "这道菜看起来很好吃。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜そうだ（样态）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-sou-02",
+      "grammar_id": "ja-sou",
+      "language": "ja",
+      "text": "今日は雨が降らなさそうです。",
+      "translation_zh": "今天看起来不会下雨。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜そうだ（样态）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-sou-03",
+      "grammar_id": "ja-sou",
+      "language": "ja",
+      "text": "そのかばんは重そうですか。",
+      "translation_zh": "那个包看起来重吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜そうだ（样态）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-sou-04",
+      "grammar_id": "ja-sou",
+      "language": "ja",
+      "text": "電車がすぐ来そうです。",
+      "translation_zh": "电车看起来马上要来了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜そうだ（样态）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-sou-05",
+      "grammar_id": "ja-sou",
+      "language": "ja",
+      "text": "彼は少し疲れていそうです。",
+      "translation_zh": "他看起来有点累。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜そうだ（样态）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-sou-06",
+      "grammar_id": "ja-sou",
+      "language": "ja",
+      "text": "この仕事は時間がかかりそうです。",
+      "translation_zh": "这项工作看起来会花时间。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜そうだ（样态）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-sou-07",
+      "grammar_id": "ja-sou",
+      "language": "ja",
+      "text": "その店はもう閉まりそうです。",
+      "translation_zh": "那家店看起来快关门了。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「〜そうだ（样态）」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hou-ga-ii-01",
+      "grammar_id": "ja-hou-ga-ii",
+      "language": "ja",
+      "text": "熱があるなら、今日は休んだほうがいいです。",
+      "translation_zh": "如果发烧，今天最好休息。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 / ない形 + ほうがいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hou-ga-ii-02",
+      "grammar_id": "ja-hou-ga-ii",
+      "language": "ja",
+      "text": "この道は夜一人で歩かないほうがいいです。",
+      "translation_zh": "这条路晚上最好不要一个人走。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 / ない形 + ほうがいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hou-ga-ii-03",
+      "grammar_id": "ja-hou-ga-ii",
+      "language": "ja",
+      "text": "先に予約したほうがいいですか。",
+      "translation_zh": "最好事先预约吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 / ない形 + ほうがいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hou-ga-ii-04",
+      "grammar_id": "ja-hou-ga-ii",
+      "language": "ja",
+      "text": "大事な書類はコピーしておいたほうがいいです。",
+      "translation_zh": "重要文件最好事先复印。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 / ない形 + ほうがいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hou-ga-ii-05",
+      "grammar_id": "ja-hou-ga-ii",
+      "language": "ja",
+      "text": "そんなに心配しないほうがいいですよ。",
+      "translation_zh": "最好不要那么担心。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 / ない形 + ほうがいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hou-ga-ii-06",
+      "grammar_id": "ja-hou-ga-ii",
+      "language": "ja",
+      "text": "電車よりバスで行ったほうがいいと思います。",
+      "translation_zh": "我觉得最好坐公交车去，而不是坐电车。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 / ない形 + ほうがいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-hou-ga-ii-07",
+      "grammar_id": "ja-hou-ga-ii",
+      "language": "ja",
+      "text": "わからないときは、すぐ聞いたほうがいいです。",
+      "translation_zh": "不懂的时候最好马上问。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 / ない形 + ほうがいい」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-morau-01",
+      "grammar_id": "ja-te-morau",
+      "language": "ja",
+      "text": "友達に駅まで送ってもらいました。",
+      "translation_zh": "朋友送我到了车站。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もらえる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-morau-02",
+      "grammar_id": "ja-te-morau",
+      "language": "ja",
+      "text": "ここに名前を書いてもらえますか。",
+      "translation_zh": "能请你在这里写名字吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もらえる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-morau-03",
+      "grammar_id": "ja-te-morau",
+      "language": "ja",
+      "text": "先生に文章を直してもらいました。",
+      "translation_zh": "老师帮我修改了文章。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もらえる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-morau-04",
+      "grammar_id": "ja-te-morau",
+      "language": "ja",
+      "text": "少し待ってもらえませんか。",
+      "translation_zh": "能请你稍等一下吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もらえる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-morau-05",
+      "grammar_id": "ja-te-morau",
+      "language": "ja",
+      "text": "店員さんに別のサイズを持ってきてもらいました。",
+      "translation_zh": "店员给我拿来了别的尺码。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もらえる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-morau-06",
+      "grammar_id": "ja-te-morau",
+      "language": "ja",
+      "text": "誰に手伝ってもらいましたか。",
+      "translation_zh": "你请谁帮忙了？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もらえる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-te-morau-07",
+      "grammar_id": "ja-te-morau",
+      "language": "ja",
+      "text": "明日の午後に変更してもらえますか。",
+      "translation_zh": "能请你改到明天下午吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「て形 + もらえる」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nara-01",
+      "grammar_id": "ja-nara",
+      "language": "ja",
+      "text": "電車で行くなら、この駅で乗り換えてください。",
+      "translation_zh": "如果坐电车去，请在这个车站换乘。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 + なら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nara-02",
+      "grammar_id": "ja-nara",
+      "language": "ja",
+      "text": "辛い物が苦手なら、こちらの料理がおすすめです。",
+      "translation_zh": "如果不喜欢辣的，推荐这道菜。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 + なら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nara-03",
+      "grammar_id": "ja-nara",
+      "language": "ja",
+      "text": "明日が無理なら、金曜日はどうですか。",
+      "translation_zh": "如果明天不行，星期五怎么样？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 + なら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nara-04",
+      "grammar_id": "ja-nara",
+      "language": "ja",
+      "text": "返品するなら、レシートを捨てないでください。",
+      "translation_zh": "如果要退货，请不要丢掉收据。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 + なら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nara-05",
+      "grammar_id": "ja-nara",
+      "language": "ja",
+      "text": "静かな部屋なら、三階にあります。",
+      "translation_zh": "如果要安静的房间，三楼有。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 + なら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nara-06",
+      "grammar_id": "ja-nara",
+      "language": "ja",
+      "text": "田中さんも参加するなら、私も行きます。",
+      "translation_zh": "如果田中也参加，我也去。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 + なら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-nara-07",
+      "grammar_id": "ja-nara",
+      "language": "ja",
+      "text": "わからないことがあるなら、今聞いてください。",
+      "translation_zh": "如果有不懂的地方，现在请问。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「普通形 + なら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tara-01",
+      "grammar_id": "ja-tara",
+      "language": "ja",
+      "text": "駅に着いたら、電話してください。",
+      "translation_zh": "到了车站后请打电话。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tara-02",
+      "grammar_id": "ja-tara",
+      "language": "ja",
+      "text": "雨が降ったら、家で映画を見ましょう。",
+      "translation_zh": "如果下雨，就在家看电影吧。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tara-03",
+      "grammar_id": "ja-tara",
+      "language": "ja",
+      "text": "時間がなかったら、明日でも大丈夫です。",
+      "translation_zh": "如果没时间，明天也可以。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tara-04",
+      "grammar_id": "ja-tara",
+      "language": "ja",
+      "text": "薬を飲んでも治らなかったら、病院へ行ってください。",
+      "translation_zh": "吃药也不好转的话，请去医院。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tara-05",
+      "grammar_id": "ja-tara",
+      "language": "ja",
+      "text": "仕事が終わったら、何をしますか。",
+      "translation_zh": "工作结束后做什么？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tara-06",
+      "grammar_id": "ja-tara",
+      "language": "ja",
+      "text": "もっと安かったら、買いたいです。",
+      "translation_zh": "如果再便宜一点，我想买。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-tara-07",
+      "grammar_id": "ja-tara",
+      "language": "ja",
+      "text": "道に迷ったら、駅員に聞きます。",
+      "translation_zh": "如果迷路，就问车站工作人员。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ら」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-koto-ga-aru-01",
+      "grammar_id": "ja-koto-ga-aru",
+      "language": "ja",
+      "text": "私は北海道へ行ったことがあります。",
+      "translation_zh": "我去过北海道。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ことがある」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-koto-ga-aru-02",
+      "grammar_id": "ja-koto-ga-aru",
+      "language": "ja",
+      "text": "この料理を食べたことはありません。",
+      "translation_zh": "我没吃过这道菜。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ことがある」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-koto-ga-aru-03",
+      "grammar_id": "ja-koto-ga-aru",
+      "language": "ja",
+      "text": "一人で海外へ行ったことがありますか。",
+      "translation_zh": "你一个人去过国外吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ことがある」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-koto-ga-aru-04",
+      "grammar_id": "ja-koto-ga-aru",
+      "language": "ja",
+      "text": "電車の中に財布を忘れたことがあります。",
+      "translation_zh": "我曾经把钱包忘在电车里。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ことがある」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-koto-ga-aru-05",
+      "grammar_id": "ja-koto-ga-aru",
+      "language": "ja",
+      "text": "彼とは前に会ったことがあります。",
+      "translation_zh": "我以前见过他。",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ことがある」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-koto-ga-aru-06",
+      "grammar_id": "ja-koto-ga-aru",
+      "language": "ja",
+      "text": "今までに入院したことがありますか。",
+      "translation_zh": "你以前住过院吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ことがある」的目标形式，并保持该 Grammar 的核心功能。"
+    },
+    {
+      "id": "35e1a-ge-ja-koto-ga-aru-07",
+      "grammar_id": "ja-koto-ga-aru",
+      "language": "ja",
+      "text": "この店を利用したことがある人はいますか。",
+      "translation_zh": "有人用过这家店吗？",
+      "target_role": "DIRECT",
+      "rationale_zh": "直接实现「た形 + ことがある」的目标形式，并保持该 Grammar 的核心功能。"
+    }
+  ]
+}

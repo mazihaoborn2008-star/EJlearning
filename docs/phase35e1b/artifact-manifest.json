@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-09-10T21:58:08.184Z",
+  "files": [
+    {
+      "name": "generation-report.json",
+      "bytes": 87621,
+      "sha256": "d981984d72e1b8de028945ec85b28fea255b0986924810d0e35bdcc3f8ca9c1b"
+    },
+    {
+      "name": "curriculum-audit.json",
+      "bytes": 57127,
+      "sha256": "4d99d2a6813f831adfcfb568e9998f76b88769aa0717655ebe09122d43a7f090"
+    },
+    {
+      "name": "qa-report.json",
+      "bytes": 8050,
+      "sha256": "70e79c6ac127c0efd5d67de9e3b5b6827fd672960f420f76bdfaf38fe41a05c5"
+    },
+    {
+      "name": "regression-verification.json",
+      "bytes": 1527,
+      "sha256": "ee7ff5ac12f3aa26d38fc6e65c8754e6e437586c074694db2b830c4899fdc74b"
+    },
+    {
+      "name": "phase35e1b-summary.md",
+      "bytes": 6836,
+      "sha256": "bd078668bcedf76f17cb9cb1009b71b292e61a843a7e19d48ad1a7520661087c"
+    }
+  ]
+}

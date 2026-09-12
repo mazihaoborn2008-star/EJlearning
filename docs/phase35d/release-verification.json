@@ -1,0 +1,40 @@
+{
+  "phase": "3.5D",
+  "staging_url": "https://ej-learning-35d.yanjian-language-learning.workers.dev",
+  "worker_version": "5a7846d9-8a53-44bd-8a43-b3b511971078",
+  "lesson_d1": {
+    "name": "ej-learning-35d-db",
+    "id": "2cd594d3-cab0-4715-a154-9ea3d099c4c7",
+    "binding": "DB",
+    "status": "persisted and runtime-verified",
+    "bundle": "phase-35d-v1",
+    "schema_version": "3.5D.1",
+    "runtime_source": "d1",
+    "sha256": "5079e35b34574e4a844bb349b3fca87bc633811886c4db8e2d2e481c5713d15e",
+    "fallback": "audited immutable src/lesson-bundle-35d.js; byte-equivalent emergency fallback"
+  },
+  "canonical_content_d1": {
+    "name": "ej-learning-35c1-db",
+    "id": "3bf1fc19-e5ce-4521-b051-94f91fedfd82",
+    "binding": "CONTENT_DB",
+    "access": "read-only application queries; no migration or write performed"
+  },
+  "counts": {"lessons": 48, "english": 24, "japanese": 24, "lesson_links": 718, "exam_recommendations": 38},
+  "qa": {"errors": 0, "advanced_content_warnings": 40, "duplicate_warnings": 0, "unknown_vocabulary_ratio_warnings": 0, "topic_balance_warnings": 0, "size_outliers": 0},
+  "tests": {
+    "local_phase35d_api": "6/6 passed",
+    "local_phase35d_browser": "passed",
+    "staging_phase35d_api": "6/6 passed, including REQUIRE_D1=1",
+    "staging_phase35d_browser": "passed",
+    "phase35c1_browser": "passed",
+    "phase35c1_accessibility": "passed",
+    "phase35c1_legacy_navigation": "passed",
+    "phase35c_v2_regression": "8/8 passed",
+    "phase3_engine": "8/8 passed"
+    ,"large_dataset": "passed: 5,000 synthetic vocabulary rows; 20 bounded lesson detail requests in 412ms locally"
+  },
+  "production_changed": false,
+  "phase35c1_changed": false,
+  "dynamic_ai_examples": false,
+  "phase4_started": false
+}

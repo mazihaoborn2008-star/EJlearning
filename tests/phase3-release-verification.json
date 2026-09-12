@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-09-09T02:42:42.468Z",
+  "base": "https://ej-learning-phase3.yanjian-language-learning.workers.dev",
+  "worker": "ej-learning-phase3",
+  "version": "73b035df-53a2-4987-9275-6752ad917ff4",
+  "database": "ej-learning-phase3-db",
+  "databaseId": "36c72b9b-da1f-425c-9b1a-6603b0f7d150",
+  "routes": [],
+  "assets": [
+    {
+      "file": "checkpoint.html",
+      "bytes": 948,
+      "sha256": "454c4c44174bec903c9fd333be37e4fe55244971a1cb3bf445ee8f4683954ade"
+    },
+    {
+      "file": "index.html",
+      "bytes": 822,
+      "sha256": "a5821df41c383c086e18137b07c4f37482713a2fa3d04d8808a3d18cfe746ba4"
+    },
+    {
+      "file": "learn.html",
+      "bytes": 875,
+      "sha256": "a295f6beb285233aff82839b5506f4445cb0ca6a7ee11d2cf3f855c4f0831f5d"
+    },
+    {
+      "file": "placement.html",
+      "bytes": 889,
+      "sha256": "20ad7ad750806ae62b9ecdd2d4a0921b58806abb8e6498f7d81c7065cb033c8d"
+    },
+    {
+      "file": "progress.html",
+      "bytes": 832,
+      "sha256": "ef9b60fe2a93045429a0752984ddc02eb9f67e8bcef325806da601cd780f80b2"
+    },
+    {
+      "file": "css\\style.css",
+      "bytes": 16529,
+      "sha256": "29f8bf34cdc3ad9bb0d1e7587c7002802ba3620c2625a58235dbbdb4d80faf4c"
+    },
+    {
+      "file": "js\\api.js",
+      "bytes": 3130,
+      "sha256": "c79c243db460e2ee62180115223f7bc33b2fb8e27401b08616bc4504f86c09cc"
+    },
+    {
+      "file": "js\\app.js",
+      "bytes": 7025,
+      "sha256": "4391e5a55f558060ba4b8e11d31cfe09b3953e91f430a396895c21188e11a9e9"
+    },
+    {
+      "file": "js\\checkpoint.js",
+      "bytes": 2872,
+      "sha256": "e966ec2223c0504e97f0715bb94db727cc88eab47050f179cbd40efa64748cc1"
+    },
+    {
+      "file": "js\\learn.js",
+      "bytes": 8594,
+      "sha256": "75b38022e607f460e576aece0893d0569a717ab306597527c4ebdefdbac37019"
+    },
+    {
+      "file": "js\\placement.js",
+      "bytes": 4348,
+      "sha256": "b1e9e76a39f140aa561b6576342f4d909f71efb35985a4fe5877e57a9f031013"
+    },
+    {
+      "file": "js\\state.js",
+      "bytes": 2700,
+      "sha256": "e70263e88eba9f962a522f8646f4923fb8258a33e16858e3af444b85ceecd230"
+    }
+  ],
+  "migrations": [
+    {
+      "file": "0001_schema.sql",
+      "sha256": "abc5a75a1bff0827f19ad912c9c6dbcdaf0b4e83a735403df0a9444627947a9c"
+    },
+    {
+      "file": "0002_seed.sql",
+      "sha256": "658c16f39f14a72742d3ab66035991525c72f25e51caf0326f94148b9588a032"
+    },
+    {
+      "file": "0003_engine.sql",
+      "sha256": "90690d0d1416553ffe6bb64e28992cc598073e25e26bcea06c215cf893da0177"
+    },
+    {
+      "file": "0004_curriculum.sql",
+      "sha256": "0117015f997bbba33d7690312fe17477aa060d1d6e68246f714d8ff7f5d8b553"
+    },
+    {
+      "file": "0005_assessment_refinements.sql",
+      "sha256": "9ad1ba48267a1bcbc57571d73e5d621843535b3a2cad29d318cffcc4a1224419"
+    }
+  ],
+  "catalogBytes": 25234,
+  "longDialogueDetailBytes": 4917,
+  "protectedFilesUnchanged": true,
+  "productionSnapshotsEqual": true
+}

@@ -1,0 +1,1553 @@
+{
+  "ej-learning": {
+    "deployments": {
+      "deployments": [
+        {
+          "id": "9f94be40-250b-413b-890f-ab603da3012f",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "mazihao.born.2008@gmail.com",
+          "annotations": {
+            "workers/message": "Automatic deployment on upload.",
+            "workers/triggered_by": "upload"
+          },
+          "versions": [
+            {
+              "version_id": "19a090dc-4321-46af-a7cc-33995746dc10",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-09-08T21:08:49.495488Z"
+        }
+      ]
+    },
+    "settingsHash": "84f40e494c801e39e84803f952ef3770c310130c6c43fdda830646f0eb192321",
+    "schema": [
+      {
+        "type": "index",
+        "name": "concepts_by_topic",
+        "sql": "CREATE INDEX concepts_by_topic ON concepts(topic_id, published, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "expressions_by_concept",
+        "sql": "CREATE INDEX expressions_by_concept ON expressions(concept_id, language, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "one_primary_expression",
+        "sql": "CREATE UNIQUE INDEX one_primary_expression ON expressions(concept_id, language) WHERE is_primary=1"
+      },
+      {
+        "type": "index",
+        "name": "placement_by_language",
+        "sql": "CREATE INDEX placement_by_language ON placement_questions(language, active, sort_order)"
+      },
+      {
+        "type": "table",
+        "name": "_cf_KV",
+        "sql": "CREATE TABLE _cf_KV (\n        key TEXT PRIMARY KEY,\n        value BLOB\n      ) WITHOUT ROWID"
+      },
+      {
+        "type": "table",
+        "name": "comparisons",
+        "sql": "CREATE TABLE comparisons (\n  concept_id INTEGER PRIMARY KEY REFERENCES concepts(id), explanation TEXT NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "concepts",
+        "sql": "CREATE TABLE concepts (\n  id INTEGER PRIMARY KEY, slug TEXT NOT NULL UNIQUE,\n  topic_id TEXT NOT NULL REFERENCES topics(id), zh TEXT NOT NULL,\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n)"
+      },
+      {
+        "type": "table",
+        "name": "d1_migrations",
+        "sql": "CREATE TABLE \"d1_migrations\"(\n\t\tid         INTEGER PRIMARY KEY AUTOINCREMENT,\n\t\tname       TEXT UNIQUE,\n\t\tapplied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_chunks",
+        "sql": "CREATE TABLE expression_chunks (\n  id INTEGER PRIMARY KEY, expression_id INTEGER NOT NULL,\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), grammar_point_id INTEGER,\n  text TEXT NOT NULL,\n  readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json)),\n  sort_order INTEGER NOT NULL,\n  FOREIGN KEY(expression_id, language) REFERENCES expressions(id, language),\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  UNIQUE(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_readings",
+        "sql": "CREATE TABLE expression_readings (\n  expression_id INTEGER NOT NULL REFERENCES expressions(id), sort_order INTEGER NOT NULL,\n  text TEXT NOT NULL, reading TEXT,\n  PRIMARY KEY(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expressions",
+        "sql": "CREATE TABLE expressions (\n  id INTEGER PRIMARY KEY, concept_id INTEGER NOT NULL REFERENCES concepts(id),\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), text TEXT NOT NULL,\n  ipa TEXT, hiragana TEXT, difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6),\n  register TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n  is_primary INTEGER NOT NULL DEFAULT 1 CHECK(is_primary IN (0,1)),\n  grammar_point_id INTEGER NOT NULL,\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  CHECK((language='en' AND ipa IS NOT NULL) OR (language='ja' AND hiragana IS NOT NULL)),\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "grammar_points",
+        "sql": "CREATE TABLE grammar_points (\n  id INTEGER PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  title TEXT NOT NULL, explanation TEXT NOT NULL, example TEXT NOT NULL,\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_answer_keys",
+        "sql": "CREATE TABLE placement_answer_keys (\n  question_id TEXT PRIMARY KEY REFERENCES placement_questions(id), correct_option INTEGER NOT NULL,\n  FOREIGN KEY(question_id, correct_option) REFERENCES placement_options(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_options",
+        "sql": "CREATE TABLE placement_options (\n  question_id TEXT NOT NULL REFERENCES placement_questions(id),\n  option_id INTEGER NOT NULL CHECK(option_id>=0), text TEXT NOT NULL,\n  PRIMARY KEY(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_questions",
+        "sql": "CREATE TABLE placement_questions (\n  id TEXT PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  type TEXT NOT NULL, prompt TEXT NOT NULL, target_text TEXT,\n  difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6), explanation TEXT,\n  sort_order INTEGER NOT NULL, active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1))\n)"
+      },
+      {
+        "type": "table",
+        "name": "topics",
+        "sql": "CREATE TABLE topics (\n  id TEXT PRIMARY KEY, slug TEXT NOT NULL UNIQUE, name TEXT NOT NULL,\n  description TEXT NOT NULL DEFAULT '', icon TEXT NOT NULL DEFAULT '',\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n)"
+      }
+    ],
+    "migrations": [
+      {
+        "id": 1,
+        "name": "0001_schema.sql",
+        "applied_at": "2026-09-08 21:08:29"
+      },
+      {
+        "id": 2,
+        "name": "0002_seed.sql",
+        "applied_at": "2026-09-08 21:08:30"
+      }
+    ],
+    "tableHashes": {
+      "comparisons": {
+        "count": 15,
+        "sha256": "50e09b79d26f05c6bc85f29a3ae5e0ac7f143379bcf86269249774d3148fa7bd"
+      },
+      "concepts": {
+        "count": 15,
+        "sha256": "6662eabb5f570b5a9c43d84d32c62a6e815d8d336f4a2f6e236a846fcf51d142"
+      },
+      "expression_chunks": {
+        "count": 63,
+        "sha256": "f029ffb430fc16785f295f735f0fca3a9e92041a992c1da8412fca32be0d67f2"
+      },
+      "expression_readings": {
+        "count": 43,
+        "sha256": "81500097c014eb07d3592e99d259e9e6a01d900c8d2ffa4367bc7c39f9ce15fd"
+      },
+      "expressions": {
+        "count": 30,
+        "sha256": "807102cb617695266108ba287d9264703068cbcd1ed8bc3c8ed51ca26d84344f"
+      },
+      "grammar_points": {
+        "count": 30,
+        "sha256": "67050918891392b5328018fbfb309bc39174057fc98880e0540e6795ca707adc"
+      },
+      "placement_answer_keys": {
+        "count": 24,
+        "sha256": "4f75d092095cca92354b196ccbe9968eddf7f63c0e735fef5ebd7d7659a67540"
+      },
+      "placement_options": {
+        "count": 72,
+        "sha256": "10217fd25e6921a260b7b4f43254700479aba8875b496fe1361d482eb4bb4701"
+      },
+      "placement_questions": {
+        "count": 24,
+        "sha256": "b50cc6c5645a79d167aca273e5bf600fd0c75844c6fef1b02400905378763392"
+      },
+      "topics": {
+        "count": 3,
+        "sha256": "070d58f1467a89c3f460aa14d99872b2ec63a81368b4639cd670cac12801ebb7"
+      }
+    },
+    "http": {
+      "/": "93daa380e27631e3ac8d8ad1bcfb7d0aaf3fa2705ad099e5d118426dd174d7a5",
+      "/api/topics": "7ba8fdcd01489dbd0c5f66ce1bf25b007dafa02595ab477d59f73701aea2246a",
+      "/api/concepts": "fb7969b2eafb4fd2a26de05f23980eeb16c5fb07efb2a854e850296c2655cfaa"
+    }
+  },
+  "ej-learning-phase3": {
+    "deployments": {
+      "deployments": [
+        {
+          "id": "b58dddcb-7836-49fc-b99c-7bd20ce9af96",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "mazihao.born.2008@gmail.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "73b035df-53a2-4987-9275-6752ad917ff4",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-09-09T02:38:50.428686Z"
+        },
+        {
+          "id": "60126cf1-f56a-4a56-9b9c-6f8bf5b8525f",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "mazihao.born.2008@gmail.com",
+          "annotations": {
+            "workers/message": "Automatic deployment on upload.",
+            "workers/triggered_by": "upload"
+          },
+          "versions": [
+            {
+              "version_id": "ecb359d9-6587-4abd-abf1-c36ff95ce02f",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-09-09T02:17:42.059106Z"
+        }
+      ]
+    },
+    "settingsHash": "46b02677920a94df11580373eb3c8a47afcc69a3270645c71df7fdad87e6c4e1",
+    "schema": [
+      {
+        "type": "index",
+        "name": "assessment_pool",
+        "sql": "CREATE INDEX assessment_pool ON placement_questions(purpose,language,active,difficulty)"
+      },
+      {
+        "type": "index",
+        "name": "concepts_by_topic",
+        "sql": "CREATE INDEX concepts_by_topic ON concepts(topic_id, published, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "expressions_by_concept",
+        "sql": "CREATE INDEX expressions_by_concept ON expressions(concept_id, language, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "one_primary_expression",
+        "sql": "CREATE UNIQUE INDEX one_primary_expression ON expressions(concept_id, language) WHERE is_primary=1"
+      },
+      {
+        "type": "index",
+        "name": "placement_by_language",
+        "sql": "CREATE INDEX placement_by_language ON placement_questions(language, active, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "session_expiry",
+        "sql": "CREATE INDEX session_expiry ON assessment_sessions(expires_at)"
+      },
+      {
+        "type": "table",
+        "name": "_cf_KV",
+        "sql": "CREATE TABLE _cf_KV (\n        key TEXT PRIMARY KEY,\n        value BLOB\n      ) WITHOUT ROWID"
+      },
+      {
+        "type": "table",
+        "name": "assessment_sessions",
+        "sql": "CREATE TABLE assessment_sessions (\n id TEXT PRIMARY KEY, kind TEXT NOT NULL CHECK(kind IN ('placement','checkpoint')),\n language TEXT NOT NULL CHECK(language IN ('en','ja')), topic TEXT REFERENCES topics(id),\n state_json TEXT NOT NULL CHECK(json_valid(state_json)), version INTEGER NOT NULL DEFAULT 0,\n expires_at INTEGER NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "comparisons",
+        "sql": "CREATE TABLE comparisons (\n  concept_id INTEGER PRIMARY KEY REFERENCES concepts(id), explanation TEXT NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "concepts",
+        "sql": "CREATE TABLE concepts (\n  id INTEGER PRIMARY KEY, slug TEXT NOT NULL UNIQUE,\n  topic_id TEXT NOT NULL REFERENCES topics(id), zh TEXT NOT NULL,\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n, concept_type TEXT NOT NULL DEFAULT 'sentence' CHECK(concept_type IN ('vocabulary','phrase','sentence','pattern','scenario_response','dialogue')), usage_note TEXT NOT NULL DEFAULT '')"
+      },
+      {
+        "type": "table",
+        "name": "d1_migrations",
+        "sql": "CREATE TABLE \"d1_migrations\"(\n\t\tid         INTEGER PRIMARY KEY AUTOINCREMENT,\n\t\tname       TEXT UNIQUE,\n\t\tapplied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_chunks",
+        "sql": "CREATE TABLE expression_chunks (\n  id INTEGER PRIMARY KEY, expression_id INTEGER NOT NULL,\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), grammar_point_id INTEGER,\n  text TEXT NOT NULL,\n  readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json)),\n  sort_order INTEGER NOT NULL,\n  FOREIGN KEY(expression_id, language) REFERENCES expressions(id, language),\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  UNIQUE(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_readings",
+        "sql": "CREATE TABLE expression_readings (\n  expression_id INTEGER NOT NULL REFERENCES expressions(id), sort_order INTEGER NOT NULL,\n  text TEXT NOT NULL, reading TEXT,\n  PRIMARY KEY(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expressions",
+        "sql": "CREATE TABLE expressions (\n  id INTEGER PRIMARY KEY, concept_id INTEGER NOT NULL REFERENCES concepts(id),\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), text TEXT NOT NULL,\n  ipa TEXT, hiragana TEXT, difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6),\n  register TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n  is_primary INTEGER NOT NULL DEFAULT 1 CHECK(is_primary IN (0,1)),\n  grammar_point_id INTEGER NOT NULL, metadata_json TEXT NOT NULL DEFAULT '{}' CHECK(json_valid(metadata_json)),\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  CHECK((language='en' AND ipa IS NOT NULL) OR (language='ja' AND hiragana IS NOT NULL)),\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "grammar_points",
+        "sql": "CREATE TABLE grammar_points (\n  id INTEGER PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  title TEXT NOT NULL, explanation TEXT NOT NULL, example TEXT NOT NULL,\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_answer_keys",
+        "sql": "CREATE TABLE placement_answer_keys (\n  question_id TEXT PRIMARY KEY REFERENCES placement_questions(id), correct_option INTEGER NOT NULL,\n  FOREIGN KEY(question_id, correct_option) REFERENCES placement_options(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_options",
+        "sql": "CREATE TABLE placement_options (\n  question_id TEXT NOT NULL REFERENCES placement_questions(id),\n  option_id INTEGER NOT NULL CHECK(option_id>=0), text TEXT NOT NULL,\n  PRIMARY KEY(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_questions",
+        "sql": "CREATE TABLE placement_questions (\n  id TEXT PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  type TEXT NOT NULL, prompt TEXT NOT NULL, target_text TEXT,\n  difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6), explanation TEXT,\n  sort_order INTEGER NOT NULL, active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1))\n, concept_id INTEGER REFERENCES concepts(id), purpose TEXT NOT NULL DEFAULT 'placement' CHECK(purpose IN ('placement','checkpoint')))"
+      },
+      {
+        "type": "table",
+        "name": "topics",
+        "sql": "CREATE TABLE topics (\n  id TEXT PRIMARY KEY, slug TEXT NOT NULL UNIQUE, name TEXT NOT NULL,\n  description TEXT NOT NULL DEFAULT '', icon TEXT NOT NULL DEFAULT '',\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n)"
+      }
+    ],
+    "migrations": [
+      {
+        "id": 1,
+        "name": "0001_schema.sql",
+        "applied_at": "2026-09-09 02:17:26"
+      },
+      {
+        "id": 2,
+        "name": "0002_seed.sql",
+        "applied_at": "2026-09-09 02:17:27"
+      },
+      {
+        "id": 3,
+        "name": "0003_engine.sql",
+        "applied_at": "2026-09-09 02:17:27"
+      },
+      {
+        "id": 4,
+        "name": "0004_curriculum.sql",
+        "applied_at": "2026-09-09 02:17:27"
+      },
+      {
+        "id": 5,
+        "name": "0005_assessment_refinements.sql",
+        "applied_at": "2026-09-09 02:17:30"
+      }
+    ],
+    "tableHashes": {
+      "comparisons": {
+        "count": 183,
+        "sha256": "4728b7924ba3096fe83a56607f10e9d7c2c88a4903cb0b0bb21f3d7662084274"
+      },
+      "concepts": {
+        "count": 183,
+        "sha256": "bdcab26e1900b38f154637d8bda2287bd2d54badb2f61a07d50065b5822c8e50"
+      },
+      "expression_chunks": {
+        "count": 399,
+        "sha256": "1e3a6a3a39de0331d307fee379970e46f637088defcedfb6e6bc1ae5c8939ed6"
+      },
+      "expression_readings": {
+        "count": 835,
+        "sha256": "f5452795c697dbf00b49198a641f6ff6e2ff1cd7d4da55a8368c72d5cf523fe0"
+      },
+      "expressions": {
+        "count": 366,
+        "sha256": "b832a359ad2e200499ad6421a708be4ffd43eaf7b70f9e855c2688be564d968b"
+      },
+      "grammar_points": {
+        "count": 366,
+        "sha256": "0db3c2441af3b102d411a6b9296332afc0df13cc4dc5d3f3f592b5e26da4fee3"
+      },
+      "placement_answer_keys": {
+        "count": 750,
+        "sha256": "9121a65468c86ca14d872b7b38638b88f689fae984384b62c3803337c3cd2bce"
+      },
+      "placement_options": {
+        "count": 2976,
+        "sha256": "a4b1d65e58ad40ceb66e9d772fcda8bd6419e3c47f90cd6c7b0ca928fdb8b414"
+      },
+      "placement_questions": {
+        "count": 750,
+        "sha256": "ea801df2eec3ebf8fdfa078d432c27b49d4fbe6cbd58aa393b2b57e0eed06472"
+      },
+      "topics": {
+        "count": 14,
+        "sha256": "c1097e02c15c0ecb0d789ebbd88ba02b42ddf1161f0537b0ac457651529f750d"
+      }
+    },
+    "http": {
+      "/": "a5821df41c383c086e18137b07c4f37482713a2fa3d04d8808a3d18cfe746ba4",
+      "/api/topics": "06ac724bbda2b9039654f4007bb98fe0e40db35c7da901e22070dcb3466b589a",
+      "/api/concepts": "ac6c13b021bba6b1704dec0e11450c0bed1a06ce8c72c09bd237b753d5449650"
+    }
+  },
+  "ej-learning-35a": {
+    "deployments": {
+      "deployments": [
+        {
+          "id": "a867ff8b-dcca-4940-bc88-2a5eca94e9c4",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "mazihao.born.2008@gmail.com",
+          "annotations": {
+            "workers/message": "Automatic deployment on upload.",
+            "workers/triggered_by": "upload"
+          },
+          "versions": [
+            {
+              "version_id": "d830a5c4-82a8-437e-9228-6c4f427fad90",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-09-09T03:22:41.972735Z"
+        }
+      ]
+    },
+    "settingsHash": "361c9309b0dad3ed0d00754c45efbf82e51c93ff403ceff59fbc6156bbf3108d",
+    "schema": [
+      {
+        "type": "index",
+        "name": "assessment_pool",
+        "sql": "CREATE INDEX assessment_pool ON placement_questions(purpose,language,active,difficulty)"
+      },
+      {
+        "type": "index",
+        "name": "concepts_by_topic",
+        "sql": "CREATE INDEX concepts_by_topic ON concepts(topic_id, published, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "expressions_by_concept",
+        "sql": "CREATE INDEX expressions_by_concept ON expressions(concept_id, language, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "one_primary_expression",
+        "sql": "CREATE UNIQUE INDEX one_primary_expression ON expressions(concept_id, language) WHERE is_primary=1"
+      },
+      {
+        "type": "index",
+        "name": "placement_by_language",
+        "sql": "CREATE INDEX placement_by_language ON placement_questions(language, active, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "session_expiry",
+        "sql": "CREATE INDEX session_expiry ON assessment_sessions(expires_at)"
+      },
+      {
+        "type": "index",
+        "name": "v2_expression_filter",
+        "sql": "CREATE INDEX v2_expression_filter ON v2_sentence_expressions(language,publication_state,overall_difficulty,vocabulary_difficulty,grammar_difficulty,unit_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_expression_unit",
+        "sql": "CREATE INDEX v2_expression_unit ON v2_sentence_expressions(unit_id,sort_order,id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_grammar_browse",
+        "sql": "CREATE INDEX v2_grammar_browse ON v2_grammar_points(language,publication_state,level,sort_order,id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_grammar_examples_point",
+        "sql": "CREATE INDEX v2_grammar_examples_point ON v2_grammar_examples(grammar_id,sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "v2_grammar_link_reverse",
+        "sql": "CREATE INDEX v2_grammar_link_reverse ON v2_sentence_grammar_links(grammar_id,expression_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_grammar_link_unique",
+        "sql": "CREATE UNIQUE INDEX v2_grammar_link_unique ON v2_sentence_grammar_links(expression_id,grammar_id,ifnull(turn_id,''),displayed_form,occurrence)"
+      },
+      {
+        "type": "index",
+        "name": "v2_grammar_relations_target",
+        "sql": "CREATE INDEX v2_grammar_relations_target ON v2_grammar_relations(target_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_primary_expression",
+        "sql": "CREATE UNIQUE INDEX v2_primary_expression ON v2_sentence_expressions(unit_id,language) WHERE is_primary=1"
+      },
+      {
+        "type": "index",
+        "name": "v2_senses_item",
+        "sql": "CREATE INDEX v2_senses_item ON v2_vocabulary_senses(item_id,sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "v2_sentence_browse",
+        "sql": "CREATE INDEX v2_sentence_browse ON v2_sentence_units(publication_state,topic_id,unit_type,sort_order,id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_vocab_browse",
+        "sql": "CREATE INDEX v2_vocab_browse ON v2_vocabulary_items(language,publication_state,stage,sort_order,id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_vocab_examples_item",
+        "sql": "CREATE INDEX v2_vocab_examples_item ON v2_vocabulary_examples(item_id,sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "v2_vocab_link_reverse",
+        "sql": "CREATE INDEX v2_vocab_link_reverse ON v2_sentence_vocabulary_links(item_id,expression_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_vocab_link_unique",
+        "sql": "CREATE UNIQUE INDEX v2_vocab_link_unique ON v2_sentence_vocabulary_links(expression_id,item_id,ifnull(sense_id,''),ifnull(turn_id,''),displayed_form,occurrence)"
+      },
+      {
+        "type": "index",
+        "name": "v2_vocab_relations_target",
+        "sql": "CREATE INDEX v2_vocab_relations_target ON v2_vocabulary_relations(target_id)"
+      },
+      {
+        "type": "table",
+        "name": "_cf_KV",
+        "sql": "CREATE TABLE _cf_KV (\n        key TEXT PRIMARY KEY,\n        value BLOB\n      ) WITHOUT ROWID"
+      },
+      {
+        "type": "table",
+        "name": "assessment_sessions",
+        "sql": "CREATE TABLE assessment_sessions (\n id TEXT PRIMARY KEY, kind TEXT NOT NULL CHECK(kind IN ('placement','checkpoint')),\n language TEXT NOT NULL CHECK(language IN ('en','ja')), topic TEXT REFERENCES topics(id),\n state_json TEXT NOT NULL CHECK(json_valid(state_json)), version INTEGER NOT NULL DEFAULT 0,\n expires_at INTEGER NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "comparisons",
+        "sql": "CREATE TABLE comparisons (\n  concept_id INTEGER PRIMARY KEY REFERENCES concepts(id), explanation TEXT NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "concepts",
+        "sql": "CREATE TABLE concepts (\n  id INTEGER PRIMARY KEY, slug TEXT NOT NULL UNIQUE,\n  topic_id TEXT NOT NULL REFERENCES topics(id), zh TEXT NOT NULL,\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n, concept_type TEXT NOT NULL DEFAULT 'sentence' CHECK(concept_type IN ('vocabulary','phrase','sentence','pattern','scenario_response','dialogue')), usage_note TEXT NOT NULL DEFAULT '')"
+      },
+      {
+        "type": "table",
+        "name": "d1_migrations",
+        "sql": "CREATE TABLE \"d1_migrations\"(\n\t\tid         INTEGER PRIMARY KEY AUTOINCREMENT,\n\t\tname       TEXT UNIQUE,\n\t\tapplied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_chunks",
+        "sql": "CREATE TABLE expression_chunks (\n  id INTEGER PRIMARY KEY, expression_id INTEGER NOT NULL,\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), grammar_point_id INTEGER,\n  text TEXT NOT NULL,\n  readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json)),\n  sort_order INTEGER NOT NULL,\n  FOREIGN KEY(expression_id, language) REFERENCES expressions(id, language),\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  UNIQUE(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_readings",
+        "sql": "CREATE TABLE expression_readings (\n  expression_id INTEGER NOT NULL REFERENCES expressions(id), sort_order INTEGER NOT NULL,\n  text TEXT NOT NULL, reading TEXT,\n  PRIMARY KEY(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expressions",
+        "sql": "CREATE TABLE expressions (\n  id INTEGER PRIMARY KEY, concept_id INTEGER NOT NULL REFERENCES concepts(id),\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), text TEXT NOT NULL,\n  ipa TEXT, hiragana TEXT, difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6),\n  register TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n  is_primary INTEGER NOT NULL DEFAULT 1 CHECK(is_primary IN (0,1)),\n  grammar_point_id INTEGER NOT NULL, metadata_json TEXT NOT NULL DEFAULT '{}' CHECK(json_valid(metadata_json)),\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  CHECK((language='en' AND ipa IS NOT NULL) OR (language='ja' AND hiragana IS NOT NULL)),\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "grammar_points",
+        "sql": "CREATE TABLE grammar_points (\n  id INTEGER PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  title TEXT NOT NULL, explanation TEXT NOT NULL, example TEXT NOT NULL,\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_answer_keys",
+        "sql": "CREATE TABLE placement_answer_keys (\n  question_id TEXT PRIMARY KEY REFERENCES placement_questions(id), correct_option INTEGER NOT NULL,\n  FOREIGN KEY(question_id, correct_option) REFERENCES placement_options(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_options",
+        "sql": "CREATE TABLE placement_options (\n  question_id TEXT NOT NULL REFERENCES placement_questions(id),\n  option_id INTEGER NOT NULL CHECK(option_id>=0), text TEXT NOT NULL,\n  PRIMARY KEY(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_questions",
+        "sql": "CREATE TABLE placement_questions (\n  id TEXT PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  type TEXT NOT NULL, prompt TEXT NOT NULL, target_text TEXT,\n  difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6), explanation TEXT,\n  sort_order INTEGER NOT NULL, active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1))\n, concept_id INTEGER REFERENCES concepts(id), purpose TEXT NOT NULL DEFAULT 'placement' CHECK(purpose IN ('placement','checkpoint')))"
+      },
+      {
+        "type": "table",
+        "name": "topics",
+        "sql": "CREATE TABLE topics (\n  id TEXT PRIMARY KEY, slug TEXT NOT NULL UNIQUE, name TEXT NOT NULL,\n  description TEXT NOT NULL DEFAULT '', icon TEXT NOT NULL DEFAULT '',\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_dialogue_turns",
+        "sql": "CREATE TABLE v2_dialogue_turns (\n id TEXT PRIMARY KEY, expression_id TEXT NOT NULL REFERENCES v2_sentence_expressions(id),\n speaker TEXT NOT NULL, text TEXT NOT NULL,\n readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json) AND json_type(readings_json)='array'),\n sort_order INTEGER NOT NULL, UNIQUE(id,expression_id), UNIQUE(expression_id,sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_grammar_examples",
+        "sql": "CREATE TABLE v2_grammar_examples (\n id TEXT PRIMARY KEY, grammar_id TEXT NOT NULL, language TEXT NOT NULL,\n text TEXT NOT NULL, translation_zh TEXT NOT NULL, explanation_zh TEXT, ipa TEXT,\n readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json) AND json_type(readings_json)='array'),\n source_expression_id TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n FOREIGN KEY(grammar_id,language) REFERENCES v2_grammar_points(id,language),\n FOREIGN KEY(source_expression_id,language) REFERENCES v2_sentence_expressions(id,language), CHECK(language='en' OR ipa IS NULL)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_grammar_points",
+        "sql": "CREATE TABLE v2_grammar_points (\n id TEXT PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')), slug TEXT NOT NULL,\n title_zh TEXT NOT NULL, form_name TEXT NOT NULL, level INTEGER NOT NULL CHECK(level BETWEEN 1 AND 6),\n core_zh TEXT NOT NULL, purpose_zh TEXT NOT NULL, formula TEXT NOT NULL,\n when_zh TEXT NOT NULL, mistakes_zh TEXT NOT NULL DEFAULT '', nuance_zh TEXT NOT NULL DEFAULT '',\n register TEXT NOT NULL DEFAULT 'neutral', usage_zh TEXT NOT NULL DEFAULT '',\n publication_state TEXT NOT NULL DEFAULT 'draft' CHECK(publication_state IN ('draft','published','archived')),\n sort_order INTEGER NOT NULL DEFAULT 0, UNIQUE(id,language), UNIQUE(language,slug)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_grammar_relations",
+        "sql": "CREATE TABLE v2_grammar_relations (\n source_id TEXT NOT NULL, target_id TEXT NOT NULL, language TEXT NOT NULL,\n type TEXT NOT NULL CHECK(type IN ('prerequisite','related','contrast','commonly_confused','more_formal','more_casual')),\n note_zh TEXT NOT NULL, PRIMARY KEY(source_id,target_id,type), CHECK(source_id<>target_id),\n FOREIGN KEY(source_id,language) REFERENCES v2_grammar_points(id,language),\n FOREIGN KEY(target_id,language) REFERENCES v2_grammar_points(id,language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_sentence_expressions",
+        "sql": "CREATE TABLE v2_sentence_expressions (\n id TEXT PRIMARY KEY, unit_id TEXT NOT NULL REFERENCES v2_sentence_units(id),\n language TEXT NOT NULL CHECK(language IN ('en','ja')), text TEXT NOT NULL,\n is_primary INTEGER NOT NULL DEFAULT 1 CHECK(is_primary IN (0,1)), register TEXT NOT NULL DEFAULT 'neutral',\n note_zh TEXT, ipa TEXT, readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json) AND json_type(readings_json)='array'),\n overall_difficulty INTEGER NOT NULL CHECK(overall_difficulty BETWEEN 1 AND 6),\n vocabulary_difficulty INTEGER NOT NULL CHECK(vocabulary_difficulty BETWEEN 1 AND 6),\n grammar_difficulty INTEGER NOT NULL CHECK(grammar_difficulty BETWEEN 1 AND 6),\n difficulty_note_zh TEXT NOT NULL CHECK(length(trim(difficulty_note_zh))>0),\n publication_state TEXT NOT NULL DEFAULT 'draft' CHECK(publication_state IN ('draft','published','archived')),\n sort_order INTEGER NOT NULL DEFAULT 0, UNIQUE(id,language), CHECK(language='en' OR ipa IS NULL)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_sentence_grammar_links",
+        "sql": "CREATE TABLE v2_sentence_grammar_links (\n id TEXT PRIMARY KEY, expression_id TEXT NOT NULL, language TEXT NOT NULL, grammar_id TEXT NOT NULL,\n turn_id TEXT, displayed_form TEXT NOT NULL, occurrence INTEGER NOT NULL DEFAULT 1 CHECK(occurrence>=1),\n note_zh TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n FOREIGN KEY(expression_id,language) REFERENCES v2_sentence_expressions(id,language),\n FOREIGN KEY(grammar_id,language) REFERENCES v2_grammar_points(id,language),\n FOREIGN KEY(turn_id,expression_id) REFERENCES v2_dialogue_turns(id,expression_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_sentence_units",
+        "sql": "CREATE TABLE v2_sentence_units (\n id TEXT PRIMARY KEY, anchor_zh TEXT NOT NULL, topic_id TEXT NOT NULL REFERENCES v2_topics(id),\n unit_type TEXT NOT NULL CHECK(unit_type IN ('sentence','scenario','dialogue')),\n context_zh TEXT, comparison_zh TEXT,\n publication_state TEXT NOT NULL DEFAULT 'draft' CHECK(publication_state IN ('draft','published','archived')),\n sort_order INTEGER NOT NULL DEFAULT 0,\n CHECK(unit_type<>'scenario' OR (context_zh IS NOT NULL AND length(trim(context_zh))>0))\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_sentence_vocabulary_links",
+        "sql": "CREATE TABLE v2_sentence_vocabulary_links (\n id TEXT PRIMARY KEY, expression_id TEXT NOT NULL, language TEXT NOT NULL, item_id TEXT NOT NULL, sense_id TEXT,\n turn_id TEXT, displayed_form TEXT NOT NULL, occurrence INTEGER NOT NULL DEFAULT 1 CHECK(occurrence>=1),\n importance INTEGER NOT NULL DEFAULT 1 CHECK(importance BETWEEN 1 AND 3), is_new_target INTEGER NOT NULL DEFAULT 0 CHECK(is_new_target IN (0,1)),\n note_zh TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n FOREIGN KEY(expression_id,language) REFERENCES v2_sentence_expressions(id,language),\n FOREIGN KEY(item_id,language) REFERENCES v2_vocabulary_items(id,language),\n FOREIGN KEY(sense_id,item_id) REFERENCES v2_vocabulary_senses(id,item_id),\n FOREIGN KEY(turn_id,expression_id) REFERENCES v2_dialogue_turns(id,expression_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_topics",
+        "sql": "CREATE TABLE v2_topics (id TEXT PRIMARY KEY, name_zh TEXT NOT NULL, sort_order INTEGER NOT NULL DEFAULT 0)"
+      },
+      {
+        "type": "table",
+        "name": "v2_vocabulary_examples",
+        "sql": "CREATE TABLE v2_vocabulary_examples (\n id TEXT PRIMARY KEY, item_id TEXT NOT NULL REFERENCES v2_vocabulary_items(id), sense_id TEXT,\n kind TEXT NOT NULL CHECK(kind IN ('example','collocation','pattern')), text TEXT NOT NULL,\n translation_zh TEXT NOT NULL, note_zh TEXT, readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json) AND json_type(readings_json)='array'),\n sort_order INTEGER NOT NULL DEFAULT 0,\n FOREIGN KEY(sense_id,item_id) REFERENCES v2_vocabulary_senses(id,item_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_vocabulary_items",
+        "sql": "CREATE TABLE v2_vocabulary_items (\n id TEXT PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n lemma TEXT NOT NULL, type TEXT NOT NULL CHECK(type IN ('word','fixed_expression')),\n stage INTEGER NOT NULL CHECK(stage BETWEEN 1 AND 6), ipa TEXT, reading TEXT,\n part_of_speech TEXT NOT NULL, register TEXT NOT NULL DEFAULT 'neutral',\n publication_state TEXT NOT NULL DEFAULT 'draft' CHECK(publication_state IN ('draft','published','archived')),\n sort_order INTEGER NOT NULL DEFAULT 0,\n CHECK((language='en' AND reading IS NULL) OR (language='ja' AND ipa IS NULL)),\n UNIQUE(id,language), UNIQUE(language,lemma,part_of_speech)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_vocabulary_relations",
+        "sql": "CREATE TABLE v2_vocabulary_relations (\n source_id TEXT NOT NULL, target_id TEXT NOT NULL, language TEXT NOT NULL,\n type TEXT NOT NULL CHECK(type IN ('synonym','near_synonym','antonym','commonly_confused','related')),\n note_zh TEXT NOT NULL, PRIMARY KEY(source_id,target_id,type), CHECK(source_id<>target_id),\n FOREIGN KEY(source_id,language) REFERENCES v2_vocabulary_items(id,language),\n FOREIGN KEY(target_id,language) REFERENCES v2_vocabulary_items(id,language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_vocabulary_senses",
+        "sql": "CREATE TABLE v2_vocabulary_senses (\n id TEXT PRIMARY KEY, item_id TEXT NOT NULL REFERENCES v2_vocabulary_items(id),\n meaning_zh TEXT NOT NULL, usage_zh TEXT NOT NULL DEFAULT '', semantic_label TEXT,\n register_note TEXT, stage_override INTEGER CHECK(stage_override BETWEEN 1 AND 6), override_reason TEXT,\n sort_order INTEGER NOT NULL DEFAULT 0, UNIQUE(id,item_id),\n CHECK(stage_override IS NULL OR length(trim(override_reason))>0 AND override_reason IS NOT NULL)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_vocabulary_topics",
+        "sql": "CREATE TABLE v2_vocabulary_topics (item_id TEXT NOT NULL REFERENCES v2_vocabulary_items(id), topic_id TEXT NOT NULL REFERENCES v2_topics(id), PRIMARY KEY(item_id,topic_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_expression_move",
+        "sql": "CREATE TRIGGER v2_dialogue_expression_move BEFORE UPDATE OF unit_id ON v2_sentence_expressions WHEN EXISTS(SELECT 1 FROM v2_dialogue_turns WHERE expression_id=OLD.id) BEGIN\n SELECT RAISE(ABORT,'turn requires dialogue') WHERE NOT EXISTS(SELECT 1 FROM v2_sentence_units WHERE id=NEW.unit_id AND unit_type='dialogue');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_only",
+        "sql": "CREATE TRIGGER v2_dialogue_only BEFORE INSERT ON v2_dialogue_turns BEGIN\n SELECT RAISE(ABORT,'turn requires dialogue') WHERE NOT EXISTS(SELECT 1 FROM v2_sentence_expressions e JOIN v2_sentence_units u ON u.id=e.unit_id WHERE e.id=NEW.expression_id AND u.unit_type='dialogue');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_turns_integers_insert",
+        "sql": "CREATE TRIGGER v2_dialogue_turns_integers_insert BEFORE INSERT ON v2_dialogue_turns BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_turns_integers_update",
+        "sql": "CREATE TRIGGER v2_dialogue_turns_integers_update BEFORE UPDATE ON v2_dialogue_turns BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_unit_type",
+        "sql": "CREATE TRIGGER v2_dialogue_unit_type BEFORE UPDATE OF unit_type ON v2_sentence_units WHEN NEW.unit_type<>'dialogue' BEGIN\n SELECT RAISE(ABORT,'dialogue still owns turns') WHERE EXISTS(SELECT 1 FROM v2_dialogue_turns t JOIN v2_sentence_expressions e ON e.id=t.expression_id WHERE e.unit_id=OLD.id);\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_update",
+        "sql": "CREATE TRIGGER v2_dialogue_update BEFORE UPDATE OF expression_id ON v2_dialogue_turns BEGIN\n SELECT RAISE(ABORT,'turn requires dialogue') WHERE NOT EXISTS(SELECT 1 FROM v2_sentence_expressions e JOIN v2_sentence_units u ON u.id=e.unit_id WHERE e.id=NEW.expression_id AND u.unit_type='dialogue');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_grammar_points_integers_insert",
+        "sql": "CREATE TRIGGER v2_grammar_points_integers_insert BEFORE INSERT ON v2_grammar_points BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.level IS NOT NULL AND typeof(NEW.level)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_grammar_points_integers_update",
+        "sql": "CREATE TRIGGER v2_grammar_points_integers_update BEFORE UPDATE ON v2_grammar_points BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.level IS NOT NULL AND typeof(NEW.level)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_prerequisite_insert",
+        "sql": "CREATE TRIGGER v2_prerequisite_insert BEFORE INSERT ON v2_grammar_relations WHEN NEW.type='prerequisite' BEGIN\n SELECT RAISE(ABORT,'prerequisite cycle') WHERE EXISTS (\n WITH RECURSIVE ancestors(id) AS (SELECT NEW.target_id UNION SELECT r.target_id FROM v2_grammar_relations r JOIN ancestors a ON r.source_id=a.id WHERE r.type='prerequisite') SELECT 1 FROM ancestors WHERE id=NEW.source_id);\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_prerequisite_update",
+        "sql": "CREATE TRIGGER v2_prerequisite_update BEFORE UPDATE ON v2_grammar_relations WHEN NEW.type='prerequisite' BEGIN\n SELECT RAISE(ABORT,'prerequisite cycle') WHERE EXISTS (\n WITH RECURSIVE ancestors(id) AS (SELECT NEW.target_id UNION SELECT r.target_id FROM v2_grammar_relations r JOIN ancestors a ON r.source_id=a.id WHERE r.type='prerequisite' AND NOT(r.source_id=OLD.source_id AND r.target_id=OLD.target_id AND r.type=OLD.type)) SELECT 1 FROM ancestors WHERE id=NEW.source_id);\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_expressions_integers_insert",
+        "sql": "CREATE TRIGGER v2_sentence_expressions_integers_insert BEFORE INSERT ON v2_sentence_expressions BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.overall_difficulty IS NOT NULL AND typeof(NEW.overall_difficulty)<>'integer') OR (NEW.vocabulary_difficulty IS NOT NULL AND typeof(NEW.vocabulary_difficulty)<>'integer') OR (NEW.grammar_difficulty IS NOT NULL AND typeof(NEW.grammar_difficulty)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_expressions_integers_update",
+        "sql": "CREATE TRIGGER v2_sentence_expressions_integers_update BEFORE UPDATE ON v2_sentence_expressions BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.overall_difficulty IS NOT NULL AND typeof(NEW.overall_difficulty)<>'integer') OR (NEW.vocabulary_difficulty IS NOT NULL AND typeof(NEW.vocabulary_difficulty)<>'integer') OR (NEW.grammar_difficulty IS NOT NULL AND typeof(NEW.grammar_difficulty)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_grammar_links_integers_insert",
+        "sql": "CREATE TRIGGER v2_sentence_grammar_links_integers_insert BEFORE INSERT ON v2_sentence_grammar_links BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.occurrence IS NOT NULL AND typeof(NEW.occurrence)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_grammar_links_integers_update",
+        "sql": "CREATE TRIGGER v2_sentence_grammar_links_integers_update BEFORE UPDATE ON v2_sentence_grammar_links BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.occurrence IS NOT NULL AND typeof(NEW.occurrence)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_vocabulary_links_integers_insert",
+        "sql": "CREATE TRIGGER v2_sentence_vocabulary_links_integers_insert BEFORE INSERT ON v2_sentence_vocabulary_links BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.occurrence IS NOT NULL AND typeof(NEW.occurrence)<>'integer') OR (NEW.importance IS NOT NULL AND typeof(NEW.importance)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_vocabulary_links_integers_update",
+        "sql": "CREATE TRIGGER v2_sentence_vocabulary_links_integers_update BEFORE UPDATE ON v2_sentence_vocabulary_links BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.occurrence IS NOT NULL AND typeof(NEW.occurrence)<>'integer') OR (NEW.importance IS NOT NULL AND typeof(NEW.importance)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_vocabulary_items_integers_insert",
+        "sql": "CREATE TRIGGER v2_vocabulary_items_integers_insert BEFORE INSERT ON v2_vocabulary_items BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.stage IS NOT NULL AND typeof(NEW.stage)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_vocabulary_items_integers_update",
+        "sql": "CREATE TRIGGER v2_vocabulary_items_integers_update BEFORE UPDATE ON v2_vocabulary_items BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.stage IS NOT NULL AND typeof(NEW.stage)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_vocabulary_senses_integers_insert",
+        "sql": "CREATE TRIGGER v2_vocabulary_senses_integers_insert BEFORE INSERT ON v2_vocabulary_senses BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.stage_override IS NOT NULL AND typeof(NEW.stage_override)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_vocabulary_senses_integers_update",
+        "sql": "CREATE TRIGGER v2_vocabulary_senses_integers_update BEFORE UPDATE ON v2_vocabulary_senses BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.stage_override IS NOT NULL AND typeof(NEW.stage_override)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      }
+    ],
+    "migrations": [
+      {
+        "id": 1,
+        "name": "0001_schema.sql",
+        "applied_at": "2026-09-09 03:20:25"
+      },
+      {
+        "id": 2,
+        "name": "0002_seed.sql",
+        "applied_at": "2026-09-09 03:20:25"
+      },
+      {
+        "id": 3,
+        "name": "0003_engine.sql",
+        "applied_at": "2026-09-09 03:20:25"
+      },
+      {
+        "id": 4,
+        "name": "0004_curriculum.sql",
+        "applied_at": "2026-09-09 03:20:26"
+      },
+      {
+        "id": 5,
+        "name": "0005_assessment_refinements.sql",
+        "applied_at": "2026-09-09 03:20:28"
+      },
+      {
+        "id": 6,
+        "name": "0006_v2_domains.sql",
+        "applied_at": "2026-09-09 03:20:28"
+      },
+      {
+        "id": 7,
+        "name": "0007_v2_representative.sql",
+        "applied_at": "2026-09-09 03:20:29"
+      },
+      {
+        "id": 8,
+        "name": "0008_v2_editorial_guards.sql",
+        "applied_at": "2026-09-09 03:20:29"
+      }
+    ],
+    "tableHashes": {
+      "comparisons": {
+        "count": 183,
+        "sha256": "4728b7924ba3096fe83a56607f10e9d7c2c88a4903cb0b0bb21f3d7662084274"
+      },
+      "concepts": {
+        "count": 183,
+        "sha256": "bdcab26e1900b38f154637d8bda2287bd2d54badb2f61a07d50065b5822c8e50"
+      },
+      "expression_chunks": {
+        "count": 399,
+        "sha256": "1e3a6a3a39de0331d307fee379970e46f637088defcedfb6e6bc1ae5c8939ed6"
+      },
+      "expression_readings": {
+        "count": 835,
+        "sha256": "f5452795c697dbf00b49198a641f6ff6e2ff1cd7d4da55a8368c72d5cf523fe0"
+      },
+      "expressions": {
+        "count": 366,
+        "sha256": "b832a359ad2e200499ad6421a708be4ffd43eaf7b70f9e855c2688be564d968b"
+      },
+      "grammar_points": {
+        "count": 366,
+        "sha256": "0db3c2441af3b102d411a6b9296332afc0df13cc4dc5d3f3f592b5e26da4fee3"
+      },
+      "placement_answer_keys": {
+        "count": 750,
+        "sha256": "9121a65468c86ca14d872b7b38638b88f689fae984384b62c3803337c3cd2bce"
+      },
+      "placement_options": {
+        "count": 2976,
+        "sha256": "a4b1d65e58ad40ceb66e9d772fcda8bd6419e3c47f90cd6c7b0ca928fdb8b414"
+      },
+      "placement_questions": {
+        "count": 750,
+        "sha256": "ea801df2eec3ebf8fdfa078d432c27b49d4fbe6cbd58aa393b2b57e0eed06472"
+      },
+      "topics": {
+        "count": 14,
+        "sha256": "c1097e02c15c0ecb0d789ebbd88ba02b42ddf1161f0537b0ac457651529f750d"
+      },
+      "v2_dialogue_turns": {
+        "count": 4,
+        "sha256": "04e6f7c8e12a11550c1292be4a243dc03adbb89aba54f526eecafcdbd7b42a92"
+      },
+      "v2_grammar_examples": {
+        "count": 19,
+        "sha256": "10aeacf04c0ef03b53ea185b6f2d055cbde71573de537c2eeb6c99b9e905977f"
+      },
+      "v2_grammar_points": {
+        "count": 19,
+        "sha256": "9bac18de53e27a533ab6fdf8656fe87bcf342ce8e270b3e2a5071b84240a8e24"
+      },
+      "v2_grammar_relations": {
+        "count": 5,
+        "sha256": "8534be1039df21ef370b74423eabfbf4ebc3dac9d856b84887e8e740fecdb51d"
+      },
+      "v2_sentence_expressions": {
+        "count": 25,
+        "sha256": "79bb9f1d8c0e1fd66fd43be2f38d2411c273b612a50edc67483846ac3a7051b1"
+      },
+      "v2_sentence_grammar_links": {
+        "count": 27,
+        "sha256": "20403f1d5c88d03407d10061b793c8ed253f1bfef1b3356aa758dfd102adf4f7"
+      },
+      "v2_sentence_units": {
+        "count": 12,
+        "sha256": "d793c57e6cbd7383a0bda1a10bfb2c924f31cc332960cccd48b932a42be1f934"
+      },
+      "v2_sentence_vocabulary_links": {
+        "count": 36,
+        "sha256": "98273176d6ebdfbbbfdefe13d5f1106f43b4556f64c4f72a35aacb8f59854456"
+      },
+      "v2_topics": {
+        "count": 7,
+        "sha256": "f5fbd15734c3b7a7d22ed3136697baad9f158ba022bb031b231a1e56b7480583"
+      },
+      "v2_vocabulary_examples": {
+        "count": 8,
+        "sha256": "42e41fea6d16c415748ff092532fde99f23b323c08c109ac06378af5ce3b51cc"
+      },
+      "v2_vocabulary_items": {
+        "count": 33,
+        "sha256": "bca4a2ed0f345c66047f9f41472762e11b019917a21c4757cb5687201946c593"
+      },
+      "v2_vocabulary_relations": {
+        "count": 5,
+        "sha256": "9a2a9e68e72a9956a71ca93837bfabdf5bf08068d6c229f0616514ce2206a0c7"
+      },
+      "v2_vocabulary_senses": {
+        "count": 34,
+        "sha256": "feef848af1407faa8e851fe6672175e35a5f5a937b69413cfca21d59adf5b12a"
+      },
+      "v2_vocabulary_topics": {
+        "count": 2,
+        "sha256": "0d3191b12a53093b32e2cd84644d74732130af17f7aad04785ee439ed85dfc47"
+      }
+    },
+    "http": {
+      "/": "a5821df41c383c086e18137b07c4f37482713a2fa3d04d8808a3d18cfe746ba4",
+      "/api/topics": "06ac724bbda2b9039654f4007bb98fe0e40db35c7da901e22070dcb3466b589a",
+      "/api/concepts": "ac6c13b021bba6b1704dec0e11450c0bed1a06ce8c72c09bd237b753d5449650"
+    }
+  },
+  "ej-learning-35b": {
+    "deployments": {
+      "deployments": [
+        {
+          "id": "a4abb3cf-2bb2-4a1a-982e-f8909756702e",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "mazihao.born.2008@gmail.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "0ec66081-c0d1-4087-9650-a316eebb9b97",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-09-09T06:33:40.58913Z"
+        },
+        {
+          "id": "ab76d019-66fb-450f-8f68-dd000dae8504",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "mazihao.born.2008@gmail.com",
+          "annotations": {
+            "workers/message": "Automatic deployment on upload.",
+            "workers/triggered_by": "upload"
+          },
+          "versions": [
+            {
+              "version_id": "42a1abba-e291-45d4-9819-7c006ce123b9",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-09-09T06:29:37.257633Z"
+        }
+      ]
+    },
+    "settingsHash": "9f64ad2de8cd9d04e4a8ad063335e2f8b75df1ffa3319f9c396871946187cb76",
+    "schema": [
+      {
+        "type": "index",
+        "name": "assessment_pool",
+        "sql": "CREATE INDEX assessment_pool ON placement_questions(purpose,language,active,difficulty)"
+      },
+      {
+        "type": "index",
+        "name": "concepts_by_topic",
+        "sql": "CREATE INDEX concepts_by_topic ON concepts(topic_id, published, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "expressions_by_concept",
+        "sql": "CREATE INDEX expressions_by_concept ON expressions(concept_id, language, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "one_primary_expression",
+        "sql": "CREATE UNIQUE INDEX one_primary_expression ON expressions(concept_id, language) WHERE is_primary=1"
+      },
+      {
+        "type": "index",
+        "name": "placement_by_language",
+        "sql": "CREATE INDEX placement_by_language ON placement_questions(language, active, sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "session_expiry",
+        "sql": "CREATE INDEX session_expiry ON assessment_sessions(expires_at)"
+      },
+      {
+        "type": "index",
+        "name": "v2_alignment_browse",
+        "sql": "CREATE INDEX v2_alignment_browse ON v2_content_alignments(framework_id,target,language)"
+      },
+      {
+        "type": "index",
+        "name": "v2_alignment_expression",
+        "sql": "CREATE INDEX v2_alignment_expression ON v2_content_alignments(expression_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_alignment_grammar",
+        "sql": "CREATE INDEX v2_alignment_grammar ON v2_content_alignments(grammar_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_alignment_identity",
+        "sql": "CREATE UNIQUE INDEX v2_alignment_identity ON v2_content_alignments(framework_id,target,ifnull(vocabulary_id,''),ifnull(grammar_id,''),ifnull(expression_id,''))"
+      },
+      {
+        "type": "index",
+        "name": "v2_alignment_vocabulary",
+        "sql": "CREATE INDEX v2_alignment_vocabulary ON v2_content_alignments(vocabulary_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_expression_filter",
+        "sql": "CREATE INDEX v2_expression_filter ON v2_sentence_expressions(language,publication_state,overall_difficulty,vocabulary_difficulty,grammar_difficulty,unit_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_expression_unit",
+        "sql": "CREATE INDEX v2_expression_unit ON v2_sentence_expressions(unit_id,sort_order,id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_grammar_browse",
+        "sql": "CREATE INDEX v2_grammar_browse ON v2_grammar_points(language,publication_state,level,sort_order,id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_grammar_examples_point",
+        "sql": "CREATE INDEX v2_grammar_examples_point ON v2_grammar_examples(grammar_id,sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "v2_grammar_link_reverse",
+        "sql": "CREATE INDEX v2_grammar_link_reverse ON v2_sentence_grammar_links(grammar_id,expression_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_grammar_link_unique",
+        "sql": "CREATE UNIQUE INDEX v2_grammar_link_unique ON v2_sentence_grammar_links(expression_id,grammar_id,ifnull(turn_id,''),displayed_form,occurrence)"
+      },
+      {
+        "type": "index",
+        "name": "v2_grammar_relations_target",
+        "sql": "CREATE INDEX v2_grammar_relations_target ON v2_grammar_relations(target_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_primary_expression",
+        "sql": "CREATE UNIQUE INDEX v2_primary_expression ON v2_sentence_expressions(unit_id,language) WHERE is_primary=1"
+      },
+      {
+        "type": "index",
+        "name": "v2_senses_item",
+        "sql": "CREATE INDEX v2_senses_item ON v2_vocabulary_senses(item_id,sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "v2_sentence_browse",
+        "sql": "CREATE INDEX v2_sentence_browse ON v2_sentence_units(publication_state,topic_id,unit_type,sort_order,id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_vocab_browse",
+        "sql": "CREATE INDEX v2_vocab_browse ON v2_vocabulary_items(language,publication_state,stage,sort_order,id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_vocab_examples_item",
+        "sql": "CREATE INDEX v2_vocab_examples_item ON v2_vocabulary_examples(item_id,sort_order)"
+      },
+      {
+        "type": "index",
+        "name": "v2_vocab_link_reverse",
+        "sql": "CREATE INDEX v2_vocab_link_reverse ON v2_sentence_vocabulary_links(item_id,expression_id)"
+      },
+      {
+        "type": "index",
+        "name": "v2_vocab_link_unique",
+        "sql": "CREATE UNIQUE INDEX v2_vocab_link_unique ON v2_sentence_vocabulary_links(expression_id,item_id,ifnull(sense_id,''),ifnull(turn_id,''),displayed_form,occurrence)"
+      },
+      {
+        "type": "index",
+        "name": "v2_vocab_relations_target",
+        "sql": "CREATE INDEX v2_vocab_relations_target ON v2_vocabulary_relations(target_id)"
+      },
+      {
+        "type": "table",
+        "name": "_cf_KV",
+        "sql": "CREATE TABLE _cf_KV (\n        key TEXT PRIMARY KEY,\n        value BLOB\n      ) WITHOUT ROWID"
+      },
+      {
+        "type": "table",
+        "name": "assessment_sessions",
+        "sql": "CREATE TABLE assessment_sessions (\n id TEXT PRIMARY KEY, kind TEXT NOT NULL CHECK(kind IN ('placement','checkpoint')),\n language TEXT NOT NULL CHECK(language IN ('en','ja')), topic TEXT REFERENCES topics(id),\n state_json TEXT NOT NULL CHECK(json_valid(state_json)), version INTEGER NOT NULL DEFAULT 0,\n expires_at INTEGER NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "comparisons",
+        "sql": "CREATE TABLE comparisons (\n  concept_id INTEGER PRIMARY KEY REFERENCES concepts(id), explanation TEXT NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "concepts",
+        "sql": "CREATE TABLE concepts (\n  id INTEGER PRIMARY KEY, slug TEXT NOT NULL UNIQUE,\n  topic_id TEXT NOT NULL REFERENCES topics(id), zh TEXT NOT NULL,\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n, concept_type TEXT NOT NULL DEFAULT 'sentence' CHECK(concept_type IN ('vocabulary','phrase','sentence','pattern','scenario_response','dialogue')), usage_note TEXT NOT NULL DEFAULT '')"
+      },
+      {
+        "type": "table",
+        "name": "d1_migrations",
+        "sql": "CREATE TABLE \"d1_migrations\"(\n\t\tid         INTEGER PRIMARY KEY AUTOINCREMENT,\n\t\tname       TEXT UNIQUE,\n\t\tapplied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_chunks",
+        "sql": "CREATE TABLE expression_chunks (\n  id INTEGER PRIMARY KEY, expression_id INTEGER NOT NULL,\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), grammar_point_id INTEGER,\n  text TEXT NOT NULL,\n  readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json)),\n  sort_order INTEGER NOT NULL,\n  FOREIGN KEY(expression_id, language) REFERENCES expressions(id, language),\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  UNIQUE(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expression_readings",
+        "sql": "CREATE TABLE expression_readings (\n  expression_id INTEGER NOT NULL REFERENCES expressions(id), sort_order INTEGER NOT NULL,\n  text TEXT NOT NULL, reading TEXT,\n  PRIMARY KEY(expression_id, sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "expressions",
+        "sql": "CREATE TABLE expressions (\n  id INTEGER PRIMARY KEY, concept_id INTEGER NOT NULL REFERENCES concepts(id),\n  language TEXT NOT NULL CHECK(language IN ('en','ja')), text TEXT NOT NULL,\n  ipa TEXT, hiragana TEXT, difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6),\n  register TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n  is_primary INTEGER NOT NULL DEFAULT 1 CHECK(is_primary IN (0,1)),\n  grammar_point_id INTEGER NOT NULL, metadata_json TEXT NOT NULL DEFAULT '{}' CHECK(json_valid(metadata_json)),\n  FOREIGN KEY(grammar_point_id, language) REFERENCES grammar_points(id, language),\n  CHECK((language='en' AND ipa IS NOT NULL) OR (language='ja' AND hiragana IS NOT NULL)),\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "grammar_points",
+        "sql": "CREATE TABLE grammar_points (\n  id INTEGER PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  title TEXT NOT NULL, explanation TEXT NOT NULL, example TEXT NOT NULL,\n  UNIQUE(id, language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_answer_keys",
+        "sql": "CREATE TABLE placement_answer_keys (\n  question_id TEXT PRIMARY KEY REFERENCES placement_questions(id), correct_option INTEGER NOT NULL,\n  FOREIGN KEY(question_id, correct_option) REFERENCES placement_options(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_options",
+        "sql": "CREATE TABLE placement_options (\n  question_id TEXT NOT NULL REFERENCES placement_questions(id),\n  option_id INTEGER NOT NULL CHECK(option_id>=0), text TEXT NOT NULL,\n  PRIMARY KEY(question_id, option_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "placement_questions",
+        "sql": "CREATE TABLE placement_questions (\n  id TEXT PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n  type TEXT NOT NULL, prompt TEXT NOT NULL, target_text TEXT,\n  difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 6), explanation TEXT,\n  sort_order INTEGER NOT NULL, active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1))\n, concept_id INTEGER REFERENCES concepts(id), purpose TEXT NOT NULL DEFAULT 'placement' CHECK(purpose IN ('placement','checkpoint')))"
+      },
+      {
+        "type": "table",
+        "name": "topics",
+        "sql": "CREATE TABLE topics (\n  id TEXT PRIMARY KEY, slug TEXT NOT NULL UNIQUE, name TEXT NOT NULL,\n  description TEXT NOT NULL DEFAULT '', icon TEXT NOT NULL DEFAULT '',\n  sort_order INTEGER NOT NULL, published INTEGER NOT NULL DEFAULT 1 CHECK(published IN (0,1))\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_alignment_frameworks",
+        "sql": "CREATE TABLE v2_alignment_frameworks (\n id TEXT PRIMARY KEY CHECK(id IN ('IELTS','JLPT')), language TEXT NOT NULL CHECK(language IN ('en','ja')),\n title_zh TEXT NOT NULL, notice_zh TEXT NOT NULL, UNIQUE(id,language),\n CHECK((id='IELTS' AND language='en') OR (id='JLPT' AND language='ja'))\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_alignment_targets",
+        "sql": "CREATE TABLE v2_alignment_targets (\n framework_id TEXT NOT NULL REFERENCES v2_alignment_frameworks(id), target TEXT NOT NULL,\n sort_order INTEGER NOT NULL, PRIMARY KEY(framework_id,target)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_content_alignments",
+        "sql": "CREATE TABLE v2_content_alignments (\n id TEXT PRIMARY KEY, framework_id TEXT NOT NULL, target TEXT NOT NULL, language TEXT NOT NULL,\n vocabulary_id TEXT, grammar_id TEXT, expression_id TEXT,\n relevance_zh TEXT NOT NULL, tags_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(tags_json) AND json_type(tags_json)='array'),\n status TEXT NOT NULL CHECK(status IN ('draft','reviewed','verified')), basis_zh TEXT NOT NULL,\n source_type TEXT NOT NULL, source_title TEXT NOT NULL, source_reference TEXT,\n editorial_note_zh TEXT NOT NULL, last_reviewed_at TEXT,\n FOREIGN KEY(framework_id,language) REFERENCES v2_alignment_frameworks(id,language),\n FOREIGN KEY(framework_id,target) REFERENCES v2_alignment_targets(framework_id,target),\n FOREIGN KEY(vocabulary_id,language) REFERENCES v2_vocabulary_items(id,language),\n FOREIGN KEY(grammar_id,language) REFERENCES v2_grammar_points(id,language),\n FOREIGN KEY(expression_id,language) REFERENCES v2_sentence_expressions(id,language),\n CHECK((vocabulary_id IS NOT NULL)+(grammar_id IS NOT NULL)+(expression_id IS NOT NULL)=1),\n CHECK(status='draft' OR last_reviewed_at IS NOT NULL)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_dialogue_turns",
+        "sql": "CREATE TABLE v2_dialogue_turns (\n id TEXT PRIMARY KEY, expression_id TEXT NOT NULL REFERENCES v2_sentence_expressions(id),\n speaker TEXT NOT NULL, text TEXT NOT NULL,\n readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json) AND json_type(readings_json)='array'),\n sort_order INTEGER NOT NULL, UNIQUE(id,expression_id), UNIQUE(expression_id,sort_order)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_grammar_examples",
+        "sql": "CREATE TABLE v2_grammar_examples (\n id TEXT PRIMARY KEY, grammar_id TEXT NOT NULL, language TEXT NOT NULL,\n text TEXT NOT NULL, translation_zh TEXT NOT NULL, explanation_zh TEXT, ipa TEXT,\n readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json) AND json_type(readings_json)='array'),\n source_expression_id TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n FOREIGN KEY(grammar_id,language) REFERENCES v2_grammar_points(id,language),\n FOREIGN KEY(source_expression_id,language) REFERENCES v2_sentence_expressions(id,language), CHECK(language='en' OR ipa IS NULL)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_grammar_points",
+        "sql": "CREATE TABLE v2_grammar_points (\n id TEXT PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')), slug TEXT NOT NULL,\n title_zh TEXT NOT NULL, form_name TEXT NOT NULL, level INTEGER NOT NULL CHECK(level BETWEEN 1 AND 6),\n core_zh TEXT NOT NULL, purpose_zh TEXT NOT NULL, formula TEXT NOT NULL,\n when_zh TEXT NOT NULL, mistakes_zh TEXT NOT NULL DEFAULT '', nuance_zh TEXT NOT NULL DEFAULT '',\n register TEXT NOT NULL DEFAULT 'neutral', usage_zh TEXT NOT NULL DEFAULT '',\n publication_state TEXT NOT NULL DEFAULT 'draft' CHECK(publication_state IN ('draft','published','archived')),\n sort_order INTEGER NOT NULL DEFAULT 0, UNIQUE(id,language), UNIQUE(language,slug)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_grammar_relations",
+        "sql": "CREATE TABLE v2_grammar_relations (\n source_id TEXT NOT NULL, target_id TEXT NOT NULL, language TEXT NOT NULL,\n type TEXT NOT NULL CHECK(type IN ('prerequisite','related','contrast','commonly_confused','more_formal','more_casual')),\n note_zh TEXT NOT NULL, PRIMARY KEY(source_id,target_id,type), CHECK(source_id<>target_id),\n FOREIGN KEY(source_id,language) REFERENCES v2_grammar_points(id,language),\n FOREIGN KEY(target_id,language) REFERENCES v2_grammar_points(id,language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_sentence_expressions",
+        "sql": "CREATE TABLE v2_sentence_expressions (\n id TEXT PRIMARY KEY, unit_id TEXT NOT NULL REFERENCES v2_sentence_units(id),\n language TEXT NOT NULL CHECK(language IN ('en','ja')), text TEXT NOT NULL,\n is_primary INTEGER NOT NULL DEFAULT 1 CHECK(is_primary IN (0,1)), register TEXT NOT NULL DEFAULT 'neutral',\n note_zh TEXT, ipa TEXT, readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json) AND json_type(readings_json)='array'),\n overall_difficulty INTEGER NOT NULL CHECK(overall_difficulty BETWEEN 1 AND 6),\n vocabulary_difficulty INTEGER NOT NULL CHECK(vocabulary_difficulty BETWEEN 1 AND 6),\n grammar_difficulty INTEGER NOT NULL CHECK(grammar_difficulty BETWEEN 1 AND 6),\n difficulty_note_zh TEXT NOT NULL CHECK(length(trim(difficulty_note_zh))>0),\n publication_state TEXT NOT NULL DEFAULT 'draft' CHECK(publication_state IN ('draft','published','archived')),\n sort_order INTEGER NOT NULL DEFAULT 0, UNIQUE(id,language), CHECK(language='en' OR ipa IS NULL)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_sentence_grammar_links",
+        "sql": "CREATE TABLE v2_sentence_grammar_links (\n id TEXT PRIMARY KEY, expression_id TEXT NOT NULL, language TEXT NOT NULL, grammar_id TEXT NOT NULL,\n turn_id TEXT, displayed_form TEXT NOT NULL, occurrence INTEGER NOT NULL DEFAULT 1 CHECK(occurrence>=1),\n note_zh TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n FOREIGN KEY(expression_id,language) REFERENCES v2_sentence_expressions(id,language),\n FOREIGN KEY(grammar_id,language) REFERENCES v2_grammar_points(id,language),\n FOREIGN KEY(turn_id,expression_id) REFERENCES v2_dialogue_turns(id,expression_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_sentence_units",
+        "sql": "CREATE TABLE v2_sentence_units (\n id TEXT PRIMARY KEY, anchor_zh TEXT NOT NULL, topic_id TEXT NOT NULL REFERENCES v2_topics(id),\n unit_type TEXT NOT NULL CHECK(unit_type IN ('sentence','scenario','dialogue')),\n context_zh TEXT, comparison_zh TEXT,\n publication_state TEXT NOT NULL DEFAULT 'draft' CHECK(publication_state IN ('draft','published','archived')),\n sort_order INTEGER NOT NULL DEFAULT 0,\n CHECK(unit_type<>'scenario' OR (context_zh IS NOT NULL AND length(trim(context_zh))>0))\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_sentence_vocabulary_links",
+        "sql": "CREATE TABLE v2_sentence_vocabulary_links (\n id TEXT PRIMARY KEY, expression_id TEXT NOT NULL, language TEXT NOT NULL, item_id TEXT NOT NULL, sense_id TEXT,\n turn_id TEXT, displayed_form TEXT NOT NULL, occurrence INTEGER NOT NULL DEFAULT 1 CHECK(occurrence>=1),\n importance INTEGER NOT NULL DEFAULT 1 CHECK(importance BETWEEN 1 AND 3), is_new_target INTEGER NOT NULL DEFAULT 0 CHECK(is_new_target IN (0,1)),\n note_zh TEXT, sort_order INTEGER NOT NULL DEFAULT 0,\n FOREIGN KEY(expression_id,language) REFERENCES v2_sentence_expressions(id,language),\n FOREIGN KEY(item_id,language) REFERENCES v2_vocabulary_items(id,language),\n FOREIGN KEY(sense_id,item_id) REFERENCES v2_vocabulary_senses(id,item_id),\n FOREIGN KEY(turn_id,expression_id) REFERENCES v2_dialogue_turns(id,expression_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_topics",
+        "sql": "CREATE TABLE v2_topics (id TEXT PRIMARY KEY, name_zh TEXT NOT NULL, sort_order INTEGER NOT NULL DEFAULT 0)"
+      },
+      {
+        "type": "table",
+        "name": "v2_vocabulary_examples",
+        "sql": "CREATE TABLE v2_vocabulary_examples (\n id TEXT PRIMARY KEY, item_id TEXT NOT NULL REFERENCES v2_vocabulary_items(id), sense_id TEXT,\n kind TEXT NOT NULL CHECK(kind IN ('example','collocation','pattern')), text TEXT NOT NULL,\n translation_zh TEXT NOT NULL, note_zh TEXT, readings_json TEXT NOT NULL DEFAULT '[]' CHECK(json_valid(readings_json) AND json_type(readings_json)='array'),\n sort_order INTEGER NOT NULL DEFAULT 0,\n FOREIGN KEY(sense_id,item_id) REFERENCES v2_vocabulary_senses(id,item_id)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_vocabulary_items",
+        "sql": "CREATE TABLE v2_vocabulary_items (\n id TEXT PRIMARY KEY, language TEXT NOT NULL CHECK(language IN ('en','ja')),\n lemma TEXT NOT NULL, type TEXT NOT NULL CHECK(type IN ('word','fixed_expression')),\n stage INTEGER NOT NULL CHECK(stage BETWEEN 1 AND 6), ipa TEXT, reading TEXT,\n part_of_speech TEXT NOT NULL, register TEXT NOT NULL DEFAULT 'neutral',\n publication_state TEXT NOT NULL DEFAULT 'draft' CHECK(publication_state IN ('draft','published','archived')),\n sort_order INTEGER NOT NULL DEFAULT 0,\n CHECK((language='en' AND reading IS NULL) OR (language='ja' AND ipa IS NULL)),\n UNIQUE(id,language), UNIQUE(language,lemma,part_of_speech)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_vocabulary_relations",
+        "sql": "CREATE TABLE v2_vocabulary_relations (\n source_id TEXT NOT NULL, target_id TEXT NOT NULL, language TEXT NOT NULL,\n type TEXT NOT NULL CHECK(type IN ('synonym','near_synonym','antonym','commonly_confused','related')),\n note_zh TEXT NOT NULL, PRIMARY KEY(source_id,target_id,type), CHECK(source_id<>target_id),\n FOREIGN KEY(source_id,language) REFERENCES v2_vocabulary_items(id,language),\n FOREIGN KEY(target_id,language) REFERENCES v2_vocabulary_items(id,language)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_vocabulary_senses",
+        "sql": "CREATE TABLE v2_vocabulary_senses (\n id TEXT PRIMARY KEY, item_id TEXT NOT NULL REFERENCES v2_vocabulary_items(id),\n meaning_zh TEXT NOT NULL, usage_zh TEXT NOT NULL DEFAULT '', semantic_label TEXT,\n register_note TEXT, stage_override INTEGER CHECK(stage_override BETWEEN 1 AND 6), override_reason TEXT,\n sort_order INTEGER NOT NULL DEFAULT 0, UNIQUE(id,item_id),\n CHECK(stage_override IS NULL OR length(trim(override_reason))>0 AND override_reason IS NOT NULL)\n)"
+      },
+      {
+        "type": "table",
+        "name": "v2_vocabulary_topics",
+        "sql": "CREATE TABLE v2_vocabulary_topics (item_id TEXT NOT NULL REFERENCES v2_vocabulary_items(id), topic_id TEXT NOT NULL REFERENCES v2_topics(id), PRIMARY KEY(item_id,topic_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_expression_move",
+        "sql": "CREATE TRIGGER v2_dialogue_expression_move BEFORE UPDATE OF unit_id ON v2_sentence_expressions WHEN EXISTS(SELECT 1 FROM v2_dialogue_turns WHERE expression_id=OLD.id) BEGIN\n SELECT RAISE(ABORT,'turn requires dialogue') WHERE NOT EXISTS(SELECT 1 FROM v2_sentence_units WHERE id=NEW.unit_id AND unit_type='dialogue');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_only",
+        "sql": "CREATE TRIGGER v2_dialogue_only BEFORE INSERT ON v2_dialogue_turns BEGIN\n SELECT RAISE(ABORT,'turn requires dialogue') WHERE NOT EXISTS(SELECT 1 FROM v2_sentence_expressions e JOIN v2_sentence_units u ON u.id=e.unit_id WHERE e.id=NEW.expression_id AND u.unit_type='dialogue');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_turns_integers_insert",
+        "sql": "CREATE TRIGGER v2_dialogue_turns_integers_insert BEFORE INSERT ON v2_dialogue_turns BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_turns_integers_update",
+        "sql": "CREATE TRIGGER v2_dialogue_turns_integers_update BEFORE UPDATE ON v2_dialogue_turns BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_unit_type",
+        "sql": "CREATE TRIGGER v2_dialogue_unit_type BEFORE UPDATE OF unit_type ON v2_sentence_units WHEN NEW.unit_type<>'dialogue' BEGIN\n SELECT RAISE(ABORT,'dialogue still owns turns') WHERE EXISTS(SELECT 1 FROM v2_dialogue_turns t JOIN v2_sentence_expressions e ON e.id=t.expression_id WHERE e.unit_id=OLD.id);\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_dialogue_update",
+        "sql": "CREATE TRIGGER v2_dialogue_update BEFORE UPDATE OF expression_id ON v2_dialogue_turns BEGIN\n SELECT RAISE(ABORT,'turn requires dialogue') WHERE NOT EXISTS(SELECT 1 FROM v2_sentence_expressions e JOIN v2_sentence_units u ON u.id=e.unit_id WHERE e.id=NEW.expression_id AND u.unit_type='dialogue');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_grammar_points_integers_insert",
+        "sql": "CREATE TRIGGER v2_grammar_points_integers_insert BEFORE INSERT ON v2_grammar_points BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.level IS NOT NULL AND typeof(NEW.level)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_grammar_points_integers_update",
+        "sql": "CREATE TRIGGER v2_grammar_points_integers_update BEFORE UPDATE ON v2_grammar_points BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.level IS NOT NULL AND typeof(NEW.level)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_prerequisite_insert",
+        "sql": "CREATE TRIGGER v2_prerequisite_insert BEFORE INSERT ON v2_grammar_relations WHEN NEW.type='prerequisite' BEGIN\n SELECT RAISE(ABORT,'prerequisite cycle') WHERE EXISTS (\n WITH RECURSIVE ancestors(id) AS (SELECT NEW.target_id UNION SELECT r.target_id FROM v2_grammar_relations r JOIN ancestors a ON r.source_id=a.id WHERE r.type='prerequisite') SELECT 1 FROM ancestors WHERE id=NEW.source_id);\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_prerequisite_update",
+        "sql": "CREATE TRIGGER v2_prerequisite_update BEFORE UPDATE ON v2_grammar_relations WHEN NEW.type='prerequisite' BEGIN\n SELECT RAISE(ABORT,'prerequisite cycle') WHERE EXISTS (\n WITH RECURSIVE ancestors(id) AS (SELECT NEW.target_id UNION SELECT r.target_id FROM v2_grammar_relations r JOIN ancestors a ON r.source_id=a.id WHERE r.type='prerequisite' AND NOT(r.source_id=OLD.source_id AND r.target_id=OLD.target_id AND r.type=OLD.type)) SELECT 1 FROM ancestors WHERE id=NEW.source_id);\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_expressions_integers_insert",
+        "sql": "CREATE TRIGGER v2_sentence_expressions_integers_insert BEFORE INSERT ON v2_sentence_expressions BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.overall_difficulty IS NOT NULL AND typeof(NEW.overall_difficulty)<>'integer') OR (NEW.vocabulary_difficulty IS NOT NULL AND typeof(NEW.vocabulary_difficulty)<>'integer') OR (NEW.grammar_difficulty IS NOT NULL AND typeof(NEW.grammar_difficulty)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_expressions_integers_update",
+        "sql": "CREATE TRIGGER v2_sentence_expressions_integers_update BEFORE UPDATE ON v2_sentence_expressions BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.overall_difficulty IS NOT NULL AND typeof(NEW.overall_difficulty)<>'integer') OR (NEW.vocabulary_difficulty IS NOT NULL AND typeof(NEW.vocabulary_difficulty)<>'integer') OR (NEW.grammar_difficulty IS NOT NULL AND typeof(NEW.grammar_difficulty)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_grammar_links_integers_insert",
+        "sql": "CREATE TRIGGER v2_sentence_grammar_links_integers_insert BEFORE INSERT ON v2_sentence_grammar_links BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.occurrence IS NOT NULL AND typeof(NEW.occurrence)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_grammar_links_integers_update",
+        "sql": "CREATE TRIGGER v2_sentence_grammar_links_integers_update BEFORE UPDATE ON v2_sentence_grammar_links BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.occurrence IS NOT NULL AND typeof(NEW.occurrence)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_vocabulary_links_integers_insert",
+        "sql": "CREATE TRIGGER v2_sentence_vocabulary_links_integers_insert BEFORE INSERT ON v2_sentence_vocabulary_links BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.occurrence IS NOT NULL AND typeof(NEW.occurrence)<>'integer') OR (NEW.importance IS NOT NULL AND typeof(NEW.importance)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_sentence_vocabulary_links_integers_update",
+        "sql": "CREATE TRIGGER v2_sentence_vocabulary_links_integers_update BEFORE UPDATE ON v2_sentence_vocabulary_links BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.occurrence IS NOT NULL AND typeof(NEW.occurrence)<>'integer') OR (NEW.importance IS NOT NULL AND typeof(NEW.importance)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_vocabulary_items_integers_insert",
+        "sql": "CREATE TRIGGER v2_vocabulary_items_integers_insert BEFORE INSERT ON v2_vocabulary_items BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.stage IS NOT NULL AND typeof(NEW.stage)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_vocabulary_items_integers_update",
+        "sql": "CREATE TRIGGER v2_vocabulary_items_integers_update BEFORE UPDATE ON v2_vocabulary_items BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.stage IS NOT NULL AND typeof(NEW.stage)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_vocabulary_senses_integers_insert",
+        "sql": "CREATE TRIGGER v2_vocabulary_senses_integers_insert BEFORE INSERT ON v2_vocabulary_senses BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.stage_override IS NOT NULL AND typeof(NEW.stage_override)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "v2_vocabulary_senses_integers_update",
+        "sql": "CREATE TRIGGER v2_vocabulary_senses_integers_update BEFORE UPDATE ON v2_vocabulary_senses BEGIN\n SELECT RAISE(ABORT,'integer metadata required') WHERE (NEW.stage_override IS NOT NULL AND typeof(NEW.stage_override)<>'integer') OR (NEW.sort_order IS NOT NULL AND typeof(NEW.sort_order)<>'integer');\nEND"
+      }
+    ],
+    "migrations": [
+      {
+        "id": 1,
+        "name": "0001_schema.sql",
+        "applied_at": "2026-09-09 06:29:27"
+      },
+      {
+        "id": 2,
+        "name": "0002_seed.sql",
+        "applied_at": "2026-09-09 06:29:27"
+      },
+      {
+        "id": 3,
+        "name": "0003_engine.sql",
+        "applied_at": "2026-09-09 06:29:27"
+      },
+      {
+        "id": 4,
+        "name": "0004_curriculum.sql",
+        "applied_at": "2026-09-09 06:29:28"
+      },
+      {
+        "id": 5,
+        "name": "0005_assessment_refinements.sql",
+        "applied_at": "2026-09-09 06:29:29"
+      },
+      {
+        "id": 6,
+        "name": "0006_v2_domains.sql",
+        "applied_at": "2026-09-09 06:29:30"
+      },
+      {
+        "id": 7,
+        "name": "0007_v2_representative.sql",
+        "applied_at": "2026-09-09 06:29:30"
+      },
+      {
+        "id": 8,
+        "name": "0008_v2_editorial_guards.sql",
+        "applied_at": "2026-09-09 06:29:31"
+      },
+      {
+        "id": 9,
+        "name": "0009_academic_alignment.sql",
+        "applied_at": "2026-09-09 06:29:31"
+      },
+      {
+        "id": 10,
+        "name": "0010_academic_expression_example.sql",
+        "applied_at": "2026-09-09 06:29:31"
+      }
+    ],
+    "tableHashes": {
+      "comparisons": {
+        "count": 183,
+        "sha256": "4728b7924ba3096fe83a56607f10e9d7c2c88a4903cb0b0bb21f3d7662084274"
+      },
+      "concepts": {
+        "count": 183,
+        "sha256": "bdcab26e1900b38f154637d8bda2287bd2d54badb2f61a07d50065b5822c8e50"
+      },
+      "expression_chunks": {
+        "count": 399,
+        "sha256": "1e3a6a3a39de0331d307fee379970e46f637088defcedfb6e6bc1ae5c8939ed6"
+      },
+      "expression_readings": {
+        "count": 835,
+        "sha256": "f5452795c697dbf00b49198a641f6ff6e2ff1cd7d4da55a8368c72d5cf523fe0"
+      },
+      "expressions": {
+        "count": 366,
+        "sha256": "b832a359ad2e200499ad6421a708be4ffd43eaf7b70f9e855c2688be564d968b"
+      },
+      "grammar_points": {
+        "count": 366,
+        "sha256": "0db3c2441af3b102d411a6b9296332afc0df13cc4dc5d3f3f592b5e26da4fee3"
+      },
+      "placement_answer_keys": {
+        "count": 750,
+        "sha256": "9121a65468c86ca14d872b7b38638b88f689fae984384b62c3803337c3cd2bce"
+      },
+      "placement_options": {
+        "count": 2976,
+        "sha256": "a4b1d65e58ad40ceb66e9d772fcda8bd6419e3c47f90cd6c7b0ca928fdb8b414"
+      },
+      "placement_questions": {
+        "count": 750,
+        "sha256": "ea801df2eec3ebf8fdfa078d432c27b49d4fbe6cbd58aa393b2b57e0eed06472"
+      },
+      "topics": {
+        "count": 14,
+        "sha256": "c1097e02c15c0ecb0d789ebbd88ba02b42ddf1161f0537b0ac457651529f750d"
+      },
+      "v2_alignment_frameworks": {
+        "count": 2,
+        "sha256": "4083944ee7d788ba85d563762fb48d2b429eafb8c5df64329c01a0ea49029d5c"
+      },
+      "v2_alignment_targets": {
+        "count": 10,
+        "sha256": "007d604ae26c3cacafcd7cc6530276de40883e9b658916f5ffb381bef9c4a094"
+      },
+      "v2_content_alignments": {
+        "count": 8,
+        "sha256": "78a8a1791424382f9fc13f7d1cd92ffe913669c018cd41243b6830ed660e7fb8"
+      },
+      "v2_dialogue_turns": {
+        "count": 4,
+        "sha256": "04e6f7c8e12a11550c1292be4a243dc03adbb89aba54f526eecafcdbd7b42a92"
+      },
+      "v2_grammar_examples": {
+        "count": 19,
+        "sha256": "10aeacf04c0ef03b53ea185b6f2d055cbde71573de537c2eeb6c99b9e905977f"
+      },
+      "v2_grammar_points": {
+        "count": 19,
+        "sha256": "9bac18de53e27a533ab6fdf8656fe87bcf342ce8e270b3e2a5071b84240a8e24"
+      },
+      "v2_grammar_relations": {
+        "count": 5,
+        "sha256": "8534be1039df21ef370b74423eabfbf4ebc3dac9d856b84887e8e740fecdb51d"
+      },
+      "v2_sentence_expressions": {
+        "count": 26,
+        "sha256": "eb7d9f5845e7efb6beeaa6deb9536ebf3ecccf211a180658f32d03fbb4e0cf3b"
+      },
+      "v2_sentence_grammar_links": {
+        "count": 29,
+        "sha256": "fb446a717b535d260b7f831114df29129d41f89da44522a2b02134ec9b1c8e9d"
+      },
+      "v2_sentence_units": {
+        "count": 13,
+        "sha256": "44e377abcfb0eccd5b2e839c4b71aec0f8c393aada4f5bf9dad35357c9a3ee1e"
+      },
+      "v2_sentence_vocabulary_links": {
+        "count": 38,
+        "sha256": "6112f9344eb6579909c9d5e6d7caee6e005a4728c5ecbe0ab038c3f058f33306"
+      },
+      "v2_topics": {
+        "count": 7,
+        "sha256": "f5fbd15734c3b7a7d22ed3136697baad9f158ba022bb031b231a1e56b7480583"
+      },
+      "v2_vocabulary_examples": {
+        "count": 8,
+        "sha256": "42e41fea6d16c415748ff092532fde99f23b323c08c109ac06378af5ce3b51cc"
+      },
+      "v2_vocabulary_items": {
+        "count": 33,
+        "sha256": "bca4a2ed0f345c66047f9f41472762e11b019917a21c4757cb5687201946c593"
+      },
+      "v2_vocabulary_relations": {
+        "count": 5,
+        "sha256": "9a2a9e68e72a9956a71ca93837bfabdf5bf08068d6c229f0616514ce2206a0c7"
+      },
+      "v2_vocabulary_senses": {
+        "count": 34,
+        "sha256": "feef848af1407faa8e851fe6672175e35a5f5a937b69413cfca21d59adf5b12a"
+      },
+      "v2_vocabulary_topics": {
+        "count": 2,
+        "sha256": "0d3191b12a53093b32e2cd84644d74732130af17f7aad04785ee439ed85dfc47"
+      }
+    },
+    "http": {
+      "/": "a471f6572076d13e7af7dca98605dbc9ff5f0ae6fe0694a49e6bdcc1a22847bc",
+      "/api/topics": "06ac724bbda2b9039654f4007bb98fe0e40db35c7da901e22070dcb3466b589a",
+      "/api/concepts": "ac6c13b021bba6b1704dec0e11450c0bed1a06ce8c72c09bd237b753d5449650"
+    }
+  },
+  "domains": [],
+  "routes": [
+    {
+      "id": "a5f2ea2a7ed24ad7b9cf3d664f2d4198",
+      "pattern": "ej_learning.jwcglass.com/*",
+      "script": "ej-learning",
+      "request_limit_fail_open": false
+    }
+  ],
+  "dns": "read permission unavailable",
+  "localHashes": {
+    "public/checkpoint.html": "3a182cf26e29727ef60ebe2ca1d4dd4b49907daa94bec4b922fac614c6a66fa6",
+    "public/css/style.css": "89c4f1ee2001fc279110552586a0b338e661e96411c518692335bd73a7fad7e4",
+    "public/index.html": "d65dce940a931e35feadd8fc0df6a8990fe7a5a84e3cdc0119a144e7a48458e0",
+    "public/js/api.js": "f0f5180c15e9e1377b3310fafb40a961b51bddfe1bb2c46e44ad3c7f53ffdd9b",
+    "public/js/app.js": "4098706fc37a81f5397eb73e995fffe8244087a99b03eb427ee5963843444b37",
+    "public/js/checkpoint.js": "782274908e4a00ab0112802a1909218ac22ac635ef3e4fdba8763ec326200788",
+    "public/js/learn.js": "b05cfbe7586211a37247adf668a010a69898e2624030b27799905a638bf2f05f",
+    "public/js/placement.js": "1579ee3645043728e6a231f06bb72d72523eebf82fc00af2d3c3a0aa22bddf39",
+    "public/js/state.js": "7b04d8b3a40120e13fd315000287065eaff23c2020fefecdbfc1e93a9b7ce14e",
+    "public/learn.html": "bffb25923e5f9a5c88c2cd9a4c9b994435cd44a97839022afcdb58ad37e97f1c",
+    "public/placement.html": "8c7c5dcfc99a738b3671376e57b492968bd542560b933a46b332a27ebfb2d27f",
+    "public/progress.html": "9d96164c6eddb3342c0e3634f197a71730a12d1bbf56f316b6df5376da270dec",
+    "public/_headers": "711eeff379bd83d12ceb95b5328aa95c042f44e922b5bf8a87898d2819347af5",
+    "migrations/0001_schema.sql": "9b976ce5e167b53f7c049714218d85689d231d020378d6d2babaff403b23108a",
+    "migrations/0002_seed.sql": "0787bb48678e502b8f730eebe421c94c6be8562589affe3600eb3f4194e5220d",
+    "migrations/0003_engine.sql": "64a4b17c0c0b14ccd2dd851c263ed63ea0f6550c4d181b30d41f37b0103a852f",
+    "migrations/0004_curriculum.sql": "f4eca779d795ad0b58e92728fc07ee66291c8d5dcac69c485e90601666385336",
+    "migrations/0005_assessment_refinements.sql": "64cebbf35d39f327f61c050e6259b0a07f2c636eb165ca047e7c08595c4300f0",
+    "migrations-v2/0001_schema.sql": "9b976ce5e167b53f7c049714218d85689d231d020378d6d2babaff403b23108a",
+    "migrations-v2/0002_seed.sql": "0787bb48678e502b8f730eebe421c94c6be8562589affe3600eb3f4194e5220d",
+    "migrations-v2/0003_engine.sql": "64a4b17c0c0b14ccd2dd851c263ed63ea0f6550c4d181b30d41f37b0103a852f",
+    "migrations-v2/0004_curriculum.sql": "f4eca779d795ad0b58e92728fc07ee66291c8d5dcac69c485e90601666385336",
+    "migrations-v2/0005_assessment_refinements.sql": "64cebbf35d39f327f61c050e6259b0a07f2c636eb165ca047e7c08595c4300f0",
+    "migrations-v2/0006_v2_domains.sql": "863f18c362c4a55a828efbbd47a6c644418dd64e4b4db84f2f33af1a9944ef48",
+    "migrations-v2/0007_v2_representative.sql": "810957c2b032de9a68075baf987994564f0441a825d23ad9aa9eec4d2dc9cc00",
+    "migrations-v2/0008_v2_editorial_guards.sql": "7017e41ab6b1bfb285350e794f5e79d9f5e2bbc6602825f7fae89dce4a1e3ef1",
+    "src/academic-35b.js": "09847c9f05b8e03f7dfb57dccb0f00a68dd58028ad8fddb70cbb0bd75ae02909",
+    "src/assessments.js": "dc2608144fe2ae1293cb25954901e13746ea7228d12283f3d08b532a64b9e7c8",
+    "src/engine.js": "baac287747248366f5af0bea0a55bb9e4b4ab5cd0513b47962fb062e662544f1",
+    "src/v2-35b.js": "12c752b1565470d6514baf0872afc2942a0bfebd3844790c615af0866ae2c426",
+    "src/v2.js": "8b96e0605d2601dee34f907d8c755e22ac9076b5bed0676b4c4bd75be9ae2087",
+    "src/worker-35b.js": "9cc845b8906a28766c8a3bb1230017edca6f6d00a4739ffef329bee562230cc5",
+    "src/worker-v2.js": "9d818b37aa6d88192f7848fe1f630af005eb888d0f553e44884f335f4a1b6b71",
+    "src/worker.js": "e471cda6afdd6e0491fd75f96dcdafc8dae4979d69ec599026cd2d54fdf037b5",
+    "docs/phase35a/api.md": "728b3d6bdb10a4c710a48ada81f7224620b5ec6f7f3c9b2d1f92e6bbb7f70962",
+    "docs/phase35a/architecture.md": "80639088d3224635e30fca78a5284f43e706df153da5dbc2aae1801c442261e7",
+    "docs/phase35a/clean-run.json": "704df5c3c80c72ec5eadac0179ab85652acbdfbb4d2ceafe98cd1d86c89b35e1",
+    "docs/phase35a/clean-run.txt": "762064dfdcbe7d5e826d5c8bd99a4ac2fdd4278e8bff783ebc6a537dcb904fd1",
+    "docs/phase35a/completion.md": "9392066c1c267a2d454c8354acc25db5078df97f9bb32091c12b537fbb2e8d3a",
+    "docs/phase35a/d1-local.json": "72349d8d2760e71d8fadf3f8618d5a8e493f3087cb6a62abbf52c4a513d6acae",
+    "docs/phase35a/d1-staging.json": "781178464e6fa9cd15b7eca260749d3a3823e0e363d6d572d0d496043af026bb",
+    "docs/phase35a/database-tests.txt": "cebb8b764588a41da71a0dc9146d5bbed54eab06d92cded3dbd34ffd79005b15",
+    "docs/phase35a/integrity-after.json": "5c3d3b1a95fba8d9a15ba9513302d10d8c08e466e6c7a3e4336f8009be79c9b3",
+    "docs/phase35a/integrity-before.json": "5c3d3b1a95fba8d9a15ba9513302d10d8c08e466e6c7a3e4336f8009be79c9b3",
+    "docs/phase35a/integrity-comparison.json": "57fca04f7a2512f8e719213415f475b46b23515600cad84f0260e860792e24fc",
+    "docs/phase35a/legacy-mapping.json": "996c4831b42f67ca6b8400a10099487fec4c0a90e31e13aa3dd804d1f31b4dc5",
+    "docs/phase35a/legacy-mapping.md": "2565347f4d783f0e0dcc08dea0351776d383ada4e7c172905e08ad3dbe5f9c92",
+    "docs/phase35a/local-api-tests.txt": "0d1132ee403986c5e6616c94df8dbcf7743aec19e7d46d2c79bbf31ad8484a08",
+    "docs/phase35a/local-browser-tests.txt": "fd8a5751e441820792b2102481e1d22e43bbc94b30a97d2cd85be83d431645f2",
+    "docs/phase35a/local-curriculum-tests.txt": "60d505f985be690d8bdc517e9b853e267f1fb989a8c8573e14c5e4970434b527",
+    "docs/phase35a/migration-plan.md": "7441d8b38f57cad64c341d2dcb9803188395adb961831a566f95bdc1b37439ef",
+    "docs/phase35a/release-verification.json": "11f810f810f2c81548cf76a133dda6058f0002a71701db669c51c8103aa06272",
+    "docs/phase35a/staging-api-tests.txt": "934e75650c3b7b75c17fe285779321beb70de089f20f749e75329f9284ff0b4a",
+    "docs/phase35a/staging-browser-tests.txt": "fd8a5751e441820792b2102481e1d22e43bbc94b30a97d2cd85be83d431645f2",
+    "docs/phase35a/staging-curriculum-tests.txt": "70988a6636b41dbd7d913c915c2b7edd806cd9a5e3fb1b273d1b7618f1bedfbd",
+    "docs/phase35a/staging-deploy.txt": "37a9125769cd1e52e998f386eedc8572ed4ea4eae336788a665209f7bb944c16",
+    "docs/phase35a/staging-migrations.txt": "c6941dd7c60277602d40c3f017077d6ac4ad9ba8229da53da467a3ed22b11d1c",
+    "package.json": "8c210cf627e7c59b0c30abd7b7f23a66663919d8aa6cb8c3b0f14f5ecd50d030",
+    "package-lock.json": "a721e7b434487fbae410ef78b195ca3a04a4356b9995666fc216bfa213e84788",
+    "wrangler.jsonc": "c744a1051122699c66676bd92aaf966e021a2ed5fd9e66cfab5fda356569a4db",
+    "wrangler.phase3.jsonc": "52ae9dcabac96256690d4f15d4af08d09ed01754c3f9186fc17fe925d8b1885f",
+    "wrangler.production.jsonc": "f7809663aafea2f990981cf1043bbf130a9deedfc41902a45bf531ad1cd389a4",
+    "wrangler.staging.jsonc": "f7809663aafea2f990981cf1043bbf130a9deedfc41902a45bf531ad1cd389a4"
+  }
+}

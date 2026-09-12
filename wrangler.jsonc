@@ -1,0 +1,25 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	// Local identity only until the existing production Worker is identified.
+	"name": "yanjian-language-learning",
+	"main": "src/worker.js",
+	"compatibility_date": "2026-09-08",
+	"assets": {
+		"directory": "./public",
+		"binding": "ASSETS",
+		"html_handling": "none",
+		"not_found_handling": "none",
+		"run_worker_first": [
+			"/api",
+			"/api/*"
+		]
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "ej-learning-db",
+			"database_id": "e2e8f4c8-27e0-416e-993c-7510259a6b1d",
+			"migrations_dir": "migrations"
+		}
+	]
+}

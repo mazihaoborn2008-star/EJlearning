@@ -1,0 +1,283 @@
+{
+  "generated_at": "2026-09-10T21:07:49.663Z",
+  "status": "PASS",
+  "errors": 0,
+  "warnings": 0,
+  "checks": [
+    {
+      "name": "selected vocabulary counts",
+      "pass": true,
+      "detail": {
+        "en": 120,
+        "ja": 130
+      }
+    },
+    {
+      "name": "curated usage additions",
+      "pass": true,
+      "detail": {
+        "en": 180,
+        "ja": 200
+      }
+    },
+    {
+      "name": "natural per-item allocation",
+      "pass": true,
+      "detail": {
+        "en": {
+          "one_added": 60,
+          "two_added": 60
+        },
+        "ja": {
+          "one_added": 60,
+          "two_added": 70
+        }
+      }
+    },
+    {
+      "name": "source/database identity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "category counts",
+      "pass": true,
+      "detail": {
+        "collocations": 154,
+        "full_examples": 122,
+        "contrasts": 30,
+        "common_patterns": 74
+      }
+    },
+    {
+      "name": "normalized duplicate and canonical collision",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Japanese reading quality",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "semantic/collocation/editorial preflight",
+      "pass": true,
+      "detail": {
+        "status": "GENERATED",
+        "errors": []
+      }
+    },
+    {
+      "name": "Stage 1–3 only",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "protected content unchanged",
+      "pass": true,
+      "detail": {
+        "baseline": {
+          "vocabulary": 695,
+          "grammar": 155,
+          "lessons": 48,
+          "dialogues": 116,
+          "grammar_examples": 647,
+          "grammar_target_audits": 490,
+          "vocabulary_usages": 704,
+          "assessment_sessions": 0,
+          "placement_questions": 750
+        },
+        "current": {
+          "vocabulary": 695,
+          "grammar": 155,
+          "lessons": 48,
+          "dialogues": 116,
+          "grammar_examples": 647,
+          "grammar_target_audits": 490,
+          "vocabulary_usages": 1084,
+          "assessment_sessions": 0,
+          "placement_questions": 750
+        }
+      }
+    },
+    {
+      "name": "usage table additive delta",
+      "pass": true,
+      "detail": {
+        "before": 704,
+        "added": 380,
+        "after": 1084
+      }
+    },
+    {
+      "name": "foreign keys",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "additive migration policy",
+      "pass": true,
+      "detail": {
+        "statement_starts": [
+          "PRAGMA foreign_keys",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO",
+          "INSERT INTO"
+        ],
+        "forbidden": [],
+        "insert_targets": [
+          "v2_vocabulary_examples"
+        ]
+      }
+    },
+    {
+      "name": "migration recorded",
+      "pass": true,
+      "detail": [
+        {
+          "id": 1,
+          "name": "0001_schema.sql",
+          "applied_at": "2026-09-10 21:04:06"
+        },
+        {
+          "id": 2,
+          "name": "0002_seed.sql",
+          "applied_at": "2026-09-10 21:04:11"
+        },
+        {
+          "id": 3,
+          "name": "0003_engine.sql",
+          "applied_at": "2026-09-10 21:04:12"
+        },
+        {
+          "id": 4,
+          "name": "0004_curriculum.sql",
+          "applied_at": "2026-09-10 21:05:47"
+        },
+        {
+          "id": 5,
+          "name": "0005_assessment_refinements.sql",
+          "applied_at": "2026-09-10 21:05:53"
+        },
+        {
+          "id": 6,
+          "name": "0006_v2_domains.sql",
+          "applied_at": "2026-09-10 21:05:54"
+        },
+        {
+          "id": 7,
+          "name": "0007_v2_representative.sql",
+          "applied_at": "2026-09-10 21:05:58"
+        },
+        {
+          "id": 8,
+          "name": "0008_v2_editorial_guards.sql",
+          "applied_at": "2026-09-10 21:05:58"
+        },
+        {
+          "id": 9,
+          "name": "0009_academic_alignment.sql",
+          "applied_at": "2026-09-10 21:05:58"
+        },
+        {
+          "id": 10,
+          "name": "0010_academic_expression_example.sql",
+          "applied_at": "2026-09-10 21:05:59"
+        },
+        {
+          "id": 11,
+          "name": "0011_curriculum.sql",
+          "applied_at": "2026-09-10 21:07:24"
+        },
+        {
+          "id": 12,
+          "name": "0012_editorial_refinement.sql",
+          "applied_at": "2026-09-10 21:07:27"
+        },
+        {
+          "id": 13,
+          "name": "0013_reviewed_speech_link.sql",
+          "applied_at": "2026-09-10 21:07:27"
+        },
+        {
+          "id": 14,
+          "name": "0014_final_editorial_judgments.sql",
+          "applied_at": "2026-09-10 21:07:31"
+        },
+        {
+          "id": 15,
+          "name": "0015_reused_pattern_provenance.sql",
+          "applied_at": "2026-09-10 21:07:31"
+        },
+        {
+          "id": 16,
+          "name": "0016_request_variants.sql",
+          "applied_at": "2026-09-10 21:07:31"
+        },
+        {
+          "id": 17,
+          "name": "0017_lessons.sql",
+          "applied_at": "2026-09-10 21:07:32"
+        },
+        {
+          "id": 18,
+          "name": "0018_lesson_exam_recommendations.sql",
+          "applied_at": "2026-09-10 21:07:32"
+        },
+        {
+          "id": 19,
+          "name": "0019_distinct_progression.sql",
+          "applied_at": "2026-09-10 21:07:32"
+        },
+        {
+          "id": 20,
+          "name": "0020_editorial_objectives.sql",
+          "applied_at": "2026-09-10 21:07:33"
+        },
+        {
+          "id": 21,
+          "name": "0001_core_grammar_curated_examples.sql",
+          "applied_at": "2026-09-10 21:07:42"
+        },
+        {
+          "id": 22,
+          "name": "0001_curated_grammar_example_target_roles.sql",
+          "applied_at": "2026-09-10 21:07:44"
+        },
+        {
+          "id": 23,
+          "name": "0001_core_vocabulary_curated_usages.sql",
+          "applied_at": "2026-09-10 21:07:46"
+        }
+      ]
+    },
+    {
+      "name": "historical migrations unchanged",
+      "pass": true,
+      "detail": {
+        "grammar_examples": true,
+        "grammar_roles": true
+      }
+    },
+    {
+      "name": "selection is priority/progression based",
+      "pass": true,
+      "detail": {
+        "method": "P0 lesson usage, P1 expression usage, Stage 1–3, communicative/ambiguity score; not ID order",
+        "excluded": [
+          {
+            "id": "ja-c-1087",
+            "reason": "baseline meaning_zh conflicts with はっきり; sense correction is out of scope"
+          }
+        ]
+      }
+    }
+  ],
+  "error_details": [],
+  "warning_details": []
+}

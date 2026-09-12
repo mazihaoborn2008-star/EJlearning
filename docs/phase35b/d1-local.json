@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "location": [
+    "--local",
+    "--persist-to",
+    ".wrangler/35b-local"
+  ],
+  "config": "wrangler.35b.local.jsonc",
+  "migration_reapplication": "No migrations to apply",
+  "checks": [
+    [],
+    [
+      {
+        "name": "0001_schema.sql"
+      },
+      {
+        "name": "0002_seed.sql"
+      },
+      {
+        "name": "0003_engine.sql"
+      },
+      {
+        "name": "0004_curriculum.sql"
+      },
+      {
+        "name": "0005_assessment_refinements.sql"
+      },
+      {
+        "name": "0006_v2_domains.sql"
+      },
+      {
+        "name": "0007_v2_representative.sql"
+      },
+      {
+        "name": "0008_v2_editorial_guards.sql"
+      },
+      {
+        "name": "0009_academic_alignment.sql"
+      },
+      {
+        "name": "0010_academic_expression_example.sql"
+      }
+    ],
+    [
+      {
+        "count": 183
+      }
+    ],
+    [
+      {
+        "language": "en",
+        "count": 16
+      },
+      {
+        "language": "ja",
+        "count": 17
+      }
+    ],
+    [
+      {
+        "language": "en",
+        "count": 9
+      },
+      {
+        "language": "ja",
+        "count": 10
+      }
+    ],
+    [
+      {
+        "count": 13
+      }
+    ],
+    [
+      {
+        "count": 26
+      }
+    ],
+    [
+      {
+        "count": 38
+      }
+    ],
+    [
+      {
+        "count": 29
+      }
+    ],
+    [
+      {
+        "count": 4
+      }
+    ]
+  ],
+  "negativeChecks": [
+    {
+      "sql": "UPDATE v2_content_alignments SET vocabulary_id='ja-yotei' WHERE id='ielts-expect'",
+      "expected": "FOREIGN KEY",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_content_alignments SET framework_id='JLPT',target='N4' WHERE id='ielts-expect'",
+      "expected": "FOREIGN KEY",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_content_alignments SET grammar_id='en-may' WHERE id='ielts-expect'",
+      "expected": "CHECK",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_content_alignments SET target='N1' WHERE id='ielts-expect'",
+      "expected": "FOREIGN KEY",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_vocabulary_items SET stage=7 WHERE id='en-eat'",
+      "expected": "CHECK",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_grammar_points SET level=0 WHERE id='en-may'",
+      "expected": "CHECK",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_vocabulary_items SET stage=1.5 WHERE id='en-eat'",
+      "expected": "integer",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_vocabulary_items SET language='zh' WHERE id='en-eat'",
+      "expected": "CHECK",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_sentence_vocabulary_links SET item_id='ja-taberu',sense_id=NULL WHERE id='vl-not-eaten-en-0'",
+      "expected": "FOREIGN KEY",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_sentence_grammar_links SET grammar_id='en-present-perfect' WHERE id='gl-not-eaten-ja-0'",
+      "expected": "FOREIGN KEY",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_sentence_vocabulary_links SET sense_id='en-yet-1' WHERE id='vl-not-eaten-en-0'",
+      "expected": "FOREIGN KEY",
+      "rejected": true
+    },
+    {
+      "sql": "INSERT INTO v2_grammar_relations VALUES('en-may','ja-te-form','en','prerequisite','invalid')",
+      "expected": "FOREIGN KEY",
+      "rejected": true
+    },
+    {
+      "sql": "INSERT INTO v2_grammar_relations VALUES('ja-te-form','ja-te-iru','ja','prerequisite','invalid')",
+      "expected": "cycle",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_sentence_expressions SET is_primary=1 WHERE id='apology-en-casual'",
+      "expected": "UNIQUE",
+      "rejected": true
+    },
+    {
+      "sql": "UPDATE v2_sentence_units SET unit_type='sentence' WHERE id='help-dialogue'",
+      "expected": "dialogue",
+      "rejected": true
+    }
+  ]
+}

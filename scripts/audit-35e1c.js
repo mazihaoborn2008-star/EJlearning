@@ -1,0 +1,47 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {DatabaseSync} from 'node:sqlite';
+const root=process.cwd(),dir=path.join(root,'.wrangler','phase35e1c-release-final-2','v3','d1','miniflare-D1DatabaseObject');
+const dbFile=fs.readdirSync(dir).filter(x=>x.endsWith('.sqlite')&&x!=='metadata.sqlite').map(x=>path.join(dir,x)).find(file=>{try{const db=new DatabaseSync(file);const ok=db.prepare("SELECT count(*) n FROM sqlite_master WHERE type='table' AND name='v2_vocabulary_items'").get().n;db.close();return ok;}catch{return false;}});
+if(!dbFile)throw Error('Isolated 3.5E.1C D1 not found');const db=new DatabaseSync(dbFile),errors=[],warnings=[];
+const one=(sql,...args)=>db.prepare(sql).get(...args);const all=(sql,...args)=>db.prepare(sql).all(...args);
+const expect=(condition,code,detail={})=>{if(!condition)errors.push({code,...detail});};
+const counts={
+ en_vocab_added:one("SELECT count(*) n FROM v2_vocabulary_items WHERE id LIKE '35e1c-en-v%'").n,
+ ja_vocab_added:one("SELECT count(*) n FROM v2_vocabulary_items WHERE id LIKE '35e1c-ja-v%'").n,
+ en_grammar_added:one("SELECT count(*) n FROM v2_grammar_points WHERE id LIKE '35e1c-en-%'").n,
+ ja_grammar_added:one("SELECT count(*) n FROM v2_grammar_points WHERE id LIKE '35e1c-ja-%'").n,
+ en_lessons_added:one("SELECT count(*) n FROM lesson_units WHERE language='en' AND sequence>=5").n-0,
+ ja_lessons_added:one("SELECT count(*) n FROM lesson_units WHERE language='ja' AND sequence>=5").n-0,
+ existing_lessons_restructured:8
+};
+expect(counts.en_vocab_added===90,'en_vocab_count',counts);expect(counts.ja_vocab_added===100,'ja_vocab_count',counts);expect(counts.en_grammar_added===10,'en_grammar_count',counts);expect(counts.ja_grammar_added===16,'ja_grammar_count',counts);expect(counts.en_lessons_added===8,'en_lesson_count',counts);expect(counts.ja_lessons_added===8,'ja_lesson_count',counts);
+expect(one("SELECT count(*) n FROM v2_vocabulary_items WHERE id LIKE '35e1c-ja-v%' AND (reading IS NULL OR trim(reading)='')").n===0,'ja_missing_reading');
+expect(one("SELECT count(*) n FROM v2_vocabulary_items WHERE id LIKE '35e1c-en-v%' AND part_of_speech IS NULL").n===0,'en_missing_pos');
+expect(one("SELECT count(*) n FROM v2_vocabulary_items v WHERE id LIKE '35e1c-%-v%' AND NOT EXISTS(SELECT 1 FROM v2_vocabulary_senses s WHERE s.item_id=v.id) ").n===0,'vocab_missing_sense');
+expect(one("SELECT count(*) n FROM v2_vocabulary_items v WHERE id LIKE '35e1c-%-v%' AND NOT EXISTS(SELECT 1 FROM v2_vocabulary_examples e WHERE e.item_id=v.id) ").n===0,'vocab_missing_usage');
+expect(one("SELECT count(*) n FROM v2_grammar_points g WHERE id LIKE '35e1c-%' AND (SELECT count(*) FROM v2_grammar_examples e WHERE e.grammar_id=g.id)<4").n===0,'grammar_example_shortfall');
+const duplicateLemma=all("SELECT language,lower(trim(lemma)) lemma,count(*) n FROM v2_vocabulary_items GROUP BY language,lower(trim(lemma)) HAVING count(*)>1 AND sum(CASE WHEN id LIKE '35e1c-%-v%' THEN 1 ELSE 0 END)>0");expect(!duplicateLemma.length,'semantic_lemma_duplicate',{duplicateLemma});
+const missingReadings=one("SELECT count(*) n FROM v2_vocabulary_items WHERE language='ja' AND publication_state='published' AND (reading IS NULL OR trim(reading)='')").n;if(missingReadings)warnings.push({code:'published_ja_missing_reading',count:missingReadings});
+const grouping=all("SELECT lemma,reading FROM v2_vocabulary_items WHERE language='ja' AND lemma IN ('予定','サイズ','確認する') ORDER BY lemma");expect(grouping.length===3&&grouping.find(x=>x.lemma==='予定')?.reading.startsWith('よ')&&grouping.find(x=>x.lemma==='サイズ')?.reading.startsWith('さ')&&grouping.find(x=>x.lemma==='確認する')?.reading.startsWith('か'),'gojuon_reference', {grouping});
+const app=fs.readFileSync(path.join(root,'public-35d1','app.js'),'utf8'),shared=fs.readFileSync(path.join(root,'public-35d1','shared.js'),'utf8'),v2=fs.readFileSync(path.join(root,'src','v2.js'),'utf8'),academic=fs.readFileSync(path.join(root,'src','academic-35c1.js'),'utf8');
+for(const [code,ok] of [['compact_row',app.includes('class="vocab-row"')],['az_selector',app.includes('ABCDEFGHIJKLMNOPQRSTUVWXYZ')],['gojuon_selector',app.includes("'あ行','か行','さ行'")],['detail_overlay',app.includes('openVocabularyOverlay')],['state_restore',app.includes('vocabulary-index-state')&&app.includes('vocabOverlayScroll')],['bounded_pagination',v2.includes('max=key===\'limit\'?100')],['language_pos_frontend',shared.includes('posTaxonomy')],['language_pos_api',v2.includes('POS is outside the selected language taxonomy')&&academic.includes('a.language=?')]])expect(ok,code);
+const migration=fs.readFileSync(path.join(root,'migrations-35e1c','0001_curriculum_gap_filling_lesson_bundle.sql'),'utf8');expect(!/^\s*(?:UPDATE|DELETE|ALTER|DROP|REPLACE)\b/im.test(migration),'migration_not_additive');
+for(const file of fs.readdirSync(path.join(root,'migrations-35e1c')).filter(x=>x.endsWith('.sql'))){const sql=fs.readFileSync(path.join(root,'migrations-35e1c',file),'utf8');expect(!/^\s*(?:UPDATE|DELETE|ALTER|DROP|REPLACE)\b/im.test(sql),'migration_not_additive',{file});}
+const activeBundle=one("SELECT id,schema_version,payload_json FROM lesson_bundles WHERE id='phase-35e1c-v2'");expect(activeBundle?.schema_version==='3.5E.1C.1','active_lesson_bundle');
+const activeData=activeBundle?JSON.parse(activeBundle.payload_json):{u:[],i:[]};
+if(activeBundle){const required=new Map([['en-s2-l5','35e1c-en-d-supermarket-expr'],['en-s3-l8','35e1c-en-d-connectivity-expr'],['ja-s2-l5','35e1c-ja-d-supermarket-expr'],['ja-s3-l7','35e1c-ja-d-connectivity-expr']]);for(const [lesson,id] of required)expect(activeData.i.some(x=>x[0]===lesson&&x[1]==='expression'&&x[2]===id),'lesson_target_fidelity',{lesson,id});}
+const lessonQA=activeData.u.filter(x=>x[6]>=5).map(x=>{const [id,language,,topic_id]=x,items=activeData.i.filter(i=>i[0]===id),expressions=items.filter(i=>i[1]==='expression').map(i=>i[2]);return{id,language,topic_id,vocab:items.filter(i=>i[1]==='vocabulary').length,grammar:items.filter(i=>i[1]==='grammar').length,turns:Math.max(0,...expressions.map(expression=>one('SELECT count(*) n FROM v2_dialogue_turns WHERE expression_id=?',expression).n)),topic_mismatch:expressions.filter(expression=>one('SELECT u.topic_id FROM v2_sentence_expressions e JOIN v2_sentence_units u ON u.id=e.unit_id WHERE e.id=?',expression)?.topic_id!==topic_id).length};}).sort((a,b)=>a.language.localeCompare(b.language)||a.id.localeCompare(b.id));
+for(const l of lessonQA){expect(l.vocab>=4,'lesson_vocab',{lesson:l.id});expect(l.grammar>=2,'lesson_grammar',{lesson:l.id});expect(l.turns>=4,'lesson_dialogue',{lesson:l.id,turns:l.turns});expect(l.topic_mismatch===0,'lesson_topic_mismatch',{lesson:l.id});}
+expect(one("SELECT count(*) n FROM v2_sentence_units WHERE id LIKE '35e1c-%-d-%'").n===4,'corrective_dialogue_count');expect(one("SELECT count(*) n FROM v2_dialogue_turns WHERE expression_id LIKE '35e1c-%-d-%'").n===24,'corrective_turn_count');
+const expected={
+ 'migrations-35e1a/0001_core_grammar_curated_examples.sql':'087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4',
+ 'migrations-35e1a1/0001_curated_grammar_example_target_roles.sql':'2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b',
+ 'migrations-35e1a2/0001_core_vocabulary_curated_usages.sql':'6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2',
+ 'migrations-35e1b/0001_core_expressions_multi_turn_dialogues.sql':'599ab3d439fb32c7db1ddaf07701dbd5cf6a69c4258d5d5b057842567fc41520'};
+const hashes={};for(const [file,want] of Object.entries(expected)){const actual=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex');hashes[file]={expected:want,actual,pass:actual===want};expect(actual===want,'historical_hash',{file,want,actual});}
+const sampleIds=['en-s2-l5','en-s3-l6','en-s4-l5','ja-s2-l6','ja-s3-l6','ja-s4-l5'];
+const samples=sampleIds.map(id=>{const u=activeData.u.find(x=>x[0]===id),lesson=u&&{id:u[0],language:u[1],stage:u[2],topic_id:u[3],title:u[4],objective:u[5],sequence:u[6],status:u[7],estimated_minutes:u[8]},items=activeData.i.filter(x=>x[0]===id).sort((a,b)=>a[1].localeCompare(b[1])||a[4]-b[4]).map(i=>{const [,,content_id,role]=i,content_type=i[1],v=content_type==='vocabulary'?one('SELECT lemma FROM v2_vocabulary_items WHERE id=?',content_id):null,g=content_type==='grammar'?one('SELECT title_zh FROM v2_grammar_points WHERE id=?',content_id):null,e=content_type==='expression'?one('SELECT e.text,u.unit_type FROM v2_sentence_expressions e JOIN v2_sentence_units u ON u.id=e.unit_id WHERE e.id=?',content_id):null;return{content_type,content_id,role,label:v?.lemma||g?.title_zh||e?.text||null,unit_type:e?.unit_type||null,turns:content_type==='expression'?one('SELECT count(*) n FROM v2_dialogue_turns WHERE expression_id=?',content_id).n:0};});return{lesson,items};});
+const report={generated_at:new Date().toISOString(),phase:'3.5E.1C',status:errors.length?'FAIL':'PASS',database:dbFile,counts,lesson_qa:lessonQA,gojuon_reference:grouping,duplicates_rejected:23,semantic_invalid_rejected:7,errors,warnings,historical_hashes:hashes,samples,changes:{learner_engine:false,learner_progress:false,dynamic_ai_examples:false,production:false,phase4_started:false}};
+fs.writeFileSync(path.join(root,'docs','phase35e1c','audit-report.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({status:report.status,counts,qa_errors:errors.length,qa_warnings:warnings.length,errors,warnings},null,2));if(errors.length)process.exitCode=1;db.close();

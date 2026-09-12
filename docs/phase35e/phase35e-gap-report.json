@@ -1,0 +1,1227 @@
+{
+  "generated_at": "2026-09-10T06:35:26.438Z",
+  "phase": "3.5E",
+  "status": "complete",
+  "read_only": true,
+  "source": {
+    "database": "local Phase 3.5D.1-compatible canonical D1 clone",
+    "config": "wrangler.35d1.local.jsonc",
+    "persist": ".wrangler/phase35d-clean",
+    "remote_audit": false,
+    "worker_deployed": false,
+    "d1_created": false
+  },
+  "current_curriculum_health": {
+    "baseline": {
+      "vocabulary": 695,
+      "grammar": 155,
+      "semantic_units": 265,
+      "expressions": 459,
+      "lessons": 48,
+      "grammar_examples": 157,
+      "vocabulary_examples": 704,
+      "dialogue_turns": 116,
+      "vocabulary_relations": 11,
+      "grammar_relations": 23
+    },
+    "language_coverage": [
+      {
+        "language": "en",
+        "vocab": 345,
+        "grammar": 73,
+        "expressions": 226,
+        "lessons": 24,
+        "linked_vocab": 119,
+        "linked_grammar": 42,
+        "linked_expressions": 92,
+        "vocab_coverage_percent": 34.5,
+        "grammar_coverage_percent": 57.5,
+        "expression_coverage_percent": 40.7
+      },
+      {
+        "language": "ja",
+        "vocab": 350,
+        "grammar": 82,
+        "expressions": 233,
+        "lessons": 24,
+        "linked_vocab": 107,
+        "linked_grammar": 43,
+        "linked_expressions": 89,
+        "vocab_coverage_percent": 30.6,
+        "grammar_coverage_percent": 52.4,
+        "expression_coverage_percent": 38.2
+      }
+    ],
+    "strengths": [
+      "Balanced 345/350 bilingual lexicons and complete Stage 1–6 lesson skeletons.",
+      "Every grammar and vocabulary item has at least one curated example.",
+      "All lesson references are canonical and language-valid.",
+      "Scenario/dialogue infrastructure and draft IELTS/JLPT supporting alignment already exist."
+    ],
+    "weaknesses": [
+      "Curated example depth is almost uniformly one item.",
+      "Dialogue depth stops at two turns.",
+      "High-stage lexical and communicative complexity plateaus.",
+      "Several high-value daily-life tasks are absent.",
+      "Semantic relations are extremely sparse."
+    ]
+  },
+  "vocabulary_gap_summary": [
+    {
+      "language": "en",
+      "total": 345,
+      "lesson_linked": 119,
+      "coverage_percent": 34.5,
+      "unassigned": 226
+    },
+    {
+      "language": "ja",
+      "total": 350,
+      "lesson_linked": 107,
+      "coverage_percent": 30.6,
+      "unassigned": 243
+    }
+  ],
+  "grammar_gap_summary": [
+    {
+      "language": "en",
+      "total": 73,
+      "lesson_linked": 42,
+      "coverage_percent": 57.5,
+      "unassigned": 31
+    },
+    {
+      "language": "ja",
+      "total": 82,
+      "lesson_linked": 43,
+      "coverage_percent": 52.4,
+      "unassigned": 39
+    }
+  ],
+  "curated_example_summary": {
+    "combined": {
+      "zero": 0,
+      "one_to_two": 154,
+      "three_to_five": 1,
+      "six_to_eight": 0,
+      "nine_plus": 0
+    },
+    "by_language": [
+      {
+        "language": "en",
+        "total": 73,
+        "zero": 0,
+        "one_to_two": 72,
+        "three_to_five": 1,
+        "six_to_eight": 0,
+        "nine_plus": 0
+      },
+      {
+        "language": "ja",
+        "total": 82,
+        "zero": 0,
+        "one_to_two": 82,
+        "three_to_five": 0,
+        "six_to_eight": 0,
+        "nine_plus": 0
+      }
+    ]
+  },
+  "expression_sentence_summary": [
+    {
+      "language": "en",
+      "unit_type": "sentence",
+      "expressions": 151,
+      "with_dialogue_turns": 0,
+      "dialogue_turns": 0
+    },
+    {
+      "language": "en",
+      "unit_type": "scenario",
+      "expressions": 46,
+      "with_dialogue_turns": 0,
+      "dialogue_turns": 0
+    },
+    {
+      "language": "en",
+      "unit_type": "dialogue",
+      "expressions": 29,
+      "with_dialogue_turns": 29,
+      "dialogue_turns": 58
+    },
+    {
+      "language": "ja",
+      "unit_type": "sentence",
+      "expressions": 159,
+      "with_dialogue_turns": 0,
+      "dialogue_turns": 0
+    },
+    {
+      "language": "ja",
+      "unit_type": "scenario",
+      "expressions": 45,
+      "with_dialogue_turns": 0,
+      "dialogue_turns": 0
+    },
+    {
+      "language": "ja",
+      "unit_type": "dialogue",
+      "expressions": 29,
+      "with_dialogue_turns": 29,
+      "dialogue_turns": 58
+    }
+  ],
+  "lesson_health": {
+    "Strong": 18,
+    "Needs enrichment": 22,
+    "Needs restructuring": 8
+  },
+  "unassigned_summary": {
+    "all": 817,
+    "en": 391,
+    "ja": 426,
+    "by_type": {
+      "vocabulary": 469,
+      "grammar": 70,
+      "expression": 278
+    }
+  },
+  "topic_function_summary": {
+    "en": {
+      "overrepresented": [
+        "chat: 39 expressions and broad catch-all use",
+        "school: 25 expressions across task and academic discourse"
+      ],
+      "underrepresented": [
+        "body: 2 expressions, 0 lessons; overlaps health label",
+        "health, home, shopping, time, hobbies: one lesson each",
+        "travel: two lessons but almost entirely transport"
+      ],
+      "missing_functions": [
+        "cooking and supermarket workflow",
+        "renting and maintenance",
+        "bank/payment problems",
+        "phone/network troubleshooting",
+        "accommodation",
+        "driving",
+        "medical service interaction"
+      ]
+    },
+    "ja": {
+      "overrepresented": [
+        "chat: 48 expressions and broad catch-all use",
+        "school: 26 expressions, with advanced written forms concentrated late"
+      ],
+      "underrepresented": [
+        "body: 2 expressions, 0 lessons; overlaps health label",
+        "food: one lesson and no full restaurant workflow",
+        "health, home, shopping, time, hobbies: one lesson each"
+      ],
+      "missing_functions": [
+        "助数詞を伴う買物",
+        "飲食店の多輪やり取り",
+        "賃貸・修理",
+        "報告・連絡・相談",
+        "通信トラブル",
+        "宿泊",
+        "医療サービス interaction"
+      ]
+    }
+  },
+  "progression": [
+    {
+      "language": "en",
+      "stage": 1,
+      "lessons": 4,
+      "avg_vocabulary_level": 1.19,
+      "avg_grammar_level": 1.33,
+      "avg_expression_difficulty": 1.25,
+      "lessons_with_dialogue": 1,
+      "interpretation": "Foundational task growth is visible."
+    },
+    {
+      "language": "en",
+      "stage": 2,
+      "lessons": 4,
+      "avg_vocabulary_level": 1.63,
+      "avg_grammar_level": 1.42,
+      "avg_expression_difficulty": 1.94,
+      "lessons_with_dialogue": 4,
+      "interpretation": "Foundational task growth is visible."
+    },
+    {
+      "language": "en",
+      "stage": 3,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.22,
+      "avg_grammar_level": 1.67,
+      "avg_expression_difficulty": 3.06,
+      "lessons_with_dialogue": 3,
+      "interpretation": "Expression complexity rises, but grammar/vocabulary lag behind stage labels."
+    },
+    {
+      "language": "en",
+      "stage": 4,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.41,
+      "avg_grammar_level": 2.33,
+      "avg_expression_difficulty": 3.63,
+      "lessons_with_dialogue": 4,
+      "interpretation": "Expression complexity rises, but grammar/vocabulary lag behind stage labels."
+    },
+    {
+      "language": "en",
+      "stage": 5,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.44,
+      "avg_grammar_level": 3.08,
+      "avg_expression_difficulty": 4.06,
+      "lessons_with_dialogue": 4,
+      "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+    },
+    {
+      "language": "en",
+      "stage": 6,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.38,
+      "avg_grammar_level": 3.42,
+      "avg_expression_difficulty": 3.63,
+      "lessons_with_dialogue": 1,
+      "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+    },
+    {
+      "language": "ja",
+      "stage": 1,
+      "lessons": 4,
+      "avg_vocabulary_level": 1.31,
+      "avg_grammar_level": 1.25,
+      "avg_expression_difficulty": 1.38,
+      "lessons_with_dialogue": 2,
+      "interpretation": "Foundational task growth is visible."
+    },
+    {
+      "language": "ja",
+      "stage": 2,
+      "lessons": 4,
+      "avg_vocabulary_level": 1.51,
+      "avg_grammar_level": 1.75,
+      "avg_expression_difficulty": 2,
+      "lessons_with_dialogue": 3,
+      "interpretation": "Foundational task growth is visible."
+    },
+    {
+      "language": "ja",
+      "stage": 3,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.25,
+      "avg_grammar_level": 2.75,
+      "avg_expression_difficulty": 2.94,
+      "lessons_with_dialogue": 3,
+      "interpretation": "Expression complexity rises, but grammar/vocabulary lag behind stage labels."
+    },
+    {
+      "language": "ja",
+      "stage": 4,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.09,
+      "avg_grammar_level": 3,
+      "avg_expression_difficulty": 3.81,
+      "lessons_with_dialogue": 4,
+      "interpretation": "Expression complexity rises, but grammar/vocabulary lag behind stage labels."
+    },
+    {
+      "language": "ja",
+      "stage": 5,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.41,
+      "avg_grammar_level": 3.25,
+      "avg_expression_difficulty": 4,
+      "lessons_with_dialogue": 3,
+      "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+    },
+    {
+      "language": "ja",
+      "stage": 6,
+      "lessons": 4,
+      "avg_vocabulary_level": 2.75,
+      "avg_grammar_level": 3.92,
+      "avg_expression_difficulty": 4.06,
+      "lessons_with_dialogue": 1,
+      "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+    }
+  ],
+  "exam_support": {
+    "alignment_status": "draft",
+    "alignments": [
+      {
+        "framework_id": "IELTS",
+        "target": "5.0",
+        "language": "en",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 6,
+        "vocabulary": 2,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "5.5",
+        "language": "en",
+        "status": "draft",
+        "source_type": "editorial_demo",
+        "items": 1,
+        "vocabulary": 0,
+        "grammar": 0,
+        "expressions": 1
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "5.5",
+        "language": "en",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "6.0",
+        "language": "en",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "6.5",
+        "language": "en",
+        "status": "draft",
+        "source_type": "editorial_demo",
+        "items": 4,
+        "vocabulary": 1,
+        "grammar": 1,
+        "expressions": 2
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "6.5",
+        "language": "en",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "IELTS",
+        "target": "7.0+",
+        "language": "en",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N1",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N2",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N3",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N4",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "editorial_demo",
+        "items": 3,
+        "vocabulary": 1,
+        "grammar": 1,
+        "expressions": 1
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N4",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 6,
+        "vocabulary": 2,
+        "grammar": 2,
+        "expressions": 2
+      },
+      {
+        "framework_id": "JLPT",
+        "target": "N5",
+        "language": "ja",
+        "status": "draft",
+        "source_type": "model_editorial",
+        "items": 7,
+        "vocabulary": 3,
+        "grammar": 2,
+        "expressions": 2
+      }
+    ],
+    "IELTS": {
+      "strengths": [
+        "Some opinion, evidence, comparison, qualification and formal grammar anchors exist."
+      ],
+      "gaps": [
+        "Sparse item counts per target",
+        "Little sustained speaking interaction",
+        "Reason-example-qualification sequences are not systematic"
+      ]
+    },
+    "JLPT": {
+      "strengths": [
+        "N5–N1 draft targets each have vocabulary, grammar and expression anchors."
+      ],
+      "gaps": [
+        "Not an official word-by-word classification",
+        "Polite/plain and particle progression is incomplete internally",
+        "N1/N2 support is sparse and largely isolated"
+      ]
+    },
+    "alignment_changed": false
+  },
+  "top_30_curriculum_gaps": [
+    {
+      "rank": 1,
+      "priority": "P0",
+      "language": "en",
+      "stage": 1,
+      "type": "grammar",
+      "gap": "Basic negation/short-answer system is not a taught grammar point in the path",
+      "why_it_matters": "Without correction and negative answers, Stage 1 interaction is brittle",
+      "proposed_solution": "Add be/do negation with affirmative/negative/question variants",
+      "estimated_amount_of_new_content": "2 grammar concepts + 16–20 examples + 8 expressions"
+    },
+    {
+      "rank": 2,
+      "priority": "P0",
+      "language": "ja",
+      "stage": 1,
+      "type": "grammar",
+      "gap": "Core particle progression is not explicit in lessons",
+      "why_it_matters": "に/へ/で and から/まで are essential for travel and time",
+      "proposed_solution": "Teach particles through route and appointment tasks",
+      "estimated_amount_of_new_content": "2–3 grammar concepts + 18–24 examples + 10 expressions"
+    },
+    {
+      "rank": 3,
+      "priority": "P0",
+      "language": "en",
+      "stage": 1,
+      "type": "curated_examples",
+      "gap": "72/73 grammar points have only one curated example",
+      "why_it_matters": "A single form cannot show polarity, question, tense or usage conditions",
+      "proposed_solution": "Prioritize 35 core grammar points at 6–10 examples",
+      "estimated_amount_of_new_content": "+210–280 examples first wave"
+    },
+    {
+      "rank": 4,
+      "priority": "P0",
+      "language": "ja",
+      "stage": 1,
+      "type": "curated_examples",
+      "gap": "82/82 grammar points have only one curated example",
+      "why_it_matters": "Japanese needs form, politeness, register and particle variation",
+      "proposed_solution": "Prioritize 40 core grammar points at 6–10 examples",
+      "estimated_amount_of_new_content": "+260–340 examples first wave"
+    },
+    {
+      "rank": 5,
+      "priority": "P0",
+      "language": "en",
+      "stage": 2,
+      "type": "dialogue",
+      "gap": "All 29 English dialogues are only two turns",
+      "why_it_matters": "Learners never practice follow-up, repair or final confirmation",
+      "proposed_solution": "Extend high-value service and planning tasks to 3–5 turns",
+      "estimated_amount_of_new_content": "+14–18 dialogues/scenarios"
+    },
+    {
+      "rank": 6,
+      "priority": "P0",
+      "language": "ja",
+      "stage": 2,
+      "type": "dialogue",
+      "gap": "All 29 Japanese dialogues are only two turns",
+      "why_it_matters": "Politeness and response choice require sustained context",
+      "proposed_solution": "Extend service, requests and register tasks to 3–5 turns",
+      "estimated_amount_of_new_content": "+16–20 dialogues/scenarios"
+    },
+    {
+      "rank": 7,
+      "priority": "P0",
+      "language": "en",
+      "stage": 3,
+      "type": "topic",
+      "gap": "Clinic/pharmacy interaction is absent",
+      "why_it_matters": "Four isolated health expressions do not support safe symptom communication",
+      "proposed_solution": "Create clinic lesson and symptom/advice set",
+      "estimated_amount_of_new_content": "10–14 vocab + 10–12 expressions + 2 contexts"
+    },
+    {
+      "rank": 8,
+      "priority": "P0",
+      "language": "ja",
+      "stage": 2,
+      "type": "topic",
+      "gap": "Restaurant ordering workflow is absent",
+      "why_it_matters": "The single food lesson cannot cover ordering, restrictions, substitution and payment",
+      "proposed_solution": "Create restaurant lesson with service responses",
+      "estimated_amount_of_new_content": "10–14 vocab + 10–12 expressions + 2 contexts"
+    },
+    {
+      "rank": 9,
+      "priority": "P0",
+      "language": "en",
+      "stage": 3,
+      "type": "function",
+      "gap": "Booking, canceling and rescheduling are not a complete task",
+      "why_it_matters": "Time lesson confirms a meeting but does not handle change",
+      "proposed_solution": "Create appointment lesson with alternative negotiation",
+      "estimated_amount_of_new_content": "8–12 vocab + 10 expressions + 2 dialogues"
+    },
+    {
+      "rank": 10,
+      "priority": "P0",
+      "language": "ja",
+      "stage": 2,
+      "type": "grammar",
+      "gap": "助数詞 progression is absent from the shopping path",
+      "why_it_matters": "Quantity cannot be handled naturally with generic number words alone",
+      "proposed_solution": "Teach 人/本/枚/個/つ through supermarket tasks",
+      "estimated_amount_of_new_content": "1 grammar family + 20–30 examples/expressions"
+    },
+    {
+      "rank": 11,
+      "priority": "P0",
+      "language": "en",
+      "stage": 5,
+      "type": "lesson",
+      "gap": "en-s5-l2 has Stage 5 objective but average grammar Level 2.67",
+      "why_it_matters": "The path labels simple travel statements as advanced negotiation",
+      "proposed_solution": "Restructure around conditions, alternatives and confirmation",
+      "estimated_amount_of_new_content": "+8 expressions + 1 dialogue; replace/re-role grammar"
+    },
+    {
+      "rank": 12,
+      "priority": "P0",
+      "language": "ja",
+      "stage": 5,
+      "type": "lesson",
+      "gap": "ja-s5-l3 has average grammar Level 1.33",
+      "why_it_matters": "The lesson does not realize its condition/negotiation objective",
+      "proposed_solution": "Use なら/ても/場合 and multi-turn travel disruption",
+      "estimated_amount_of_new_content": "+8 expressions + 1 dialogue; grammar re-composition later"
+    },
+    {
+      "rank": 13,
+      "priority": "P0",
+      "language": "en",
+      "stage": 6,
+      "type": "lesson",
+      "gap": "en-s6-l3 regresses to Stage 1–2 invitation language",
+      "why_it_matters": "Stage 6 independence is broken by a basic social lesson",
+      "proposed_solution": "Move down or rebuild as tactful negotiation and repair",
+      "estimated_amount_of_new_content": "+8 advanced expressions + 1 dialogue"
+    },
+    {
+      "rank": 14,
+      "priority": "P0",
+      "language": "ja",
+      "stage": 6,
+      "type": "lesson",
+      "gap": "ja-s6-l4 regresses to Level 1–3 invitation language",
+      "why_it_matters": "Late-stage progression is not demonstrably harder",
+      "proposed_solution": "Move down or rebuild around conditional acceptance and rescheduling",
+      "estimated_amount_of_new_content": "+8 advanced expressions + 1 dialogue"
+    },
+    {
+      "rank": 15,
+      "priority": "P0",
+      "language": "ja",
+      "stage": 2,
+      "type": "progression",
+      "gap": "Polite/plain forms are present as fragments, not a deliberate transition",
+      "why_it_matters": "Register errors affect naturalness and social appropriateness",
+      "proposed_solution": "Add explicit plain/polite conversion and relationship conditions",
+      "estimated_amount_of_new_content": "3 grammar contrasts + 24–30 examples"
+    },
+    {
+      "rank": 16,
+      "priority": "P1",
+      "language": "en",
+      "stage": 1,
+      "type": "vocabulary_examples",
+      "gap": "341/345 English vocabulary items have exactly one curated usage",
+      "why_it_matters": "Core words lack collocation, context and sense contrast",
+      "proposed_solution": "Add stable usage to 120 highest-use/core items",
+      "estimated_amount_of_new_content": "+180–240 vocab examples/collocations"
+    },
+    {
+      "rank": 17,
+      "priority": "P1",
+      "language": "ja",
+      "stage": 1,
+      "type": "vocabulary_examples",
+      "gap": "346/350 Japanese vocabulary items have exactly one curated usage",
+      "why_it_matters": "Reading alone does not show particles, conjugation or collocation",
+      "proposed_solution": "Add stable usage to 130 core items",
+      "estimated_amount_of_new_content": "+200–260 vocab examples/collocations"
+    },
+    {
+      "rank": 18,
+      "priority": "P1",
+      "language": "both",
+      "stage": 1,
+      "type": "semantic_relations",
+      "gap": "Only 11 vocabulary relations cover a 695-item lexicon",
+      "why_it_matters": "Synonym, contrast, register and collocation navigation is almost absent",
+      "proposed_solution": "Author reviewed relations for high-confusion clusters",
+      "estimated_amount_of_new_content": "+90–130 relation edges"
+    },
+    {
+      "rank": 19,
+      "priority": "P1",
+      "language": "en",
+      "stage": 4,
+      "type": "lesson",
+      "gap": "en-s4-l3 claims full restaurant ordering but covers mainly order correction",
+      "why_it_matters": "Learners cannot complete the full service encounter",
+      "proposed_solution": "Add seating/order/restriction/check/bill sequence",
+      "estimated_amount_of_new_content": "+6–8 vocab + 8 expressions + 1 dialogue"
+    },
+    {
+      "rank": 20,
+      "priority": "P1",
+      "language": "ja",
+      "stage": 4,
+      "type": "lesson",
+      "gap": "ja-s4-l1 uses low-level grammar and unnatural daily wording for weather planning",
+      "why_it_matters": "Form difficulty and communicative naturalness are misaligned",
+      "proposed_solution": "Use そう/かもしれない/ので and natural forecast language",
+      "estimated_amount_of_new_content": "+6 expressions + 6 examples"
+    },
+    {
+      "rank": 21,
+      "priority": "P1",
+      "language": "en",
+      "stage": 3,
+      "type": "topic",
+      "gap": "Digital phone/network troubleshooting is absent",
+      "why_it_matters": "A common daily help task has no vocabulary or scenario",
+      "proposed_solution": "Create connectivity lesson or module",
+      "estimated_amount_of_new_content": "8–12 vocab + 10 expressions + 1 dialogue"
+    },
+    {
+      "rank": 22,
+      "priority": "P1",
+      "language": "ja",
+      "stage": 3,
+      "type": "topic",
+      "gap": "報告・連絡・相談 and workplace register are absent",
+      "why_it_matters": "Existing honorific/humble grammar remains library-only",
+      "proposed_solution": "Create workplace lesson with register ladder",
+      "estimated_amount_of_new_content": "10–14 vocab + 12 expressions + 2 dialogues"
+    },
+    {
+      "rank": 23,
+      "priority": "P1",
+      "language": "en",
+      "stage": 4,
+      "type": "topic",
+      "gap": "Renting and maintenance communication is absent",
+      "why_it_matters": "Home content only covers chores and shared equipment",
+      "proposed_solution": "Create renting/repair lesson",
+      "estimated_amount_of_new_content": "10–14 vocab + 10 expressions + 2 contexts"
+    },
+    {
+      "rank": 24,
+      "priority": "P1",
+      "language": "ja",
+      "stage": 4,
+      "type": "topic",
+      "gap": "賃貸・修理 interaction is absent",
+      "why_it_matters": "Housing problems require role and politeness choices",
+      "proposed_solution": "Create landlord/management repair lesson",
+      "estimated_amount_of_new_content": "10–14 vocab + 10 expressions + 2 contexts"
+    },
+    {
+      "rank": 25,
+      "priority": "P1",
+      "language": "both",
+      "stage": 3,
+      "type": "topic",
+      "gap": "Shopping lacks returns/refunds/exchanges",
+      "why_it_matters": "Buying without after-sales repair leaves the task incomplete",
+      "proposed_solution": "Add a returns lesson per language",
+      "estimated_amount_of_new_content": "8–12 vocab + 10 expressions + 1 dialogue each"
+    },
+    {
+      "rank": 26,
+      "priority": "P1",
+      "language": "both",
+      "stage": 4,
+      "type": "topic",
+      "gap": "Travel is transport-heavy and lacks accommodation",
+      "why_it_matters": "Check-in, facilities and room problems are common travel tasks",
+      "proposed_solution": "Add accommodation lesson per language",
+      "estimated_amount_of_new_content": "8–12 vocab + 10 expressions + 1 dialogue each"
+    },
+    {
+      "rank": 27,
+      "priority": "P1",
+      "language": "en",
+      "stage": 3,
+      "type": "grammar",
+      "gap": "Advice, obligation and first conditional are missing as a coherent progression",
+      "why_it_matters": "Health, school and plans lack reusable functional grammar",
+      "proposed_solution": "Add should, must/have to and first conditional",
+      "estimated_amount_of_new_content": "3 concepts + 24–30 examples"
+    },
+    {
+      "rank": 28,
+      "priority": "P1",
+      "language": "ja",
+      "stage": 3,
+      "type": "grammar",
+      "gap": "Experience, comparison and condition contrasts exist only partially or unassigned",
+      "why_it_matters": "Core communicative functions are not sequenced",
+      "proposed_solution": "Assign たことがある and add comparison/condition contrast",
+      "estimated_amount_of_new_content": "3–4 concepts + 28–36 examples"
+    },
+    {
+      "rank": 29,
+      "priority": "P2",
+      "language": "both",
+      "stage": 5,
+      "type": "exam_support",
+      "gap": "IELTS/JLPT alignments are sparse draft mappings",
+      "why_it_matters": "They support discovery but cannot evidence broad target coverage",
+      "proposed_solution": "Keep draft; expand only after communicative core is repaired",
+      "estimated_amount_of_new_content": "review 78 mappings; no official-list claim"
+    },
+    {
+      "rank": 30,
+      "priority": "P2",
+      "language": "both",
+      "stage": 1,
+      "type": "taxonomy",
+      "gap": "`body` and `health` duplicate the same Chinese topic label",
+      "why_it_matters": "Two IDs split tiny body content and distort the stated 14-topic baseline",
+      "proposed_solution": "Editorially merge, rename or define distinct scopes",
+      "estimated_amount_of_new_content": "review 4 expressions + 4 vocab links; no automatic merge"
+    }
+  ],
+  "expansion_recommendation": {
+    "minimum": {
+      "en_vocab": {
+        "min": 45,
+        "max": 60
+      },
+      "ja_vocab": {
+        "min": 50,
+        "max": 65
+      },
+      "en_grammar": {
+        "min": 6,
+        "max": 8
+      },
+      "ja_grammar": {
+        "min": 8,
+        "max": 10
+      },
+      "en_curated_grammar_examples": {
+        "min": 260,
+        "max": 320
+      },
+      "ja_curated_grammar_examples": {
+        "min": 300,
+        "max": 360
+      },
+      "en_expressions": {
+        "min": 60,
+        "max": 80
+      },
+      "ja_expressions": {
+        "min": 70,
+        "max": 90
+      },
+      "en_dialogues_scenarios": {
+        "min": 16,
+        "max": 20
+      },
+      "ja_dialogues_scenarios": {
+        "min": 18,
+        "max": 22
+      },
+      "en_new_lessons": {
+        "min": 4,
+        "max": 5
+      },
+      "ja_new_lessons": {
+        "min": 5,
+        "max": 6
+      },
+      "rationale": "Close P0 path breaks: foundational grammar, clinic/appointment/restaurant/counters, and multi-turn interaction."
+    },
+    "recommended": {
+      "en_vocab": {
+        "min": 90,
+        "max": 110
+      },
+      "ja_vocab": {
+        "min": 100,
+        "max": 125
+      },
+      "en_grammar": {
+        "min": 10,
+        "max": 14
+      },
+      "ja_grammar": {
+        "min": 14,
+        "max": 18
+      },
+      "en_curated_grammar_examples": {
+        "min": 390,
+        "max": 470
+      },
+      "ja_curated_grammar_examples": {
+        "min": 450,
+        "max": 540
+      },
+      "en_expressions": {
+        "min": 110,
+        "max": 140
+      },
+      "ja_expressions": {
+        "min": 120,
+        "max": 150
+      },
+      "en_dialogues_scenarios": {
+        "min": 28,
+        "max": 36
+      },
+      "ja_dialogues_scenarios": {
+        "min": 32,
+        "max": 40
+      },
+      "en_new_lessons": {
+        "min": 6,
+        "max": 8
+      },
+      "ja_new_lessons": {
+        "min": 7,
+        "max": 9
+      },
+      "rationale": "A coherent V1: cover the eight proposed daily-life task families, deepen core grammar to a differentiated 6–10 examples, and add interaction chains without forcing all library items into lessons."
+    },
+    "extended": {
+      "en_vocab": {
+        "min": 150,
+        "max": 190
+      },
+      "ja_vocab": {
+        "min": 165,
+        "max": 210
+      },
+      "en_grammar": {
+        "min": 18,
+        "max": 24
+      },
+      "ja_grammar": {
+        "min": 22,
+        "max": 30
+      },
+      "en_curated_grammar_examples": {
+        "min": 620,
+        "max": 760
+      },
+      "ja_curated_grammar_examples": {
+        "min": 700,
+        "max": 860
+      },
+      "en_expressions": {
+        "min": 220,
+        "max": 280
+      },
+      "ja_expressions": {
+        "min": 240,
+        "max": 300
+      },
+      "en_dialogues_scenarios": {
+        "min": 50,
+        "max": 70
+      },
+      "ja_dialogues_scenarios": {
+        "min": 55,
+        "max": 75
+      },
+      "en_new_lessons": {
+        "min": 10,
+        "max": 12
+      },
+      "ja_new_lessons": {
+        "min": 11,
+        "max": 14
+      },
+      "rationale": "Future depth: workplace, driving, banking, accommodation and advanced discourse variants after V1 validation."
+    }
+  },
+  "content_creation_strategy": {
+    "Vocabulary": {
+      "strategy": "AI-assisted + editorial/native review",
+      "boundary": "Canonical lemma, sense, reading/POS, stage and collisions must be human-approved; dynamic AI is not canonical."
+    },
+    "Grammar": {
+      "strategy": "Editorially authored",
+      "boundary": "Scope, formula, contrast, level and progression require editorial ownership."
+    },
+    "Curated_Examples": {
+      "strategy": "AI-assisted drafting + editorial/native review",
+      "boundary": "Validate naturalness, form targeting, polarity/question/register coverage and vocabulary difficulty before insertion."
+    },
+    "Expressions": {
+      "strategy": "Derived from existing canonical items first; otherwise AI-assisted + review",
+      "boundary": "Each core expression needs a communicative function and vocabulary/grammar linkage."
+    },
+    "Dialogues": {
+      "strategy": "Editorial task design + AI-assisted drafting + native review",
+      "boundary": "Require role, context, 3–5 turn goal progression, repair/follow-up and register checks."
+    },
+    "Dynamic_AI_Examples": {
+      "strategy": "DeepSeek runtime only",
+      "boundary": "Ephemeral expansion layer; never counted as curated coverage and never written to curriculum."
+    }
+  },
+  "qa": {
+    "generated_at": "2026-09-10T06:35:26.438Z",
+    "source_environment": "local read-only clone of Phase 3.5D.1 canonical D1",
+    "errors": 0,
+    "error_categories": {
+      "duplicate_candidate": 0,
+      "existing_canonical_collision": 0,
+      "english_japanese_cross_language_mismatch": 0,
+      "invalid_stage_proposal": 0,
+      "unsupported_topic": 0,
+      "invalid_lesson_reference": 0,
+      "hallucinated_existing_content": 0,
+      "count_inconsistency": 0
+    },
+    "error_details": {
+      "duplicate_candidate": [],
+      "existing_canonical_collision": [],
+      "english_japanese_cross_language_mismatch": [],
+      "invalid_stage_proposal": [],
+      "unsupported_topic": [],
+      "invalid_lesson_reference": [],
+      "hallucinated_existing_content": [],
+      "count_inconsistency": []
+    },
+    "warnings": {
+      "baseline_delta": [
+        {
+          "metric": "English linked vocabulary",
+          "brief": 118,
+          "canonical": 119
+        },
+        {
+          "metric": "English linked grammar",
+          "brief": 40,
+          "canonical": 42
+        },
+        {
+          "metric": "English linked expressions",
+          "brief": 87,
+          "canonical": 92
+        },
+        {
+          "metric": "Japanese linked grammar",
+          "brief": 42,
+          "canonical": 43
+        },
+        {
+          "metric": "Japanese linked expressions",
+          "brief": 88,
+          "canonical": 89
+        }
+      ],
+      "curated_example_depth": {
+        "grammar_one_to_two": 154,
+        "vocabulary_exactly_one": 687
+      },
+      "taxonomy": [
+        {
+          "issue": "The database has 15 topic IDs while the brief says 14.",
+          "detail": "body and health both display as 身体状态; no automatic merge was performed."
+        }
+      ],
+      "dialogue_depth": {
+        "en_dialogue_expressions": 29,
+        "ja_dialogue_expressions": 29,
+        "dialogues_over_two_turns": 0
+      },
+      "semantic_links": {
+        "vocabulary_relations": 11,
+        "grammar_relations": 23
+      },
+      "progression": [
+        {
+          "language": "en",
+          "stage": 5,
+          "lessons": 4,
+          "avg_vocabulary_level": 2.44,
+          "avg_grammar_level": 3.08,
+          "avg_expression_difficulty": 4.06,
+          "lessons_with_dialogue": 4,
+          "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+        },
+        {
+          "language": "en",
+          "stage": 6,
+          "lessons": 4,
+          "avg_vocabulary_level": 2.38,
+          "avg_grammar_level": 3.42,
+          "avg_expression_difficulty": 3.63,
+          "lessons_with_dialogue": 1,
+          "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+        },
+        {
+          "language": "ja",
+          "stage": 5,
+          "lessons": 4,
+          "avg_vocabulary_level": 2.41,
+          "avg_grammar_level": 3.25,
+          "avg_expression_difficulty": 4,
+          "lessons_with_dialogue": 3,
+          "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+        },
+        {
+          "language": "ja",
+          "stage": 6,
+          "lessons": 4,
+          "avg_vocabulary_level": 2.75,
+          "avg_grammar_level": 3.92,
+          "avg_expression_difficulty": 4.06,
+          "lessons_with_dialogue": 1,
+          "interpretation": "High-stage lexical/grammar progression plateaus or reverses; task depth is not consistently higher."
+        }
+      ],
+      "regression": [
+        {
+          "issue": "An optional REQUIRE_D1=1 probe against the already-running local Worker reported audited-fallback instead of d1.",
+          "impact": "The normal regression contract explicitly permits audited-fallback. Canonical counts and reports were independently read from the local D1 clone through Wrangler SELECT queries; no write occurred."
+        }
+      ],
+      "editorial": [
+        "Cohesion scores are transparent heuristics, not objective linguistics scores.",
+        "Lesson practice coverage is inferred because no canonical lesson-practice mapping table exists.",
+        "Unassigned primary classes are planning judgments; POSSIBLE_REMOVE_MERGE is a non-destructive overlapping proposal set."
+      ]
+    },
+    "warnings_count": 12,
+    "count_consistency": {
+      "vocabulary": {
+        "expected": 695,
+        "observed": 695,
+        "pass": true
+      },
+      "grammar": {
+        "expected": 155,
+        "observed": 155,
+        "pass": true
+      },
+      "expressions": {
+        "expected": 459,
+        "observed": 459,
+        "pass": true
+      },
+      "lessons": {
+        "expected": 48,
+        "observed": 48,
+        "pass": true
+      },
+      "unassigned_vocabulary": {
+        "expected": 469,
+        "observed": 469,
+        "pass": true
+      },
+      "unassigned_grammar": {
+        "expected": 70,
+        "observed": 70,
+        "pass": true
+      },
+      "unassigned_expressions": {
+        "expected": 278,
+        "observed": 278,
+        "pass": true
+      }
+    },
+    "duplicate_candidates": [],
+    "invalid_references": [],
+    "regression_scope": {
+      "curriculum_files_modified": false,
+      "d1_modified": false,
+      "lesson_composition_modified": false,
+      "learner_progress_modified": false,
+      "ai_dynamic_examples_modified": false,
+      "production_modified": false,
+      "verification": [
+        "read-only SELECTs against .wrangler/phase35d-clean",
+        "Phase 3.5D.1 isolation/config unit test",
+        "Phase 3.5D.1 Dynamic Examples unit suite",
+        "Phase 3.5D Lesson Path/API regression against local Worker",
+        "Phase 3.5C.1/Library endpoints exercised through Phase 3.5D regression"
+      ],
+      "note": "Runtime regression commands and the accepted local fallback observation are recorded in regression-verification.json."
+    }
+  },
+  "changes": {
+    "curriculum_changed": false,
+    "D1_changed": false,
+    "lessons_changed": false,
+    "learner_progress_changed": false,
+    "AI_Dynamic_Examples_changed": false,
+    "production_changed": false,
+    "phase35e1_started": false,
+    "phase4_started": false
+  }
+}

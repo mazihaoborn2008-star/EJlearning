@@ -1,0 +1,1897 @@
+{
+  "generated_at": "2026-09-10T21:58:08.184Z",
+  "phase": "3.5E.1B",
+  "status": "PASS",
+  "environment": {
+    "type": "new isolated local D1 data copy",
+    "config": "wrangler.35e1b.local.jsonc",
+    "persist": ".wrangler/phase35e1b-release-final",
+    "remote_staging_created": false,
+    "remote_staging_reused": false,
+    "production_changed": false
+  },
+  "statistics": {
+    "en": {
+      "expressions_added": 120,
+      "standalone_scenario_expressions": 88,
+      "dialogues_added": 32,
+      "total_turns": 192,
+      "average_turns": 6,
+      "dialogues_with_4_plus": 32,
+      "min_turns": 6,
+      "max_turns": 6,
+      "vocabulary_support_links": 155,
+      "grammar_support_links": 98
+    },
+    "ja": {
+      "expressions_added": 130,
+      "standalone_scenario_expressions": 94,
+      "dialogues_added": 36,
+      "total_turns": 216,
+      "average_turns": 6,
+      "dialogues_with_4_plus": 36,
+      "min_turns": 6,
+      "max_turns": 6,
+      "vocabulary_support_links": 150,
+      "grammar_support_links": 127
+    }
+  },
+  "rejected": {
+    "duplicates": 7,
+    "semantic_communicative_invalid": 11
+  },
+  "rejection_log": [
+    {
+      "language": "en",
+      "type": "duplicate",
+      "text": "Can you help me?",
+      "reason": "与现有 canonical expression 完全重复。"
+    },
+    {
+      "language": "ja",
+      "type": "duplicate",
+      "text": "手伝ってください。",
+      "reason": "与现有 canonical dialogue turn 完全重复。"
+    },
+    {
+      "language": "en",
+      "type": "duplicate",
+      "text": "No worries.",
+      "reason": "与现有 canonical expression 完全重复。"
+    },
+    {
+      "language": "ja",
+      "type": "duplicate",
+      "text": "大丈夫です。",
+      "reason": "与现有 canonical expression 完全重复。"
+    },
+    {
+      "language": "en",
+      "type": "duplicate",
+      "text": "Does this train go to the airport?",
+      "reason": "与现有 canonical dialogue turn 完全重复。"
+    },
+    {
+      "language": "ja",
+      "type": "duplicate",
+      "text": "カードは使えますか。",
+      "reason": "与现有 canonical dialogue turn 完全重复。"
+    },
+    {
+      "language": "en",
+      "type": "duplicate",
+      "text": "How long is the wait?",
+      "reason": "与现有 canonical dialogue turn 完全重复。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "I have food problems.",
+      "reason": "饮食限制表达不具体，不能支持安全点餐任务。"
+    },
+    {
+      "language": "ja",
+      "type": "semantic_invalid",
+      "text": "食べ物がだめです。",
+      "reason": "范围与原因都含糊，不适合作为饮食限制核心表达。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "Give me another appointment.",
+      "reason": "服务场景语气不自然且过于命令式。"
+    },
+    {
+      "language": "ja",
+      "type": "semantic_invalid",
+      "text": "予約を別にしてください。",
+      "reason": "改期意图不清，可能被理解为另建预约。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "I disagree with you.",
+      "reason": "可用但教学价值不足，缺少立场缓和或理由衔接。"
+    },
+    {
+      "language": "ja",
+      "type": "semantic_invalid",
+      "text": "それは違います。",
+      "reason": "在目标分歧场景中过硬，缺少关系距离控制。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "My throat is bad.",
+      "reason": "症状描述不自然且不够具体。"
+    },
+    {
+      "language": "ja",
+      "type": "semantic_invalid",
+      "text": "喉が悪いです。",
+      "reason": "自然度不足，未准确描述症状。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "Return this for me.",
+      "reason": "退货意图和期望结果不清，register 不合适。"
+    },
+    {
+      "language": "ja",
+      "type": "semantic_invalid",
+      "text": "これを返します。",
+      "reason": "可能表示归还而非商品退货，语义范围不清。"
+    },
+    {
+      "language": "en",
+      "type": "semantic_invalid",
+      "text": "Where is somewhere else?",
+      "reason": "替代路线追问不自然。"
+    }
+  ],
+  "qa": {
+    "errors": 0,
+    "warnings": 0,
+    "checks": [
+      {
+        "name": "source generation QA",
+        "pass": true,
+        "detail": {
+          "status": "GENERATED",
+          "errors": [],
+          "warnings": []
+        }
+      },
+      {
+        "name": "expression additions",
+        "pass": true,
+        "detail": {
+          "en": 120,
+          "ja": 130
+        }
+      },
+      {
+        "name": "dialogue additions",
+        "pass": true,
+        "detail": {
+          "total": 68,
+          "en": 32,
+          "ja": 36
+        }
+      },
+      {
+        "name": "dialogue sequence/linkage",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "speaker alternation and no dangling reply",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "normalized expression duplicates",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "normalized dialogue turn duplicates",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "Japanese reading reconstruction",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "vocabulary/grammar support linkage",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "editorial communicative review",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "foreign keys",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "protected canonical content byte-equivalent",
+        "pass": true,
+        "detail": {
+          "v2_vocabulary_items": {
+            "before": "11b7195ab55773f3dd5109180aaf2aed699a9138dcfc78f3177904bd56c19188",
+            "after": "11b7195ab55773f3dd5109180aaf2aed699a9138dcfc78f3177904bd56c19188",
+            "unchanged": true
+          },
+          "v2_vocabulary_senses": {
+            "before": "20dea60a5a28fde2cbea141b86720ed82c0ad02def47e91e7280a01036d57343",
+            "after": "20dea60a5a28fde2cbea141b86720ed82c0ad02def47e91e7280a01036d57343",
+            "unchanged": true
+          },
+          "v2_vocabulary_examples": {
+            "before": "7c49592ef9baf9d8da6a274be95f2f3a152f2d5030e77b8a8c1ef2678e85877a",
+            "after": "7c49592ef9baf9d8da6a274be95f2f3a152f2d5030e77b8a8c1ef2678e85877a",
+            "unchanged": true
+          },
+          "v2_grammar_points": {
+            "before": "0639e6152d149b651cb61612b8254bef8eb68dabb35aea1ee8b85552b89c0234",
+            "after": "0639e6152d149b651cb61612b8254bef8eb68dabb35aea1ee8b85552b89c0234",
+            "unchanged": true
+          },
+          "v2_grammar_examples": {
+            "before": "db2ba766cb84e3aee474774dc21b799c8891a1928651ec20481ba4d58a253d01",
+            "after": "db2ba766cb84e3aee474774dc21b799c8891a1928651ec20481ba4d58a253d01",
+            "unchanged": true
+          },
+          "v2_grammar_example_target_audits": {
+            "before": "42b1621c6f19929f76c697d10aa739654de85e30bb1b2487e4027c8abbfb49d4",
+            "after": "42b1621c6f19929f76c697d10aa739654de85e30bb1b2487e4027c8abbfb49d4",
+            "unchanged": true
+          },
+          "lesson_units": {
+            "before": "b5f9fb4c079161bb5493a243729e778101a3cf54bb17baedf7be3ad63d6e82e7",
+            "after": "b5f9fb4c079161bb5493a243729e778101a3cf54bb17baedf7be3ad63d6e82e7",
+            "unchanged": true
+          },
+          "lesson_items": {
+            "before": "128ebae0f4bb3d73ad8561b54f4886a414b40f40539c55a86ec5babe49bc370f",
+            "after": "128ebae0f4bb3d73ad8561b54f4886a414b40f40539c55a86ec5babe49bc370f",
+            "unchanged": true
+          },
+          "placement_questions": {
+            "before": "7736e07016cdb3299979f23974db9a73903af14c6aa0ecb0a636b6f840848cab",
+            "after": "7736e07016cdb3299979f23974db9a73903af14c6aa0ecb0a636b6f840848cab",
+            "unchanged": true
+          }
+        }
+      },
+      {
+        "name": "protected count deltas",
+        "pass": true,
+        "detail": {
+          "before": {
+            "vocabulary_items": 695,
+            "vocabulary_senses": 696,
+            "vocabulary_examples": 1084,
+            "grammar_points": 155,
+            "grammar_examples": 647,
+            "grammar_target_audits": 490,
+            "sentence_units": 265,
+            "expressions": 459,
+            "dialogue_turns": 116,
+            "vocabulary_links": 679,
+            "grammar_links": 464,
+            "lessons": 48,
+            "lesson_items": 717,
+            "assessment_sessions": 0,
+            "placement_questions": 750
+          },
+          "after": {
+            "vocabulary_items": 695,
+            "vocabulary_senses": 696,
+            "vocabulary_examples": 1084,
+            "grammar_points": 155,
+            "grammar_examples": 647,
+            "grammar_target_audits": 490,
+            "sentence_units": 515,
+            "expressions": 709,
+            "dialogue_turns": 524,
+            "vocabulary_links": 984,
+            "grammar_links": 689,
+            "lessons": 48,
+            "lesson_items": 717,
+            "assessment_sessions": 0,
+            "placement_questions": 750
+          }
+        }
+      },
+      {
+        "name": "expected additive deltas",
+        "pass": true,
+        "detail": {
+          "expected": {
+            "units": 250,
+            "expressions": 250,
+            "dialogues": 68,
+            "turns": 408,
+            "vocabulary_links": 305,
+            "grammar_links": 225
+          },
+          "before": {
+            "vocabulary_items": 695,
+            "vocabulary_senses": 696,
+            "vocabulary_examples": 1084,
+            "grammar_points": 155,
+            "grammar_examples": 647,
+            "grammar_target_audits": 490,
+            "sentence_units": 265,
+            "expressions": 459,
+            "dialogue_turns": 116,
+            "vocabulary_links": 679,
+            "grammar_links": 464,
+            "lessons": 48,
+            "lesson_items": 717,
+            "assessment_sessions": 0,
+            "placement_questions": 750
+          },
+          "after": {
+            "vocabulary_items": 695,
+            "vocabulary_senses": 696,
+            "vocabulary_examples": 1084,
+            "grammar_points": 155,
+            "grammar_examples": 647,
+            "grammar_target_audits": 490,
+            "sentence_units": 515,
+            "expressions": 709,
+            "dialogue_turns": 524,
+            "vocabulary_links": 984,
+            "grammar_links": 689,
+            "lessons": 48,
+            "lesson_items": 717,
+            "assessment_sessions": 0,
+            "placement_questions": 750
+          }
+        }
+      },
+      {
+        "name": "pure additive migration",
+        "pass": true,
+        "detail": {
+          "statement_starts": [
+            "PRAGMA FOREIGN_KEYS",
+            "INSERT INTO"
+          ],
+          "insert_targets": [
+            "v2_sentence_units",
+            "v2_sentence_expressions",
+            "v2_dialogue_turns",
+            "v2_sentence_vocabulary_links",
+            "v2_sentence_grammar_links"
+          ],
+          "forbidden": []
+        }
+      },
+      {
+        "name": "migration recorded",
+        "pass": true,
+        "detail": [
+          {
+            "id": 24,
+            "name": "0001_core_expressions_multi_turn_dialogues.sql",
+            "applied_at": "2026-09-10 21:55:28"
+          }
+        ]
+      },
+      {
+        "name": "historical migrations unchanged",
+        "pass": true,
+        "detail": [
+          {
+            "file": "migrations-35e1a/0001_core_grammar_curated_examples.sql",
+            "expected": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+            "actual": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+            "unchanged": true
+          },
+          {
+            "file": "migrations-35e1a1/0001_curated_grammar_example_target_roles.sql",
+            "expected": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b",
+            "actual": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b",
+            "unchanged": true
+          },
+          {
+            "file": "migrations-35e1a2/0001_core_vocabulary_curated_usages.sql",
+            "expected": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2",
+            "actual": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2",
+            "unchanged": true
+          }
+        ]
+      }
+    ],
+    "error_details": [],
+    "warning_details": [],
+    "editorial_review": [
+      {
+        "language": "en",
+        "id": "restaurant-allergy",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "restaurant-bill",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "appointment-reschedule",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "appointment-cancel",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "help-alternative",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "return-exchange",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "return-defect",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "directions-repair",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "train-transfer",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "group-work",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "group-disagree",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "repair-heating",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "repair-leak",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "medical-symptoms",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "pharmacy-medicine",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "invitation-decline",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "invitation-condition",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "misunderstanding-time",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "misunderstanding-tone",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "hotel-room",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "hotel-booking",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "taxi-destination",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "bus-wrong-stop",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "order-unavailable",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "dietary-clarify",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "school-deadline",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "work-clarification",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "neighbour-noise",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "wrong-delivery",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "opinion-disagree",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "lost-reservation",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "en",
+        "id": "flight-delay",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "restaurant-allergy",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "restaurant-bill",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "appointment-reschedule",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "appointment-cancel",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "help-alternative",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "return-exchange",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "return-defect",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "directions-repair",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "train-transfer",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "group-work",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "group-disagree",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "repair-heating",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "repair-leak",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "medical-symptoms",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "pharmacy-medicine",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "invitation-decline",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "invitation-condition",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "misunderstanding-time",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "misunderstanding-tone",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "hotel-room",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "hotel-booking",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "taxi-destination",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "bus-wrong-stop",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "order-unavailable",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "dietary-clarify",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "school-deadline",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "work-clarification",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "neighbour-noise",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "wrong-delivery",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "opinion-disagree",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "lost-reservation",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "flight-delay",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "counter-service",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "clinic-reception",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "delivery-time",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      },
+      {
+        "language": "ja",
+        "id": "lost-property",
+        "goal_clear": true,
+        "turn_dependency": "PASS",
+        "non_responsive_reply": "PASS",
+        "abrupt_ending": "PASS",
+        "unnatural_repair": "PASS",
+        "register": "PASS",
+        "topic_match": "PASS",
+        "stage_match": "PASS",
+        "grammar": "PASS",
+        "reviewed": true
+      }
+    ]
+  },
+  "migration": {
+    "file": "migrations-35e1b/0001_core_expressions_multi_turn_dialogues.sql",
+    "type": "pure additive INSERT migration",
+    "sha256": "599ab3d439fb32c7db1ddaf07701dbd5cf6a69c4258d5d5b057842567fc41520",
+    "applied_local": true,
+    "recorded": true,
+    "historical_files_unchanged": true,
+    "historical_hashes": [
+      {
+        "file": "migrations-35e1a/0001_core_grammar_curated_examples.sql",
+        "expected": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+        "actual": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+        "unchanged": true
+      },
+      {
+        "file": "migrations-35e1a1/0001_curated_grammar_example_target_roles.sql",
+        "expected": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b",
+        "actual": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b",
+        "unchanged": true
+      },
+      {
+        "file": "migrations-35e1a2/0001_core_vocabulary_curated_usages.sql",
+        "expected": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2",
+        "actual": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2",
+        "unchanged": true
+      }
+    ]
+  },
+  "protected_content": {
+    "before": {
+      "vocabulary_items": 695,
+      "vocabulary_senses": 696,
+      "vocabulary_examples": 1084,
+      "grammar_points": 155,
+      "grammar_examples": 647,
+      "grammar_target_audits": 490,
+      "sentence_units": 265,
+      "expressions": 459,
+      "dialogue_turns": 116,
+      "vocabulary_links": 679,
+      "grammar_links": 464,
+      "lessons": 48,
+      "lesson_items": 717,
+      "assessment_sessions": 0,
+      "placement_questions": 750
+    },
+    "after": {
+      "vocabulary_items": 695,
+      "vocabulary_senses": 696,
+      "vocabulary_examples": 1084,
+      "grammar_points": 155,
+      "grammar_examples": 647,
+      "grammar_target_audits": 490,
+      "sentence_units": 515,
+      "expressions": 709,
+      "dialogue_turns": 524,
+      "vocabulary_links": 984,
+      "grammar_links": 689,
+      "lessons": 48,
+      "lesson_items": 717,
+      "assessment_sessions": 0,
+      "placement_questions": 750
+    },
+    "hashes": {
+      "v2_vocabulary_items": {
+        "before": "11b7195ab55773f3dd5109180aaf2aed699a9138dcfc78f3177904bd56c19188",
+        "after": "11b7195ab55773f3dd5109180aaf2aed699a9138dcfc78f3177904bd56c19188",
+        "unchanged": true
+      },
+      "v2_vocabulary_senses": {
+        "before": "20dea60a5a28fde2cbea141b86720ed82c0ad02def47e91e7280a01036d57343",
+        "after": "20dea60a5a28fde2cbea141b86720ed82c0ad02def47e91e7280a01036d57343",
+        "unchanged": true
+      },
+      "v2_vocabulary_examples": {
+        "before": "7c49592ef9baf9d8da6a274be95f2f3a152f2d5030e77b8a8c1ef2678e85877a",
+        "after": "7c49592ef9baf9d8da6a274be95f2f3a152f2d5030e77b8a8c1ef2678e85877a",
+        "unchanged": true
+      },
+      "v2_grammar_points": {
+        "before": "0639e6152d149b651cb61612b8254bef8eb68dabb35aea1ee8b85552b89c0234",
+        "after": "0639e6152d149b651cb61612b8254bef8eb68dabb35aea1ee8b85552b89c0234",
+        "unchanged": true
+      },
+      "v2_grammar_examples": {
+        "before": "db2ba766cb84e3aee474774dc21b799c8891a1928651ec20481ba4d58a253d01",
+        "after": "db2ba766cb84e3aee474774dc21b799c8891a1928651ec20481ba4d58a253d01",
+        "unchanged": true
+      },
+      "v2_grammar_example_target_audits": {
+        "before": "42b1621c6f19929f76c697d10aa739654de85e30bb1b2487e4027c8abbfb49d4",
+        "after": "42b1621c6f19929f76c697d10aa739654de85e30bb1b2487e4027c8abbfb49d4",
+        "unchanged": true
+      },
+      "lesson_units": {
+        "before": "b5f9fb4c079161bb5493a243729e778101a3cf54bb17baedf7be3ad63d6e82e7",
+        "after": "b5f9fb4c079161bb5493a243729e778101a3cf54bb17baedf7be3ad63d6e82e7",
+        "unchanged": true
+      },
+      "lesson_items": {
+        "before": "128ebae0f4bb3d73ad8561b54f4886a414b40f40539c55a86ec5babe49bc370f",
+        "after": "128ebae0f4bb3d73ad8561b54f4886a414b40f40539c55a86ec5babe49bc370f",
+        "unchanged": true
+      },
+      "placement_questions": {
+        "before": "7736e07016cdb3299979f23974db9a73903af14c6aa0ecb0a636b6f840848cab",
+        "after": "7736e07016cdb3299979f23974db9a73903af14c6aa0ecb0a636b6f840848cab",
+        "unchanged": true
+      }
+    }
+  },
+  "changes": {
+    "new_vocabulary": false,
+    "new_grammar": false,
+    "lessons": false,
+    "dynamic_ai_examples": false,
+    "learner_progress": false,
+    "mastery": false,
+    "checkpoint": false,
+    "production": false,
+    "phase35e1c_started": false,
+    "phase4_started": false
+  },
+  "lesson_recommendations_only": [
+    "后续可评估把餐厅过敏原与账单修正 dialogue 加入现有 food lesson。",
+    "后续可评估把预约改期/取消 dialogue 加入现有 time/plans lesson。",
+    "后续可评估把维修、退换货、就医与住宿任务组成新 lesson；本轮未改 lesson composition。"
+  ],
+  "samples": {
+    "en": [
+      {
+        "id": "restaurant-allergy",
+        "topic": "food",
+        "stage": 2,
+        "goal": "确认过敏原后安全点餐。",
+        "context": "顾客在餐厅确认菜品是否含花生，并完成替换点单。",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "Hi. Are you ready to order?",
+            "role": "opening_request"
+          },
+          {
+            "speaker": "B",
+            "text": "Almost. Does the curry contain peanuts?",
+            "role": "response"
+          },
+          {
+            "speaker": "A",
+            "text": "The sauce does, but the tomato soup doesn’t.",
+            "role": "clarification_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "Thanks. I’ll have the soup, then.",
+            "role": "response_alternative"
+          },
+          {
+            "speaker": "A",
+            "text": "Certainly. I’ll note that you have a peanut allergy.",
+            "role": "confirmation_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "Thank you. I appreciate that.",
+            "role": "confirmation_closing"
+          }
+        ]
+      },
+      {
+        "id": "appointment-reschedule",
+        "topic": "time",
+        "stage": 2,
+        "goal": "完成预约改期与最终确认。",
+        "context": "来电者把周二预约改到周四。",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "Good morning. I need to reschedule my appointment.",
+            "role": "opening_request"
+          },
+          {
+            "speaker": "B",
+            "text": "Certainly. What day is it booked for?",
+            "role": "response"
+          },
+          {
+            "speaker": "A",
+            "text": "It’s under Lee for Tuesday at ten.",
+            "role": "clarification_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "I have Thursday at eleven or Friday at nine.",
+            "role": "response_alternative"
+          },
+          {
+            "speaker": "A",
+            "text": "Thursday at eleven works for me.",
+            "role": "confirmation_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "All right. Your appointment is now Thursday at eleven.",
+            "role": "confirmation_closing"
+          }
+        ]
+      },
+      {
+        "id": "return-defect",
+        "topic": "shopping",
+        "stage": 3,
+        "goal": "说明故障并协商退款方式。",
+        "context": "顾客退回使用两天即故障的水壶。",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "This kettle stopped working after two days.",
+            "role": "opening_request"
+          },
+          {
+            "speaker": "B",
+            "text": "I’m sorry to hear that. Do you have the receipt?",
+            "role": "response"
+          },
+          {
+            "speaker": "A",
+            "text": "Yes. I’d prefer a refund rather than a replacement.",
+            "role": "clarification_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "That’s fine. The refund will go back to your card.",
+            "role": "response_alternative"
+          },
+          {
+            "speaker": "A",
+            "text": "How long will that take?",
+            "role": "confirmation_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "Usually three to five business days.",
+            "role": "confirmation_closing"
+          }
+        ]
+      },
+      {
+        "id": "repair-heating",
+        "topic": "home",
+        "stage": 3,
+        "goal": "报修暖气并确认临时方案。",
+        "context": "租客报告暖气不工作。",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "Hello. The heater in my flat isn’t working.",
+            "role": "opening_request"
+          },
+          {
+            "speaker": "B",
+            "text": "I’m sorry about that. Is it showing an error code?",
+            "role": "response"
+          },
+          {
+            "speaker": "A",
+            "text": "Yes, it says E3, and the room is getting cold.",
+            "role": "clarification_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "A technician can come tomorrow afternoon.",
+            "role": "response_alternative"
+          },
+          {
+            "speaker": "A",
+            "text": "If it can’t be fixed then, could I borrow a portable heater?",
+            "role": "confirmation_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "Yes. We can leave one at reception today.",
+            "role": "confirmation_closing"
+          }
+        ]
+      },
+      {
+        "id": "group-disagree",
+        "topic": "school",
+        "stage": 4,
+        "goal": "表达不同意见并达成折中。",
+        "context": "小组对报告重点意见不同。",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "I think we should focus on the survey results.",
+            "role": "opening_request"
+          },
+          {
+            "speaker": "B",
+            "text": "I see your point, but the interviews explain why the results changed.",
+            "role": "response"
+          },
+          {
+            "speaker": "A",
+            "text": "Are you suggesting we include both?",
+            "role": "clarification_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "Yes, but we could shorten the background section.",
+            "role": "response_alternative"
+          },
+          {
+            "speaker": "A",
+            "text": "That sounds reasonable. Let’s keep one paragraph of background.",
+            "role": "confirmation_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "Great. I’ll revise the outline.",
+            "role": "confirmation_closing"
+          }
+        ]
+      }
+    ],
+    "ja": [
+      {
+        "id": "restaurant-bill",
+        "topic": "food",
+        "stage": 2,
+        "goal": "核对账单错误并完成结账。",
+        "context": "顾客发现账单上多了一项，服务员核对并更正。",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "すみません、お会計をお願いします。",
+            "role": "opening_request"
+          },
+          {
+            "speaker": "B",
+            "text": "かしこまりました。すぐにお持ちします。",
+            "role": "response"
+          },
+          {
+            "speaker": "A",
+            "text": "このデザートは注文していないと思います。",
+            "role": "clarification_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "申し訳ありません。こちらの間違いです。",
+            "role": "response_alternative"
+          },
+          {
+            "speaker": "A",
+            "text": "これを外して、別々に払えますか。",
+            "role": "confirmation_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "はい。訂正した伝票を二枚お持ちします。",
+            "role": "confirmation_closing"
+          }
+        ]
+      },
+      {
+        "id": "medical-symptoms",
+        "topic": "health",
+        "stage": 3,
+        "goal": "描述症状、持续时间与严重程度。",
+        "context": "患者因喉咙痛和发烧看诊。",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "今日はどうされましたか。",
+            "role": "opening_request"
+          },
+          {
+            "speaker": "B",
+            "text": "月曜日から喉が痛くて、昨夜は熱もありました。",
+            "role": "response"
+          },
+          {
+            "speaker": "A",
+            "text": "息苦しさはありますか。",
+            "role": "clarification_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "いいえ。でも、飲み込むと痛いです。",
+            "role": "response_alternative"
+          },
+          {
+            "speaker": "A",
+            "text": "わかりました。まず喉を診ますね。",
+            "role": "confirmation_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "わかりました。ありがとうございます。",
+            "role": "confirmation_closing"
+          }
+        ]
+      },
+      {
+        "id": "hotel-room",
+        "topic": "travel",
+        "stage": 2,
+        "goal": "报告房间问题并完成换房。",
+        "context": "住客因街道噪声请求换房。",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "すみません、夜になると部屋がとても騒がしいです。",
+            "role": "opening_request"
+          },
+          {
+            "speaker": "B",
+            "text": "申し訳ありません。外の道路の音ですか。",
+            "role": "response"
+          },
+          {
+            "speaker": "A",
+            "text": "はい。もう少し静かな部屋はありますか。",
+            "role": "clarification_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "六階にございますが、シングルベッドが二台の部屋です。",
+            "role": "response_alternative"
+          },
+          {
+            "speaker": "A",
+            "text": "それで大丈夫です。今夜移れますか。",
+            "role": "confirmation_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "はい。新しい鍵をご用意します。",
+            "role": "confirmation_closing"
+          }
+        ]
+      },
+      {
+        "id": "opinion-disagree",
+        "topic": "chat",
+        "stage": 3,
+        "goal": "礼貌表达不同意见并追问理由。",
+        "context": "朋友对市中心禁车提议看法不同。",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "市の中心部への車の乗り入れは禁止したほうがいいと思う。",
+            "role": "opening_request"
+          },
+          {
+            "speaker": "B",
+            "text": "私は少し違う意見かな。通勤に車が必要な人もいるよ。",
+            "role": "response"
+          },
+          {
+            "speaker": "A",
+            "text": "確かに。でも、公共交通をもっと便利にできると思う。",
+            "role": "clarification_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "バスの本数が増えたら、禁止に賛成する？",
+            "role": "response_alternative"
+          },
+          {
+            "speaker": "A",
+            "text": "混む時間だけなら賛成するかも。",
+            "role": "confirmation_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "それなら、いい妥協案になりそうだね。",
+            "role": "confirmation_closing"
+          }
+        ]
+      },
+      {
+        "id": "lost-property",
+        "topic": "travel",
+        "stage": 3,
+        "goal": "描述失物并留下联系方式。",
+        "context": "旅客在车站寻找遗失的包。",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "電車にかばんを忘れたかもしれません。",
+            "role": "opening_request"
+          },
+          {
+            "speaker": "B",
+            "text": "どの電車に乗りましたか。",
+            "role": "response"
+          },
+          {
+            "speaker": "A",
+            "text": "十時十五分発の空港行きです。",
+            "role": "clarification_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "かばんの色と形を教えてください。",
+            "role": "response_alternative"
+          },
+          {
+            "speaker": "A",
+            "text": "黒い小さなリュックです。中に名前が書いてあります。",
+            "role": "confirmation_follow_up"
+          },
+          {
+            "speaker": "B",
+            "text": "見つかったら、こちらの番号にご連絡します。",
+            "role": "confirmation_closing"
+          }
+        ]
+      }
+    ]
+  }
+}

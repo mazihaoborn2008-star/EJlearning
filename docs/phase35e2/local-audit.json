@@ -1,0 +1,457 @@
+{
+  "status": "PASS",
+  "qa_errors": 0,
+  "qa_warnings": 2,
+  "errors": [],
+  "warnings": [
+    {
+      "code": "source_missing_ipa",
+      "count": 217,
+      "note": "ECDICT rows kept because lemma/POS/meaning/frequency passed; detail omits IPA."
+    },
+    {
+      "code": "preexisting_multi_pos_homographs",
+      "count": 4,
+      "items": [
+        {
+          "language": "en",
+          "lemma": "help",
+          "n": 2
+        },
+        {
+          "language": "en",
+          "lemma": "plan",
+          "n": 2
+        },
+        {
+          "language": "en",
+          "lemma": "rain",
+          "n": 2
+        },
+        {
+          "language": "en",
+          "lemma": "work",
+          "n": 2
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "en_vocabulary_total": 10000,
+    "ja_vocabulary_total": 8235,
+    "en_imported": 9565,
+    "ja_imported": 7785,
+    "curated_examples": 1274
+  },
+  "ielts": {
+    "5.0": 3000,
+    "5.5": 4000,
+    "6.0": 5500,
+    "6.5": 7000,
+    "7.0+": 10000
+  },
+  "jlpt": {
+    "N5": 680,
+    "N4": 675,
+    "N3": 1749,
+    "N2": 1833,
+    "N1": 3298
+  },
+  "alphabet": {
+    "A": 704,
+    "B": 506,
+    "C": 1011,
+    "D": 605,
+    "E": 470,
+    "F": 444,
+    "G": 295,
+    "H": 341,
+    "I": 444,
+    "J": 105,
+    "K": 61,
+    "L": 330,
+    "M": 509,
+    "N": 208,
+    "O": 240,
+    "P": 806,
+    "Q": 37,
+    "R": 598,
+    "S": 1095,
+    "T": 505,
+    "U": 202,
+    "V": 169,
+    "W": 271,
+    "X": 1,
+    "Y": 33,
+    "Z": 10
+  },
+  "gojuon": {
+    "あ行": 1131,
+    "か行": 1718,
+    "さ行": 1644,
+    "た行": 1205,
+    "な行": 379,
+    "は行": 1070,
+    "ま行": 547,
+    "や行": 296,
+    "ら行": 178,
+    "わ行": 67,
+    "その他": 0
+  },
+  "pos": {
+    "en": [
+      {
+        "part_of_speech": "adjective",
+        "n": 1246
+      },
+      {
+        "part_of_speech": "adjective phrase",
+        "n": 3
+      },
+      {
+        "part_of_speech": "adverb",
+        "n": 497
+      },
+      {
+        "part_of_speech": "auxiliary",
+        "n": 3
+      },
+      {
+        "part_of_speech": "conjunction",
+        "n": 12
+      },
+      {
+        "part_of_speech": "determiner",
+        "n": 1
+      },
+      {
+        "part_of_speech": "fixed expression",
+        "n": 8
+      },
+      {
+        "part_of_speech": "interjection",
+        "n": 5
+      },
+      {
+        "part_of_speech": "noun",
+        "n": 7004
+      },
+      {
+        "part_of_speech": "noun phrase",
+        "n": 29
+      },
+      {
+        "part_of_speech": "numeral",
+        "n": 3
+      },
+      {
+        "part_of_speech": "phrasal verb",
+        "n": 12
+      },
+      {
+        "part_of_speech": "preposition",
+        "n": 25
+      },
+      {
+        "part_of_speech": "prepositional phrase",
+        "n": 1
+      },
+      {
+        "part_of_speech": "pronoun",
+        "n": 42
+      },
+      {
+        "part_of_speech": "proper noun",
+        "n": 1
+      },
+      {
+        "part_of_speech": "verb",
+        "n": 1104
+      },
+      {
+        "part_of_speech": "verb phrase",
+        "n": 4
+      }
+    ],
+    "ja": [
+      {
+        "part_of_speech": "adjectival noun",
+        "n": 517
+      },
+      {
+        "part_of_speech": "adjective",
+        "n": 285
+      },
+      {
+        "part_of_speech": "adverb",
+        "n": 11
+      },
+      {
+        "part_of_speech": "affix",
+        "n": 43
+      },
+      {
+        "part_of_speech": "auxiliary",
+        "n": 1
+      },
+      {
+        "part_of_speech": "conjunction",
+        "n": 54
+      },
+      {
+        "part_of_speech": "counter",
+        "n": 16
+      },
+      {
+        "part_of_speech": "fixed expression",
+        "n": 54
+      },
+      {
+        "part_of_speech": "interjection",
+        "n": 50
+      },
+      {
+        "part_of_speech": "noun",
+        "n": 5268
+      },
+      {
+        "part_of_speech": "noun phrase",
+        "n": 8
+      },
+      {
+        "part_of_speech": "numeral",
+        "n": 25
+      },
+      {
+        "part_of_speech": "particle",
+        "n": 24
+      },
+      {
+        "part_of_speech": "pronoun",
+        "n": 46
+      },
+      {
+        "part_of_speech": "proper noun",
+        "n": 1
+      },
+      {
+        "part_of_speech": "verb",
+        "n": 1816
+      },
+      {
+        "part_of_speech": "verb phrase",
+        "n": 16
+      }
+    ]
+  },
+  "duplicate_rejected": {
+    "en": 54969,
+    "ja": 494
+  },
+  "malformed_rejected": 640798,
+  "curated_preserved": true,
+  "samples": {
+    "en": [
+      {
+        "lemma": "serious",
+        "ipa": "'siәriәs",
+        "part_of_speech": "adjective",
+        "meaning_zh": "严肃的；认真的；重要的",
+        "course_rank": 500
+      },
+      {
+        "lemma": "beautiful",
+        "ipa": "'bju:tiful",
+        "part_of_speech": "adjective",
+        "meaning_zh": "美丽的",
+        "course_rank": 1500
+      },
+      {
+        "lemma": "crush",
+        "ipa": "krʌʃ",
+        "part_of_speech": "noun",
+        "meaning_zh": "压碎；粉碎；群众",
+        "course_rank": 3000
+      },
+      {
+        "lemma": "gravel",
+        "ipa": "'grævәl",
+        "part_of_speech": "noun",
+        "meaning_zh": "砂砾；碎石\\n[医] 沙砾；尿沙",
+        "course_rank": 5000
+      },
+      {
+        "lemma": "goodwill",
+        "ipa": "^jd'wil",
+        "part_of_speech": "noun",
+        "meaning_zh": "友好；好意；善意",
+        "course_rank": 7000
+      },
+      {
+        "lemma": "beggar",
+        "ipa": "'begә",
+        "part_of_speech": "noun",
+        "meaning_zh": "乞丐\\nvt. 使贫穷；使成乞丐",
+        "course_rank": 9000
+      },
+      {
+        "lemma": "patriarchal",
+        "ipa": ".peitri'ɑ:kәl",
+        "part_of_speech": "adjective",
+        "meaning_zh": "家长的；族长的；由族长统治的\\n[法] 家长的",
+        "course_rank": 9999
+      }
+    ],
+    "ja": [
+      {
+        "lemma": "猫",
+        "reading": "ねこ",
+        "part_of_speech": "noun",
+        "meaning_zh": "猫；家猫；三味线",
+        "estimated_target": "N5",
+        "course_rank": 500
+      },
+      {
+        "lemma": "安心",
+        "reading": "あんしん",
+        "part_of_speech": "adjectival noun",
+        "meaning_zh": "安心；放心；心安",
+        "estimated_target": "N4",
+        "course_rank": 100
+      },
+      {
+        "lemma": "治る",
+        "reading": "なおる",
+        "part_of_speech": "verb",
+        "meaning_zh": "(病等)痊愈；恢复；康复",
+        "estimated_target": "N4",
+        "course_rank": 500
+      },
+      {
+        "lemma": "記入",
+        "reading": "きにゅう",
+        "part_of_speech": "noun",
+        "meaning_zh": "记入；填写；填入",
+        "estimated_target": "N3",
+        "course_rank": 500
+      },
+      {
+        "lemma": "設備",
+        "reading": "せつび",
+        "part_of_speech": "noun",
+        "meaning_zh": "设备；设施；装置",
+        "estimated_target": "N3",
+        "course_rank": 1000
+      },
+      {
+        "lemma": "予防",
+        "reading": "よぼう",
+        "part_of_speech": "noun",
+        "meaning_zh": "预防；防护；预防措施",
+        "estimated_target": "N3",
+        "course_rank": 1700
+      },
+      {
+        "lemma": "在る",
+        "reading": "ある",
+        "part_of_speech": "verb",
+        "meaning_zh": "存在；有；拥有",
+        "estimated_target": "N2",
+        "course_rank": 100
+      },
+      {
+        "lemma": "形容動詞",
+        "reading": "けいようどうし",
+        "part_of_speech": "noun",
+        "meaning_zh": "形容动词(日语词类)；准形容词；名词性形容词",
+        "estimated_target": "N2",
+        "course_rank": 500
+      },
+      {
+        "lemma": "揃う",
+        "reading": "そろう",
+        "part_of_speech": "verb",
+        "meaning_zh": "齐全；完备；凑齐",
+        "estimated_target": "N2",
+        "course_rank": 1000
+      },
+      {
+        "lemma": "潜る",
+        "reading": "もぐる",
+        "part_of_speech": "verb",
+        "meaning_zh": "潜入水中；潜水；钻进",
+        "estimated_target": "N2",
+        "course_rank": 1700
+      },
+      {
+        "lemma": "麻",
+        "reading": "あさ",
+        "part_of_speech": "noun",
+        "meaning_zh": "麻(植物)；大麻；麻纤维",
+        "estimated_target": "N1",
+        "course_rank": 100
+      },
+      {
+        "lemma": "海峡",
+        "reading": "かいきょう",
+        "part_of_speech": "noun",
+        "meaning_zh": "海峡；水道",
+        "estimated_target": "N1",
+        "course_rank": 500
+      },
+      {
+        "lemma": "原油",
+        "reading": "げんゆ",
+        "part_of_speech": "noun",
+        "meaning_zh": "原油",
+        "estimated_target": "N1",
+        "course_rank": 1000
+      },
+      {
+        "lemma": "接続詞",
+        "reading": "せつぞくし",
+        "part_of_speech": "noun",
+        "meaning_zh": "连接词；连词",
+        "estimated_target": "N1",
+        "course_rank": 1700
+      },
+      {
+        "lemma": "向け",
+        "reading": "むけ",
+        "part_of_speech": "affix",
+        "meaning_zh": "供......使用；面向......；针对......",
+        "estimated_target": "N1",
+        "course_rank": 3000
+      }
+    ]
+  },
+  "migration_hashes": {
+    "0001_large_vocabulary_schema.sql": "158eb033e21a10a52d9d366acbeed9fdd3a1111c1711e756c6d5b95d5feca5e6",
+    "0002_vocabulary_chunk_01.sql": "efc1347569c17118bf46300d9ffe211fb97f4d650f2ad78f6fe26dc2e519f342",
+    "0003_vocabulary_chunk_02.sql": "8f29c73d3db25533742ed3722570609577126564d1a59e668173c0a321a254c9",
+    "0004_vocabulary_chunk_03.sql": "a64a553215dd63f67caa6d4d38b09c6580bb2cea87b3d0a5fbb727d15c7e1073",
+    "0005_vocabulary_chunk_04.sql": "d2f4725c572e4767c4b9c12060658c4ae9df1da4d22459d05a476ab27eb46bc2",
+    "0006_vocabulary_chunk_05.sql": "373775e17352509ba263b832a040a553d6bd83892bff6a32799030005e944681",
+    "0007_vocabulary_chunk_06.sql": "a3de16b30e06acba6cd9eca29f533f750cd5baec3340ae3fe26dbc290b83d109",
+    "0008_vocabulary_chunk_07.sql": "58de1c521912ff611fe249bd10f97b336767b5672855242c6e6ed6a2b6d959b1",
+    "0009_vocabulary_chunk_08.sql": "119993d8fd383657cec19bb0a7c18045aaba60ffa113f5e769f825b2fb3d80e8",
+    "0010_vocabulary_chunk_09.sql": "2296732281bbc4573efc2142a71cfa45e5b0bc7f26e32f4d5f9ad38328405e8d",
+    "0011_vocabulary_chunk_10.sql": "36a278c9b6233de69c6e26ae707665172ba233462ec552da1393e633bc86f0ba",
+    "0012_vocabulary_chunk_11.sql": "47663c95cbb358d84c5a149bade6ce8f08e5ed5b92233874c42de65ad14fc5bc",
+    "0013_vocabulary_chunk_12.sql": "7c5d061a04ff338a00cea6ba32a21ed398a3ac48b68a2f8d068b005a718c0ec7",
+    "0014_vocabulary_chunk_13.sql": "993754b77fa776afd3a4e4adcfb6e0446130b7cccd0ac9355abf096d9320a343",
+    "0015_vocabulary_chunk_14.sql": "eee5b498b1744c2c1a356152a815a0195ce3eed5cc6569bb6ed4febeb0e65921",
+    "0016_vocabulary_chunk_15.sql": "51550bd4ae877bccd7710bf4f23bb21d7da25962c736b43d1670078590e1d1de",
+    "0017_vocabulary_chunk_16.sql": "c26912327e8e26671f717a1cb2d286fbbab1d811bd1efc2f7bfaacf5dcd9b41e",
+    "0018_vocabulary_chunk_17.sql": "a35211053180a69ff362bccfb7cb8d2dd50830f40386dad42df59d86fcfa97df",
+    "0019_vocabulary_chunk_18.sql": "6de39b1176cdf520d8dd3a4df9194f3ffed35d0f3d2b7becd21d17d659e0771b",
+    "0020_vocabulary_chunk_19.sql": "63d573ba8907e5c367a0112d9b6f11aa47c8565e901e6295109e03a47df3167b",
+    "0021_vocabulary_chunk_20.sql": "d6052f45bfc166499e9ba43680458f865200aab50be247baddeb54a25b59d419",
+    "0022_vocabulary_chunk_21.sql": "21a1259c813ad64e2e90d4a3ecde1cd7f1e9ffd113249e66aa70f7b24ed88a47",
+    "0023_vocabulary_chunk_22.sql": "d6de3513c7fdf5678b9fe357294e28371a04c290befd9fbb55fc9bef31620567",
+    "0024_vocabulary_chunk_23.sql": "cbd43c3c1a4424b596610ac4fbc2c5ebe0c34959444f56cf8d558042d49600a8",
+    "0025_vocabulary_chunk_24.sql": "4b5856e378c06feb98a1b5734b359182b806c0fae0ceff36e93e0725c45a0af4",
+    "0026_vocabulary_chunk_25.sql": "c8ccae53e5e0a2a3fe1f32f033cf44b81923d2af7ed42fc264e6a1f674514111",
+    "0027_existing_curated_course_ranks.sql": "361fbcef2e7a115efde1d642af4208bface48572359b3ee869e70c1a0c506688"
+  }
+}

@@ -1,0 +1,18 @@
+✔ additive stream preserves every legacy row and schema migration copy (13.015ms)
+✔ representative counts, no forced language pairing, independent difficulty (0.3173ms)
+✔ stage, level, language, publication and type constraints (0.5072ms)
+✔ composite foreign keys prevent cross-language sentence vocabulary and grammar links (0.2048ms)
+✔ lexical and grammar relations enforce language, no self links, and acyclic prerequisites (0.3701ms)
+✔ duplicate primary, lexical identity, relation and span protections (0.2825ms)
+✔ scenario and dialogue ownership plus all reading/span content is valid (0.7441ms)
+✔ required semantic examples reference actual independent systems (0.1589ms)
+✔ integer affinity and dialogue invariants survive editorial updates (0.2754ms)
+✔ draft/archived records never leak via lists, links, examples or reverse navigation (15.3171ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 126.6373

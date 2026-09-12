@@ -1,0 +1,21 @@
+{
+  "name": "ej-learning-35c1-local",
+  "account_id": "bd05aa19111be95427af89be4e44f164",
+  "main": "src/worker-35c1.js",
+  "compatibility_date": "2026-09-08",
+  "workers_dev": true,
+  "routes": [],
+  "assets": {
+    "directory": "./public-35c1",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "none",
+    "run_worker_first": true
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "ej-learning-35c1-local-db",
+    "database_id": "35c10000-0000-4000-8000-000000000001",
+    "migrations_dir": "migrations-35c1"
+  }]
+}

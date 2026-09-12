@@ -1,0 +1,26 @@
+✔ lightweight catalog, detail regression preserves all 15 approved Concepts (423.5296ms)
+✔ adaptive API beginners, intermediate, advanced and language independence (1470.5363ms)
+✔ exact retries idempotent; changed replays, foreign questions and concurrency protected (134.6384ms)
+✔ checkpoints every topic and language identify precise weak Concepts (6089.2803ms)
+✔ recommendation profiles change results, weakness priority and no hard locks (97.0389ms)
+Content API failed
+✔ strict malformed contracts, deprecated fixed APIs and private asset isolation (291.2455ms)
+✔ database failures return sanitized errors (1.0607ms)
+✔ expired stored session is rejected before accessing question content (0.7752ms)
+✔ scheduled maintenance removes expired anonymous sessions only (0.1725ms)
+✔ placement calibrates Levels 1–6, starts at 3, needs repeated evidence (8.47ms)
+✔ mixed, consecutive mistakes/successes and uncertain boundaries respect hard maximum (3.0726ms)
+✔ early stopping, deterministic seed, varied sequence and language independence (6.6951ms)
+✔ fresh Levels 1,4,6 produce different nearby content and topic variety (2.3142ms)
+✔ independent EN5/JA2, review and checkpoint weaknesses, recent and mastery (4.0048ms)
+✔ partial topic, many review items, empty catalogs and manual topic filter (1.026ms)
+✔ fresh intermediate queue includes consolidation and stretch (0.8842ms)
+✔ 700 seeded simulations preserve level calibration independently (372.7766ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8579.5569

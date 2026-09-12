@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "comparison": "deepStrictEqual",
+  "checks": [
+    "ej-learning",
+    "ej-learning-phase3",
+    "domains",
+    "routes",
+    "dns",
+    "localHashes"
+  ],
+  "transientSessions": "Excluded: existing scheduled cleanup may legitimately run",
+  "checkedAt": "2026-09-09T03:25:01.299Z"
+}

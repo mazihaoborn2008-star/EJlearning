@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "directory": "E:\\E_J_Learn_web\\.wrangler\\35a-clean-1788924343707",
+  "config": "wrangler.35a.local.jsonc",
+  "allMigrations": [
+    "0001_schema.sql",
+    "0002_seed.sql",
+    "0003_engine.sql",
+    "0004_curriculum.sql",
+    "0005_assessment_refinements.sql",
+    "0006_v2_domains.sql",
+    "0007_v2_representative.sql",
+    "0008_v2_editorial_guards.sql"
+  ],
+  "finishedAt": "2026-09-09T03:28:09.001Z"
+}

@@ -1,0 +1,44 @@
+
+ ⛅️ wrangler 4.130.0
+────────────────────
+🌀 Building list of assets...
+✨ Read 33 files from the assets directory E:\E_J_Learn_web\public-v2
+🌀 Starting asset upload...
+🌀 Found 21 new or modified static assets to upload. Proceeding with upload...
++ /index.html
++ /vocabulary.html
++ /jlpt.html
++ /sentences.html
++ /legacy-navigation.css
++ /legacy/learn.html
++ /legacy-navigation.js
++ /grammar.html
++ /progress.html
++ /academic.html
++ /grammar-detail.html
++ /legacy/index.html
++ /legacy/placement.html
++ /shared.js
++ /ai.html
++ /sentence.html
++ /ielts.html
++ /vocabulary-detail.html
++ /legacy/progress.html
++ /legacy/checkpoint.html
++ /app.js
+Uploaded 7 of 21 assets
+Uploaded 14 of 21 assets
+Uploaded 21 of 21 assets
+✨ Success! Uploaded 21 files (9 already uploaded) (1.17 sec)
+
+Total Upload: 35.30 KiB / gzip: 10.57 KiB
+Worker Startup Time: 5 ms
+Your Worker has access to the following bindings:
+Binding                              Resource         
+env.DB (ej-learning-35b-db)          D1 Database      
+env.ASSETS                           Assets           
+
+Uploaded ej-learning-35b (4.89 sec)
+Deployed ej-learning-35b triggers (1.09 sec)
+  https://ej-learning-35b.yanjian-language-learning.workers.dev
+Current Version ID: 23fa31e6-95c1-4342-97e3-d7657a843c57

@@ -1,0 +1,17 @@
+{
+  "base": "http://127.0.0.1:8798/legacy",
+  "passed": true,
+  "checks": [
+    "Phase 1/2 migration retains independent levels, mastery, position, activity and untouched legacy recovery key",
+    "EN5/JA2 recommendations differ; language-specific queue advances and records only selected mastery",
+    "Original card IPA, kana toggle, touch grammar drawer, comparison, escape and legacy preservation",
+    "Browser adaptive completion with independent retest and useful results",
+    "Checkpoint result identifies weak Concept and updates Japanese only",
+    "360/390/430/1440 layouts: Home, Progress, Placement, Checkpoint, six card types, long Level 6 dialogue and question; zero horizontal overflow",
+    "Lost committed answer response retries idempotently",
+    "Content failure/retry recovery",
+    "Recommendation error leaves manual learning accessible and retries",
+    "Blocked storage does not prevent learning"
+  ],
+  "errors": []
+}

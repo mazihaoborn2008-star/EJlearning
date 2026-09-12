@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "Native dialog accessible name, keyboard focus containment/return, Escape and touch close",
+    "Keyboard skip link and visible focus",
+    "Labels, landmarks, headings and 44px primary form/control targets",
+    "Touch chunks and expanded Japanese ruby without overflow",
+    "Library pagination with stable URLs",
+    "Independent sentence difficulty form filters",
+    "Japanese AI context and mode switch; no external network including page load",
+    "Accessible loading status before API completion",
+    "V2 Home/Progress tolerate unavailable browser storage"
+  ],
+  "scope": "Accessibility-oriented behavior checks, not WCAG certification"
+}

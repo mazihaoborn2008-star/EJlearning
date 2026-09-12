@@ -1,0 +1,641 @@
+{
+  "generated_at": "2026-09-10T21:07:49.663Z",
+  "phase": "3.5E.1A.2",
+  "status": "PASS",
+  "environment": {
+    "type": "new isolated local D1 data copy",
+    "config": "wrangler.35e1a2.local.jsonc",
+    "persist": ".wrangler/phase35e1a2-release",
+    "remote_staging_created": false,
+    "remote_staging_reused": false,
+    "production_changed": false
+  },
+  "selection": {
+    "en": 120,
+    "ja": 130,
+    "by_stage": {
+      "en": [
+        {
+          "stage": 1,
+          "count": 54
+        },
+        {
+          "stage": 2,
+          "count": 46
+        },
+        {
+          "stage": 3,
+          "count": 20
+        }
+      ],
+      "ja": [
+        {
+          "stage": 1,
+          "count": 65
+        },
+        {
+          "stage": 2,
+          "count": 44
+        },
+        {
+          "stage": 3,
+          "count": 21
+        }
+      ]
+    },
+    "priority_profile": {
+      "en": {
+        "p0": 94,
+        "p1": 15,
+        "p2": 11
+      },
+      "ja": {
+        "p0": 87,
+        "p1": 29,
+        "p2": 14
+      }
+    }
+  },
+  "added": {
+    "en": 180,
+    "ja": 200,
+    "total": 380
+  },
+  "distribution": {
+    "en": {
+      "before": {
+        "language": "en",
+        "zero": 0,
+        "one": 341,
+        "two_to_three": 4,
+        "four_plus": 0
+      },
+      "after": {
+        "language": "en",
+        "zero": 0,
+        "one": 221,
+        "two_to_three": 124,
+        "four_plus": 0
+      }
+    },
+    "ja": {
+      "before": {
+        "language": "ja",
+        "zero": 0,
+        "one": 346,
+        "two_to_three": 4,
+        "four_plus": 0
+      },
+      "after": {
+        "language": "ja",
+        "zero": 0,
+        "one": 216,
+        "two_to_three": 134,
+        "four_plus": 0
+      }
+    }
+  },
+  "categories": {
+    "collocations": 154,
+    "full_examples": 122,
+    "contrasts": 30,
+    "common_patterns": 74
+  },
+  "by_language": {
+    "en": {
+      "total": 180,
+      "selected": 120,
+      "collocations": 69,
+      "full_examples": 53,
+      "contrasts": 16,
+      "common_patterns": 42
+    },
+    "ja": {
+      "total": 200,
+      "selected": 130,
+      "collocations": 85,
+      "full_examples": 69,
+      "contrasts": 14,
+      "common_patterns": 32
+    }
+  },
+  "per_item_additions": {
+    "en": {
+      "one_added": 60,
+      "two_added": 60
+    },
+    "ja": {
+      "one_added": 60,
+      "two_added": 70
+    }
+  },
+  "rejected": {
+    "duplicate": 1,
+    "canonical_collision": 4,
+    "semantic_usage_invalid": 7,
+    "editorial_review": 1
+  },
+  "qa": {
+    "errors": 0,
+    "warnings": 0,
+    "checks": [
+      {
+        "name": "selected vocabulary counts",
+        "pass": true,
+        "detail": {
+          "en": 120,
+          "ja": 130
+        }
+      },
+      {
+        "name": "curated usage additions",
+        "pass": true,
+        "detail": {
+          "en": 180,
+          "ja": 200
+        }
+      },
+      {
+        "name": "natural per-item allocation",
+        "pass": true,
+        "detail": {
+          "en": {
+            "one_added": 60,
+            "two_added": 60
+          },
+          "ja": {
+            "one_added": 60,
+            "two_added": 70
+          }
+        }
+      },
+      {
+        "name": "source/database identity",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "category counts",
+        "pass": true,
+        "detail": {
+          "collocations": 154,
+          "full_examples": 122,
+          "contrasts": 30,
+          "common_patterns": 74
+        }
+      },
+      {
+        "name": "normalized duplicate and canonical collision",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "Japanese reading quality",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "semantic/collocation/editorial preflight",
+        "pass": true,
+        "detail": {
+          "status": "GENERATED",
+          "errors": []
+        }
+      },
+      {
+        "name": "Stage 1–3 only",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "protected content unchanged",
+        "pass": true,
+        "detail": {
+          "baseline": {
+            "vocabulary": 695,
+            "grammar": 155,
+            "lessons": 48,
+            "dialogues": 116,
+            "grammar_examples": 647,
+            "grammar_target_audits": 490,
+            "vocabulary_usages": 704,
+            "assessment_sessions": 0,
+            "placement_questions": 750
+          },
+          "current": {
+            "vocabulary": 695,
+            "grammar": 155,
+            "lessons": 48,
+            "dialogues": 116,
+            "grammar_examples": 647,
+            "grammar_target_audits": 490,
+            "vocabulary_usages": 1084,
+            "assessment_sessions": 0,
+            "placement_questions": 750
+          }
+        }
+      },
+      {
+        "name": "usage table additive delta",
+        "pass": true,
+        "detail": {
+          "before": 704,
+          "added": 380,
+          "after": 1084
+        }
+      },
+      {
+        "name": "foreign keys",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "additive migration policy",
+        "pass": true,
+        "detail": {
+          "statement_starts": [
+            "PRAGMA foreign_keys",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO",
+            "INSERT INTO"
+          ],
+          "forbidden": [],
+          "insert_targets": [
+            "v2_vocabulary_examples"
+          ]
+        }
+      },
+      {
+        "name": "migration recorded",
+        "pass": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "0001_schema.sql",
+            "applied_at": "2026-09-10 21:04:06"
+          },
+          {
+            "id": 2,
+            "name": "0002_seed.sql",
+            "applied_at": "2026-09-10 21:04:11"
+          },
+          {
+            "id": 3,
+            "name": "0003_engine.sql",
+            "applied_at": "2026-09-10 21:04:12"
+          },
+          {
+            "id": 4,
+            "name": "0004_curriculum.sql",
+            "applied_at": "2026-09-10 21:05:47"
+          },
+          {
+            "id": 5,
+            "name": "0005_assessment_refinements.sql",
+            "applied_at": "2026-09-10 21:05:53"
+          },
+          {
+            "id": 6,
+            "name": "0006_v2_domains.sql",
+            "applied_at": "2026-09-10 21:05:54"
+          },
+          {
+            "id": 7,
+            "name": "0007_v2_representative.sql",
+            "applied_at": "2026-09-10 21:05:58"
+          },
+          {
+            "id": 8,
+            "name": "0008_v2_editorial_guards.sql",
+            "applied_at": "2026-09-10 21:05:58"
+          },
+          {
+            "id": 9,
+            "name": "0009_academic_alignment.sql",
+            "applied_at": "2026-09-10 21:05:58"
+          },
+          {
+            "id": 10,
+            "name": "0010_academic_expression_example.sql",
+            "applied_at": "2026-09-10 21:05:59"
+          },
+          {
+            "id": 11,
+            "name": "0011_curriculum.sql",
+            "applied_at": "2026-09-10 21:07:24"
+          },
+          {
+            "id": 12,
+            "name": "0012_editorial_refinement.sql",
+            "applied_at": "2026-09-10 21:07:27"
+          },
+          {
+            "id": 13,
+            "name": "0013_reviewed_speech_link.sql",
+            "applied_at": "2026-09-10 21:07:27"
+          },
+          {
+            "id": 14,
+            "name": "0014_final_editorial_judgments.sql",
+            "applied_at": "2026-09-10 21:07:31"
+          },
+          {
+            "id": 15,
+            "name": "0015_reused_pattern_provenance.sql",
+            "applied_at": "2026-09-10 21:07:31"
+          },
+          {
+            "id": 16,
+            "name": "0016_request_variants.sql",
+            "applied_at": "2026-09-10 21:07:31"
+          },
+          {
+            "id": 17,
+            "name": "0017_lessons.sql",
+            "applied_at": "2026-09-10 21:07:32"
+          },
+          {
+            "id": 18,
+            "name": "0018_lesson_exam_recommendations.sql",
+            "applied_at": "2026-09-10 21:07:32"
+          },
+          {
+            "id": 19,
+            "name": "0019_distinct_progression.sql",
+            "applied_at": "2026-09-10 21:07:32"
+          },
+          {
+            "id": 20,
+            "name": "0020_editorial_objectives.sql",
+            "applied_at": "2026-09-10 21:07:33"
+          },
+          {
+            "id": 21,
+            "name": "0001_core_grammar_curated_examples.sql",
+            "applied_at": "2026-09-10 21:07:42"
+          },
+          {
+            "id": 22,
+            "name": "0001_curated_grammar_example_target_roles.sql",
+            "applied_at": "2026-09-10 21:07:44"
+          },
+          {
+            "id": 23,
+            "name": "0001_core_vocabulary_curated_usages.sql",
+            "applied_at": "2026-09-10 21:07:46"
+          }
+        ]
+      },
+      {
+        "name": "historical migrations unchanged",
+        "pass": true,
+        "detail": {
+          "grammar_examples": true,
+          "grammar_roles": true
+        }
+      },
+      {
+        "name": "selection is priority/progression based",
+        "pass": true,
+        "detail": {
+          "method": "P0 lesson usage, P1 expression usage, Stage 1–3, communicative/ambiguity score; not ID order",
+          "excluded": [
+            {
+              "id": "ja-c-1087",
+              "reason": "baseline meaning_zh conflicts with はっきり; sense correction is out of scope"
+            }
+          ]
+        }
+      }
+    ],
+    "error_details": [],
+    "warning_details": []
+  },
+  "migration": {
+    "file": "migrations-35e1a2/0001_core_vocabulary_curated_usages.sql",
+    "type": "additive inserts into v2_vocabulary_examples only",
+    "applied_local": true,
+    "recorded": true,
+    "historical_migrations_modified": false,
+    "sha256": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2"
+  },
+  "changes": {
+    "new_vocabulary": false,
+    "new_grammar": false,
+    "lessons": false,
+    "dialogues": false,
+    "dynamic_ai_examples": false,
+    "learner_progress": false,
+    "mastery": false,
+    "checkpoint": false,
+    "production": false,
+    "phase35e1b_started": false,
+    "phase35e1c_started": false,
+    "phase4_started": false
+  },
+  "samples": {
+    "en": [
+      {
+        "item_id": "en-c-313",
+        "lemma": "need",
+        "stage": 2,
+        "usages": [
+          {
+            "kind": "pattern",
+            "text": "need to leave",
+            "translation_zh": "需要离开",
+            "note_zh": "need to 后接动词原形。"
+          },
+          {
+            "kind": "example",
+            "text": "I need to change my appointment.",
+            "translation_zh": "我需要更改预约。",
+            "note_zh": "完整生活语境；目标词按当前义项自然使用。"
+          }
+        ]
+      },
+      {
+        "item_id": "en-c-189",
+        "lemma": "wait",
+        "stage": 1,
+        "usages": [
+          {
+            "kind": "pattern",
+            "text": "wait for the bus",
+            "translation_zh": "等公交车",
+            "note_zh": "wait for 后接等待的对象。"
+          },
+          {
+            "kind": "pattern",
+            "text": "wait for someone, not wait someone",
+            "translation_zh": "等某人，不能省略 for",
+            "note_zh": "对比：表示等待对象时，wait 后需要 for。"
+          }
+        ]
+      },
+      {
+        "item_id": "en-c-2361",
+        "lemma": "plan",
+        "stage": 2,
+        "usages": [
+          {
+            "kind": "collocation",
+            "text": "make a plan",
+            "translation_zh": "制订计划",
+            "note_zh": "名词 plan 常与 make 搭配。"
+          },
+          {
+            "kind": "pattern",
+            "text": "make a plan / plan to leave",
+            "translation_zh": "制订计划／计划离开",
+            "note_zh": "对比：前者 plan 是名词，后者 plan 是动词。"
+          }
+        ]
+      },
+      {
+        "item_id": "en-c-461",
+        "lemma": "reserve",
+        "stage": 3,
+        "usages": [
+          {
+            "kind": "collocation",
+            "text": "reserve a table",
+            "translation_zh": "预订餐桌",
+            "note_zh": "高频自然搭配；保持目标词的当前义项。"
+          },
+          {
+            "kind": "example",
+            "text": "We reserved a room for two nights.",
+            "translation_zh": "我们预订了一个房间，住两晚。",
+            "note_zh": "完整生活语境；目标词按当前义项自然使用。"
+          }
+        ]
+      },
+      {
+        "item_id": "en-c-1755",
+        "lemma": "receipt",
+        "stage": 2,
+        "usages": [
+          {
+            "kind": "pattern",
+            "text": "ask for a receipt",
+            "translation_zh": "索要收据",
+            "note_zh": "receipt 是可数名词。"
+          }
+        ]
+      }
+    ],
+    "ja": [
+      {
+        "item_id": "ja-yotei",
+        "lemma": "予定",
+        "stage": 2,
+        "usages": [
+          {
+            "kind": "collocation",
+            "text": "予定を立てる",
+            "translation_zh": "制订安排",
+            "note_zh": "高频自然搭配；保持目标词的当前义项。",
+            "reading": "よていをたてる"
+          },
+          {
+            "kind": "example",
+            "text": "午後の予定を確認します。",
+            "translation_zh": "我确认一下下午的安排。",
+            "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+            "reading": "ごごのよていをかくにんします。"
+          }
+        ]
+      },
+      {
+        "item_id": "ja-c-191",
+        "lemma": "待つ",
+        "stage": 1,
+        "usages": [
+          {
+            "kind": "pattern",
+            "text": "バスを待つ",
+            "translation_zh": "等公交车",
+            "note_zh": "待つ的等待对象用を，不用に。",
+            "reading": "ばすをまつ"
+          },
+          {
+            "kind": "example",
+            "text": "ここで少し待ってください。",
+            "translation_zh": "请在这里稍等。",
+            "note_zh": "等待地点用で。",
+            "reading": "ここですこしまってください。"
+          }
+        ]
+      },
+      {
+        "item_id": "ja-c-295",
+        "lemma": "確認する",
+        "stage": 2,
+        "usages": [
+          {
+            "kind": "collocation",
+            "text": "予約を確認する",
+            "translation_zh": "确认预约",
+            "note_zh": "高频自然搭配；保持目标词的当前义项。",
+            "reading": "よやくをかくにんする"
+          },
+          {
+            "kind": "example",
+            "text": "送信する前に住所を確認してください。",
+            "translation_zh": "发送前请确认地址。",
+            "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+            "reading": "そうしんするまえにじゅうしょをかくにんしてください。"
+          }
+        ]
+      },
+      {
+        "item_id": "ja-tetsudau",
+        "lemma": "手伝う",
+        "stage": 2,
+        "usages": [
+          {
+            "kind": "pattern",
+            "text": "家事を手伝う",
+            "translation_zh": "帮忙做家务",
+            "note_zh": "手伝う的协助内容用を。",
+            "reading": "かじをてつだう"
+          },
+          {
+            "kind": "pattern",
+            "text": "家事を手伝う／困っている人を助ける",
+            "translation_zh": "帮忙做家务／帮助有困难的人",
+            "note_zh": "对比：手伝う偏协助任务；助ける偏援助或救助人。",
+            "reading": "かじをてつだう／こまっているひとをたすける"
+          }
+        ]
+      },
+      {
+        "item_id": "ja-c-395",
+        "lemma": "サイズ",
+        "stage": 2,
+        "usages": [
+          {
+            "kind": "collocation",
+            "text": "サイズを確認する",
+            "translation_zh": "确认尺码",
+            "note_zh": "高频自然搭配；保持目标词的当前义项。",
+            "reading": "さいずをかくにんする"
+          },
+          {
+            "kind": "example",
+            "text": "この靴は私のサイズがありません。",
+            "translation_zh": "这双鞋没有我的尺码。",
+            "note_zh": "完整生活语境；目标词按当前义项自然使用。",
+            "reading": "このくつはわたしのさいずがありません。"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-09-10T00:36:35.253Z",
+  "database": "ej-learning-35d-db",
+  "bundle_id": "phase-35d-v1",
+  "schema_version": "3.5D.1",
+  "local_sha256": "5079e35b34574e4a844bb349b3fca87bc633811886c4db8e2d2e481c5713d15e",
+  "remote_sha256": "5079e35b34574e4a844bb349b3fca87bc633811886c4db8e2d2e481c5713d15e",
+  "match": true,
+  "lessons": 48,
+  "lesson_links": 718,
+  "exam_recommendations": 38
+}

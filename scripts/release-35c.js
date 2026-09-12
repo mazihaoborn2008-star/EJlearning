@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+const config='wrangler.35c.jsonc',c=JSON.parse(fs.readFileSync(config));
+assert.equal(c.name,'ej-learning-35c');assert.equal(c.main,'src/worker-35b.js');assert.equal(c.assets.directory,'./public-35c');assert.deepEqual(c.routes,[]);assert(!c.route&&!c.triggers);assert.equal(c.workers_dev,true);
+assert.deepEqual(c.d1_databases,[{binding:'DB',database_name:'ej-learning-35c-db',database_id:'c854a0e6-d576-4254-b4b6-449fc7517437',migrations_dir:'migrations-35c'}]);
+for(const f of fs.readdirSync('migrations-35b'))assert(fs.readFileSync('migrations-35b/'+f).equals(fs.readFileSync('migrations-35c/'+f)));
+const command=process.argv[2];assert(['migrate','deploy','check'].includes(command));
+const args=command==='migrate'?['d1','migrations','apply','DB','--remote']:command==='deploy'?['deploy']:['deploy','--dry-run'];
+const r=spawnSync(process.execPath,['node_modules/wrangler/bin/wrangler.js',...args,'--config',config],{stdio:'inherit',env:{...process.env,CI:'true'}});process.exit(r.status??1);

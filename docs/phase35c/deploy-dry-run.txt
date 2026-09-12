@@ -1,0 +1,11 @@
+
+ ⛅️ wrangler 4.130.0
+────────────────────
+✨ Read 33 files from the assets directory E:\E_J_Learn_web\public-35c
+Total Upload: 35.30 KiB / gzip: 10.57 KiB
+Your Worker has access to the following bindings:
+Binding                              Resource         
+env.DB (ej-learning-35c-db)          D1 Database      
+env.ASSETS                           Assets           
+
+--dry-run: exiting now.

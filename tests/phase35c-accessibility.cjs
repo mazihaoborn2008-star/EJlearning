@@ -1,0 +1,25 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
+const base=process.env.BASE_URL||'http://127.0.0.1:8797',label=process.env.TEST_LABEL||'local';
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'}),context=await browser.newContext({viewport:{width:390,height:844},hasTouch:true}),p=await context.newPage(),checks=[];
+try{
+ const go=async url=>{await p.goto(base+url);await p.locator('main h1').waitFor();};
+ await go('/sentence.html?id=not-eaten');
+ const trigger=p.getByRole('button',{name:'eat',exact:true});await trigger.focus();await p.keyboard.press('Enter');await p.locator('dialog[open]').waitFor();
+ assert(await p.evaluate(()=>document.querySelector('dialog').contains(document.activeElement)));for(let i=0;i<8;i++){await p.keyboard.press('Tab');assert(await p.evaluate(()=>document.querySelector('dialog').contains(document.activeElement)));}
+ await p.keyboard.press('Escape');assert.equal(await p.locator('dialog[open]').count(),0);assert(await trigger.evaluate(e=>e===document.activeElement));
+ await trigger.tap();await p.getByRole('button',{name:'关闭预览'}).tap();assert.equal(await p.locator('dialog[open]').count(),0);checks.push('Native dialog accessible name, keyboard focus containment/return, Escape and touch close');
+ await p.locator('.skip').focus();assert(await p.locator('.skip').evaluate(e=>e.getBoundingClientRect().top>=0));await p.keyboard.press('Enter');assert(await p.locator('main').evaluate(e=>e===document.activeElement));checks.push('Keyboard skip link and visible focus');
+ for(const route of ['/vocabulary.html','/grammar.html','/sentences.html','/ai.html']){
+  await go(route);assert.equal(await p.locator('main').count(),1);assert.equal(await p.locator('h1').count(),1);
+  const missing=await p.locator('input:not([type=hidden]),select,textarea').evaluateAll(es=>es.filter(e=>!e.labels?.length&&!e.getAttribute('aria-label')).map(e=>e.outerHTML));assert.deepEqual(missing,[]);
+  const small=await p.locator('button:visible,select:visible,input:visible').evaluateAll(es=>es.filter(e=>e.getBoundingClientRect().height<43).map(e=>e.textContent));assert.deepEqual(small,[]);
+ }checks.push('Labels, landmarks, headings and 44px primary form/control targets');
+ await go('/sentence.html?id=changed-plan');await p.getByText('查看读音 / 振假名',{exact:true}).click();assert(await p.locator('ruby').count()>0);assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await p.locator('[data-chunk]').first().tap();assert(await p.locator('dialog').isVisible());await p.keyboard.press('Escape');checks.push('Touch chunks and expanded Japanese ruby without overflow');
+ await go('/vocabulary.html');await p.getByRole('link',{name:'下一页',exact:true}).click();await p.locator('.pagination').waitFor();assert(p.url().includes('offset=12'));await p.getByRole('link',{name:'上一页',exact:true}).click();await p.getByRole('heading',{name:'词汇，从理解开始'}).waitFor();checks.push('Library pagination with stable URLs');
+ await go('/sentences.html');await p.getByText('更多筛选',{exact:true}).click();await p.getByLabel('综合难度',{exact:true}).selectOption('3');await p.getByLabel('词汇难度',{exact:true}).selectOption('1');await p.getByLabel('语法难度',{exact:true}).selectOption('4');await p.getByRole('button',{name:'应用筛选'}).click();await p.getByRole('heading',{name:'我还没吃饭。',exact:true}).waitFor();checks.push('Independent sentence difficulty form filters');
+ const requests=[];const external=r=>{if(!r.url().startsWith(base))requests.push(r.url());};p.on('request',external);await go('/ai.html?type=vocabulary&id=ja-yotei&lang=ja');await p.getByRole('button',{name:'情境回答',exact:false}).first().click();await p.locator('#practice-input').fill('これは例です。');await p.getByRole('button',{name:'查看固定反馈示例'}).click();assert.deepEqual(requests,[]);p.off('request',external);checks.push('Japanese AI context and mode switch; no external network including page load');
+ await p.route('**/api/v2/grammar?**',async r=>{await new Promise(res=>setTimeout(res,700));await r.continue();});await p.goto(base+'/grammar.html');assert(await p.getByRole('status').isVisible());await p.getByRole('heading',{name:'语法，从理解开始'}).waitFor();await p.unroute('**/api/v2/grammar?**');checks.push('Accessible loading status before API completion');
+ const blocked=await browser.newContext();await blocked.addInitScript(()=>{Storage.prototype.getItem=function(){throw Error('blocked');};Storage.prototype.setItem=function(){throw Error('blocked');};});const bp=await blocked.newPage();await bp.goto(base+'/progress.html');await bp.getByRole('heading',{name:'我的学习',exact:true}).waitFor();assert.equal(await bp.locator('#retry').count(),0);await blocked.close();checks.push('V2 Home/Progress tolerate unavailable browser storage');
+ fs.writeFileSync('docs/phase35c/accessibility-'+label+'.json',JSON.stringify({passed:true,checks,scope:'Accessibility-oriented behavior checks, not WCAG certification'},null,2));console.log(checks.join('\n'));
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});
+

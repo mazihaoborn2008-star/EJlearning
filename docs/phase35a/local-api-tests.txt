@@ -1,0 +1,35 @@
+✔ lightweight catalog, detail regression preserves all 15 approved Concepts (613.2731ms)
+✔ adaptive API beginners, intermediate, advanced and language independence (1524.8083ms)
+✔ exact retries idempotent; changed replays, foreign questions and concurrency protected (103.0866ms)
+✔ checkpoints every topic and language identify precise weak Concepts (5332.4738ms)
+✔ recommendation profiles change results, weakness priority and no hard locks (63.8281ms)
+Content API failed
+✔ strict malformed contracts, deprecated fixed APIs and private asset isolation (242.1522ms)
+✔ database failures return sanitized errors (1.0008ms)
+✔ expired stored session is rejected before accessing question content (0.6493ms)
+✔ scheduled maintenance removes expired anonymous sessions only (0.1336ms)
+✔ placement calibrates Levels 1–6, starts at 3, needs repeated evidence (7.6728ms)
+✔ mixed, consecutive mistakes/successes and uncertain boundaries respect hard maximum (3.0463ms)
+✔ early stopping, deterministic seed, varied sequence and language independence (6.2665ms)
+✔ fresh Levels 1,4,6 produce different nearby content and topic variety (2.0563ms)
+✔ independent EN5/JA2, review and checkpoint weaknesses, recent and mastery (3.2731ms)
+✔ partial topic, many review items, empty catalogs and manual topic filter (1.109ms)
+✔ fresh intermediate queue includes consolidation and stretch (1.1848ms)
+✔ 700 seeded simulations preserve level calibration independently (349.7899ms)
+✔ vocabulary list filters, Chinese/target search, senses and bounded pagination (329.8486ms)
+✔ grammar levels, multilingual search, explanations, directed prerequisites and contrasts (197.4417ms)
+✔ sentence filters apply difficulty and language to the SAME expression (101.012ms)
+✔ required not-eaten example, independent difficulty and exact vocabulary/grammar links (50.3898ms)
+✔ changed plans, scenario variants, dialogue turns and turn relationships (153.5891ms)
+✔ reverse relationship endpoints return compact correct units in both directions (320.1403ms)
+V2 content unavailable
+✔ invalid filters, pagination, IDs, unknown routes and methods (643.7746ms)
+✔ database failures are sanitized (1.4858ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7944.3037

@@ -1,0 +1,873 @@
+{
+  "generated_at": "2026-09-10T00:41:55.426Z",
+  "environment": "staging",
+  "remote_bundle_verified": true,
+  "errors": 0,
+  "error_categories": {
+    "empty_lesson": 0,
+    "missing_required_vocab": 0,
+    "missing_grammar": 0,
+    "invalid_fk": 0,
+    "language_mismatch": 0,
+    "stage_mismatch": 0,
+    "missing_objective": 0,
+    "size_outlier": 0
+  },
+  "warnings": 40,
+  "advanced_content": {
+    "count": 40,
+    "items": [
+      {
+        "id": "en-s1-l2",
+        "language": "en",
+        "stage": 1,
+        "title": "道歉、感谢并自然回应",
+        "content_type": "expression",
+        "content_id": "legacy-151-en",
+        "role": "exposure",
+        "content_level": 2
+      },
+      {
+        "id": "en-s1-l2",
+        "language": "en",
+        "stage": 1,
+        "title": "道歉、感谢并自然回应",
+        "content_type": "expression",
+        "content_id": "apology-en-casual",
+        "role": "exposure",
+        "content_level": 2
+      },
+      {
+        "id": "en-s1-l2",
+        "language": "en",
+        "stage": 1,
+        "title": "道歉、感谢并自然回应",
+        "content_type": "grammar",
+        "content_id": "en-would-like",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "en-s1-l2",
+        "language": "en",
+        "stage": 1,
+        "title": "道歉、感谢并自然回应",
+        "content_type": "vocabulary",
+        "content_id": "en-c-3180",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "en-s1-l2",
+        "language": "en",
+        "stage": 1,
+        "title": "道歉、感谢并自然回应",
+        "content_type": "vocabulary",
+        "content_id": "en-c-2361",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "en-s1-l2",
+        "language": "en",
+        "stage": 1,
+        "title": "道歉、感谢并自然回应",
+        "content_type": "vocabulary",
+        "content_id": "en-plan",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "en-s1-l4",
+        "language": "en",
+        "stage": 1,
+        "title": "提出一个简单请求",
+        "content_type": "expression",
+        "content_id": "help-dialogue-en",
+        "role": "exposure",
+        "content_level": 2
+      },
+      {
+        "id": "en-s1-l4",
+        "language": "en",
+        "stage": 1,
+        "title": "提出一个简单请求",
+        "content_type": "expression",
+        "content_id": "legacy-165-en",
+        "role": "exposure",
+        "content_level": 2
+      },
+      {
+        "id": "en-s1-l4",
+        "language": "en",
+        "stage": 1,
+        "title": "提出一个简单请求",
+        "content_type": "grammar",
+        "content_id": "en-can-request",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "en-s1-l4",
+        "language": "en",
+        "stage": 1,
+        "title": "提出一个简单请求",
+        "content_type": "grammar",
+        "content_id": "en-passive",
+        "role": "support",
+        "content_level": 3
+      },
+      {
+        "id": "en-s1-l4",
+        "language": "en",
+        "stage": 1,
+        "title": "提出一个简单请求",
+        "content_type": "vocabulary",
+        "content_id": "en-c-1065",
+        "role": "support",
+        "content_level": 3
+      },
+      {
+        "id": "en-s1-l4",
+        "language": "en",
+        "stage": 1,
+        "title": "提出一个简单请求",
+        "content_type": "vocabulary",
+        "content_id": "en-c-313",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "en-s3-l1",
+        "language": "en",
+        "stage": 3,
+        "title": "讨论计划与期待",
+        "content_type": "expression",
+        "content_id": "legacy-177-en",
+        "role": "exposure",
+        "content_level": 4
+      },
+      {
+        "id": "en-s3-l1",
+        "language": "en",
+        "stage": 3,
+        "title": "讨论计划与期待",
+        "content_type": "vocabulary",
+        "content_id": "en-c-1085",
+        "role": "support",
+        "content_level": 4
+      },
+      {
+        "id": "en-s4-l3",
+        "language": "en",
+        "stage": 4,
+        "title": "在餐厅完成点餐",
+        "content_type": "vocabulary",
+        "content_id": "en-c-929",
+        "role": "support",
+        "content_level": 5
+      },
+      {
+        "id": "ja-s1-l2",
+        "language": "ja",
+        "stage": 1,
+        "title": "お礼・謝罪・誘いに応じる",
+        "content_type": "expression",
+        "content_id": "legacy-150-ja",
+        "role": "exposure",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l2",
+        "language": "ja",
+        "stage": 1,
+        "title": "お礼・謝罪・誘いに応じる",
+        "content_type": "expression",
+        "content_id": "legacy-152-ja",
+        "role": "exposure",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l2",
+        "language": "ja",
+        "stage": 1,
+        "title": "お礼・謝罪・誘いに応じる",
+        "content_type": "grammar",
+        "content_id": "ja-masen-ka",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l2",
+        "language": "ja",
+        "stage": 1,
+        "title": "お礼・謝罪・誘いに応じる",
+        "content_type": "vocabulary",
+        "content_id": "ja-c-3203",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l2",
+        "language": "ja",
+        "stage": 1,
+        "title": "お礼・謝罪・誘いに応じる",
+        "content_type": "vocabulary",
+        "content_id": "ja-c-419",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l3",
+        "language": "ja",
+        "stage": 1,
+        "title": "食べたい物を伝える",
+        "content_type": "expression",
+        "content_id": "legacy-33-ja",
+        "role": "exposure",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l3",
+        "language": "ja",
+        "stage": 1,
+        "title": "食べたい物を伝える",
+        "content_type": "grammar",
+        "content_id": "ja-hodo-approx",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l3",
+        "language": "ja",
+        "stage": 1,
+        "title": "食べたい物を伝える",
+        "content_type": "vocabulary",
+        "content_id": "ja-c-347",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l3",
+        "language": "ja",
+        "stage": 1,
+        "title": "食べたい物を伝える",
+        "content_type": "vocabulary",
+        "content_id": "ja-c-359",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l3",
+        "language": "ja",
+        "stage": 1,
+        "title": "食べたい物を伝える",
+        "content_type": "vocabulary",
+        "content_id": "ja-c-959",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l4",
+        "language": "ja",
+        "stage": 1,
+        "title": "短いお願いをする",
+        "content_type": "expression",
+        "content_id": "help-dialogue-ja",
+        "role": "exposure",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l4",
+        "language": "ja",
+        "stage": 1,
+        "title": "短いお願いをする",
+        "content_type": "expression",
+        "content_id": "legacy-163-ja",
+        "role": "exposure",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l4",
+        "language": "ja",
+        "stage": 1,
+        "title": "短いお願いをする",
+        "content_type": "expression",
+        "content_id": "legacy-169-ja",
+        "role": "exposure",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l4",
+        "language": "ja",
+        "stage": 1,
+        "title": "短いお願いをする",
+        "content_type": "grammar",
+        "content_id": "ja-mashou",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l4",
+        "language": "ja",
+        "stage": 1,
+        "title": "短いお願いをする",
+        "content_type": "vocabulary",
+        "content_id": "ja-tetsudau",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l4",
+        "language": "ja",
+        "stage": 1,
+        "title": "短いお願いをする",
+        "content_type": "vocabulary",
+        "content_id": "ja-c-1031",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s1-l4",
+        "language": "ja",
+        "stage": 1,
+        "title": "短いお願いをする",
+        "content_type": "vocabulary",
+        "content_id": "ja-c-1067",
+        "role": "support",
+        "content_level": 3
+      },
+      {
+        "id": "ja-s1-l4",
+        "language": "ja",
+        "stage": 1,
+        "title": "短いお願いをする",
+        "content_type": "vocabulary",
+        "content_id": "ja-c-2291",
+        "role": "support",
+        "content_level": 2
+      },
+      {
+        "id": "ja-s2-l2",
+        "language": "ja",
+        "stage": 2,
+        "title": "家の中で頼み事を伝える",
+        "content_type": "expression",
+        "content_id": "legacy-55-ja",
+        "role": "exposure",
+        "content_level": 3
+      },
+      {
+        "id": "ja-s2-l3",
+        "language": "ja",
+        "stage": 2,
+        "title": "時間を聞いて約束する",
+        "content_type": "grammar",
+        "content_id": "ja-honorific-request",
+        "role": "support",
+        "content_level": 4
+      },
+      {
+        "id": "ja-s2-l3",
+        "language": "ja",
+        "stage": 2,
+        "title": "時間を聞いて約束する",
+        "content_type": "vocabulary",
+        "content_id": "ja-c-955",
+        "role": "support",
+        "content_level": 3
+      },
+      {
+        "id": "ja-s3-l1",
+        "language": "ja",
+        "stage": 3,
+        "title": "誤解を解き、言い方を整える",
+        "content_type": "grammar",
+        "content_id": "ja-tohaie",
+        "role": "support",
+        "content_level": 5
+      },
+      {
+        "id": "ja-s3-l1",
+        "language": "ja",
+        "stage": 3,
+        "title": "誤解を解き、言い方を整える",
+        "content_type": "vocabulary",
+        "content_id": "ja-c-3217",
+        "role": "support",
+        "content_level": 4
+      },
+      {
+        "id": "ja-s4-l1",
+        "language": "ja",
+        "stage": 4,
+        "title": "理由を添えて予定を変える",
+        "content_type": "vocabulary",
+        "content_id": "ja-yoki",
+        "role": "support",
+        "content_level": 5
+      },
+      {
+        "id": "ja-s5-l1",
+        "language": "ja",
+        "stage": 5,
+        "title": "改まった形で判断を述べる",
+        "content_type": "grammar",
+        "content_id": "ja-kanenai",
+        "role": "support",
+        "content_level": 6
+      }
+    ],
+    "note": "All advanced items are support/exposure; none are required."
+  },
+  "unknown_vocabulary": {
+    "threshold": 0.35,
+    "warnings": [],
+    "all_lessons": [
+      {
+        "id": "en-s6-l1",
+        "total": 10,
+        "unknown": 2,
+        "unknown_ratio": 0.2
+      },
+      {
+        "id": "ja-s6-l3",
+        "total": 10,
+        "unknown": 2,
+        "unknown_ratio": 0.2
+      },
+      {
+        "id": "en-s1-l1",
+        "total": 4,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s1-l2",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s1-l3",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s1-l4",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s2-l1",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s2-l2",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s2-l3",
+        "total": 8,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s2-l4",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s3-l1",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s3-l2",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s3-l3",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s3-l4",
+        "total": 7,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s4-l1",
+        "total": 7,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s4-l2",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s4-l3",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s4-l4",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s5-l1",
+        "total": 8,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s5-l2",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s5-l3",
+        "total": 8,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s5-l4",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s6-l2",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s6-l3",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "en-s6-l4",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s1-l1",
+        "total": 4,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s1-l2",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s1-l3",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s1-l4",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s2-l1",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s2-l2",
+        "total": 4,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s2-l3",
+        "total": 7,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s2-l4",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s3-l1",
+        "total": 7,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s3-l2",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s3-l3",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s3-l4",
+        "total": 3,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s4-l1",
+        "total": 7,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s4-l2",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s4-l3",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s4-l4",
+        "total": 6,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s5-l1",
+        "total": 4,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s5-l2",
+        "total": 4,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s5-l3",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s5-l4",
+        "total": 7,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s6-l1",
+        "total": 3,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s6-l2",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      },
+      {
+        "id": "ja-s6-l4",
+        "total": 5,
+        "unknown": 0,
+        "unknown_ratio": 0
+      }
+    ]
+  },
+  "duplicate_content": {
+    "threshold": 0.8,
+    "count": 0,
+    "lessons": []
+  },
+  "topic_balance": {
+    "warnings": [],
+    "distribution": [
+      {
+        "language": "en",
+        "topic_id": "plans",
+        "lessons": 3
+      },
+      {
+        "language": "en",
+        "topic_id": "school",
+        "lessons": 3
+      },
+      {
+        "language": "en",
+        "topic_id": "social",
+        "lessons": 3
+      },
+      {
+        "language": "en",
+        "topic_id": "chat",
+        "lessons": 2
+      },
+      {
+        "language": "en",
+        "topic_id": "food",
+        "lessons": 2
+      },
+      {
+        "language": "en",
+        "topic_id": "help",
+        "lessons": 2
+      },
+      {
+        "language": "en",
+        "topic_id": "travel",
+        "lessons": 2
+      },
+      {
+        "language": "en",
+        "topic_id": "feelings",
+        "lessons": 1
+      },
+      {
+        "language": "en",
+        "topic_id": "health",
+        "lessons": 1
+      },
+      {
+        "language": "en",
+        "topic_id": "hobbies",
+        "lessons": 1
+      },
+      {
+        "language": "en",
+        "topic_id": "home",
+        "lessons": 1
+      },
+      {
+        "language": "en",
+        "topic_id": "shopping",
+        "lessons": 1
+      },
+      {
+        "language": "en",
+        "topic_id": "time",
+        "lessons": 1
+      },
+      {
+        "language": "en",
+        "topic_id": "weather",
+        "lessons": 1
+      },
+      {
+        "language": "ja",
+        "topic_id": "chat",
+        "lessons": 3
+      },
+      {
+        "language": "ja",
+        "topic_id": "help",
+        "lessons": 3
+      },
+      {
+        "language": "ja",
+        "topic_id": "plans",
+        "lessons": 3
+      },
+      {
+        "language": "ja",
+        "topic_id": "social",
+        "lessons": 3
+      },
+      {
+        "language": "ja",
+        "topic_id": "school",
+        "lessons": 2
+      },
+      {
+        "language": "ja",
+        "topic_id": "travel",
+        "lessons": 2
+      },
+      {
+        "language": "ja",
+        "topic_id": "feelings",
+        "lessons": 1
+      },
+      {
+        "language": "ja",
+        "topic_id": "food",
+        "lessons": 1
+      },
+      {
+        "language": "ja",
+        "topic_id": "health",
+        "lessons": 1
+      },
+      {
+        "language": "ja",
+        "topic_id": "hobbies",
+        "lessons": 1
+      },
+      {
+        "language": "ja",
+        "topic_id": "home",
+        "lessons": 1
+      },
+      {
+        "language": "ja",
+        "topic_id": "shopping",
+        "lessons": 1
+      },
+      {
+        "language": "ja",
+        "topic_id": "time",
+        "lessons": 1
+      },
+      {
+        "language": "ja",
+        "topic_id": "weather",
+        "lessons": 1
+      }
+    ]
+  },
+  "size_outliers": 0,
+  "notes": [
+    "Warnings are editorial review signals, not schema errors.",
+    "Duplicate overlap is measured on vocabulary; intentional progression may repeat core words.",
+    "Unknown vocabulary measures expression-linked vocabulary absent from the lesson vocabulary set."
+  ]
+}

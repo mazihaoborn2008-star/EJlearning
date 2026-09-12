@@ -1,0 +1,26 @@
+✔ placement calibrates Levels 1–6, starts at 3, needs repeated evidence (7.9596ms)
+✔ mixed, consecutive mistakes/successes and uncertain boundaries respect hard maximum (2.8742ms)
+✔ early stopping, deterministic seed, varied sequence and language independence (6.2713ms)
+✔ fresh Levels 1,4,6 produce different nearby content and topic variety (2.1531ms)
+✔ independent EN5/JA2, review and checkpoint weaknesses, recent and mastery (3.1764ms)
+✔ partial topic, many review items, empty catalogs and manual topic filter (1.1049ms)
+✔ fresh intermediate queue includes consolidation and stretch (1.1014ms)
+✔ 700 seeded simulations preserve level calibration independently (349.2684ms)
+✔ additive stream preserves every legacy row and schema migration copy (12.7628ms)
+✔ representative counts, no forced language pairing, independent difficulty (0.3075ms)
+✔ stage, level, language, publication and type constraints (0.5965ms)
+✔ composite foreign keys prevent cross-language sentence vocabulary and grammar links (0.2146ms)
+✔ lexical and grammar relations enforce language, no self links, and acyclic prerequisites (0.3062ms)
+✔ duplicate primary, lexical identity, relation and span protections (0.2224ms)
+✔ scenario and dialogue ownership plus all reading/span content is valid (0.7419ms)
+✔ required semantic examples reference actual independent systems (0.1489ms)
+✔ integer affinity and dialogue invariants survive editorial updates (0.2775ms)
+✔ draft/archived records never leak via lists, links, examples or reverse navigation (15.5059ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 428.5328

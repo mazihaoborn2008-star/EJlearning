@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "worker": "ej-learning-35a",
+  "database": {
+    "binding": "DB",
+    "database_name": "ej-learning-35a-db",
+    "database_id": "c5476d39-27ab-4899-b212-671e893971ee",
+    "migrations_dir": "migrations-v2"
+  },
+  "base": "https://ej-learning-35a.yanjian-language-learning.workers.dev",
+  "deployments": {
+    "deployments": [
+      {
+        "id": "a867ff8b-dcca-4940-bc88-2a5eca94e9c4",
+        "source": "wrangler",
+        "strategy": "percentage",
+        "author_email": "mazihao.born.2008@gmail.com",
+        "annotations": {
+          "workers/message": "Automatic deployment on upload.",
+          "workers/triggered_by": "upload"
+        },
+        "versions": [
+          {
+            "version_id": "d830a5c4-82a8-437e-9228-6c4f427fad90",
+            "percentage": 100
+          }
+        ],
+        "created_on": "2026-09-09T03:22:41.972735Z"
+      }
+    ]
+  },
+  "workersDev": true,
+  "customDomains": [],
+  "customRoutes": [],
+  "http": {
+    "/": {
+      "status": 200,
+      "sha256": "a5821df41c383c086e18137b07c4f37482713a2fa3d04d8808a3d18cfe746ba4"
+    },
+    "/learn.html": {
+      "status": 200,
+      "sha256": "a295f6beb285233aff82839b5506f4445cb0ca6a7ee11d2cf3f855c4f0831f5d"
+    },
+    "/progress.html": {
+      "status": 200,
+      "sha256": "ef9b60fe2a93045429a0752984ddc02eb9f67e8bcef325806da601cd780f80b2"
+    },
+    "/placement.html": {
+      "status": 200,
+      "sha256": "20ad7ad750806ae62b9ecdd2d4a0921b58806abb8e6498f7d81c7065cb033c8d"
+    },
+    "/checkpoint.html": {
+      "status": 200,
+      "sha256": "454c4c44174bec903c9fd333be37e4fe55244971a1cb3bf445ee8f4683954ade"
+    },
+    "/api/topics": {
+      "status": 200,
+      "sha256": "06ac724bbda2b9039654f4007bb98fe0e40db35c7da901e22070dcb3466b589a"
+    },
+    "/api/concepts": {
+      "status": 200,
+      "sha256": "ac6c13b021bba6b1704dec0e11450c0bed1a06ce8c72c09bd237b753d5449650"
+    },
+    "/api/v2/vocabulary": {
+      "status": 200,
+      "sha256": "bbfa48da5462ab7e77204569132970222ed8b23dad23700dbc7244db2fade35d"
+    },
+    "/api/v2/grammar": {
+      "status": 200,
+      "sha256": "3b4ef9e8d770e75ad744dae74fc82ad196be009a0cb49efd4fbf61cfdf9dca78"
+    },
+    "/api/v2/sentences/not-eaten": {
+      "status": 200,
+      "sha256": "4ecdf229304b3cfe0a853d26a293a0eb3a6ab9a7f0b082cd8074778ac2cda016"
+    },
+    "/api/v2/sentences/changed-plan": {
+      "status": 200,
+      "sha256": "b016f8c67006145876d778193f3b72235c139e4082d55b10fd841213a2f48c50"
+    }
+  },
+  "privatePathsStatus": 404,
+  "protectedEnvironmentsUnchanged": true,
+  "checkedAt": "2026-09-09T03:25:58.088Z"
+}

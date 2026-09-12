@@ -1,0 +1,10 @@
+12 major pages at 360/390/430/1440; no overflow; one main heading; five primary destinations
+Vocabulary stage/search/detail and distinct senses
+Vocabulary → Sentence → Grammar → Sentence → Vocabulary; modal Escape
+Prerequisite suggestion navigation is unlocked
+Dialogue speaker turns and scenario response variants
+IELTS → Vocabulary and JLPT → Grammar; independent difficulty; empty target
+All three contextual AI entries, visible static demo, no submission network requests
+Read-only original progress display; no new scores or state migration
+API error and retry recovery
+Empty results and missing detail handled

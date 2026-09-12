@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-09-10T00:41:51.482Z",
+  "environment": "staging",
+  "languages": {
+    "en": {
+      "lessons": 24,
+      "vocabulary": {
+        "linked": 119,
+        "total": 345,
+        "unassigned": 226
+      },
+      "grammar": {
+        "linked": 42,
+        "total": 73,
+        "unassigned": 31
+      },
+      "expressions": {
+        "linked": 92,
+        "total": 226,
+        "unassigned": 134
+      }
+    },
+    "ja": {
+      "lessons": 24,
+      "vocabulary": {
+        "linked": 107,
+        "total": 350,
+        "unassigned": 243
+      },
+      "grammar": {
+        "linked": 43,
+        "total": 82,
+        "unassigned": 39
+      },
+      "expressions": {
+        "linked": 89,
+        "total": 233,
+        "unassigned": 144
+      }
+    }
+  },
+  "stage_distribution": [
+    {
+      "language": "en",
+      "stage": 1,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "en",
+      "stage": 2,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "en",
+      "stage": 3,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "en",
+      "stage": 4,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "en",
+      "stage": 5,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "en",
+      "stage": 6,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "ja",
+      "stage": 1,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "ja",
+      "stage": 2,
+      "lessons": 4,
+      "linked_vocab_slots": 30,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "ja",
+      "stage": 3,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "ja",
+      "stage": 4,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "ja",
+      "stage": 5,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    },
+    {
+      "language": "ja",
+      "stage": 6,
+      "lessons": 4,
+      "linked_vocab_slots": 32,
+      "linked_grammar_slots": 12,
+      "linked_expression_slots": 16
+    }
+  ]
+}
