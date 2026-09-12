@@ -4,11 +4,13 @@ import {academic} from './academic-35e2.js';
 import {lessons} from './lessons-35d.js';
 import {dynamicExamples} from './ai-examples-35d1.js';
 import {aiTutor} from './ai-tutor-36.js';
+import {auth} from './auth-4a.js';
 
 export default {
  scheduled:legacy.scheduled,
  async fetch(request,env,ctx){
   const url=new URL(request.url);
+  if(url.pathname==='/api/me'||url.pathname.startsWith('/api/auth/'))return auth(request,env);
   if(url.pathname==='/api/ai/tutor')return aiTutor(request,env,ctx);
   if(url.pathname==='/api/ai/examples')return dynamicExamples(request,env,ctx);
   if(url.pathname.startsWith('/api/v2/lessons'))return lessons(request,env.DB,env.CONTENT_DB);

@@ -110,7 +110,10 @@
     "curriculum:staging:adopt": "node scripts/staging-curriculum.js adopt",
     "curriculum:staging:bootstrap": "node scripts/staging-curriculum.js bootstrap",
     "curriculum:staging:update": "node scripts/staging-curriculum.js update",
-    "test:staging-db": "node --test tests/staging-db-policy.test.js"
+    "test:staging-db": "node --test tests/staging-db-policy.test.js",
+    "test:4a:auth": "node --test tests/phase4a-auth.test.js",
+    "test:4a:browser": "node tests/phase4a-browser.cjs",
+    "test:4a": "npm run test:4a:auth && npm run test:36:api && npm run test:staging-db"
   },
   "devDependencies": {
     "wrangler": "4.130.0",
