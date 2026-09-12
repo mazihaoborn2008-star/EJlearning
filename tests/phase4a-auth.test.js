@@ -262,10 +262,17 @@ test('state-changing routes require an exact same-origin Origin header', async (
 test('mail failures fail closed, consume the pending code, and expose no OTP', async () => {
   const h = harness();
   h.services.mailSender = async () => { throw new Error('provider detail and credential-like material'); };
-  const result = await send(h);
+  const logs = [];
+  const originalError = console.error;
+  console.error = (...values) => logs.push(values.join(' '));
+  let result;
+  try { result = await send(h); } finally { console.error = originalError; }
   assert.equal(result.response.status, 503);
   assert.equal(result.body.error.code, 'MAIL_UNAVAILABLE');
   assert(!JSON.stringify(result.body).includes('123450'));
+  assert.equal(logs.length, 1);
+  assert(!logs[0].includes('123450'));
+  assert(!logs[0].includes('credential-like material'));
   assert.notEqual(h.DB.sqlite.prepare('SELECT consumed_at FROM email_login_codes').get().consumed_at, null);
 });
 

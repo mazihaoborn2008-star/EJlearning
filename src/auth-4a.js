@@ -158,6 +158,7 @@ async function sendCode(request, env, services) {
   try {
     await services.mailSender(env, {to: email.display, code, expiresMinutes: OTP_TTL_SECONDS / 60});
   } catch {
+    console.error('[auth] mail delivery failed provider=qq_smtp');
     await env.DB.prepare('UPDATE email_login_codes SET consumed_at = ? WHERE id = ? AND consumed_at IS NULL').bind(now, id).run();
     return error(503, 'MAIL_UNAVAILABLE', '验证邮件暂时无法发送，请稍后重试。');
   }
@@ -263,8 +264,8 @@ async function logout(request, env, services) {
 }
 
 async function defaultMailSender(env, message) {
-  const {sendCloudflareVerificationEmail} = await import('./mail-cloudflare.js');
-  return sendCloudflareVerificationEmail(env, message);
+  const {sendQqSmtp} = await import('./mail-qq-smtp.js');
+  return sendQqSmtp(env, message);
 }
 
 const defaults = {now: () => Math.floor(Date.now() / 1000), randomCode, randomToken, mailSender: defaultMailSender};

@@ -5,7 +5,10 @@
   "vars": {
     "DEEPSEEK_BASE_URL": "https://api.deepseek.com",
     "DEEPSEEK_MODEL": "deepseek-v4-flash",
-    "DEEPSEEK_API_KEY": "local-test-only"
+    "DEEPSEEK_API_KEY": "local-test-only",
+    "AUTH_SMTP_HOST": "smtp.qq.com",
+    "AUTH_SMTP_PORT": "465",
+    "MAIL_FROM_NAME": "EJ Learning"
   },
   "ratelimits": [{
     "name": "AI_RATE_LIMITER",
