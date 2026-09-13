@@ -88,18 +88,18 @@ BEGIN
   ) VALUES (
     NEW.user_id, NEW.content_id, 1, NEW.result, 1 - NEW.result,
     NEW.result, NEW.result, NEW.created_at, NEW.created_at,
-    CASE WHEN NEW.result = 1 THEN NEW.created_at END,
-    CASE WHEN NEW.result = 0 THEN NEW.created_at END
+    IIF(NEW.result = 1, NEW.created_at, NULL),
+    IIF(NEW.result = 0, NEW.created_at, NULL)
   )
   ON CONFLICT(user_id, vocabulary_id) DO UPDATE SET
     attempts = attempts + 1,
     correct_count = correct_count + NEW.result,
     wrong_count = wrong_count + (1 - NEW.result),
-    correct_streak = CASE WHEN NEW.result = 1 THEN correct_streak + 1 ELSE 0 END,
+    correct_streak = IIF(NEW.result = 1, correct_streak + 1, 0),
     last_result = NEW.result,
     last_seen_at = NEW.created_at,
-    last_correct_at = CASE WHEN NEW.result = 1 THEN NEW.created_at ELSE last_correct_at END,
-    last_wrong_at = CASE WHEN NEW.result = 0 THEN NEW.created_at ELSE last_wrong_at END;
+    last_correct_at = IIF(NEW.result = 1, NEW.created_at, last_correct_at),
+    last_wrong_at = IIF(NEW.result = 0, NEW.created_at, last_wrong_at);
 END;
 
 CREATE TRIGGER learning_attempt_grammar_apply
@@ -113,16 +113,16 @@ BEGIN
   ) VALUES (
     NEW.user_id, NEW.content_id, 1, NEW.result, 1 - NEW.result,
     NEW.result, NEW.result, NEW.created_at, NEW.created_at,
-    CASE WHEN NEW.result = 1 THEN NEW.created_at END,
-    CASE WHEN NEW.result = 0 THEN NEW.created_at END
+    IIF(NEW.result = 1, NEW.created_at, NULL),
+    IIF(NEW.result = 0, NEW.created_at, NULL)
   )
   ON CONFLICT(user_id, grammar_id) DO UPDATE SET
     attempts = attempts + 1,
     correct_count = correct_count + NEW.result,
     wrong_count = wrong_count + (1 - NEW.result),
-    correct_streak = CASE WHEN NEW.result = 1 THEN correct_streak + 1 ELSE 0 END,
+    correct_streak = IIF(NEW.result = 1, correct_streak + 1, 0),
     last_result = NEW.result,
     last_seen_at = NEW.created_at,
-    last_correct_at = CASE WHEN NEW.result = 1 THEN NEW.created_at ELSE last_correct_at END,
-    last_wrong_at = CASE WHEN NEW.result = 0 THEN NEW.created_at ELSE last_wrong_at END;
+    last_correct_at = IIF(NEW.result = 1, NEW.created_at, last_correct_at),
+    last_wrong_at = IIF(NEW.result = 0, NEW.created_at, last_wrong_at);
 END;
