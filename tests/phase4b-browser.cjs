@@ -6,7 +6,7 @@ const account={authenticated:true,user:{id:'user-browser',email:'learner@example
 const summary={data:{today:{attempts:2},vocabulary:{studied:1,attempts:2,correct_count:1,wrong_count:1,accuracy:50},grammar:{studied:1,attempts:3,correct_count:3,wrong_count:0,accuracy:100},lessons:{studied:2,completed:1,in_progress:1}}};
 const recent={data:[{type:'lesson',id:'en-s1-l1',title:'打招呼并开始简单交谈',language:'en',activity_at:2_000_000_000,result:null,status:'in_progress',last_section_key:'grammar'},{type:'vocabulary',id:'en-c-541',title:'choice',language:'en',activity_at:1_999_999_990,result:'correct',status:null,last_section_key:null}]};
 const reviewSummary={data:{server_time:2_000_000_000,vocabulary:{has_learned:true,scheduled_count:1,due_count:1,next_upcoming_at:null},grammar:{has_learned:true,scheduled_count:1,due_count:0,next_upcoming_at:2_000_086_400},total_due:1,has_learned:true,total_scheduled:2,next_review_at:2_000_086_400}};
-const recommendations={data:{primary_action:{type:'review_due',reason:'你有 1 个到期复习项目。',target:'/review.html',count:1},weak_vocabulary:[],weak_grammar:[],lesson:{continue:{id:'en-s1-l1',language:'en',stage:1,sequence:1,title:'打招呼并开始简单交谈',target:'/lesson.html?id=en-s1-l1&lang=en&stage=1'},next:null,paths:{en:{continue:null,next:null,complete:false},ja:{continue:null,next:null,complete:false}},all_complete:false,available:48},review:reviewSummary.data,generated_at:2_000_000_000,limits:{weak_vocabulary:5,weak_grammar:5,maximum:20}}};
+const recommendations={data:{primary_action:{type:'review_due',reason:'你有 1 个到期复习项目。',target:'/review.html',count:1},weak_vocabulary:[],weak_grammar:[],lesson:{continue:{id:'en-s1-l1',language:'en',stage:1,sequence:1,title:'打招呼并开始简单交谈',target:'/lesson.html?id=en-s1-l1&lang=en&stage=1'},next:null,paths:{en:{continue:null,next:null,complete:false},ja:{continue:null,next:null,complete:false}},all_complete:false,available:64},review:reviewSummary.data,generated_at:2_000_000_000,limits:{weak_vocabulary:5,weak_grammar:5,maximum:20}}};
 const fulfillJson=(route,body,status=200)=>route.fulfill({status,contentType:'application/json',body:JSON.stringify(body)});
 
 (async()=>{
@@ -23,13 +23,11 @@ const fulfillJson=(route,body,status=200)=>route.fulfill({status,contentType:'ap
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`dashboard overflow at ${width}px`);assert.deepEqual(errors,[]);await page.close();
   }
 
-  const check=await browser.newPage({viewport:{width:390,height:844}});let attemptBody;
+  const check=await browser.newPage({viewport:{width:390,height:844}});
   await check.route('**/api/me',route=>fulfillJson(route,account));
   await check.route('**/api/v2/vocabulary/en-c-541',route=>fulfillJson(route,{data:{id:'en-c-541',language:'en',lemma:'choice',stage:2,part_of_speech:'noun',register:'neutral',ipa:'tʃɔɪs',reading:null,senses:[{meaning_zh:'选择',usage_zh:'用于表达选择。',register_note:null}],examples:[],relations:[],sentences:{data:[],pagination:{has_more:false,next_offset:null}}}}));
-  await check.route('**/api/learning/attempt',route=>{attemptBody=route.request().postDataJSON();return fulfillJson(route,{data:{correct:true,expected_answer:'choice',idempotent:false,progress:{attempts:1,correct_count:1,wrong_count:0,correct_streak:1,state:'learning'}}});});
-  await check.goto(base+'/vocabulary-detail.html?id=en-c-541&lang=en');await check.getByRole('heading',{name:'快速自测'}).waitFor();
-  await check.getByLabel('你的答案').fill('choice');await check.getByRole('button',{name:'提交答案'}).click();await check.getByText(/回答正确/).waitFor();
-  assert.deepEqual(Object.keys(attemptBody).sort(),['answer','attempt_id','content_id','content_type']);assert.equal(attemptBody.answer,'choice');assert.equal(attemptBody.content_type,'vocabulary');assert(!('correct' in attemptBody));assert(!('user_id' in attemptBody));await check.close();
+  await check.goto(base+'/vocabulary-detail.html?id=en-c-541&lang=en');await check.getByRole('heading',{name:'确定性练习'}).waitFor();
+  const practiceLink=check.getByRole('link',{name:'开始练习'});assert.match(await practiceLink.getAttribute('href'),/practice\.html.*content_id=en-c-541/);assert.equal(await check.getByLabel('你的答案').count(),0);await check.close();
 
   const library=await browser.newPage({viewport:{width:430,height:844}});let requestedIds=[];
   await library.route('**/api/me',route=>fulfillJson(route,account));
@@ -46,6 +44,6 @@ const fulfillJson=(route,body,status=200)=>route.fulfill({status,contentType:'ap
   await lesson.goto(base+'/lesson.html?id=en-s1-l1&lang=en&stage=1');await lesson.getByRole('tab',{name:/语法/}).click();await lesson.getByRole('tab',{name:/练习/}).click();await lesson.getByRole('button',{name:'完成课程 ✓'}).click();await lesson.getByText('课程已完成，学习记录已保存。').waitFor();
   assert.equal(mutations.filter(x=>x.action==='start').length,1);assert(mutations.some(x=>x.action==='position'&&x.body.section_key==='grammar'));assert.equal(mutations.filter(x=>x.action==='complete').length,1);await lesson.close();
 
-  console.log(JSON.stringify({passed:true,widths:[360,390,430,768,1440],cases:['responsive dashboard','authoritative attempt shape','bounded library progress lookup','lesson start/position/complete']}));
+  console.log(JSON.stringify({passed:true,widths:[360,390,430,768,1440],cases:['responsive dashboard','tokenized practice handoff','bounded library progress lookup','lesson start/position/complete']}));
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

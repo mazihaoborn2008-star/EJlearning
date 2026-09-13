@@ -40,3 +40,26 @@
 /* Phase 3.6 AI Tutor */
 .ai-language{display:grid;grid-template-columns:1fr 1fr;max-width:420px;border:1px solid var(--line);border-radius:10px;background:white;padding:4px;margin:18px 0}.ai-language a{display:flex;min-height:46px;align-items:center;justify-content:center;border-radius:7px;font-weight:650}.ai-language a.active{background:var(--ink);color:white;text-decoration:none}.tutor-context{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:16px 0 20px;padding:12px 15px;background:#eef2e9;border:1px solid #d9e2d4;border-radius:9px;font-size:14px}.tutor-context>a{margin-left:auto;color:var(--green);text-decoration:underline;text-underline-offset:4px}.tutor-shell{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;max-width:860px}.tutor-messages{min-height:330px;max-height:56vh;overflow:auto;padding:22px;display:flex;flex-direction:column;gap:15px}.tutor-empty{margin:auto;text-align:center;max-width:520px;color:var(--muted);padding:30px 12px}.tutor-empty h2{color:var(--ink);margin-bottom:8px}.tutor-message{max-width:min(720px,90%);padding:13px 16px;border-radius:11px;background:#eff3ed;align-self:flex-start}.tutor-message.user{background:#e8efe8;align-self:flex-end}.tutor-message.failed{background:#fff3f0;border:1px solid #e3c4bc;color:#7a382d}.tutor-message-role{font-size:11px;font-weight:700;color:var(--muted);margin-bottom:4px}.tutor-message p{white-space:pre-wrap;overflow-wrap:anywhere;margin:0}.retry-message{margin-top:10px}.tutor-shortcuts{display:flex;gap:8px;overflow-x:auto;padding:12px 16px 4px;border-top:1px solid var(--line)}.tutor-shortcuts button{white-space:nowrap;font-size:13px;min-height:38px;padding:6px 12px}.tutor-composer{padding:12px 16px 16px}.tutor-composer textarea{min-height:92px;resize:vertical}.tutor-compose-actions{display:flex;align-items:center;gap:9px;margin-top:9px}.tutor-compose-actions #tutor-status{font-size:13px;color:var(--muted);margin-right:auto}.tutor-boundary{font-size:13px;color:var(--muted);margin:13px 0;max-width:860px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.lesson-item-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:stretch}.lesson-item-row .lesson-item{min-width:0}.lesson-ask-ai{align-self:center;white-space:nowrap}
 @media(max-width:600px){.ai-language{max-width:none}.tutor-context>a{width:100%;margin-left:0}.tutor-messages{min-height:300px;padding:16px}.tutor-message{max-width:94%;font-size:15px}.tutor-shortcuts{padding-left:12px;padding-right:12px}.tutor-composer{padding:10px 12px 13px}.tutor-compose-actions{flex-wrap:wrap}.tutor-compose-actions #tutor-status{width:100%}.tutor-compose-actions button{flex:1}.lesson-item-row{grid-template-columns:minmax(0,1fr)}.lesson-ask-ai{justify-self:end;margin-top:-4px}}
+/* Phase 4E focused deterministic practice */
+.practice-shell{max-width:760px;margin:1.5rem auto;padding:clamp(1rem,4vw,2rem)}
+.practice-top{display:flex;gap:.75rem;align-items:center;margin-bottom:1rem}
+.practice-shell h2{font-size:clamp(1.25rem,4vw,2rem);line-height:1.45;overflow-wrap:anywhere}
+.practice-shell fieldset{border:0;padding:0;margin:1.25rem 0}
+.practice-choices{display:grid;gap:.75rem}
+.practice-choices label{display:block;cursor:pointer;position:relative}
+.practice-choices input{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px;inset-inline-start:1rem;top:1rem}
+.practice-choices span{display:flex;align-items:center;gap:.9rem;min-height:56px;border:1px solid var(--line,#d8ddd3);border-radius:14px;padding:.85rem 1rem;background:var(--surface,#fff);overflow-wrap:anywhere}
+.practice-choices b{display:grid;place-items:center;flex:0 0 2rem;height:2rem;border-radius:50%;background:#edf1e8}
+.practice-choices input:focus-visible+span{outline:3px solid #236b4b;outline-offset:3px}
+.practice-choices input:checked+span{border-color:#236b4b;box-shadow:inset 0 0 0 2px #236b4b}
+.practice-submit{position:sticky;bottom:0;padding:.75rem 0;background:linear-gradient(transparent,var(--page,#f7f8f4) 30%)}
+.practice-submit button,#practice-next{width:100%;min-height:48px}
+.practice-feedback{min-height:1.5rem;margin:1rem 0;padding:.75rem 0}
+.practice-feedback.success{border-left:4px solid #237a4b;padding-left:1rem}
+.practice-feedback.wrong{border-left:4px solid #a33a32;padding-left:1rem}
+.practice-summary{max-width:680px;margin:1.5rem auto;text-align:center}
+.practice-summary dl{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin:1.5rem 0}
+.practice-summary dl div{padding:1rem;border-radius:12px;background:#f0f3ec}
+.practice-summary dt{font-size:.875rem}.practice-summary dd{font-size:1.75rem;font-weight:700;margin:.25rem 0 0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:430px){.practice-shell{margin:.75rem 0}.practice-summary dl{grid-template-columns:1fr}.practice-choices span{min-height:60px}.nav{gap:.35rem}.nav a{padding:.35rem}}

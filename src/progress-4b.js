@@ -1,5 +1,6 @@
 import {getAuthenticatedSession} from './auth-4a.js';
 import {getReviewSnapshot,recommendationData} from './recommendations-4d.js';
+import {practiceSession,resolvePracticeExercise,normalizePracticeAnswer,lessonEvidence} from './practice-4e.js';
 
 const SECTION_KEYS = new Set(['overview', 'vocabulary', 'grammar', 'expressions', 'scenario', 'practice']);
 const ID_PATTERN = /^[a-z0-9][a-z0-9-]{0,95}$/;
@@ -47,10 +48,7 @@ async function readBody(request, allowed) {
   return body;
 }
 
-function normalizeAnswer(value, language) {
-  const normalized = String(value).normalize('NFKC').trim().replace(/\s+/g, ' ');
-  return language === 'en' ? normalized.toLocaleLowerCase('en') : normalized;
-}
+const normalizeAnswer = normalizePracticeAnswer;
 
 async function canonicalItem(db, type, id) {
   if (type === 'vocabulary') return db.prepare(`SELECT id,language,lemma AS answer
@@ -68,22 +66,35 @@ async function progressRow(db, userId, type, id) {
 
 async function recordAttempt(request, env, session, now) {
   let body;
-  try { body = await readBody(request, new Set(['attempt_id', 'content_type', 'content_id', 'answer'])); }
+  try {
+    if (!(request.headers.get('Content-Type') || '').toLowerCase().startsWith('application/json')) throw new Error('INVALID_JSON');
+    body = await request.json();
+    const tokenized=body&&typeof body==='object'&&!Array.isArray(body)&&Object.hasOwn(body,'exercise_token');
+    const allowed=tokenized?new Set(['attempt_id','exercise_token','answer']):new Set(['attempt_id','content_type','content_id','answer']);
+    if(!body||typeof body!=='object'||Array.isArray(body)||Object.keys(body).some(key=>!allowed.has(key)))throw new Error('INVALID_BODY');
+  }
   catch { return fail(400, 'INVALID_REQUEST', '请提交有效的练习答案。'); }
-  if (!ATTEMPT_PATTERN.test(body.attempt_id || '') || !['vocabulary', 'grammar'].includes(body.content_type) ||
-      !ID_PATTERN.test(body.content_id || '') || typeof body.answer !== 'string' || !body.answer.trim() || body.answer.length > 200) {
+  if (!ATTEMPT_PATTERN.test(body.attempt_id || '') || typeof body.answer !== 'string' || !body.answer.trim() || body.answer.length > 200) {
     return fail(400, 'INVALID_REQUEST', '请提交有效的练习答案。');
   }
-  const existing = await env.DB.prepare(`SELECT content_type,content_id,result FROM learning_attempts
-    WHERE user_id = ? AND attempt_id = ?`).bind(session.user_id, body.attempt_id).first();
+  let spec=null;
+  if(body.exercise_token){try{spec=await resolvePracticeExercise(body.exercise_token,env,session);}catch(cause){return fail(cause?.message==='STALE_EXERCISE'?409:400,cause?.message==='STALE_EXERCISE'?'STALE_EXERCISE':'INVALID_EXERCISE',cause?.message==='STALE_EXERCISE'?'练习内容已更新，请重新加载。':'练习标识无效或已被修改。');}body.content_type=spec.content_type;body.content_id=spec.content_id;}
+  if (!['vocabulary', 'grammar'].includes(body.content_type) || !ID_PATTERN.test(body.content_id || '')) return fail(400, 'INVALID_REQUEST', '请提交有效的练习答案。');
+  const existing = spec
+    ? await env.DB.prepare(`SELECT content_type,content_id,result,exercise_type,context_type,context_id FROM learning_attempts WHERE user_id = ? AND attempt_id = ?`).bind(session.user_id,body.attempt_id).first()
+    : await env.DB.prepare(`SELECT content_type,content_id,result FROM learning_attempts WHERE user_id = ? AND attempt_id = ?`).bind(session.user_id, body.attempt_id).first();
   if (existing && (existing.content_type !== body.content_type || existing.content_id !== body.content_id)) {
     return fail(409, 'ATTEMPT_ID_CONFLICT', '这次练习标识已用于其他内容，请重新作答。');
   }
+  if(existing&&spec&&(existing.exercise_type!==spec.exercise_type||existing.context_type!==spec.context_type||existing.context_id!==spec.context_id))return fail(409,'ATTEMPT_ID_CONFLICT','这次练习标识已用于其他题目或练习场景，请重新作答。');
   const item = await canonicalItem(env.CONTENT_DB || env.DB, body.content_type, body.content_id);
   if (!item) return fail(404, 'CONTENT_NOT_FOUND', '练习内容不存在或尚未发布。');
   if (!existing) {
-    const correct = normalizeAnswer(body.answer, item.language) === normalizeAnswer(item.answer, item.language);
-    await env.DB.prepare(`INSERT OR IGNORE INTO learning_attempts
+    const expected=spec?.answer??item.answer,correct=normalizeAnswer(body.answer,item.language)===normalizeAnswer(expected,item.language);
+    if(spec)await env.DB.prepare(`INSERT OR IGNORE INTO learning_attempts
+      (user_id,attempt_id,content_type,content_id,result,created_at,exercise_type,context_type,context_id) VALUES(?,?,?,?,?,?,?,?,?)`)
+      .bind(session.user_id,body.attempt_id,body.content_type,body.content_id,correct?1:0,now,spec.exercise_type,spec.context_type,spec.context_id).run();
+    else await env.DB.prepare(`INSERT OR IGNORE INTO learning_attempts
       (user_id,attempt_id,content_type,content_id,result,created_at) VALUES(?,?,?,?,?,?)`)
       .bind(session.user_id, body.attempt_id, body.content_type, body.content_id, correct ? 1 : 0, now).run();
   }
@@ -92,7 +103,7 @@ async function recordAttempt(request, env, session, now) {
       .bind(session.user_id, body.attempt_id).first(),
     progressRow(env.DB, session.user_id, body.content_type, body.content_id)
   ]);
-  return json({data: {correct: Boolean(attempt.result), expected_answer: item.answer, progress: publicProgress(row), idempotent: Boolean(existing)}});
+  return json({data: {correct: Boolean(attempt.result), expected_answer: spec?.answer??item.answer, submitted_answer: body.answer, ...(spec?{content_type:spec.content_type,content_id:spec.content_id,exercise_type:spec.exercise_type,context:{type:spec.context_type,...(spec.context_id?{id:spec.context_id}:{})}}:{}), feedback:Boolean(attempt.result)?'回答正确。':'答案不匹配，请对照参考答案再试一次。', progress: publicProgress(row), idempotent: Boolean(existing)}});
 }
 
 function idsFrom(url) {
@@ -253,6 +264,11 @@ async function lessonMutation(request, env, session, id, action, now) {
       WHERE user_id=? AND lesson_id=? AND status='in_progress' AND last_section_key<>?`)
       .bind(body.section_key, now, session.user_id, id, body.section_key).run());
   } else {
+    const prior=await env.DB.prepare('SELECT * FROM lesson_progress WHERE user_id=? AND lesson_id=?').bind(session.user_id,id).first();
+    if(prior?.status==='completed')return json({data:{id,status:prior.status,started_at:Number(prior.started_at),completed_at:Number(prior.completed_at),last_activity_at:Number(prior.last_activity_at),last_section_key:prior.last_section_key,changed:false,grandfathered:true}});
+    const evidence=await lessonEvidence(env.DB,session.user_id,id);
+    if(!evidence)return fail(404,'LESSON_NOT_FOUND','课程不存在或尚未发布。');
+    if(!evidence.eligible)return json({error:{code:'LESSON_PRACTICE_REQUIRED',message:`还需完成 ${Math.max(evidence.remaining_items,evidence.remaining_attempts)} 项本课练习后才能完成课程。`,evidence}},409);
     changed = countChanges(await env.DB.prepare(`INSERT INTO lesson_progress
       (user_id,lesson_id,status,started_at,completed_at,last_activity_at,last_section_key)
       VALUES(?,?,'completed',?,?,?,'practice')
@@ -280,6 +296,10 @@ export async function progress(request, env, overrides = {}) {
       if (!isWrite) return fail(405, 'METHOD_NOT_ALLOWED', '请使用 POST。', {Allow: 'POST'});
       return await recordAttempt(request, env, session, services.now());
     }
+    if (url.pathname === '/api/practice/session') {
+      if (request.method !== 'GET') return fail(405, 'METHOD_NOT_ALLOWED', '请使用 GET。', {Allow: 'GET'});
+      return json(await practiceSession(url, env, session));
+    }
     const lessonMatch = url.pathname.match(/^\/api\/lessons\/([^/]+)\/(start|position|complete)$/);
     if (lessonMatch) {
       if (!isWrite) return fail(405, 'METHOD_NOT_ALLOWED', '请使用 POST。', {Allow: 'POST'});
@@ -297,6 +317,7 @@ export async function progress(request, env, overrides = {}) {
     return fail(404, 'NOT_FOUND', '学习记录接口不存在。');
   } catch (cause) {
     if (cause?.message === 'INVALID_QUERY') return fail(400, 'INVALID_REQUEST', '查询参数无效。');
+    if (cause?.message === 'LESSON_NOT_FOUND') return fail(404, 'LESSON_NOT_FOUND', '课程不存在或尚未发布。');
     console.error('[progress] request failed', cause instanceof Error ? cause.name : 'UnknownError');
     return fail(500, 'PROGRESS_ERROR', '学习记录暂时不可用。');
   }
