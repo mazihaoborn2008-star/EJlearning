@@ -50,20 +50,18 @@ BEGIN
     last_seen_at = NEW.created_at,
     last_correct_at = IIF(NEW.result = 1, NEW.created_at, last_correct_at),
     last_wrong_at = IIF(NEW.result = 0, NEW.created_at, last_wrong_at),
-    review_stage = CASE WHEN NEW.result = 0 THEN 0 WHEN correct_streak >= 5 THEN 6 ELSE correct_streak + 1 END,
+    review_stage = IIF(NEW.result = 0, 0, IIF(correct_streak >= 5, 6, correct_streak + 1)),
     review_count = review_count + 1,
     lapse_count = lapse_count + (1 - NEW.result),
     last_reviewed_at = NEW.created_at,
-    current_interval_seconds = CASE
-      WHEN NEW.result = 0 THEN 600 WHEN correct_streak = 0 THEN 86400
-      WHEN correct_streak = 1 THEN 259200 WHEN correct_streak = 2 THEN 604800
-      WHEN correct_streak = 3 THEN 1209600 WHEN correct_streak = 4 THEN 2592000
-      ELSE 5184000 END,
-    next_review_at = NEW.created_at + CASE
-      WHEN NEW.result = 0 THEN 600 WHEN correct_streak = 0 THEN 86400
-      WHEN correct_streak = 1 THEN 259200 WHEN correct_streak = 2 THEN 604800
-      WHEN correct_streak = 3 THEN 1209600 WHEN correct_streak = 4 THEN 2592000
-      ELSE 5184000 END;
+    current_interval_seconds = IIF(NEW.result = 0, 600,
+      IIF(correct_streak = 0, 86400, IIF(correct_streak = 1, 259200,
+      IIF(correct_streak = 2, 604800, IIF(correct_streak = 3, 1209600,
+      IIF(correct_streak = 4, 2592000, 5184000)))))),
+    next_review_at = NEW.created_at + IIF(NEW.result = 0, 600,
+      IIF(correct_streak = 0, 86400, IIF(correct_streak = 1, 259200,
+      IIF(correct_streak = 2, 604800, IIF(correct_streak = 3, 1209600,
+      IIF(correct_streak = 4, 2592000, 5184000))))));
 END;
 
 DROP TRIGGER learning_attempt_grammar_apply;
@@ -94,18 +92,16 @@ BEGIN
     last_seen_at = NEW.created_at,
     last_correct_at = IIF(NEW.result = 1, NEW.created_at, last_correct_at),
     last_wrong_at = IIF(NEW.result = 0, NEW.created_at, last_wrong_at),
-    review_stage = CASE WHEN NEW.result = 0 THEN 0 WHEN correct_streak >= 5 THEN 6 ELSE correct_streak + 1 END,
+    review_stage = IIF(NEW.result = 0, 0, IIF(correct_streak >= 5, 6, correct_streak + 1)),
     review_count = review_count + 1,
     lapse_count = lapse_count + (1 - NEW.result),
     last_reviewed_at = NEW.created_at,
-    current_interval_seconds = CASE
-      WHEN NEW.result = 0 THEN 600 WHEN correct_streak = 0 THEN 86400
-      WHEN correct_streak = 1 THEN 259200 WHEN correct_streak = 2 THEN 604800
-      WHEN correct_streak = 3 THEN 1209600 WHEN correct_streak = 4 THEN 2592000
-      ELSE 5184000 END,
-    next_review_at = NEW.created_at + CASE
-      WHEN NEW.result = 0 THEN 600 WHEN correct_streak = 0 THEN 86400
-      WHEN correct_streak = 1 THEN 259200 WHEN correct_streak = 2 THEN 604800
-      WHEN correct_streak = 3 THEN 1209600 WHEN correct_streak = 4 THEN 2592000
-      ELSE 5184000 END;
+    current_interval_seconds = IIF(NEW.result = 0, 600,
+      IIF(correct_streak = 0, 86400, IIF(correct_streak = 1, 259200,
+      IIF(correct_streak = 2, 604800, IIF(correct_streak = 3, 1209600,
+      IIF(correct_streak = 4, 2592000, 5184000)))))),
+    next_review_at = NEW.created_at + IIF(NEW.result = 0, 600,
+      IIF(correct_streak = 0, 86400, IIF(correct_streak = 1, 259200,
+      IIF(correct_streak = 2, 604800, IIF(correct_streak = 3, 1209600,
+      IIF(correct_streak = 4, 2592000, 5184000))))));
 END;
