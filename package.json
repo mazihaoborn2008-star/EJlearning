@@ -117,6 +117,9 @@
     "test:4a": "npm run test:4a:auth && npm run test:4a:smtp && npm run test:36:api && npm run test:staging-db",
     "test:4b:progress": "node --test tests/phase4b-progress.test.js",
     "test:4b:browser": "node tests/phase4b-browser.cjs",
+    "test:4c:srs": "node --test tests/phase4c-srs.test.js",
+    "test:4c:browser": "node tests/phase4c-browser.cjs",
+    "test:4c": "npm run test:4c:srs && npm run test:4b && npm run test:36:browser && npm run test:4c:browser",
     "test:4b": "npm run test:4b:progress && npm run test:4b:browser && npm run test:4a && npm run test:4a:browser && npm run test:36:api",
     "check:4b": "node scripts/deploy-staging.js wrangler.36.jsonc --dry-run"
   },

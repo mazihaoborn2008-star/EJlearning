@@ -23,6 +23,12 @@ const publicProgress = row => row ? {
   last_seen_at: Number(row.last_seen_at),
   last_correct_at: row.last_correct_at == null ? null : Number(row.last_correct_at),
   last_wrong_at: row.last_wrong_at == null ? null : Number(row.last_wrong_at),
+  review_stage: row.review_stage == null ? null : Number(row.review_stage),
+  review_count: Number(row.review_count || 0),
+  lapse_count: Number(row.lapse_count || 0),
+  last_reviewed_at: row.last_reviewed_at == null ? null : Number(row.last_reviewed_at),
+  next_review_at: row.next_review_at == null ? null : Number(row.next_review_at),
+  current_interval_seconds: row.current_interval_seconds == null ? null : Number(row.current_interval_seconds),
   state: stateFor(row)
 } : null;
 
@@ -170,6 +176,72 @@ async function recent(url, db, userId) {
   return json({data: (result.results || []).map(row => ({...row, activity_at: Number(row.activity_at)}))});
 }
 
+function reviewQuery(url) {
+  if ([...url.searchParams.keys()].some(key => !['type', 'limit'].includes(key))) throw new Error('INVALID_QUERY');
+  const type = url.searchParams.get('type') || 'all';
+  const limit = url.searchParams.has('limit') ? Number(url.searchParams.get('limit')) : 20;
+  if (!['all', 'vocabulary', 'grammar'].includes(type) || !Number.isInteger(limit) || limit < 1 || limit > 50 ||
+      url.searchParams.getAll('type').length > 1 || url.searchParams.getAll('limit').length > 1) throw new Error('INVALID_QUERY');
+  return {type, limit};
+}
+
+const reviewItem = row => ({
+  type: row.type,
+  id: row.id,
+  language: row.language,
+  prompt: row.prompt,
+  next_review_at: Number(row.next_review_at),
+  overdue_seconds: Number(row.overdue_seconds),
+  progress: {
+    attempts: Number(row.attempts),
+    correct_count: Number(row.correct_count),
+    wrong_count: Number(row.wrong_count),
+    correct_streak: Number(row.correct_streak),
+    review_stage: Number(row.review_stage),
+    review_count: Number(row.review_count),
+    lapse_count: Number(row.lapse_count),
+    current_interval_seconds: Number(row.current_interval_seconds)
+  }
+});
+
+async function reviewQueue(url, db, userId, now) {
+  const {type, limit} = reviewQuery(url), reads = [];
+  if (type !== 'grammar') reads.push(db.prepare(`SELECT 'vocabulary' AS type,p.vocabulary_id AS id,v.language,
+      COALESCE((SELECT s.meaning_zh FROM v2_vocabulary_senses s WHERE s.item_id=p.vocabulary_id ORDER BY s.sort_order,s.id LIMIT 1),'词汇') AS prompt,
+      p.next_review_at,? - p.next_review_at AS overdue_seconds,p.attempts,p.correct_count,p.wrong_count,p.correct_streak,
+      p.review_stage,p.review_count,p.lapse_count,p.current_interval_seconds
+    FROM vocabulary_progress p JOIN v2_vocabulary_items v ON v.id=p.vocabulary_id
+    WHERE p.user_id=? AND p.next_review_at IS NOT NULL AND p.next_review_at<=? AND v.publication_state='published'
+    ORDER BY p.next_review_at,p.vocabulary_id LIMIT ?`).bind(now, userId, now, limit).all());
+  if (type !== 'vocabulary') reads.push(db.prepare(`SELECT 'grammar' AS type,p.grammar_id AS id,g.language,g.title_zh AS prompt,
+      p.next_review_at,? - p.next_review_at AS overdue_seconds,p.attempts,p.correct_count,p.wrong_count,p.correct_streak,
+      p.review_stage,p.review_count,p.lapse_count,p.current_interval_seconds
+    FROM grammar_progress p JOIN v2_grammar_points g ON g.id=p.grammar_id
+    WHERE p.user_id=? AND p.next_review_at IS NOT NULL AND p.next_review_at<=? AND g.publication_state='published'
+    ORDER BY p.next_review_at,p.grammar_id LIMIT ?`).bind(now, userId, now, limit).all());
+  const rows = (await Promise.all(reads)).flatMap(result => result.results || [])
+    .sort((a, b) => Number(a.next_review_at) - Number(b.next_review_at) || a.type.localeCompare(b.type) || a.id.localeCompare(b.id))
+    .slice(0, limit);
+  return json({data: rows.map(reviewItem), meta: {server_time: now, type, limit, returned: rows.length}});
+}
+
+async function reviewSummary(url, db, userId, now) {
+  if ([...url.searchParams.keys()].length) throw new Error('INVALID_QUERY');
+  const sql = table => db.prepare(`SELECT
+      EXISTS(SELECT 1 FROM ${table} WHERE user_id=? LIMIT 1) AS has_learned,
+      (SELECT COUNT(*) FROM ${table} WHERE user_id=? AND next_review_at IS NOT NULL) AS scheduled_count,
+      (SELECT COUNT(*) FROM ${table} WHERE user_id=? AND next_review_at IS NOT NULL AND next_review_at<=?) AS due_count,
+      (SELECT next_review_at FROM ${table} WHERE user_id=? AND next_review_at>? ORDER BY next_review_at LIMIT 1) AS next_upcoming_at`)
+    .bind(userId, userId, userId, now, userId, now).first();
+  const [vocabulary, grammar] = await Promise.all([sql('vocabulary_progress'), sql('grammar_progress')]);
+  const normalize = row => ({has_learned: Boolean(row.has_learned), scheduled_count: Number(row.scheduled_count), due_count: Number(row.due_count), next_upcoming_at: row.next_upcoming_at == null ? null : Number(row.next_upcoming_at)});
+  const v = normalize(vocabulary), g = normalize(grammar);
+  const upcoming = [v.next_upcoming_at, g.next_upcoming_at].filter(value => value != null);
+  return json({data: {server_time: now, vocabulary: v, grammar: g, total_due: v.due_count + g.due_count,
+    has_learned: v.has_learned || g.has_learned, total_scheduled: v.scheduled_count + g.scheduled_count,
+    next_review_at: upcoming.length ? Math.min(...upcoming) : null}});
+}
+
 async function publishedLesson(db, id) {
   return db.prepare(`SELECT id,title,language,stage FROM lesson_units WHERE id=? AND status='published'`).bind(id).first();
 }
@@ -225,6 +297,8 @@ export async function progress(request, env, overrides = {}) {
       return await lessonMutation(request, env, session, decodeURIComponent(lessonMatch[1]), lessonMatch[2], services.now());
     }
     if (request.method !== 'GET') return fail(405, 'METHOD_NOT_ALLOWED', '请使用 GET。', {Allow: 'GET'});
+    if (url.pathname === '/api/review/summary') return await reviewSummary(url, env.DB, session.user_id, services.now());
+    if (url.pathname === '/api/review/queue') return await reviewQueue(url, env.DB, session.user_id, services.now());
     if (url.pathname === '/api/progress/summary') return await summary(env.DB, session.user_id, services.now());
     if (url.pathname === '/api/progress/recent') return await recent(url, env.DB, session.user_id);
     if (url.pathname === '/api/progress/vocabulary') return await itemProgress(url, env.DB, session.user_id, 'vocabulary');
@@ -238,4 +312,6 @@ export async function progress(request, env, overrides = {}) {
   }
 }
 
-export const progressPolicy = Object.freeze({sectionKeys: [...SECTION_KEYS], maxBulkIds: 100, state: 'familiar requires >=3 attempts, >=80% accuracy, and a correct streak >=2'});
+export const progressPolicy = Object.freeze({sectionKeys: [...SECTION_KEYS], maxBulkIds: 100, maxReviewQueue: 50,
+  srsIntervals: [600, 86400, 259200, 604800, 1209600, 2592000, 5184000],
+  state: 'familiar requires >=3 attempts, >=80% accuracy, and a correct streak >=2'});

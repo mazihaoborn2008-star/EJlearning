@@ -15,6 +15,10 @@ function d1() {
       id TEXT PRIMARY KEY, language TEXT NOT NULL, lemma TEXT NOT NULL,
       publication_state TEXT NOT NULL
     );
+    CREATE TABLE v2_vocabulary_senses (
+      id TEXT PRIMARY KEY, item_id TEXT NOT NULL, meaning_zh TEXT NOT NULL,
+      sort_order INTEGER NOT NULL DEFAULT 0
+    );
     CREATE TABLE v2_grammar_points (
       id TEXT PRIMARY KEY, language TEXT NOT NULL, form_name TEXT NOT NULL,
       title_zh TEXT NOT NULL, publication_state TEXT NOT NULL
@@ -25,6 +29,7 @@ function d1() {
     );
   `);
   sqlite.exec(fs.readFileSync(new URL('../migrations-staging-schema/0003_phase4b_learner_progress.sql', import.meta.url), 'utf8'));
+  sqlite.exec(fs.readFileSync(new URL('../migrations-staging-schema/0004_phase4c_srs.sql', import.meta.url), 'utf8'));
   const wrap = (sql, values = []) => ({
     bind: (...next) => wrap(sql, next),
     async first() { return sqlite.prepare(sql).get(...values) || null; },
@@ -41,6 +46,7 @@ function harness() {
   insertUser.run('user-b', 'b@example.com', 'b@example.com', 1, 1);
   DB.sqlite.prepare('INSERT INTO v2_vocabulary_items VALUES(?,?,?,?)').run('en-choice', 'en', 'Choice', 'published');
   DB.sqlite.prepare('INSERT INTO v2_vocabulary_items VALUES(?,?,?,?)').run('en-draft', 'en', 'Hidden', 'draft');
+  DB.sqlite.prepare('INSERT INTO v2_vocabulary_senses VALUES(?,?,?,?)').run('sense-choice', 'en-choice', '选择', 0);
   DB.sqlite.prepare('INSERT INTO v2_grammar_points VALUES(?,?,?,?,?)').run('en-present-perfect', 'en', 'have + past participle', '现在完成时', 'published');
   DB.sqlite.prepare('INSERT INTO lesson_units VALUES(?,?,?,?,?)').run('en-s1-l1', '第一课', 'en', 1, 'published');
   let now = 2_000_000_000;

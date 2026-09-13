@@ -12,7 +12,7 @@ export default {
  async fetch(request,env,ctx){
   const url=new URL(request.url);
   if(url.pathname==='/api/me'||url.pathname.startsWith('/api/auth/'))return auth(request,env);
-  if(url.pathname==='/api/learning/attempt'||url.pathname.startsWith('/api/progress/')||/^\/api\/lessons\/[^/]+\/(?:start|position|complete)$/.test(url.pathname))return progress(request,env);
+  if(url.pathname==='/api/learning/attempt'||url.pathname.startsWith('/api/progress/')||url.pathname.startsWith('/api/review/')||/^\/api\/lessons\/[^/]+\/(?:start|position|complete)$/.test(url.pathname))return progress(request,env);
   if(url.pathname==='/api/ai/tutor')return aiTutor(request,env,ctx);
   if(url.pathname==='/api/ai/examples')return dynamicExamples(request,env,ctx);
   if(url.pathname.startsWith('/api/v2/lessons'))return lessons(request,env.DB,env.CONTENT_DB);
