@@ -6,6 +6,7 @@ const account={authenticated:true,user:{id:'user-browser',email:'learner@example
 const summary={data:{today:{attempts:2},vocabulary:{studied:1,attempts:2,correct_count:1,wrong_count:1,accuracy:50},grammar:{studied:1,attempts:3,correct_count:3,wrong_count:0,accuracy:100},lessons:{studied:2,completed:1,in_progress:1}}};
 const recent={data:[{type:'lesson',id:'en-s1-l1',title:'打招呼并开始简单交谈',language:'en',activity_at:2_000_000_000,result:null,status:'in_progress',last_section_key:'grammar'},{type:'vocabulary',id:'en-c-541',title:'choice',language:'en',activity_at:1_999_999_990,result:'correct',status:null,last_section_key:null}]};
 const reviewSummary={data:{server_time:2_000_000_000,vocabulary:{has_learned:true,scheduled_count:1,due_count:1,next_upcoming_at:null},grammar:{has_learned:true,scheduled_count:1,due_count:0,next_upcoming_at:2_000_086_400},total_due:1,has_learned:true,total_scheduled:2,next_review_at:2_000_086_400}};
+const recommendations={data:{primary_action:{type:'review_due',reason:'你有 1 个到期复习项目。',target:'/review.html',count:1},weak_vocabulary:[],weak_grammar:[],lesson:{continue:{id:'en-s1-l1',language:'en',stage:1,sequence:1,title:'打招呼并开始简单交谈',target:'/lesson.html?id=en-s1-l1&lang=en&stage=1'},next:null,paths:{en:{continue:null,next:null,complete:false},ja:{continue:null,next:null,complete:false}},all_complete:false,available:48},review:reviewSummary.data,generated_at:2_000_000_000,limits:{weak_vocabulary:5,weak_grammar:5,maximum:20}}};
 const fulfillJson=(route,body,status=200)=>route.fulfill({status,contentType:'application/json',body:JSON.stringify(body)});
 
 (async()=>{
@@ -16,9 +17,9 @@ const fulfillJson=(route,body,status=200)=>route.fulfill({status,contentType:'ap
    await page.route('**/api/me',route=>fulfillJson(route,account));
    await page.route('**/api/progress/summary',route=>fulfillJson(route,summary));
    await page.route('**/api/progress/recent?limit=8',route=>fulfillJson(route,recent));
-   await page.route('**/api/review/summary',route=>fulfillJson(route,reviewSummary));
+   await page.route('**/api/recommendations',route=>fulfillJson(route,recommendations));
    await page.goto(base+'/progress.html');await page.getByRole('heading',{name:'我的学习'}).waitFor();
-   await page.getByText('50%').waitFor();assert(await page.getByRole('link',{name:/继续学习/}).isVisible());
+   await page.getByText('50%').waitFor();assert(await page.getByRole('link',{name:/开始复习/}).isVisible());
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`dashboard overflow at ${width}px`);assert.deepEqual(errors,[]);await page.close();
   }
 

@@ -120,6 +120,9 @@
     "test:4c:srs": "node --test tests/phase4c-srs.test.js",
     "test:4c:browser": "node tests/phase4c-browser.cjs",
     "test:4c": "npm run test:4c:srs && npm run test:4b && npm run test:36:browser && npm run test:4c:browser",
+    "test:4d:recommendations": "node --test tests/phase4d-recommendations.test.js",
+    "test:4d:browser": "node tests/phase4d-browser.cjs",
+    "test:4d": "npm run test:4d:recommendations && npm run test:4c && npm run test:4d:browser",
     "test:4b": "npm run test:4b:progress && npm run test:4b:browser && npm run test:4a && npm run test:4a:browser && npm run test:36:api",
     "check:4b": "node scripts/deploy-staging.js wrangler.36.jsonc --dry-run"
   },

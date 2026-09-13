@@ -5,6 +5,12 @@ const cols={u:['id','language','stage','topic_id','title','objective','sequence'
 const records=(data,keys)=>data.map(values=>Object.fromEntries(keys.map((key,i)=>[key,values[i]])));
 async function bundle(db){try{const exists=await db.prepare("SELECT 1 found FROM sqlite_master WHERE type='table' AND name='lesson_bundles' LIMIT 1").first();if(exists){const row=await db.prepare("SELECT payload_json FROM lesson_bundles WHERE id IN ('phase-35e1c-v2','phase-35e1c-v1','phase-35d-v1') ORDER BY CASE id WHEN 'phase-35e1c-v2' THEN 0 WHEN 'phase-35e1c-v1' THEN 1 ELSE 2 END LIMIT 1").first();if(row?.payload_json)return JSON.parse(row.payload_json);}}catch{}return auditedBundle;}
 const decoded=b=>({units:records(b.u,cols.u),prerequisites:records(b.p,cols.p),items:records(b.i,cols.i),exams:records(b.e,cols.e)});
+export async function publishedLessonCurriculum(db){
+ const data=decoded(await bundle(db));
+ const lessons=data.units.filter(x=>x.status==='published').sort((a,c)=>a.language.localeCompare(c.language)||a.stage-c.stage||a.sequence-c.sequence||a.id.localeCompare(c.id));
+ const publishedIds=new Set(lessons.map(x=>x.id));
+ return {lessons,prerequisites:data.prerequisites.filter(x=>publishedIds.has(x.lesson_id)&&publishedIds.has(x.prerequisite_lesson_id))};
+}
 async function addTopics(data,contentDb){if(!data.length)return data;const ids=[...new Set(data.map(x=>x.topic_id))],found=await rows(contentDb,`SELECT id,name_zh FROM v2_topics WHERE id IN (${marks(ids.length)})`,...ids),map=new Map(found.map(x=>[x.id,x.name_zh]));return data.map(x=>({...x,topic:map.get(x.topic_id)||x.topic_id}));}
 async function canonical(db,table,columns,ids,extra='',idColumn='id'){if(!ids.length)return [];return rows(db,`SELECT ${columns} FROM ${table} WHERE ${idColumn} IN (${marks(ids.length)}) ${extra}`,...ids);}
 const merge=(links,content)=>{const map=new Map(content.map(x=>[x.id,x]));return links.map(link=>({...map.get(link.content_id),role:link.role,required:link.required,sequence:link.sequence})).filter(x=>x.id);};

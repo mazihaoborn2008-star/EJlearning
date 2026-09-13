@@ -1,4 +1,5 @@
 import {getAuthenticatedSession} from './auth-4a.js';
+import {getReviewSnapshot,recommendationData} from './recommendations-4d.js';
 
 const SECTION_KEYS = new Set(['overview', 'vocabulary', 'grammar', 'expressions', 'scenario', 'practice']);
 const ID_PATTERN = /^[a-z0-9][a-z0-9-]{0,95}$/;
@@ -227,19 +228,7 @@ async function reviewQueue(url, db, userId, now) {
 
 async function reviewSummary(url, db, userId, now) {
   if ([...url.searchParams.keys()].length) throw new Error('INVALID_QUERY');
-  const sql = table => db.prepare(`SELECT
-      EXISTS(SELECT 1 FROM ${table} WHERE user_id=? LIMIT 1) AS has_learned,
-      (SELECT COUNT(*) FROM ${table} WHERE user_id=? AND next_review_at IS NOT NULL) AS scheduled_count,
-      (SELECT COUNT(*) FROM ${table} WHERE user_id=? AND next_review_at IS NOT NULL AND next_review_at<=?) AS due_count,
-      (SELECT next_review_at FROM ${table} WHERE user_id=? AND next_review_at>? ORDER BY next_review_at LIMIT 1) AS next_upcoming_at`)
-    .bind(userId, userId, userId, now, userId, now).first();
-  const [vocabulary, grammar] = await Promise.all([sql('vocabulary_progress'), sql('grammar_progress')]);
-  const normalize = row => ({has_learned: Boolean(row.has_learned), scheduled_count: Number(row.scheduled_count), due_count: Number(row.due_count), next_upcoming_at: row.next_upcoming_at == null ? null : Number(row.next_upcoming_at)});
-  const v = normalize(vocabulary), g = normalize(grammar);
-  const upcoming = [v.next_upcoming_at, g.next_upcoming_at].filter(value => value != null);
-  return json({data: {server_time: now, vocabulary: v, grammar: g, total_due: v.due_count + g.due_count,
-    has_learned: v.has_learned || g.has_learned, total_scheduled: v.scheduled_count + g.scheduled_count,
-    next_review_at: upcoming.length ? Math.min(...upcoming) : null}});
+  return json({data: await getReviewSnapshot(db, userId, now)});
 }
 
 async function publishedLesson(db, id) {
@@ -299,6 +288,7 @@ export async function progress(request, env, overrides = {}) {
     if (request.method !== 'GET') return fail(405, 'METHOD_NOT_ALLOWED', '请使用 GET。', {Allow: 'GET'});
     if (url.pathname === '/api/review/summary') return await reviewSummary(url, env.DB, session.user_id, services.now());
     if (url.pathname === '/api/review/queue') return await reviewQueue(url, env.DB, session.user_id, services.now());
+    if (url.pathname === '/api/recommendations') return json({data: await recommendationData(url, env, session.user_id, services.now())});
     if (url.pathname === '/api/progress/summary') return await summary(env.DB, session.user_id, services.now());
     if (url.pathname === '/api/progress/recent') return await recent(url, env.DB, session.user_id);
     if (url.pathname === '/api/progress/vocabulary') return await itemProgress(url, env.DB, session.user_id, 'vocabulary');
