@@ -82,12 +82,15 @@ test('ambiguous authored completion is not generated and safely falls back to fo
  const loaded=await session(h,'type=grammar&mode=selection&limit=1&content_id=g-might');assert.equal(loaded.body.data.length,1);assert.equal(loaded.body.data[0].exercise_type,'grammar_form_selection');
 });
 
-test('tampering, cross-user replay, forged authority fields, and mixed identity fields are rejected without writes',async()=>{
+test('tampering, cross-user replay, forged authority fields, mixed identity fields, and off-list choices are rejected without writes',async()=>{
  const h=harness(),exercise=(await session(h,'type=vocabulary&mode=recognition&limit=1')).body.data[0],before=h.DB.sqlite.prepare('SELECT total_changes() n').get().n;
  const at=Math.floor(exercise.exercise_id.length/2),tampered=exercise.exercise_id.slice(0,at)+(exercise.exercise_id[at]==='A'?'B':'A')+exercise.exercise_id.slice(at+1);assert.equal((await answer(h,{exercise_id:tampered},'甲','tampered_token_001')).response.status,400);
  assert.equal((await answer(h,exercise,'甲','foreign_replay_001','user-b')).response.status,400);
  const forged=await call(h,'/api/learning/attempt',{method:'POST',body:{attempt_id:'forged_fields_0001',exercise_token:exercise.exercise_id,answer:'甲',correct:true}});assert.equal(forged.response.status,400);
+ const forgedType=await call(h,'/api/learning/attempt',{method:'POST',body:{attempt_id:'forged_type_000001',exercise_token:exercise.exercise_id,answer:'甲',exercise_type:'vocabulary_typed_recall'}});assert.equal(forgedType.response.status,400);
+ const forgedContext=await call(h,'/api/learning/attempt',{method:'POST',body:{attempt_id:'forged_context_001',exercise_token:exercise.exercise_id,answer:'甲',context_type:'lesson',context_id:'en-s1-l1'}});assert.equal(forgedContext.response.status,400);
  const mixed=await call(h,'/api/learning/attempt',{method:'POST',body:{attempt_id:'mixed_fields_00001',exercise_token:exercise.exercise_id,answer:'甲',content_id:'v-bravo'}});assert.equal(mixed.response.status,400);
+ assert.equal((await answer(h,exercise,'not a visible choice','off_list_choice_001')).response.status,400);
  assert.equal(h.DB.sqlite.prepare('SELECT total_changes() n').get().n,before);
 });
 

@@ -79,6 +79,7 @@ async function recordAttempt(request, env, session, now) {
   }
   let spec=null;
   if(body.exercise_token){try{spec=await resolvePracticeExercise(body.exercise_token,env,session);}catch(cause){return fail(cause?.message==='STALE_EXERCISE'?409:400,cause?.message==='STALE_EXERCISE'?'STALE_EXERCISE':'INVALID_EXERCISE',cause?.message==='STALE_EXERCISE'?'练习内容已更新，请重新加载。':'练习标识无效或已被修改。');}body.content_type=spec.content_type;body.content_id=spec.content_id;}
+  if(spec?.choices&&!spec.choices.some(choice=>normalizeAnswer(choice,spec.language)===normalizeAnswer(body.answer,spec.language)))return fail(400,'INVALID_EXERCISE','答案不属于这道练习，请重新加载。');
   if (!['vocabulary', 'grammar'].includes(body.content_type) || !ID_PATTERN.test(body.content_id || '')) return fail(400, 'INVALID_REQUEST', '请提交有效的练习答案。');
   const existing = spec
     ? await env.DB.prepare(`SELECT content_type,content_id,result,exercise_type,context_type,context_id FROM learning_attempts WHERE user_id = ? AND attempt_id = ?`).bind(session.user_id,body.attempt_id).first()
