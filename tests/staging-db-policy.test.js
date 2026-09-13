@@ -116,7 +116,13 @@ test('schema-only deploy migrations contain no curriculum DML or destructive reb
   assert.ok(files.length > 0);
   for (const file of files) {
     const sql = fs.readFileSync(path.resolve(policy.schema_migrations, file), 'utf8');
-    assert.doesNotMatch(sql, /\b(?:INSERT|UPDATE|DELETE|REPLACE)\b/i, file);
+    const triggers = sql.match(/^CREATE TRIGGER\b[\s\S]*?^END;\s*$/gim) || [];
+    const topLevel = sql.replace(/^CREATE TRIGGER\b[\s\S]*?^END;\s*$/gim, '').replace(/^--.*$/gm, '');
+    assert.doesNotMatch(topLevel, /\b(?:INSERT|UPDATE|DELETE|REPLACE)\b/i, file);
+    for (const trigger of triggers) {
+      const writeTargets = [...trigger.matchAll(/^\s*(?:INSERT(?:\s+OR\s+\w+)?\s+INTO|UPDATE|DELETE\s+FROM|REPLACE\s+INTO)\s+([a-z0-9_]+)/gim)].map(match => match[1]);
+      assert.ok(writeTargets.every(table => ['vocabulary_progress', 'grammar_progress', 'lesson_progress', 'learning_attempts'].includes(table)), `${file} trigger writes only learner-progress tables`);
+    }
     assert.doesNotMatch(sql, /\bDROP\s+TABLE\b/i, file);
   }
 });

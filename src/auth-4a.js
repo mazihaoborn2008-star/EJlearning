@@ -246,8 +246,13 @@ async function currentSession(request, env, services, touch = true) {
   return row;
 }
 
+export async function getAuthenticatedSession(request, env, options = {}) {
+  if (!env.DB || typeof env.AUTH_SECRET !== 'string' || env.AUTH_SECRET.length < 32) return null;
+  return currentSession(request, env, {...defaults, now: options.now || defaults.now}, options.touch === true);
+}
+
 async function me(request, env, services) {
-  const session = await currentSession(request, env, services);
+  const session = await currentSession(request, env, services, false);
   if (!session) return json({authenticated: false});
   return json({authenticated: true, user: {id: session.user_id, email: session.email_display}});
 }

@@ -18,6 +18,17 @@ export const posTaxonomy={
 export const compactPos=(language,pos)=>language==='en'?({'noun':'n.','verb':'v.','adjective':'adj.','adverb':'adv.','pronoun':'pron.','preposition':'prep.','conjunction':'conj.','determiner':'det.','numeral':'num.','auxiliary':'aux.','noun phrase':'n. phr.','verb phrase':'v. phr.','phrasal verb':'phr. v.','adjective phrase':'adj. phr.','prepositional phrase':'prep. phr.','fixed expression':'expr.','proper noun':'prop. n.','interjection':'int.'}[pos]||pos):(Object.fromEntries(posTaxonomy.ja)[pos]||pos);
 export const fullPos=(language,pos)=>Object.fromEntries(posTaxonomy[language]||[])[pos]||posNames[pos]||pos;
 export const registerNames={neutral:'日常 / 中性',formal:'正式',casual:'随意'};
+let accountRequest;
+export function account(){
+ if(!accountRequest)accountRequest=fetch('/api/me',{headers:{Accept:'application/json'}}).then(r=>r.ok?r.json():{authenticated:false}).catch(()=>({authenticated:false}));
+ return accountRequest;
+}
+export async function privateApi(path,options={}){
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000),headers=new Headers(options.headers);
+ headers.set('Accept','application/json');if(options.body!==undefined)headers.set('Content-Type','application/json');
+ try{const response=await fetch(path,{...options,headers,signal:controller.signal});let body;try{body=await response.json();}catch{throw Error('学习记录服务返回异常。');}if(!response.ok){const failure=Error(body.error?.message||'学习记录暂时不可用。');failure.code=body.error?.code;failure.status=response.status;throw failure;}return body;}
+ catch(e){if(e.name==='AbortError')throw Error('连接超时，请重试。');if(e instanceof TypeError)throw Error('无法连接学习记录服务。');throw e;}finally{clearTimeout(timer);}
+}
 export async function api(path){const c=new AbortController(),timer=setTimeout(()=>c.abort(),12000);try{const r=await fetch('/api/v2/'+path,{signal:c.signal});if(!r.ok)throw Error(r.status===404?'没有找到这个学习内容。':'内容暂时无法加载。');return await r.json();}catch(e){if(e.name==='AbortError')throw Error('连接超时，请检查网络后重试。');if(e instanceof TypeError)throw Error('无法连接内容服务，请检查网络后重试。');throw e;}finally{clearTimeout(timer);}}
 export function shell(active){
  // Label compatibility destinations and carry the current V2 route back.
@@ -25,7 +36,7 @@ export function shell(active){
  const labelLearningPath=()=>{if(active!=='home')return;const a=document.querySelector('.hero-copy .actions .primary');if(a&&(a.getAttribute('href')!=='/learn.html'||a.textContent!=='开始逐课学习 ↗')){a.href='/learn.html';a.textContent='开始逐课学习 ↗';}}
  labelLegacy();labelLearningPath();new MutationObserver(()=>{labelLegacy();labelLearningPath();}).observe(document.body,{childList:true,subtree:true});
  $('#header').innerHTML=`<div class="top"><a class="brand" href="/"><span class="brand-mark">言</span>言间</a><span class="muted">中文理解 · 自然表达</span><nav class="nav" aria-label="主要导航">${[['首页','/','home'],['学习','/learn.html','learn'],['学术 / 考试','/academic.html','academic'],['AI 学习','/ai.html','ai']].map(([n,h,k])=>`<a href="${h}" ${active===k?'aria-current="page"':''}>${n}</a>`).join('')}<a id="account-nav" href="/auth.html" ${active==='auth'?'aria-current="page"':''}>登录</a></nav></div>`;
- fetch('/api/me',{headers:{Accept:'application/json'}}).then(r=>r.ok?r.json():null).then(state=>{const link=$('#account-nav');if(!link||!state?.authenticated)return;link.textContent='我的学习';link.href='/progress.html';link.dataset.authenticated='true';if(active==='progress')link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}).catch(()=>{});
+ account().then(state=>{const link=$('#account-nav');if(!link||!state?.authenticated)return;link.textContent='我的学习';link.href='/progress.html';link.dataset.authenticated='true';if(active==='progress')link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}).catch(()=>{});
  const d=$('#preview');$('.close',d).onclick=()=>d.close();d.addEventListener('click',e=>{const r=d.getBoundingClientRect();if(e.target===d&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))d.close();});
  d.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const controls=[...d.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(x=>!x.disabled&&!x.hidden),first=controls[0],last=controls.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}});
 }
