@@ -74,7 +74,7 @@ test('grammar form selection and authored controlled completion grade authoritat
  const h=harness(),selection=(await session(h,'type=grammar&mode=recognition&limit=1')).body.data[0];assert.equal(selection.exercise_type,'grammar_form_selection');assert(!JSON.stringify(selection).includes('"answer"'));assert.equal(selection.choices.length,4);
  assert.equal((await answer(h,selection,expected(selection),'grammar_select_01')).body.data.correct,true);
  const completion=(await session(h,'type=grammar&mode=selection&limit=6')).body.data.find(x=>x.exercise_type==='grammar_controlled_completion');
- const completionIndex=Number(completion?.prompt.match(/action (\d)/)?.[1]),completionAnswer=grammar[completionIndex]?.[2];assert(completion&&completionAnswer);assert.match(completion.prompt,/___/);assert.equal((await answer(h,completion,completionAnswer,'grammar_complete1')).body.data.correct,true);assert.equal((await answer(h,completion,grammar.find(x=>x[2]!==completionAnswer)[2],'grammar_complete2')).body.data.correct,false);
+ const completionIndex=Number(completion?.prompt.match(/action (\d)/)?.[1]),completionAnswer=grammar[completionIndex]?.[2];assert(completion&&completionAnswer);assert.match(completion.prompt,/___/);assert.equal((await answer(h,completion,completionAnswer,'grammar_complete1')).body.data.correct,true);const wrongChoice=completion.choices.find(x=>x!==completionAnswer);assert(wrongChoice);assert.equal((await answer(h,completion,wrongChoice,'grammar_complete2')).body.data.correct,false);
 });
 
 test('ambiguous authored completion is not generated and safely falls back to form selection',async()=>{
