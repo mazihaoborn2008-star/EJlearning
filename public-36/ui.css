@@ -63,6 +63,9 @@
 .practice-summary dt{font-size:.875rem}.practice-summary dd{font-size:1.75rem;font-weight:700;margin:.25rem 0 0}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:430px){.practice-shell{margin:.75rem 0}.practice-summary dl{grid-template-columns:1fr}.practice-choices span{min-height:60px}.nav{gap:.35rem}.nav a{padding:.35rem}}
+/* Curriculum Expansion 01 instructional-role labels */
+.lesson-new{background:#e6eee3;color:#315942}.lesson-review{background:#e8eef5;color:#37556f}
+
 /* Phase 4F learner settings */
 .learner-settings form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem;align-items:end}.learner-settings label{display:grid;gap:.45rem;font-weight:700}.learner-settings label small{font-weight:400;color:var(--muted)}.learner-settings .actions,.learner-settings #settings-status{grid-column:1/-1}.learner-settings.first-run{border-color:var(--green);box-shadow:0 0 0 2px rgba(35,107,75,.12)}
 @media(max-width:600px){.learner-settings form{grid-template-columns:1fr}.weakness-heading{align-items:stretch}.weakness-heading .button{width:100%;text-align:center}}

@@ -52,10 +52,10 @@
     },
     {
       "name": "lessons",
-      "version": "2026-09-v1",
+      "version": "2026-09-expansion-01a-v1",
       "row_count": 64,
-      "checksum": "bundle:phase-35e1c-v2",
-      "update_migration_config": null
+      "checksum": "bundle:curriculum-expansion-01a-v1",
+      "update_migration_config": "wrangler.curriculum-expansion-01.jsonc"
     }
   ]
 }

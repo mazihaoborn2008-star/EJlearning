@@ -130,7 +130,10 @@
     "test:4f": "node --test tests/phase4f-learner-experience.test.js tests/phase4f-return-target.test.js && node tests/phase4f-browser.cjs && npm run test:4e && npm run test:36",
     "test:4d": "npm run test:4d:recommendations && npm run test:4c && npm run test:4d:browser",
     "test:4b": "npm run test:4b:progress && npm run test:4b:browser && npm run test:4a && npm run test:4a:browser && npm run test:36:api",
-    "check:4b": "node scripts/deploy-staging.js wrangler.36.jsonc --dry-run"
+    "check:4b": "node scripts/deploy-staging.js wrangler.36.jsonc --dry-run",
+    "generate:curriculum-expansion-01": "node scripts/generate-curriculum-expansion-01.js",
+    "db:migrate:curriculum-expansion-01:local": "wrangler d1 migrations apply DB --local --config wrangler.curriculum-expansion-01.local.jsonc --persist-to .wrangler/phase35e1c-release-final-2",
+    "test:curriculum-expansion-01": "node --test tests/curriculum-expansion-01.test.js && node tests/curriculum-expansion-01-browser.cjs"
   },
   "devDependencies": {
     "wrangler": "4.130.0",
