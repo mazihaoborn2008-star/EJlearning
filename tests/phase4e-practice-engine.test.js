@@ -129,3 +129,14 @@ test('sparse lessons are achievable, existing completion is grandfathered, and c
  h.DB.sqlite.prepare("INSERT INTO lesson_progress VALUES('user-a','en-s1-l2','completed',1,1,1,'practice')").run();const grandfathered=await complete(h,'en-s1-l2');assert.equal(grandfathered.body.data.grandfathered,true);
  const h2=harness(),lessonA=(await session(h2,'type=vocabulary&mode=recall&limit=5&context=lesson&lesson_id=en-s1-l1')).body.data;await answer(h2,lessonA.find(x=>x.prompt.includes('甲')),'Alpha','shared_item_context1');const lessonB=await complete(h2,'en-s1-l2');assert.equal(lessonB.body.error.code,'LESSON_PRACTICE_REQUIRED');assert.equal(lessonB.body.error.evidence.completed_items,0);
 });
+
+test('weakness vocabulary and grammar sessions contain only ranked real weaknesses, allow future-scheduled items, and do zero writes',async()=>{
+ const h=harness();
+ const insert=(table,key,id,{last=0,stage=0,lapses=1,next=now+86400}={})=>h.DB.sqlite.prepare(`INSERT INTO ${table}(user_id,${key},attempts,correct_count,wrong_count,correct_streak,last_result,first_seen_at,last_seen_at,last_correct_at,last_wrong_at,review_stage,review_count,lapse_count,last_reviewed_at,next_review_at,current_interval_seconds) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run('user-a',id,3,last?2:1,last?1:2,last?1:0,last,now-100,now-10,last?now-10:null,now-10,stage,3,lapses,now-10,next,stage?86400:600);
+ insert('vocabulary_progress','vocabulary_id','v-bravo',{last:1,stage:2,lapses:2});insert('vocabulary_progress','vocabulary_id','v-alpha');
+ insert('grammar_progress','grammar_id','g-can',{last:1,stage:2,lapses:2});insert('grammar_progress','grammar_id','g-might');
+ const before=h.DB.sqlite.prepare('SELECT total_changes() n').get().n,v=await session(h,'source=weakness&type=vocabulary&mode=recall'),g=await session(h,'source=weakness&type=grammar&mode=recall');
+ assert.equal(v.body.meta.limit,5);assert.equal(v.body.meta.maximum,10);assert.equal(v.body.data.length,2);assert.match(v.body.data[0].prompt,/甲/);assert.match(v.body.data[1].prompt,/乙/);
+ assert.equal(g.body.data.length,2);assert.match(g.body.data[0].prompt,/可能性/);assert.match(g.body.data[1].prompt,/能力/);assert.equal(h.DB.sqlite.prepare('SELECT total_changes() n').get().n,before);
+ assert.equal((await session(h,'source=weakness&type=vocabulary&limit=11')).response.status,400);assert.equal((await session(h,'source=weakness&type=mixed')).response.status,400);assert.equal((await session(h,'source=weakness&type=vocabulary&content_id=v-alpha&limit=1')).response.status,400);
+});

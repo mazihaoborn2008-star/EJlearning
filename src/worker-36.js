@@ -6,12 +6,14 @@ import {dynamicExamples} from './ai-examples-35d1.js';
 import {aiTutor} from './ai-tutor-36.js';
 import {auth} from './auth-4a.js';
 import {progress} from './progress-4b.js';
+import {settings} from './settings-4f.js';
 
 export default {
  scheduled:legacy.scheduled,
  async fetch(request,env,ctx){
   const url=new URL(request.url);
   if(url.pathname==='/api/me'||url.pathname.startsWith('/api/auth/'))return auth(request,env);
+  if(url.pathname==='/api/settings')return settings(request,env);
   if(url.pathname==='/api/learning/attempt'||url.pathname==='/api/practice/session'||url.pathname==='/api/recommendations'||url.pathname.startsWith('/api/progress/')||url.pathname.startsWith('/api/review/')||/^\/api\/lessons\/[^/]+\/(?:start|position|complete)$/.test(url.pathname))return progress(request,env);
   if(url.pathname==='/api/ai/tutor')return aiTutor(request,env,ctx);
   if(url.pathname==='/api/ai/examples')return dynamicExamples(request,env,ctx);

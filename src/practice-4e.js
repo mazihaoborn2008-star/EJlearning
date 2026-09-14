@@ -1,4 +1,5 @@
 import {lessonPracticeCurriculum} from './lessons-35d.js';
+import {weakItems} from './recommendations-4d.js';
 
 const encoder=new TextEncoder(),decoder=new TextDecoder();
 const ID=/^[a-z0-9][a-z0-9-]{0,95}$/,TOKEN=/^[A-Za-z0-9_-]{40,4096}$/;
@@ -111,17 +112,24 @@ async function build(db,type,item,pool,requested,seed){
 }
 
 function sessionQuery(url){
- const allowed=new Set(['type','mode','limit','context','lesson_id','content_id','language']);
+ const allowed=new Set(['type','mode','limit','context','lesson_id','content_id','language','source']);
  for(const [key,value] of url.searchParams)if(!allowed.has(key)||url.searchParams.getAll(key).length!==1||!value)throw new Error('INVALID_QUERY');
- const type=url.searchParams.get('type')||'mixed',mode=url.searchParams.get('mode')||'mixed',limit=Number(url.searchParams.get('limit')||10),context=url.searchParams.get('context')||'standalone',lessonId=url.searchParams.get('lesson_id'),contentId=url.searchParams.get('content_id'),language=url.searchParams.get('language');
+ const source=url.searchParams.get('source')||'standard',type=url.searchParams.get('type')||'mixed',mode=url.searchParams.get('mode')||'mixed',limit=Number(url.searchParams.get('limit')||(source==='weakness'?5:10)),context=url.searchParams.get('context')||'standalone',lessonId=url.searchParams.get('lesson_id'),contentId=url.searchParams.get('content_id'),language=url.searchParams.get('language');
  if(!TYPES.has(type)||!MODES.has(mode)||!Number.isInteger(limit)||limit<1||limit>20||!['standalone','lesson'].includes(context))throw new Error('INVALID_QUERY');
- if((context==='lesson')!==Boolean(lessonId)||lessonId&&!ID.test(lessonId))throw new Error('INVALID_QUERY');
+ if((context==='lesson')!==Boolean(lessonId)||lessonId&&!ID.test(lessonId)||!['standard','weakness'].includes(source))throw new Error('INVALID_QUERY');
  if(contentId&&(!ID.test(contentId)||context!=='standalone'||type==='mixed')||language&&!['en','ja'].includes(language)||contentId&&limit!==1)throw new Error('INVALID_QUERY');
- return {type,mode,limit,context,lessonId,contentId,language};
+ if(source==='weakness'&&(context!=='standalone'||contentId||!['vocabulary','grammar'].includes(type)||limit>10))throw new Error('INVALID_QUERY');
+ return {source,type,mode,limit,context,lessonId,contentId,language};
 }
 
 export async function practiceSession(url,env,session){
  const query=sessionQuery(url),contentDb=env.CONTENT_DB||env.DB;let lessonData=null,allowed={vocabulary:query.type==='vocabulary'&&query.contentId?[query.contentId]:null,grammar:query.type==='grammar'&&query.contentId?[query.contentId]:null};
+ let weakness=[];
+ if(query.source==='weakness'){
+  weakness=await weakItems(env.DB,contentDb,session.user_id,query.type,query.limit);
+  if(query.language)weakness=weakness.filter(x=>x.language===query.language);
+  allowed[query.type]=weakness.map(x=>x.id);
+ }
  if(query.context==='lesson'){
   lessonData=await lessonPracticeCurriculum(env.DB,query.lessonId);if(!lessonData)throw new Error('LESSON_NOT_FOUND');
   allowed={vocabulary:lessonData.items.filter(x=>x.content_type==='vocabulary').map(x=>x.content_id),grammar:lessonData.items.filter(x=>x.content_type==='grammar').map(x=>x.content_id)};
@@ -131,17 +139,17 @@ export async function practiceSession(url,env,session){
   query.type==='grammar'?[]:vocabularyPool(contentDb,null,query.language),query.type==='vocabulary'?[]:grammarPool(contentDb,null,query.language)
  ]);
  const visibleVocabulary=query.language?vocabulary.filter(x=>x.language===query.language):vocabulary,visibleGrammar=query.language?grammar.filter(x=>x.language===query.language):grammar;
- let candidates=[];if(query.type==='vocabulary')candidates=visibleVocabulary.map(x=>({type:'vocabulary',item:x}));else if(query.type==='grammar')candidates=visibleGrammar.map(x=>({type:'grammar',item:x}));else{const size=Math.max(visibleVocabulary.length,visibleGrammar.length);for(let i=0;i<size;i++){if(visibleVocabulary[i])candidates.push({type:'vocabulary',item:visibleVocabulary[i]});if(visibleGrammar[i])candidates.push({type:'grammar',item:visibleGrammar[i]});}}
+ let candidates=[];if(query.source==='weakness'){const pool=query.type==='vocabulary'?visibleVocabulary:visibleGrammar,byId=new Map(pool.map(x=>[x.id,x]));candidates=weakness.map(x=>({type:query.type,item:byId.get(x.id)})).filter(x=>x.item);}else if(query.type==='vocabulary')candidates=visibleVocabulary.map(x=>({type:'vocabulary',item:x}));else if(query.type==='grammar')candidates=visibleGrammar.map(x=>({type:'grammar',item:x}));else{const size=Math.max(visibleVocabulary.length,visibleGrammar.length);for(let i=0;i<size;i++){if(visibleVocabulary[i])candidates.push({type:'vocabulary',item:visibleVocabulary[i]});if(visibleGrammar[i])candidates.push({type:'grammar',item:visibleGrammar[i]});}}
  const day=Math.floor(Date.now()/86400000),seed=`${session.user_id}:${query.type}:${query.mode}:${query.context}:${query.lessonId||''}:${day}`;
- candidates=ordered(candidates.map(x=>({...x,id:`${x.type}:${x.item.id}`})),seed);
+ candidates=candidates.map(x=>({...x,id:`${x.type}:${x.item.id}`}));if(query.source!=='weakness')candidates=ordered(candidates,seed);
  const exercises=[];
  for(let i=0;i<candidates.length&&exercises.length<query.limit;i++){
   const candidate=candidates[i],pool=candidate.type==='vocabulary'?vocabularyFull:grammarFull,exercise=await build(contentDb,candidate.type,candidate.item,pool,requestedExerciseTypes(candidate.type,query.mode,exercises.length),`${seed}:${candidate.item.id}`);
   if(!exercise)continue;
-  const privateSpec={v:1,uid:session.user_id,content_type:candidate.type,content_id:candidate.item.id,language:candidate.item.language,exercise_type:exercise.exercise_type,context_type:query.context,context_id:query.lessonId||null,prompt:exercise.prompt,choices:exercise.choices,answer:exercise.answer,policy:exercise.policy};
+  const privateSpec={v:1,uid:session.user_id,content_type:candidate.type,content_id:candidate.item.id,language:candidate.item.language,exercise_type:exercise.exercise_type,context_type:query.context,context_id:query.lessonId||null,source:query.source,prompt:exercise.prompt,choices:exercise.choices,answer:exercise.answer,policy:exercise.policy};
   exercises.push({exercise_id:await seal(privateSpec,env.PRACTICE_SECRET||env.AUTH_SECRET),content_type:candidate.type,exercise_type:exercise.exercise_type,prompt:exercise.prompt,...(exercise.detail?{detail:exercise.detail}:{}),...(exercise.choices?{choices:exercise.choices}:{}),context:{type:query.context,...(query.lessonId?{id:query.lessonId}:{})}});
  }
-  return {data:exercises,meta:{type:query.type,mode:query.mode,language:query.language||null,context:query.context,context_id:query.lessonId||null,limit:query.limit,returned:exercises.length,maximum:20,...(lessonData?{lesson:{id:lessonData.lesson.id,title:lessonData.lesson.title},requirement:await lessonEvidence(env.DB,session.user_id,lessonData)}:{})}};
+  return {data:exercises,meta:{source:query.source,type:query.type,mode:query.mode,language:query.language||null,context:query.context,context_id:query.lessonId||null,limit:query.limit,returned:exercises.length,maximum:query.source==='weakness'?10:20,...(lessonData?{lesson:{id:lessonData.lesson.id,title:lessonData.lesson.title},requirement:await lessonEvidence(env.DB,session.user_id,lessonData)}:{})}};
 }
 
 export async function resolvePracticeExercise(token,env,session){

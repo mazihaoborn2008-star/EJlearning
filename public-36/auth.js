@@ -1,7 +1,8 @@
-import {$,esc,shell} from './shared.js';
+import {$,esc,shell,safeReturnTarget} from './shared.js';
 
 shell('auth');
 const main=$('#main');
+const returnTarget=safeReturnTarget(new URLSearchParams(location.search).get('return'));
 let email='';
 let countdownTimer;
 
@@ -34,12 +35,12 @@ function renderCode(resendAfter){
  startCountdown(resendAfter);
  $('#change-email').onclick=()=>{clearInterval(countdownTimer);renderEmail();$('#email').value=email;};
  $('#resend').onclick=async()=>{const button=$('#resend');button.disabled=true;status('正在重新发送…');try{const result=await request('/api/auth/email/send-code',{method:'POST',body:JSON.stringify({email})});status('新的验证码已发送。','success');startCountdown(result.resend_after||60);}catch(failure){status(failure.message,'error');if(failure.code==='RESEND_COOLDOWN')startCountdown(60);else button.disabled=false;}};
- $('#code-form').addEventListener('submit',async event=>{event.preventDefault();const form=event.currentTarget,button=$('button[type=submit]',form),code=$('#code').value.trim();if(!/^\d{6}$/.test(code)){status('请输入 6 位数字验证码。','error');return;}button.disabled=true;button.textContent='正在登录…';status('');try{await request('/api/auth/email/verify',{method:'POST',body:JSON.stringify({email,code})});status('登录成功，正在进入我的学习…','success');location.assign('/progress.html');}catch(failure){status(failure.message,'error');button.disabled=false;button.textContent='登录';$('#code').select();}});
+ $('#code-form').addEventListener('submit',async event=>{event.preventDefault();const form=event.currentTarget,button=$('button[type=submit]',form),code=$('#code').value.trim();if(!/^\d{6}$/.test(code)){status('请输入 6 位数字验证码。','error');return;}button.disabled=true;button.textContent='正在登录…';status('');try{await request('/api/auth/email/verify',{method:'POST',body:JSON.stringify({email,code})});status('登录成功，正在返回刚才的页面…','success');location.assign(returnTarget);}catch(failure){status(failure.message,'error');button.disabled=false;button.textContent='登录';$('#code').select();}});
  $('#code').focus();
 }
 
 function renderAccount(user){
- main.innerHTML=`<section class="auth-layout"><div class="auth-intro"><div class="eyebrow">Welcome back</div><h1>你已登录</h1><p>当前账户已经安全连接到这台设备。</p></div><section class="card auth-card"><h2>账户</h2><dl class="account-summary"><dt>邮箱</dt><dd>${esc(user.email)}</dd></dl><div class="auth-actions"><a class="button primary" href="/progress.html">进入我的学习</a><button id="logout" type="button">退出登录</button></div><p id="auth-status" class="auth-status" role="status" aria-live="polite"></p></section></section>`;
+ main.innerHTML=`<section class="auth-layout"><div class="auth-intro"><div class="eyebrow">Welcome back</div><h1>你已登录</h1><p>当前账户已经安全连接到这台设备。</p></div><section class="card auth-card"><h2>账户</h2><dl class="account-summary"><dt>邮箱</dt><dd>${esc(user.email)}</dd></dl><div class="auth-actions"><a class="button primary" href="${esc(returnTarget)}">继续刚才的学习</a><button id="logout" type="button">退出登录</button></div><p id="auth-status" class="auth-status" role="status" aria-live="polite"></p></section></section>`;
  $('#logout').onclick=async()=>{const button=$('#logout');button.disabled=true;status('正在退出…');try{await request('/api/auth/logout',{method:'POST'});location.reload();}catch(failure){status(failure.message,'error');button.disabled=false;}};
 }
 

@@ -4,6 +4,13 @@ export const names={vocabulary:'词汇',grammar:'语法',sentences:'句子与表
 export const detailPath={vocabulary:'vocabulary-detail',grammar:'grammar-detail',sentences:'sentence'};
 export const langName=l=>l==='ja'?'日本語':'English';
 export const url=(page,params={})=>'/'+page+'.html'+(Object.keys(params).length?'?'+new URLSearchParams(params):'');
+export function safeReturnTarget(value,fallback='/progress.html'){
+ if(typeof value!=='string'||!value.startsWith('/')||value.startsWith('//')||/[\\\u0000-\u001f]/.test(value)||value.length>2048)return fallback;
+ let decoded=value;try{for(let i=0;i<3;i++){const next=decodeURIComponent(decoded);if(next===decoded)break;decoded=next;}}catch{return fallback;}
+ if(!decoded.startsWith('/')||decoded.startsWith('//')||/[\\\u0000-\u001f]/.test(decoded)||/^[^?#]*:/i.test(decoded))return fallback;
+ try{const target=new URL(value,location.origin);if(target.origin!==location.origin||target.username||target.password||target.pathname.startsWith('/api/')||target.pathname==='/auth.html')return fallback;return target.pathname+target.search+target.hash;}catch{return fallback;}
+}
+export const authHref=(target=location.pathname+location.search+location.hash)=>url('auth',{return:safeReturnTarget(target)});
 export const detail=(domain,id,lang)=>url(detailPath[domain],{id,...(lang?{lang}:{})});
 export const badge=(text,cls='')=>`<span class="badge ${cls}">${esc(text)}</span>`;
 export const aiLink=(domain,id,lang)=>`<a class="button" href="${esc(url('ai',{type:domain,id,lang}))}">问 AI</a>`;
@@ -35,7 +42,7 @@ export function shell(active){
  const labelLegacy=()=>{for(const a of document.querySelectorAll('a[href]')){const u=new URL(a.href,location.href);if(u.origin===location.origin&&u.pathname.startsWith('/legacy/')){u.searchParams.set('return',location.pathname+location.search+location.hash);if(a.href!==u.href)a.href=u.href;if(!a.textContent.includes('旧版学习（兼容）'))a.textContent='旧版学习（兼容） · '+a.textContent;}}};
  const labelLearningPath=()=>{if(active!=='home')return;const a=document.querySelector('.hero-copy .actions .primary');if(a&&(a.getAttribute('href')!=='/learn.html'||a.textContent!=='开始逐课学习 ↗')){a.href='/learn.html';a.textContent='开始逐课学习 ↗';}}
  labelLegacy();labelLearningPath();new MutationObserver(()=>{labelLegacy();labelLearningPath();}).observe(document.body,{childList:true,subtree:true});
- $('#header').innerHTML=`<div class="top"><a class="brand" href="/"><span class="brand-mark">言</span>言间</a><span class="muted">中文理解 · 自然表达</span><nav class="nav" aria-label="主要导航">${[['首页','/','home'],['学习','/learn.html','learn'],['练习','/practice.html','practice'],['学术 / 考试','/academic.html','academic'],['AI 学习','/ai.html','ai']].map(([n,h,k])=>`<a href="${h}" ${active===k?'aria-current="page"':''}>${n}</a>`).join('')}<a id="account-nav" href="/auth.html" ${active==='auth'?'aria-current="page"':''}>登录</a></nav></div>`;
+ $('#header').innerHTML=`<div class="top"><a class="brand" href="/"><span class="brand-mark">言</span>言间</a><span class="muted">中文理解 · 自然表达</span><nav class="nav" aria-label="主要导航">${[['首页','/','home'],['学习','/learn.html','learn'],['练习','/practice.html','practice'],['学术 / 考试','/academic.html','academic'],['AI 学习','/ai.html','ai']].map(([n,h,k])=>`<a href="${h}" ${active===k?'aria-current="page"':''}>${n}</a>`).join('')}<a id="account-nav" href="${esc(authHref())}" ${active==='auth'?'aria-current="page"':''}>登录</a></nav></div>`;
  account().then(state=>{const link=$('#account-nav');if(!link||!state?.authenticated)return;link.textContent='我的学习';link.href='/progress.html';link.dataset.authenticated='true';if(active==='progress')link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}).catch(()=>{});
  const d=$('#preview');$('.close',d).onclick=()=>d.close();d.addEventListener('click',e=>{const r=d.getBoundingClientRect();if(e.target===d&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))d.close();});
  d.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const controls=[...d.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(x=>!x.disabled&&!x.hidden),first=controls[0],last=controls.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}});

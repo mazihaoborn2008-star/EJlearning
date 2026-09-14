@@ -1,6 +1,8 @@
 import {getAuthenticatedSession} from './auth-4a.js';
 import {getReviewSnapshot,recommendationData} from './recommendations-4d.js';
 import {practiceSession,resolvePracticeExercise,normalizePracticeAnswer,lessonEvidence} from './practice-4e.js';
+import {createRemediationToken} from './remediation-4f.js';
+import {readSettings,startOfLocalDay} from './settings-4f.js';
 
 const SECTION_KEYS = new Set(['overview', 'vocabulary', 'grammar', 'expressions', 'scenario', 'practice']);
 const ID_PATTERN = /^[a-z0-9][a-z0-9-]{0,95}$/;
@@ -51,9 +53,10 @@ async function readBody(request, allowed) {
 const normalizeAnswer = normalizePracticeAnswer;
 
 async function canonicalItem(db, type, id) {
-  if (type === 'vocabulary') return db.prepare(`SELECT id,language,lemma AS answer
-    FROM v2_vocabulary_items WHERE id = ? AND publication_state = 'published'`).bind(id).first();
-  return db.prepare(`SELECT id,language,form_name AS answer
+  if (type === 'vocabulary') return db.prepare(`SELECT v.id,v.language,v.lemma AS answer,
+    COALESCE((SELECT s.meaning_zh FROM v2_vocabulary_senses s WHERE s.item_id=v.id ORDER BY s.sort_order,s.id LIMIT 1),'词汇') AS safe_explanation
+    FROM v2_vocabulary_items v WHERE v.id = ? AND v.publication_state = 'published'`).bind(id).first();
+  return db.prepare(`SELECT id,language,form_name AS answer,title_zh AS safe_title,title_zh AS safe_explanation
     FROM v2_grammar_points WHERE id = ? AND publication_state = 'published'`).bind(id).first();
 }
 
@@ -104,7 +107,10 @@ async function recordAttempt(request, env, session, now) {
       .bind(session.user_id, body.attempt_id).first(),
     progressRow(env.DB, session.user_id, body.content_type, body.content_id)
   ]);
-  return json({data: {correct: Boolean(attempt.result), expected_answer: spec?.answer??item.answer, submitted_answer: body.answer, ...(spec?{content_type:spec.content_type,content_id:spec.content_id,exercise_type:spec.exercise_type,context:{type:spec.context_type,...(spec.context_id?{id:spec.context_id}:{})}}:{}), feedback:Boolean(attempt.result)?'回答正确。':'答案不匹配，请对照参考答案再试一次。', progress: publicProgress(row), idempotent: Boolean(existing)}});
+  const correct=Boolean(attempt.result),expected=spec?.answer??item.answer;
+  let remediationToken=null;
+  if(spec&&!correct&&!existing)remediationToken=await createRemediationToken({uid:session.user_id,attempt_id:body.attempt_id,issued_at:now,expires_at:now+1800,language:item.language,content_type:spec.content_type,content_id:spec.content_id,exercise_type:spec.exercise_type,prompt:spec.prompt,submitted_answer:body.answer,canonical_answer:expected,result:'incorrect',safe_title:item.safe_title||null,safe_explanation:item.safe_explanation||null,lesson_id:spec.context_type==='lesson'?spec.context_id:null},env.PRACTICE_SECRET||env.AUTH_SECRET);
+  return json({data: {correct, expected_answer: expected, submitted_answer: body.answer, ...(remediationToken?{remediation_token:remediationToken}:{}), ...(spec?{language:spec.language,content_type:spec.content_type,content_id:spec.content_id,exercise_type:spec.exercise_type,context:{type:spec.context_type,...(spec.context_id?{id:spec.context_id}:{})}}:{}), feedback:correct?'回答正确。':'答案不匹配，请对照参考答案再试一次。', progress: publicProgress(row), idempotent: Boolean(existing)}});
 }
 
 function idsFrom(url) {
@@ -162,14 +168,15 @@ async function lessonRows(url, db, userId) {
 }
 
 async function summary(db, userId, now) {
+  const settings=await readSettings(db,userId),todayStart=startOfLocalDay(now,settings.timezone||'UTC');
   const [vocabulary, grammar, lessons, today] = await Promise.all([
     db.prepare(`SELECT COUNT(*) AS studied,COALESCE(SUM(attempts),0) AS attempts,COALESCE(SUM(correct_count),0) AS correct_count,COALESCE(SUM(wrong_count),0) AS wrong_count FROM vocabulary_progress WHERE user_id=?`).bind(userId).first(),
     db.prepare(`SELECT COUNT(*) AS studied,COALESCE(SUM(attempts),0) AS attempts,COALESCE(SUM(correct_count),0) AS correct_count,COALESCE(SUM(wrong_count),0) AS wrong_count FROM grammar_progress WHERE user_id=?`).bind(userId).first(),
     db.prepare(`SELECT COUNT(*) AS studied,COALESCE(SUM(status='completed'),0) AS completed,COALESCE(SUM(status='in_progress'),0) AS in_progress FROM lesson_progress WHERE user_id=?`).bind(userId).first(),
-    db.prepare(`SELECT COUNT(*) AS attempts FROM learning_attempts WHERE user_id=? AND created_at>=?`).bind(userId, Math.floor(now / 86400) * 86400).first()
+    db.prepare(`SELECT COUNT(*) AS attempts FROM learning_attempts WHERE user_id=? AND created_at>=?`).bind(userId,todayStart).first()
   ]);
   const metrics = row => ({studied: Number(row.studied), attempts: Number(row.attempts), correct_count: Number(row.correct_count), wrong_count: Number(row.wrong_count), accuracy: Number(row.attempts) ? Math.round(Number(row.correct_count) / Number(row.attempts) * 100) : null});
-  return json({data: {today: {attempts: Number(today.attempts)}, vocabulary: metrics(vocabulary), grammar: metrics(grammar), lessons: {studied: Number(lessons.studied), completed: Number(lessons.completed), in_progress: Number(lessons.in_progress)}}});
+  return json({data: {today: {attempts: Number(today.attempts),timezone:settings.timezone||'UTC',starts_at:todayStart}, vocabulary: metrics(vocabulary), grammar: metrics(grammar), lessons: {studied: Number(lessons.studied), completed: Number(lessons.completed), in_progress: Number(lessons.in_progress)}}});
 }
 
 async function recent(url, db, userId) {

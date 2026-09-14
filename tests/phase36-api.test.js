@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {aiTutor,ENGLISH_SYSTEM_PROMPT,JAPANESE_SYSTEM_PROMPT,providerUrl} from '../src/ai-tutor-36.js';
+import {createRemediationToken} from '../src/remediation-4f.js';
 
 const records={
  vocabulary:{id:'en-choice',language:'en',lemma:'choice',stage:2,part_of_speech:'noun',register:'neutral',ipa:'tʃɔɪs',reading:null},
@@ -20,7 +21,7 @@ function db(){
   }};
  }};
 }
-function kv(){const map=new Map();return{map,async get(key,type){const value=map.get(key);return type==='json'&&value?JSON.parse(value):value??null;},async put(key,value){map.set(key,value);}};}
+function kv(){const map=new Map();return{map,async get(key,type){const value=map.get(key);return type==='json'&&value?JSON.parse(value):value??null;},async put(key,value){map.set(key,value);},async delete(key){map.delete(key);}};}
 const limiter={limit:async()=>({success:true})};
 function environment(overrides={}){return{DB:db(),CONTENT_DB:db(),DEEPSEEK_API_KEY:'test-secret',DEEPSEEK_BASE_URL:'https://api.deepseek.com',DEEPSEEK_MODEL:'deepseek-v4-flash',AI_RATE_LIMITER:limiter,AI_SHARED_RATE_LIMITER:limiter,AI_SESSIONS:kv(),...overrides};}
 const request=body=>new Request('https://ej-learning-36.example/api/ai/tutor',{method:'POST',headers:{'Content-Type':'application/json','User-Agent':'phase36-test'},body:JSON.stringify(body)});
@@ -57,4 +58,16 @@ test('policy override fields and foreign lesson focus are rejected before provid
 test('provider config is pinned and failures use the safe UI message',async()=>{
  assert.equal(providerUrl('https://api.deepseek.com'),'https://api.deepseek.com/chat/completions');assert.throws(()=>providerUrl('https://attacker.example'));
  for(const responseFactory of [async()=>new Response('busy',{status:429}),async()=>new Response('oops',{status:500}),async()=>{throw Error('network detail');}]){const response=await aiTutor(request(base()),environment(),null,responseFactory);assert.equal(response.status,503);const text=await response.text();assert.match(text,/AI 暂时不可用，请稍后再试/);assert(!text.includes('busy'));assert(!text.includes('network detail'));}
+});
+
+test('server-trusted wrong-answer remediation is explicit, bounded, user-bound, and advisory',async()=>{
+ const secret='phase4f-remediation-secret-longer-than-thirty-two',issued=Math.floor(Date.now()/1000),context={uid:'user-a',attempt_id:'wrong_attempt_0001',issued_at:issued,expires_at:issued+1800,language:'en',content_type:'vocabulary',content_id:'en-choice',exercise_type:'vocabulary_typed_recall',prompt:'根据中文“选择”，写出英语词汇。',submitted_answer:'choose',canonical_answer:'choice',result:'incorrect',safe_title:null,safe_explanation:'选择',lesson_id:null},token=await createRemediationToken(context,secret);
+ const remediationDb=userId=>({prepare(sql){return{bind(...args){return{async first(){if(sql.includes('FROM auth_sessions'))return{token_hash:'hash',user_id:userId,expires_at:issued+3600,last_seen_at:issued,email_display:userId+'@example.com'};if(sql.includes('FROM learning_attempts')&&args[0]==='user-a')return{content_type:'vocabulary',content_id:'en-choice',result:0,exercise_type:'vocabulary_typed_recall',context_type:'standalone',context_id:null};return null;}};}};}});
+ const requestFor=value=>new Request('https://ej-learning-36.example/api/ai/tutor',{method:'POST',headers:{'Content-Type':'application/json','Cookie':'ej_session=test-session','User-Agent':'phase4f-test'},body:JSON.stringify({remediation_token:value,session_id:'remediation_session_01'})});
+ let sent;const env=environment({DB:remediationDb('user-a'),AUTH_SECRET:secret,PRACTICE_SECRET:secret});const response=await aiTutor(requestFor(token),env,null,async(url,options)=>{sent=JSON.parse(options.body);return provider('“choose”是动词；这里需要名词“choice”。')(url,options);});assert.equal(response.status,200);const serialized=JSON.stringify(sent.messages);assert.match(serialized,/learner_submitted_answer/);assert.match(serialized,/canonical_answer/);assert.match(serialized,/deterministic_result/);assert(!serialized.includes('user-a'));assert(!serialized.includes('@example.com'));assert(!serialized.includes('review_stage'));assert(!serialized.includes('next_review_at'));
+ const at=Math.floor(token.length/2),modified=token.slice(0,at)+(token[at]==='A'?'B':'A')+token.slice(at+1);assert.equal((await aiTutor(requestFor(modified),env,null,provider('bad'))).status,400);assert.equal((await aiTutor(requestFor(token),environment({DB:remediationDb('user-b'),AUTH_SECRET:secret,PRACTICE_SECRET:secret}),null,provider('bad'))).status,403);assert.equal((await aiTutor(requestFor('fabricated_context_token'),env,null,provider('bad'))).status,400);
+});
+
+test('delete conversation removes the current KV record instead of only clearing local UI',async()=>{
+ const store=kv();store.map.set('session:session_1234567890','private history');const response=await aiTutor(new Request('https://ej-learning-36.example/api/ai/tutor',{method:'DELETE',headers:{'Content-Type':'application/json','Origin':'https://ej-learning-36.example'},body:JSON.stringify({session_id:'session_1234567890'})}),environment({AI_SESSIONS:store}));assert.equal(response.status,200);assert.equal(store.map.size,0);
 });

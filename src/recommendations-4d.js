@@ -1,4 +1,5 @@
 import {publishedLessonCurriculum} from './lessons-35d.js';
+import {readSettings} from './settings-4f.js';
 
 export const recommendationPolicy=Object.freeze({
  defaultWeakLimit:5,
@@ -54,7 +55,7 @@ function weaknessReasons(row){
  return reasons;
 }
 
-async function weakItems(progressDb,contentDb,userId,type,limit){
+export async function weakItems(progressDb,contentDb,userId,type,limit){
  const vocabulary=type==='vocabulary',table=vocabulary?'vocabulary_progress':'grammar_progress',idColumn=vocabulary?'vocabulary_id':'grammar_id';
  const candidateLimit=Math.min(recommendationPolicy.maxWeakLimit*recommendationPolicy.candidateMultiplier,limit*recommendationPolicy.candidateMultiplier);
  const result=await progressDb.prepare(`SELECT ${idColumn} AS id,attempts,correct_count,wrong_count,last_result,last_wrong_at,
@@ -83,7 +84,7 @@ const lessonTarget=lesson=>`/lesson.html?id=${encodeURIComponent(lesson.id)}&lan
 const publicLesson=(lesson,progress=null)=>({id:lesson.id,language:lesson.language,stage:Number(lesson.stage),sequence:Number(lesson.sequence),title:lesson.title,
  target:lessonTarget(lesson),...(progress?{status:progress.status,last_activity_at:Number(progress.last_activity_at),last_section_key:progress.last_section_key}: {})});
 
-async function lessonRecommendations(db,userId){
+async function lessonRecommendations(db,userId,preferredLanguage=null){
  const curriculum=await publishedLessonCurriculum(db),lessons=curriculum.lessons;
  if(!lessons.length)return {continue:null,next:null,paths:{en:{continue:null,next:null,complete:true},ja:{continue:null,next:null,complete:true}},all_complete:false,available:0};
  const result=await db.prepare(`SELECT lesson_id,status,last_activity_at,last_section_key FROM lesson_progress WHERE user_id=? AND lesson_id IN (${marks(lessons.length)}) ORDER BY last_activity_at DESC,lesson_id ASC LIMIT ?`)
@@ -99,7 +100,7 @@ async function lessonRecommendations(db,userId){
   paths[language]={continue:pathActiveLesson?publicLesson(pathActiveLesson,pathActive):null,next:nextLesson?publicLesson(nextLesson):null,complete:path.length>0&&path.every(x=>completed.has(x.id))};
  }
  const latestLanguage=rows[0]&&lessons.find(x=>x.id===rows[0].lesson_id)?.language;
- const choices=[latestLanguage,'en','ja'].filter((value,index,array)=>value&&array.indexOf(value)===index).map(language=>paths[language]?.next).filter(Boolean);
+ const choices=[latestLanguage,preferredLanguage,'en','ja'].filter((value,index,array)=>value&&array.indexOf(value)===index).map(language=>paths[language]?.next).filter(Boolean);
  return {continue:activeLesson?publicLesson(activeLesson,active):null,next:active?null:(choices[0]||null),paths,all_complete:lessons.every(x=>completed.has(x.id)),available:lessons.length};
 }
 
@@ -113,10 +114,11 @@ function primaryAction(review,lesson){
 
 export async function recommendationData(url,env,userId,now){
  const {limit}=recommendationQuery(url);
- const [review,lesson,weakVocabulary,weakGrammar]=await Promise.all([
-  getReviewSnapshot(env.DB,userId,now),lessonRecommendations(env.DB,userId),
+ const [review,settings]=await Promise.all([getReviewSnapshot(env.DB,userId,now),readSettings(env.DB,userId)]);
+ const [lesson,weakVocabulary,weakGrammar]=await Promise.all([
+  lessonRecommendations(env.DB,userId,settings.preferred_learning_language),
   weakItems(env.DB,env.CONTENT_DB,userId,'vocabulary',limit),weakItems(env.DB,env.CONTENT_DB,userId,'grammar',limit)
  ]);
  return {primary_action:primaryAction(review,lesson),weak_vocabulary:weakVocabulary,weak_grammar:weakGrammar,lesson,review,
-  generated_at:now,limits:{weak_vocabulary:limit,weak_grammar:limit,maximum:recommendationPolicy.maxWeakLimit}};
+  preferred_learning_language:settings.preferred_learning_language,generated_at:now,limits:{weak_vocabulary:limit,weak_grammar:limit,maximum:recommendationPolicy.maxWeakLimit}};
 }

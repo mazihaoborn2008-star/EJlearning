@@ -24,7 +24,7 @@ function database(){
  CREATE TABLE lesson_bundles(id TEXT PRIMARY KEY,schema_version TEXT NOT NULL,payload_json TEXT NOT NULL,published_at TEXT NOT NULL);`);
  for(const lesson of units)sqlite.prepare('INSERT INTO lesson_units VALUES(?,?,?,?,?)').run(lesson[0],lesson[4],lesson[1],lesson[2],lesson[7]);
  sqlite.prepare('INSERT INTO lesson_bundles VALUES(?,?,?,?)').run('phase-35e1c-v2','test',JSON.stringify(bundle),'2026-09-13');
- sqlite.exec(migration('0003_phase4b_learner_progress.sql'));sqlite.exec(migration('0004_phase4c_srs.sql'));
+ sqlite.exec(migration('0003_phase4b_learner_progress.sql'));sqlite.exec(migration('0004_phase4c_srs.sql'));sqlite.exec(migration('0006_phase4f_learner_experience.sql'));
  const wrap=(sql,values=[])=>({bind:(...next)=>wrap(sql,next),async first(){return sqlite.prepare(sql).get(...values)||null;},async all(){return {results:sqlite.prepare(sql).all(...values)};},async run(){const result=sqlite.prepare(sql).run(...values);return {success:true,meta:{changes:Number(result.changes)}};}});
  return {sqlite,prepare:sql=>wrap(sql)};
 }
@@ -63,6 +63,13 @@ test('brand-new account gets the canonical first lesson with separated language 
  assert.deepEqual(data.weak_vocabulary,[]);assert.deepEqual(data.weak_grammar,[]);
 });
 
+test('preferred language chooses a new account path but never overrides due review or active lesson',async()=>{
+ const h=harness();h.DB.sqlite.prepare('INSERT INTO user_settings VALUES(?,?,?,?)').run('user-a','ja',null,now);
+ let data=(await call(h,'/api/recommendations',{user:'user-a'})).body.data;assert.equal(data.primary_action.lesson.id,'ja-s1-l1');
+ lessonProgress(h,'user-a','en-s1-l1','in_progress');data=(await call(h,'/api/recommendations',{user:'user-a'})).body.data;assert.equal(data.primary_action.type,'continue_lesson');assert.equal(data.primary_action.lesson.id,'en-s1-l1');
+ itemProgress(h,{id:'v-a',next:now});data=(await call(h,'/api/recommendations',{user:'user-a'})).body.data;assert.equal(data.primary_action.type,'review_due');
+});
+
 test('due review wins over an in-progress lesson',async()=>{
  const h=harness();lessonProgress(h,'user-a','en-s1-l1','in_progress');itemProgress(h,{id:'v-a',next:now});
  const data=(await call(h,'/api/recommendations',{user:'user-a'})).body.data;
@@ -91,6 +98,14 @@ test('future reviews remain future and do not override new learning',async()=>{
  const h=harness();itemProgress(h,{id:'v-a',lastResult:1,stage:1,lapses:0,correct:1,next:now+86400,lastWrong:null});
  const data=(await call(h,'/api/recommendations',{user:'user-a'})).body.data;
  assert.equal(data.review.total_due,0);assert.equal(data.review.next_review_at,now+86400);assert.equal(data.primary_action.type,'start_next_lesson');
+});
+
+test('stored timezones change today buckets without changing absolute SRS due state',async()=>{
+ const h=harness(),instant=Math.floor(Date.parse('2026-09-14T11:30:00Z')/1000),activity=Math.floor(Date.parse('2026-09-13T20:00:00Z')/1000);h.services.now=()=>instant;
+ h.DB.sqlite.prepare('INSERT INTO user_settings VALUES(?,?,?,?)').run('user-a','en','Pacific/Auckland',instant);h.DB.sqlite.prepare('INSERT INTO user_settings VALUES(?,?,?,?)').run('user-b','en','America/Los_Angeles',instant);
+ for(const user of ['user-a','user-b'])h.DB.sqlite.prepare('INSERT INTO learning_attempts VALUES(?,?,?,?,?,?)').run(user,'timezone_'+user,'vocabulary','v-a',1,activity);
+ const a=(await call(h,'/api/progress/summary',{user:'user-a'})).body.data,b=(await call(h,'/api/progress/summary',{user:'user-b'})).body.data;assert.equal(a.today.attempts,1);assert.equal(b.today.attempts,0);
+ const ar=(await call(h,'/api/review/summary',{user:'user-a'})).body.data,br=(await call(h,'/api/review/summary',{user:'user-b'})).body.data;assert.equal(ar.total_due,br.total_due);assert.equal(ar.next_review_at,br.next_review_at);
 });
 
 test('weakness rules, ranking, tie-breaks, metadata safety, and type separation are deterministic',async()=>{
