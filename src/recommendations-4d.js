@@ -1,5 +1,6 @@
 import {publishedLessonCurriculum} from './lessons-35d.js';
 import {readSettings} from './settings-4f.js';
+import {isCurrentGrammarId,reclassifiedGrammarIds} from './content-quality-01.js';
 
 export const recommendationPolicy=Object.freeze({
  defaultWeakLimit:5,
@@ -12,12 +13,14 @@ const marks=count=>Array(count).fill('?').join(',');
 const number=value=>Number(value||0);
 
 export async function getReviewSnapshot(db,userId,now){
- const sql=table=>db.prepare(`SELECT
-   EXISTS(SELECT 1 FROM ${table} WHERE user_id=? LIMIT 1) AS has_learned,
-   (SELECT COUNT(*) FROM ${table} WHERE user_id=? AND next_review_at IS NOT NULL) AS scheduled_count,
-   (SELECT COUNT(*) FROM ${table} WHERE user_id=? AND next_review_at IS NOT NULL AND next_review_at<=?) AS due_count,
-   (SELECT next_review_at FROM ${table} WHERE user_id=? AND next_review_at>? ORDER BY next_review_at LIMIT 1) AS next_upcoming_at`)
+ const retired=reclassifiedGrammarIds.map(id=>`'${id}'`).join(',');
+ const sql=table=>{const current=table==='grammar_progress'?` AND grammar_id NOT IN (${retired})`:'';return db.prepare(`SELECT
+   EXISTS(SELECT 1 FROM ${table} WHERE user_id=?${current} LIMIT 1) AS has_learned,
+   (SELECT COUNT(*) FROM ${table} WHERE user_id=? AND next_review_at IS NOT NULL${current}) AS scheduled_count,
+   (SELECT COUNT(*) FROM ${table} WHERE user_id=? AND next_review_at IS NOT NULL AND next_review_at<=?${current}) AS due_count,
+   (SELECT next_review_at FROM ${table} WHERE user_id=? AND next_review_at>?${current} ORDER BY next_review_at LIMIT 1) AS next_upcoming_at`)
   .bind(userId,userId,userId,now,userId,now).first();
+ };
  const [vocabulary,grammar]=await Promise.all([sql('vocabulary_progress'),sql('grammar_progress')]);
  const normalize=row=>({has_learned:Boolean(row.has_learned),scheduled_count:number(row.scheduled_count),due_count:number(row.due_count),next_upcoming_at:row.next_upcoming_at==null?null:Number(row.next_upcoming_at)});
  const v=normalize(vocabulary),g=normalize(grammar),upcoming=[v.next_upcoming_at,g.next_upcoming_at].filter(value=>value!=null);
@@ -61,7 +64,7 @@ export async function weakItems(progressDb,contentDb,userId,type,limit){
  const result=await progressDb.prepare(`SELECT ${idColumn} AS id,attempts,correct_count,wrong_count,last_result,last_wrong_at,
    review_stage,lapse_count,next_review_at FROM ${table} WHERE ${weakWhere} ORDER BY ${weakOrder(idColumn)} LIMIT ?`)
   .bind(userId,candidateLimit).all();
- const candidates=result.results||[];
+ const candidates=(result.results||[]).filter(row=>vocabulary||isCurrentGrammarId(row.id));
  if(!candidates.length)return [];
  const ids=candidates.map(row=>row.id);
  const metadata=vocabulary

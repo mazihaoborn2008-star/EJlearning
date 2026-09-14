@@ -1,10 +1,11 @@
 import {rows} from './assessments.js';
 import auditedBundle from './lesson-bundle-35d.js';
+import {isCurrentGrammarId} from './content-quality-01.js';
 const json=(data,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}}),fail=(message,status=400)=>json({error:{message}},status),validId=id=>/^(?:en|ja)-s[1-6]-l[1-9]$/.test(id),marks=n=>Array(n).fill('?').join(',');
 const cols={u:['id','language','stage','topic_id','title','objective','sequence','status','estimated_minutes'],p:['lesson_id','prerequisite_lesson_id'],i:['lesson_id','content_type','content_id','role','sequence','required'],e:['framework_id','target','lesson_id','relevance']};
 const records=(data,keys)=>data.map(values=>Object.fromEntries(keys.map((key,i)=>[key,values[i]])));
 async function bundle(db){try{const exists=await db.prepare("SELECT 1 found FROM sqlite_master WHERE type='table' AND name='lesson_bundles' LIMIT 1").first();if(exists){const row=await db.prepare("SELECT payload_json FROM lesson_bundles WHERE id IN ('phase-35e1c-v2','phase-35e1c-v1','phase-35d-v1') ORDER BY CASE id WHEN 'phase-35e1c-v2' THEN 0 WHEN 'phase-35e1c-v1' THEN 1 ELSE 2 END LIMIT 1").first();if(row?.payload_json)return JSON.parse(row.payload_json);}}catch{}return auditedBundle;}
-const decoded=b=>({units:records(b.u,cols.u),prerequisites:records(b.p,cols.p),items:records(b.i,cols.i),exams:records(b.e,cols.e)});
+const decoded=b=>({units:records(b.u,cols.u),prerequisites:records(b.p,cols.p),items:records(b.i,cols.i).filter(x=>x.content_type!=='grammar'||isCurrentGrammarId(x.content_id)),exams:records(b.e,cols.e)});
 export async function lessonPracticeCurriculum(db,id){
  const data=decoded(await bundle(db)),lesson=data.units.find(x=>x.id===id&&x.status==='published');
  if(!lesson)return null;

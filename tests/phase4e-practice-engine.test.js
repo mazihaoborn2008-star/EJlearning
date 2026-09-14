@@ -10,13 +10,13 @@ const vocab=[
  ['v-alpha','en','Alpha','甲'],['v-bravo','en','Bravo','乙'],['v-charlie','en','Charlie','丙'],['v-delta','en','Delta','丁'],['v-echo','en','Echo','戊'],['v-foxtrot','en','Foxtrot','己'],
  ['v-ja-one','ja','水','水'],['v-ja-two','ja','火','火'],['v-ja-three','ja','木','木'],['v-ja-four','ja','金','金']
 ];
-const grammar=[['g-might','en','might','可能性'],['g-can','en','can','能力'],['g-will','en','will','将来'],['g-must','en','must','义务'],['g-should','en','should','建议'],['g-could','en','could','较弱可能']];
+const grammar=[['g-might','en','might','可能性'],['g-can','en','can','能力'],['g-will','en','will','将来'],['g-must','en','must','义务'],['g-should','en','should','建议'],['g-could','en','could','较弱可能'],['en-greeting','en','greeting / thanks formula','程式化社交回应']];
 const units=[
  ['en-s1-l1','en',1,'topic','Lesson A','Practice five items.',1,'published',15],
  ['en-s1-l2','en',1,'topic','Lesson B','Shared item must not leak.',2,'published',15],
  ['en-s1-l3','en',1,'topic','Sparse lesson','Practice one item.',3,'published',15]
 ];
-const items=[...vocab.slice(0,5).map((x,i)=>['en-s1-l1','vocabulary',x[0],'required',i+1,1]),['en-s1-l2','vocabulary','v-alpha','required',1,1],['en-s1-l2','grammar','g-might','required',2,1],['en-s1-l3','vocabulary','v-foxtrot','required',1,1]];
+const items=[...vocab.slice(0,5).map((x,i)=>['en-s1-l1','vocabulary',x[0],'required',i+1,1]),['en-s1-l1','grammar','en-greeting','required',1,1],['en-s1-l2','vocabulary','v-alpha','required',1,1],['en-s1-l2','grammar','g-might','required',2,1],['en-s1-l3','vocabulary','v-foxtrot','required',1,1]];
 const bundle={v:'phase4e-test',u:units,p:[],i:items,e:[]};
 
 function database(){
@@ -80,6 +80,14 @@ test('grammar form selection and authored controlled completion grade authoritat
 test('ambiguous authored completion is not generated and safely falls back to form selection',async()=>{
  const h=harness();h.DB.sqlite.prepare("UPDATE v2_sentence_expressions SET text='I might act because I might help.' WHERE id='e-g-might'").run();
  const loaded=await session(h,'type=grammar&mode=selection&limit=1&content_id=g-might');assert.equal(loaded.body.data.length,1);assert.equal(loaded.body.data[0].exercise_type,'grammar_form_selection');
+});
+
+test('reclassified social-expression categories are excluded from standalone and lesson grammar practice',async()=>{
+ const h=harness(),standalone=await session(h,'type=grammar&mode=recall&limit=1&content_id=en-greeting&language=en');
+ assert.equal(standalone.body.data.length,0);
+ const lesson=await session(h,'type=mixed&mode=mixed&limit=20&context=lesson&lesson_id=en-s1-l1');
+ assert.equal(lesson.body.meta.requirement.assessable_items,5);
+ assert(!lesson.body.data.some(x=>x.prompt.includes('程式化社交回应')||x.prompt.includes('greeting / thanks formula')));
 });
 
 test('tampering, cross-user replay, forged authority fields, mixed identity fields, and off-list choices are rejected without writes',async()=>{
