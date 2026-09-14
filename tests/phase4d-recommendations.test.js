@@ -34,7 +34,7 @@ function harness(){
  for(const [id,email] of [['user-a','a@example.com'],['user-b','b@example.com']])DB.sqlite.prepare("INSERT INTO users VALUES(?,?,?,?,?,'active')").run(id,email,email,1,1);
  const vocab=[['v-a','en','Answer A','词 A'],['v-b','en','Answer B','词 B'],['v-c','ja','答えC','词 C'],['v-d','en','Answer D','词 D'],['v-e','en','Answer E','词 E'],['v-stable','en','Stable answer','稳定词'],['v-unseen','en','Unseen','未见词']];
  for(const [id,language,lemma,label] of vocab){DB.sqlite.prepare('INSERT INTO v2_vocabulary_items VALUES(?,?,?,?)').run(id,language,lemma,'published');DB.sqlite.prepare('INSERT INTO v2_vocabulary_senses VALUES(?,?,?,?)').run('sense-'+id,id,label,0);}
- for(const [id,language,form,label] of [['g-a','en','secret form a','语法 A'],['g-b','ja','秘密の形','语法 B'],['en-greeting','en','greeting / thanks formula','程式化社交回应']])DB.sqlite.prepare('INSERT INTO v2_grammar_points VALUES(?,?,?,?,?)').run(id,language,form,label,'published');
+ for(const [id,language,form,label] of [['g-a','en','secret form a','语法 A'],['g-b','ja','秘密の形','语法 B'],['en-greeting','en','greeting / thanks formula','程式化社交回应'],['35e1c-ja-condition-contrast','ja','なら・たら・ば・と（比較概要）','条件比较概览'],['35e1c-ja-workplace-register','ja','敬体・尊敬語・謙譲語（使い分け概要）','职场语域概览']])DB.sqlite.prepare('INSERT INTO v2_grammar_points VALUES(?,?,?,?,?)').run(id,language,form,label,'published');
  const services={now:()=>now,session:async request=>request.headers.get('X-Test-User')?{user_id:request.headers.get('X-Test-User')}:null};
  return {DB,env:{DB,CONTENT_DB:DB},services};
 }
@@ -76,11 +76,11 @@ test('due review wins over an in-progress lesson',async()=>{
  assert.equal(data.primary_action.type,'review_due');assert.equal(data.primary_action.count,1);assert.equal(data.lesson.continue.id,'en-s1-l1');
 });
 
-test('historical progress for reclassified expression categories remains stored but is not review-eligible',async()=>{
- const h=harness();itemProgress(h,{type:'grammar',id:'en-greeting',next:now});
+test('historical progress for retired and overview-only grammar remains stored but is not review-eligible',async()=>{
+ const h=harness();for(const id of ['en-greeting','35e1c-ja-condition-contrast','35e1c-ja-workplace-register'])itemProgress(h,{type:'grammar',id,next:now});
  const data=(await call(h,'/api/recommendations',{user:'user-a'})).body.data;
  assert.equal(data.review.grammar.scheduled_count,0);assert.equal(data.review.grammar.due_count,0);assert.deepEqual(data.weak_grammar,[]);
- assert.equal(h.DB.sqlite.prepare("SELECT attempts FROM grammar_progress WHERE grammar_id='en-greeting'").get().attempts,1);
+ for(const id of ['en-greeting','35e1c-ja-condition-contrast','35e1c-ja-workplace-register'])assert.equal(h.DB.sqlite.prepare('SELECT attempts FROM grammar_progress WHERE grammar_id=?').get(id).attempts,1);
 });
 
 test('without due reviews the most recently active in-progress lesson wins deterministically',async()=>{

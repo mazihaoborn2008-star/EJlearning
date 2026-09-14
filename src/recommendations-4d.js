@@ -1,6 +1,6 @@
 import {publishedLessonCurriculum} from './lessons-35d.js';
 import {readSettings} from './settings-4f.js';
-import {isCurrentGrammarId,reclassifiedGrammarIds} from './content-quality-01.js';
+import {isPracticeEligibleGrammarId,practiceIneligibleGrammarIds} from './content-quality-02.js';
 
 export const recommendationPolicy=Object.freeze({
  defaultWeakLimit:5,
@@ -13,8 +13,8 @@ const marks=count=>Array(count).fill('?').join(',');
 const number=value=>Number(value||0);
 
 export async function getReviewSnapshot(db,userId,now){
- const retired=reclassifiedGrammarIds.map(id=>`'${id}'`).join(',');
- const sql=table=>{const current=table==='grammar_progress'?` AND grammar_id NOT IN (${retired})`:'';return db.prepare(`SELECT
+ const ineligible=practiceIneligibleGrammarIds.map(id=>`'${id}'`).join(',');
+ const sql=table=>{const current=table==='grammar_progress'?` AND grammar_id NOT IN (${ineligible})`:'';return db.prepare(`SELECT
    EXISTS(SELECT 1 FROM ${table} WHERE user_id=?${current} LIMIT 1) AS has_learned,
    (SELECT COUNT(*) FROM ${table} WHERE user_id=? AND next_review_at IS NOT NULL${current}) AS scheduled_count,
    (SELECT COUNT(*) FROM ${table} WHERE user_id=? AND next_review_at IS NOT NULL AND next_review_at<=?${current}) AS due_count,
@@ -64,7 +64,7 @@ export async function weakItems(progressDb,contentDb,userId,type,limit){
  const result=await progressDb.prepare(`SELECT ${idColumn} AS id,attempts,correct_count,wrong_count,last_result,last_wrong_at,
    review_stage,lapse_count,next_review_at FROM ${table} WHERE ${weakWhere} ORDER BY ${weakOrder(idColumn)} LIMIT ?`)
   .bind(userId,candidateLimit).all();
- const candidates=(result.results||[]).filter(row=>vocabulary||isCurrentGrammarId(row.id));
+ const candidates=(result.results||[]).filter(row=>vocabulary||isPracticeEligibleGrammarId(row.id));
  if(!candidates.length)return [];
  const ids=candidates.map(row=>row.id);
  const metadata=vocabulary

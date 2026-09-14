@@ -1,6 +1,6 @@
 import {rows} from './assessments.js';
 import auditedBundle from './lesson-bundle-35d.js';
-import {isCurrentGrammarId} from './content-quality-01.js';
+import {isCurrentGrammarId,isPracticeEligibleGrammarId} from './content-quality-02.js';
 const json=(data,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}}),fail=(message,status=400)=>json({error:{message}},status),validId=id=>/^(?:en|ja)-s[1-6]-l[1-9]$/.test(id),marks=n=>Array(n).fill('?').join(',');
 const cols={u:['id','language','stage','topic_id','title','objective','sequence','status','estimated_minutes'],p:['lesson_id','prerequisite_lesson_id'],i:['lesson_id','content_type','content_id','role','sequence','required'],e:['framework_id','target','lesson_id','relevance']};
 const records=(data,keys)=>data.map(values=>Object.fromEntries(keys.map((key,i)=>[key,values[i]])));
@@ -9,7 +9,7 @@ const decoded=b=>({units:records(b.u,cols.u),prerequisites:records(b.p,cols.p),i
 export async function lessonPracticeCurriculum(db,id){
  const data=decoded(await bundle(db)),lesson=data.units.find(x=>x.id===id&&x.status==='published');
  if(!lesson)return null;
- return {lesson,items:data.items.filter(x=>x.lesson_id===id&&['vocabulary','grammar'].includes(x.content_type)).sort((a,b)=>a.content_type.localeCompare(b.content_type)||a.sequence-b.sequence||a.content_id.localeCompare(b.content_id))};
+ return {lesson,items:data.items.filter(x=>x.lesson_id===id&&(x.content_type==='vocabulary'||x.content_type==='grammar'&&isPracticeEligibleGrammarId(x.content_id))).sort((a,b)=>a.content_type.localeCompare(b.content_type)||a.sequence-b.sequence||a.content_id.localeCompare(b.content_id))};
 }
 export async function publishedLessonCurriculum(db){
  const data=decoded(await bundle(db));

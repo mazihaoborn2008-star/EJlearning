@@ -1,5 +1,6 @@
 // Read-only V2 contract. SQL identifiers come exclusively from fixed maps below.
 import {ApiError, rows} from './assessments.js';
+import {isPracticeEligibleGrammarId} from './content-quality-02.js';
 const reply=(data,status=200,headers={})=>Response.json(data,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff',...headers}});
 const invalid=message=>{throw new ApiError(400,message);};
 const definitions={
@@ -91,7 +92,7 @@ async function detail(db,kind,id){
  if(kind==='grammar'){
   const [examples,related,sentences]=await Promise.all([
    rows(db,"SELECT g.id,g.grammar_id,g.language,g.text,g.translation_zh,g.explanation_zh,g.ipa,g.readings_json,g.sort_order,CASE WHEN e.publication_state='published' AND u.publication_state='published' THEN g.source_expression_id ELSE NULL END AS source_expression_id FROM v2_grammar_examples g LEFT JOIN v2_sentence_expressions e ON e.id=g.source_expression_id LEFT JOIN v2_sentence_units u ON u.id=e.unit_id WHERE g.grammar_id=? ORDER BY g.sort_order,g.id",id),relations(db,kind,id),reverse(db,kind,id,{limit:10,offset:0})]);
-  return {...item,examples:examples.map(decode),prerequisites:related.filter(r=>r.type==='prerequisite'&&r.direction==='outgoing'),relations:related.filter(r=>r.type!=='prerequisite'),recommended_for:related.filter(r=>r.type==='prerequisite'&&r.direction==='incoming'),sentences};
+  return {...item,practice_eligible:isPracticeEligibleGrammarId(item.id),examples:examples.map(decode),prerequisites:related.filter(r=>r.type==='prerequisite'&&r.direction==='outgoing'),relations:related.filter(r=>r.type!=='prerequisite'),recommended_for:related.filter(r=>r.type==='prerequisite'&&r.direction==='incoming'),sentences};
  }
  const expressions=await rows(db,"SELECT * FROM v2_sentence_expressions WHERE unit_id=? AND publication_state='published' ORDER BY language,sort_order,id",id);
  return {...item,expressions:await Promise.all(expressions.map(async expression=>{

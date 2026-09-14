@@ -7,17 +7,19 @@
 **Reference:** `docs/CURRICULUM-COVERAGE-AUDIT-01.md`
 **Scope:** 16 sparse supplemental lessons only
 
+**Decision update:** Content Quality Hotfix 02 review, 2026-09-14. Original candidate rows are retained so the decision history remains visible.
+
 ## 1. Executive recommendation
 
-Adopt the matrix as a **human-review queue**, not as an implementation payload. It uses only existing published canonical content and brings every target lesson to 8 vocabulary, 3 grammar, and 4 expression links: 15 total links, 11 assessable items, and approximately 31–33 safe Phase 4E item/mode opportunities. The proposal adds exactly 49 vocabulary, 16 grammar, and 48 expression links (113 total), matching the audit planning estimate without creating content.
+Adopt the approved portion of the matrix as a **human-review queue**, not as an implementation payload. After the Hotfix 02 decisions, the proposal retains 46 vocabulary, 13 grammar, and 46 expression additions (105 total). It deliberately no longer forces every lesson to 8/3/4: seven lessons fall below that original link target, while all remain able to satisfy Phase 4E's five-item completion requirement.
 
-Of the 113 candidate additions, 103 are `HIGH CONFIDENCE` and 10 are `REVIEW REQUIRED`. Across the complete proposed 240-link matrix, including 127 existing links, 223 are `HIGH CONFIDENCE` and 17 are `REVIEW REQUIRED`. No `REVIEW REQUIRED` candidate should be promoted automatically.
+The original 113-row proposal contained 103 `HIGH CONFIDENCE` and 10 `REVIEW REQUIRED` additions. Human review has now approved two of those ten and deferred eight from Expansion 01A. The resulting 232-link plan contains 223 `HIGH CONFIDENCE`, four `APPROVED`, and five existing overview links `BLOCKED BY CONTENT HOTFIX 02` until that hotfix is merged. Deferred rows remain visible but are excluded from totals.
 
 Recommend design A, **REQUIRED SUPPLEMENTAL CHAIN**, after densification. The lessons are numbered as part of their stages, will have normal density, and introduce content that should not remain invisible to stage completion. This requires six explicit prerequisite-edge replacements; no edge should change during 01A.
 
 ## 2. Reading the matrix
 
-- `CURRENT` is an existing active link. `ADD` is a planning-only candidate.
+- `CURRENT` is an existing active link. `ADD` is a planning-only candidate. Rows marked `DEFERRED — REMOVED FROM 01A` remain as decision history and are excluded from every revised total.
 - Role is a proposed instructional role independent of the current `required/support` transport field:
   - `NEW`: deliberately introduced here.
   - `REVIEW`: introduced in an earlier lesson, or intentionally moved earlier by this proposal and subsequently revisited.
@@ -27,6 +29,7 @@ Recommend design A, **REQUIRED SUPPLEMENTAL CHAIN**, after densification. The le
 - `†` means the candidate has one authored vocabulary example and should receive a second lesson-specific human-reviewed example before implementation.
 - `HIGH CONFIDENCE` means the existing item, level, scenario fit, and practice evidence are clear. It still requires the human approval checklist.
 - `REVIEW REQUIRED` identifies remaining level, register, scope, or editorial uncertainty.
+- `APPROVED` records an explicit Hotfix 02 human decision. `BLOCKED BY CONTENT HOTFIX 02` identifies an existing link whose overview record must be made non-assessed before expansion.
 
 Safe opportunity estimate: 3 modes per vocabulary item, 2 modes per grammar item, plus one controlled-completion item/mode pairing for each grammar with a safe authored occurrence. Expressions are not counted as Phase 4E assessed items.
 
@@ -34,9 +37,9 @@ Safe opportunity estimate: 3 modes per vocabulary item, 2 modes per grammar item
 
 | Language | Target lessons | Current links | Current V/G/E | Proposed links | Proposed V/G/E |
 |---|---:|---:|---:|---:|---:|
-| English | 8 | 64 | 40 / 16 / 8 | 120 | 64 / 24 / 32 |
-| Japanese | 8 | 63 | 39 / 16 / 8 | 120 | 64 / 24 / 32 |
-| **Total** | **16** | **127** | **79 / 32 / 16** | **240** | **128 / 48 / 64** |
+| English | 8 | 64 | 40 / 16 / 8 | 115 | 62 / 22 / 31 |
+| Japanese | 8 | 63 | 39 / 16 / 8 | 117 | 63 / 23 / 31 |
+| **Total** | **16** | **127** | **79 / 32 / 16** | **232** | **125 / 45 / 62** |
 
 Every current lesson has one six-turn canonical dialogue. The low-density finding therefore concerns link breadth and practice diversity, not absence of scenario content.
 
@@ -58,7 +61,7 @@ Every current lesson has one six-turn canonical dialogue. The low-density findin
 | CURRENT | G | `35e1c-en-some-any` | some / any + plural or non-count noun — some/any 与可数性 | NEW | 2 | 4; CC no | 1 | HIGH CONFIDENCE | Quantity/inventory language |
 | CURRENT | G | `en-wh-question` | wh-word + auxiliary + subject + verb? — 询问信息 | SUPPORT | 1 | 7; CC yes | 1 | HIGH CONFIDENCE | Location and price questions; duplicated semantic fields need editing |
 | CURRENT | E | `35e1c-en-d-supermarket-expr` | six-turn supermarket dialogue | NEW | 2 | dialogue/context | 1 | HIGH CONFIDENCE | Existing task spine |
-| ADD | V | `en-c-969` | card — 卡片 | REVIEW | 1 | 2 | 1; first `en-s2-l2` | **REVIEW REQUIRED** | Dialogue uses payment card, but the stored Chinese sense is generic |
+| ADD | V | `en-c-969` | card — 卡片 | REVIEW | 1 | 2 | 1; first `en-s2-l2` | **DEFERRED — REMOVED FROM 01A** (was `REVIEW REQUIRED`) | Generic stored sense is not precise enough for payment-card instruction |
 | ADD | V | `en-c-397` | price — 价格 | REVIEW | 2 | 2 | 1; first `en-s2-l2` | HIGH CONFIDENCE | Explicit objective and dialogue price check |
 | ADD | V | `35e1c-en-v011` | contactless payment — 非接触式支付 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | “tap your card” payment step |
 | ADD | V | `en-c-1793` | good value — 物有所值 | SUPPORT | 3 | 1† | 0 | HIGH CONFIDENCE | Extends price evaluation without advanced terminology |
@@ -67,7 +70,7 @@ Every current lesson has one six-turn canonical dialogue. The low-density findin
 | ADD | E | `legacy-76-en` | Keep the receipt. — 保留收据 | REVIEW | 2 | sentence/no context | 1; first `en-s2-l2` | HIGH CONFIDENCE | Reinforces a practical post-payment action |
 | ADD | E | `legacy-81-en` | Do you take cards? / Yes, except for that one. — 确认刷卡 | REVIEW | 2 | 2-turn dialogue | 1; first `en-s2-l2` | HIGH CONFIDENCE | Direct payment-function rehearsal |
 
-Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
+Final after decisions: **7/3/4; 10 assessable; 29 opportunities; 18 minutes retained.**
 
 ### `en-s3-l5` — 退货与换货
 
@@ -116,12 +119,12 @@ Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
 | ADD | V | `35e1c-en-v022` | symptom — 症状 | NEW | 2 | 1† | 0 | HIGH CONFIDENCE | Names the communicative category |
 | ADD | V | `35e1c-en-v023` | sore throat — 喉咙痛 | NEW | 2 | 1† | 0 | HIGH CONFIDENCE | Appears in current dialogue |
 | ADD | V | `35e1c-en-v025` | dosage — 剂量 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | Supports pharmacy instructions |
-| ADD | G | `en-present-perfect` | Present Perfect — 到现在为止 | NEW | 4 | 1; CC yes | 2; currently first `en-s4-l2` | **REVIEW REQUIRED** | Conceptually precedes since/for, but moving level 4 into Stage 3 and its single generic example need syllabus review |
+| ADD | G | `en-present-perfect` | Present Perfect — 到现在为止 | NEW | 4 | 1; CC yes | 2; currently first `en-s4-l2` | **DEFERRED — REMOVED FROM 01A** (was `REVIEW REQUIRED`) | Do not move this level-4 grammar earlier in Expansion 01 |
 | ADD | E | `35e1b-en-x-medical-symptom-expr` | I’ve had a sore throat since yesterday. — 从昨天开始喉咙痛 | NEW | 2 | scenario/context | 0 | HIGH CONFIDENCE | Exact duration model |
 | ADD | E | `35e1b-en-x-medical-worse-expr` | It gets worse at night. — 晚上更严重 | NEW | 2 | scenario/context | 0 | HIGH CONFIDENCE | Severity/change follow-up |
 | ADD | E | `35e1b-en-d-pharmacy-medicine-expr` | six-turn medicine/dosage dialogue — 确认药物用法 | SUPPORT | 2 | dialogue/context | 0 | HIGH CONFIDENCE | Adds pharmacy half of stated lesson scope |
 
-Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
+Final after decisions: **8/2/4; 10 assessable; 29 opportunities; 18 minutes retained.**
 
 ### `en-s3-l7` — 预约、取消与改期
 
@@ -142,13 +145,13 @@ Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
 | CURRENT | E | `35e1b-en-d-appointment-reschedule-expr` | six-turn rescheduling dialogue | NEW | 2 | dialogue/context | 1 | HIGH CONFIDENCE | Existing task spine |
 | ADD | V | `35e1c-en-v033` | fully booked — 预约已满 | NEW | 2 | 1† | 0 | HIGH CONFIDENCE | Triggers alternative-time negotiation |
 | ADD | V | `en-c-577` | flexible — 灵活的 | SUPPORT | 3 | 1† | 0 | HIGH CONFIDENCE | Describes scheduling flexibility |
-| ADD | V | `35e1c-en-v089` | follow-up appointment — 复诊预约 | SUPPORT | 3 | 1† | 0 | **REVIEW REQUIRED** | Strong appointment fit, but narrows a general lesson toward healthcare |
+| ADD | V | `35e1c-en-v089` | follow-up appointment — 复诊预约 | SUPPORT | 3 | 1† | 0 | **DEFERRED — REMOVED FROM 01A** (was `REVIEW REQUIRED`) | Medical follow-up would narrow a general appointment lesson |
 | ADD | G | `en-indirect-question` | verb + wh-word + subject + verb — 嵌入式疑问 | NEW | 3 | 7; CC yes | 0 | HIGH CONFIDENCE | Polite availability enquiries; unlinked grammar |
 | ADD | E | `35e1b-en-x-appt-make-expr` | I’d like to make an appointment. — 我想预约 | NEW | 2 | scenario/context | 0 | HIGH CONFIDENCE | Covers opening the process |
 | ADD | E | `35e1b-en-x-appt-cancel-expr` | I’m calling to cancel my appointment. — 取消预约 | NEW | 2 | scenario/context | 0 | HIGH CONFIDENCE | Covers cancellation objective |
 | ADD | E | `35e1b-en-x-confirm-booked-expr` | Could you confirm that it’s booked? — 确认预约成功 | SUPPORT | 2 | scenario/context | 0 | HIGH CONFIDENCE | Covers confirmation objective |
 
-Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
+Final after decisions: **7/3/4; 10 assessable; 29 opportunities; 18 minutes retained.**
 
 ### `en-s3-l8` — 处理手机与网络问题
 
@@ -170,12 +173,12 @@ Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
 | CURRENT | E | `35e1c-en-d-connectivity-expr` | six-turn Wi-Fi troubleshooting dialogue | NEW | 3 | dialogue/context | 1 | HIGH CONFIDENCE | Existing task spine |
 | ADD | V | `35e1c-en-v057` | mobile data — 移动数据 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | Alternative connection path |
 | ADD | V | `35e1c-en-v058` | airplane mode — 飞行模式 | NEW | 2 | 1† | 0 | HIGH CONFIDENCE | Common diagnostic state |
-| ADD | G | `en-not-quite` | not quite + adjective — 尚未完全达到 | NEW | 3 | 1; CC yes | 0 | **REVIEW REQUIRED** | Useful for partial recovery, but only one generic example and no current-dialogue occurrence |
+| ADD | G | `en-not-quite` | not quite + adjective — 尚未完全达到 | NEW | 3 | 1; CC yes | 0 | **DEFERRED — REMOVED FROM 01A** (was `REVIEW REQUIRED`) | Current task context and sole generic example do not justify introduction here |
 | ADD | E | `legacy-160-en` | I need some help. — 我需要帮助 | SUPPORT | 2 | sentence/no context | 0 | HIGH CONFIDENCE | Reusable support opening |
 | ADD | E | `legacy-167-en` | I’ve tried that, but it still doesn’t work. — 试过但仍不工作 | NEW | 3 | sentence/no context | 0 | HIGH CONFIDENCE | Exact troubleshooting follow-up |
 | ADD | E | `35e1b-en-x-follow-who-contact-expr` | Who should I contact about this? — 应联系谁 | SUPPORT | 3 | scenario/context | 0 | HIGH CONFIDENCE | Escalation after failed steps |
 
-Final: **8/3/4; 11 assessable; 33 opportunities; 18 minutes retained.**
+Final after decisions: **8/2/4; 10 assessable; 30 opportunities; 18 minutes retained.**
 
 ### `en-s3-l9` — 职场任务、排班与反馈
 
@@ -227,9 +230,9 @@ Final: **8/3/4; 11 assessable; 31 opportunities; 18 minutes retained.** Existing
 | ADD | G | `en-present-perfect-continuous` | have/has been + V-ing — 持续到现在 | NEW | 4 | 1; CC yes | 0 | HIGH CONFIDENCE | Same-topic authored expression: faucet has been dripping all night |
 | ADD | E | `legacy-59-en` | The faucet has been dripping all night. — 水龙头整夜漏水 | NEW | 4 | sentence/no context | 0 | HIGH CONFIDENCE | Exact problem/duration statement and CC evidence |
 | ADD | E | `35e1b-en-x-alternative-repair-expr` | If it can’t be fixed today, could you lend me a heater? — 请求临时方案 | SUPPORT | 3 | scenario/context | 0 | HIGH CONFIDENCE | Contingency repair request |
-| ADD | E | `legacy-52-en` | Do you have a spare key? — 询问备用钥匙 | SUPPORT | 2 | sentence/no context | 1; first `en-s2-l4` | **REVIEW REQUIRED** | Housing fit is clear, but it is peripheral to the repair/fee objective |
+| ADD | E | `legacy-52-en` | Do you have a spare key? — 询问备用钥匙 | SUPPORT | 2 | sentence/no context | 1; first `en-s2-l4` | **DEFERRED — REMOVED FROM 01A** (was `REVIEW REQUIRED`) | Peripheral to the repair and cost objective |
 
-Final: **8/3/4; 11 assessable; 31 opportunities; 18 minutes retained.** Existing zero-CC risk is resolved without inventing content.
+Final after decisions: **8/3/3; 11 assessable; 31 opportunities; 18 minutes retained.** Existing zero-CC risk is resolved without inventing content.
 
 ### `en-s4-l6` — 入住酒店并处理住宿问题
 
@@ -273,19 +276,19 @@ Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
 | CURRENT | V | `35e1c-ja-v013` | レジ — 收银台 | NEW | 1 | 1 | 1 | HIGH CONFIDENCE | Payment location |
 | CURRENT | V | `ja-c-1761` | レシート — 收据 | NEW | 2 | 1 | 2 | HIGH CONFIDENCE | Checkout evidence |
 | CURRENT | V | `35e1c-ja-v017` | 在庫 — 库存 | NEW | 2 | 1 | 1 | HIGH CONFIDENCE | Availability |
-| CURRENT | G | `35e1c-ja-counter-system` | number + counter — 助数詞系统 | NEW | 2 | 4; CC yes | 2 | **REVIEW REQUIRED** | Correct task fit, but raw English learner-facing form needs human editorial correction |
+| CURRENT | G | `35e1c-ja-counter-system` | 数 + 助数詞 — 助数词系统 | NEW | 2 | 4; CC yes | 2 | **APPROVED — CONTENT HOTFIX 02** | Concept is valid; Hotfix 02 replaces the raw English authoritative form |
 | CURRENT | G | `ja-ka-question` | 礼貌句 + か — 礼貌疑问 | REVIEW | 1 | 8; CC yes | 3; first `ja-s1-l3` | HIGH CONFIDENCE | Location/payment questions |
 | CURRENT | E | `35e1c-ja-d-supermarket-expr` | six-turn supermarket dialogue | NEW | 2 | dialogue/context | 1 | HIGH CONFIDENCE | Existing task spine |
-| ADD | V | `ja-c-971` | カード — 卡片 | REVIEW | 1 | 3 | 1; first `ja-s2-l4` | **REVIEW REQUIRED** | Payment-card occurrence is clear, but the stored Chinese sense is generic |
+| ADD | V | `ja-c-971` | カード — 卡片 | REVIEW | 1 | 3 | 1; first `ja-s2-l4` | **DEFERRED — REMOVED FROM 01A** (was `REVIEW REQUIRED`) | Generic stored sense is not precise enough for payment-card instruction |
 | ADD | V | `ja-c-399` | 値段 — 价格 | REVIEW | 2 | 3 | 1; first `ja-s2-l4` | HIGH CONFIDENCE | Explicit objective |
 | ADD | V | `35e1c-ja-v014` | タッチ決済 — 非接触式支付 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | Existing checkout action |
 | ADD | V | `35e1c-ja-v051` | 暗証番号 — 密码/PIN | SUPPORT | 2 | 1† | 0 | HIGH CONFIDENCE | Payment troubleshooting |
 | ADD | G | `ja-de-place` | 场所 + で + 动词 — 动作场所 | NEW | 1 | 8; CC yes | 0 | HIGH CONFIDENCE | レジで払う; unlinked foundational grammar |
 | ADD | E | `35e1b-ja-x-follow-anything-else-expr` | ほかに何かございますか。— 还需要别的吗？ | SUPPORT | 1 | scenario/context | 0 | HIGH CONFIDENCE | Checkout closing move |
-| ADD | E | `legacy-76-ja` | レシートを取っておいて。— 保留收据 | NEW | 3 | sentence/no context | 0 | **REVIEW REQUIRED** | Practical fit, but informal register conflicts with the polite service dialogue |
+| ADD | E | `legacy-76-ja` | レシートを取っておいて。— 保留收据 | NEW | 3 | sentence/no context | 0 | **DEFERRED — REMOVED FROM 01A** (was `REVIEW REQUIRED`) | Informal register conflicts with the polite service dialogue |
 | ADD | E | `legacy-81-ja` | カードは使えますか。— 确认刷卡 | REVIEW | 2 | 2-turn dialogue | 1; first `ja-s2-l4` | HIGH CONFIDENCE | Deliberate payment review |
 
-Final: **8/3/4; 11 assessable; 33 opportunities; 18 minutes retained.**
+Final after decisions: **7/3/3; 10 assessable; 30 opportunities; 18 minutes retained.**
 
 ### `ja-s2-l6` — 店で注文し、希望を伝える
 
@@ -301,7 +304,7 @@ Final: **8/3/4; 11 assessable; 33 opportunities; 18 minutes retained.**
 | CURRENT | V | `35e1c-ja-v005` | 会計 — 结账 | NEW | 2 | 1 | 1 | HIGH CONFIDENCE | Payment objective |
 | CURRENT | V | `35e1c-ja-v008` | 抜き — 不加/去掉 | NEW | 2 | 1 | 1 | HIGH CONFIDENCE | Modification request |
 | CURRENT | V | `35e1c-ja-v009` | 別々 — 分别 | SUPPORT | 2 | 1 | 1 | HIGH CONFIDENCE | Split payment/service option |
-| CURRENT | G | `35e1c-ja-counter-system` | number + counter — 助数詞系统 | REVIEW | 2 | 4; CC yes | 2; first `ja-s2-l5` | **REVIEW REQUIRED** | Relevant to quantities, but learner-facing English form needs editing |
+| CURRENT | G | `35e1c-ja-counter-system` | 数 + 助数詞 — 助数词系统 | REVIEW | 2 | 4; CC yes | 2; first `ja-s2-l5` | **APPROVED — CONTENT HOTFIX 02** | Relevant quantity review with corrected learner-facing notation |
 | CURRENT | G | `ja-request-onegai` | 名词 + を/でお願いします — 提出所需内容 | REVIEW | 2 | 8; CC yes | 2; first `ja-s2-l1` | HIGH CONFIDENCE | Ordering request |
 | CURRENT | E | `35e1b-ja-d-restaurant-allergy-expr` | six-turn allergy-ordering dialogue | NEW | 2 | dialogue/context | 1 | HIGH CONFIDENCE | Existing task spine |
 | ADD | V | `35e1c-ja-v002` | 食事制限 — 饮食限制 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | Names broader requirement |
@@ -329,17 +332,17 @@ Final: **8/3/4; 11 assessable; 33 opportunities; 18 minutes retained.**
 | CURRENT | V | `35e1c-ja-v015` | 不良品 — 故障品 | NEW | 3 | 1 | 1 | HIGH CONFIDENCE | Product problem |
 | CURRENT | V | `35e1c-ja-v016` | 返金 — 退款 | SUPPORT | 3 | 1 | 1 | HIGH CONFIDENCE | Resolution option |
 | CURRENT | G | `35e1c-ja-explanatory-nodesu` | plain + んです/んですが — 说明与铺垫 | NEW | 3 | 4; CC no | 2 | HIGH CONFIDENCE | Explaining problem politely |
-| CURRENT | G | `35e1c-ja-condition-contrast` | なら/たら/ば/と 条件系统 | SUPPORT | 4 | 4; CC yes | 3 | **REVIEW REQUIRED** | Pedagogical fit exists, but stored `た形ら` is malformed and four-way scope needs review |
+| CURRENT | G | `35e1c-ja-condition-contrast` | なら・たら・ば・と（比較概要） | SUPPORT | 4 | 4; CC disabled | 3 | **BLOCKED BY CONTENT HOTFIX 02** | Retained only as a readable overview; excluded from assessable counts and authoritative practice |
 | CURRENT | E | `35e1b-ja-d-return-defect-expr` | six-turn return dialogue | NEW | 3 | dialogue/context | 1 | HIGH CONFIDENCE | Existing task spine |
 | ADD | V | `ja-c-971` | カード — 卡片 | REVIEW | 1 | 3 | 1; first `ja-s2-l4` | HIGH CONFIDENCE | Deliberate payment/refund review |
-| ADD | V | `ja-c-663` | 保証 — 产品保修 | SUPPORT | 4 | 1† | 0 | **REVIEW REQUIRED** | Strong return-policy fit, but level 4 and warranty scope may exceed the 18-minute task |
+| ADD | V | `ja-c-663` | 保証 — 产品保修 | SUPPORT | 4 | 1† | 0 | **APPROVED** (was `REVIEW REQUIRED`) | Human decision accepts the bounded warranty scope as support content |
 | ADD | V | `35e1c-ja-v050` | 手数料 — 手续费 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | Refund/cancellation cost condition |
 | ADD | G | `ja-nara` | 普通形 + なら — 承接条件 | NEW | 3 | 8; CC yes | 0 | HIGH CONFIDENCE | A narrower, safer condition focus than the broad support record |
 | ADD | E | `35e1b-ja-x-return-policy-expr` | 返品の条件を教えてください。— 询问退货条件 | NEW | 2 | scenario/context | 0 | HIGH CONFIDENCE | Direct objective coverage |
 | ADD | E | `35e1b-ja-x-return-original-expr` | まだ元の箱に入っています。— 仍在原盒中 | NEW | 3 | scenario/context | 0 | HIGH CONFIDENCE | Item-condition evidence |
 | ADD | E | `35e1b-ja-x-return-refund-card-expr` | 返金はカードに戻りますか。— 确认退款方式 | SUPPORT | 3 | scenario/context | 0 | HIGH CONFIDENCE | Resolution follow-up |
 
-Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
+Final after decisions: **8/3/4 links; 10 assessable; 29 opportunities; 18 minutes retained.** The overview grammar is not assessed.
 
 ### `ja-s3-l6` — 薬局・病院で症状を説明する
 
@@ -383,17 +386,17 @@ Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
 | CURRENT | V | `35e1c-ja-v056` | 接続 — 连接 | NEW | 3 | 1 | 1 | HIGH CONFIDENCE | Problem description |
 | CURRENT | V | `35e1c-ja-v057` | 再起動 — 重启 | SUPPORT | 3 | 1 | 1 | HIGH CONFIDENCE | Troubleshooting action |
 | CURRENT | G | `35e1c-ja-te-sequence` | Vて、V — 动作连接 | NEW | 2 | 4; CC no | 1 | HIGH CONFIDENCE | Ordered troubleshooting |
-| CURRENT | G | `35e1c-ja-condition-contrast` | なら/たら/ば/と 条件系统 | REVIEW | 4 | 4; CC yes | 3; first `ja-s3-l5` | **REVIEW REQUIRED** | Conditional troubleshooting fits, but malformed stored form and four-way scope remain |
+| CURRENT | G | `35e1c-ja-condition-contrast` | なら・たら・ば・と（比較概要） | REVIEW | 4 | 4; CC disabled | 3; first `ja-s3-l5` | **BLOCKED BY CONTENT HOTFIX 02** | Retained only as a readable overview; excluded from assessable counts and authoritative practice |
 | CURRENT | E | `35e1c-ja-d-connectivity-expr` | six-turn Wi-Fi dialogue | NEW | 3 | dialogue/context | 1 | HIGH CONFIDENCE | Existing task spine |
 | ADD | V | `35e1c-ja-v058` | ルーター — 路由器 | NEW | 2 | 1† | 0 | HIGH CONFIDENCE | Current dialogue object |
 | ADD | V | `35e1c-ja-v059` | モバイルデータ — 移动数据 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | Alternative connection |
 | ADD | V | `35e1c-ja-v060` | 機内モード — 飞行模式 | NEW | 2 | 1† | 0 | HIGH CONFIDENCE | Diagnostic state |
 | ADD | G | `ja-te-kudasai` | 〜てください — 请求对方行动 | REVIEW | 2 | 8; CC yes | 2; first `ja-s2-l2` | HIGH CONFIDENCE | Exact troubleshooting instructions; register is suitable for service guidance |
 | ADD | E | `legacy-160-ja` | 少し手伝いが必要です。— 需要帮助 | SUPPORT | 2 | sentence/no context | 0 | HIGH CONFIDENCE | Reusable support opening |
-| ADD | E | `legacy-167-ja` | それは試したんですが、まだうまくいきません。— 试过但仍不行 | NEW | 4 | sentence/no context | 1; currently first `ja-s5-l2` | **REVIEW REQUIRED** | Exact fit, but moving a difficulty-4 record before its current Stage-5 use needs review |
+| ADD | E | `legacy-167-ja` | それは試したんですが、まだうまくいきません。— 试过但仍不行 | NEW | 4 | sentence/no context | 1; currently first `ja-s5-l2` | **APPROVED** (was `REVIEW REQUIRED`) | Human decision introduces it here; later uses must be planned as `REVIEW` |
 | ADD | E | `35e1b-ja-x-follow-who-contact-expr` | この件は、どなたに連絡すればいいですか。— 应联系谁 | SUPPORT | 3 | scenario/context | 0 | HIGH CONFIDENCE | Escalation after failed steps |
 
-Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
+Final after decisions: **8/3/4 links; 10 assessable; 29 opportunities; 18 minutes retained.** The overview grammar is not assessed.
 
 ### `ja-s3-l8` — 職場で報告・連絡・相談する
 
@@ -409,18 +412,18 @@ Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
 | CURRENT | V | `35e1c-ja-v085` | 進捗 — 进展 | NEW | 3 | 1 | 1 | HIGH CONFIDENCE | Reporting objective |
 | CURRENT | V | `35e1c-ja-v087` | 報告 — 汇报 | NEW | 2 | 1 | 1 | HIGH CONFIDENCE | Reporting objective |
 | CURRENT | V | `35e1c-ja-v089` | 相談 — 商量/咨询 | SUPPORT | 2 | 1 | 1 | HIGH CONFIDENCE | Consultation objective |
-| CURRENT | G | `35e1c-ja-workplace-register` | です/ます; 尊敬/谦让切换 — 职场语域 | NEW | 4 | 4; CC no | 2 | **REVIEW REQUIRED** | Scenario fit is strong, but one record aggregates three register systems |
+| CURRENT | G | `35e1c-ja-workplace-register` | 敬体・尊敬語・謙譲語（使い分け概要） | SUPPORT | 4 | 4; CC disabled | 2 | **BLOCKED BY CONTENT HOTFIX 02** | Retained as non-assessed overview; it has no single defensible form answer |
 | CURRENT | G | `35e1c-ja-obligation-contrast` | Vなければならない / Vなくてもいい — 义务对比 | NEW | 3 | 4; CC no | 2 | HIGH CONFIDENCE | Task requirements |
 | CURRENT | E | `35e1b-ja-d-work-clarification-expr` | six-turn task-clarification dialogue | NEW | 3 | dialogue/context | 1 | HIGH CONFIDENCE | Existing task spine |
 | ADD | V | `35e1c-ja-v084` | 上司 — 上司 | NEW | 2 | 1† | 0 | HIGH CONFIDENCE | Register-sensitive counterpart |
 | ADD | V | `35e1c-ja-v081` | フィードバック — 反馈 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | Feedback objective |
 | ADD | V | `35e1c-ja-v100` | 勤務表 — 排班表 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | Shift coordination artifact |
-| ADD | G | `ja-indirect-ka` | 普通形 + か + predicate — 把疑问作为内容 | NEW | 3 | 1; CC yes | 0 | **REVIEW REQUIRED** | Clarification fit is plausible, but the current dialogue uses a direct question and the sole example is generic |
+| ADD | G | `ja-indirect-ka` | 普通形 + か + predicate — 把疑问作为内容 | NEW | 3 | 1; CC yes | 0 | **DEFERRED — REMOVED FROM 01A** (was `REVIEW REQUIRED`) | Direct-question dialogue does not support this as the authoritative focus |
 | ADD | E | `legacy-44-ja` | まだ報告書を書き終えていません。— 报告尚未完成 | NEW | 3 | sentence/no context | 0 | HIGH CONFIDENCE | Progress report |
 | ADD | E | `legacy-46-ja` | ご意見をいただけますか。— 请求反馈 | NEW | 3 | sentence/no context | 0 | HIGH CONFIDENCE | Feedback move |
 | ADD | E | `35e1b-ja-x-clarify-understand-expr` | 念のため、私の理解を確認させてください。— 确认理解 | NEW | 3 | scenario/context | 0 | HIGH CONFIDENCE | Clarification move |
 
-Final: **8/3/4; 11 assessable; 31 opportunities; 18 minutes retained.** Existing zero-CC risk is resolved by an existing authored occurrence, subject to review.
+Final after decisions: **8/2/4 links; 9 assessable; 26 opportunities; 18 minutes retained.** The overview grammar is non-assessed and the rejected addition is not replaced merely to hit quota.
 
 ### `ja-s4-l5` — 賃貸・修理について相談する
 
@@ -463,8 +466,8 @@ Final: **8/3/4; 11 assessable; 31 opportunities; 18 minutes retained.** Existing
 | CURRENT | V | `35e1c-ja-v072` | 宿泊予約 — 住宿预订 | NEW | 3 | 1 | 1 | HIGH CONFIDENCE | Booking/check-in |
 | CURRENT | V | `35e1c-ja-v073` | フロント — 前台 | NEW | 2 | 1 | 1 | HIGH CONFIDENCE | Service location |
 | CURRENT | V | `35e1c-ja-v075` | 宿泊料金 — 住宿费 | SUPPORT | 3 | 1 | 1 | HIGH CONFIDENCE | Lodging information |
-| CURRENT | G | `35e1c-ja-workplace-register` | です/ます; 尊敬/谦让切换 — 服务语域 | REVIEW | 4 | 4; CC no | 2; first `ja-s3-l8` | **REVIEW REQUIRED** | Service-register fit, but aggregated grammar scope remains broad |
-| CURRENT | G | `35e1c-ja-condition-contrast` | なら/たら/ば/と 条件系统 | REVIEW | 4 | 4; CC yes | 3; first `ja-s3-l5` | **REVIEW REQUIRED** | Hotel alternatives fit, but malformed stored form and scope remain |
+| CURRENT | G | `35e1c-ja-workplace-register` | 敬体・尊敬語・謙譲語（使い分け概要） | REVIEW | 4 | 4; CC disabled | 2; first `ja-s3-l8` | **BLOCKED BY CONTENT HOTFIX 02** | Readable service-register overview only; excluded from authoritative practice |
+| CURRENT | G | `35e1c-ja-condition-contrast` | なら・たら・ば・と（比較概要） | REVIEW | 4 | 4; CC disabled | 3; first `ja-s3-l5` | **BLOCKED BY CONTENT HOTFIX 02** | Readable condition comparison only; excluded from authoritative practice |
 | CURRENT | E | `35e1b-ja-d-hotel-room-expr` | six-turn room-change dialogue | NEW | 2 | dialogue/context | 1 | HIGH CONFIDENCE | Existing task spine |
 | ADD | V | `35e1c-ja-v071` | 宿泊 — 住宿 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | Category term |
 | ADD | V | `35e1c-ja-v074` | 空室 — 空房 | NEW | 3 | 1† | 0 | HIGH CONFIDENCE | Room availability |
@@ -474,7 +477,7 @@ Final: **8/3/4; 11 assessable; 31 opportunities; 18 minutes retained.** Existing
 | ADD | E | `35e1b-ja-x-hotel-checkout-expr` | チェックアウトは何時ですか。— 询问退房时间 | NEW | 2 | scenario/context | 0 | HIGH CONFIDENCE | Service information |
 | ADD | E | `35e1b-ja-d-hotel-booking-expr` | six-turn booking lookup/breakfast dialogue | SUPPORT | 2 | dialogue/context | 0 | HIGH CONFIDENCE | Covers check-in half of objective |
 
-Final: **8/3/4; 11 assessable; 32 opportunities; 18 minutes retained.**
+Final after decisions: **8/3/4 links; 9 assessable; 27 opportunities; 18 minutes retained.** Two overview links are not assessed.
 
 ## 6. Difficulty continuity
 
@@ -482,37 +485,42 @@ Internal levels are not CEFR or JLPT. Japanese JLPT estimates, where present, we
 
 | Lesson | V average current → proposed | G average current → proposed | Result |
 |---|---:|---:|---|
-| `en-s2-l5` | 2.00 → 2.13 | 1.50 → 1.33 | Stable; adds foundational existence grammar |
+| `en-s2-l5` | 2.00 → 2.29 | 1.50 → 1.33 | Slight numerical rise after removing the ambiguous level-1 card sense; remaining items are level 2–3 |
 | `en-s3-l5` | 2.80 → 3.00 | 2.50 → 2.67 | Gentle advance |
-| `en-s3-l6` | 2.40 → 2.38 | 2.50 → 3.00 | Vocabulary stable; grammar move needs review |
-| `en-s3-l7` | 2.80 → 2.75 | 3.00 → 3.00 | Stable |
-| `en-s3-l8` | 2.33 → 2.38 | 2.00 → 2.33 | Stable; one candidate needs contextual review |
+| `en-s3-l6` | 2.40 → 2.38 | 2.50 → 2.50 | Stable after deferring the level-4 grammar move |
+| `en-s3-l7` | 2.80 → 2.71 | 3.00 → 3.00 | Stable after removing the medical-specific vocabulary |
+| `en-s3-l8` | 2.33 → 2.38 | 2.00 → 2.00 | Stable after deferring the context-mismatched grammar |
 | `en-s3-l9` | 2.80 → 2.88 | 3.00 → 2.67 | Stable; adds reviewed request form |
 | `en-s4-l5` | 2.80 → 2.88 | 3.50 → 3.67 | Stable |
 | `en-s4-l6` | 2.60 → 2.75 | 2.50 → 3.00 | Controlled Stage-4 advance |
-| `ja-s2-l5` | 1.75 → 1.88 | 1.50 → 1.33 | Stable |
+| `ja-s2-l5` | 1.75 → 2.00 | 1.50 → 1.33 | Small rise after removing the ambiguous level-1 card sense; no item exceeds level 3 |
 | `ja-s2-l6` | 2.20 → 2.38 | 2.00 → 2.00 | Stable |
-| `ja-s3-l5` | 2.80 → 2.75 | 3.50 → 3.33 | Stable; warranty candidate requires review |
+| `ja-s3-l5` | 2.80 → 2.75 | 3.50 → 3.33 | Stable; warranty support is approved, while one overview link is non-assessed |
 | `ja-s3-l6` | 2.40 → 2.38 | 3.00 → 3.00 | Stable |
-| `ja-s3-l7` | 2.60 → 2.50 | 3.00 → 2.67 | Vocabulary/grammar stable; one difficulty-4 expression needs review |
-| `ja-s3-l8` | 2.60 → 2.63 | 3.50 → 3.33 | Stable |
+| `ja-s3-l7` | 2.60 → 2.50 | 3.00 → 2.67 | Stable; approved difficulty-4 expression is introduced as `NEW` |
+| `ja-s3-l8` | 2.60 → 2.63 | 3.50 → 3.50 | Link levels stable; only the level-3 obligation grammar remains assessable |
 | `ja-s4-l5` | 2.60 → 2.63 | 3.00 → 3.33 | Gentle service-register advance |
-| `ja-s4-l6` | 2.60 → 2.75 | 4.00 → 4.00 | Stable; intentional review |
+| `ja-s4-l6` | 2.60 → 2.75 | 4.00 → 4.00 | Link levels stable; both current level-4 overviews become non-assessed |
 
-No proposed vocabulary average jumps by more than 0.20. The only notable grammar movement is `en-s3-l6`, where `en-present-perfect` would move earlier than its current lesson use. That link remains `REVIEW REQUIRED`.
+The largest vocabulary-average movement is `en-s2-l5` at +0.29, caused by removing an ambiguous low-level filler rather than adding harder content; every retained item is level 2–3. The proposed level-4 `en-present-perfect` move is deferred, so no new grammar-level jump remains.
 
 ## 7. Practice readiness
 
 | Lesson group | Final assessable | V modes | G base modes | Grammar with CC | Approx. opportunities | Phase 4E requirement |
 |---|---:|---:|---:|---:|---:|---:|
-| EN S2 L5; EN S3 L5/L6/L7; EN S4 L6 | 11 each | 24 | 6 | 2 | 32 | 5 |
-| EN S3 L8 | 11 | 24 | 6 | 3 | 33 | 5 |
+| EN S2 L5; EN S3 L6/L7 | 10 each | 21–24 | 4–6 | 1–2 | 29 | 5 |
+| EN S3 L5; EN S4 L6 | 11 each | 24 | 6 | 2 | 32 | 5 |
+| EN S3 L8 | 10 | 24 | 4 | 2 | 30 | 5 |
 | EN S3 L9; EN S4 L5 | 11 each | 24 | 6 | 1 | 31 | 5 |
-| JA S2 L5/L6 | 11 each | 24 | 6 | 3 | 33 | 5 |
-| JA S3 L5/L6/L7; JA S4 L6 | 11 each | 24 | 6 | 2 | 32 | 5 |
-| JA S3 L8; JA S4 L5 | 11 each | 24 | 6 | 1 | 31 | 5 |
+| JA S2 L5 | 10 | 21 | 6 | 3 | 30 | 5 |
+| JA S2 L6 | 11 | 24 | 6 | 3 | 33 | 5 |
+| JA S3 L5/L7 | 10 each | 24 | 4 eligible | 1 | 29 | 5 |
+| JA S3 L6 | 11 | 24 | 6 | 2 | 32 | 5 |
+| JA S3 L8 | 9 | 24 | 2 eligible | 0 | 26 | 5 |
+| JA S4 L5 | 11 | 24 | 6 | 1 | 31 | 5 |
+| JA S4 L6 | 9 | 24 | 2 eligible | 1 | 27 | 5 |
 
-All 16 configurations fall in the recommended 10–15 assessable and 25–40 opportunity ranges. No lesson remains numerically below target.
+All 16 configurations remain above 25 safe opportunities and can satisfy the five-item completion requirement. Fourteen retain at least 10 assessable items; `ja-s3-l8` and `ja-s4-l6` retain 9 because overview records are intentionally excluded from practice. Seven lessons are below the original 8/3/4 link target after the eight defer decisions.
 
 ### Four current zero-controlled-completion lessons
 
@@ -520,10 +528,10 @@ All 16 configurations fall in the recommended 10–15 assessable and 25–40 opp
 |---|---|---|
 | `en-s3-l9` | `en-could-request`; 7 examples, safe authored occurrences | Add as `REVIEW`; current dialogue already uses “Could you…” |
 | `en-s4-l5` | `en-present-perfect-continuous`; expression `legacy-59-en` supplies the exact repair context | Add as `NEW`; no forced authoring needed |
-| `ja-s3-l8` | `ja-indirect-ka`; safe authored occurrence exists | Keep `REVIEW REQUIRED` until a reviewer confirms it is a focus rather than a direct-question mismatch |
+| `ja-s3-l8` | `ja-indirect-ka` was considered | **DEFERRED / REMOVED FROM 01A**; the lesson remains a `CONTROLLED COMPLETION AUTHORING CANDIDATE` rather than forcing a mismatched grammar |
 | `ja-s4-l5` | `ja-te-itadaku`; added repair expression uses the form | Add as `NEW`; no forced authoring needed |
 
-All four gain at least one controlled-completion-capable grammar link. No exercise mode is manufactured.
+Three of the four gain a natural controlled-completion-capable grammar link. `ja-s3-l8` intentionally remains without CC after review; no exercise mode is manufactured.
 
 ## 8. Prerequisite integration proposal
 
@@ -550,48 +558,58 @@ Keeping current edges is defensible if these lessons are explicitly labelled opt
 
 | Theme | English final | Japanese final | Finding |
 |---|---|---|---|
-| Supermarket | 8/3/4, 32 opp. | 8/3/4, 33 opp. | Comparable; both cover location, price, payment, receipt |
-| Returns | 8/3/4, 32 | 8/3/4, 32 | Comparable; JA warranty candidate needs review |
-| Medical/pharmacy | 8/3/4, 32 | 8/3/4, 32 | Comparable; both add symptom duration and medicine dialogue |
-| Appointments | EN-only sparse target | No paired sparse JA target | No forced translation or artificial JA addition |
-| Mobile/network | 8/3/4, 33 | 8/3/4, 32 | Comparable; JA exact failure expression is harder and flagged |
-| Workplace | 8/3/4, 31 | 8/3/4, 31 | Comparable; both cover reporting, feedback, coordination, clarification |
-| Rent/repairs | 8/3/4, 31 | 8/3/4, 31 | Closely aligned without literal translation |
-| Hotel | 8/3/4, 32 | 8/3/4, 32 | Closely aligned: booking, room issue, checkout |
+| Supermarket | 7/3/4, 29 opp. | 7/3/3, 30 opp. | Both reject ambiguous payment-card filler; JA also rejects an informal receipt expression |
+| Returns | 8/3/4, 32 | 8/3/4 links, 29 | Comparable task coverage; JA retains one non-assessed condition overview and approves bounded warranty support |
+| Medical/pharmacy | 8/2/4, 29 | 8/3/4, 32 | Both add symptom-duration and medicine dialogue without moving EN level-4 grammar earlier |
+| Appointments | 7/3/4, 29 | No paired sparse JA target | No forced translation or artificial JA addition |
+| Mobile/network | 8/2/4, 30 | 8/3/4 links, 29 | Both avoid a mismatched grammar addition; JA retains one non-assessed condition overview |
+| Workplace | 8/3/4, 31 | 8/2/4 links, 26 | JA excludes its register overview from assessment and does not force indirect-question grammar |
+| Rent/repairs | 8/3/3, 31 | 8/3/4, 31 | Closely aligned; EN rejects a peripheral spare-key expression |
+| Hotel | 8/3/4, 32 | 8/3/4 links, 27 | Closely aligned in scenario; two JA overview links are intentionally non-assessed |
 
-No large final depth mismatch remains. Language-specific grammar and register choices remain independent.
+The remaining depth differences are explicit content-safety decisions rather than filler gaps. Every lesson can still satisfy Phase 4E, and language-specific grammar and register choices remain independent.
 
 ## 10. Candidate totals and review queues
 
 | Candidate additions | English | Japanese | Total |
 |---|---:|---:|---:|
-| Vocabulary | 24 | 25 | **49** |
-| Grammar | 8 | 8 | **16** |
-| Expressions | 24 | 24 | **48** |
-| **All links** | **56** | **57** | **113** |
+| Vocabulary retained | 22 | 24 | **46** |
+| Grammar retained | 6 | 7 | **13** |
+| Expressions retained | 23 | 23 | **46** |
+| **All retained additions** | **51** | **54** | **105** |
+| Deferred and removed from 01A | 5 | 3 | **8** |
 
 ### HIGH CONFIDENCE
 
-- Additions: **103**.
-- Complete final matrix including existing links: **223**.
+- Retained additions: **103**.
+- Complete revised matrix including existing links: **223**.
 - These may advance to human line review; they are not pre-approved production rows.
 
-### REVIEW REQUIRED
+### APPROVED
 
-Ten proposed additions:
+Two formerly `REVIEW REQUIRED` additions are explicitly approved:
 
-1. `en-c-969` in `en-s2-l5`: generic “卡片” sense versus payment-card use.
-2. `35e1c-en-v089` in `en-s3-l7`: medical follow-up narrows a general appointment lesson.
-3. `ja-c-971` in `ja-s2-l5`: generic “卡片” sense versus payment-card use.
-4. `ja-c-663` in `ja-s3-l5`: level-4 warranty scope may be too broad.
-5. `en-present-perfect` in `en-s3-l6`: would move a level-4 grammar earlier and has one example.
-6. `en-not-quite` in `en-s3-l8`: exact task use needs a lesson-specific model.
-7. `ja-indirect-ka` in `ja-s3-l8`: current dialogue contains direct clarification; focus boundary needs review.
-8. `legacy-52-en` in `en-s4-l5`: housing fit but peripheral to repair/cost.
-9. `legacy-76-ja` in `ja-s2-l5`: informal register beside a polite service dialogue.
-10. `legacy-167-ja` in `ja-s3-l7`: exact fit but difficulty 4 is currently first used in Stage 5.
+1. `ja-c-663` in `ja-s3-l5`, role `SUPPORT`.
+2. `legacy-167-ja` in `ja-s3-l7`, role `NEW`; any later lesson use must be planned as `REVIEW`.
 
-Seven existing links also remain `REVIEW REQUIRED`: two uses of `35e1c-ja-counter-system`, three uses of `35e1c-ja-condition-contrast`, and two uses of `35e1c-ja-workplace-register`.
+The two existing `35e1c-ja-counter-system` links are also cleared once Hotfix 02 supplies `数 + 助数詞` as the authoritative form.
+
+### DEFERRED / REMOVED FROM 01A
+
+Eight original `REVIEW REQUIRED` rows are retained above for history but excluded from revised totals:
+
+1. `en-c-969` in `en-s2-l5`.
+2. `35e1c-en-v089` in `en-s3-l7`.
+3. `ja-c-971` in `ja-s2-l5`.
+4. `en-present-perfect` in `en-s3-l6`.
+5. `en-not-quite` in `en-s3-l8`.
+6. `ja-indirect-ka` in `ja-s3-l8`.
+7. `legacy-52-en` in `en-s4-l5`.
+8. `legacy-76-ja` in `ja-s2-l5`.
+
+### BLOCKED BY CONTENT HOTFIX
+
+Five existing links remain visible but non-assessed until Content Quality Hotfix 02 is merged: three uses of `35e1c-ja-condition-contrast` and two uses of `35e1c-ja-workplace-register`. The hotfix preserves them as readable overviews while excluding form selection, form recall, controlled completion, weakness recommendation, and SRS review. They are not counted as assessable grammar in the revised practice table.
 
 ### DO NOT ADD candidates
 
@@ -614,46 +632,44 @@ These existing records were considered but intentionally excluded from this matr
 
 ### Vocabulary
 
-- All 49 candidate vocabulary items already have at least one authored example.
-- **44** have exactly one example and are marked `†`; add a second lesson-specific, human-reviewed example before or with implementation.
-- The five candidates with 2–3 examples do not need an example solely to qualify: `en-c-969`, `en-c-397`, `ja-c-971` in two lessons, and `ja-c-399`.
+- All 46 retained candidate vocabulary items already have at least one authored example.
+- **43** have exactly one example and are marked `†`; add a second lesson-specific, human-reviewed example before or with implementation.
+- The three retained candidates with 2–3 examples do not need an example solely to qualify: `en-c-397`, `ja-c-971` in `ja-s3-l5`, and `ja-c-399`.
 
 ### Grammar
 
-- Eleven distinct proposed grammar records repeat semantic fields intended for different teaching purposes: `en-there-is`, `en-what-if`, `en-indirect-question`, `en-not-quite`, `en-could-request`, `en-present-perfect-continuous`, `en-possible-request`, `ja-de-place`, `ja-nara`, `ja-indirect-ka`, and `ja-te-itadaku`.
-- Six proposed grammar records have only one example: `en-present-perfect`, `en-not-quite`, `en-present-perfect-continuous`, `en-possible-request`, `ja-indirect-ka`, and `ja-te-itadaku`. Their selection may still be valid, but lesson-specific examples need human review.
-- `35e1c-ja-counter-system` exposes raw English `number + counter` in a Japanese learner-facing form.
-- `35e1c-ja-condition-contrast` contains the malformed stored segment `た形ら` and combines four conditions in one focus.
-- `35e1c-ja-workplace-register` aggregates polite, honorific, and humble systems. Review whether it is a contrast overview or an over-broad assessable form.
-- All 16 proposed grammar links have selection/recall eligibility and at least one safe controlled-completion occurrence. No new answer key or accepted variant is proposed here.
+- Nine distinct retained grammar candidates repeat semantic fields intended for different teaching purposes: `en-there-is`, `en-what-if`, `en-indirect-question`, `en-could-request`, `en-present-perfect-continuous`, `en-possible-request`, `ja-de-place`, `ja-nara`, and `ja-te-itadaku`.
+- Three retained grammar records have only one example: `en-present-perfect-continuous`, `en-possible-request`, and `ja-te-itadaku`. Their selection may still be valid, but lesson-specific examples need human review.
+- Content Quality Hotfix 02 resolves `35e1c-ja-counter-system` to `数 + 助数詞` and reclassifies the condition and workplace system rows as non-assessed overviews. Their examples and historical links remain intact.
+- All 13 retained proposed grammar links remain eligible for selection/recall and have at least one safe controlled-completion occurrence. No new answer key or accepted variant is proposed here.
 
 ### Expressions
 
-- Fifteen selected legacy expression records have canonical text and an anchor but no separate context field. Add lesson-placement context during human review if the implementation requires it; do not rewrite the canonical expression automatically.
+- Thirteen retained legacy expression records have canonical text and an anchor but no separate context field. Add lesson-placement context during human review if the implementation requires it; do not rewrite the canonical expression automatically.
 - Two-dialogue configurations in the medical/pharmacy and hotel lessons should be checked against the 18-minute duration. The second dialogue is `SUPPORT`, not a second mandatory mastery block.
 
 ## 12. Exact later implementation changes
 
 If and only if the matrix is human approved, a later implementation would need to:
 
-1. Create a new versioned lesson bundle or equivalent additive source change containing 113 new links: 49 vocabulary, 16 grammar, 48 expressions. Do not rewrite the historical bundle.
+1. Create a new versioned lesson bundle or equivalent additive source change containing 105 new links: 46 vocabulary, 13 grammar, 46 expressions. Do not rewrite the historical bundle, and do not reintroduce the eight deferred rows.
 2. Preserve completion policy (`required_items = 5`) separately from instructional role. Add an explicit authored `NEW/REVIEW/SUPPORT` field; do not infer it from current `required/support` flags.
 3. Apply the six prerequisite-edge replacements in section 8 and validate a single connected acyclic path per language.
-4. Keep all 179 currently published grammar eligibility rules, including Hotfix 01 exclusion of `en-greeting` and `ja-greeting`.
-5. Add only human-approved editorial improvements: up to 44 second vocabulary examples, grammar field/example corrections, and missing expression context. These are separate canonical-content changes from the link bundle.
+4. Preserve Hotfix 01 retirement of `en-greeting` and `ja-greeting`, plus Hotfix 02 non-assessed overview policy for `35e1c-ja-condition-contrast` and `35e1c-ja-workplace-register`.
+5. Add only human-approved editorial improvements: up to 43 second vocabulary examples, grammar field/example corrections, and missing expression context. These are separate canonical-content changes from the link bundle.
 6. Recalculate deterministic item counts, duplicate links, publication state, language match, level averages, CC safety, and Phase 4E five-item completion.
 7. Run affected lesson, Phase 4E/4D/4C/4B/4F, content-quality, graph, responsive, and data-safety regressions in local and staging gates.
 8. Perform the normal staged D1 migration/recovery process only in that later authorized task. This matrix itself is not executable data.
 
 ## 13. Human approval checklist
 
-- [ ] A curriculum editor approves all 16 objectives and the 8/3/4 density for an 18-minute lesson.
+- [ ] A curriculum editor approves all 16 objectives and the revised non-quota densities for an 18-minute lesson.
 - [ ] Every `NEW`, `REVIEW`, and `SUPPORT` role is explicitly accepted; it is not copied from current transport metadata.
-- [ ] All ten addition-level `REVIEW REQUIRED` decisions are resolved or removed.
-- [ ] The seven existing-link review flags are resolved, including `number + counter`, `た形ら`, and the broad workplace-register record.
+- [x] All ten original addition-level `REVIEW REQUIRED` decisions are resolved: two approved and eight removed from 01A.
+- [ ] Content Quality Hotfix 02 is merged before implementation; its two counter fixes and five overview-link protections must remain in force.
 - [ ] A language specialist verifies each grammar form, register, distractor safety, controlled-completion occurrence, and accepted answer policy.
-- [ ] The 44 one-example vocabulary candidates receive a decision on a second lesson-specific example.
-- [ ] The 15 legacy expressions without separate context receive a context decision.
+- [ ] The 43 retained one-example vocabulary candidates receive a decision on a second lesson-specific example.
+- [ ] The 13 retained legacy expressions without separate context receive a context decision.
 - [ ] Reviewers confirm two dialogues fit within the medical and hotel lessons' 18-minute budgets.
 - [ ] English/Japanese thematic parity is approved without forcing literal translation.
 - [ ] Design A (required chain) is approved, or design B receives explicit optional-branch product semantics.

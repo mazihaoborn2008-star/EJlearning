@@ -1,6 +1,6 @@
 import {lessonPracticeCurriculum} from './lessons-35d.js';
 import {weakItems} from './recommendations-4d.js';
-import {isCurrentGrammarId} from './content-quality-01.js';
+import {isPracticeEligibleGrammarId} from './content-quality-02.js';
 
 const encoder=new TextEncoder(),decoder=new TextDecoder();
 const ID=/^[a-z0-9][a-z0-9-]{0,95}$/,TOKEN=/^[A-Za-z0-9_-]{40,4096}$/;
@@ -47,7 +47,7 @@ async function grammarPool(db,ids=null,language=null){
  const conditions=[ids?.length?`g.id IN (${marks(ids.length)})`:`g.publication_state='published'`],args=[...(ids||[])];if(language){conditions.push('g.language=?');args.push(language);}
  const items=await results(db.prepare(`SELECT g.id,g.language,g.form_name,g.title_zh,g.purpose_zh,g.level
    FROM v2_grammar_points g WHERE ${conditions.join(' AND ')} AND g.publication_state='published' ORDER BY g.level,g.sort_order,g.id LIMIT 160`).bind(...args));
- return items.filter(item=>isCurrentGrammarId(item.id));
+ return items.filter(item=>isPracticeEligibleGrammarId(item.id));
 }
 async function excludedRelations(db,type,id){
  try{

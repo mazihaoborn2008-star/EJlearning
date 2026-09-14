@@ -10,13 +10,13 @@ const vocab=[
  ['v-alpha','en','Alpha','甲'],['v-bravo','en','Bravo','乙'],['v-charlie','en','Charlie','丙'],['v-delta','en','Delta','丁'],['v-echo','en','Echo','戊'],['v-foxtrot','en','Foxtrot','己'],
  ['v-ja-one','ja','水','水'],['v-ja-two','ja','火','火'],['v-ja-three','ja','木','木'],['v-ja-four','ja','金','金']
 ];
-const grammar=[['g-might','en','might','可能性'],['g-can','en','can','能力'],['g-will','en','will','将来'],['g-must','en','must','义务'],['g-should','en','should','建议'],['g-could','en','could','较弱可能'],['en-greeting','en','greeting / thanks formula','程式化社交回应']];
+const grammar=[['g-might','en','might','可能性'],['g-can','en','can','能力'],['g-will','en','will','将来'],['g-must','en','must','义务'],['g-should','en','should','建议'],['g-could','en','could','较弱可能'],['en-greeting','en','greeting / thanks formula','程式化社交回应'],['35e1c-ja-condition-contrast','ja','なら・たら・ば・と（比較概要）','条件比较概览'],['35e1c-ja-workplace-register','ja','敬体・尊敬語・謙譲語（使い分け概要）','职场语域概览']];
 const units=[
  ['en-s1-l1','en',1,'topic','Lesson A','Practice five items.',1,'published',15],
  ['en-s1-l2','en',1,'topic','Lesson B','Shared item must not leak.',2,'published',15],
  ['en-s1-l3','en',1,'topic','Sparse lesson','Practice one item.',3,'published',15]
 ];
-const items=[...vocab.slice(0,5).map((x,i)=>['en-s1-l1','vocabulary',x[0],'required',i+1,1]),['en-s1-l1','grammar','en-greeting','required',1,1],['en-s1-l2','vocabulary','v-alpha','required',1,1],['en-s1-l2','grammar','g-might','required',2,1],['en-s1-l3','vocabulary','v-foxtrot','required',1,1]];
+const items=[...vocab.slice(0,5).map((x,i)=>['en-s1-l1','vocabulary',x[0],'required',i+1,1]),['en-s1-l1','grammar','en-greeting','required',1,1],['en-s1-l1','grammar','35e1c-ja-condition-contrast','support',2,0],['en-s1-l1','grammar','35e1c-ja-workplace-register','support',3,0],['en-s1-l2','vocabulary','v-alpha','required',1,1],['en-s1-l2','grammar','g-might','required',2,1],['en-s1-l3','vocabulary','v-foxtrot','required',1,1]];
 const bundle={v:'phase4e-test',u:units,p:[],i:items,e:[]};
 
 function database(){
@@ -147,4 +147,20 @@ test('weakness vocabulary and grammar sessions contain only ranked real weakness
  assert.equal(v.body.meta.limit,5);assert.equal(v.body.meta.maximum,10);assert.equal(v.body.data.length,2);assert.match(v.body.data[0].prompt,/甲/);assert.match(v.body.data[1].prompt,/乙/);
  assert.equal(g.body.data.length,2);assert.match(g.body.data[0].prompt,/可能性/);assert.match(g.body.data[1].prompt,/能力/);assert.equal(h.DB.sqlite.prepare('SELECT total_changes() n').get().n,before);
  assert.equal((await session(h,'source=weakness&type=vocabulary&limit=11')).response.status,400);assert.equal((await session(h,'source=weakness&type=mixed')).response.status,400);assert.equal((await session(h,'source=weakness&type=vocabulary&content_id=v-alpha&limit=1')).response.status,400);
+});
+
+test('overview-only grammar cannot create standalone, lesson, weakness, or direct legacy practice',async()=>{
+ const h=harness();
+ for(const id of ['35e1c-ja-condition-contrast','35e1c-ja-workplace-register']){
+  assert.equal((await session(h,`type=grammar&mode=recall&content_id=${id}&language=ja&limit=1`)).body.data.length,0);
+  h.DB.sqlite.prepare(`INSERT INTO grammar_progress(user_id,grammar_id,attempts,correct_count,wrong_count,correct_streak,last_result,first_seen_at,last_seen_at,last_correct_at,last_wrong_at,review_stage,review_count,lapse_count,last_reviewed_at,next_review_at,current_interval_seconds) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`)
+   .run('user-a',id,1,0,1,0,0,now-10,now-10,null,now-10,0,1,1,now-10,now,600);
+ }
+ const lesson=await session(h,'type=grammar&mode=recall&context=lesson&lesson_id=en-s1-l1&limit=10');
+ assert.deepEqual(lesson.body.data,[]);
+ const weakness=await session(h,'source=weakness&type=grammar&mode=recall&language=ja');
+ assert.deepEqual(weakness.body.data,[]);
+ const direct=await call(h,'/api/learning/attempt',{method:'POST',body:{attempt_id:'blocked_overview_0001',content_type:'grammar',content_id:'35e1c-ja-condition-contrast',answer:'なら'}});
+ assert.equal(direct.response.status,404);assert.equal(direct.body.error.code,'CONTENT_NOT_FOUND');
+ assert.equal(h.DB.sqlite.prepare("SELECT COUNT(*) count FROM learning_attempts WHERE content_id='35e1c-ja-condition-contrast'").get().count,0);
 });

@@ -38,7 +38,7 @@ function harness() {
     DB.sqlite.prepare('INSERT INTO v2_vocabulary_items VALUES(?,?,?,?)').run(id, language, lemma, 'published');
     DB.sqlite.prepare('INSERT INTO v2_vocabulary_senses VALUES(?,?,?,?)').run(`sense-${id}`, id, meaning, 0);
   }
-  DB.sqlite.prepare('INSERT INTO v2_grammar_points VALUES(?,?,?,?,?)').run('en-present-perfect', 'en', 'have + past participle', '现在完成时', 'published');
+  for(const row of [['en-present-perfect','en','have + past participle','现在完成时'],['35e1c-ja-condition-contrast','ja','なら・たら・ば・と（比較概要）','条件比较概览'],['35e1c-ja-workplace-register','ja','敬体・尊敬語・謙譲語（使い分け概要）','职场语域概览']])DB.sqlite.prepare('INSERT INTO v2_grammar_points VALUES(?,?,?,?,?)').run(...row,'published');
   let now = 2_000_000_000;
   const services = {now: () => now, session: async request => request.headers.get('X-Test-User') ? {user_id: request.headers.get('X-Test-User')} : null};
   return {DB, env: {DB, CONTENT_DB: DB}, services, now: () => now, setNow: value => { now = value; }, advance: seconds => { now += seconds; }};
@@ -134,6 +134,18 @@ test('empty and learned-but-not-due summaries are honest; unseen curriculum is n
   assert.equal(future.body.data.next_review_at, h.now() + 86400);
   assert.equal(queue.body.data.length, 0);
   assert.equal(h.DB.sqlite.prepare('SELECT COUNT(*) AS n FROM vocabulary_progress').get().n, 1, 'two unseen curriculum rows were not initialized');
+});
+
+test('overview-only grammar history stays queryable without entering SRS review',async()=>{
+ const h=harness(),base=h.now();
+ for(const [index,id] of ['35e1c-ja-condition-contrast','35e1c-ja-workplace-register'].entries()){
+  h.DB.sqlite.prepare('INSERT INTO learning_attempts VALUES(?,?,?,?,?,?)').run('user-a',`historical_overview_${index}`,'grammar',id,0,base-index);
+  h.DB.sqlite.prepare('UPDATE grammar_progress SET next_review_at=? WHERE user_id=? AND grammar_id=?').run(base,'user-a',id);
+ }
+ const summary=(await call(h,'/api/review/summary',{user:'user-a'})).body.data,queue=(await call(h,'/api/review/queue?type=grammar',{user:'user-a'})).body.data,recent=(await call(h,'/api/progress/recent?limit=8',{user:'user-a'})).body.data;
+ assert.equal(summary.grammar.scheduled_count,0);assert.equal(summary.grammar.due_count,0);assert.deepEqual(queue,[]);
+ assert.deepEqual(recent.filter(x=>x.type==='grammar').map(x=>x.id).sort(),['35e1c-ja-condition-contrast','35e1c-ja-workplace-register']);
+ for(const id of ['35e1c-ja-condition-contrast','35e1c-ja-workplace-register'])assert.equal(h.DB.sqlite.prepare('SELECT attempts FROM grammar_progress WHERE user_id=? AND grammar_id=?').get('user-a',id).attempts,1);
 });
 
 test('anonymous review APIs return 401 and GETs make zero writes', async () => {

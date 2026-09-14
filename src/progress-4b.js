@@ -3,6 +3,7 @@ import {getReviewSnapshot,recommendationData} from './recommendations-4d.js';
 import {practiceSession,resolvePracticeExercise,normalizePracticeAnswer,lessonEvidence} from './practice-4e.js';
 import {createRemediationToken} from './remediation-4f.js';
 import {readSettings,startOfLocalDay} from './settings-4f.js';
+import {isPracticeEligibleGrammarId,practiceIneligibleGrammarIds} from './content-quality-02.js';
 
 const SECTION_KEYS = new Set(['overview', 'vocabulary', 'grammar', 'expressions', 'scenario', 'practice']);
 const ID_PATTERN = /^[a-z0-9][a-z0-9-]{0,95}$/;
@@ -56,6 +57,7 @@ async function canonicalItem(db, type, id) {
   if (type === 'vocabulary') return db.prepare(`SELECT v.id,v.language,v.lemma AS answer,
     COALESCE((SELECT s.meaning_zh FROM v2_vocabulary_senses s WHERE s.item_id=v.id ORDER BY s.sort_order,s.id LIMIT 1),'词汇') AS safe_explanation
     FROM v2_vocabulary_items v WHERE v.id = ? AND v.publication_state = 'published'`).bind(id).first();
+  if(!isPracticeEligibleGrammarId(id))return null;
   return db.prepare(`SELECT id,language,form_name AS answer,title_zh AS safe_title,title_zh AS safe_explanation
     FROM v2_grammar_points WHERE id = ? AND publication_state = 'published'`).bind(id).first();
 }
@@ -233,12 +235,12 @@ async function reviewQueue(url, db, userId, now) {
     FROM vocabulary_progress p JOIN v2_vocabulary_items v ON v.id=p.vocabulary_id
     WHERE p.user_id=? AND p.next_review_at IS NOT NULL AND p.next_review_at<=? AND v.publication_state='published'
     ORDER BY p.next_review_at,p.vocabulary_id LIMIT ?`).bind(now, userId, now, limit).all());
-  if (type !== 'vocabulary') reads.push(db.prepare(`SELECT 'grammar' AS type,p.grammar_id AS id,g.language,g.title_zh AS prompt,
+  if (type !== 'vocabulary') {const ineligible=practiceIneligibleGrammarIds.map(id=>`'${id}'`).join(',');reads.push(db.prepare(`SELECT 'grammar' AS type,p.grammar_id AS id,g.language,g.title_zh AS prompt,
       p.next_review_at,? - p.next_review_at AS overdue_seconds,p.attempts,p.correct_count,p.wrong_count,p.correct_streak,
       p.review_stage,p.review_count,p.lapse_count,p.current_interval_seconds
     FROM grammar_progress p JOIN v2_grammar_points g ON g.id=p.grammar_id
-    WHERE p.user_id=? AND p.next_review_at IS NOT NULL AND p.next_review_at<=? AND g.publication_state='published'
-    ORDER BY p.next_review_at,p.grammar_id LIMIT ?`).bind(now, userId, now, limit).all());
+    WHERE p.user_id=? AND p.next_review_at IS NOT NULL AND p.next_review_at<=? AND g.publication_state='published' AND p.grammar_id NOT IN (${ineligible})
+    ORDER BY p.next_review_at,p.grammar_id LIMIT ?`).bind(now, userId, now, limit).all());}
   const rows = (await Promise.all(reads)).flatMap(result => result.results || [])
     .sort((a, b) => Number(a.next_review_at) - Number(b.next_review_at) || a.type.localeCompare(b.type) || a.id.localeCompare(b.id))
     .slice(0, limit);
