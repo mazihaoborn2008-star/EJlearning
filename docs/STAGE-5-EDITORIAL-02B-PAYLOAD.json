@@ -1,0 +1,4285 @@
+{
+  "schema_version": "stage-5-editorial-02b-candidate-v1",
+  "payload_kind": "FINAL HUMAN-APPROVED EDITORIAL PAYLOAD — AUTHORIZED INPUT FOR FUTURE STAGE 5 IMPLEMENTATION",
+  "generated_date": "2026-09-15",
+  "authority": {
+    "matrix": "docs/STAGE-5-EXPANSION-02A-APPROVAL-MATRIX.md",
+    "git_head": "4e900689da78e5d05878bb2ae59e7327623a473a",
+    "bundle": "curriculum-expansion-01a-v1",
+    "human_approval_status": "HUMAN FINAL APPROVED",
+    "implementation_authorized": true
+  },
+  "vocabulary_examples": [
+    {
+      "canonical_id": "en-c-649",
+      "language": "en",
+      "slot_ids": [
+        "EN1",
+        "EN3"
+      ],
+      "form": "scope",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "Let's reduce the scope to the two urgent tasks.",
+      "translation_zh": "我们把范围缩小到两项紧急任务吧。",
+      "reason": "Exact bounded-work sense; natural neutral workplace proposal.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-757",
+      "language": "en",
+      "slot_ids": [
+        "EN1",
+        "EN2",
+        "EN3",
+        "EN7",
+        "EN8"
+      ],
+      "form": "evidence",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "The evidence supports delaying the launch by one week.",
+      "translation_zh": "证据表明，把发布推迟一周是合理的。",
+      "reason": "English is idiomatic; Chinese revised so supports expresses evidential justification rather than literal support.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-645",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN4"
+      ],
+      "form": "alternative",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "If the venue is unavailable, the library is a feasible alternative.",
+      "translation_zh": "如果场地不可用，图书馆是一个可行的替代选择。",
+      "reason": "Concrete replacement option in a clear contingency.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-613",
+      "language": "en",
+      "slot_ids": [
+        "EN2"
+      ],
+      "form": "rethink",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "We should rethink the plan if the safety check fails.",
+      "translation_zh": "如果安全检查不通过，我们应该重新考虑这个方案。",
+      "reason": "Natural reconsideration prompted by new evidence.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-705",
+      "language": "en",
+      "slot_ids": [
+        "EN2"
+      ],
+      "form": "efficient",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "Sharing one vehicle would be more efficient than making two trips.",
+      "translation_zh": "共用一辆车会比跑两趟更高效。",
+      "reason": "Clear resource-efficiency comparison.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-725",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN8"
+      ],
+      "form": "evaluate",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "We need to evaluate each option against cost, time, and risk.",
+      "translation_zh": "我们需要按成本、时间和风险评估每个方案。",
+      "reason": "Natural formal collocation with explicit criteria.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-769",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN7",
+        "EN8"
+      ],
+      "form": "limitation",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "The main limitation is that the estimate excludes training time.",
+      "translation_zh": "主要局限是该估算没有计入培训时间。",
+      "reason": "Exact bounded-weakness sense and faithful translation.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-785",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN3"
+      ],
+      "form": "trade-off",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "The trade-off is faster delivery but less time for testing.",
+      "translation_zh": "取舍在于交付更快，但测试时间更少。",
+      "reason": "Clear benefit-cost relationship in planning register.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-793",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN3"
+      ],
+      "form": "feasible",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "The second option is feasible if one staff member can be reassigned temporarily.",
+      "translation_zh": "如果能临时调配一名员工，第二个方案是可行的。",
+      "reason": "Replaces potentially dehumanizing workplace phrasing about borrowing a staff member.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-653",
+      "language": "en",
+      "slot_ids": [
+        "EN3"
+      ],
+      "form": "priority",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "Safety is the first priority, so the cosmetic changes can wait.",
+      "translation_zh": "安全是首要事项，因此外观调整可以稍后。",
+      "reason": "Natural ranking of a work need.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-781",
+      "language": "en",
+      "slot_ids": [
+        "EN3"
+      ],
+      "form": "consensus",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "We reached a consensus on the budget, but not on the deadline.",
+      "translation_zh": "我们在预算上达成了共识，但在截止日期上尚未达成共识。",
+      "reason": "Adds parallel preposition in English and makes the Chinese contrast explicit.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-617",
+      "language": "en",
+      "slot_ids": [
+        "EN4"
+      ],
+      "form": "adjust",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "We can adjust the connection time without changing the destination.",
+      "translation_zh": "我们可以调整转机时间，而不改变目的地。",
+      "reason": "Bounded itinerary adjustment; natural travel context.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-641",
+      "language": "en",
+      "slot_ids": [
+        "EN4"
+      ],
+      "form": "postpone",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "They postponed the departure until the weather improved.",
+      "translation_zh": "他们把出发时间推迟到天气好转以后。",
+      "reason": "Correct later-time sense and past sequence.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-629",
+      "language": "en",
+      "slot_ids": [
+        "EN6"
+      ],
+      "form": "misunderstand",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "I may have misunderstood which deadline you meant.",
+      "translation_zh": "我可能误解了你指的是哪个截止日期。",
+      "reason": "Non-blaming repair with a clear intended-content sense.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-737",
+      "language": "en",
+      "slot_ids": [
+        "EN6",
+        "EN8"
+      ],
+      "form": "clarify",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "Could you clarify whether that figure is observed or estimated?",
+      "translation_zh": "你能澄清一下那个数字是观察值还是估算值吗？",
+      "reason": "Precise reporting distinction and polite register.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-609",
+      "language": "en",
+      "slot_ids": [
+        "EN6"
+      ],
+      "form": "rephrase",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "Let me rephrase that so it does not sound like blame.",
+      "translation_zh": "我换个说法，以免听起来像是在责怪。",
+      "reason": "Communicative repair rather than mere repetition.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-685",
+      "language": "en",
+      "slot_ids": [
+        "EN6"
+      ],
+      "form": "harsh",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "My message sounded harsher than I intended.",
+      "translation_zh": "我发的信息听起来比我的原意更尖锐。",
+      "reason": "Chinese revised to express the perceived tone of a message naturally, without labeling the speaker.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-1081",
+      "language": "en",
+      "slot_ids": [
+        "EN7"
+      ],
+      "form": "turn out",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "The cheaper option turned out to require more staff time.",
+      "translation_zh": "后来发现，较便宜的方案反而需要员工投入更多时间。",
+      "reason": "Chinese revised to express a later-discovered outcome and natural staff-time wording.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-1085",
+      "language": "en",
+      "slot_ids": [
+        "EN7"
+      ],
+      "form": "up in the air",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "The final date is still up in the air because approval is pending.",
+      "translation_zh": "最终日期仍未确定，因为审批尚未完成。",
+      "reason": "Chinese revised for a natural pending-approval explanation; English register remains neutral-informal.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-733",
+      "language": "en",
+      "slot_ids": [
+        "EN7"
+      ],
+      "form": "justify",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "The results do not justify increasing the budget yet.",
+      "translation_zh": "这些结果尚不足以证明增加预算是合理的。",
+      "reason": "Defensible-reason sense; not excuse-making.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-773",
+      "language": "en",
+      "slot_ids": [
+        "EN8"
+      ],
+      "form": "perspective",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "From the customer's perspective, the delay looked unexplained.",
+      "translation_zh": "从客户的视角看，这次延误似乎没有得到解释。",
+      "reason": "Clearly marks an interpretive position rather than an observation.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-709",
+      "language": "en",
+      "slot_ids": [
+        "EN8"
+      ],
+      "form": "accurate",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "The recorded time is accurate, but the stated cause is still an assumption.",
+      "translation_zh": "记录的时间准确无误，但所述原因仍只是一种假定。",
+      "reason": "Specifies what is accurate and cleanly contrasts observation with inference.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-801",
+      "language": "en",
+      "slot_ids": [
+        "EN8"
+      ],
+      "form": "relevant",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "Only include details that are relevant to the final decision.",
+      "translation_zh": "只加入与最终决定相关的细节。",
+      "reason": "Natural report-editing instruction with exact relevance sense.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-761",
+      "language": "en",
+      "slot_ids": [
+        "EN8"
+      ],
+      "form": "assumption",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "That conclusion depends on an assumption we have not checked.",
+      "translation_zh": "那个结论依赖于一个我们尚未核实的假定。",
+      "reason": "Explicitly distinguishes an unverified premise.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-3207",
+      "language": "ja",
+      "slot_ids": [
+        "JA1"
+      ],
+      "form": "甲斐",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "見直した甲斐があり、無理のない計画になりました。",
+      "translation_zh": "重新审视是值得的，计划变得切实可行了。",
+      "reason": "Natural Vた + 甲斐がある judgment.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-607",
+      "language": "ja",
+      "slot_ids": [
+        "JA1",
+        "JA7"
+      ],
+      "form": "絞る",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "候補を二つに絞ってから、条件を比べましょう。",
+      "translation_zh": "先把候选方案缩小到两个，再比较条件吧。",
+      "reason": "Chinese revised for natural sequencing; Japanese naturally narrows candidates in a decision meeting.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-651",
+      "language": "ja",
+      "slot_ids": [
+        "JA1",
+        "JA3",
+        "JA7"
+      ],
+      "form": "範囲",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "今回は調査の範囲を国内市場に限ります。",
+      "translation_zh": "这次把调查范围限定在国内市场。",
+      "reason": "Exact bounded-scope sense and formal-neutral register.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-683",
+      "language": "ja",
+      "slot_ids": [
+        "JA1",
+        "JA3",
+        "JA6",
+        "JA7"
+      ],
+      "form": "判断",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "証拠が足りないため、今は判断を保留します。",
+      "translation_zh": "由于证据不足，现在暂缓判断。",
+      "reason": "Natural cautious evidence-based judgment.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-527",
+      "language": "ja",
+      "slot_ids": [
+        "JA3",
+        "JA6",
+        "JA8"
+      ],
+      "form": "懸念",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "担当者の負担が大きすぎる点に懸念があります。",
+      "translation_zh": "对负责人负担过重这一点有所担忧。",
+      "reason": "Repairs the loose clause connection while preserving formal concern register.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-655",
+      "language": "ja",
+      "slot_ids": [
+        "JA3",
+        "JA7"
+      ],
+      "form": "優先事項",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "安全を最優先事項として、人員を配分しましょう。",
+      "translation_zh": "把安全作为首要事项来分配人员吧。",
+      "reason": "Natural resource-negotiation collocation.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-619",
+      "language": "ja",
+      "slot_ids": [
+        "JA4"
+      ],
+      "form": "調整する",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "乗り継ぎ時間を調整できるか確認します。",
+      "translation_zh": "我确认一下能否调整转机时间。",
+      "reason": "Natural service-side schedule coordination.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-643",
+      "language": "ja",
+      "slot_ids": [
+        "JA4"
+      ],
+      "form": "延期する",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "悪天候のため、出発を明日の朝まで延期します。",
+      "translation_zh": "因天气恶劣，出发推迟到明早。",
+      "reason": "Correct formal postponement collocation.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-647",
+      "language": "ja",
+      "slot_ids": [
+        "JA4"
+      ],
+      "form": "代案",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "直行便がなければ、鉄道を使う代案があります。",
+      "translation_zh": "如果没有直达航班，还有改乘火车的替代方案。",
+      "reason": "Chinese revised to avoid the stiff phrase 乘铁路; Japanese particles and register are natural.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-671",
+      "language": "ja",
+      "slot_ids": [
+        "JA5",
+        "JA6",
+        "JA8"
+      ],
+      "form": "負担",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "急な変更は担当者の負担になるかもしれません。",
+      "translation_zh": "突然变更可能会给负责人造成负担。",
+      "reason": "Correct person-burden sense with considerate force.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-631",
+      "language": "ja",
+      "slot_ids": [
+        "JA6"
+      ],
+      "form": "誤解する",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "私が期限を誤解していたようです。",
+      "translation_zh": "看来是我误解了截止日期。",
+      "reason": "Natural non-blaming self-attribution and cautious inference.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-739",
+      "language": "ja",
+      "slot_ids": [
+        "JA6"
+      ],
+      "form": "明確にする",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "事実と推測の違いを明確にしていただけますか。",
+      "translation_zh": "能请您明确事实与推测的区别吗？",
+      "reason": "Softens the original directive while retaining a clear workplace request; ていただく is prior-approved.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-787",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "form": "トレードオフ",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "速さと正確さの間にはトレードオフがあります。",
+      "translation_zh": "速度与准确性之间存在取舍关系。",
+      "reason": "Natural in a workplace planning register; teach the Chinese gloss at first use.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-783",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "form": "合意",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "sentence": "期限については合意しましたが、配分は未定です。",
+      "translation_zh": "我们已就截止日期达成共识，但资源分配仍未确定。",
+      "reason": "Chinese revised to state the agreeing parties and allocation sense explicitly.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-751",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "form": "配分する",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "優先度に応じて、時間と人員を配分します。",
+      "translation_zh": "根据优先级分配时间和人员。",
+      "reason": "Natural allocation of finite resources.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-795",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "form": "実行可能",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "sentence": "この案は、追加予算があれば実行可能です。",
+      "translation_zh": "这个方案如果有追加预算就可行。",
+      "reason": "Natural formal predicate and clear feasibility condition.",
+      "implementation_authorized": true
+    }
+  ],
+  "grammar_examples": [
+    {
+      "canonical_id": "en-concessive-although",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN3"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "Although the cheaper plan saves money, it creates a staffing risk.",
+      "translation_zh": "虽然较便宜的方案省钱，但会带来人员风险。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "Though and while can also complete the surface frame; retain for explanation, selection, and recall.",
+      "context_note": "Present concession before a staffing trade-off.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-concessive-although",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN3"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "Although the express service costs more, it reduces the delivery risk.",
+      "translation_zh": "虽然加急服务费用更高，但它能降低交付风险。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "A synonymous concessive linker remains locally possible.",
+      "context_note": "Cost versus risk.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-concessive-although",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN3"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "The team met the deadline, although two optional features were removed.",
+      "translation_zh": "团队按期完成了任务，不过删去了两个可选功能。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "Though is equally grammatical in the authored position.",
+      "context_note": "Past outcome with a qualification.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-seem-to",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN8"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "The figures seem to show a delay, but the cause is unclear.",
+      "translation_zh": "这些数字似乎显示有延误，但原因不清楚。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "seem to",
+      "cc_reason": "Blank only the locally authored seem to before show.",
+      "context_note": "Present inference from figures.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-seem-to",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN8"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "The revised schedule seems to leave enough time for testing.",
+      "translation_zh": "修订后的日程似乎为测试留出了足够时间。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "seems to",
+      "cc_reason": "Subject agreement and following infinitive make the authored occurrence local and bounded.",
+      "context_note": "Tentative feasibility judgment.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-seem-to",
+      "language": "en",
+      "slot_ids": [
+        "EN2",
+        "EN8"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "The two reports seemed to describe the same incident.",
+      "translation_zh": "两份报告似乎描述的是同一事件。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "seemed to",
+      "cc_reason": "Past morphology is fixed by the authored sentence.",
+      "context_note": "Past cautious comparison.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-even-if",
+      "language": "en",
+      "slot_ids": [
+        "EN3",
+        "EN4"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "Even if we postpone the meeting, we still need a decision today.",
+      "translation_zh": "即使推迟会议，我们今天仍需作出决定。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "Without an explicit hypothetical cue, even though can produce a different but locally grammatical reading.",
+      "context_note": "Negotiation under a possible change.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-even-if",
+      "language": "en",
+      "slot_ids": [
+        "EN3",
+        "EN4"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "Even if the supplier lowers the price, the staffing problem will remain.",
+      "translation_zh": "即使供应商降价，人员配置问题仍会存在。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "Even if",
+      "cc_reason": "The future hypothetical and remain clause uniquely cue the target concessive condition.",
+      "context_note": "Future concession.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-even-if",
+      "language": "en",
+      "slot_ids": [
+        "EN3",
+        "EN4"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "We would keep the backup route even if the weather improved.",
+      "translation_zh": "即使天气好转，我们也会保留备用路线。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "even if",
+      "cc_reason": "The hypothetical would clause fixes the intended conditional concession.",
+      "context_note": "Counterfactual contingency.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-not-that",
+      "language": "en",
+      "slot_ids": [
+        "EN6"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "It's not that I disagree; I may have misunderstood the scope.",
+      "translation_zh": "并不是我不同意；我可能误解了范围。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "not that",
+      "cc_reason": "Blank the complete fixed frame after It is.",
+      "context_note": "Non-blaming repair.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-not-that",
+      "language": "en",
+      "slot_ids": [
+        "EN6"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "It's not that the figures are inaccurate; they are simply incomplete.",
+      "translation_zh": "并不是这些数字不准确；它们只是不完整。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "not that",
+      "cc_reason": "The corrective second clause fixes the intended not that frame.",
+      "context_note": "Correct a misinterpretation of evidence.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-not-that",
+      "language": "en",
+      "slot_ids": [
+        "EN6"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "It wasn't that she refused to help; she had not received the request.",
+      "translation_zh": "并不是她拒绝帮忙；只是她没有收到这个请求。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "The natural contraction interrupts the exact not that span, so retain this as an explanatory example.",
+      "context_note": "Past explanation that avoids blame.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-should-have",
+      "language": "en",
+      "slot_ids": [
+        "EN7"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "We should have checked the connection before booking.",
+      "translation_zh": "我们订票前本应该确认转机安排。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "should have",
+      "cc_reason": "The before-booking hindsight context cues past recommendation.",
+      "context_note": "Past procedural evaluation.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-should-have",
+      "language": "en",
+      "slot_ids": [
+        "EN7"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "I should have asked for the final figures before the meeting.",
+      "translation_zh": "我本应该在会前索要最终数据。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "should have",
+      "cc_reason": "First-person hindsight and before phrase make the intended judgment explicit.",
+      "context_note": "Personal hindsight.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-should-have",
+      "language": "en",
+      "slot_ids": [
+        "EN7"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "They should have allowed more time for staff training.",
+      "translation_zh": "他们本应该为员工培训留出更多时间。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "Without an authored judgment cue, could have and might have remain plausible completions.",
+      "context_note": "Third-person retrospective evaluation.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-indirect-ka",
+      "language": "ja",
+      "slot_ids": [
+        "JA4",
+        "JA6"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "どの便に変更できるか、確認していただけますか。",
+      "translation_zh": "能请您确认可以改到哪趟航班吗？",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "The sentence contains both embedded か and final question か, so the target occurrence is not uniquely localizable.",
+      "context_note": "Polite travel-service request.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-indirect-ka",
+      "language": "ja",
+      "slot_ids": [
+        "JA4",
+        "JA6"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "会議が何時に終わるか、まだわかりません。",
+      "translation_zh": "还不知道会议几点结束。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "か",
+      "cc_reason": "The wh-word and matrix predicate make the embedded-question particle locally unique.",
+      "context_note": "Unknown schedule information.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-indirect-ka",
+      "language": "ja",
+      "slot_ids": [
+        "JA4",
+        "JA6"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "この案が実行可能かどうか、先に評価しましょう。",
+      "translation_zh": "先评估一下这个方案是否可行吧。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "Both か and かどうか can be grammatical in this yes-no embedded question.",
+      "context_note": "Collaborative feasibility check.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-wake-dewa-nai",
+      "language": "ja",
+      "slot_ids": [
+        "JA6"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "責めたいわけではなく、確認したいだけです。",
+      "translation_zh": "并不是想责怪，只是想确认。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "のではなく can express the same local repair, so do not use this sentence for one-answer completion.",
+      "context_note": "Intent repair.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-wake-dewa-nai",
+      "language": "ja",
+      "slot_ids": [
+        "JA6"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "計画を変えるわけではありません。条件を確認しているだけです。",
+      "translation_zh": "并不是要改变计划，只是在确认条件。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "わけではありません",
+      "cc_reason": "Blank the complete authored predicate; the following だけです clause fixes the denial-of-interpretation use.",
+      "context_note": "Deny an inferred intention.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-wake-dewa-nai",
+      "language": "ja",
+      "slot_ids": [
+        "JA6"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "費用が高い案が、必ず安全なわけではありません。",
+      "translation_zh": "费用高的方案也未必安全。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "わけではありません",
+      "cc_reason": "必ず plus negation fixes the partial-denial reading and the local target form.",
+      "context_note": "Correct an overgeneralization.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-youda",
+      "language": "ja",
+      "slot_ids": [
+        "JA6"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "説明の受け取り方に違いがあったようです。",
+      "translation_zh": "看来双方对说明的理解有所不同。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "みたいです and らしいです remain plausible without an evidence-type prompt.",
+      "context_note": "Cautious interpersonal inference.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-youda",
+      "language": "ja",
+      "slot_ids": [
+        "JA6"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "記録を見ると、予定より早く作業が終わったようです。",
+      "translation_zh": "从记录来看，工作似乎比计划更早完成了。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "ようです",
+      "cc_reason": "The explicit evidence source and polite register bound the authored inference form.",
+      "context_note": "Inference from a record.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-youda",
+      "language": "ja",
+      "slot_ids": [
+        "JA6"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "先方はまだ最終判断をしていないようでした。",
+      "translation_zh": "对方当时似乎还没有作出最终判断。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "ようでした",
+      "cc_reason": "Past narrative frame fixes the authored polite past form.",
+      "context_note": "Past cautious inference.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-wari-ni",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "費用の割に、得られる効果が小さいです。",
+      "translation_zh": "相对于费用，获得的效果较小。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "割に",
+      "cc_reason": "Noun attachment is local and the sentence expresses evaluation against an expected standard.",
+      "context_note": "Cost-effect comparison.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-wari-ni",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "この案は準備に時間がかからない割に、効果が長続きします。",
+      "translation_zh": "这个方案虽然准备起来不费时间，效果却持续得很久。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "割に",
+      "cc_reason": "The verb plain form directly anchors the target occurrence.",
+      "context_note": "Unexpected positive outcome.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-wari-ni",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "初めて担当した割に、状況を落ち着いて判断していました。",
+      "translation_zh": "虽是第一次负责，他却很冷静地判断了情况。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_reason": "にしては is an equally natural comparison in this context.",
+      "context_note": "Past performance against expectation without labeling the person.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ba-hodo",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "急げば急ぐほど、確認の時間が減ります。",
+      "translation_zh": "越着急，确认时间越少。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "急げば急ぐほど",
+      "cc_reason": "The repeated predicate and degree relation provide one authored target span.",
+      "context_note": "Speed versus checking time.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ba-hodo",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "選択肢が多ければ多いほど、合意までに時間がかかります。",
+      "translation_zh": "选项越多，达成共识所需的时间就越长。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "多ければ多いほど",
+      "cc_reason": "Correct イ-adjective conditional and repeated degree form.",
+      "context_note": "Options versus decision time.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ba-hodo",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "条件を詳しく比べれば比べるほど、違いが明確になります。",
+      "translation_zh": "条件比较得越细，差异就越明确。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "比べれば比べるほど",
+      "cc_reason": "Correct verb conditional and locally repeated predicate.",
+      "context_note": "Analysis depth versus clarity.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-beki",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "まず安全条件を確認するべきだと思います。",
+      "translation_zh": "我认为首先应该确认安全条件。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "べき",
+      "cc_reason": "だと思います keeps the normative judgment as a view, not a command.",
+      "context_note": "Softened recommendation.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-beki",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "限られた予算は、まず安全対策に配分するべきだと考えます。",
+      "translation_zh": "我认为有限的预算应该优先分配给安全措施。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "べき",
+      "cc_reason": "だと考えます and a justified safety priority bound the force.",
+      "context_note": "Formal allocation recommendation.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-beki",
+      "language": "ja",
+      "slot_ids": [
+        "JA7"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "証拠がない段階で、原因を決めつけるべきではありません。",
+      "translation_zh": "在没有证据的阶段，不应该武断地认定原因。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "べきではありません",
+      "cc_reason": "Negative normative form is locally explicit and justified by evidence safety.",
+      "context_note": "Appropriate prohibition against unsupported inference.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-honorific",
+      "language": "ja",
+      "slot_ids": [
+        "JA3"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "お客様がおっしゃった内容を確認します。",
+      "translation_zh": "我来确认客人所说的内容。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "おっしゃった",
+      "cc_reason": "The respected customer is the subject of 言う and the occurrence appears once.",
+      "context_note": "Staff describes customer speech.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-honorific",
+      "language": "ja",
+      "slot_ids": [
+        "JA3"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "部長は、開始時間を変更するとおっしゃいました。",
+      "translation_zh": "部长说要更改开始时间。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "おっしゃいました",
+      "cc_reason": "The respected superior is the speaker; tense and polite ending are locally fixed.",
+      "context_note": "Report a superior statement.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-honorific",
+      "language": "ja",
+      "slot_ids": [
+        "JA3"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "お客様は何とおっしゃいましたか。",
+      "translation_zh": "客人说了什么？",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "おっしゃいました",
+      "cc_reason": "The respected customer remains the subject and no other honorific lexeme is introduced.",
+      "context_note": "Ask a colleague about customer speech.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-humble",
+      "language": "ja",
+      "slot_ids": [
+        "JA3"
+      ],
+      "example_label": "A",
+      "source": "MATRIX SEED",
+      "sentence": "私が予約を確認いたします。",
+      "translation_zh": "由我来确认预订。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "いたします",
+      "cc_reason": "The staff speaker lowers their own 確認する action and the occurrence appears once.",
+      "context_note": "Staff commitment.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-humble",
+      "language": "ja",
+      "slot_ids": [
+        "JA3"
+      ],
+      "example_label": "B",
+      "source": "NEW",
+      "sentence": "必要な手続きは、こちらでいたします。",
+      "translation_zh": "必要的手续由我们办理。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "いたします",
+      "cc_reason": "こちら clearly denotes the staff side performing する.",
+      "context_note": "Staff-side procedure.",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-humble",
+      "language": "ja",
+      "slot_ids": [
+        "JA3"
+      ],
+      "example_label": "C",
+      "source": "NEW",
+      "sentence": "予約の変更は、先ほど私がいたしました。",
+      "translation_zh": "预订变更刚才已由我办理。",
+      "human_approval_status": "APPROVE",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "いたしました",
+      "cc_reason": "The staff speaker owns the completed する action and past form is explicit.",
+      "context_note": "Past staff action.",
+      "implementation_authorized": true
+    }
+  ],
+  "expression_contexts": [
+    {
+      "canonical_id": "legacy-108-en",
+      "slot_id": "EN8",
+      "human_approval_status": "APPROVE WITH REVISION",
+      "context": "A planning team has received a concerning forecast. Before choosing a backup plan, they must distinguish the forecast itself from the decision they make in response to it. The canonical sentence is a qualified next-step statement, not a weather-vocabulary exercise.",
+      "reason": "Clarifies the actors, observation-versus-decision contrast, and instructional purpose.",
+      "canonical_text_unchanged": true,
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "legacy-156-ja",
+      "slot_id": "JA6",
+      "human_approval_status": "APPROVE AS WRITTEN",
+      "context": "依頼を断るためではなく、誤解された意図を説明して関係を修復する場面。話者は相手を責めず、自分の境界と理由を明確にする。",
+      "reason": "Enough scenario information to interpret the unchanged personal-boundary expression as a no-blame repair.",
+      "canonical_text_unchanged": true,
+      "implementation_authorized": true
+    }
+  ],
+  "new_dialogues": [
+    {
+      "slot_id": "EN3",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "outcome": "Negotiate priorities/resources toward consensus.",
+      "register_note": "Neutral-professional peer discussion. Disagreement is acknowledged before a concern; may and the final allocation keep the negotiation collaborative.",
+      "relationship_ids_intentionally_demonstrated": [
+        "en-c-653",
+        "en-c-313",
+        "legacy-49-en",
+        "en-c-649",
+        "en-c-621",
+        "en-may",
+        "en-c-793",
+        "en-even-if",
+        "en-c-781"
+      ],
+      "turns": [
+        {
+          "turn_number": 1,
+          "speaker": "Maya",
+          "role": "project lead",
+          "text": "Our first priority is protecting the testing time.",
+          "translation_zh": "我们的首要事项是保证测试时间。",
+          "relationship_ids": [
+            "en-c-653"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 2,
+          "speaker": "Daniel",
+          "role": "project lead",
+          "text": "We need the same two engineers for testing and the client demo, so we cannot fully staff both.",
+          "translation_zh": "测试和客户演示都需要同样的两名工程师，因此两边无法同时配足人手。",
+          "relationship_ids": [
+            "en-c-313"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 3,
+          "speaker": "Maya",
+          "role": "project lead",
+          "text": "I see your point, but I have a concern: cutting the test scope may create more risk.",
+          "translation_zh": "我明白你的意思，但我有一个担忧：缩小测试范围可能会带来更大风险。",
+          "relationship_ids": [
+            "legacy-49-en",
+            "en-c-649"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 4,
+          "speaker": "Daniel",
+          "role": "project lead",
+          "text": "What if we commit one engineer to testing and one to the demo?",
+          "translation_zh": "我们把一名工程师投入测试，另一名投入演示，怎么样？",
+          "relationship_ids": [
+            "en-c-621"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 5,
+          "speaker": "Maya",
+          "role": "project lead",
+          "text": "That may be feasible, even if the demo has a smaller scope.",
+          "translation_zh": "即使演示的范围缩小一些，这个方案也可能可行。",
+          "relationship_ids": [
+            "en-may",
+            "en-c-793",
+            "en-even-if",
+            "en-c-649"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 6,
+          "speaker": "Daniel",
+          "role": "project lead",
+          "text": "Agreed. We have a consensus: we'll keep one engineer on testing and assign one to the demo.",
+          "translation_zh": "同意。我们达成共识了：一名工程师继续负责测试，另一名分配给演示。",
+          "relationship_ids": [
+            "en-c-781"
+          ],
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "outcome": "Use specific honorific/humble choices in a defined service role.",
+      "register_note": "Hotel customer/staff roles are fixed. おっしゃる describes the customer saying something; いたす describes the staff side doing something. No other honorific or humble verb is taught as authority.",
+      "relationship_ids_intentionally_demonstrated": [
+        "ja-honorific",
+        "ja-humble",
+        "ja-c-295"
+      ],
+      "turns": [
+        {
+          "turn_number": 1,
+          "speaker": "佐藤",
+          "role": "customer",
+          "text": "予約のチェックアウト日を十七日に変更したいです。",
+          "translation_zh": "我想把预订的退房日期改到十七日。",
+          "relationship_ids": [],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 2,
+          "speaker": "田中",
+          "role": "hotel front-desk staff",
+          "text": "承知しました。空室状況を確認します。",
+          "translation_zh": "明白了。我确认一下空房情况。",
+          "relationship_ids": [
+            "ja-c-295"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 3,
+          "speaker": "田中",
+          "role": "hotel front-desk staff",
+          "text": "空室がありますので、変更の手続きをいたします。",
+          "translation_zh": "有空房，因此我为您办理变更手续。",
+          "relationship_ids": [
+            "ja-humble"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 4,
+          "speaker": "佐藤",
+          "role": "customer",
+          "text": "はい。部屋の種類は同じでお願いします。",
+          "translation_zh": "好的。房型请保持不变。",
+          "relationship_ids": [],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 5,
+          "speaker": "佐藤",
+          "role": "customer",
+          "text": "あ、すみません。十七日ではなく、十八日です。",
+          "translation_zh": "啊，对不起。不是十七日，是十八日。",
+          "relationship_ids": [],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 6,
+          "speaker": "田中",
+          "role": "hotel front-desk staff",
+          "text": "先ほど十七日とおっしゃいましたが、十八日ですね。\nこちらで変更いたします。少々お待ちください。",
+          "translation_zh": "您刚才说的是十七日，不过现在确认是十八日，对吧？我们这边为您办理变更，请稍等。",
+          "relationship_ids": [
+            "ja-honorific",
+            "ja-humble"
+          ],
+          "implementation_authorized": true
+        }
+      ],
+      "role_notes": [
+        "佐藤 is the respected customer and owns the saying action reported with おっしゃいました in turn 6.",
+        "田中 is staff and owns the actions expressed with いたします in turns 3 and 6."
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA7",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "outcome": "Compare priorities/trade-offs and reach agreement.",
+      "register_note": "Neutral-formal peer planning. トレードオフ is appropriate business vocabulary here and should receive a Chinese gloss at first exposure. べき is softened by と思います and is used for a reasoned priority, not a command.",
+      "relationship_ids_intentionally_demonstrated": [
+        "ja-c-655",
+        "ja-c-527",
+        "ja-c-787",
+        "ja-ba-hodo",
+        "ja-c-751",
+        "ja-beki",
+        "ja-c-783"
+      ],
+      "turns": [
+        {
+          "turn_number": 1,
+          "speaker": "森",
+          "role": "team member",
+          "text": "今回の優先事項は、品質確認の時間を確保することです。",
+          "translation_zh": "这次的优先事项是确保质量检查的时间。",
+          "relationship_ids": [
+            "ja-c-655"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 2,
+          "speaker": "林",
+          "role": "team member",
+          "text": "ただ、人員が限られているので、納期に間に合わない懸念があります。",
+          "translation_zh": "不过，由于人员有限，我担心可能赶不上期限。",
+          "relationship_ids": [
+            "ja-c-527"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 3,
+          "speaker": "森",
+          "role": "team member",
+          "text": "確かに、速さと正確さの間にはトレードオフがあります。急げば急ぐほど、確認の時間が減ります。",
+          "translation_zh": "的确，速度和准确性之间存在取舍。越着急，检查时间就越少。",
+          "relationship_ids": [
+            "ja-c-787",
+            "ja-ba-hodo"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 4,
+          "speaker": "林",
+          "role": "team member",
+          "text": "では、二人を品質確認に、一人を進行管理に配分するのはどうでしょうか。",
+          "translation_zh": "那么，把两人分配到质量检查，一人分配到进度管理，怎么样？",
+          "relationship_ids": [
+            "ja-c-751"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 5,
+          "speaker": "森",
+          "role": "team member",
+          "text": "そうですね。ただ、重要な確認項目を先に扱うべきだと思います。",
+          "translation_zh": "可以。不过，我认为应该先处理重要的检查项目。",
+          "relationship_ids": [
+            "ja-beki"
+          ],
+          "implementation_authorized": true
+        },
+        {
+          "turn_number": 6,
+          "speaker": "林",
+          "role": "team member",
+          "text": "賛成です。その配分で合意しましょう。",
+          "translation_zh": "赞成。我们就按这个分配方案达成一致吧。",
+          "relationship_ids": [
+            "ja-c-783"
+          ],
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    }
+  ],
+  "reuse_dialogues": [
+    {
+      "slot_id": "EN6",
+      "canonical_ids": [
+        "35e1b-en-d-misunderstanding-tone-expr"
+      ],
+      "human_approval_status": "APPROVE REUSE WITH PROMPT LAYER",
+      "decision": "Reuse; do not duplicate.",
+      "evidence": "The six turns already move from perceived criticism through intent clarification and acknowledgement to a renewed discussion and clearer future wording.",
+      "adaptation_prompt_layer": [
+        "Label the observable wording and the inferred blame separately.",
+        "Rephrase the intent with the selected not-that frame.",
+        "Choose a non-blaming repair move, then explain why it repairs tone rather than facts."
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_ids": [
+        "35e1b-ja-d-misunderstanding-tone-expr"
+      ],
+      "human_approval_status": "APPROVE REUSE WITH PROMPT LAYER",
+      "decision": "Reuse; do not duplicate.",
+      "evidence": "The six turns distinguish how a comment sounded, the speaker intention, the listener inference, acknowledgement, and a repaired next step without assigning blame.",
+      "adaptation_prompt_layer": [
+        "事実として聞こえた表現、相手の推測、話者の意図を分ける。",
+        "「わけではない」と「ようだ」を使う箇所を選ばせる。",
+        "責めない言い換えを作り、元の意図が変わっていないことを確認する。"
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA8",
+      "canonical_ids": [
+        "legacy-165-ja",
+        "legacy-164-ja",
+        "35e1b-ja-x-alternative-repair-expr",
+        "35e1b-ja-x-hotel-quiet-room-expr"
+      ],
+      "human_approval_status": "APPROVE REUSE WITH CONTRAST LAYER",
+      "decision": "Reuse the existing expression set; do not create a duplicate dialogue.",
+      "evidence": "The set supplies casual てもらえる, polite てもらえますか, and service ていただけますか requests. The already-published ja-te-kureru record supplies the missing comparison point, so no new expression is needed.",
+      "adaptation_prompt_layer": [
+        "For each sentence, identify who performs the action and who benefits.",
+        "Contrast てもらう with the already-published てくれる model using selection/recall, not a new canonical sentence.",
+        "Order the four expressions by relationship and service-register distance; do not treat いただく as a different benefit direction."
+      ],
+      "implementation_authorized": true
+    }
+  ],
+  "short_scenarios": [
+    {
+      "slot_id": "EN2",
+      "human_approval_status": "APPROVE",
+      "scenario": "A delivery team must choose between an express plan that costs more and a standard plan that needs fewer staff but carries a delay risk. Compare both options against cost, staffing, and risk, then recommend one with a stated limitation.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN8",
+      "human_approval_status": "APPROVE",
+      "scenario": "A report records that a shipment arrived two days late and that its seal was intact. The writer suspects a scheduling error, but has no direct evidence of the cause. Label the two observations and the one inference before revising the report.",
+      "implementation_authorized": true
+    }
+  ],
+  "lesson_titles": [
+    {
+      "slot_id": "EN1",
+      "language": "en",
+      "title_zh": "在限制下评估工作方案",
+      "title_target": "Evaluate a plan under constraints",
+      "objective_zh": "能结合时间、证据和条件，评估工作方案的可行性并说明限制。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "language": "en",
+      "title_zh": "比较方案与取舍",
+      "title_target": "Compare alternatives and trade-offs",
+      "objective_zh": "能依据成本、人员配置和风险比较方案，说明取舍并提出有理由的选择。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "language": "en",
+      "title_zh": "协商优先事项并达成共识",
+      "title_target": "Negotiate priorities and reach consensus",
+      "objective_zh": "能说明优先事项和资源冲突，礼貌表达不同意见，并协商出共同接受的分配方案。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "language": "en",
+      "title_zh": "应对行程不确定性与后备方案",
+      "title_target": "Handle itinerary uncertainty and contingencies",
+      "objective_zh": "能解释行程延误或变化，在不确定条件下协商替代安排和后备方案。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "language": "en",
+      "title_zh": "升级服务或工作问题",
+      "title_target": "Escalate a service or workplace problem",
+      "objective_zh": "能提供必要背景、说明问题边界，并提出有针对性的解决请求。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "language": "en",
+      "title_zh": "澄清信息并修复误解",
+      "title_target": "Clarify information and repair a misunderstanding",
+      "objective_zh": "能区分事实、推断与意图，通过澄清、换言和不归责表达修复误解。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN7",
+      "language": "en",
+      "title_zh": "用过去结果支持当前决定",
+      "title_target": "Relate past outcomes to current decisions",
+      "objective_zh": "能回顾原先预期和实际结果，评价过去选择并用其支持当前决定。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN8",
+      "language": "en",
+      "title_zh": "报告信息并区分观察与推断",
+      "title_target": "Report information and distinguish observation from inference",
+      "objective_zh": "能在报告中准确陈述观察，标明推断和假设，并说明证据限制。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "language": "ja",
+      "title_zh": "正式陈述判断与限制",
+      "title_target": "限界を示しつつ、改まった場面で判断を述べる",
+      "objective_zh": "能以较正式的日语依据证据作出有限度的判断，并说明可能性和限制。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "language": "ja",
+      "title_zh": "说明背景并体谅地请求",
+      "title_target": "背景を説明し、相手に配慮して依頼する",
+      "objective_zh": "能先说明背景和理由，再以顾及对方感受的方式提出请求。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "language": "ja",
+      "title_zh": "在明确服务角色中选择敬语与谦让语",
+      "title_target": "接客場面で尊敬語と謙譲語を選ぶ",
+      "objective_zh": "能在顾客与工作人员角色明确的场景中，用「おっしゃる」描述顾客发言，并用「いたす」描述己方行动。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "language": "ja",
+      "title_zh": "用条件协商日程替代方案",
+      "title_target": "条件を示して予定の代案を相談する",
+      "objective_zh": "能说明行程条件和限制，询问可行选项并协商替代安排。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "language": "ja",
+      "title_zh": "委婉表达负担、担忧与保留",
+      "title_target": "負担・懸念・遠慮をやわらかく伝える",
+      "objective_zh": "能提供背景并委婉表达负担、担忧和保留，避免把判断变成指责。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "language": "ja",
+      "title_zh": "不责怪对方地修复误解",
+      "title_target": "相手を責めずに誤解を解く",
+      "objective_zh": "能区分事实、推测和意图，以不归责的方式澄清并修复误解。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA7",
+      "language": "ja",
+      "title_zh": "比较优先事项与取舍并达成共识",
+      "title_target": "優先事項とトレードオフを比べて合意する",
+      "objective_zh": "能比较优先事项和资源取舍，提出经过缓和的规范性判断，并达成分配共识。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA8",
+      "language": "ja",
+      "title_zh": "判断受益方向并选择授受表达",
+      "title_target": "恩恵の向きを捉えて授受表現を選ぶ",
+      "objective_zh": "能判断行动者与受益者的方向，并依据关系和场景选择合适的授受表达。",
+      "human_approval_status": "APPROVE",
+      "reason": "Title names a communicative task rather than a grammar label; objective is observable and consistent with the approved slot function.",
+      "implementation_authorized": true
+    }
+  ],
+  "readiness_ledger": [
+    {
+      "slot_id": "EN1",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-c-153",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-c-313",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-c-445",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-c-605",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-c-649",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-c-757",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-c-work-verb",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-leave",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-hedged-claim",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-may",
+          "content_type": "grammar",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "en-third-conditional",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "lesson-en-would-have-ex",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "lesson-en-third-conditional-ex",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "lesson-en-hedged-claim-ex",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN1",
+          "canonical_id": "legacy-51-en",
+          "content_type": "expression",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-c-645",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-c-613",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-c-705",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-c-725",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-c-769",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-c-785",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-c-793",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-c-757",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-concessive-although",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-seem-to",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "en-hedged-claim",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "academic-approach-en",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "legacy-49-en",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "legacy-145-en",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN2",
+          "canonical_id": "lesson-en-hedged-claim-ex",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-c-653",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-c-781",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-c-785",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-c-793",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-c-649",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-c-757",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-c-621",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-c-313",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-even-if",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-concessive-although",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "en-may",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "35e1b-en-d-group-disagree-expr",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "legacy-61-en",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "legacy-49-en",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN3",
+          "canonical_id": "legacy-51-en",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-c-1869",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-c-289",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-c-985",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-c-645",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-on-the-way",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-c-385",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-c-617",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-c-641",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-even-if",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-simple-past",
+          "content_type": "grammar",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "en-will",
+          "content_type": "grammar",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "legacy-99-en",
+          "content_type": "expression",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "legacy-96-en",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "35e1b-en-d-flight-delay-expr",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN4",
+          "canonical_id": "legacy-75-en",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-c-073",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-c-1029",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-c-1073",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-c-2285",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-c-293",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-c-621",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-c-953",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-help",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-can-ability",
+          "content_type": "grammar",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-if-request",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "en-mind-ing",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "legacy-171-en",
+          "content_type": "expression",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "legacy-170-en",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "legacy-168-en",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN5",
+          "canonical_id": "legacy-135-en",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-c-629",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-c-737",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-c-609",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-c-685",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-c-1073",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-c-293",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-c-621",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-c-445",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-not-that",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-if-request",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "en-mind-ing",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "35e1b-en-x-clarify-in-other-words-expr",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "35e1b-en-x-repair-not-blaming-expr",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "35e1b-en-x-repair-tone-expr",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN6",
+          "canonical_id": "35e1b-en-d-misunderstanding-tone-expr",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN7",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-come-up",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-c-369",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-c-1081",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-c-1085",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-expect",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-c-733",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-c-769",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-c-757",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-simple-past",
+          "content_type": "grammar",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-was-going-to",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "en-should-have",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "legacy-180-en",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "legacy-177-en",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "legacy-183-en",
+          "content_type": "expression",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN7",
+          "canonical_id": "changed-plan-en",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN8",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "EN8",
+          "canonical_id": "en-c-725",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "en-c-757",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "en-c-737",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "en-c-769",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "en-c-773",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "en-c-709",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "en-c-801",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "en-c-761",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "35e1c-en-reported-statements",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "en-seem-to",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "en-hedged-claim",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "academic-approach-en",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "35e1b-en-d-misunderstanding-tone-expr",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "legacy-108-en",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "EN8",
+          "canonical_id": "legacy-145-en",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-c-1115",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-c-235",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-c-3205",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-mada",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-c-3207",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-c-607",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-c-651",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-c-683",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-mono-no",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-to-wa-kagiranai",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "ja-kanenai",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "lesson-ja-to-wa-kagiranai-ex",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "lesson-ja-kanenai-ex",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "lesson-ja-mono-no-ex",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA1",
+          "canonical_id": "legacy-147-ja",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-c-075",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-c-1075",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-dekiru",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-mada",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-c-1067",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-tetsudau",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-c-295",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-c-315",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-n-desu-ga",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "BLOCKED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-node",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "BLOCKED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "ja-potential",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "legacy-171-ja",
+          "content_type": "expression",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "legacy-170-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "legacy-167-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA2",
+          "canonical_id": "legacy-168-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-c-295",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-c-315",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-c-1067",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-c-1075",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-c-527",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-c-655",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-c-651",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-c-683",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-honorific",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "BLOCKED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-humble",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "BLOCKED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "ja-honorific-request",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "legacy-37-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "legacy-39-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "legacy-49-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA3",
+          "canonical_id": "35e1b-ja-x-hotel-quiet-room-expr",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-c-1837",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-c-1875",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-c-3191",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-tochuu",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-c-387",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-c-619",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-c-643",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-c-647",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-nara",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-ba-condition",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "ja-indirect-ka",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "legacy-99-ja",
+          "content_type": "expression",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "legacy-97-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "35e1b-ja-d-flight-delay-expr",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA4",
+          "canonical_id": "legacy-109-ja",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-c-123",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-c-319",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-c-3193",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-c-327",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-c-363",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-c-591",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-c-671",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-c-2101",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-node",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "BLOCKED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-te-kureru",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "ja-to-shinpai",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "legacy-135-ja",
+          "content_type": "expression",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "legacy-131-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "legacy-132-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA5",
+          "canonical_id": "legacy-129-ja",
+          "content_type": "expression",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-c-631",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-c-739",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-c-295",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-c-319",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-c-1075",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-c-527",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-c-683",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-c-671",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-wake-dewa-nai",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-youda",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "ja-indirect-ka",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "35e1b-ja-x-clarify-in-other-words-expr",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "35e1b-ja-d-misunderstanding-tone-expr",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "legacy-156-ja",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA6",
+          "canonical_id": "legacy-63-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA7",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-c-655",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-c-787",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-c-783",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-c-751",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-c-795",
+          "content_type": "vocabulary",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-c-607",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-c-651",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-c-683",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-wari-ni",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-ba-hodo",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "ja-beki",
+          "content_type": "grammar",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "35e1b-ja-d-group-disagree-expr",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "legacy-51-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "legacy-61-ja",
+          "content_type": "expression",
+          "instructional_role": "NEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA7",
+          "canonical_id": "legacy-49-ja",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA8",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "proposed_relationship_status": "HUMAN FINAL APPROVED",
+      "relationship_count": 15,
+      "relationships": [
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-tetsudau",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-c-1067",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-c-1075",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-c-295",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-c-315",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-dekiru",
+          "content_type": "vocabulary",
+          "instructional_role": "SUPPORT",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-c-671",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-c-527",
+          "content_type": "vocabulary",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "REVIEW REQUIRED",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-te-morau",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-te-kureru",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "ja-te-itadaku",
+          "content_type": "grammar",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "legacy-165-ja",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "legacy-164-ja",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "35e1b-ja-x-alternative-repair-expr",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        },
+        {
+          "slot_id": "JA8",
+          "canonical_id": "35e1b-ja-x-hotel-quiet-room-expr",
+          "content_type": "expression",
+          "instructional_role": "REVIEW",
+          "prior_matrix_status": "APPROVE",
+          "proposed_relationship_status": "HUMAN FINAL APPROVED",
+          "human_approval_status": "HUMAN FINAL APPROVED",
+          "implementation_authorized": true
+        }
+      ],
+      "implementation_authorized": true
+    }
+  ]
+}
