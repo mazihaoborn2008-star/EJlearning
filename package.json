@@ -133,7 +133,11 @@
     "check:4b": "node scripts/deploy-staging.js wrangler.36.jsonc --dry-run",
     "generate:curriculum-expansion-01": "node scripts/generate-curriculum-expansion-01.js",
     "db:migrate:curriculum-expansion-01:local": "wrangler d1 migrations apply DB --local --config wrangler.curriculum-expansion-01.local.jsonc --persist-to .wrangler/phase35e1c-release-final-2",
-    "test:curriculum-expansion-01": "node --test tests/curriculum-expansion-01.test.js && node tests/curriculum-expansion-01-browser.cjs"
+    "test:curriculum-expansion-01": "node --test tests/curriculum-expansion-01.test.js && node tests/curriculum-expansion-01-browser.cjs",
+    "generate:stage5-expansion-02": "node scripts/generate-stage5-expansion-02.js",
+    "db:migrate:stage5-expansion-02:local": "wrangler d1 migrations apply DB --local --config wrangler.stage5-expansion-02.local.jsonc --persist-to .wrangler/phase35e1c-release-final-2",
+    "dev:stage5-expansion-02": "wrangler dev --config wrangler.stage5-expansion-02.local.jsonc --port 8817 --persist-to .wrangler/phase35e1c-release-final-2",
+    "test:stage5-expansion-02": "node --test tests/stage5-expansion-02.test.js && node tests/stage5-expansion-02-browser.cjs"
   },
   "devDependencies": {
     "wrangler": "4.130.0",

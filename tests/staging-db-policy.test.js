@@ -41,7 +41,7 @@ test('fresh bootstrap imports once and an identical second run performs zero wri
     }
   });
   const first = await run();
-  assert.equal(first.curriculum_row_writes, 18_480);
+  assert.equal(first.curriculum_row_writes, policy.datasets.reduce((total,dataset)=>total+dataset.row_count,0));
   assert.equal(first.metadata_row_writes, 5);
   assert.equal(importCalls, 5);
   assert.equal(markerWrites, 5);

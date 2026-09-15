@@ -87,7 +87,7 @@ const lessonTarget=lesson=>`/lesson.html?id=${encodeURIComponent(lesson.id)}&lan
 const publicLesson=(lesson,progress=null)=>({id:lesson.id,language:lesson.language,stage:Number(lesson.stage),sequence:Number(lesson.sequence),title:lesson.title,
  target:lessonTarget(lesson),...(progress?{status:progress.status,last_activity_at:Number(progress.last_activity_at),last_section_key:progress.last_section_key}: {})});
 
-async function lessonRecommendations(db,userId,preferredLanguage=null){
+export async function lessonRecommendations(db,userId,preferredLanguage=null){
  const curriculum=await publishedLessonCurriculum(db),lessons=curriculum.lessons;
  if(!lessons.length)return {continue:null,next:null,paths:{en:{continue:null,next:null,complete:true},ja:{continue:null,next:null,complete:true}},all_complete:false,available:0};
  const result=await db.prepare(`SELECT lesson_id,status,last_activity_at,last_section_key FROM lesson_progress WHERE user_id=? AND lesson_id IN (${marks(lessons.length)}) ORDER BY last_activity_at DESC,lesson_id ASC LIMIT ?`)
@@ -99,7 +99,8 @@ async function lessonRecommendations(db,userId,preferredLanguage=null){
  const paths={};
  for(const language of ['en','ja']){
   const path=lessons.filter(x=>x.language===language),pathActive=activeRows.find(row=>path.some(x=>x.id===row.lesson_id)),pathActiveLesson=pathActive?path.find(x=>x.id===pathActive.lesson_id):null;
-  const nextLesson=path.find(x=>!completed.has(x.id)&&!byId.has(x.id)&&(prerequisites.get(x.id)||[]).every(id=>completed.has(id)))||null;
+  const enteredStage6=path.some(x=>x.stage===6&&byId.has(x.id)),eligiblePath=enteredStage6?path.filter(x=>x.stage===6):path;
+  const nextLesson=eligiblePath.find(x=>!completed.has(x.id)&&!byId.has(x.id)&&(prerequisites.get(x.id)||[]).every(id=>completed.has(id)))||null;
   paths[language]={continue:pathActiveLesson?publicLesson(pathActiveLesson,pathActive):null,next:nextLesson?publicLesson(nextLesson):null,complete:path.length>0&&path.every(x=>completed.has(x.id))};
  }
  const latestLanguage=rows[0]&&lessons.find(x=>x.id===rows[0].lesson_id)?.language;

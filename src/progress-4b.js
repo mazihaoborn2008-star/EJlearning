@@ -4,6 +4,7 @@ import {practiceSession,resolvePracticeExercise,normalizePracticeAnswer,lessonEv
 import {createRemediationToken} from './remediation-4f.js';
 import {readSettings,startOfLocalDay} from './settings-4f.js';
 import {isPracticeEligibleGrammarId,practiceIneligibleGrammarIds} from './content-quality-03.js';
+import {publishedLessonCurriculum} from './lessons-35d.js';
 
 const SECTION_KEYS = new Set(['overview', 'vocabulary', 'grammar', 'expressions', 'scenario', 'practice']);
 const ID_PATTERN = /^[a-z0-9][a-z0-9-]{0,95}$/;
@@ -253,7 +254,8 @@ async function reviewSummary(url, db, userId, now) {
 }
 
 async function publishedLesson(db, id) {
-  return db.prepare(`SELECT id,title,language,stage FROM lesson_units WHERE id=? AND status='published'`).bind(id).first();
+  const curriculum=await publishedLessonCurriculum(db);
+  return curriculum.lessons.find(lesson=>lesson.id===id)||null;
 }
 
 async function lessonMutation(request, env, session, id, action, now) {

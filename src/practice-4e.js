@@ -69,6 +69,18 @@ async function choices(db,type,item,pool,field,seed){
 }
 async function controlledCompletion(db,item,pool,seed){
  try{
+  let approved=[];try{approved=await results(db.prepare(`SELECT a.example_id id,a.answer,a.answer_start,e.text
+    FROM v2_grammar_example_completion_authority a JOIN v2_grammar_examples e ON e.id=a.example_id
+    WHERE a.grammar_id=? AND a.language=? AND a.cc_safety='CC SAFE' ORDER BY e.sort_order,e.id`).bind(item.id,item.language));}catch{}
+  for(const example of ordered(approved,seed)){
+   const text=String(example.text||''),displayed=String(example.answer||''),at=Number(example.answer_start);
+   if(!displayed||!Number.isInteger(at)||at<0||text.slice(at,at+displayed.length)!==displayed)continue;
+   let authorityOptions=[];try{authorityOptions=await results(db.prepare(`SELECT a.example_id id,a.answer text,a.language FROM v2_grammar_example_completion_authority a WHERE a.grammar_id<>? AND a.language=? AND a.cc_safety='CC SAFE' LIMIT 120`).bind(item.id,item.language));}catch{}
+   let linkedOptions=[];try{linkedOptions=await results(db.prepare(`SELECT DISTINCT l.id,l.displayed_form AS text,l.language FROM v2_sentence_grammar_links l JOIN v2_grammar_points g ON g.id=l.grammar_id WHERE l.grammar_id<>? AND l.language=? AND g.publication_state='published' LIMIT 80`).bind(item.id,item.language));}catch{}
+   const optionRows=uniqueText([{id:example.id,text:displayed,language:item.language},...ordered([...authorityOptions,...linkedOptions],seed)]);
+   if(optionRows.length<4)continue;
+   return {prompt:`选择最适合填入空格的形式：${text.slice(0,at)}___${text.slice(at+displayed.length)}`,choices:ordered(optionRows.slice(0,4),`${seed}:order`).map(x=>x.text),answer:displayed,policy:'choice_exact',authority_example_id:example.id};
+  }
   const links=await results(db.prepare(`SELECT l.expression_id,l.displayed_form,e.text
     FROM v2_sentence_grammar_links l JOIN v2_sentence_expressions e ON e.id=l.expression_id
     WHERE l.grammar_id=? AND l.language=? AND e.publication_state='published' ORDER BY l.sort_order,l.id LIMIT 12`).bind(item.id,item.language));
@@ -149,7 +161,7 @@ export async function practiceSession(url,env,session){
  for(let i=0;i<candidates.length&&exercises.length<query.limit;i++){
   const candidate=candidates[i],pool=candidate.type==='vocabulary'?vocabularyFull:grammarFull,exercise=await build(contentDb,candidate.type,candidate.item,pool,requestedExerciseTypes(candidate.type,query.mode,exercises.length),`${seed}:${candidate.item.id}`);
   if(!exercise)continue;
-  const privateSpec={v:1,uid:session.user_id,content_type:candidate.type,content_id:candidate.item.id,language:candidate.item.language,exercise_type:exercise.exercise_type,context_type:query.context,context_id:query.lessonId||null,source:query.source,prompt:exercise.prompt,choices:exercise.choices,answer:exercise.answer,policy:exercise.policy};
+  const privateSpec={v:1,uid:session.user_id,content_type:candidate.type,content_id:candidate.item.id,language:candidate.item.language,exercise_type:exercise.exercise_type,context_type:query.context,context_id:query.lessonId||null,source:query.source,prompt:exercise.prompt,choices:exercise.choices,answer:exercise.answer,policy:exercise.policy,...(exercise.authority_example_id?{authority_example_id:exercise.authority_example_id}:{})};
   exercises.push({exercise_id:await seal(privateSpec,env.PRACTICE_SECRET||env.AUTH_SECRET),content_type:candidate.type,exercise_type:exercise.exercise_type,prompt:exercise.prompt,...(exercise.detail?{detail:exercise.detail}:{}),...(exercise.choices?{choices:exercise.choices}:{}),context:{type:query.context,...(query.lessonId?{id:query.lessonId}:{})}});
  }
   return {data:exercises,meta:{source:query.source,type:query.type,mode:query.mode,language:query.language||null,context:query.context,context_id:query.lessonId||null,limit:query.limit,returned:exercises.length,maximum:query.source==='weakness'?10:20,...(lessonData?{lesson:{id:lessonData.lesson.id,title:lessonData.lesson.title},requirement:await lessonEvidence(env.DB,session.user_id,lessonData)}:{})}};
@@ -167,7 +179,10 @@ export async function resolvePracticeExercise(token,env,session){
  let canonical=spec.exercise_type==='vocabulary_recognition'?item.meaning:spec.exercise_type.startsWith('vocabulary_')?item.lemma:item.form_name;
  if(spec.exercise_type==='grammar_controlled_completion'){
   let authored=null;
-  if(controlledCompletionForms[spec.content_id]){
+  if(spec.authority_example_id){
+   try{authored=await (env.CONTENT_DB||env.DB).prepare(`SELECT a.answer FROM v2_grammar_example_completion_authority a JOIN v2_grammar_examples e ON e.id=a.example_id WHERE a.example_id=? AND a.grammar_id=? AND a.language=? AND a.cc_safety='CC SAFE' AND a.answer=? AND substr(e.text,a.answer_start+1,length(a.answer))=a.answer LIMIT 1`).bind(spec.authority_example_id,spec.content_id,spec.language,spec.answer).first();}catch{}
+   canonical=authored?.answer;
+  }else if(controlledCompletionForms[spec.content_id]){
    let rows=[];try{rows=await results((env.CONTENT_DB||env.DB).prepare(`SELECT e.text FROM v2_sentence_grammar_links l JOIN v2_sentence_expressions e ON e.id=l.expression_id WHERE l.grammar_id=? AND l.language=? AND e.publication_state='published' LIMIT 40`).bind(spec.content_id,spec.language));}catch{}
    authored=rows.find(row=>controlledCompletionAnswer(spec.content_id,row.text)===spec.answer);canonical=authored?spec.answer:null;
   }else{
