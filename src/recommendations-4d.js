@@ -1,6 +1,6 @@
 import {publishedLessonCurriculum} from './lessons-35d.js';
 import {readSettings} from './settings-4f.js';
-import {isPracticeEligibleGrammarId,practiceIneligibleGrammarIds} from './content-quality-02.js';
+import {isPracticeEligibleGrammarId,practiceIneligibleGrammarIds} from './content-quality-03.js';
 
 export const recommendationPolicy=Object.freeze({
  defaultWeakLimit:5,

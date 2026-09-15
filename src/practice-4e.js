@@ -1,6 +1,6 @@
 import {lessonPracticeCurriculum} from './lessons-35d.js';
 import {weakItems} from './recommendations-4d.js';
-import {isPracticeEligibleGrammarId} from './content-quality-02.js';
+import {controlledCompletionAnswer,controlledCompletionForms,isPracticeEligibleGrammarId} from './content-quality-03.js';
 
 const encoder=new TextEncoder(),decoder=new TextDecoder();
 const ID=/^[a-z0-9][a-z0-9-]{0,95}$/,TOKEN=/^[A-Za-z0-9_-]{40,4096}$/;
@@ -73,7 +73,8 @@ async function controlledCompletion(db,item,pool,seed){
     FROM v2_sentence_grammar_links l JOIN v2_sentence_expressions e ON e.id=l.expression_id
     WHERE l.grammar_id=? AND l.language=? AND e.publication_state='published' ORDER BY l.sort_order,l.id LIMIT 12`).bind(item.id,item.language));
   for(const link of ordered(links.map(x=>({...x,id:x.expression_id})),seed)){
-   const displayed=String(link.displayed_form||'').trim(),text=String(link.text||''),at=text.indexOf(displayed);
+   const text=String(link.text||''),localForms=controlledCompletionForms[item.id];
+   const displayed=localForms?controlledCompletionAnswer(item.id,text):String(link.displayed_form||'').trim(),at=text.indexOf(displayed||'');
    if(!displayed||at<0||text.indexOf(displayed,at+displayed.length)>=0)continue;
    let other=[];try{other=await results(db.prepare(`SELECT DISTINCT l.id,l.displayed_form AS text,l.language FROM v2_sentence_grammar_links l JOIN v2_grammar_points g ON g.id=l.grammar_id WHERE l.grammar_id<>? AND l.language=? AND g.publication_state='published' LIMIT 80`).bind(item.id,item.language));}catch{}
    const optionRows=uniqueText([{id:item.id,text:displayed,language:item.language},...ordered(other,seed)]);
@@ -165,8 +166,15 @@ export async function resolvePracticeExercise(token,env,session){
  }
  let canonical=spec.exercise_type==='vocabulary_recognition'?item.meaning:spec.exercise_type.startsWith('vocabulary_')?item.lemma:item.form_name;
  if(spec.exercise_type==='grammar_controlled_completion'){
-  let authored=null;try{authored=await (env.CONTENT_DB||env.DB).prepare(`SELECT l.displayed_form FROM v2_sentence_grammar_links l JOIN v2_sentence_expressions e ON e.id=l.expression_id WHERE l.grammar_id=? AND l.language=? AND l.displayed_form=? AND e.publication_state='published' LIMIT 1`).bind(spec.content_id,spec.language,spec.answer).first();}catch{}
-  if(!authored)throw new Error('STALE_EXERCISE');canonical=authored.displayed_form;
+  let authored=null;
+  if(controlledCompletionForms[spec.content_id]){
+   let rows=[];try{rows=await results((env.CONTENT_DB||env.DB).prepare(`SELECT e.text FROM v2_sentence_grammar_links l JOIN v2_sentence_expressions e ON e.id=l.expression_id WHERE l.grammar_id=? AND l.language=? AND e.publication_state='published' LIMIT 40`).bind(spec.content_id,spec.language));}catch{}
+   authored=rows.find(row=>controlledCompletionAnswer(spec.content_id,row.text)===spec.answer);canonical=authored?spec.answer:null;
+  }else{
+   try{authored=await (env.CONTENT_DB||env.DB).prepare(`SELECT l.displayed_form FROM v2_sentence_grammar_links l JOIN v2_sentence_expressions e ON e.id=l.expression_id WHERE l.grammar_id=? AND l.language=? AND l.displayed_form=? AND e.publication_state='published' LIMIT 1`).bind(spec.content_id,spec.language,spec.answer).first();}catch{}
+   canonical=authored?.displayed_form;
+  }
+  if(!authored)throw new Error('STALE_EXERCISE');
  }
  if(normalizePracticeAnswer(canonical,spec.language)!==normalizePracticeAnswer(spec.answer,spec.language))throw new Error('STALE_EXERCISE');
  if(spec.choices&&(!Array.isArray(spec.choices)||spec.choices.length!==4||new Set(spec.choices.map(x=>normalizePracticeAnswer(x,spec.language))).size!==4||!spec.choices.some(x=>normalizePracticeAnswer(x,spec.language)===normalizePracticeAnswer(spec.answer,spec.language))))throw new Error('INVALID_EXERCISE');

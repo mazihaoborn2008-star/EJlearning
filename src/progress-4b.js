@@ -3,7 +3,7 @@ import {getReviewSnapshot,recommendationData} from './recommendations-4d.js';
 import {practiceSession,resolvePracticeExercise,normalizePracticeAnswer,lessonEvidence} from './practice-4e.js';
 import {createRemediationToken} from './remediation-4f.js';
 import {readSettings,startOfLocalDay} from './settings-4f.js';
-import {isPracticeEligibleGrammarId,practiceIneligibleGrammarIds} from './content-quality-02.js';
+import {isPracticeEligibleGrammarId,practiceIneligibleGrammarIds} from './content-quality-03.js';
 
 const SECTION_KEYS = new Set(['overview', 'vocabulary', 'grammar', 'expressions', 'scenario', 'practice']);
 const ID_PATTERN = /^[a-z0-9][a-z0-9-]{0,95}$/;
