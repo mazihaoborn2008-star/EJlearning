@@ -3,7 +3,7 @@ import path from 'node:path';
 import {isCurrentGrammarId} from '../src/content-quality-03.js';
 import {approvedPayloadSha256,bundleId,controlledCompletionAnswerStart,datasetMarker,loadStage5Expansion,publishedAt,schemaVersion} from './stage5-expansion-02.js';
 
-const root=process.cwd(),directory=path.join(root,'migrations-stage5-expansion-02'),file=path.join(directory,'0001_stage5_expansion_02.sql'),projectionFile=path.join(directory,'0002_stage5_lesson_projection.sql');
+const root=process.cwd(),directory=path.join(root,'migrations-stage5-expansion-02'),file=path.join(directory,'0001_stage5_expansion_02.sql'),projectionFile=path.join(directory,'0002_stage5_lesson_projection.sql'),boundaryProjectionFile=path.join(directory,'0003_stage5_boundary_projection.sql');
 const {bundle,payload,delta,typeTotals,roleTotals,hashes}=loadStage5Expansion(root),q=value=>`'${String(value).replaceAll("'","''")}'`;
 const statements=[
  '-- Stage 5 Expansion 02: exact human-approved editorial delta and immutable current bundle.',
@@ -47,4 +47,13 @@ const projection=[
 ].join('\n\n')+'\n';
 if(fs.existsSync(projectionFile)&&fs.readFileSync(projectionFile,'utf8')!==projection&&!process.argv.includes('--refresh'))throw Error('Stage 5 lesson projection migration is immutable and differs from approved generated source');
 if(!fs.existsSync(projectionFile)||process.argv.includes('--refresh'))fs.writeFileSync(projectionFile,projection);
+const boundaryProjection=[
+ '-- Stage 5 Expansion 02: forward-only correction for the pre-Stage-5 boundary in the legacy prerequisite index.',
+ '-- The immutable bundle was already correct; this projects its two Stage 4 lesson-six boundaries without touching learner evidence.',
+ 'PRAGMA foreign_keys=ON;',
+ `UPDATE lesson_prerequisites SET prerequisite_lesson_id='en-s4-l6' WHERE lesson_id='en-s5-l1' AND prerequisite_lesson_id='en-s4-l4';`,
+ `UPDATE lesson_prerequisites SET prerequisite_lesson_id='ja-s4-l6' WHERE lesson_id='ja-s5-l1' AND prerequisite_lesson_id='ja-s4-l4';`
+].join('\n\n')+'\n';
+if(fs.existsSync(boundaryProjectionFile)&&fs.readFileSync(boundaryProjectionFile,'utf8')!==boundaryProjection&&!process.argv.includes('--refresh'))throw Error('Stage 5 boundary projection migration is immutable and differs from approved generated source');
+if(!fs.existsSync(boundaryProjectionFile)||process.argv.includes('--refresh'))fs.writeFileSync(boundaryProjectionFile,boundaryProjection);
 console.log(JSON.stringify({bundle_id:bundleId,schema_version:schemaVersion,dataset_marker:datasetMarker,payload_sha256:approvedPayloadSha256,input_hashes:hashes,lessons:bundle.u.length,prerequisites:bundle.p.length,relationships:{raw:bundle.i.length,runtime_active:bundle.i.filter(item=>item[1]!=='grammar'||isCurrentGrammarId(item[2])).length,stage5:240,types:typeTotals,roles:roleTotals,delta},editorial:{vocabulary_examples:payload.vocabulary_examples.length,grammar_examples:payload.grammar_examples.length,cc_safe:payload.grammar_examples.filter(row=>row.cc_safety==='CC SAFE').length,not_for_cc:payload.grammar_examples.filter(row=>row.cc_safety==='NOT FOR CC').length,expression_contexts:payload.expression_contexts.length,new_dialogues:payload.new_dialogues.length,reuse:payload.reuse_dialogues.length,scenarios:payload.short_scenarios.length,titles:payload.lesson_titles.length}},null,2));

@@ -63,6 +63,10 @@ function applySchema() {
   runWrangler(['d1', 'migrations', 'apply', 'DB', '--remote', '--config', config]);
 }
 
+function applyDatasetMigrations(dataset) {
+  runWrangler(['d1', 'migrations', 'apply', 'DB', '--remote', '--config', path.resolve(dataset.update_migration_config)]);
+}
+
 function showStatus() {
   const counts = readCounts();
   const installed = installedDatasets();
@@ -112,12 +116,19 @@ function update() {
   if (!dataset) throw Error(`Unknown dataset: ${datasetName || '(missing)'}`);
   const installed = installedDatasets().find(item => item.dataset_name === dataset.name);
   if (sameDataset(installed, dataset)) {
+    if (flags.has('--confirm-dataset-update') && dataset.update_migration_config) {
+      applyDatasetMigrations(dataset);
+      const counts = readCounts();
+      if (counts[dataset.name] !== dataset.row_count) throw Error(`${dataset.name}: reconciliation produced ${counts[dataset.name]} rows; expected ${dataset.row_count}`);
+      console.log(JSON.stringify({event: 'curriculum_dataset_reconciled', dataset: dataset.name, version: dataset.version, row_count: dataset.row_count}));
+      return;
+    }
     console.log(JSON.stringify({event: 'curriculum_update_skipped', dataset: dataset.name, reason: 'exact_version_count_checksum_match'}));
     return;
   }
   if (!flags.has('--confirm-dataset-update')) throw Error('Dataset update requires --confirm-dataset-update.');
   if (!dataset.update_migration_config) throw Error(`No reviewed delta migration is registered for ${dataset.name}; refusing a bulk rewrite.`);
-  runWrangler(['d1', 'migrations', 'apply', 'DB', '--remote', '--config', path.resolve(dataset.update_migration_config)]);
+  applyDatasetMigrations(dataset);
   const counts = readCounts();
   if (counts[dataset.name] !== dataset.row_count) throw Error(`${dataset.name}: update produced ${counts[dataset.name]} rows; expected ${dataset.row_count}`);
   writeMarkers([dataset]);
