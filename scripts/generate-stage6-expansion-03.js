@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {bundleId,datasetMarker,loadStage6Expansion,newLessonIds,publishedAt,schemaVersion,slotLessonIds} from './stage6-expansion-03.js';
 
-const root=process.cwd(),directory=path.join(root,'migrations-stage6-expansion-03'),file=path.join(directory,'0004_stage6_expansion_03.sql'),projectionFile=path.join(directory,'0005_stage6_lesson_projection.sql');
+const root=process.cwd(),directory=path.join(root,'migrations-stage6-expansion-03'),file=path.join(directory,'0004_stage6_expansion_03.sql'),projectionFile=path.join(directory,'0005_stage6_lesson_projection.sql'),reconciliationFile=path.join(directory,'0006_stage6_prerequisite_reconciliation.sql');
 const {bundle,payload,delta,counts,typeTotals,roleTotals,hashes}=loadStage6Expansion(root),q=value=>`'${String(value).replaceAll("'","''")}'`;
 const statements=[
  '-- Stage 6 Expansion 03: exact human-approved editorial delta and immutable bundle.',
@@ -59,4 +59,19 @@ const projection=[
 ].join('\n\n')+'\n';
 if(fs.existsSync(projectionFile)&&fs.readFileSync(projectionFile,'utf8')!==projection&&!process.argv.includes('--refresh'))throw Error('Stage 6 current-index projection differs from approved generated source');
 if(!fs.existsSync(projectionFile)||process.argv.includes('--refresh'))fs.writeFileSync(projectionFile,projection);
+
+const boundaryReconciliations=[
+ ['en-s3-l1','en-s2-l4','en-s2-l5'],
+ ['en-s4-l1','en-s3-l4','en-s3-l9'],
+ ['ja-s3-l1','ja-s2-l4','ja-s2-l6'],
+ ['ja-s4-l1','ja-s3-l4','ja-s3-l8']
+];
+const reconciliation=[
+ '-- Stage 6 Expansion 03 staging reconciliation: align four stale current-index boundaries with the immutable bundle.',
+ '-- This migration changes only the current prerequisite projection; historical bundles and learner/SRS evidence remain unchanged.',
+ 'PRAGMA foreign_keys=ON;',
+ ...boundaryReconciliations.map(([lessonId,stalePrerequisite,currentPrerequisite])=>`UPDATE lesson_prerequisites SET prerequisite_lesson_id=${q(currentPrerequisite)} WHERE lesson_id=${q(lessonId)} AND prerequisite_lesson_id=${q(stalePrerequisite)};`)
+].join('\n\n')+'\n';
+if(fs.existsSync(reconciliationFile)&&fs.readFileSync(reconciliationFile,'utf8')!==reconciliation&&!process.argv.includes('--refresh'))throw Error('Stage 6 prerequisite reconciliation differs from approved generated source');
+if(!fs.existsSync(reconciliationFile)||process.argv.includes('--refresh'))fs.writeFileSync(reconciliationFile,reconciliation);
 console.log(JSON.stringify({bundle_id:bundleId,schema_version:schemaVersion,dataset_marker:datasetMarker,input_hashes:hashes,lessons:bundle.u.length,prerequisites:bundle.p.length,relationships:{raw:counts.raw,runtime_active:counts.runtime_active,stage6:177,types:typeTotals,roles:roleTotals,delta},editorial:{vocabulary_examples:payload.vocabulary_examples.length,grammar_examples:payload.grammar_examples.length,cc_safe:payload.grammar_examples.filter(row=>row.cc_safety==='CC SAFE').length,not_for_cc:payload.grammar_examples.filter(row=>row.cc_safety==='NOT FOR CC').length,expression_contexts:payload.expression_contexts.length,dialogues:payload.new_dialogues.length,reuse_prompts:payload.reuse_prompt_layers.length,scenarios:payload.short_scenarios.length,titles:payload.titles_objectives.length}},null,2));
