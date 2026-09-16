@@ -96,7 +96,7 @@ test('all additions resolve to published same-language canonical records and can
  const persisted=JSON.parse(db.prepare('SELECT payload_json FROM lesson_bundles WHERE id=?').get(bundleId).payload_json);assert.deepEqual(persisted,bundle);
  const policy=JSON.parse(fs.readFileSync(`${root}/config/staging-data-policy.json`,'utf8')),datasets=Object.fromEntries(policy.datasets.map(row=>[row.name,row]));
  assert.deepEqual([datasets.en_vocabulary.row_count,datasets.ja_vocabulary.row_count],[10000,8235]);
- assert.deepEqual([datasets.lessons.row_count,datasets.lessons.version,datasets.lessons.checksum,datasets.lessons.update_migration_config],[72,'2026-09-stage5-expansion-02-v1','bundle:curriculum-stage5-expansion-02-v1','wrangler.stage5-expansion-02.jsonc']);
+ assert.deepEqual([datasets.lessons.row_count,datasets.lessons.version,datasets.lessons.checksum,datasets.lessons.update_migration_config],[76,'2026-09-stage6-expansion-03-v1','bundle:curriculum-stage6-expansion-03-v1','wrangler.stage6-expansion-03.jsonc']);
  db.close();
 });
 

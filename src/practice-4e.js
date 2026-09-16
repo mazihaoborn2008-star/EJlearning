@@ -81,6 +81,10 @@ async function controlledCompletion(db,item,pool,seed){
    if(optionRows.length<4)continue;
    return {prompt:`选择最适合填入空格的形式：${text.slice(0,at)}___${text.slice(at+displayed.length)}`,choices:ordered(optionRows.slice(0,4),`${seed}:order`).map(x=>x.text),answer:displayed,policy:'choice_exact',authority_example_id:example.id};
   }
+  let reviewedPolicy=false;
+  try{reviewedPolicy=Boolean(await db.prepare(`SELECT 1 found FROM v2_grammar_example_completion_reviews WHERE grammar_id=? AND language=? LIMIT 1`).bind(item.id,item.language).first());}catch{}
+  if(!reviewedPolicy)try{reviewedPolicy=Boolean(await db.prepare(`SELECT 1 found FROM v2_grammar_example_completion_authority WHERE grammar_id=? AND language=? LIMIT 1`).bind(item.id,item.language).first());}catch{}
+  if(reviewedPolicy)return null;
   const links=await results(db.prepare(`SELECT l.expression_id,l.displayed_form,e.text
     FROM v2_sentence_grammar_links l JOIN v2_sentence_expressions e ON e.id=l.expression_id
     WHERE l.grammar_id=? AND l.language=? AND e.publication_state='published' ORDER BY l.sort_order,l.id LIMIT 12`).bind(item.id,item.language));

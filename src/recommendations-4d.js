@@ -99,13 +99,14 @@ export async function lessonRecommendations(db,userId,preferredLanguage=null){
  const paths={};
  for(const language of ['en','ja']){
   const path=lessons.filter(x=>x.language===language),pathActive=activeRows.find(row=>path.some(x=>x.id===row.lesson_id)),pathActiveLesson=pathActive?path.find(x=>x.id===pathActive.lesson_id):null;
+  const priorIds=curriculum.grandfathering?.policy==='prior-curriculum-completion-v1'?curriculum.grandfathering.previous_lesson_ids_by_language?.[language]||[]:[],legacyComplete=priorIds.length>0&&priorIds.every(id=>completed.has(id));
   const enteredStage6=path.some(x=>x.stage===6&&byId.has(x.id)),eligiblePath=enteredStage6?path.filter(x=>x.stage===6):path;
-  const nextLesson=eligiblePath.find(x=>!completed.has(x.id)&&!byId.has(x.id)&&(prerequisites.get(x.id)||[]).every(id=>completed.has(id)))||null;
-  paths[language]={continue:pathActiveLesson?publicLesson(pathActiveLesson,pathActive):null,next:nextLesson?publicLesson(nextLesson):null,complete:path.length>0&&path.every(x=>completed.has(x.id))};
+  const nextLesson=legacyComplete?null:eligiblePath.find(x=>!completed.has(x.id)&&!byId.has(x.id)&&(prerequisites.get(x.id)||[]).every(id=>completed.has(id)))||null;
+  paths[language]={continue:pathActiveLesson?publicLesson(pathActiveLesson,pathActive):null,next:nextLesson?publicLesson(nextLesson):null,complete:legacyComplete||path.length>0&&path.every(x=>completed.has(x.id)),grandfathered_complete:legacyComplete};
  }
  const latestLanguage=rows[0]&&lessons.find(x=>x.id===rows[0].lesson_id)?.language;
  const choices=[latestLanguage,preferredLanguage,'en','ja'].filter((value,index,array)=>value&&array.indexOf(value)===index).map(language=>paths[language]?.next).filter(Boolean);
- return {continue:activeLesson?publicLesson(activeLesson,active):null,next:active?null:(choices[0]||null),paths,all_complete:lessons.every(x=>completed.has(x.id)),available:lessons.length};
+ return {continue:activeLesson?publicLesson(activeLesson,active):null,next:active?null:(choices[0]||null),paths,all_complete:paths.en.complete&&paths.ja.complete,available:lessons.length};
 }
 
 function primaryAction(review,lesson){
