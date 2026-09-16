@@ -1,0 +1,4727 @@
+{
+  "metadata": {
+    "schema_version": "STAGE-6-EDITORIAL-03B",
+    "produced_at": "2026-09-16",
+    "approval_matrix_baseline_commit": "b502820ae908b910ed30ab7a1e8f815524b8ce5e",
+    "approval_matrix_path": "docs/STAGE-6-EXPANSION-03A-APPROVAL-MATRIX.md",
+    "approval_matrix_sha256": "754cc5ff8cdcfdb471a53088e36a9c65c8bf8c39a1a767738602c1e724e61e29",
+    "current_bundle": "curriculum-stage5-expansion-02-v1",
+    "current_marker": "2026-09-stage5-expansion-02-v1",
+    "authority": "HUMAN FINAL APPROVED EDITORIAL PAYLOAD; AUTHORIZED INPUT FOR A SEPARATE STAGE 6 IMPLEMENTATION TASK",
+    "implementation_authorized": true
+  },
+  "vocabulary_examples": [
+    {
+      "canonical_id": "en-c-729",
+      "target_item": "analyse",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "Before we accept the claim, we need to analyse whether each source is reliable.",
+      "translation_zh": "在接受这一主张之前，我们需要分析每个来源是否可靠。",
+      "register_note": "Neutral-professional; British spelling follows the canonical lemma.",
+      "semantic_fit_note": "The sentence makes evidence analysis, rather than mere description, the decision step.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-777",
+      "target_item": "criterion",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "Our main criterion is whether the evidence comes from an independent source.",
+      "translation_zh": "我们的主要判断标准是证据是否来自独立来源。",
+      "register_note": "Formal but accessible decision-making register.",
+      "semantic_fit_note": "Criterion names the explicit standard used to bound an evidence-led judgment.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-741",
+      "target_item": "assess",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "The team assessed the evidence before limiting the conclusion to urban schools.",
+      "translation_zh": "团队评估了证据后，才把结论限定在城市学校范围内。",
+      "register_note": "Neutral-professional.",
+      "semantic_fit_note": "Assess denotes deliberate evaluation and directly supports a bounded conclusion.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-1109",
+      "target_item": "condition",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "One condition for accepting the proposal is that its costs remain within the approved budget.",
+      "translation_zh": "接受该提案的一个条件是其成本保持在已批准的预算内。",
+      "register_note": "Neutral-professional.",
+      "semantic_fit_note": "Condition sets a real decision constraint rather than merely naming a circumstance.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-681",
+      "target_item": "judgment",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "Our judgment would be more cautious if the figures came from only one survey.",
+      "translation_zh": "如果这些数据只来自一项调查，我们的判断会更加谨慎。",
+      "register_note": "Neutral analytical register.",
+      "semantic_fit_note": "Judgment is explicitly qualified by the strength of the evidence.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-697",
+      "target_item": "tentative",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "The conclusion is tentative because two of the reports have not yet been verified.",
+      "translation_zh": "由于其中两份报告尚未核实，这一结论是暂定的。",
+      "register_note": "Formal, appropriate for a qualified finding.",
+      "semantic_fit_note": "Tentative marks a conclusion that may change when evidence is verified.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-765",
+      "target_item": "implication",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "One implication of delaying the decision is that the current safety risk will continue.",
+      "translation_zh": "推迟决定的一个影响是当前的安全风险将持续存在。",
+      "register_note": "Neutral-professional.",
+      "semantic_fit_note": "Implication expresses a consequence of the decision, not a vague association.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-633",
+      "target_item": "distinguish",
+      "assignments": [
+        {
+          "slot_id": "EN3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "We must distinguish confirmed evidence from assumptions before combining the reports.",
+      "translation_zh": "在综合这些报告之前，我们必须区分已确认的证据与假设。",
+      "register_note": "Neutral-professional.",
+      "semantic_fit_note": "Distinguish performs the exact evidence-versus-inference separation required by EN3.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-637",
+      "target_item": "confirm",
+      "assignments": [
+        {
+          "slot_id": "EN3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "The site log confirms that production stopped for six hours, but it does not confirm the cause.",
+      "translation_zh": "现场日志确认生产中断了六小时，但没有确认原因。",
+      "register_note": "Neutral-professional.",
+      "semantic_fit_note": "Confirm is restricted to what the source actually establishes.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-805",
+      "target_item": "ambiguous",
+      "assignments": [
+        {
+          "slot_id": "EN3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "The phrase “limited coverage” is ambiguous because it could refer to one shift or the entire week.",
+      "translation_zh": "“覆盖有限”这一表述有歧义，因为它可能指一个班次，也可能指整周。",
+      "register_note": "Formal clarification register.",
+      "semantic_fit_note": "Ambiguous identifies two plausible readings that must be clarified.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-841",
+      "target_item": "infer",
+      "assignments": [
+        {
+          "slot_id": "EN3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "We can infer that staffing contributed to the delay, but the records do not prove it was the main cause.",
+      "translation_zh": "我们可以推断人员配置导致了部分延误，但记录并不能证明它是主要原因。",
+      "register_note": "Neutral-professional with an explicit evidential limit.",
+      "semantic_fit_note": "Infer is presented as a reasoned conclusion distinct from confirmed fact.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-817",
+      "target_item": "substantiate",
+      "assignments": [
+        {
+          "slot_id": "EN3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "The inspection records substantiate the claim that the fault existed before delivery.",
+      "translation_zh": "检查记录为“故障在交付前已经存在”这一主张提供了证据支持。",
+      "register_note": "Formal-professional; used only for evidence-backed support.",
+      "semantic_fit_note": "Substantiate distinctly means supporting a claim with evidence, not merely repeating it.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-621",
+      "target_item": "commit",
+      "assignments": [
+        {
+          "slot_id": "EN4",
+          "instructional_role": "SUPPORT"
+        },
+        {
+          "slot_id": "EN5",
+          "instructional_role": "REVIEW"
+        },
+        {
+          "slot_id": "EN6",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "final_sentence": "After reviewing the risks, I can commit to sending the revised plan by Friday.",
+      "translation_zh": "审查风险后，我可以承诺在星期五之前提交修订后的计划。",
+      "register_note": "Professional commitment; specific and non-coercive.",
+      "semantic_fit_note": "Commit is tied to a concrete deliverable after evidence and risk review.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "35e1c-en-v086",
+      "target_item": "take responsibility",
+      "assignments": [
+        {
+          "slot_id": "EN4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "I will take responsibility for explaining why the schedule changed and what we will do next.",
+      "translation_zh": "我会负责说明日程为何改变，以及我们下一步将采取什么行动。",
+      "register_note": "Direct but non-blaming professional register.",
+      "semantic_fit_note": "The speaker owns the explanation and follow-up rather than accepting vague blame.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-857",
+      "target_item": "contingency",
+      "assignments": [
+        {
+          "slot_id": "EN4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "One contingency we must prepare for is a sudden loss of network access, so we need an offline reporting process.",
+      "translation_zh": "我们必须准备应对的一种意外情况是网络突然中断，因此需要离线报告流程。",
+      "register_note": "Formal-professional, but grounded in an operational event.",
+      "semantic_fit_note": "Contingency names an unforeseen event requiring a backup response.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-825",
+      "target_item": "mitigate",
+      "assignments": [
+        {
+          "slot_id": "EN4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "To mitigate the impact of the delay, we will move two staff members to the urgent account.",
+      "translation_zh": "为减轻延误的影响，我们会把两名员工调到紧急项目。",
+      "register_note": "Professional operational register.",
+      "semantic_fit_note": "Mitigate means reducing an adverse impact through a concrete action.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-869",
+      "target_item": "accountability",
+      "assignments": [
+        {
+          "slot_id": "EN4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "Clear accountability means that the decision owner must explain the change and report its outcome.",
+      "translation_zh": "明确的说明责任意味着决策负责人必须解释变更并报告结果。",
+      "register_note": "Formal-professional; responsibility to explain and own outcomes.",
+      "semantic_fit_note": "Accountability is defined as answerability for a decision, not as blame.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-2247",
+      "target_item": "considerate",
+      "assignments": [
+        {
+          "slot_id": "EN5",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "final_sentence": "It would be more considerate to offer another date instead of asking the client to decide immediately.",
+      "translation_zh": "提供另一个日期，而不是要求客户立即决定，会更体贴周到。",
+      "register_note": "Neutral-professional interpersonal register.",
+      "semantic_fit_note": "Considerate describes reducing pressure on the other party.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-669",
+      "target_item": "pressure",
+      "assignments": [
+        {
+          "slot_id": "EN5",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "To avoid putting pressure on the client, we gave them two alternatives and time to respond.",
+      "translation_zh": "为了不给客户施加压力，我们提供了两个替代方案，并留出回应时间。",
+      "register_note": "Neutral-professional.",
+      "semantic_fit_note": "Pressure is the interpersonal burden intentionally reduced by EN5.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-677",
+      "target_item": "intention",
+      "assignments": [
+        {
+          "slot_id": "EN5",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "My intention is to keep the deadline, not to make the team accept an unsafe workload.",
+      "translation_zh": "我的意图是守住截止日期，而不是让团队接受不安全的工作量。",
+      "register_note": "Neutral-professional with explicit intent/effect contrast.",
+      "semantic_fit_note": "Intention is separated from the possible effect of a proposal.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-c-797",
+      "target_item": "significant",
+      "assignments": [
+        {
+          "slot_id": "EN6",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "The result is significant because it changed both the risk assessment and our next action.",
+      "translation_zh": "这一结果很重要，因为它同时改变了风险评估和我们的下一步行动。",
+      "register_note": "Neutral analytical register; not used as statistical jargon.",
+      "semantic_fit_note": "Significant means consequential to the accountable decision.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-759",
+      "target_item": "証拠",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "結論を出す前に、複数の証拠が同じ傾向を示しているか確認しました。",
+      "translation_zh": "在得出结论之前，我们确认了多项证据是否显示相同趋势。",
+      "register_note": "中立的な専門場面。",
+      "semantic_fit_note": "「証拠」を結論の根拠として選別するJA1の目的に合う。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-779",
+      "target_item": "基準",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "今回の判断基準は、情報が独立した二つの資料で確認できることです。",
+      "translation_zh": "这次的判断标准是信息能够由两份独立资料确认。",
+      "register_note": "改まった判断場面で自然。",
+      "semantic_fit_note": "「基準」が判断を限定する明示的な条件になっている。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-819",
+      "target_item": "裏付ける",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "現場の記録が、設備停止の原因に関する説明を裏付けています。",
+      "translation_zh": "现场记录为有关设备停机原因的说明提供了佐证。",
+      "register_note": "中立〜フォーマル。",
+      "semantic_fit_note": "主張を証拠で支える意味を明確に示す。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-731",
+      "target_item": "分析する",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "結論を急がず、まず調査結果と現場の記録を分析します。",
+      "translation_zh": "我们不急于下结论，先分析调查结果和现场记录。",
+      "register_note": "中立的な業務場面。",
+      "semantic_fit_note": "資料を処理して判断につなげる行為として用いる。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-3205",
+      "target_item": "招く",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "SUPPORT"
+        }
+      ],
+      "final_sentence": "根拠の弱い断定は、関係者の不要な誤解を招くおそれがあります。",
+      "translation_zh": "依据不足的断言可能招致相关人员不必要的误解。",
+      "register_note": "やや改まった注意喚起。",
+      "semantic_fit_note": "「招く」が望ましくない結果を引き起こす意味で自然。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-3217",
+      "target_item": "とはいえ",
+      "assignments": [
+        {
+          "slot_id": "JA2",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "final_sentence": "データは限られているとはいえ、現時点の判断材料としては十分です。",
+      "translation_zh": "虽说数据有限，但作为现阶段的判断材料已经足够。",
+      "register_note": "中立〜フォーマルな譲歩。",
+      "semantic_fit_note": "前件を認めた上で判断を限定する機能を示す。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-715",
+      "target_item": "妥当",
+      "assignments": [
+        {
+          "slot_id": "JA2",
+          "instructional_role": "NEW"
+        },
+        {
+          "slot_id": "JA6",
+          "instructional_role": "SUPPORT"
+        }
+      ],
+      "final_sentence": "二つの独立した資料が一致しているため、この判断は妥当だと考えます。",
+      "translation_zh": "由于两份独立资料相互一致，我认为这一判断是合理的。",
+      "register_note": "フォーマルな評価。",
+      "semantic_fit_note": "「妥当」を証拠に基づく合理性の評価として使う。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-735",
+      "target_item": "正当化する",
+      "assignments": [
+        {
+          "slot_id": "JA2",
+          "instructional_role": "NEW"
+        },
+        {
+          "slot_id": "JA6",
+          "instructional_role": "SUPPORT"
+        }
+      ],
+      "final_sentence": "一件の報告だけでは、計画全体の変更を正当化することはできません。",
+      "translation_zh": "仅凭一份报告，无法证明改变整个计划是合理的。",
+      "register_note": "フォーマルな議論。",
+      "semantic_fit_note": "行動・判断に十分な理由を与える意味を示す。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-815",
+      "target_item": "暫定的",
+      "assignments": [
+        {
+          "slot_id": "JA2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "追加の確認が終わるまで、これは暫定的な結論として扱います。",
+      "translation_zh": "在追加确认结束之前，我们将把它作为暂定结论处理。",
+      "register_note": "フォーマルな判断場面。",
+      "semantic_fit_note": "不確実性のため後で変わり得る結論を明示する。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-1095",
+      "target_item": "報告書",
+      "assignments": [
+        {
+          "slot_id": "JA3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "報告書には確認済みの事実と担当者の推測を分けて記載してください。",
+      "translation_zh": "请在报告书中分别记载已确认的事实和负责人的推测。",
+      "register_note": "丁寧な業務指示。",
+      "semantic_fit_note": "報告書を情報源として扱い、事実と推測の区別につなげる。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-807",
+      "target_item": "曖昧",
+      "assignments": [
+        {
+          "slot_id": "JA3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "「早めに対応する」という表現は曖昧なので、期限を明記しましょう。",
+      "translation_zh": "“尽早处理”这一表达很含糊，因此请明确写出期限。",
+      "register_note": "中立的な業務上の明確化。",
+      "semantic_fit_note": "複数解釈を生む表現の質を指摘する。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-843",
+      "target_item": "推論する",
+      "assignments": [
+        {
+          "slot_id": "JA3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "記録の時間差から、人員不足だったと推論できますが、それを事実とは断定できません。",
+      "translation_zh": "根据记录中的时间差可以推断当时人员不足，但不能把它断定为事实。",
+      "register_note": "分析的だが過度に学術的ではない。",
+      "semantic_fit_note": "「推論する」を確認済み事実と区別して使う。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-623",
+      "target_item": "約束する",
+      "assignments": [
+        {
+          "slot_id": "JA4",
+          "instructional_role": "NEW"
+        },
+        {
+          "slot_id": "JA5",
+          "instructional_role": "SUPPORT"
+        }
+      ],
+      "final_sentence": "対応の経緯を整理し、明日の正午までに報告すると約束します。",
+      "translation_zh": "我承诺整理处理经过，并在明天中午之前汇报。",
+      "register_note": "明確な業務上の約束。",
+      "semantic_fit_note": "具体的な期限と行動を伴う実務的な約束。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-859",
+      "target_item": "不測の事態",
+      "assignments": [
+        {
+          "slot_id": "JA4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "不測の事態に備え、代替の連絡手段を事前に確保いたします。",
+      "translation_zh": "为应对不可预见的情况，我们将事先确保备用联络方式。",
+      "register_note": "JA4に限定する改まった業務表現。",
+      "semantic_fit_note": "予測困難な事態への備えを自然に表す。単なる「問題」より正確で、形式性だけを加える用法ではない。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-871",
+      "target_item": "説明責任",
+      "assignments": [
+        {
+          "slot_id": "JA4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "方針を変更した決定者として、私が関係者への説明責任を果たします。",
+      "translation_zh": "作为改变方针的决策者，我将履行向相关人员说明的责任。",
+      "register_note": "JA4に限定するフォーマルな組織場面。",
+      "semantic_fit_note": "決定と結果を説明する責任を表し、非難や一般的な責任の同義語にはしていない。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-827",
+      "target_item": "緩和する",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "納期遅延の影響を緩和するため、重要な作業に人員を追加します。",
+      "translation_zh": "为减轻交期延误的影响，我们将为重要工作增派人员。",
+      "register_note": "フォーマルな業務対応。",
+      "semantic_fit_note": "悪影響を具体策で小さくする意味を示す。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-835",
+      "target_item": "両立させる",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "安全基準と納期を両立させるには、作業の優先順位を見直す必要があります。",
+      "translation_zh": "要兼顾安全标准和交期，需要重新审视工作的优先顺序。",
+      "register_note": "中立〜フォーマル。",
+      "semantic_fit_note": "衝突する二つの要求を同時に満たす意味で用いる。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-1123",
+      "target_item": "気遣う",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "final_sentence": "相手の事情を気遣い、すぐに返事を求めず代案を示しました。",
+      "translation_zh": "考虑到对方的情况，我们没有要求立即答复，而是提出了替代方案。",
+      "register_note": "丁寧で配慮のある対人場面。",
+      "semantic_fit_note": "相手への配慮を圧力回避の行動として示す。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-c-803",
+      "target_item": "関連する",
+      "assignments": [
+        {
+          "slot_id": "JA6",
+          "instructional_role": "NEW"
+        }
+      ],
+      "final_sentence": "今回の結果に直接関連する証拠だけを選び、次の行動を決めました。",
+      "translation_zh": "我们只选择了与本次结果直接相关的证据，并决定了下一步行动。",
+      "register_note": "中立的な振り返り。",
+      "semantic_fit_note": "証拠と結果の関係を明示し、終末課題の判断につなげる。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    }
+  ],
+  "grammar_examples": [
+    {
+      "canonical_id": "en-inversion",
+      "example_id": "s6-03b-en-inversion-01",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "Rarely have we seen such consistent evidence across independent reports.",
+      "translation_zh": "我们很少在彼此独立的报告中看到如此一致的证据。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "Rarely have we seen",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-inversion",
+      "example_id": "s6-03b-en-inversion-02",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "Rarely did the committee revise its conclusion after a single interview.",
+      "translation_zh": "委员会很少会仅凭一次访谈就修改结论。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "Rarely did the committee revise",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-inversion",
+      "example_id": "s6-03b-en-inversion-03",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "Rarely can one survey justify a decision of this scale.",
+      "translation_zh": "一项调查很少能够证明如此大规模的决定是合理的。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "The inversion extends across a modal and full proposition, so several pedagogically defensible blank spans would compete.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-participle-clause",
+      "example_id": "s6-03b-en-participle-clause-01",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "Having reviewed the source data, we limited the conclusion to the two surveyed regions.",
+      "translation_zh": "审查源数据后，我们把结论限定在两个受调查地区。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "Having reviewed the source data",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-participle-clause",
+      "example_id": "s6-03b-en-participle-clause-02",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "Having missed the initial deadline, the supplier is now providing daily updates.",
+      "translation_zh": "由于错过了最初的截止日期，供应商现在每天提供进展。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "Having missed the initial deadline",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-participle-clause",
+      "example_id": "s6-03b-en-participle-clause-03",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "Having considered both proposals, I recommend the option with the lower safety risk.",
+      "translation_zh": "在考虑了两个方案后，我建议选择安全风险较低的方案。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "The participle clause has multiple plausible completion spans and should remain a full-sentence interpretation task.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-qualified-comparison",
+      "example_id": "s6-03b-en-qualified-comparison-01",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "The revised plan is more affordable in terms of staffing, but it carries greater scheduling risk.",
+      "translation_zh": "修订后的计划在人力成本方面更实惠，但日程风险更大。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "more affordable in terms of staffing, but",
+      "cc_occurrence": 1,
+      "cc_answer_start": 20,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-qualified-comparison",
+      "example_id": "s6-03b-en-qualified-comparison-02",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "Option B is more reliable in terms of delivery, but it offers less flexibility.",
+      "translation_zh": "方案B在交付方面更可靠，但灵活性较低。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "more reliable in terms of delivery, but",
+      "cc_occurrence": 1,
+      "cc_answer_start": 12,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-qualified-comparison",
+      "example_id": "s6-03b-en-qualified-comparison-03",
+      "assignments": [
+        {
+          "slot_id": "EN1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "The new process is more transparent in terms of accountability, but it takes longer to complete.",
+      "translation_zh": "新流程在说明责任方面更透明，但完成所需时间更长。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "Several adjectives and comparison complements could satisfy a blank, so no single local answer is authoritative.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-mixed-conditional",
+      "example_id": "s6-03b-en-mixed-conditional-01",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "If we had verified the figures earlier, we would have a firmer basis now.",
+      "translation_zh": "如果我们早些核实这些数据，现在就会有更可靠的依据。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "If we had verified the figures earlier, we would have",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-mixed-conditional",
+      "example_id": "s6-03b-en-mixed-conditional-02",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "If she had accepted the regional role, she would understand the current staffing risk better.",
+      "translation_zh": "如果她当时接受了区域岗位，现在就会更了解当前的人员配置风险。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "If she had accepted the regional role, she would understand",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-mixed-conditional",
+      "example_id": "s6-03b-en-mixed-conditional-03",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "If the backup system had been tested, the team would be less exposed now.",
+      "translation_zh": "如果备用系统当时经过测试，团队现在面临的风险就会更小。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "The long cross-clause dependency makes more than one completion scope reasonable.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-second-conditional",
+      "example_id": "s6-03b-en-second-conditional-01",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "If the evidence were clearer, I would support the proposal today.",
+      "translation_zh": "如果证据更清楚，我今天就会支持该提案。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "If the evidence were clearer, I would support",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-second-conditional",
+      "example_id": "s6-03b-en-second-conditional-02",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "If we had another week, we would compare the two alternatives in practice.",
+      "translation_zh": "如果我们多一周时间，就会在实践中比较两个替代方案。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "If we had another week, we would compare",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-second-conditional",
+      "example_id": "s6-03b-en-second-conditional-03",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "If the client preferred a later date, we would adjust the schedule without pressure.",
+      "translation_zh": "如果客户更希望晚一些的日期，我们会在不给压力的情况下调整日程。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "The hypothetical condition and result each admit multiple valid lexical completions.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-third-conditional",
+      "example_id": "s6-03b-en-third-conditional-01",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "If we had checked the site log, we would have identified the staffing gap sooner.",
+      "translation_zh": "如果我们当时查看了现场日志，就会更早发现人员缺口。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "If we had checked the site log, we would have identified",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-third-conditional",
+      "example_id": "s6-03b-en-third-conditional-02",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "If the supplier had warned us, we would have activated the backup plan.",
+      "translation_zh": "如果供应商当时提醒了我们，我们就会启动备用方案。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "If the supplier had warned us, we would have activated",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-third-conditional",
+      "example_id": "s6-03b-en-third-conditional-03",
+      "assignments": [
+        {
+          "slot_id": "EN2",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "If I had explained the risk more clearly, the team would have made a different decision.",
+      "translation_zh": "如果我当时把风险解释得更清楚，团队就会作出不同决定。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "A controlled blank could target either auxiliary sequence, so the full counterfactual should be reviewed holistically.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-hedged-claim",
+      "example_id": "s6-03b-en-hedged-claim-01",
+      "assignments": [
+        {
+          "slot_id": "EN3",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "The evidence suggests that the delay began before the staffing change.",
+      "translation_zh": "证据表明，延误在人员调整之前就已经开始。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "The evidence suggests that",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-hedged-claim",
+      "example_id": "s6-03b-en-hedged-claim-02",
+      "assignments": [
+        {
+          "slot_id": "EN3",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "The evidence suggests that the revised process reduced reporting errors.",
+      "translation_zh": "证据显示，修订后的流程减少了报告错误。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "The evidence suggests that",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-hedged-claim",
+      "example_id": "s6-03b-en-hedged-claim-03",
+      "assignments": [
+        {
+          "slot_id": "EN3",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "The available evidence suggests that both factors contributed to the outcome.",
+      "translation_zh": "现有证据表明，这两个因素都促成了该结果。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "The inserted modifier changes the canonical opening and creates competing acceptable answer spans.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-regardless",
+      "example_id": "s6-03b-en-regardless-01",
+      "assignments": [
+        {
+          "slot_id": "EN4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "Regardless of the final deadline, we must keep the safety review.",
+      "translation_zh": "无论最终截止日期如何，我们都必须保留安全审查。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "Regardless of the final deadline",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-regardless",
+      "example_id": "s6-03b-en-regardless-02",
+      "assignments": [
+        {
+          "slot_id": "EN4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "Regardless of which option we choose, the decision owner must explain the trade-off.",
+      "translation_zh": "无论我们选择哪个方案，决策负责人都必须解释其中的取舍。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "Regardless of which option we choose",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-regardless",
+      "example_id": "s6-03b-en-regardless-03",
+      "assignments": [
+        {
+          "slot_id": "EN4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "The team will record the decision regardless of whether the proposal is approved.",
+      "translation_zh": "无论提案是否获批，团队都会记录这一决定。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "The target appears sentence-finally and admits noun-phrase and wh-clause analyses, so a single blank is not warranted.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-if-request",
+      "example_id": "s6-03b-en-if-request-01",
+      "assignments": [
+        {
+          "slot_id": "EN5",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "If you have the revised figures, could you send them by noon?",
+      "translation_zh": "如果你有修订后的数据，可以在中午前发给我吗？",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "The proposed answer would span the complete authored sentence; controlled completion must remain sentence-local rather than becoming full-sentence recall.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-if-request",
+      "example_id": "s6-03b-en-if-request-02",
+      "assignments": [
+        {
+          "slot_id": "EN5",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "If the client agrees, could you confirm the new date in writing?",
+      "translation_zh": "如果客户同意，可以请你以书面形式确认新日期吗？",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "The proposed answer would span the complete authored sentence; controlled completion must remain sentence-local rather than becoming full-sentence recall.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "en-if-request",
+      "example_id": "s6-03b-en-if-request-03",
+      "assignments": [
+        {
+          "slot_id": "EN5",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "If there is room in the schedule, could you review the risk note as well?",
+      "translation_zh": "如果日程允许，也可以请你审查一下风险说明吗？",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "The request contains several independently blankable elements, so full-form recall would not have one local answer.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ni-hoka-naranai",
+      "example_id": "s6-03b-ja-ni-hoka-naranai-01",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "この遅れは、確認手順を省いた結果にほかなりません。",
+      "translation_zh": "这次延误正是省略确认步骤的结果。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "結果にほかなりません",
+      "cc_occurrence": 1,
+      "cc_answer_start": 14,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ni-hoka-naranai",
+      "example_id": "s6-03b-ja-ni-hoka-naranai-02",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "今回の合意は、双方が粘り強く調整した成果にほかならない。",
+      "translation_zh": "这次共识正是双方坚持协调的成果。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "成果にほかならない",
+      "cc_occurrence": 1,
+      "cc_answer_start": 18,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ni-hoka-naranai",
+      "example_id": "s6-03b-ja-ni-hoka-naranai-03",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "判断を支えているのは、複数の独立した証拠にほかなりません。",
+      "translation_zh": "支撑这一判断的正是多项独立证据。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "焦点構文と文末形式の両方が補完候補になり得るため、文全体で解釈させる。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ni-suginai",
+      "example_id": "s6-03b-ja-ni-suginai-01",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "現時点の数字は、暫定的な推計にすぎません。",
+      "translation_zh": "现阶段的数字不过是暂定估算。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "推計にすぎません",
+      "cc_occurrence": 1,
+      "cc_answer_start": 12,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ni-suginai",
+      "example_id": "s6-03b-ja-ni-suginai-02",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "その説明は、一つの可能性を示したものにすぎない。",
+      "translation_zh": "那一说明只不过显示了一种可能性。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "ものにすぎない",
+      "cc_occurrence": 1,
+      "cc_answer_start": 16,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ni-suginai",
+      "example_id": "s6-03b-ja-ni-suginai-03",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "今回の成功は、長い改善過程の一段階にすぎません。",
+      "translation_zh": "这次成功不过是漫长改进过程中的一个阶段。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "名詞句の境界を複数に切れるため、唯一の局所空所を設定しない。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-wo-fumaete",
+      "example_id": "s6-03b-ja-wo-fumaete-01",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "調査結果を踏まえて、結論の範囲を二地域に限定しました。",
+      "translation_zh": "根据调查结果，我们把结论范围限定在两个地区。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "調査結果を踏まえて",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-wo-fumaete",
+      "example_id": "s6-03b-ja-wo-fumaete-02",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "関係者の意見を踏まえて、代替案を修正いたします。",
+      "translation_zh": "根据相关人员的意见，我们将修改替代方案。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "関係者の意見を踏まえて",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-wo-fumaete",
+      "example_id": "s6-03b-ja-wo-fumaete-03",
+      "assignments": [
+        {
+          "slot_id": "JA1",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "前回の反省を踏まえて、今回は判断の根拠を記録に残します。",
+      "translation_zh": "基于上次的反思，这次我们会把判断依据记录下来。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "前置句全体が談話背景になり、複数の自然な補完範囲がある。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-hearsay-sou",
+      "example_id": "s6-03b-ja-hearsay-sou-01",
+      "assignments": [
+        {
+          "slot_id": "JA3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "担当者によると、部品は明日の朝に届くそうです。",
+      "translation_zh": "据负责人说，零件将在明天早上到达。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "届くそうです",
+      "cc_occurrence": 1,
+      "cc_answer_start": 16,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-hearsay-sou",
+      "example_id": "s6-03b-ja-hearsay-sou-02",
+      "assignments": [
+        {
+          "slot_id": "JA3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "報道では、新しい基準は来月から適用されるそうです。",
+      "translation_zh": "据报道，新标准将从下个月开始实施。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "適用されるそうです",
+      "cc_occurrence": 1,
+      "cc_answer_start": 15,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-hearsay-sou",
+      "example_id": "s6-03b-ja-hearsay-sou-03",
+      "assignments": [
+        {
+          "slot_id": "JA3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "現地からの連絡によれば、けが人はいなかったそうです。",
+      "translation_zh": "据现场消息，没有人员受伤。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "引用源と内容全体の境界を含むため、局所CCより伝聞機能の識別を優先する。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ni-kakawarazu",
+      "example_id": "s6-03b-ja-ni-kakawarazu-01",
+      "assignments": [
+        {
+          "slot_id": "JA3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "経験の有無にかかわらず、全員が同じ安全確認を行います。",
+      "translation_zh": "无论有无经验，所有人都进行相同的安全确认。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "経験の有無にかかわらず",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ni-kakawarazu",
+      "example_id": "s6-03b-ja-ni-kakawarazu-02",
+      "assignments": [
+        {
+          "slot_id": "JA3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "結果にかかわらず、判断の経緯は記録に残してください。",
+      "translation_zh": "无论结果如何，请把判断经过保留在记录中。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "結果にかかわらず",
+      "cc_occurrence": 1,
+      "cc_answer_start": 0,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-ni-kakawarazu",
+      "example_id": "s6-03b-ja-ni-kakawarazu-03",
+      "assignments": [
+        {
+          "slot_id": "JA3",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "どの案を選ぶかにかかわらず、説明責任は決定者にあります。",
+      "translation_zh": "无论选择哪个方案，说明责任都由决策者承担。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "埋め込み疑問と「にかかわらず」の境界に複数の妥当な空所がある。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-zaru-wo-enai",
+      "example_id": "s6-03b-ja-zaru-wo-enai-01",
+      "assignments": [
+        {
+          "slot_id": "JA4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "主要な証拠が確認できないため、結論を見直さざるを得ません。",
+      "translation_zh": "由于无法确认主要证据，我们不得不重新审视结论。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "見直さざるを得ません",
+      "cc_occurrence": 1,
+      "cc_answer_start": 18,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-zaru-wo-enai",
+      "example_id": "s6-03b-ja-zaru-wo-enai-02",
+      "assignments": [
+        {
+          "slot_id": "JA4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "予備の人員を確保できず、日程を延期せざるを得ない。",
+      "translation_zh": "由于无法确保备用人员，不得不推迟日程。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "延期せざるを得ない",
+      "cc_occurrence": 1,
+      "cc_answer_start": 15,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-zaru-wo-enai",
+      "example_id": "s6-03b-ja-zaru-wo-enai-03",
+      "assignments": [
+        {
+          "slot_id": "JA4",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "安全基準を満たさなかったので、提案を断念せざるを得なかった。",
+      "translation_zh": "由于未达到安全标准，我们不得不放弃提案。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "過去形まで含む活用範囲に複数の補完案があるためCCにはしない。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-causative-request",
+      "example_id": "s6-03b-ja-causative-request-01",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "この判断の根拠については、まず私に説明させてください。",
+      "translation_zh": "请先让我说明这一判断的依据。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "私に説明させてください",
+      "cc_occurrence": 1,
+      "cc_answer_start": 15,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-causative-request",
+      "example_id": "s6-03b-ja-causative-request-02",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "最終案を提出する前に、もう一度確認させてください。",
+      "translation_zh": "在提交最终方案之前，请允许我再确认一次。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "確認させてください",
+      "cc_occurrence": 1,
+      "cc_answer_start": 15,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-causative-request",
+      "example_id": "s6-03b-ja-causative-request-03",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "本日の対応について、私から報告させてください。",
+      "translation_zh": "关于今天的处理，请允许我来汇报。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "話者・許可者の役割を含めて理解すべき文で、短い空所だけでは方向性を保証できない。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-te-oku",
+      "example_id": "s6-03b-ja-te-oku-01",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "会議の前に、争点を三つに整理しておきます。",
+      "translation_zh": "会议前我会预先把争议点整理为三个。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "整理しておきます",
+      "cc_occurrence": 1,
+      "cc_answer_start": 12,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-te-oku",
+      "example_id": "s6-03b-ja-te-oku-02",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "不測の事態に備えて、代替の連絡先を共有しておいてください。",
+      "translation_zh": "为应对不可预见的情况，请预先共享备用联系方式。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "共有しておいてください",
+      "cc_occurrence": 1,
+      "cc_answer_start": 17,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-te-oku",
+      "example_id": "s6-03b-ja-te-oku-03",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "判断の経緯は、後で確認できるよう記録しておきました。",
+      "translation_zh": "为了之后能够确认，我们预先记录了判断经过。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "過去形と目的節を含み、複数の自然な補完範囲がある。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-honorific-request",
+      "example_id": "s6-03b-ja-honorific-request-01",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "資料が届くまで、こちらでお待ちください。",
+      "translation_zh": "在资料送达之前，请在这里等候。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "お待ちください",
+      "cc_occurrence": 1,
+      "cc_answer_start": 12,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-honorific-request",
+      "example_id": "s6-03b-ja-honorific-request-02",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "結論を出す前に、添付した証拠をお読みください。",
+      "translation_zh": "在得出结论之前，请阅读所附证据。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "お読みください",
+      "cc_occurrence": 1,
+      "cc_answer_start": 15,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-honorific-request",
+      "example_id": "s6-03b-ja-honorific-request-03",
+      "assignments": [
+        {
+          "slot_id": "JA5",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "変更理由は、この欄にお書きください。",
+      "translation_zh": "请在这一栏填写变更理由。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "動詞語幹の切り方を複数設定できるため、文全体の敬意方向を確認する課題にする。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-kai",
+      "example_id": "s6-03b-ja-kai-01",
+      "assignments": [
+        {
+          "slot_id": "JA6",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "関係者と何度も調整した甲斐があり、全員が合意できました。",
+      "translation_zh": "多次与相关人员协调没有白费，最终所有人达成了共识。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "調整した甲斐があり",
+      "cc_occurrence": 1,
+      "cc_answer_start": 7,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-kai",
+      "example_id": "s6-03b-ja-kai-02",
+      "assignments": [
+        {
+          "slot_id": "JA6",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "予備案を準備した甲斐があって、遅延の影響を抑えられました。",
+      "translation_zh": "准备备用方案没有白费，我们得以控制延误的影响。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "準備した甲斐があって",
+      "cc_occurrence": 1,
+      "cc_answer_start": 4,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-kai",
+      "example_id": "s6-03b-ja-kai-03",
+      "assignments": [
+        {
+          "slot_id": "JA6",
+          "instructional_role": "NEW"
+        }
+      ],
+      "text": "現場まで足を運んだ甲斐がありました。",
+      "translation_zh": "亲自前往现场是值得的。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "「甲斐がある」の時制と評価対象をまとめて問う必要があり、短い局所空所を固定しない。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-koto-ni-suru",
+      "example_id": "s6-03b-ja-koto-ni-suru-01",
+      "assignments": [
+        {
+          "slot_id": "JA6",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "追加の証拠が出るまで、結論を保留することにします。",
+      "translation_zh": "在出现更多证据之前，我决定暂缓结论。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "保留することにします",
+      "cc_occurrence": 1,
+      "cc_answer_start": 14,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-koto-ni-suru",
+      "example_id": "s6-03b-ja-koto-ni-suru-02",
+      "assignments": [
+        {
+          "slot_id": "JA6",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "今後は、判断の根拠を記録に残すことにしました。",
+      "translation_zh": "今后我决定把判断依据留在记录中。",
+      "cc_safety": "CC SAFE",
+      "cc_answer": "残すことにしました",
+      "cc_occurrence": 1,
+      "cc_answer_start": 13,
+      "cc_review_note": "One explicit local target occurrence; the candidate answer is uniquely recoverable under the bounded canonical form.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "ja-koto-ni-suru",
+      "example_id": "s6-03b-ja-koto-ni-suru-03",
+      "assignments": [
+        {
+          "slot_id": "JA6",
+          "instructional_role": "REVIEW"
+        }
+      ],
+      "text": "代替案が承認されたので、明日から新しい手順を試すことにします。",
+      "translation_zh": "替代方案获批，因此我决定从明天开始试行新流程。",
+      "cc_safety": "NOT FOR CC",
+      "cc_answer": null,
+      "cc_occurrence": null,
+      "cc_answer_start": null,
+      "cc_review_note": "理由節と決定内容を含むため、複数の補完範囲が成立する。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    }
+  ],
+  "expression_contexts": [
+    {
+      "canonical_id": "lesson-en-inversion-ex",
+      "canonical_text": "Rarely do we see such a clear result.",
+      "scenario": "A project review team compares several independent reports that unusually point to the same outcome.",
+      "speaker_relationship": "Professional peers in a formal review.",
+      "intended_pragmatic_function": "Emphasize that this degree of evidential clarity is exceptional before stating a bounded conclusion.",
+      "register_constraint": "Formal emphasis; do not use inversion as the default wording for ordinary observations.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "lesson-en-participle-clause-ex",
+      "canonical_text": "Having checked the figures, we revised the report.",
+      "scenario": "An analyst explains why the team changed a report after verifying its numerical evidence.",
+      "speaker_relationship": "Analyst reporting to colleagues.",
+      "intended_pragmatic_function": "Compress completed background work while keeping the analyst/team as the understood subject of both clauses.",
+      "register_constraint": "Formal-neutral; the participle clause must not have a dangling subject.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "lesson-en-mixed-conditional-ex",
+      "canonical_text": "If I had accepted the offer, I would live abroad now.",
+      "scenario": "A professional reflects on how a past career decision would have changed their present situation.",
+      "speaker_relationship": "Colleagues discussing a past decision and present consequence.",
+      "intended_pragmatic_function": "Connect an unreal past choice to a present counterfactual result.",
+      "register_constraint": "Reflective neutral register; keep the two time frames distinct.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "lesson-en-second-conditional-ex",
+      "canonical_text": "If I had more time, I would learn Japanese.",
+      "scenario": "A colleague explains a present constraint while considering an unreal alternative.",
+      "speaker_relationship": "Peers discussing current priorities.",
+      "intended_pragmatic_function": "State a hypothetical present condition and its imagined result without implying a past event.",
+      "register_constraint": "Neutral; the past form marks distance from reality, not past time.",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "lesson-ja-wo-fumaete-ex",
+      "canonical_text": "結果を踏まえて、計画を見直します。",
+      "scenario": "会議で、担当者が確認済みの結果を判断材料として計画の修正を提案する。",
+      "speaker_relationship": "担当者から同僚・上司への業務報告。",
+      "intended_pragmatic_function": "前の結果を根拠として次の判断を行う。",
+      "register_constraint": "改まった業務表現。単に結果どおりに従う意味にはしない。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "lesson-ja-ni-hoka-naranai-ex",
+      "canonical_text": "これは努力の結果にほかなりません。",
+      "scenario": "成果の要因を十分な根拠とともに総括する場面。",
+      "speaker_relationship": "責任者がチームの成果を正式に評価する。",
+      "intended_pragmatic_function": "成果の本質を強く特定し、他の説明を退ける。",
+      "register_constraint": "強い断定を伴うため、証拠が十分な正式場面に限る。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "legacy-108-ja",
+      "canonical_text": "予報にかかわらず、予備の案を用意したほうがいいです。",
+      "scenario": "屋外行事の担当者が、天候予報が変わる可能性を考えてバックアップ案を提案する。",
+      "speaker_relationship": "同僚同士の計画会議。",
+      "intended_pragmatic_function": "予報の内容に左右されず備えが必要だと述べる。",
+      "register_constraint": "中立的な助言。相手を責める強い命令にはしない。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "legacy-155-ja",
+      "canonical_text": "少し早めに失礼するかもしれません。",
+      "scenario": "取引先との会合前に、話者が別の確定していない業務のため早退の可能性を伝える。",
+      "speaker_relationship": "参加者から主催者への丁寧な事前連絡。",
+      "intended_pragmatic_function": "早く退出する可能性を保留付きで開示し、相手が予定を調整できるようにする。",
+      "register_constraint": "丁寧な対人表現。「失礼する」は退出の慣用表現で、無礼になる意図ではない。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "canonical_id": "legacy-179-ja",
+      "canonical_text": "思っていたのとは違う結果になりました。",
+      "scenario": "プロジェクト終了後、担当者が期待と実際の結果の差を振り返る。",
+      "speaker_relationship": "担当者からチームへの中立的な振り返り。",
+      "intended_pragmatic_function": "期待との差を認め、証拠・責任・次の行動の検討を始める。",
+      "register_constraint": "中立的で非難を避ける。結果が「変身した」という意味にはしない。",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    }
+  ],
+  "new_dialogues": [
+    {
+      "slot_id": "EN3",
+      "outcome": "Synthesize reports, evidence, and inference.",
+      "register_note": "Neutral-professional peer discussion; evidence labels are explicit without sounding like an academic paper.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The supplier’s report says the delay came from a parts shortage, but the site log points to a staffing gap.",
+          "translation_zh": "供应商的报告称延误源于零件短缺，但现场日志显示人员配置存在缺口。",
+          "demonstrated_canonical_ids": [
+            "en-c-1093"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "The confirmed evidence is that production stopped for six hours; the cause has not been verified.",
+          "translation_zh": "已确认的证据是生产中断了六小时；原因尚未核实。",
+          "demonstrated_canonical_ids": [
+            "en-c-757",
+            "en-c-637"
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "So we can infer that the staffing gap contributed, but that is still an inference, not a confirmed fact.",
+          "translation_zh": "所以我们可以推断人员缺口造成了影响，但这仍然是推断，不是已确认的事实。",
+          "demonstrated_canonical_ids": [
+            "en-c-841"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "The phrase “limited coverage” is ambiguous. Let's clarify it: does it refer to the night shift or the whole week?",
+          "translation_zh": "“覆盖有限”这一表述有歧义。我们确认一下：它指夜班还是整周？",
+          "demonstrated_canonical_ids": [
+            "en-c-805",
+            "en-c-737"
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "We also have only one site log, so the evidence has a limitation.",
+          "translation_zh": "而且我们只有一份现场日志，因此证据存在局限。",
+          "demonstrated_canonical_ids": []
+        },
+        {
+          "speaker": "B",
+          "text": "Then the evidence suggests that staffing probably contributed, while the main cause remains unconfirmed.",
+          "translation_zh": "那么，证据表明人员配置可能是促成因素，但主要原因仍未确认。",
+          "demonstrated_canonical_ids": [
+            "en-hedged-claim"
+          ]
+        }
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "outcome": "Negotiate competing demands, accountability, and mitigation.",
+      "register_note": "Professional planning meeting; responsibility is assigned without personal blame.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The safety review is our first priority, but the client also needs a usable release by Friday.",
+          "translation_zh": "安全审查是首要事项，但客户也需要在星期五前拿到可用版本。",
+          "demonstrated_canonical_ids": [
+            "en-c-653"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "A further supplier delay is the main contingency, because it would leave us without the tested component.",
+          "translation_zh": "供应商再次延误是主要的意外情况，因为那会让我们没有经过测试的部件。",
+          "demonstrated_canonical_ids": [
+            "en-c-857"
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "For clear accountability, I will take responsibility for the release decision, and Mei will document the test results.",
+          "translation_zh": "为明确说明责任，我会承担发布决定的责任，Mei 会记录测试结果。",
+          "demonstrated_canonical_ids": [
+            "en-c-869",
+            "35e1c-en-v086"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "We can mitigate the impact by moving two engineers to the backup component today.",
+          "translation_zh": "我们可以今天调两名工程师处理备用部件，以减轻影响。",
+          "demonstrated_canonical_ids": [
+            "en-c-825"
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "I can commit to a limited release on Friday if the safety checks pass.",
+          "translation_zh": "如果安全检查通过，我可以承诺星期五进行有限发布。",
+          "demonstrated_canonical_ids": [
+            "en-c-621"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "Agreed. You will send the decision record by noon tomorrow, and I will report any new risk immediately.",
+          "translation_zh": "同意。你将在明天中午前发送决策记录，我会立即报告任何新风险。",
+          "demonstrated_canonical_ids": []
+        }
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "outcome": "報告・間接疑問・伝聞・推論を区別して条件付きで判断する。",
+      "register_note": "中立的な業務会話。そうだは情報源のある伝聞、ようだは画面からの推論、かは埋め込み疑問として分ける。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "物流会社の報告書によると、部品は明日の朝に届くそうです。",
+          "translation_zh": "据物流公司的报告书说，零件将在明天早上到达。",
+          "demonstrated_canonical_ids": [
+            "ja-c-1095",
+            "ja-hearsay-sou"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "ただ、追跡画面では、まだ倉庫を出ていないようです。",
+          "translation_zh": "不过，从追踪页面来看，货物似乎还没有离开仓库。",
+          "demonstrated_canonical_ids": []
+        },
+        {
+          "speaker": "A",
+          "text": "到着時刻が何時になるか、担当者に確認できますか。",
+          "translation_zh": "可以向负责人确认到达时间会是几点吗？",
+          "demonstrated_canonical_ids": [
+            "ja-indirect-ka"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "天候条件によっては遅れる可能性もあり、時刻はまだ確定できないとのことです。",
+          "translation_zh": "对方说，根据天气条件也有可能延误，时间目前还无法确定。",
+          "demonstrated_canonical_ids": [
+            "ja-c-1111"
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "では、今日届く代案と比べて、作業への影響を確認しましょう。",
+          "translation_zh": "那么，我们把它与今天能到的替代方案比较一下，确认对工作的影响吧。",
+          "demonstrated_canonical_ids": [
+            "ja-c-647"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "はい。正午までに確定しなければ、代案を使うことにします。",
+          "translation_zh": "好的。如果到中午仍不能确定，我们就决定采用替代方案。",
+          "demonstrated_canonical_ids": []
+        }
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "outcome": "不測の事態と説明責任を正式に協議し、緩和策と次の行動を決める。",
+      "register_note": "改まった社内会議。話者側の「報告する」だけを「報告いたします」とし、する→いたすの方向を守る。",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "不測の事態により、主要な部品の納入が二日遅れる見込みです。",
+          "translation_zh": "由于不可预见的情况，主要部件预计将延迟两天交付。",
+          "demonstrated_canonical_ids": [
+            "ja-c-859"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "安全確認を最優先事項にすると、金曜日の納期に間に合わせるための人員が不足します。",
+          "translation_zh": "如果把安全确认列为最优先事项，为赶上星期五交期所需的人手就会不足。",
+          "demonstrated_canonical_ids": [
+            "ja-c-655"
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "影響を緩和するため、別のチームから二名をこちらに配分する案を提案します。",
+          "translation_zh": "为减轻影响，我建议从另一个团队调配两人到我们这边。",
+          "demonstrated_canonical_ids": [
+            "ja-c-827",
+            "ja-c-751"
+          ],
+          "non_authoritative_familiar_ids": [
+            "ja-c-827"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "方針を変更する場合の説明責任は私が負い、判断理由を記録します。",
+          "translation_zh": "如果改变方针，说明责任由我承担，并记录判断理由。",
+          "demonstrated_canonical_ids": [
+            "ja-c-871"
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "関係部署への説明は私が担当し、本日中に報告いたします。\nまた、必要な対応を最後まで行うと約束します。",
+          "translation_zh": "由我负责向相关部门说明，并将在今天之内汇报。\n另外，我承诺把必要的处理跟进到底。",
+          "demonstrated_canonical_ids": [
+            "ja-humble",
+            "ja-c-623"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "では、午後三時に進捗を確認し、必要なら代替案へ切り替えましょう。",
+          "translation_zh": "那么，下午三点确认进展，如有必要就切换到替代方案。",
+          "demonstrated_canonical_ids": []
+        }
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    }
+  ],
+  "reuse_prompt_layers": [
+    {
+      "slot_id": "EN5",
+      "source_expression_ids": [
+        "35e1b-en-d-invitation-decline-expr",
+        "legacy-159-en",
+        "legacy-75-en",
+        "legacy-135-en"
+      ],
+      "higher_stage_demand": "Turn invitation and exit material into a pressure-free professional commitment negotiation.",
+      "production_prompt": "State a genuine constraint, offer two workable alternatives, give the other party time to choose, and finish with one explicit deliverable and deadline.",
+      "contrast_checks": [
+        "Do not use en-would-like.",
+        "Separate intention from interpersonal pressure.",
+        "A refusal must preserve the other party’s freedom to choose."
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "source_expression_ids": [
+        "academic-approach-en",
+        "legacy-108-en",
+        "35e1b-en-d-group-disagree-expr"
+      ],
+      "higher_stage_demand": "Use familiar disagreement and result assets for accountable terminal reflection.",
+      "production_prompt": "Identify the intended outcome and actual result, cite the strongest evidence, explain one consequence, own the relevant responsibility, and justify one next action.",
+      "contrast_checks": [
+        "Introduce little new material.",
+        "Distinguish evidence from perspective.",
+        "The next action must follow from the review."
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "source_expression_ids": [
+        "35e1b-ja-d-misunderstanding-tone-expr",
+        "35e1b-ja-x-clarify-in-other-words-expr",
+        "legacy-156-ja",
+        "legacy-147-ja"
+      ],
+      "higher_stage_demand": "誤解修復の素材を、事実・推論・可能性・懸念・留保を区別する慎重な判断課題へ高める。",
+      "production_prompt": "確認済みの事実を一つ示し、間接証拠からの推論を「ようだ」で述べ、未解決の可能性を「かもしれない」で残し、「わけではない」で過度な推論を否定してから懸念を限定して述べる。",
+      "contrast_checks": [
+        "かもしれない＝未解決の可能性。",
+        "ようだ＝間接証拠からの推論。",
+        "わけではない＝過度な推論の否定。"
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "source_expression_ids": [
+        "legacy-37-ja",
+        "legacy-39-ja",
+        "35e1b-ja-d-invitation-condition-expr",
+        "legacy-155-ja"
+      ],
+      "higher_stage_demand": "誘い・依頼の素材を、制約開示、代案、配慮、正式な約束の交渉へ高める。",
+      "production_prompt": "自分の制約を丁寧に説明し、相手に圧力をかけずに代案を示し、相手の事情を気遣った上で具体的な期限付きの約束をする。",
+      "contrast_checks": [
+        "基本的な誘い方をNEW扱いしない。",
+        "依頼の敬意方向を守る。",
+        "相手が断れる余地を残す。"
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "source_expression_ids": [
+        "legacy-183-ja",
+        "legacy-177-ja",
+        "legacy-179-ja",
+        "legacy-147-ja"
+      ],
+      "higher_stage_demand": "振り返り素材を、証拠・責任・正当化・次の行動を統合する終末課題へ高める。",
+      "production_prompt": "意図した結果と実際の結果を比較し、関連する証拠を示し、自分の責任を認め、判断を正当化できる範囲を限定して、次に取る行動を決める。",
+      "contrast_checks": [
+        "大きな新文法群を導入しない。",
+        "結果の説明と責任追及を混同しない。",
+        "次の行動を証拠に結び付ける。"
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    }
+  ],
+  "short_scenarios": [
+    {
+      "slot_id": "EN1",
+      "scenario": "A committee has three sources about a pilot programme: an independent survey, a supplier’s promotional summary, and an internal incident log.",
+      "learner_task": "Select the evidence relevant to safety, state the criterion used, make one claim, and limit the conclusion to the surveyed sites.",
+      "success_criteria": [
+        "Uses relevant rather than merely available evidence.",
+        "States an explicit criterion.",
+        "Avoids generalizing beyond the two surveyed sites."
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "scenario": "A team rejected a backup supplier last month to save cost; the current supplier has now missed a deadline. One colleague argues that the original choice was reasonable with the information available.",
+      "learner_task": "Explain the past-decision-to-present-consequence link, concede the colleague’s counter-position, and evaluate what the backup alternative would have changed.",
+      "success_criteria": [
+        "Uses a past counterfactual and a present consequence accurately.",
+        "Acknowledges the reasonable counter-position.",
+        "Does not claim the alternative was risk-free."
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "scenario": "ある部署が二つの調査結果と一件の匿名コメントを基に、新しい手順を全社へ広げるか検討している。",
+      "learner_task": "関連する証拠を選び、判断基準を一つ明示し、その基準を踏まえた正式な結論を調査対象の部署に限定して述べる。",
+      "success_criteria": [
+        "匿名コメントだけを主要証拠にしない。",
+        "基準と結論のつながりを示す。",
+        "にほかならない等の強い形式を使う場合は根拠の強さに合わせる。"
+      ],
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    }
+  ],
+  "titles_objectives": [
+    {
+      "slot_id": "EN1",
+      "title_zh": "以证据构建有限定的论证",
+      "title_target": "Build a Qualified Evidence-Led Argument",
+      "objective_zh": "能选择相关证据、提出主张，并明确结论的适用范围。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "EN2",
+      "title_zh": "分析反事实并回应反方观点",
+      "title_target": "Reason Through Counterfactuals and Counterpositions",
+      "objective_zh": "能连接反事实条件与后果，承认反方依据，并说明不确定性。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "EN3",
+      "title_zh": "综合转述信息并区分证据与推断",
+      "title_target": "Synthesize Reports, Evidence, and Inference",
+      "objective_zh": "能综合多个来源，区分事实、证据与推断，并形成有限定的结论。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "EN4",
+      "title_zh": "协商冲突需求并承担说明责任",
+      "title_target": "Negotiate Competing Demands and Accountability",
+      "objective_zh": "能权衡优先事项、分配责任、提出缓解措施，并作出正式承诺。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "EN5",
+      "title_zh": "作出不施压的正式承诺",
+      "title_target": "Make Pressure-Free Formal Commitments",
+      "objective_zh": "能说明限制、提出替代方案，并在不给对方压力的情况下明确承诺。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "EN6",
+      "title_zh": "回顾结果并承诺后续行动",
+      "title_target": "Reflect on Outcomes and Commit to Next Steps",
+      "objective_zh": "能根据证据评估结果、承担相应责任，并说明下一步行动。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "JA1",
+      "title_zh": "组织依据并形成有限定的结论",
+      "title_target": "根拠を整理し、限定した結論を述べる",
+      "objective_zh": "能整理相关依据、说明判断标准，并限定结论的适用范围。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "JA2",
+      "title_zh": "谨慎表达判断并承认限制",
+      "title_target": "判断を控えめに述べ、限界を認める",
+      "objective_zh": "能区分依据、推断与可能性，并以保留方式表达判断。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "JA3",
+      "title_zh": "综合转述信息并进行条件判断",
+      "title_target": "報告をまとめ、条件付きで判断する",
+      "objective_zh": "能区分转述、传闻与推断，并在明确条件下作出决定。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "JA4",
+      "title_zh": "正式协商突发情况与说明责任",
+      "title_target": "不測の事態と説明責任を改まって協議する",
+      "objective_zh": "能在正式角色中协商突发情况、缓解措施、说明责任与后续承诺。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "JA5",
+      "title_zh": "调整安排并作出得体承诺",
+      "title_target": "予定を調整し、配慮ある約束をする",
+      "objective_zh": "能说明限制、提出代案，并顾及对方作出明确承诺。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    },
+    {
+      "slot_id": "JA6",
+      "title_zh": "回顾结果并说明责任与下一步",
+      "title_target": "結果を振り返り、責任と次の行動を述べる",
+      "objective_zh": "能评估实际结果、承认相应责任，并说明下一步行动。",
+      "implementation_authorized": true,
+      "human_approval_status": "HUMAN FINAL APPROVED"
+    }
+  ],
+  "relationship_authority": [
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-c-757",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-08-reporting",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "evidence (neutral) reapplies an earlier item under changed demand for evidence-led qualified argument; 证据",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-c-1093",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "report (neutral) introduces the slot-specific mechanism for evidence-led qualified argument; 报告",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-c-729",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "analyse (formal) introduces the slot-specific mechanism for evidence-led qualified argument; 分析",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-c-709",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "accurate (neutral) scaffolds the task without adding a new target for evidence-led qualified argument; 准确的",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-c-801",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "relevant (neutral) scaffolds the task without adding a new target for evidence-led qualified argument; 相关的",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-c-733",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-l4",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "justify (formal) reapplies an earlier item under changed demand for evidence-led qualified argument; 说明正当理由",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-c-777",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "criterion (formal) introduces the slot-specific mechanism for evidence-led qualified argument; 判断标准",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-c-741",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "assess (formal) introduces the slot-specific mechanism for evidence-led qualified argument; 评定",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-inversion",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "Rarely + auxiliary + subject + verb (formal) introduces the slot-specific mechanism for evidence-led qualified argument; 否定副词前置倒装",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-participle-clause",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "Having + past participle, main clause (formal) introduces the slot-specific mechanism for evidence-led qualified argument; 分词补充背景",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "en-qualified-comparison",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "more ... in terms of X, but ... (formal) introduces the slot-specific mechanism for evidence-led qualified argument; 限制比较结论",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "lesson-en-inversion-ex",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS CONTEXT",
+      "semantic_register_rationale": "Rarely do we see such a clear result. (neutral) introduces the slot-specific mechanism for evidence-led qualified argument; 正式强调，助动词置于主语前；普通陈述不必倒装。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "lesson-en-participle-clause-ex",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS CONTEXT",
+      "semantic_register_rationale": "Having checked the figures, we revised the report. (neutral) introduces the slot-specific mechanism for evidence-led qualified argument; 分词隐含主语应与主句一致，避免悬垂分词。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "academic-approach-en",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "READY CONTEXT",
+      "semantic_register_rationale": "This approach might help, but I expect practical difficulties. (neutral) scaffolds the task without adding a new target for evidence-led qualified argument",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN1",
+      "canonical_id": "legacy-49-en",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-03-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "I see your point, but I have a concern. (neutral) reapplies an earlier item under changed demand for evidence-led qualified argument; I see your point 表示理解理由，未必同意；日语おっしゃる是对对方说话的尊敬表达。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-c-761",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-08-reporting",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "assumption (formal) reapplies an earlier item under changed demand for counterfactual reasoning and counter-position; 假定",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-c-769",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "limitation (formal) scaffolds the task without adding a new target for counterfactual reasoning and counter-position; 局限",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-c-773",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "perspective (formal) scaffolds the task without adding a new target for counterfactual reasoning and counter-position; 视角",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-c-1109",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "condition (neutral) introduces the slot-specific mechanism for counterfactual reasoning and counter-position; 条件",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-c-681",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "judgment (neutral) introduces the slot-specific mechanism for counterfactual reasoning and counter-position; 判断",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-c-645",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "alternative (neutral) scaffolds the task without adding a new target for counterfactual reasoning and counter-position; 替代选项",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-c-697",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "tentative (formal) introduces the slot-specific mechanism for counterfactual reasoning and counter-position; 暂定的",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-c-765",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "implication (formal) introduces the slot-specific mechanism for counterfactual reasoning and counter-position; 可能的影响或含义",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-mixed-conditional",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "If + past perfect, would + base verb (formal) introduces the slot-specific mechanism for counterfactual reasoning and counter-position; 过去条件影响现在",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-second-conditional",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "If + past, would + base verb (neutral) introduces the slot-specific mechanism for counterfactual reasoning and counter-position; 假设现在的不同情况",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "en-third-conditional",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-l1",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "If + past perfect, would have + participle (formal) reapplies an earlier item under changed demand for counterfactual reasoning and counter-position; 假设不同的过去",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "lesson-en-mixed-conditional-ex",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS CONTEXT",
+      "semantic_register_rationale": "If I had accepted the offer, I would live abroad now. (neutral) introduces the slot-specific mechanism for counterfactual reasoning and counter-position; 过去未实现条件带来现在的假设结果；两部分时间不同。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "lesson-en-second-conditional-ex",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS CONTEXT",
+      "semantic_register_rationale": "If I had more time, I would learn Japanese. (neutral) introduces the slot-specific mechanism for counterfactual reasoning and counter-position; 过去形式标示距离现实，不自动是过去时间。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "legacy-145-en",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "It's not really my thing, but I see the appeal. (neutral) scaffolds the task without adding a new target for counterfactual reasoning and counter-position; not my thing 是个人不感兴趣；see the appeal 承认吸引力，避免评价成作品不好。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN2",
+      "canonical_id": "legacy-108-en",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "READY CONTEXT",
+      "semantic_register_rationale": "Regardless of the forecast, we should have a backup plan. (neutral) scaffolds the task without adding a new target for counterfactual reasoning and counter-position; 例：Regardless of the forecast, we should have a backup plan.／予報にかかわらず、別の案も用意したほうがいいです。of 后接名词。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "en-c-757",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-08-reporting",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "evidence (neutral) reapplies an earlier item under changed demand for source synthesis; 证据",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "en-c-1093",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "report (neutral) scaffolds the task without adding a new target for source synthesis; 报告",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "en-c-737",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-08-reporting",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "clarify (formal) reapplies an earlier item under changed demand for source synthesis; 澄清",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "en-c-633",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "distinguish (neutral) introduces the slot-specific mechanism for source synthesis; 区分",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "en-c-637",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "confirm (neutral) introduces the slot-specific mechanism for source synthesis; 确认属实",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "en-c-805",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "ambiguous (formal) introduces the slot-specific mechanism for source synthesis; 有歧义的",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "en-c-841",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "infer (formal) introduces the slot-specific mechanism for source synthesis; 推断",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "en-c-817",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "substantiate (formal) introduces the slot-specific mechanism for source synthesis; 用证据证实",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "35e1c-en-reported-statements",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-08-reporting",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "said/told + (that) clause (neutral) reapplies an earlier item under changed demand for source synthesis; 用 said 或 told 转述他人的信息，并明确接收者。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "en-concessive-although",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-03-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "although + clause, main clause (neutral) reapplies an earlier item under changed demand for source synthesis; 承认事实再转折",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "en-hedged-claim",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-08-reporting",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "evidence suggests that + clause (formal) reapplies an earlier item under changed demand for source synthesis; 谨慎提出论断",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "35e1b-en-d-group-disagree-expr",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-03-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "I think we should focus on the survey results. I see your point, but the interviews explain why the results changed. Are you suggesting we include both? Yes, but we could shorten the background section. That sounds reasonable. Let’s keep one paragraph of background. Great. I’ll revise the outline. (neutral) reapplies an earlier item under changed demand for source synthesis; 交际目标：表达不同意见并达成折中。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "35e1b-en-d-misunderstanding-tone-expr",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "Your comment in the meeting sounded quite critical. I’m sorry. I was questioning the schedule, not your work. Thanks for explaining. I thought you were blaming me. I can see why it sounded that way. Could we talk about the schedule again tomorrow? Of course. I’ll be clearer next time. (neutral) scaffolds the task without adding a new target for source synthesis; 交际目标：解释语气并修复关系。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "35e1b-en-x-clarify-in-other-words-expr",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-06-repair",
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "So, in other words, we need to start over? (neutral) reapplies an earlier item under changed demand for source synthesis; 可复用核心表达块。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN3",
+      "canonical_id": "35e1b-en-x-repair-tone-expr",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "That came out more strongly than I intended. (neutral) scaffolds the task without adding a new target for source synthesis; 可复用核心表达块。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "en-c-653",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-03-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "priority (neutral) reapplies an earlier item under changed demand for accountability negotiation; 优先事项",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "en-c-785",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-03-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "trade-off (formal) reapplies an earlier item under changed demand for accountability negotiation; 取舍关系",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "en-c-781",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-03-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "consensus (formal) reapplies an earlier item under changed demand for accountability negotiation; 共识",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "en-c-621",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "commit (neutral) scaffolds the task without adding a new target for accountability negotiation; 承诺投入",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "35e1c-en-v086",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "take responsibility (neutral) introduces the slot-specific mechanism for accountability negotiation; 承担责任",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "en-c-857",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "contingency (formal) introduces the slot-specific mechanism for accountability negotiation; 意外情况",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "en-c-825",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "mitigate (formal) introduces the slot-specific mechanism for accountability negotiation; 减轻不利影响",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "en-c-869",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "accountability (formal) introduces the slot-specific mechanism for accountability negotiation; 说明责任",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "en-regardless",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "regardless of + noun / wh-clause (formal) introduces the slot-specific mechanism for accountability negotiation; 不受条件影响",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "35e1c-en-obligation-contrast",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s4-l5",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "must; have to; do not have to (neutral) reapplies an earlier item under changed demand for accountability negotiation; 区分说话者强调的义务、外部规定和没有必要。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "en-should-have",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-l4",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "should have + past participle (neutral) reapplies an earlier item under changed demand for accountability negotiation; 回顾过去的更好选择",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "legacy-61-en",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-03-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "Could we rethink how we split the chores? (neutral) reapplies an earlier item under changed demand for accountability negotiation; we 把问题放到共同安排上；見直す是重新审视，并非只是再看一眼。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "legacy-63-en",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: I hate to bother you, but the noise carries. B: Sorry, I didn't realize. We'll keep it down. (neutral) introduces the slot-specific mechanism for accountability negotiation; noise carries 指声音传得远；日语用響く。I hate to bother you 是礼貌铺垫，并非真的讨厌这个人。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "35e1b-en-d-group-disagree-expr",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-03-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "I think we should focus on the survey results. I see your point, but the interviews explain why the results changed. Are you suggesting we include both? Yes, but we could shorten the background section. That sounds reasonable. Let’s keep one paragraph of background. Great. I’ll revise the outline. (neutral) reapplies an earlier item under changed demand for accountability negotiation; 交际目标：表达不同意见并达成折中。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN4",
+      "canonical_id": "legacy-75-en",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: Could we keep that afternoon flexible? B: Sure. Let me know once your plans firm up. (neutral) scaffolds the task without adding a new target for accountability negotiation; firm up 指安排逐渐确定；日语予定が固まる也是确定下来，不是计划变坚硬。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "en-c-621",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-06-repair",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "commit (neutral) reapplies an earlier item under changed demand for pressure-free commitment; 承诺投入",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "en-c-617",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "adjust (neutral) scaffolds the task without adding a new target for pressure-free commitment; 调整",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "en-c-641",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "postpone (neutral) scaffolds the task without adding a new target for pressure-free commitment; 推迟",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "en-c-1085",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "up in the air (neutral) scaffolds the task without adding a new target for pressure-free commitment; 尚未确定",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "en-c-2247",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s4-l2",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "considerate (neutral) reapplies an earlier item under changed demand for pressure-free commitment; 在社交中注意分寸、为他人考虑",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "en-c-669",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "pressure (neutral) introduces the slot-specific mechanism for pressure-free commitment; 压力",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "en-c-677",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "intention (neutral) introduces the slot-specific mechanism for pressure-free commitment; 意图",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "en-leave",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "leave (neutral) scaffolds the task without adding a new target for pressure-free commitment; 离开",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "en-if-request",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-06-repair",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "If + present clause, could you ...? (neutral) reapplies an earlier item under changed demand for pressure-free commitment; 先确认条件再请求",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "en-will",
+      "content_type": "grammar",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "will + base verb (neutral) scaffolds the task without adding a new target for pressure-free commitment; 当场决定与承诺",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "35e1b-en-d-invitation-decline-expr",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "Would you like to have dinner on Friday? I’d love to, but I already have plans that evening. No problem. Are you free over the weekend? Sunday afternoon should work. How about coffee at three? Perfect. I’ll see you then. (neutral) introduces the slot-specific mechanism for pressure-free commitment; 交际目标：礼貌拒绝邀请并提出另约。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "legacy-159-en",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s4-l2",
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: Come on, stay for one more. B: Tempting, but I'll call it a night. (neutral) reapplies an earlier item under changed demand for pressure-free commitment; call it a night 指结束今晚活动；tempting 先承认诱人，拒绝仍有效。日语この辺で指适可而止的时点。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "legacy-75-en",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: Could we keep that afternoon flexible? B: Sure. Let me know once your plans firm up. (neutral) scaffolds the task without adding a new target for pressure-free commitment; firm up 指安排逐渐确定；日语予定が固まる也是确定下来，不是计划变坚硬。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN5",
+      "canonical_id": "legacy-135-en",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: I know you mean well, but I feel pressured. B: I'm sorry. I'll give you some space. (neutral) scaffolds the task without adding a new target for pressure-free commitment; mean well 是出于好意；give someone space 指给自主和情绪空间，日语用そっとしておく。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "en-c-1081",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-l4",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "turn out (neutral) reapplies an earlier item under changed demand for reflective next action; 结果是",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "en-c-533",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "result (neutral) scaffolds the task without adding a new target for reflective next action; 结果",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "en-c-773",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-08-reporting",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "perspective (formal) reapplies an earlier item under changed demand for reflective next action; 视角",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "en-c-725",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-08-reporting",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "evaluate (formal) reapplies an earlier item under changed demand for reflective next action; 评估",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "en-c-733",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "justify (formal) scaffolds the task without adding a new target for reflective next action; 说明正当理由",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "en-c-621",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-06-repair",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "commit (neutral) reapplies an earlier item under changed demand for reflective next action; 承诺投入",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "en-plan",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "plan (neutral) scaffolds the task without adding a new target for reflective next action; 计划；打算",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "en-c-797",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "significant (formal) introduces the slot-specific mechanism for reflective next action; 重要的；显著的",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "35e1c-en-perfect-vs-past",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s4-l5",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "have + participle vs past form (neutral) reapplies an earlier item under changed demand for reflective next action; 现在完成时连接现在；一般过去时把事件放在已结束的过去。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "en-should-have",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-l4",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "should have + past participle (neutral) reapplies an earlier item under changed demand for reflective next action; 回顾过去的更好选择",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "en-plan-to",
+      "content_type": "grammar",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "plan + to-infinitive (neutral) scaffolds the task without adding a new target for reflective next action; 说明准备采取的行动。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "academic-approach-en",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "READY CONTEXT",
+      "semantic_register_rationale": "This approach might help, but I expect practical difficulties. (neutral) scaffolds the task without adding a new target for reflective next action",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "legacy-108-en",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "en-s5-08-reporting",
+      "final_disposition": "READY",
+      "editorial_dependency": "READY CONTEXT",
+      "semantic_register_rationale": "Regardless of the forecast, we should have a backup plan. (neutral) reapplies an earlier item under changed demand for reflective next action; 例：Regardless of the forecast, we should have a backup plan.／予報にかかわらず、別の案も用意したほうがいいです。of 后接名词。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "EN6",
+      "canonical_id": "35e1b-en-d-group-disagree-expr",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "I think we should focus on the survey results. I see your point, but the interviews explain why the results changed. Are you suggesting we include both? Yes, but we could shorten the background section. That sounds reasonable. Let’s keep one paragraph of background. Great. I’ll revise the outline. (neutral) scaffolds the task without adding a new target for reflective next action; 交际目标：表达不同意见并达成折中。",
+      "language": "en",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-c-759",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "証拠 (neutral) introduces the slot-specific mechanism for structured evidence and bounded conclusion; 证据",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-c-779",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "基準 (neutral) introduces the slot-specific mechanism for structured evidence and bounded conclusion; 判断标准",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-c-819",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "裏付ける (formal) introduces the slot-specific mechanism for structured evidence and bounded conclusion; 用证据证实",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-c-731",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "分析する (neutral) introduces the slot-specific mechanism for structured evidence and bounded conclusion; 分析",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-c-607",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "絞る (neutral) reapplies an earlier item under changed demand for structured evidence and bounded conclusion; 缩小范围",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-c-651",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "範囲 (neutral) scaffolds the task without adding a new target for structured evidence and bounded conclusion; 范围",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-c-683",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "判断 (neutral) reapplies an earlier item under changed demand for structured evidence and bounded conclusion; 判断",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-c-3205",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "招く (neutral) scaffolds the task without adding a new target for structured evidence and bounded conclusion; 招致",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-ni-hoka-naranai",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "名词 + にほかならない (formal) introduces the slot-specific mechanism for structured evidence and bounded conclusion; 强调本质判断",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-ni-suginai",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "名词 + にすぎない (formal) introduces the slot-specific mechanism for structured evidence and bounded conclusion; 仅限于此",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "ja-wo-fumaete",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "名词 + を踏まえて (formal) introduces the slot-specific mechanism for structured evidence and bounded conclusion; 依据背景考虑",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "lesson-ja-wo-fumaete-ex",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS CONTEXT",
+      "semantic_register_rationale": "結果を踏まえて、計画を見直します。 (neutral) introduces the slot-specific mechanism for structured evidence and bounded conclusion; 正式讨论中以前项为判断基础，不表示逐字照办。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "lesson-ja-ni-hoka-naranai-ex",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS CONTEXT",
+      "semantic_register_rationale": "これは努力の結果にほかなりません。 (neutral) introduces the slot-specific mechanism for structured evidence and bounded conclusion; 正式而强烈的断定；证据不足时应避免过强结论。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "35e1b-ja-d-group-disagree-expr",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "アンケートの結果を中心にしたほうがいいと思います。 言いたいことはわかりますが、インタビューが変化の理由を説明しています。 両方入れるということですか。 はい。ただ、背景の部分は短くできます。 それならよさそうです。背景は一段落だけ残しましょう。 では、私が構成を直します。 (neutral) reapplies an earlier item under changed demand for structured evidence and bounded conclusion; 交际目标：表达不同意见并达成折中。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA1",
+      "canonical_id": "legacy-49-ja",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "おっしゃることはわかりますが、一つ気になる点があります。 (neutral) scaffolds the task without adding a new target for structured evidence and bounded conclusion; I see your point 表示理解理由，未必同意；日语おっしゃる是对对方说话的尊敬表达。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "ja-c-3217",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s3-l1",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "とはいえ (neutral) reapplies an earlier item under changed demand for cautious qualified judgment; 承认前述事实后补充限制或转折",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "ja-c-527",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-08-benefit",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "懸念 (formal) reapplies an earlier item under changed demand for cautious qualified judgment; 担忧之处",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "ja-c-715",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "妥当 (formal) introduces the slot-specific mechanism for cautious qualified judgment; 合理的",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "ja-c-735",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "正当化する (formal) introduces the slot-specific mechanism for cautious qualified judgment; 说明正当理由",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "ja-c-683",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "判断 (neutral) scaffolds the task without adding a new target for cautious qualified judgment; 判断",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "ja-c-815",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "暫定的 (formal) introduces the slot-specific mechanism for cautious qualified judgment; 临时待定的",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "ja-c-631",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "誤解する (neutral) scaffolds the task without adding a new target for cautious qualified judgment; 误解",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "ja-wake-dewa-nai",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-06-repair",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "普通形 + わけではない (neutral) reapplies an earlier item under changed demand for cautious qualified judgment; 否定推断",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "ja-kamoshirenai",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "〜かもしれない (neutral) introduces the slot-specific mechanism for cautious qualified judgment; 保留判断，承认某种可能。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "ja-youda",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-06-repair",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "普通形 + ようだ (neutral) reapplies an earlier item under changed demand for cautious qualified judgment; 根据间接证据推断",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "35e1b-ja-d-misunderstanding-tone-expr",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "会議でのコメントが、かなり厳しく聞こえました。 すみません。仕事ではなく、日程について確認したかったんです。 説明してくれてありがとう。責められたのかと思いました。 そう聞こえた理由はわかります。 明日、もう一度日程について話せますか。 もちろんです。今度はもっとはっきり説明します。 (neutral) scaffolds the task without adding a new target for cautious qualified judgment; 交际目标：解释语气并修复关系。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "35e1b-ja-x-clarify-in-other-words-expr",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-06-repair",
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "つまり、最初からやり直すということですか。 (neutral) reapplies an earlier item under changed demand for cautious qualified judgment; 可复用核心表达块。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "legacy-156-ja",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "READY CONTEXT",
+      "semantic_register_rationale": "あなたが嫌なわけではなく、ただ一人の時間がほしいんです。 (neutral) scaffolds the task without adding a new target for cautious qualified judgment; 例：It's nothing personal; I just need some time alone.／あなたが嫌なわけではなく、ただ一人の時間が必要なんです。敏感话题仍需体谅对方感受。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA2",
+      "canonical_id": "legacy-147-ja",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-l1",
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: 仕事にすることは考えた？ B: 少しね。でも、純粋に楽しめなくなるのは嫌かな。 (neutral) reapplies an earlier item under changed demand for cautious qualified judgment; professionally 指以此为职业；I'd hate to 委婉说不愿发生，日语かな让个人想法留有余地。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-c-1095",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "報告書 (neutral) introduces the slot-specific mechanism for reported conditional decision; 报告",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-c-1111",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "条件 (neutral) introduces the slot-specific mechanism for reported conditional decision; 条件",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-c-647",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-l3",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "代案 (neutral) reapplies an earlier item under changed demand for reported conditional decision; 替代选项",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-c-619",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "調整する (neutral) scaffolds the task without adding a new target for reported conditional decision; 调整",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-c-643",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "延期する (neutral) scaffolds the task without adding a new target for reported conditional decision; 推迟",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-c-739",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-06-repair",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "明確にする (neutral) reapplies an earlier item under changed demand for reported conditional decision; 澄清",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-c-807",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "曖昧 (neutral) introduces the slot-specific mechanism for reported conditional decision; 有歧义的",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-c-843",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "推論する (formal) introduces the slot-specific mechanism for reported conditional decision; 推断",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-indirect-ka",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-06-repair",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "普通形 + か + predicate (neutral) reapplies an earlier item under changed demand for reported conditional decision; 把疑问作为内容",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-hearsay-sou",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "普通形 + そうだ (neutral) introduces the slot-specific mechanism for reported conditional decision; 传闻",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "ja-ni-kakawarazu",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "名词 + にかかわらず (formal) introduces the slot-specific mechanism for reported conditional decision; 不论条件",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "35e1b-ja-x-clarify-in-other-words-expr",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-06-repair",
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "つまり、最初からやり直すということですか。 (neutral) reapplies an earlier item under changed demand for reported conditional decision; 可复用核心表达块。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "legacy-108-ja",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS CONTEXT",
+      "semantic_register_rationale": "予報にかかわらず、予備の案を用意したほうがいいです。 (neutral) introduces the slot-specific mechanism for reported conditional decision; 例：Regardless of the forecast, we should have a backup plan.／予報にかかわらず、別の案も用意したほうがいいです。of 后接名词。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "legacy-111-ja",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: 予報がころころ変わるね。 B: 様子を見て、明日決めよう。 (neutral) scaffolds the task without adding a new target for reported conditional decision; play it by ear 是随机应变，不是用耳朵演奏的字面义；ころころ描述频繁变化，带一点无奈。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA3",
+      "canonical_id": "legacy-75-ja",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: その日の午後は、まだ確定しないでおける？ B: いいよ。予定が固まったら教えて。 (neutral) introduces the slot-specific mechanism for reported conditional decision; firm up 指安排逐渐确定；日语予定が固まる也是确定下来，不是计划变坚硬。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-c-655",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "優先事項 (neutral) reapplies an earlier item under changed demand for formal contingency and accountability; 优先事项",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-c-751",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "配分する (formal) reapplies an earlier item under changed demand for formal contingency and accountability; 分配资源",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-c-783",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "合意 (formal) reapplies an earlier item under changed demand for formal contingency and accountability; 共识",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-c-787",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "トレードオフ (formal) scaffolds the task without adding a new target for formal contingency and accountability; 取舍关系",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-c-623",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "約束する (neutral) introduces the slot-specific mechanism for formal contingency and accountability; 约定；答应",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-c-859",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "不測の事態 (formal) introduces the slot-specific mechanism for formal contingency and accountability; 意外情况",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-c-871",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "説明責任 (formal) introduces the slot-specific mechanism for formal contingency and accountability; 说明责任",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-c-671",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "負担 (neutral) scaffolds the task without adding a new target for formal contingency and accountability; 负担",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-beki",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "辞书形 + べきだ (formal) reapplies an earlier item under changed demand for formal contingency and accountability; 应当履行的判断",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-zaru-wo-enai",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "Vない（去掉「ない」）+ ざるを得ない (formal) introduces the slot-specific mechanism for formal contingency and accountability; 不得不采取",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "ja-humble",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-03-formal-role",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "する → いたす (neutral) reapplies an earlier item under changed demand for formal contingency and accountability; the speaker or staff member lowers their own する action through the specific bounded mapping する → いたす; this record does not authorize 伺う or an open class of humble verbs",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "35e1b-ja-d-group-disagree-expr",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "アンケートの結果を中心にしたほうがいいと思います。 言いたいことはわかりますが、インタビューが変化の理由を説明しています。 両方入れるということですか。 はい。ただ、背景の部分は短くできます。 それならよさそうです。背景は一段落だけ残しましょう。 では、私が構成を直します。 (neutral) reapplies an earlier item under changed demand for formal contingency and accountability; 交际目标：表达不同意见并达成折中。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "legacy-51-ja",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: 範囲を絞る必要がありそうですね。 B: そうですね。優先度の高いものに集中しましょう。 (neutral) scaffolds the task without adding a new target for formal contingency and accountability; scope 指项目范围；絞る在此是缩小。英语 what matters most 强调重要性，日语用优先度自然回应。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "legacy-61-ja",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "家事の分担を一度見直しませんか。 (neutral) scaffolds the task without adding a new target for formal contingency and accountability; we 把问题放到共同安排上；見直す是重新审视，并非只是再看一眼。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA4",
+      "canonical_id": "legacy-49-ja",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "おっしゃることはわかりますが、一つ気になる点があります。 (neutral) scaffolds the task without adding a new target for formal contingency and accountability; I see your point 表示理解理由，未必同意；日语おっしゃる是对对方说话的尊敬表达。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-c-827",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "緩和する (formal) introduces the slot-specific mechanism for considerate commitment; 减轻不利影响",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-c-835",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "両立させる (formal) introduces the slot-specific mechanism for considerate commitment; 调和冲突",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-c-623",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "約束する (neutral) scaffolds the task without adding a new target for considerate commitment; 约定；答应",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-c-527",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-08-benefit",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "懸念 (formal) reapplies an earlier item under changed demand for considerate commitment; 担忧之处",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-c-1123",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s4-l3",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "気遣う (neutral) reapplies an earlier item under changed demand for considerate commitment; 体谅",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-c-295",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "確認する (neutral) scaffolds the task without adding a new target for considerate commitment; 核对",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-yotei",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "予定 (neutral) scaffolds the task without adding a new target for considerate commitment; 计划；安排",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-c-647",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-l3",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "代案 (neutral) reapplies an earlier item under changed demand for considerate commitment; 替代选项",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-causative-request",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "使役て形 + ください (neutral) introduces the slot-specific mechanism for considerate commitment; 请求允许自己做",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-te-oku",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "て形 + おく (neutral) introduces the slot-specific mechanism for considerate commitment; 提前准备或保留状态",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "ja-honorific-request",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-03-formal-role",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "お + Vます（去掉「ます」）+ ください (neutral) reapplies an earlier item under changed demand for considerate commitment; 尊敬形式请求",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "legacy-37-ja",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-03-formal-role",
+      "final_disposition": "READY",
+      "editorial_dependency": "SCENARIO-COVERED",
+      "semantic_register_rationale": "こちら、別のものに替えていただくことはできますか。 (neutral) reapplies an earlier item under changed demand for considerate commitment; 先说明实际问题再提出更换；英语用可能性问句，日语用いただく表达受惠，均不是要求店家必须答应。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "legacy-39-ja",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: 注文と違うものが来たようなんですが。 B: 申し訳ありません。確認いたします。 (neutral) scaffolds the task without adding a new target for considerate commitment; mix-up 暗示弄错，避免先归责；日语ようなんですが委婉提出问题，店员用いたします回应。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "35e1b-ja-d-invitation-condition-expr",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "土曜日にピクニックをするんだけど、来ない？ 行けるかも。何時から？ 十二時ごろ、リバーサイド公園で。 十一時までに仕事が終わったら行けるよ。 大丈夫。わかったらメッセージして。 そうするね。誘ってくれてありがとう。 (neutral) introduces the slot-specific mechanism for considerate commitment; 交际目标：带条件接受邀请并确认细节。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA5",
+      "canonical_id": "legacy-155-ja",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS CONTEXT",
+      "semantic_register_rationale": "少し早めに失礼するかもしれません。 (neutral) introduces the slot-specific mechanism for considerate commitment; may have to 表示可能不得不；失礼する在聚会场景是礼貌离席，不是有意失礼。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-c-1083",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "結局 (neutral) scaffolds the task without adding a new target for reflective next action; 结果是",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-c-3207",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-l1",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "甲斐 (formal) reapplies an earlier item under changed demand for reflective next action; 付出的价值",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-c-535",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "結果 (neutral) scaffolds the task without adding a new target for reflective next action; 结果",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-c-683",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "判断 (neutral) reapplies an earlier item under changed demand for reflective next action; 判断",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-c-715",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "妥当 (formal) scaffolds the task without adding a new target for reflective next action; 合理的",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-c-735",
+      "content_type": "vocabulary",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "正当化する (formal) scaffolds the task without adding a new target for reflective next action; 说明正当理由",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-c-783",
+      "content_type": "vocabulary",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "合意 (formal) reapplies an earlier item under changed demand for reflective next action; 共识",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-c-803",
+      "content_type": "vocabulary",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS EXAMPLE",
+      "semantic_register_rationale": "関連する (neutral) introduces the slot-specific mechanism for reflective next action; 相关的",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-kai",
+      "content_type": "grammar",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "た形 + 甲斐がある (formal) introduces the slot-specific mechanism for reflective next action; 付出有所回报",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-koto-ni-suru",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s4-l2",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS GRAMMAR EXAMPLES (3)",
+      "semantic_register_rationale": "辞书形 + ことにする (neutral) reapplies an earlier item under changed demand for reflective next action; 作出决定",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "ja-beki",
+      "content_type": "grammar",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s5-07-consensus",
+      "final_disposition": "READY",
+      "editorial_dependency": "None",
+      "semantic_register_rationale": "辞书形 + べきだ (formal) reapplies an earlier item under changed demand for reflective next action; 应当履行的判断",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "legacy-183-ja",
+      "content_type": "expression",
+      "instructional_role": "NEW",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: 結局、行った甲斐はあった？ B: 期待どおりではなかったけど、学ぶことは多かったよ。 (neutral) introduces the slot-specific mechanism for reflective next action; worth it 指投入值得；甲斐がある强调付出有意义。肯定收获不意味着否定经历中的失望。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "legacy-177-ja",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s4-l2",
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: 週末は出かける予定のまま？ B: ううん、代わりに家で過ごすことにした。 (neutral) reapplies an earlier item under changed demand for reflective next action; instead 表示选择替代方案；ことにした说明自己作出的决定，区别于外部决定的ことになった。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "legacy-179-ja",
+      "content_type": "expression",
+      "instructional_role": "REVIEW",
+      "prior_review_source": "ja-s4-l2",
+      "final_disposition": "EDITORIAL REQUIRED",
+      "editorial_dependency": "NEEDS CONTEXT",
+      "semantic_register_rationale": "思っていたのとは違う結果になりました。 (neutral) reapplies an earlier item under changed demand for reflective next action; turn out 描述最终结果；日语用結果になった，不强制翻译成转变方向。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    },
+    {
+      "slot_id": "JA6",
+      "canonical_id": "legacy-147-ja",
+      "content_type": "expression",
+      "instructional_role": "SUPPORT",
+      "prior_review_source": null,
+      "final_disposition": "READY",
+      "editorial_dependency": "DIALOGUE-COVERED",
+      "semantic_register_rationale": "A: 仕事にすることは考えた？ B: 少しね。でも、純粋に楽しめなくなるのは嫌かな。 (neutral) scaffolds the task without adding a new target for reflective next action; professionally 指以此为职业；I'd hate to 委婉说不愿发生，日语かな让个人想法留有余地。",
+      "language": "ja",
+      "human_approval_status": "HUMAN FINAL APPROVED",
+      "implementation_authorized": true
+    }
+  ],
+  "editorial_readiness": {
+    "vocabulary_examples": {
+      "en": 21,
+      "ja": 19,
+      "total": 40,
+      "status": "HUMAN FINAL APPROVED"
+    },
+    "grammar_examples": {
+      "en_records": 9,
+      "en_examples": 27,
+      "ja_records": 11,
+      "ja_examples": 33,
+      "total": 60,
+      "status": "HUMAN FINAL APPROVED"
+    },
+    "controlled_completion": {
+      "cc_safe": 38,
+      "not_for_cc": 22
+    },
+    "expression_contexts": {
+      "en": 4,
+      "ja": 5,
+      "total": 9,
+      "status": "HUMAN FINAL APPROVED"
+    },
+    "new_dialogues": {
+      "total": 4,
+      "turns_each": 6,
+      "status": "HUMAN FINAL APPROVED"
+    },
+    "reuse_prompt_layers": {
+      "total": 5,
+      "status": "HUMAN FINAL APPROVED"
+    },
+    "short_scenarios": {
+      "total": 3,
+      "status": "HUMAN FINAL APPROVED"
+    },
+    "titles_objectives": {
+      "total": 12,
+      "status": "HUMAN FINAL APPROVED"
+    },
+    "relationship_authority": {
+      "en": 88,
+      "ja": 89,
+      "total": 177,
+      "roles": {
+        "NEW": 66,
+        "REVIEW": 61,
+        "SUPPORT": 50
+      },
+      "status": "HUMAN FINAL APPROVED"
+    },
+    "unresolved_editorial_issues": 0,
+    "ready_for_human_final_approval": true,
+    "ready_for_stage_6_implementation": true,
+    "implementation_authorized": true,
+    "human_final_approval_state": "HUMAN FINAL APPROVED"
+  }
+}
