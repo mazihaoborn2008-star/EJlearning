@@ -1,6 +1,6 @@
 // Read-only V2 contract. SQL identifiers come exclusively from fixed maps below.
 import {ApiError, rows} from './assessments.js';
-import {isPracticeEligibleGrammarId} from './content-quality-03.js';
+import {isPracticeEligibleGrammarId} from './content-quality-04.js';
 const reply=(data,status=200,headers={})=>Response.json(data,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff',...headers}});
 const invalid=message=>{throw new ApiError(400,message);};
 const definitions={

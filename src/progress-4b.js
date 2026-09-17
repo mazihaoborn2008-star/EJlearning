@@ -3,7 +3,7 @@ import {getReviewSnapshot,recommendationData} from './recommendations-4d.js';
 import {practiceSession,resolvePracticeExercise,normalizePracticeAnswer,lessonEvidence} from './practice-4e.js';
 import {createRemediationToken} from './remediation-4f.js';
 import {readSettings,startOfLocalDay} from './settings-4f.js';
-import {isPracticeEligibleGrammarId,practiceIneligibleGrammarIds} from './content-quality-03.js';
+import {isPracticeEligibleGrammarId,isTokenlessGrammarGradingAllowed,practiceIneligibleGrammarIds} from './content-quality-04.js';
 import {publishedLessonCurriculum} from './lessons-35d.js';
 
 const SECTION_KEYS = new Set(['overview', 'vocabulary', 'grammar', 'expressions', 'scenario', 'practice']);
@@ -54,11 +54,11 @@ async function readBody(request, allowed) {
 
 const normalizeAnswer = normalizePracticeAnswer;
 
-async function canonicalItem(db, type, id) {
+async function canonicalItem(db, type, id, tokenless=false) {
   if (type === 'vocabulary') return db.prepare(`SELECT v.id,v.language,v.lemma AS answer,
     COALESCE((SELECT s.meaning_zh FROM v2_vocabulary_senses s WHERE s.item_id=v.id ORDER BY s.sort_order,s.id LIMIT 1),'词汇') AS safe_explanation
     FROM v2_vocabulary_items v WHERE v.id = ? AND v.publication_state = 'published'`).bind(id).first();
-  if(!isPracticeEligibleGrammarId(id))return null;
+  if(!isPracticeEligibleGrammarId(id)||tokenless&&!isTokenlessGrammarGradingAllowed(id))return null;
   return db.prepare(`SELECT id,language,form_name AS answer,title_zh AS safe_title,title_zh AS safe_explanation
     FROM v2_grammar_points WHERE id = ? AND publication_state = 'published'`).bind(id).first();
 }
@@ -94,7 +94,7 @@ async function recordAttempt(request, env, session, now) {
     return fail(409, 'ATTEMPT_ID_CONFLICT', '这次练习标识已用于其他内容，请重新作答。');
   }
   if(existing&&spec&&(existing.exercise_type!==spec.exercise_type||existing.context_type!==spec.context_type||existing.context_id!==spec.context_id))return fail(409,'ATTEMPT_ID_CONFLICT','这次练习标识已用于其他题目或练习场景，请重新作答。');
-  const item = await canonicalItem(env.CONTENT_DB || env.DB, body.content_type, body.content_id);
+  const item = await canonicalItem(env.CONTENT_DB || env.DB, body.content_type, body.content_id,!spec);
   if (!item) return fail(404, 'CONTENT_NOT_FOUND', '练习内容不存在或尚未发布。');
   if (!existing) {
     const expected=spec?.answer??item.answer,correct=normalizeAnswer(body.answer,item.language)===normalizeAnswer(expected,item.language);

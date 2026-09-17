@@ -1,6 +1,6 @@
 import {rows} from './assessments.js';
 import auditedBundle from './lesson-bundle-35d.js';
-import {isCurrentGrammarId,isPracticeEligibleGrammarId} from './content-quality-03.js';
+import {isCurrentGrammarId,isPracticeEligibleGrammarId} from './content-quality-04.js';
 const json=(data,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}}),fail=(message,status=400)=>json({error:{message}},status),validId=id=>/^(?:en|ja)-s[1-6]-(?:l[1-9]|[a-z0-9][a-z0-9-]{1,63})$/.test(id),marks=n=>Array(n).fill('?').join(',');
 const cols={u:['id','language','stage','topic_id','title','objective','sequence','status','estimated_minutes','title_target'],p:['lesson_id','prerequisite_lesson_id'],i:['lesson_id','content_type','content_id','role','sequence','required','instructional_role'],e:['framework_id','target','lesson_id','relevance']};
 const records=(data,keys)=>data.map(values=>Object.fromEntries(keys.map((key,i)=>[key,values[i]])));

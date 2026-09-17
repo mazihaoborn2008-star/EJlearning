@@ -1,6 +1,12 @@
 import {lessonPracticeCurriculum} from './lessons-35d.js';
 import {weakItems} from './recommendations-4d.js';
-import {controlledCompletionAnswer,controlledCompletionForms,isPracticeEligibleGrammarId} from './content-quality-03.js';
+import {
+ controlledCompletionAnswer,
+ controlledCompletionForms,
+ isGrammarExerciseTypeAllowed,
+ isPracticeEligibleGrammarId,
+ materializeGrammarExerciseTypes
+} from './content-quality-04.js';
 
 const encoder=new TextEncoder(),decoder=new TextDecoder();
 const ID=/^[a-z0-9][a-z0-9-]{0,95}$/,TOKEN=/^[A-Za-z0-9_-]{40,4096}$/;
@@ -68,6 +74,7 @@ async function choices(db,type,item,pool,field,seed){
  return ordered(candidates.slice(0,4),`${seed}:order`).map(x=>x.text);
 }
 async function controlledCompletion(db,item,pool,seed){
+ if(!isGrammarExerciseTypeAllowed(item.id,'grammar_controlled_completion'))return null;
  try{
   let approved=[];try{approved=await results(db.prepare(`SELECT a.example_id id,a.answer,a.answer_start,e.text
     FROM v2_grammar_example_completion_authority a JOIN v2_grammar_examples e ON e.id=a.example_id
@@ -114,15 +121,17 @@ function requestedExerciseTypes(type,mode,index){
  return [['grammar_form_selection'],['grammar_controlled_completion','grammar_form_selection'],['grammar_form_recall']][index%3];
 }
 
+const grammarFormSelectionPrompt=item=>`选择与“${item.title_zh}”匹配的语法形式。`;
+
 async function build(db,type,item,pool,requested,seed){
- for(const exerciseType of requested){
+ for(const exerciseType of requested.filter(exerciseType=>type!=='grammar'||isGrammarExerciseTypeAllowed(item.id,exerciseType))){
   if(exerciseType==='vocabulary_recognition'){
    const optionList=await choices(db,type,item,pool,'meaning',seed);if(optionList)return {exercise_type:exerciseType,prompt:`选择“${item.lemma}”的意思。`,choices:optionList,answer:item.meaning,policy:'choice_exact'};
   }else if(exerciseType==='vocabulary_meaning_to_word'){
    const optionList=await choices(db,type,item,pool,'lemma',seed);if(optionList)return {exercise_type:exerciseType,prompt:`选择最符合“${item.meaning}”的${item.language==='ja'?'日语':'英语'}词汇。`,choices:optionList,answer:item.lemma,policy:'choice_exact'};
   }else if(exerciseType==='vocabulary_typed_recall')return {exercise_type:exerciseType,prompt:`根据中文“${item.meaning}”，写出${item.language==='ja'?'日语':'英语'}词汇。`,choices:null,answer:item.lemma,policy:item.language==='en'?'english_typed_v1':'japanese_typed_v1'};
   else if(exerciseType==='grammar_form_selection'){
-   const optionList=await choices(db,type,item,pool,'form_name',seed);if(optionList)return {exercise_type:exerciseType,prompt:`选择与“${item.title_zh}”匹配的语法形式。`,detail:item.purpose_zh||null,choices:optionList,answer:item.form_name,policy:'choice_exact'};
+   const optionList=await choices(db,type,item,pool,'form_name',seed);if(optionList)return {exercise_type:exerciseType,prompt:grammarFormSelectionPrompt(item),detail:item.purpose_zh||null,choices:optionList,answer:item.form_name,policy:'choice_exact'};
   }else if(exerciseType==='grammar_controlled_completion'){
    const result=await controlledCompletion(db,item,pool,seed);if(result)return {exercise_type:exerciseType,...result};
   }else if(exerciseType==='grammar_form_recall')return {exercise_type:exerciseType,prompt:`根据“${item.title_zh}”，写出目标语法形式。`,detail:item.purpose_zh||null,choices:null,answer:item.form_name,policy:item.language==='en'?'english_typed_v1':'japanese_typed_v1'};
@@ -163,7 +172,7 @@ export async function practiceSession(url,env,session){
  candidates=candidates.map(x=>({...x,id:`${x.type}:${x.item.id}`}));if(query.source!=='weakness')candidates=ordered(candidates,seed);
  const exercises=[];
  for(let i=0;i<candidates.length&&exercises.length<query.limit;i++){
-  const candidate=candidates[i],pool=candidate.type==='vocabulary'?vocabularyFull:grammarFull,exercise=await build(contentDb,candidate.type,candidate.item,pool,requestedExerciseTypes(candidate.type,query.mode,exercises.length),`${seed}:${candidate.item.id}`);
+  const candidate=candidates[i],pool=candidate.type==='vocabulary'?vocabularyFull:grammarFull,genericTypes=requestedExerciseTypes(candidate.type,query.mode,exercises.length),requested=candidate.type==='grammar'?materializeGrammarExerciseTypes(candidate.item.id,genericTypes,{directExplicitRecall:query.mode==='recall'&&query.contentId===candidate.item.id}):genericTypes,exercise=await build(contentDb,candidate.type,candidate.item,pool,requested,`${seed}:${candidate.item.id}`);
   if(!exercise)continue;
   const privateSpec={v:1,uid:session.user_id,content_type:candidate.type,content_id:candidate.item.id,language:candidate.item.language,exercise_type:exercise.exercise_type,context_type:query.context,context_id:query.lessonId||null,source:query.source,prompt:exercise.prompt,choices:exercise.choices,answer:exercise.answer,policy:exercise.policy,...(exercise.authority_example_id?{authority_example_id:exercise.authority_example_id}:{})};
   exercises.push({exercise_id:await seal(privateSpec,env.PRACTICE_SECRET||env.AUTH_SECRET),content_type:candidate.type,exercise_type:exercise.exercise_type,prompt:exercise.prompt,...(exercise.detail?{detail:exercise.detail}:{}),...(exercise.choices?{choices:exercise.choices}:{}),context:{type:query.context,...(query.lessonId?{id:query.lessonId}:{})}});
@@ -176,11 +185,13 @@ export async function resolvePracticeExercise(token,env,session){
  if(!spec||spec.v!==1||spec.uid!==session.user_id||!['vocabulary','grammar'].includes(spec.content_type)||!ID.test(spec.content_id)||!['standalone','lesson'].includes(spec.context_type))throw new Error('INVALID_EXERCISE');
  const item=spec.content_type==='vocabulary'?(await vocabularyPool(env.CONTENT_DB||env.DB,[spec.content_id],spec.language))[0]:(await grammarPool(env.CONTENT_DB||env.DB,[spec.content_id],spec.language))[0];
  if(!item||item.language!==spec.language)throw new Error('INVALID_EXERCISE');
+ if(spec.content_type==='grammar'&&!isGrammarExerciseTypeAllowed(spec.content_id,spec.exercise_type))throw new Error('STALE_EXERCISE');
  if(spec.context_type==='lesson'){
   if(!ID.test(spec.context_id||''))throw new Error('INVALID_EXERCISE');const curriculum=await lessonPracticeCurriculum(env.DB,spec.context_id);
   if(!curriculum?.items.some(x=>x.content_type===spec.content_type&&x.content_id===spec.content_id))throw new Error('INVALID_EXERCISE');
  }
  let canonical=spec.exercise_type==='vocabulary_recognition'?item.meaning:spec.exercise_type.startsWith('vocabulary_')?item.lemma:item.form_name;
+ if(spec.exercise_type==='grammar_form_selection'&&(spec.prompt!==grammarFormSelectionPrompt(item)||spec.policy!=='choice_exact'))throw new Error('STALE_EXERCISE');
  if(spec.exercise_type==='grammar_controlled_completion'){
   let authored=null;
   if(spec.authority_example_id){
