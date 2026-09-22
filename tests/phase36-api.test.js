@@ -7,10 +7,14 @@ const records={
  vocabulary:{id:'en-choice',language:'en',lemma:'choice',stage:2,part_of_speech:'noun',register:'neutral',ipa:'tʃɔɪs',reading:null},
  grammar:{id:'ja-copula',language:'ja',title_zh:'判断句',form_name:'〜です / 〜だ',level:1,register:'neutral',formula:'名词 + です',core_zh:'作出判断',purpose_zh:'说明是什么',when_zh:'介绍或判断',mistakes_zh:'不要接在普通形动词后',nuance_zh:'です礼貌，だ普通'}
 };
+const authSecret='phase36-test-secret-that-is-longer-than-thirty-two-characters';
 function db(){
  return {prepare(sql){
   return {bind(...args){
-   return {async all(){
+   return {async first(){
+    if(sql.includes('FROM auth_sessions'))return{token_hash:args[0],user_id:'phase36-user',expires_at:Math.floor(Date.now()/1000)+3600,last_seen_at:Math.floor(Date.now()/1000),email_display:'phase36@example.com'};
+    return null;
+   },async all(){
     if(sql.includes('FROM v2_vocabulary_items'))return{results:args[0]===records.vocabulary.id?[records.vocabulary]:[]};
     if(sql.includes('FROM v2_vocabulary_senses'))return{results:[{meaning_zh:'选择',usage_zh:'常和 make 搭配',register_note:null}]};
     if(sql.includes('FROM v2_vocabulary_examples'))return{results:[{kind:'collocation',text:'make a choice',translation_zh:'做出选择',note_zh:'自然搭配',readings_json:'[]'}]};
@@ -23,8 +27,8 @@ function db(){
 }
 function kv(){const map=new Map();return{map,async get(key,type){const value=map.get(key);return type==='json'&&value?JSON.parse(value):value??null;},async put(key,value){map.set(key,value);},async delete(key){map.delete(key);}};}
 const limiter={limit:async()=>({success:true})};
-function environment(overrides={}){return{DB:db(),CONTENT_DB:db(),DEEPSEEK_API_KEY:'test-secret',DEEPSEEK_BASE_URL:'https://api.deepseek.com',DEEPSEEK_MODEL:'deepseek-v4-flash',AI_RATE_LIMITER:limiter,AI_SHARED_RATE_LIMITER:limiter,AI_SESSIONS:kv(),...overrides};}
-const request=body=>new Request('https://ej-learning-36.example/api/ai/tutor',{method:'POST',headers:{'Content-Type':'application/json','User-Agent':'phase36-test'},body:JSON.stringify(body)});
+function environment(overrides={}){return{DB:db(),CONTENT_DB:db(),AUTH_SECRET:authSecret,DEEPSEEK_API_KEY:'test-secret',DEEPSEEK_BASE_URL:'https://api.deepseek.com',DEEPSEEK_MODEL:'deepseek-v4-flash',AI_RATE_LIMITER:limiter,AI_SHARED_RATE_LIMITER:limiter,AI_SESSIONS:kv(),...overrides};}
+const request=body=>new Request('https://ej-learning-36.example/api/ai/tutor',{method:'POST',headers:{'Content-Type':'application/json','Cookie':'ej_session=phase36-session','User-Agent':'phase36-test'},body:JSON.stringify(body)});
 const provider=answer=>async(url,options)=>new Response(JSON.stringify({choices:[{message:{content:answer},finish_reason:'stop'}]}),{status:200,headers:{'Content-Type':'application/json'}});
 const base=(language='en',extra={})=>({message:language==='en'?'I very like this book.':'私は学校に勉強します。',language,session_id:'session_1234567890',...extra});
 
@@ -69,5 +73,5 @@ test('server-trusted wrong-answer remediation is explicit, bounded, user-bound, 
 });
 
 test('delete conversation removes the current KV record instead of only clearing local UI',async()=>{
- const store=kv();store.map.set('session:session_1234567890','private history');const response=await aiTutor(new Request('https://ej-learning-36.example/api/ai/tutor',{method:'DELETE',headers:{'Content-Type':'application/json','Origin':'https://ej-learning-36.example'},body:JSON.stringify({session_id:'session_1234567890'})}),environment({AI_SESSIONS:store}));assert.equal(response.status,200);assert.equal(store.map.size,0);
+ const store=kv(),env=environment({AI_SESSIONS:store});assert.equal((await aiTutor(request(base()),env,null,provider('private history'))).status,200);assert.equal(store.map.size,1);const response=await aiTutor(new Request('https://ej-learning-36.example/api/ai/tutor',{method:'DELETE',headers:{'Content-Type':'application/json','Cookie':'ej_session=phase36-session','Origin':'https://ej-learning-36.example'},body:JSON.stringify({session_id:'session_1234567890'})}),env);assert.equal(response.status,200);assert.equal(store.map.size,0);
 });

@@ -4,7 +4,7 @@ import {getAuthenticatedSession} from './auth-4a.js';
 import {openRemediationToken} from './remediation-4f.js';
 
 const MAX_REQUEST_BYTES=12288,MAX_MESSAGE_CHARS=2000,MAX_CONTEXT_CHARS=7000,MAX_PROVIDER_BYTES=65536;
-const MAX_HISTORY_MESSAGES=8,SESSION_TTL_SECONDS=60*60*6,PROVIDER_TIMEOUT_MS=12000;
+const MAX_HISTORY_MESSAGES=8,SESSION_TTL_SECONDS=60*60,PROVIDER_TIMEOUT_MS=12000;
 const SAFE_MESSAGE='AI 暂时不可用，请稍后再试。';
 const json=(data,status=200,extra={})=>Response.json(data,{status,headers:{'Cache-Control':'no-store','Content-Security-Policy':"default-src 'none'; frame-ancestors 'none'",'X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer',...extra}});
 
@@ -63,8 +63,7 @@ async function input(request){
  return {message:body.message.trim(),language:body.language,sessionId:body.session_id,context};
 }
 
-async function remediationGround(request,env,data){
- const session=await getAuthenticatedSession(request,env,{touch:false});if(!session)throw new RequestError(401,'AUTH_REQUIRED','登录后才能使用错题解释。');
+async function remediationGround(env,data,session){
  let value;try{value=await openRemediationToken(data.remediationToken,env.PRACTICE_SECRET||env.AUTH_SECRET);}catch{throw new RequestError(400,'INVALID_REMEDIATION','错题解释凭证无效或已被修改。');}
  const now=Math.floor(Date.now()/1000);if(value.uid!==session.user_id||value.result!=='incorrect'||!Number.isInteger(value.expires_at)||value.expires_at<now||value.expires_at>now+1800)throw new RequestError(403,'INVALID_REMEDIATION','错题解释凭证不属于当前账户或已过期。');
  const attempt=await env.DB.prepare(`SELECT content_type,content_id,result,exercise_type,context_type,context_id FROM learning_attempts WHERE user_id=? AND attempt_id=?`).bind(session.user_id,value.attempt_id).first();
@@ -114,22 +113,27 @@ async function providerCall(env,data,ground,history,fetchImpl){
  const answer=envelope?.choices?.[0]?.message?.content;if(typeof answer!=='string'||!answer.trim()||answer.length>6000||envelope.choices[0].finish_reason==='length')throw new ProviderError('invalid_answer');return answer.trim();
 }
 async function digest(value){const hash=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));return [...new Uint8Array(hash)].map(x=>x.toString(16).padStart(2,'0')).join('');}
+async function conversationKey(env,userId,sessionId){
+ if(typeof env.AUTH_SECRET!=='string'||env.AUTH_SECRET.length<32||typeof userId!=='string'||!userId)throw new ProviderError('session_config');
+ const encoder=new TextEncoder(),key=await crypto.subtle.importKey('raw',encoder.encode(env.AUTH_SECRET),{name:'HMAC',hash:'SHA-256'},false,['sign']),signature=await crypto.subtle.sign('HMAC',key,encoder.encode(`ai-session:v1:${userId}:${sessionId}`));
+ return 'session:v2:'+[...new Uint8Array(signature)].map(x=>x.toString(16).padStart(2,'0')).join('');
+}
 async function rateLimit(request,env){if(!env.AI_RATE_LIMITER?.limit||!env.AI_SHARED_RATE_LIMITER?.limit)throw new ProviderError('rate_limit_config');const actor=await digest(request.headers.get('cf-connecting-ip')||request.headers.get('user-agent')||'anonymous');const [personal,shared]=await Promise.all([env.AI_RATE_LIMITER.limit({key:actor}),env.AI_SHARED_RATE_LIMITER.limit({key:'ai-tutor'})]);if(!personal.success||!shared.success)throw new RequestError(429,'RATE_LIMITED','请求太频繁，请稍后再试。');}
-async function historyFor(env,data,signature){
- if(!env.AI_SESSIONS?.get||!env.AI_SESSIONS?.put)throw new ProviderError('session_config');const key='session:'+data.sessionId,stored=await env.AI_SESSIONS.get(key,'json');
+async function historyFor(env,key,data,signature){
+ if(!env.AI_SESSIONS?.get||!env.AI_SESSIONS?.put)throw new ProviderError('session_config');const stored=await env.AI_SESSIONS.get(key,'json');
  if(!stored)return {key,messages:[]};if(stored.language!==data.language||stored.context!==signature)throw new RequestError(409,'SESSION_CONTEXT_MISMATCH','语言或学习上下文已改变，请开始新对话。');
  const messages=Array.isArray(stored.messages)?stored.messages.filter(x=>x&&['user','assistant'].includes(x.role)&&typeof x.content==='string').slice(-MAX_HISTORY_MESSAGES):[];return {key,messages};
 }
 async function saveHistory(env,key,data,signature,history,answer){const messages=[...history,{role:'user',content:data.message},{role:'assistant',content:answer}].slice(-MAX_HISTORY_MESSAGES);await env.AI_SESSIONS.put(key,JSON.stringify({language:data.language,context:signature,messages}),{expirationTtl:SESSION_TTL_SECONDS});return messages.length;}
 
 export async function aiTutor(request,env,ctx,fetchImpl=fetch){
- const started=Date.now();try{if(request.method==='DELETE')return await deleteConversation(request,env);let data=await input(request);await rateLimit(request,env);let ground;if(data.remediationToken){const resolved=await remediationGround(request,env,data);data=resolved.data;ground=resolved.ground;}else ground=await grounding(env,data);const signature=ground?.signature||'standalone',session=await historyFor(env,data,signature),answer=await providerCall(env,data,ground,session.messages,fetchImpl);await saveHistory(env,session.key,data,signature,session.messages,answer);console.log(JSON.stringify({event:'ai_tutor',outcome:'success',language:data.language,context:data.remediation?'remediation':data.context?.type||'standalone',latency_ms:Date.now()-started}));return json({data:{kind:'tutor_message',message:answer}});
+ const started=Date.now();try{const authenticated=await getAuthenticatedSession(request,env,{touch:false});if(!authenticated)throw new RequestError(401,'AUTH_REQUIRED','登录后才能使用 AI Tutor。');if(request.method==='DELETE')return await deleteConversation(request,env,authenticated);let data=await input(request);await rateLimit(request,env);let ground;if(data.remediationToken){const resolved=await remediationGround(env,data,authenticated);data=resolved.data;ground=resolved.ground;}else ground=await grounding(env,data);const signature=ground?.signature||'standalone',key=await conversationKey(env,authenticated.user_id,data.sessionId),session=await historyFor(env,key,data,signature),answer=await providerCall(env,data,ground,session.messages,fetchImpl);await saveHistory(env,session.key,data,signature,session.messages,answer);console.log(JSON.stringify({event:'ai_tutor',outcome:'success',language:data.language,context:data.remediation?'remediation':data.context?.type||'standalone',latency_ms:Date.now()-started}));return json({data:{kind:'tutor_message',message:answer}});
  }catch(error){if(error instanceof RequestError){console.log(JSON.stringify({event:'ai_tutor',outcome:'rejected',code:error.code,status:error.status}));return json({error:{code:error.code,message:error.message}},error.status,error.status===405?{Allow:'POST'}:{});}console.log(JSON.stringify({event:'ai_tutor',outcome:'failed',category:error instanceof ProviderError?error.category:'internal',latency_ms:Date.now()-started}));return json({error:{code:'AI_UNAVAILABLE',message:SAFE_MESSAGE}},503);}
 }
 
-async function deleteConversation(request,env){
+async function deleteConversation(request,env,authenticated){
  const url=new URL(request.url),origin=request.headers.get('origin'),site=request.headers.get('sec-fetch-site');if(origin&&origin!==url.origin||site==='cross-site')throw new RequestError(403,'FORBIDDEN','请求来源无效。');
  if(!env.AI_SESSIONS?.delete)throw new ProviderError('session_config');let body;try{body=JSON.parse(await readBounded(request.body,1024));}catch{throw new RequestError(400,'INVALID_REQUEST','请求内容无效。');}
  if(!body||typeof body!=='object'||Array.isArray(body)||Object.keys(body).length!==1||typeof body.session_id!=='string'||!/^[A-Za-z0-9_-]{16,80}$/.test(body.session_id))throw new RequestError(400,'INVALID_REQUEST','会话编号无效。');
- await env.AI_SESSIONS.delete('session:'+body.session_id);return json({data:{deleted:true}});
+ await env.AI_SESSIONS.delete(await conversationKey(env,authenticated.user_id,body.session_id));return json({data:{deleted:true}});
 }
