@@ -1,0 +1,519 @@
+{
+  "schema": "ej-learning-production-migration-manifest-v1",
+  "database": "ej-learning-prod-db",
+  "migration_count": 73,
+  "payload_policy": "byte-identical-to-audited-source",
+  "mappings": [
+    {
+      "sequence": 1,
+      "production_file": "0001_schema.sql",
+      "source_file": "migrations-35d/0001_schema.sql",
+      "sha256": "abc5a75a1bff0827f19ad912c9c6dbcdaf0b4e83a735403df0a9444627947a9c",
+      "bytes": 3458
+    },
+    {
+      "sequence": 2,
+      "production_file": "0002_seed.sql",
+      "source_file": "migrations-35d/0002_seed.sql",
+      "sha256": "658c16f39f14a72742d3ab66035991525c72f25e51caf0326f94148b9588a032",
+      "bytes": 48606
+    },
+    {
+      "sequence": 3,
+      "production_file": "0003_engine.sql",
+      "source_file": "migrations-35d/0003_engine.sql",
+      "sha256": "90690d0d1416553ffe6bb64e28992cc598073e25e26bcea06c215cf893da0177",
+      "bytes": 1227
+    },
+    {
+      "sequence": 4,
+      "production_file": "0004_curriculum.sql",
+      "source_file": "migrations-35d/0004_curriculum.sql",
+      "sha256": "0117015f997bbba33d7690312fe17477aa060d1d6e68246f714d8ff7f5d8b553",
+      "bytes": 1111621
+    },
+    {
+      "sequence": 5,
+      "production_file": "0005_assessment_refinements.sql",
+      "source_file": "migrations-35d/0005_assessment_refinements.sql",
+      "sha256": "9ad1ba48267a1bcbc57571d73e5d621843535b3a2cad29d318cffcc4a1224419",
+      "bytes": 46928
+    },
+    {
+      "sequence": 6,
+      "production_file": "0006_v2_domains.sql",
+      "source_file": "migrations-35d/0006_v2_domains.sql",
+      "sha256": "2fb85b316acc4917a501d502f6103234b469443ce008cbf5d75a922b32fe09e4",
+      "bytes": 10099
+    },
+    {
+      "sequence": 7,
+      "production_file": "0007_v2_representative.sql",
+      "source_file": "migrations-35d/0007_v2_representative.sql",
+      "sha256": "6b19d3c4d5e05e7355fbff5f7254a20e96c2daa039c8c2a7b3ab6fabfbe2353c",
+      "bytes": 65683
+    },
+    {
+      "sequence": 8,
+      "production_file": "0008_v2_editorial_guards.sql",
+      "source_file": "migrations-35d/0008_v2_editorial_guards.sql",
+      "sha256": "f1ec24cc7c716081ecd6d3db80cd41ae479d126a296a0ae8a58b1bf4247aaa76",
+      "bytes": 5499
+    },
+    {
+      "sequence": 9,
+      "production_file": "0009_academic_alignment.sql",
+      "source_file": "migrations-35d/0009_academic_alignment.sql",
+      "sha256": "00ea427cf9c6935a9ac25bcc64549faa4ee9ffd8c4c3e605b16f1ab365659736",
+      "bytes": 4952
+    },
+    {
+      "sequence": 10,
+      "production_file": "0010_academic_expression_example.sql",
+      "source_file": "migrations-35d/0010_academic_expression_example.sql",
+      "sha256": "6a3368a72b2aaac0b853a771a1b6b8c826ee64f996599dcce30c185ca8130ac6",
+      "bytes": 2187
+    },
+    {
+      "sequence": 11,
+      "production_file": "0011_curriculum.sql",
+      "source_file": "migrations-35d/0011_curriculum.sql",
+      "sha256": "6f0a6ee12306481324b3a8dabb830ee0a3a85ada74fe21dbb968537cad0f4a60",
+      "bytes": 2078655
+    },
+    {
+      "sequence": 12,
+      "production_file": "0012_editorial_refinement.sql",
+      "source_file": "migrations-35d/0012_editorial_refinement.sql",
+      "sha256": "f774fce9386ab569e524dac8f145d885f4c075378b21fc05ed3ae7fc87b3b60c",
+      "bytes": 20677
+    },
+    {
+      "sequence": 13,
+      "production_file": "0013_reviewed_speech_link.sql",
+      "source_file": "migrations-35d/0013_reviewed_speech_link.sql",
+      "sha256": "30d6b27b79f67ccced3a8e524f6c7e71bdf757074d36fbd5786c123314f48af4",
+      "bytes": 388
+    },
+    {
+      "sequence": 14,
+      "production_file": "0014_final_editorial_judgments.sql",
+      "source_file": "migrations-35d/0014_final_editorial_judgments.sql",
+      "sha256": "fe83d0b170da56e99eddfd28e9c38c4762dbb787ff82e5489dfd13e781028aee",
+      "bytes": 61238
+    },
+    {
+      "sequence": 15,
+      "production_file": "0015_reused_pattern_provenance.sql",
+      "source_file": "migrations-35d/0015_reused_pattern_provenance.sql",
+      "sha256": "88c230db8e8de7ce9759138f2248ec674f4eb8bb923a01b3cb051d2feb88b818",
+      "bytes": 470
+    },
+    {
+      "sequence": 16,
+      "production_file": "0016_request_variants.sql",
+      "source_file": "migrations-35d/0016_request_variants.sql",
+      "sha256": "f4df93d90b5beeab6524f62a23fb43ef844c7c596310aeee7a18bdd8a9d6a306",
+      "bytes": 1671
+    },
+    {
+      "sequence": 17,
+      "production_file": "0017_lessons.sql",
+      "source_file": "migrations-35d/0017_lessons.sql",
+      "sha256": "5341fb0f3c9871964337d3c43fc19093463afec1f67682f479871049c7bcf9cb",
+      "bytes": 14326
+    },
+    {
+      "sequence": 18,
+      "production_file": "0018_lesson_exam_recommendations.sql",
+      "source_file": "migrations-35d/0018_lesson_exam_recommendations.sql",
+      "sha256": "861b2e2284db0fda37ead9e59807703579072c83845307448531bb3dbc09b507",
+      "bytes": 807
+    },
+    {
+      "sequence": 19,
+      "production_file": "0019_distinct_progression.sql",
+      "source_file": "migrations-35d/0019_distinct_progression.sql",
+      "sha256": "e073841e27c1a1f4f789468853ceba8ddda01664e0755af1578962d734ad3fba",
+      "bytes": 5360
+    },
+    {
+      "sequence": 20,
+      "production_file": "0020_editorial_objectives.sql",
+      "source_file": "migrations-35d/0020_editorial_objectives.sql",
+      "sha256": "ab1295e52982aa832a58c536462a415dcc10daaadef14470629cce2ecf7f5666",
+      "bytes": 2436
+    },
+    {
+      "sequence": 21,
+      "production_file": "0021_core_grammar_curated_examples.sql",
+      "source_file": "migrations-35e1a/0001_core_grammar_curated_examples.sql",
+      "sha256": "087723731ca86087105927d966361fa2ba49b7256a85da2bec0b8ec3f4d485f4",
+      "bytes": 147973
+    },
+    {
+      "sequence": 22,
+      "production_file": "0022_curated_grammar_example_target_roles.sql",
+      "source_file": "migrations-35e1a1/0001_curated_grammar_example_target_roles.sql",
+      "sha256": "2ee0234fd8d80768aa8d72d705ad7caddfaaae2fc314b923f9a0af6c0f8e179b",
+      "bytes": 91652
+    },
+    {
+      "sequence": 23,
+      "production_file": "0023_core_vocabulary_curated_usages.sql",
+      "source_file": "migrations-35e1a2/0001_core_vocabulary_curated_usages.sql",
+      "sha256": "6dc32d01505953187bff5159eb1bc0105d364e61fd4ba139ceb67059a2ef4ef2",
+      "bytes": 83616
+    },
+    {
+      "sequence": 24,
+      "production_file": "0024_core_expressions_multi_turn_dialogues.sql",
+      "source_file": "migrations-35e1b/0001_core_expressions_multi_turn_dialogues.sql",
+      "sha256": "599ab3d439fb32c7db1ddaf07701dbd5cf6a69c4258d5d5b057842567fc41520",
+      "bytes": 352772
+    },
+    {
+      "sequence": 25,
+      "production_file": "0025_curriculum_gap_filling_lesson_bundle.sql",
+      "source_file": "migrations-35e1c/0001_curriculum_gap_filling_lesson_bundle.sql",
+      "sha256": "8fc3512f562dcac8d17a15f862af7b621e4b6797ba7d1bce1f5346ae8210ce83",
+      "bytes": 165777
+    },
+    {
+      "sequence": 26,
+      "production_file": "0026_lesson_bundle_version.sql",
+      "source_file": "migrations-35e1c/0002_lesson_bundle_version.sql",
+      "sha256": "198fdf8cee851f65e629bce2b243b5f5ecd94a9d187f9847b24d85d425c33fb8",
+      "bytes": 59187
+    },
+    {
+      "sequence": 27,
+      "production_file": "0027_lesson_target_fidelity_corrective.sql",
+      "source_file": "migrations-35e1c/0003_lesson_target_fidelity_corrective.sql",
+      "sha256": "25a99356b78b71eb85e757ff36b17578c567c116668595476cc0ffbcfc5a35cc",
+      "bytes": 72652
+    },
+    {
+      "sequence": 28,
+      "production_file": "0028_ielts65_vocabulary_discovery_corrective.sql",
+      "source_file": "migrations-35e1c/0004_ielts65_vocabulary_discovery_corrective.sql",
+      "sha256": "5e4db22bf2e1335c85a598f1255261b6d89f358216e1de7d5b904e5e2c626364",
+      "bytes": 9826
+    },
+    {
+      "sequence": 29,
+      "production_file": "0029_jlpt_vocabulary_discovery_corrective.sql",
+      "source_file": "migrations-35e1c/0005_jlpt_vocabulary_discovery_corrective.sql",
+      "sha256": "2f01487b9489d1770bcf12831deef9b40df58b2781a4024576a75d624f096165",
+      "bytes": 885
+    },
+    {
+      "sequence": 30,
+      "production_file": "0030_large_vocabulary_schema.sql",
+      "source_file": "migrations-36/0001_large_vocabulary_schema.sql",
+      "sha256": "158eb033e21a10a52d9d366acbeed9fdd3a1111c1711e756c6d5b95d5feca5e6",
+      "bytes": 5129
+    },
+    {
+      "sequence": 31,
+      "production_file": "0031_vocabulary_chunk_01.sql",
+      "source_file": "migrations-36/0002_vocabulary_chunk_01.sql",
+      "sha256": "efc1347569c17118bf46300d9ffe211fb97f4d650f2ad78f6fe26dc2e519f342",
+      "bytes": 441551
+    },
+    {
+      "sequence": 32,
+      "production_file": "0032_vocabulary_chunk_02.sql",
+      "source_file": "migrations-36/0003_vocabulary_chunk_02.sql",
+      "sha256": "8f29c73d3db25533742ed3722570609577126564d1a59e668173c0a321a254c9",
+      "bytes": 434260
+    },
+    {
+      "sequence": 33,
+      "production_file": "0033_vocabulary_chunk_03.sql",
+      "source_file": "migrations-36/0004_vocabulary_chunk_03.sql",
+      "sha256": "a64a553215dd63f67caa6d4d38b09c6580bb2cea87b3d0a5fbb727d15c7e1073",
+      "bytes": 440335
+    },
+    {
+      "sequence": 34,
+      "production_file": "0034_vocabulary_chunk_04.sql",
+      "source_file": "migrations-36/0005_vocabulary_chunk_04.sql",
+      "sha256": "d2f4725c572e4767c4b9c12060658c4ae9df1da4d22459d05a476ab27eb46bc2",
+      "bytes": 438206
+    },
+    {
+      "sequence": 35,
+      "production_file": "0035_vocabulary_chunk_05.sql",
+      "source_file": "migrations-36/0006_vocabulary_chunk_05.sql",
+      "sha256": "373775e17352509ba263b832a040a553d6bd83892bff6a32799030005e944681",
+      "bytes": 440896
+    },
+    {
+      "sequence": 36,
+      "production_file": "0036_vocabulary_chunk_06.sql",
+      "source_file": "migrations-36/0007_vocabulary_chunk_06.sql",
+      "sha256": "a3de16b30e06acba6cd9eca29f533f750cd5baec3340ae3fe26dbc290b83d109",
+      "bytes": 437063
+    },
+    {
+      "sequence": 37,
+      "production_file": "0037_vocabulary_chunk_07.sql",
+      "source_file": "migrations-36/0008_vocabulary_chunk_07.sql",
+      "sha256": "58de1c521912ff611fe249bd10f97b336767b5672855242c6e6ed6a2b6d959b1",
+      "bytes": 431827
+    },
+    {
+      "sequence": 38,
+      "production_file": "0038_vocabulary_chunk_08.sql",
+      "source_file": "migrations-36/0009_vocabulary_chunk_08.sql",
+      "sha256": "119993d8fd383657cec19bb0a7c18045aaba60ffa113f5e769f825b2fb3d80e8",
+      "bytes": 429518
+    },
+    {
+      "sequence": 39,
+      "production_file": "0039_vocabulary_chunk_09.sql",
+      "source_file": "migrations-36/0010_vocabulary_chunk_09.sql",
+      "sha256": "2296732281bbc4573efc2142a71cfa45e5b0bc7f26e32f4d5f9ad38328405e8d",
+      "bytes": 429410
+    },
+    {
+      "sequence": 40,
+      "production_file": "0040_vocabulary_chunk_10.sql",
+      "source_file": "migrations-36/0011_vocabulary_chunk_10.sql",
+      "sha256": "36a278c9b6233de69c6e26ae707665172ba233462ec552da1393e633bc86f0ba",
+      "bytes": 426702
+    },
+    {
+      "sequence": 41,
+      "production_file": "0041_vocabulary_chunk_11.sql",
+      "source_file": "migrations-36/0012_vocabulary_chunk_11.sql",
+      "sha256": "47663c95cbb358d84c5a149bade6ce8f08e5ed5b92233874c42de65ad14fc5bc",
+      "bytes": 426069
+    },
+    {
+      "sequence": 42,
+      "production_file": "0042_vocabulary_chunk_12.sql",
+      "source_file": "migrations-36/0013_vocabulary_chunk_12.sql",
+      "sha256": "7c5d061a04ff338a00cea6ba32a21ed398a3ac48b68a2f8d068b005a718c0ec7",
+      "bytes": 424343
+    },
+    {
+      "sequence": 43,
+      "production_file": "0043_vocabulary_chunk_13.sql",
+      "source_file": "migrations-36/0014_vocabulary_chunk_13.sql",
+      "sha256": "993754b77fa776afd3a4e4adcfb6e0446130b7cccd0ac9355abf096d9320a343",
+      "bytes": 424031
+    },
+    {
+      "sequence": 44,
+      "production_file": "0044_vocabulary_chunk_14.sql",
+      "source_file": "migrations-36/0015_vocabulary_chunk_14.sql",
+      "sha256": "eee5b498b1744c2c1a356152a815a0195ce3eed5cc6569bb6ed4febeb0e65921",
+      "bytes": 419437
+    },
+    {
+      "sequence": 45,
+      "production_file": "0045_vocabulary_chunk_15.sql",
+      "source_file": "migrations-36/0016_vocabulary_chunk_15.sql",
+      "sha256": "51550bd4ae877bccd7710bf4f23bb21d7da25962c736b43d1670078590e1d1de",
+      "bytes": 416446
+    },
+    {
+      "sequence": 46,
+      "production_file": "0046_vocabulary_chunk_16.sql",
+      "source_file": "migrations-36/0017_vocabulary_chunk_16.sql",
+      "sha256": "c26912327e8e26671f717a1cb2d286fbbab1d811bd1efc2f7bfaacf5dcd9b41e",
+      "bytes": 416466
+    },
+    {
+      "sequence": 47,
+      "production_file": "0047_vocabulary_chunk_17.sql",
+      "source_file": "migrations-36/0018_vocabulary_chunk_17.sql",
+      "sha256": "a35211053180a69ff362bccfb7cb8d2dd50830f40386dad42df59d86fcfa97df",
+      "bytes": 417177
+    },
+    {
+      "sequence": 48,
+      "production_file": "0048_vocabulary_chunk_18.sql",
+      "source_file": "migrations-36/0019_vocabulary_chunk_18.sql",
+      "sha256": "6de39b1176cdf520d8dd3a4df9194f3ffed35d0f3d2b7becd21d17d659e0771b",
+      "bytes": 419064
+    },
+    {
+      "sequence": 49,
+      "production_file": "0049_vocabulary_chunk_19.sql",
+      "source_file": "migrations-36/0020_vocabulary_chunk_19.sql",
+      "sha256": "63d573ba8907e5c367a0112d9b6f11aa47c8565e901e6295109e03a47df3167b",
+      "bytes": 419743
+    },
+    {
+      "sequence": 50,
+      "production_file": "0050_vocabulary_chunk_20.sql",
+      "source_file": "migrations-36/0021_vocabulary_chunk_20.sql",
+      "sha256": "d6052f45bfc166499e9ba43680458f865200aab50be247baddeb54a25b59d419",
+      "bytes": 421489
+    },
+    {
+      "sequence": 51,
+      "production_file": "0051_vocabulary_chunk_21.sql",
+      "source_file": "migrations-36/0022_vocabulary_chunk_21.sql",
+      "sha256": "21a1259c813ad64e2e90d4a3ecde1cd7f1e9ffd113249e66aa70f7b24ed88a47",
+      "bytes": 420071
+    },
+    {
+      "sequence": 52,
+      "production_file": "0052_vocabulary_chunk_22.sql",
+      "source_file": "migrations-36/0023_vocabulary_chunk_22.sql",
+      "sha256": "d6de3513c7fdf5678b9fe357294e28371a04c290befd9fbb55fc9bef31620567",
+      "bytes": 418868
+    },
+    {
+      "sequence": 53,
+      "production_file": "0053_vocabulary_chunk_23.sql",
+      "source_file": "migrations-36/0024_vocabulary_chunk_23.sql",
+      "sha256": "cbd43c3c1a4424b596610ac4fbc2c5ebe0c34959444f56cf8d558042d49600a8",
+      "bytes": 419909
+    },
+    {
+      "sequence": 54,
+      "production_file": "0054_vocabulary_chunk_24.sql",
+      "source_file": "migrations-36/0025_vocabulary_chunk_24.sql",
+      "sha256": "4b5856e378c06feb98a1b5734b359182b806c0fae0ceff36e93e0725c45a0af4",
+      "bytes": 421098
+    },
+    {
+      "sequence": 55,
+      "production_file": "0055_vocabulary_chunk_25.sql",
+      "source_file": "migrations-36/0026_vocabulary_chunk_25.sql",
+      "sha256": "c8ccae53e5e0a2a3fe1f32f033cf44b81923d2af7ed42fc264e6a1f674514111",
+      "bytes": 330670
+    },
+    {
+      "sequence": 56,
+      "production_file": "0056_existing_curated_course_ranks.sql",
+      "source_file": "migrations-36/0027_existing_curated_course_ranks.sql",
+      "sha256": "361fbcef2e7a115efde1d642af4208bface48572359b3ee869e70c1a0c506688",
+      "bytes": 137387
+    },
+    {
+      "sequence": 57,
+      "production_file": "0057_curriculum_dataset_versions.sql",
+      "source_file": "migrations-staging-schema/0001_curriculum_dataset_versions.sql",
+      "sha256": "62e7b178fbc219dc97d04ae16161464954df906651eb1e5d064c76289dfcf10c",
+      "bytes": 311
+    },
+    {
+      "sequence": 58,
+      "production_file": "0058_phase4a_email_auth.sql",
+      "source_file": "migrations-staging-schema/0002_phase4a_email_auth.sql",
+      "sha256": "8385a447c194f0fd05b291c15f7a11cf521d11b9d58612418f26ba552f3c75bc",
+      "bytes": 1495
+    },
+    {
+      "sequence": 59,
+      "production_file": "0059_phase4b_learner_progress.sql",
+      "source_file": "migrations-staging-schema/0003_phase4b_learner_progress.sql",
+      "sha256": "f7d261d82509b4ebc0efb5c81df93391b473f4af07c8580aaf5ddd5a7e65cce1",
+      "bytes": 5460
+    },
+    {
+      "sequence": 60,
+      "production_file": "0060_phase4c_srs.sql",
+      "source_file": "migrations-staging-schema/0004_phase4c_srs.sql",
+      "sha256": "a421a5a6069ebde3baaa6f9b97c89206c723d15f49243eb50b9839c1c66f916d",
+      "bytes": 5881
+    },
+    {
+      "sequence": 61,
+      "production_file": "0061_phase4e_practice_engine.sql",
+      "source_file": "migrations-staging-schema/0005_phase4e_practice_engine.sql",
+      "sha256": "f00797a0634003309cedac4e56aad96aef5f138a1342e0aea71da2bcf6f2a877",
+      "bytes": 790
+    },
+    {
+      "sequence": 62,
+      "production_file": "0062_phase4f_learner_experience.sql",
+      "source_file": "migrations-staging-schema/0006_phase4f_learner_experience.sql",
+      "sha256": "3d168197f402a039c35127fd53325cd296a8aead4753754814c19e04f1bb1391",
+      "bytes": 332
+    },
+    {
+      "sequence": 63,
+      "production_file": "0063_content_quality_hotfix_01.sql",
+      "source_file": "migrations-content-quality-01/0001_content_quality_hotfix_01.sql",
+      "sha256": "433bbabf20df8eafe263df9b3589fedf4f76ed2e3add8409bb4107242c6019e2",
+      "bytes": 3349
+    },
+    {
+      "sequence": 64,
+      "production_file": "0064_content_quality_hotfix_02.sql",
+      "source_file": "migrations-content-quality-02/0001_content_quality_hotfix_02.sql",
+      "sha256": "b28548713ea3baaac33c2ea4ae93002d54d670eab1839816de9ee43d2449d5c9",
+      "bytes": 1055
+    },
+    {
+      "sequence": 65,
+      "production_file": "0065_content_quality_hotfix_03.sql",
+      "source_file": "migrations-content-quality-03/0001_content_quality_hotfix_03.sql",
+      "sha256": "90ed6a3691bb2c1bb20899b1a535578b8dcf709f4cde4babbe2728616786dbf7",
+      "bytes": 3506
+    },
+    {
+      "sequence": 66,
+      "production_file": "0066_curriculum_expansion_01a_bundle.sql",
+      "source_file": "migrations-curriculum-expansion-01/0001_curriculum_expansion_01a_bundle.sql",
+      "sha256": "ead4038ee7eb0e192a9da6028f3065ee4f6d5ecce518749c82136734cd6f52ee",
+      "bytes": 71021
+    },
+    {
+      "sequence": 67,
+      "production_file": "0067_stage5_expansion_02.sql",
+      "source_file": "migrations-stage5-expansion-02/0001_stage5_expansion_02.sql",
+      "sha256": "dd3ac311374062383dd6854930d871f42f2cfcd37ee27625057fe536d7cfa673",
+      "bytes": 136568
+    },
+    {
+      "sequence": 68,
+      "production_file": "0068_stage5_lesson_projection.sql",
+      "source_file": "migrations-stage5-expansion-02/0002_stage5_lesson_projection.sql",
+      "sha256": "89b826289538c23b030fe294e23632ff5c590e60610a12d6c9fbda3a8c770cff",
+      "bytes": 6856
+    },
+    {
+      "sequence": 69,
+      "production_file": "0069_stage5_boundary_projection.sql",
+      "source_file": "migrations-stage5-expansion-02/0003_stage5_boundary_projection.sql",
+      "sha256": "d680c79d0c2d08b38036a722a340b718fd1699a0497b5fdc61a257ade43e7185",
+      "bytes": 545
+    },
+    {
+      "sequence": 70,
+      "production_file": "0070_stage6_expansion_03.sql",
+      "source_file": "migrations-stage6-expansion-03/0004_stage6_expansion_03.sql",
+      "sha256": "8cc325c1d8de7f8b59502d9aa53af0bb70f106aaa29b0462067a529360a567a5",
+      "bytes": 211899
+    },
+    {
+      "sequence": 71,
+      "production_file": "0071_stage6_lesson_projection.sql",
+      "source_file": "migrations-stage6-expansion-03/0005_stage6_lesson_projection.sql",
+      "sha256": "7eaa2cd003fe9994030712099398e559114a9c731a3bd9af070534d9e7bee2ee",
+      "bytes": 4660
+    },
+    {
+      "sequence": 72,
+      "production_file": "0072_stage6_prerequisite_reconciliation.sql",
+      "source_file": "migrations-stage6-expansion-03/0006_stage6_prerequisite_reconciliation.sql",
+      "sha256": "be1c1a3b0233ab5401bba1c8931afd8d6bf8535323128e7d5d881297b5f31058",
+      "bytes": 818
+    },
+    {
+      "sequence": 73,
+      "production_file": "0073_content_quality_hotfix_04.sql",
+      "source_file": "migrations-content-quality-04/0001_content_quality_hotfix_04.sql",
+      "sha256": "99e5d6bbb4df62ac489b2337348c4c68ba7e297f23ed3c9b3a72f65ee7b2daae",
+      "bytes": 1447
+    }
+  ]
+}

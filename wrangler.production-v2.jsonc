@@ -1,0 +1,54 @@
+{
+  "name": "ej-learning-prod",
+  "account_id": "bd05aa19111be95427af89be4e44f164",
+  "main": "src/worker-36.js",
+  "compatibility_date": "2026-09-08",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {"pattern": "ej-learning.jwcglass.com", "custom_domain": true}
+  ],
+  "vars": {
+    "DEEPSEEK_BASE_URL": "https://api.deepseek.com",
+    "DEEPSEEK_MODEL": "deepseek-v4-flash",
+    "AUTH_SMTP_HOST": "smtp.qq.com",
+    "AUTH_SMTP_PORT": "465",
+    "MAIL_FROM_NAME": "EJ Learning"
+  },
+  "secrets": {
+    "required": [
+      "AUTH_SECRET",
+      "PRACTICE_SECRET",
+      "AUTH_SMTP_USER",
+      "AUTH_SMTP_PASSWORD",
+      "DEEPSEEK_API_KEY"
+    ]
+  },
+  "ratelimits": [
+    {"name": "AI_RATE_LIMITER", "namespace_id": "370001", "simple": {"limit": 12, "period": 60}},
+    {"name": "AI_SHARED_RATE_LIMITER", "namespace_id": "370002", "simple": {"limit": 120, "period": 60}}
+  ],
+  "kv_namespaces": [
+    {"binding": "AI_SESSIONS", "id": "0d20dbe0cefd4d57b6f3bff2a7f46c78"}
+  ],
+  "assets": {
+    "directory": "./public-36",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "none",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ej-learning-prod-db",
+      "database_id": "864538ef-1e88-427f-83b7-2c0846d3133d",
+      "migrations_dir": "migrations-production-v2"
+    },
+    {
+      "binding": "CONTENT_DB",
+      "database_name": "ej-learning-prod-db",
+      "database_id": "864538ef-1e88-427f-83b7-2c0846d3133d"
+    }
+  ]
+}

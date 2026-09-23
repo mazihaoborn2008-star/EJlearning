@@ -1,0 +1,2 @@
+# This generated production migration must remain byte-identical to its audited source.
+migrations-production-v2/0057_curriculum_dataset_versions.sql whitespace=-blank-at-eof

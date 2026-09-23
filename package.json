@@ -144,7 +144,12 @@
     "dev:stage6-expansion-03": "wrangler dev --config wrangler.stage6-expansion-03.local.jsonc --port 8818 --persist-to .wrangler/phase35e1c-release-final-2",
     "test:stage6-expansion-03": "node --test tests/stage6-expansion-03.test.js && node tests/stage6-expansion-03-browser.cjs",
     "test:production-readiness-remediation-01": "node --test tests/production-readiness-remediation-01.test.js",
-    "deploy:stage6-expansion-03": "node -e \"throw Error('Stage 6 Expansion 03 is local-only; staging and production deployment are not authorized.')\""
+    "deploy:stage6-expansion-03": "node -e \"throw Error('Stage 6 Expansion 03 is local-only; staging and production deployment are not authorized.')\"",
+    "build:production-migrations": "node scripts/build-production-migrations.js",
+    "verify:production-release": "node scripts/verify-production-release.js",
+    "audit:production-d1": "node scripts/audit-production-d1.js",
+    "curriculum:production:status": "node scripts/production-curriculum.js status",
+    "curriculum:production:adopt": "node scripts/production-curriculum.js adopt"
   },
   "devDependencies": {
     "wrangler": "4.130.0",
